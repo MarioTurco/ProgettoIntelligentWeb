@@ -19,9 +19,11 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLException;
 import org.semanticweb.owlapi.model.OWLLogicalAxiom;
+import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectComplementOf;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
+import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
@@ -37,7 +39,7 @@ public class App {
 	
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
-		File file = new File("C:\\Users\\Mario\\Desktop\\concept.owl.xml");
+		File file = new File("C:\\Users\\Mario\\Desktop\\pizza.owl.xml");
 		OWLOntology o = man.loadOntologyFromOntologyDocument(file);
 		System.out.println("Assiomi :" + o.getAxiomCount());
 		IRI iri = o.getOntologyID().getOntologyIRI().get();
@@ -54,7 +56,8 @@ public class App {
     		char foreach = '\u2200';
     		char exists = '\u2203';
     		char not = '\u2235';
-    		@Override
+    		char equivalence = '\u2261';
+    		
     		public void visit(OWLObjectSomeValuesFrom desc) {
 	    		out.print(exists + " ");
 	    //		System.out.println(desc);
@@ -65,7 +68,6 @@ public class App {
 	    		
     		}
     		
-    		@Override
     		public void visit(OWLClass c) {
 	    		System.out.print(conceptToString(iri,c.toString()) + " ");
 	    		return;
@@ -74,14 +76,30 @@ public class App {
     			out.print(not);
     			System.out.print(conceptToString(iri, eq.getOperand().toString()) + " ");
     		}
-    	
+    		
+    		
     		public void visit(OWLEquivalentClassesAxiom eq) {
 	    		System.out.println(conceptToString(iri, eq.toString()) +" ");
+/*	    		for(OWLClassExpression ex: eq.getOperandsAsList()) {
+	    			ex.accept(this);
+	    			out.print(equivalence );
+ 		   		}
+*/	    		
 	    		eq.getOperandsAsList().get(1).accept(this); //destra
-	    		System.out.print(" = ");
+	    		out.print(equivalence);
 	    		eq.getOperandsAsList().get(0).accept(this); //sinistra
+	    		
 	    		return;
     		}
+    		
+    		
+    		public void visit(OWLObjectUnionOf o) {
+    			for(OWLClassExpression ex: o.getOperandsAsList()) {
+    				ex.accept(this);
+    			    out.print(union + " " );
+    			}
+    		}
+    		 
     		public void visit(OWLObjectIntersectionOf o) {
     			for(OWLClassExpression ex: o.getOperandsAsList()) {
     				ex.accept(this);
@@ -89,7 +107,15 @@ public class App {
     			}
     			System.out.print("T");
     		}
-    		
+    	
+    		public void visit(OWLObjectAllValuesFrom desc) {
+    			out.print(foreach + " ");
+	    		System.out.print(conceptToString(iri, desc.getProperty().toString()));
+	    		desc.getProperty().accept(this);
+	    		System.out.print(".");
+	    	    desc.getFiller().accept(this);
+    		    		
+    		}
     		
     		
     	};
