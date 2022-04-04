@@ -2,6 +2,7 @@ package turcobardi;
 
 import java.io.PrintStream;
 import java.io.UnsupportedEncodingException;
+import java.util.List;
 
 import javax.annotation.Nonnull;
 import org.semanticweb.owlapi.model.IRI;
@@ -9,24 +10,32 @@ import org.checkerframework.checker.nullness.qual.NonNull;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
+import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectComplementOf;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
+import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
 public class OntologyVisitor implements OWLObjectVisitor{
 	
 	private IRI iri = null;
+	private String toRemove = "";
 	private PrintStream out = null;
 	private final char intersect = '\u2293';
 	private final char union = '\u2294';
 	private final char foreach = '\u2200';
 	private final char exists = '\u2203';
-	private final char not = '\u2235';
+	private final char not = '\u00AC';
 	
-	public OntologyVisitor(IRI iri) {
+	public OntologyVisitor(IRI iri, String toRemove) {
+		
 		this.iri=iri;
+		if(toRemove!=null) {
+			this.toRemove=toRemove;
+		}
+		
 		try {
 			this.out = new PrintStream(System.out, true, "UTF-8");
 		} catch (UnsupportedEncodingException e) {
@@ -55,7 +64,10 @@ public class OntologyVisitor implements OWLObjectVisitor{
 	}
 
 	public void visit(OWLEquivalentClassesAxiom eq) {
-		System.out.println(conceptToString(iri, eq.toString()) +" ");
+		for (OWLClass c: eq.getNamedClasses()) {
+			System.out.println(conceptToString(iri, c.toString()) +" ");
+		}
+
 		eq.getOperandsAsList().get(1).accept(this); //destra
 		System.out.print(" = ");
 		eq.getOperandsAsList().get(0).accept(this); //sinistra
@@ -63,11 +75,38 @@ public class OntologyVisitor implements OWLObjectVisitor{
 	}
 	
 	public void visit(OWLObjectIntersectionOf o) {
-		for(OWLClassExpression ex: o.getOperandsAsList()) {
+		List<OWLClassExpression> operands = o.getOperandsAsList(); 
+		int i=operands.size()-1;
+		
+		for(OWLClassExpression ex: operands) {
 			ex.accept(this);
-		    out.print(intersect + " " );
+			if(i > 0) {
+				out.print(intersect + " " );
+				i--;
+			}
 		}
-		System.out.print("T");
+	}
+	
+	public void visit(OWLObjectAllValuesFrom desc) {
+		out.print(foreach + " ");
+		System.out.print(conceptToString(iri, desc.getProperty().toString()));
+		desc.getProperty().accept(this);
+		System.out.print(".");
+	    desc.getFiller().accept(this);
+	    		
+	}
+	
+	public void visit(OWLObjectUnionOf o) {
+		List<OWLClassExpression> operands = o.getOperandsAsList(); 
+		int i=operands.size()-1;
+		
+		for(OWLClassExpression ex: operands) {
+			ex.accept(this);
+			if(i > 0) {
+				out.print(union + " " );
+				i--;
+			}
+		}
 	}
 	
     public void renderGraph(@Nonnull OWLOntology ontology) {
@@ -77,7 +116,7 @@ public class OntologyVisitor implements OWLObjectVisitor{
     }
     
     private String conceptToString(IRI iri, String str) {
-		str = str.replace(iri.toString(), "");
+		str = str.replace(iri.toString()+toRemove, "");
 		str = str.replace("#", "");
 		str = str.replace("<", "");
 		str = str.replace(">", "");
