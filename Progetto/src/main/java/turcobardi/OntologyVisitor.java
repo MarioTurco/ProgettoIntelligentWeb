@@ -76,7 +76,7 @@ public class OntologyVisitor implements OWLObjectVisitor{
     	return;
     }
     
-    private static String conceptToString(IRI iri, String str) {
+    private String conceptToString(IRI iri, String str) {
 		str = str.replace(iri.toString(), "");
 		str = str.replace("#", "");
 		str = str.replace("<", "");
