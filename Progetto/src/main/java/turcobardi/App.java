@@ -49,11 +49,11 @@ public class App {
     		@Override
     		public void visit(OWLObjectSomeValuesFrom desc) {
 	    		System.out.print(" Exists ");
+	    //		System.out.println(desc);
+	    		System.out.print(conceptToString(iri, desc.getProperty().toString()));
 	    		desc.getProperty().accept(this);
-	    		desc.getFiller().accept(this);
-	    		System.out.println(desc.getObjectPropertiesInSignature());
-	    		
-	    		//desc.getObjectPropertiesInSignature();
+	    		System.out.print(".");
+	    	    desc.getFiller().accept(this);
 	    		
     		}
     		
@@ -78,6 +78,7 @@ public class App {
     				ex.accept(this);
     				System.out.print(" Intersecato ");
     			}
+    			System.out.print("T");
     		}
     		
     		
