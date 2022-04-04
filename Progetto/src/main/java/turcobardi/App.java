@@ -40,6 +40,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
 		File file = new File("C:\\Users\\Mario\\Desktop\\pizza.owl.xml");
+
 		OWLOntology o = man.loadOntologyFromOntologyDocument(file);
 		System.out.println("Assiomi :" + o.getAxiomCount());
 		IRI iri = o.getOntologyID().getOntologyIRI().get();
@@ -49,6 +50,7 @@ public class App {
     	o.signature().forEach(s -> System.out.println(s.toString().replace(iri.toString(), "")));
     	
     	}*/
+		/*
     	OWLObjectVisitor v = new OWLObjectVisitor() {
     		PrintStream out = new PrintStream(System.out, true, "UTF-8");
     		char intersect = '\u2293';
@@ -118,24 +120,16 @@ public class App {
     		}
     		
     		
-    	};
+    	};*/
+		OntologyVisitor visitor = new OntologyVisitor(iri);
     	Set<OWLLogicalAxiom> aBox = o.getLogicalAxioms(Imports.fromBoolean(false));
     	System.out.println(aBox.size());
     	for(OWLLogicalAxiom a: aBox){
-    		a.accept(v);
+    		a.accept(visitor);
     	}
     	
     	
 	}
-	public static String conceptToString(IRI iri, String c) {
-		c = (c.replace(iri.toString(), ""));
-		c = (c.replace("#", ""));
-		c = c.replace("<", "");
-		c = (c.replace(">", ""));
-		
-		return c;
-	}
-		
-		
+	
 
 }
