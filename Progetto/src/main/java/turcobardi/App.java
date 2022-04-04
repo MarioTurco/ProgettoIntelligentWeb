@@ -1,6 +1,9 @@
 package turcobardi;
 
 import java.io.File;
+import java.io.PrintStream;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -32,7 +35,7 @@ import org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor;
 public class App {
 
 	
-	public static void main(String[] args) throws OWLOntologyCreationException {
+	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
 		File file = new File("C:\\Users\\Mario\\Desktop\\concept.owl.xml");
 		OWLOntology o = man.loadOntologyFromOntologyDocument(file);
@@ -45,10 +48,15 @@ public class App {
     	
     	}*/
     	OWLObjectVisitor v = new OWLObjectVisitor() {
-    		
+    		PrintStream out = new PrintStream(System.out, true, "UTF-8");
+    		char intersect = '\u2293';
+    		char union = '\u2294';
+    		char foreach = '\u2200';
+    		char exists = '\u2203';
+    		char not = '\u2235';
     		@Override
     		public void visit(OWLObjectSomeValuesFrom desc) {
-	    		System.out.print(" Exists ");
+	    		out.print(exists + " ");
 	    //		System.out.println(desc);
 	    		System.out.print(conceptToString(iri, desc.getProperty().toString()));
 	    		desc.getProperty().accept(this);
@@ -63,7 +71,8 @@ public class App {
 	    		return;
     		}
     		public void visit(OWLObjectComplementOf eq) {
-    			System.out.print(" not " + conceptToString(iri, eq.getOperand().toString()) + " ");
+    			out.print(not);
+    			System.out.print(conceptToString(iri, eq.getOperand().toString()) + " ");
     		}
     	
     		public void visit(OWLEquivalentClassesAxiom eq) {
@@ -76,7 +85,7 @@ public class App {
     		public void visit(OWLObjectIntersectionOf o) {
     			for(OWLClassExpression ex: o.getOperandsAsList()) {
     				ex.accept(this);
-    				System.out.print(" Intersecato ");
+    			    out.print(intersect + " " );
     			}
     			System.out.print("T");
     		}
