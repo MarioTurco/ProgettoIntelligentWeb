@@ -15,10 +15,10 @@ import org.semanticweb.owlapi.model.PrefixManager;
 
 
 
-public class OnotlogyEditor {
+public class OntologyEditor {
 	OWLOntology ontology = null;
 	IRI iri = null;
-	public OnotlogyEditor(OWLOntology ontology, IRI iri) {
+	public OntologyEditor(OWLOntology ontology, IRI iri) {
 		this.ontology = ontology;
 		this.iri = iri;
 	}
