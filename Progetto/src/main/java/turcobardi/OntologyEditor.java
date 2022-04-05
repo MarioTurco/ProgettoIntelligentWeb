@@ -23,7 +23,7 @@ public class OntologyEditor {
 		this.iri = iri;
 	}
 	
-	public OWLClassAssertionAxiom CreateIndividual(OWLClass className, String indName) throws OWLOntologyCreationException,
+	public OWLClassAssertionAxiom createIndividual(OWLClass className, String indName) throws OWLOntologyCreationException,
 	    OWLOntologyStorageException {
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLOntology ont = manager.createOntology();

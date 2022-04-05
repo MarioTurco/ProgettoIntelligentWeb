@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.semanticweb.owlapi.model.OWLAxiom;
+import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
+import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLOntology;
 
@@ -33,10 +35,16 @@ public class ALCReasoner {
 	}
 	
 	
-	public void alcTableaux(int entity, Set<OWLObject> Lx) {
+	public boolean alcTableaux() {
+		int ind = 0;
+		Set<OWLObject> Lx = new HashSet<>();
+		Lx.add(concept);
+		return implementTableaux(ind, Lx);	
+	}
+	
+	private boolean implementTableaux(int ind, Set<OWLObject> Lx) {
 		
-		
-		
+	
 	}
 	
 }
