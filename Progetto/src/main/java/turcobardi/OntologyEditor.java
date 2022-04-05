@@ -34,8 +34,5 @@ public class OntologyEditor {
 
 	}
 	
-	public void addIndividualsToClass(String className, String indName) throws Exception{
-	    
-	}
 	
 }
