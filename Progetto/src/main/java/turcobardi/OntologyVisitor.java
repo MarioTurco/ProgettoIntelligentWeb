@@ -45,7 +45,6 @@ public class OntologyVisitor implements OWLObjectVisitor{
 	
 	public void visit(OWLObjectSomeValuesFrom desc) {
 		out.print(exists + " ");
-		//System.out.println(desc);
 		System.out.print(conceptToString(iri, desc.getProperty().toString()));
 		desc.getProperty().accept(this);
 		System.out.print(".");
@@ -60,6 +59,7 @@ public class OntologyVisitor implements OWLObjectVisitor{
 	
 	public void visit(OWLObjectComplementOf eq) {
 		out.print(not);
+		eq.getOperand().accept(this);
 		System.out.print(conceptToString(iri, eq.getOperand().toString()) + " ");
 	}
 
