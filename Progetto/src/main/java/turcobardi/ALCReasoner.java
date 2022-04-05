@@ -15,16 +15,25 @@ import org.semanticweb.owlapi.model.OWLOntology;
 public class ALCReasoner {
 	
 	private OWLOntology concept = null;
+	private Set<OWLObject> abox = null;
 	
 	public ALCReasoner(OWLOntology concept) {
-		this.concept=concept;
+		this.concept = concept;
+		this.abox = new HashSet<>();
 	}
 	/* rule to resolve intersection */
 	private void IntersectionRule() {
+		
 		return;
 	}
 	
-	public void alcTableaux(int entity, Set<OWLObject> abox, Set<OWLObject> Lx) {
+	private void UnionRule() {
+		
+		return  ;
+	}
+	
+	
+	public void alcTableaux(int entity, Set<OWLObject> Lx) {
 		
 		
 		

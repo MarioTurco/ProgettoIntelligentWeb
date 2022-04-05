@@ -2,10 +2,10 @@ package turcobardi;
 
 import org.semanticweb.owlapi.model.OWLOntology;
 
-public class OnotlogyEditor {
+public class OntologyEditor {
 	OWLOntology ontology = null;
 	
-	public OnotlogyEditor(OWLOntology ontology) {
+	public OntologyEditor(OWLOntology ontology) {
 		this.ontology = ontology;
 	}
 	
