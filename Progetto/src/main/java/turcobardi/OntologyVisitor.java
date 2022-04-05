@@ -6,7 +6,6 @@ import java.util.List;
 
 import javax.annotation.Nonnull;
 import org.semanticweb.owlapi.model.IRI;
-import org.checkerframework.checker.nullness.qual.NonNull;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
