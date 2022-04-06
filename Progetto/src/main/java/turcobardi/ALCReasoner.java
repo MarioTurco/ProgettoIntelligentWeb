@@ -80,27 +80,50 @@ public class ALCReasoner{
 			aBox.add(((OWLLogicalAxiom) obj).getNNF());
 		}
 		
-		
 		return implementTableaux(ind, Lx, aBox);	
+	}
+	
+	private boolean hasClash(Set<OWLObject> abox) {
+		for (OWLObject o: abox) {
+			if (o instanceof OWLClassExpression) {
+				if(((OWLClassExpression) o).isClassExpressionLiteral() && abox.contains(((OWLClassExpression) o).getObjectComplementOf())) {
+					return true;
+				}
+			}
+		}
+		return false;
 	}
 	
 	private boolean implementTableaux(int ind, Set<OWLObject> Lx, Set<OWLObject> aBox) {
 		OntologyPrintingVisitor printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
 		
-		System.out.println("Abox prima: ");
+		/*System.out.println("Abox prima: ");
     	for(OWLObject a: aBox){
+    		//System.out.print(a);
     		a.accept(printer);
-    	}
+    	}*/
 		//REGOLA INTERSEZIONE
     	aBox.addAll(this.intersectionRule(aBox));
     	//REGOLA UNIONE
-    	//aBox.addAll(this.unionRule(aBox));
+    	for (OWLObject o : this.unionRule(aBox)) {
+    		Set<OWLObject> intersec = new HashSet<>(((OWLClassExpression) o).asDisjunctSet());
+    		intersec.retainAll(aBox);
+    		if(intersec.size()==0) {
+    			Set<OWLObject> tmp = new HashSet<>(aBox);
+    			tmp.add(o);
+    			if(hasClash(tmp)) {
+    				return false;
+    			}
+    			implementTableaux(ind, Lx, tmp);
+    		}
+    	}
     	
 		System.out.println("\nAbox dopo: " );
 		for(OWLObject a: aBox){
     		a.accept(printer);
+    		System.out.print(",");
     	}
-		return false;
+		return true;
 	}
 	
 }

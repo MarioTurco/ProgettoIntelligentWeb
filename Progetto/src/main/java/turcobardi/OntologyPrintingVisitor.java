@@ -77,6 +77,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	public void visit(OWLObjectIntersectionOf o) {
 		List<OWLClassExpression> operands = o.getOperandsAsList(); 
 		int i=operands.size()-1;
+		System.out.print("(");
 		for(OWLClassExpression ex: operands) {
 			ex.accept(this);
 			if(i > 0) {
@@ -84,6 +85,8 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 				i--;
 			}
 		}
+		System.out.print(")");
+
 	}
 	
 	public void visit(OWLObjectAllValuesFrom desc) {
@@ -98,7 +101,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	public void visit(OWLObjectUnionOf o) {
 		List<OWLClassExpression> operands = o.getOperandsAsList(); 
 		int i=operands.size()-1;
-		
+		System.out.print("(");
 		for(OWLClassExpression ex: operands) {
 			ex.accept(this);
 			if(i > 0) {
@@ -106,6 +109,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 				i--;
 			}
 		}
+		System.out.print(")");
 	}
 	
     public void renderGraph(@Nonnull OWLOntology ontology) {
