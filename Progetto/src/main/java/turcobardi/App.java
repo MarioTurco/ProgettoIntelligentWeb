@@ -60,6 +60,7 @@ public class App {
     		a.accept(visitor);
     	}*/
     	ALCReasoner alc = new ALCReasoner(o);
+    	System.out.println("---");
     	System.out.println("SAT: " + alc.alcTableaux());
     	
 	}

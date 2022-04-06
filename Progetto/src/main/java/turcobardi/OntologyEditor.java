@@ -5,6 +5,7 @@ import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
+import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -18,12 +19,12 @@ import org.semanticweb.owlapi.model.PrefixManager;
 public class OntologyEditor {
 	OWLOntology ontology = null;
 	IRI iri = null;
-	public OntologyEditor(OWLOntology ontology, IRI iri) {
+	public OntologyEditor(OWLOntology ontology) {
 		this.ontology = ontology;
-		this.iri = iri;
+		this.iri = ontology.getOntologyID().getOntologyIRI().get();
 	}
 	
-	public OWLClassAssertionAxiom createIndividual(OWLClass className, String indName) throws OWLOntologyCreationException,
+	public OWLClassAssertionAxiom createIndividual(OWLClassExpression className, String indName) throws OWLOntologyCreationException,
 	    OWLOntologyStorageException {
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLOntology ont = manager.createOntology();
@@ -34,7 +35,7 @@ public class OntologyEditor {
 
 	}
 	
-	public void addIndividualsToClass(String className, String indName) throws Exception{
+	public void addIndividualsToClass(OWLClassExpression tmp, String indName) throws Exception{
 	    
 	}
 	

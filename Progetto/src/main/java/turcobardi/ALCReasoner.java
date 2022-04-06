@@ -10,12 +10,16 @@ import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
+import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLogicalAxiom;
 import org.semanticweb.owlapi.model.OWLObject;
+import org.semanticweb.owlapi.model.OWLObjectComplementOf;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.OWLOntologyCreationException;
+import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
 /*
  * 
@@ -25,10 +29,14 @@ import org.semanticweb.owlapi.model.OWLOntology;
 public class ALCReasoner{
 	
 	private OWLOntology concept = null;
+	private OntologyEditor editor = null;
+	private EquivalenceRuleVisitor equivalence = null;
 	//private Set<OWLObject> abox = null;
 	
 	public ALCReasoner(OWLOntology concept) {
 		this.concept = concept;
+		this.editor = new OntologyEditor(concept);
+		this.equivalence = new EquivalenceRuleVisitor();
 		//this.abox = new HashSet<>();
 	}
 	
@@ -71,11 +79,33 @@ public class ALCReasoner{
     	}
 		return toAdd;
 	}
-	
+	private Set<OWLObject> instantiateMainConcept(Set<OWLObject> aBox){
+		equivalence.visit(concept);
+		OWLClassExpression tmp = equivalence.getOperands();
+		try {
+			OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
+		
+			aBox.add(mainConcept);
+		} catch (OWLOntologyCreationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (OWLOntologyStorageException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		return aBox;
+	}
 	public boolean alcTableaux() {
 		int ind=0;
 		Set<OWLObject> Lx = new HashSet<>();
 		Set<OWLObject> aBox = new HashSet<>();
+	
+		//Instanziazione del concetto principale
+		 aBox = instantiateMainConcept(aBox);
+		
+		 //Aggiunta degli altri assiomi
 		for (OWLObject obj :concept.getLogicalAxioms()) {
 			aBox.add(((OWLLogicalAxiom) obj).getNNF());
 		}

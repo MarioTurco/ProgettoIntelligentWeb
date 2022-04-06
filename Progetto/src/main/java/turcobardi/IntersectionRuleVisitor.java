@@ -17,7 +17,7 @@ public class IntersectionRuleVisitor implements OWLObjectVisitor{
 	
 	public void visit(OWLObjectIntersectionOf o) {
 		List<OWLClassExpression> operands = o.getOperandsAsList();
-		System.out.print(operands);
+		
 		operandsRet.addAll(operands);
 		System.out.print("\n");
 	}

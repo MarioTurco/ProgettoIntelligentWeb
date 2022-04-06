@@ -18,9 +18,8 @@ public class UnionRuleVisitor implements OWLObjectVisitor {
 		
 		public void visit(OWLObjectUnionOf o) {
 			List<OWLClassExpression> operands = o.getOperandsAsList();
-			System.out.print(operands);
+			
 			operandsRet.addAll(operands);
-			System.out.print("\n");
 		}
 		
 		public void visit(OWLEquivalentClassesAxiom eq) {
