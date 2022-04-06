@@ -52,7 +52,7 @@ public class App {
     	}*/
 		//OntologyPrintingVisitor visitor = new OntologyPrintingVisitor(iri,"");
     	Set<OWLLogicalAxiom> aBox = o.getLogicalAxioms(Imports.fromBoolean(false));
-    	System.out.println(aBox.size());
+    	System.out.println("Concept size: " + aBox.size());
     	/*for(OWLLogicalAxiom a: aBox){
     		a.accept(visitor);
     	}*/
