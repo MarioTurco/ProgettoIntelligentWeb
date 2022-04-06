@@ -39,7 +39,7 @@ public class App {
 	
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
-		File file = new File("C:\\Users\\checc\\Desktop\\ProgettoIntelligentWeb\\Progetto\\concept.owl.xml");
+		File file = new File("C:\\Users\\turco\\OneDrive\\Desktop\\ProgettoIntelligentWeb\\Progetto\\concept.owl.xml");
 
 		OWLOntology o = man.loadOntologyFromOntologyDocument(file);
 		System.out.println("Assiomi :" + o.getAxiomCount());
@@ -50,13 +50,14 @@ public class App {
     	o.signature().forEach(s -> System.out.println(s.toString().replace(iri.toString(), "")));
     	
     	}*/
-		OntologyVisitor visitor = new OntologyVisitor(iri,"");
+		OntologyPrintingVisitor visitor = new OntologyPrintingVisitor(iri,"");
     	Set<OWLLogicalAxiom> aBox = o.getLogicalAxioms(Imports.fromBoolean(false));
     	System.out.println(aBox.size());
     	for(OWLLogicalAxiom a: aBox){
     		a.accept(visitor);
     	}
-    	
+    	ALCReasoner alc = new ALCReasoner(o);
+    	alc.alcTableaux();
     	
 	}
 	

@@ -17,7 +17,7 @@ import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
-public class OntologyVisitor implements OWLObjectVisitor{
+public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	
 	private IRI iri = null;
 	private String toRemove = "";
@@ -28,7 +28,7 @@ public class OntologyVisitor implements OWLObjectVisitor{
 	private final char exists = '\u2203';
 	private final char not = '\u00AC';
 	
-	public OntologyVisitor(IRI iri, String toRemove) {
+	public OntologyPrintingVisitor(IRI iri, String toRemove) {
 		
 		this.iri=iri;
 		if(toRemove!=null) {
@@ -41,6 +41,7 @@ public class OntologyVisitor implements OWLObjectVisitor{
 			e.printStackTrace();
 		};
 	}
+	
 	
 	public void visit(OWLObjectSomeValuesFrom desc) {
 		out.print(exists + " ");
@@ -76,7 +77,6 @@ public class OntologyVisitor implements OWLObjectVisitor{
 	public void visit(OWLObjectIntersectionOf o) {
 		List<OWLClassExpression> operands = o.getOperandsAsList(); 
 		int i=operands.size()-1;
-		
 		for(OWLClassExpression ex: operands) {
 			ex.accept(this);
 			if(i > 0) {
