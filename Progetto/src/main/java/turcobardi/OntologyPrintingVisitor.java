@@ -69,8 +69,8 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		}
 
 		eq.getOperandsAsList().get(1).accept(this); //destra
-		System.out.print(" = ");
-		eq.getOperandsAsList().get(0).accept(this); //sinistra
+		//System.out.print(" = ");
+		//eq.getOperandsAsList().get(0).accept(this); //sinistra
 		return;
 	}
 	

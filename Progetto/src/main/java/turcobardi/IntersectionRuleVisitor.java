@@ -4,22 +4,42 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassExpression;
+import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
+import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
 public class IntersectionRuleVisitor implements OWLObjectVisitor{
 	
-	private Set<OWLClassExpression> operandsRet = null; 
+	private Set<OWLClassExpression> operandsRet = new HashSet<>();
 	
 	public void visit(OWLObjectIntersectionOf o) {
 		List<OWLClassExpression> operands = o.getOperandsAsList();
-		operandsRet = new HashSet<>();
+		System.out.print(operands);
 		operandsRet.addAll(operands);
 	}
 	
+	public void visit(OWLEquivalentClassesAxiom eq) {
+
+		eq.getOperandsAsList().get(1).accept(this); //destra
+		//eq.getOperandsAsList().get(0).accept(this); //sinistra
+		return;
+	}
+	
+	public void visit(OWLObjectUnionOf o) {
+		/*List<OWLClassExpression> operands = o.getOperandsAsList(); ;
+		
+		for(OWLClassExpression ex: operands) {		
+			ex.accept(this);
+		}*/
+	}
+	
 	public Set<OWLClassExpression> getOperands(){
-		return operandsRet;
+		Set<OWLClassExpression> tmp = new HashSet<>(operandsRet);
+		operandsRet.clear();
+		return tmp;
 	}
 	
 }

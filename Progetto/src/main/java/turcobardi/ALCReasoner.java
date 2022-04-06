@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.semanticweb.owlapi.model.HasLogicalAxioms;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
@@ -24,11 +25,11 @@ import org.semanticweb.owlapi.model.OWLOntology;
 public class ALCReasoner{
 	
 	private OWLOntology concept = null;
-	private Set<OWLObject> abox = null;
+	//private Set<OWLObject> abox = null;
 	
 	public ALCReasoner(OWLOntology concept) {
 		this.concept = concept;
-		this.abox = new HashSet<>();
+		//this.abox = new HashSet<>();
 	}
 	
 	
@@ -45,50 +46,60 @@ public class ALCReasoner{
 		return null;
 	}*/
 	
-	private void UnionRule() {
+	private Set<OWLObject> unionRule(Set<OWLObject> abox) {
 		
-		return  ;
+		Set<OWLObject> toAdd = new HashSet<>(); 
+		UnionRuleVisitor vis = new UnionRuleVisitor();
+		for(OWLObject a: abox) {
+
+			a.accept(vis);
+			toAdd.addAll(vis.getOperands());
+
+    	}
+		return toAdd;
 	}
 	
-	private Set<OWLLogicalAxiom> intersectionRule(OWLObjectIntersectionOf intersection) {
-		List<OWLClassExpression> operands = intersection.getOperandsAsList(); 
-		Set<OWLLogicalAxiom> toAdd = new HashSet<>();
-		for(OWLClassExpression ex: operands) {
-			toAdd.add((OWLLogicalAxiom) ex);
-		}
+	private Set<OWLObject> intersectionRule(Set<OWLObject> abox) {
+
+		Set<OWLObject> toAdd = new HashSet<>(); 
+		IntersectionRuleVisitor vis = new IntersectionRuleVisitor();
+		for(OWLObject a: abox) {
+
+			a.accept(vis);
+			toAdd.addAll(vis.getOperands());
+
+    	}
 		return toAdd;
 	}
 	
 	public boolean alcTableaux() {
-		OntologyPrintingVisitor printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
-		int ind = 0;
-		Set<OWLLogicalAxiom> Lx = new HashSet<>();
-		
-		Set<OWLLogicalAxiom> aBox = concept.getLogicalAxioms();
-		/*for(OWLLogicalAxiom a: aBox) {
-			Lx.add(a);
-		}*/
-		System.out.println("Abox prima: ");
-    	for(OWLLogicalAxiom a: aBox){
-    		a.accept(printer);
-    	}
-		//Usiamo la regola dell'AND
-		for(OWLLogicalAxiom a: aBox) {
-			if(a.getAxiomType().toString() == "OWLObjectIntersectionOf") {
-				aBox.addAll(intersectionRule((OWLObjectIntersectionOf) a));
-			}
+		int ind=0;
+		Set<OWLObject> Lx = new HashSet<>();
+		Set<OWLObject> aBox = new HashSet<>();
+		for (OWLObject obj :concept.getLogicalAxioms()) {
+			aBox.add(((OWLLogicalAxiom) obj).getNNF());
 		}
-		System.out.println("Abox dopo: " );
-		for(OWLLogicalAxiom a: aBox){
-    		a.accept(printer);
-    	}
-		return false;
 		
-		//return implementTableaux(ind, Lx);	
+		
+		return implementTableaux(ind, Lx, aBox);	
 	}
 	
-	private boolean implementTableaux(int ind, Set<OWLObject> Lx) {
+	private boolean implementTableaux(int ind, Set<OWLObject> Lx, Set<OWLObject> aBox) {
+		OntologyPrintingVisitor printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
 		
+		System.out.println("Abox prima: ");
+    	for(OWLObject a: aBox){
+    		a.accept(printer);
+    	}
+		//REGOLA INTERSEZIONE
+    	aBox.addAll(this.intersectionRule(aBox));
+    	//REGOLA UNIONE
+    	//aBox.addAll(this.unionRule(aBox));
+    	
+		System.out.println("\nAbox dopo: " );
+		for(OWLObject a: aBox){
+    		a.accept(printer);
+    	}
 		return false;
 	}
 	
