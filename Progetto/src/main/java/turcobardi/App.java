@@ -42,7 +42,7 @@ public class App {
 		File file = new File("concept2.owl.xml");
 
 		OWLOntology o = man.loadOntologyFromOntologyDocument(file);
-		System.out.println("Assiomi :" + o.getAxiomCount());
+		System.out.println("Numero assiomi :" + o.getAxiomCount());
 		IRI iri = o.getOntologyID().getOntologyIRI().get();
 		
 		/*
@@ -50,12 +50,11 @@ public class App {
     	o.signature().forEach(s -> System.out.println(s.toString().replace(iri.toString(), "")));
     	
     	}*/
-		//OntologyPrintingVisitor visitor = new OntologyPrintingVisitor(iri,"");
+		OntologyPrintingVisitor visitor = new OntologyPrintingVisitor(iri,"");
     	Set<OWLLogicalAxiom> aBox = o.getLogicalAxioms(Imports.fromBoolean(false));
-    	System.out.println(aBox.size());
-    	/*for(OWLLogicalAxiom a: aBox){
+    	for(OWLLogicalAxiom a: aBox){
     		a.accept(visitor);
-    	}*/
+    	}
     	ALCReasoner alc = new ALCReasoner(o);
     	alc.alcTableaux();
     	
