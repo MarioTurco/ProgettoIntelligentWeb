@@ -40,20 +40,6 @@ public class ALCReasoner{
 		//this.abox = new HashSet<>();
 	}
 	
-	
-	
-	/*
-	private Set<OWLLogicalAxiom> intersectionRule(OWLLogicalAxiom intersection) {
-		if(!(intersection instanceof OWLObjectIntersectionOf))
-			return null;
-		Set<OWLClassExpression> toAdd = new HashSet<>();
-		intersection.getAxiomType();
-		for(OWLClassExpression ex: operands) {
-			toAdd.add(ex);
-		}
-		return null;
-	}*/
-	
 	private Set<OWLObject> unionRule(Set<OWLObject> abox) {
 		
 		Set<OWLObject> toAdd = new HashSet<>(); 
@@ -72,9 +58,21 @@ public class ALCReasoner{
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		IntersectionRuleVisitor vis = new IntersectionRuleVisitor();
 		for(OWLObject a: abox) {
-
+			//System.out.println(a);
 			a.accept(vis);
-			toAdd.addAll(vis.getOperands());
+			Set<OWLClassAssertionAxiom> newAxioms = new HashSet<>();
+			for(OWLClassExpression ex : vis.getOperands()) {
+				try {
+					newAxioms.add(editor.createIndividual(ex, "x0"));
+					toAdd.addAll(newAxioms);
+				} catch (OWLOntologyCreationException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (OWLOntologyStorageException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 
     	}
 		return toAdd;
@@ -84,30 +82,34 @@ public class ALCReasoner{
 		OWLClassExpression tmp = equivalence.getOperands();
 		try {
 			OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
-		
 			aBox.add(mainConcept);
 		} catch (OWLOntologyCreationException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (OWLOntologyStorageException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
 		return aBox;
 	}
+	
 	public boolean alcTableaux() {
 		int ind=0;
 		Set<OWLObject> Lx = new HashSet<>();
 		Set<OWLObject> aBox = new HashSet<>();
 	
 		//Instanziazione del concetto principale
-		 aBox = instantiateMainConcept(aBox);
-		
-		 //Aggiunta degli altri assiomi
+		//Aggiunta degli altri assiomi
 		for (OWLObject obj :concept.getLogicalAxioms()) {
-			aBox.add(((OWLLogicalAxiom) obj).getNNF());
+			equivalence.visit(concept);
+			OWLClassExpression tmp = equivalence.getOperands();
+			try {
+				OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
+				aBox.add(mainConcept);
+			} catch (OWLOntologyCreationException e) {
+				e.printStackTrace();
+			} catch (OWLOntologyStorageException e) {
+				e.printStackTrace();
+			}
+			
 		}
 		
 		return implementTableaux(ind, Lx, aBox);	
@@ -123,6 +125,34 @@ public class ALCReasoner{
 		}
 		return false;
 	}
+	/* OLD
+	public boolean alcTableaux() {
+		int ind=0;
+		Set<OWLObject> Lx = new HashSet<>();
+		Set<OWLObject> aBox = new HashSet<>();
+	
+		//Instanziazione del concetto principale
+		 aBox = instantiateMainConcept(aBox);
+		
+		//Aggiunta degli altri assiomi
+		for (OWLObject obj :concept.getLogicalAxioms()) {
+			
+			aBox.add(((OWLLogicalAxiom) obj).getNNF());
+		}
+		
+		return implementTableaux(ind, Lx, aBox);	
+	}
+	
+	private boolean hasClash(Set<OWLObject> abox) {
+		for (OWLObject o: abox) {
+			if (o instanceof OWLClassExpression) {
+				if(((OWLClassExpression) o).isClassExpressionLiteral() && abox.contains(((OWLClassExpression) o).getObjectComplementOf())) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}*/
 	
 	private boolean implementTableaux(int ind, Set<OWLObject> Lx, Set<OWLObject> aBox) {
 		OntologyPrintingVisitor printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");

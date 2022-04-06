@@ -35,8 +35,5 @@ public class OntologyEditor {
 
 	}
 	
-	public void addIndividualsToClass(OWLClassExpression tmp, String indName) throws Exception{
-	    
-	}
-	
+
 }
