@@ -17,6 +17,7 @@ import org.semanticweb.owlapi.model.OWLLogicalAxiom;
 import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLObjectComplementOf;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
+import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
@@ -37,6 +38,12 @@ public class ALCReasoner{
 		this.concept = concept;
 		this.editor = new OntologyEditor(concept);
 		this.equivalence = new EquivalenceRuleVisitor();
+	}
+	
+	private List<OWLObject> existsRule(OWLObject abox) {
+		ExistsRuleVisitor vis = new ExistsRuleVisitor();
+		abox.accept(vis);
+		return vis.getPropertyAndFiller();
 	}
 	
 	private Set<OWLObject> unionRule(OWLObject abox) {
@@ -182,10 +189,17 @@ public class ALCReasoner{
     	for (OWLObject ax: Lx) {
     		Set<OWLObject> resURule = this.unionRule(ax);
     		if(resURule.size()>0) {
+    			/*System.out.println("INSIEME DISGIUNTI:");
+    			for(OWLObject a: resURule){
+    	    		a.accept(printer);
+    	    		System.out.print(",");
+    	    	}*/
     			for (OWLObject o : resURule) {
             		if(!aBox.contains(o)) {
             			Set<OWLObject> tmpLx = new HashSet<>(Lx);
             			aBox.add(o);
+            			//System.out.println("INSERISCO: ");
+            			//o.accept(printer);
             			tmpLx.add(((OWLClassAssertionAxiom) o).getClassExpression());
             			
             			System.out.println("\nAbox dopo regola disg: ");
@@ -200,6 +214,8 @@ public class ALCReasoner{
             			}
             			else {
             				aBox.remove(o);
+            				System.out.println("RIMOZIONE: ");
+            				o.accept(printer);
             				tmpLx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
             			}
             		}
@@ -219,13 +235,20 @@ public class ALCReasoner{
     	
     	if(hasClash(Lx)) {
     		//aBox.removeAll(tmp);
-    		for (OWLObject o: tmp) {
+    		/*for (OWLObject o: tmp) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
-        	}
+        	}*/
 			return false;
 		}
     	//Regola Esiste
-	
+    	for (OWLObject o: aBox) {
+    		List<OWLObject> propertyAndFiller = this.existsRule(o);
+    		if(propertyAndFiller.size()>0) {
+    			OWLObjectPropertyExpression property = (OWLObjectPropertyExpression) propertyAndFiller.get(0);
+    			OWLClassExpression filler = (OWLClassExpression) propertyAndFiller.get(1);
+    			System.out.println(property+"."+filler);
+    		}
+    	}
 		return true;
 	}
 	
