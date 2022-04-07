@@ -8,6 +8,7 @@ import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLIndividual;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -29,7 +30,7 @@ public class OntologyEditor {
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLOntology ont = manager.createOntology();
 		OWLDataFactory factory = manager.getOWLDataFactory();
-		OWLIndividual newInd = factory.getOWLNamedIndividual(IRI.create(iri + "#" + indName));
+		OWLNamedIndividual newInd = factory.getOWLNamedIndividual(IRI.create(iri + "#" + indName));
 		OWLClassAssertionAxiom axiom= factory.getOWLClassAssertionAxiom(className, newInd);
 		return axiom;
 

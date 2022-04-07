@@ -30,7 +30,7 @@ public class EquivalenceRuleVisitor implements OWLObjectVisitor{
 		
 		public void visit(OWLOntology concept) {
 			for(OWLAxiom a: concept.getLogicalAxioms(Imports.fromBoolean(false))) {
-				a.accept(this);					
+				a.getNNF().accept(this);					
 			}
 		}
 		

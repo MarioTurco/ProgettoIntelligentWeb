@@ -12,6 +12,7 @@ import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLIndividual;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectComplementOf;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
@@ -102,8 +103,15 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	}
 	
 	//TODO non funziona
+	public void visit(OWLNamedIndividual i) {
+		System.out.print(i.getIRI().getShortForm());
+	}
+	
 	public void visit(OWLIndividual i) {
-		System.out.println("(" + i + ")");
+		for (OWLNamedIndividual ind: i.getIndividualsInSignature()) {
+			i.accept(this);
+		}
+		
 	}
 	
 	public void visit(OWLClassAssertionAxiom o) {
@@ -111,7 +119,9 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		//System.out.println(o);
 		o.getClassExpression().accept(this);
 		
-		System.out.println("(" + individual + ")");
+		System.out.print("(");
+		individual.accept(this);
+		System.out.print(")");
 	}
 	
 	public void visit(OWLObjectUnionOf o) {

@@ -51,16 +51,16 @@ public class App {
     	
     	}*/
 		OntologyPrintingVisitor visitor = new OntologyPrintingVisitor(iri,"");
-    	//Set<OWLLogicalAxiom> aBox = o.getLogicalAxioms(Imports.fromBoolean(false));
+    	Set<OWLLogicalAxiom> aBox = o.getLogicalAxioms(Imports.fromBoolean(false));
 
-    	//System.out.println("Concept size: " + aBox.size());
+    	System.out.println("Concept size: " + aBox.size());
 
-    	/*for(OWLLogicalAxiom a: aBox){
+    	for(OWLLogicalAxiom a: aBox){
 
     		a.accept(visitor);
-    	}*/
+    	}
     	ALCReasoner alc = new ALCReasoner(o);
-    	System.out.println("SAT: " + alc.alcTableaux());
+    	System.out.println("\nSAT: " + alc.alcTableaux());
     	
 	}
 	

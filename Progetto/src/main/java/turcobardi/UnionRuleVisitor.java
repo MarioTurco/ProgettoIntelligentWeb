@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLObjectUnionOf;
@@ -27,6 +28,10 @@ public class UnionRuleVisitor implements OWLObjectVisitor {
 			eq.getOperandsAsList().get(1).accept(this); //destra
 			//eq.getOperandsAsList().get(0).accept(this); //sinistra
 			return;
+		}
+		
+		public void visit(OWLClassAssertionAxiom ca) {
+			ca.getClassExpression().accept(this);
 		}
 		
 		public Set<OWLClassExpression> getOperands(){

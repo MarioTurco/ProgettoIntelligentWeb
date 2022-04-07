@@ -1,5 +1,6 @@
 package turcobardi;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -31,25 +32,30 @@ public class ALCReasoner{
 	private OWLOntology concept = null;
 	private OntologyEditor editor = null;
 	private EquivalenceRuleVisitor equivalence = null;
-	//private Set<OWLObject> abox = null;
-	
+
 	public ALCReasoner(OWLOntology concept) {
 		this.concept = concept;
 		this.editor = new OntologyEditor(concept);
 		this.equivalence = new EquivalenceRuleVisitor();
-		//this.abox = new HashSet<>();
 	}
 	
-	private Set<OWLObject> unionRule(Set<OWLObject> abox) {
+	private Set<OWLObject> unionRule(OWLObject abox) {
 		
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		UnionRuleVisitor vis = new UnionRuleVisitor();
-		for(OWLObject a: abox) {
+		abox.accept(vis);
+		Set<OWLClassAssertionAxiom> newAxioms = new HashSet<>();
+		for(OWLClassExpression ex : vis.getOperands()) {
+			try {
+				newAxioms.add(editor.createIndividual(ex, "x0"));
+				toAdd.addAll(newAxioms);
+			} catch (OWLOntologyCreationException e) {
+				e.printStackTrace();
+			} catch (OWLOntologyStorageException e) {
+				e.printStackTrace();
+			}
+		}
 
-			a.accept(vis);
-			toAdd.addAll(vis.getOperands());
-
-    	}
 		return toAdd;
 	}
 	
@@ -58,7 +64,6 @@ public class ALCReasoner{
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		IntersectionRuleVisitor vis = new IntersectionRuleVisitor();
 		for(OWLObject a: abox) {
-			//System.out.println(a);
 			a.accept(vis);
 			Set<OWLClassAssertionAxiom> newAxioms = new HashSet<>();
 			for(OWLClassExpression ex : vis.getOperands()) {
@@ -66,10 +71,8 @@ public class ALCReasoner{
 					newAxioms.add(editor.createIndividual(ex, "x0"));
 					toAdd.addAll(newAxioms);
 				} catch (OWLOntologyCreationException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (OWLOntologyStorageException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -92,25 +95,30 @@ public class ALCReasoner{
 	}
 	
 	public boolean alcTableaux() {
-		int ind=0;
+		//int ind=0;
 		Set<OWLObject> Lx = new HashSet<>();
 		Set<OWLObject> aBox = new HashSet<>();
+		OWLIndividual ind = null;
 	
 		//Instanziazione del concetto principale
 		//Aggiunta degli altri assiomi
-		for (OWLObject obj :concept.getLogicalAxioms()) {
+		
+		//for (OWLLogicalAxiom obj :concept.getLogicalAxioms()) {
 			equivalence.visit(concept);
 			OWLClassExpression tmp = equivalence.getOperands();
 			try {
 				OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
 				aBox.add(mainConcept);
+				ind = mainConcept.getIndividual();
+				Lx.add(equivalence.getOperands());
+				
 			} catch (OWLOntologyCreationException e) {
 				e.printStackTrace();
 			} catch (OWLOntologyStorageException e) {
 				e.printStackTrace();
 			}
 			
-		}
+		//}
 		
 		return implementTableaux(ind, Lx, aBox);	
 	}
@@ -154,35 +162,70 @@ public class ALCReasoner{
 		return false;
 	}*/
 	
-	private boolean implementTableaux(int ind, Set<OWLObject> Lx, Set<OWLObject> aBox) {
+	private boolean implementTableaux(OWLIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox) {
 		OntologyPrintingVisitor printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
+		boolean ret = true;
 		
-		/*System.out.println("Abox prima: ");
-    	for(OWLObject a: aBox){
-    		//System.out.print(a);
-    		a.accept(printer);
-    	}*/
+
 		//REGOLA INTERSEZIONE
-    	aBox.addAll(this.intersectionRule(aBox));
-    	//REGOLA UNIONE
-    	for (OWLObject o : this.unionRule(aBox)) {
-    		Set<OWLObject> intersec = new HashSet<>(((OWLClassExpression) o).asDisjunctSet());
-    		intersec.retainAll(aBox);
-    		if(intersec.size()==0) {
-    			Set<OWLObject> tmp = new HashSet<>(aBox);
-    			tmp.add(o);
-    			if(hasClash(tmp)) {
-    				return false;
-    			}
-    			implementTableaux(ind, Lx, tmp);
-    		}
+		Set<OWLObject> tmp = this.intersectionRule(aBox);
+    	aBox.addAll(tmp);
+    	for (OWLObject o: tmp) {
+    		Lx.add(((OWLClassAssertionAxiom) o).getClassExpression());
     	}
-    	
-		System.out.println("\nAbox dopo: " );
+    	System.out.println("\nAbox dopo regola intersec: " );
 		for(OWLObject a: aBox){
     		a.accept(printer);
     		System.out.print(",");
     	}
+    	//REGOLA UNIONE
+    	for (OWLObject ax: Lx) {
+    		Set<OWLObject> resURule = this.unionRule(ax);
+    		if(resURule.size()>0) {
+    			for (OWLObject o : resURule) {
+            		if(!aBox.contains(o)) {
+            			Set<OWLObject> tmpLx = new HashSet<>(Lx);
+            			aBox.add(o);
+            			tmpLx.add(((OWLClassAssertionAxiom) o).getClassExpression());
+            			
+            			System.out.println("\nAbox dopo regola disg: ");
+            			for(OWLObject a: aBox){
+            	    		a.accept(printer);
+            	    		System.out.print(",");
+            	    	}	
+            			ret = implementTableaux(ind, tmpLx, aBox);
+            			System.out.println("Ret: "+ ret);
+            			if (ret) {
+            				break;
+            			}
+            			else {
+            				aBox.remove(o);
+            				tmpLx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
+            			}
+            		}
+            		else {
+            			break;
+            		}
+            	}
+    			if (!ret) {
+    				return false;
+    			}
+    			if(ret) {
+    				break;
+    			}
+    		}
+    		
+    	}
+    	
+    	if(hasClash(Lx)) {
+    		//aBox.removeAll(tmp);
+    		for (OWLObject o: tmp) {
+        		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
+        	}
+			return false;
+		}
+    	//Regola Esiste
+	
 		return true;
 	}
 	
