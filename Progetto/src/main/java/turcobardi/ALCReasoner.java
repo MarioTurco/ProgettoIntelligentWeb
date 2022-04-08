@@ -284,7 +284,7 @@ public class ALCReasoner{
     			i--;
     		}
     		else {
-    			if(this.noOtherIndividual(aBox, toAdd)) {
+    			if(this.checkExistsRuleCondition(aBox, toAdd)) {
         			aBox.addAll(toAdd);
         		}
     			//Regola per ogni
@@ -320,8 +320,8 @@ public class ALCReasoner{
 		}
 		return propertyAxiom;
 	}
-	
-	private boolean noOtherIndividual(Set<OWLObject> abox, Set<OWLObject> toAdd) {
+
+	private boolean checkExistsRuleCondition(Set<OWLObject> abox, Set<OWLObject> toAdd) {
 		OWLObjectPropertyAssertionAxiom propertyAxiom = null;
 		OWLClassAssertionAxiom fillerAxiom = null;
 		
