@@ -1,27 +1,16 @@
 package turcobardi;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.semanticweb.owlapi.model.HasLogicalAxioms;
-import org.semanticweb.owlapi.model.IRI;
-import org.semanticweb.owlapi.model.OWLAxiom;
-import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
-import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
-import org.semanticweb.owlapi.model.OWLIndividual;
-import org.semanticweb.owlapi.model.OWLLogicalAxiom;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
-import org.semanticweb.owlapi.model.OWLObjectComplementOf;
-import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
-import org.semanticweb.owlapi.model.OWLObjectVisitor;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
@@ -83,12 +72,7 @@ public class ALCReasoner{
 			OWLClassExpression filler = (OWLClassExpression) proAndFil.get(1);
 			try {
 				toAdd.add(editor.createIndividualForProperty(property, ind1, individual));
-				try {
-					toAdd.add(editor.createIndividual(filler, individual));
-				} catch (OWLOntologyStorageException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				toAdd.add(editor.createIndividual(filler, individual));
 			} catch (OWLOntologyCreationException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -111,8 +95,6 @@ public class ALCReasoner{
 				toAdd.addAll(newAxioms);
 			} catch (OWLOntologyCreationException e) {
 				e.printStackTrace();
-			} catch (OWLOntologyStorageException e) {
-				e.printStackTrace();
 			}
 		}
 
@@ -131,8 +113,6 @@ public class ALCReasoner{
 					newAxioms.add(editor.createIndividual(ex, individual));
 					toAdd.addAll(newAxioms);
 				} catch (OWLOntologyCreationException e) {
-					e.printStackTrace();
-				} catch (OWLOntologyStorageException e) {
 					e.printStackTrace();
 				}
 			}
@@ -173,8 +153,6 @@ public class ALCReasoner{
 				Lx.add(equivalence.getOperands());
 				
 			} catch (OWLOntologyCreationException e) {
-				e.printStackTrace();
-			} catch (OWLOntologyStorageException e) {
 				e.printStackTrace();
 			}
 			
