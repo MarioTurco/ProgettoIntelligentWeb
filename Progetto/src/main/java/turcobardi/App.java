@@ -62,6 +62,14 @@ public class App {
     	ALCReasoner alc = new ALCReasoner(o);
     	System.out.println("\nSAT: " + alc.alcTableaux());
     	
+    	RenderVisitor gr = new RenderVisitor(iri, "");
+    	
+    	for(OWLLogicalAxiom a: aBox){
+
+    		a.accept(gr);
+    	}
+    	gr.renderClasses();
+    	
 	}
 	
 

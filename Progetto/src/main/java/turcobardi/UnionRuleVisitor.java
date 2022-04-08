@@ -19,12 +19,10 @@ public class UnionRuleVisitor implements OWLObjectVisitor {
 		
 		public void visit(OWLObjectUnionOf o) {
 			List<OWLClassExpression> operands = o.getOperandsAsList();
-			
 			operandsRet.addAll(operands);
 		}
 		
 		public void visit(OWLEquivalentClassesAxiom eq) {
-
 			eq.getOperandsAsList().get(1).accept(this); //destra
 			//eq.getOperandsAsList().get(0).accept(this); //sinistra
 			return;

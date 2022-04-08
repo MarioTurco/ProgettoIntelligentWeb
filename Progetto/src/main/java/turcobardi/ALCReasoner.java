@@ -83,26 +83,23 @@ public class ALCReasoner{
 				e.printStackTrace();
 			}
 		}
-		
-
 		return toAdd;
 	}
 	
-	private Set<OWLObject> unionRule(OWLObject abox, String individual) {
-		
+	private Set<OWLObject> unionRule(OWLObject abox, String newIndividualName) {
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		UnionRuleVisitor vis = new UnionRuleVisitor();
-		abox.accept(vis);
 		Set<OWLClassAssertionAxiom> newAxioms = new HashSet<>();
+		
+		abox.accept(vis);
 		for(OWLClassExpression ex : vis.getOperands()) {
 			try {
-				newAxioms.add(editor.createIndividual(ex, individual));
+				newAxioms.add(editor.createIndividual(ex, newIndividualName));
 				toAdd.addAll(newAxioms);
 			} catch (OWLOntologyCreationException e) {
 				e.printStackTrace();
 			}
 		}
-
 		return toAdd;
 	}
 	
@@ -110,6 +107,7 @@ public class ALCReasoner{
 
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		IntersectionRuleVisitor vis = new IntersectionRuleVisitor();
+		
 		for(OWLObject a: abox) {
 			a.accept(vis);
 			Set<OWLClassAssertionAxiom> newAxioms = new HashSet<>();
@@ -160,9 +158,7 @@ public class ALCReasoner{
 			} catch (OWLOntologyCreationException e) {
 				e.printStackTrace();
 			}
-			
 		//}
-		
 		return implementTableaux(ind, Lx, aBox);	
 	}
 	
@@ -176,6 +172,8 @@ public class ALCReasoner{
 		}
 		return false;
 	}
+	
+	//TODO cancella
 	/* OLD
 	public boolean alcTableaux() {
 		int ind=0;
@@ -209,7 +207,6 @@ public class ALCReasoner{
 		OntologyPrintingVisitor printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
 		boolean ret = true;
 		
-
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(aBox,ind.getIRI().getShortForm());
     	aBox.addAll(tmp);
@@ -223,6 +220,7 @@ public class ALCReasoner{
     		a.accept(printer);
     		System.out.print(",");
     	}
+		
     	//REGOLA UNIONE
     	for (OWLObject ax: Lx) {
     		Set<OWLObject> resURule = this.unionRule(ax,ind.getIRI().getShortForm());
