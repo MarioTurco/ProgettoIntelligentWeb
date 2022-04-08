@@ -14,7 +14,6 @@ import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
-import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
 /*
  * 
@@ -33,6 +32,8 @@ public class ALCReasoner{
 		this.equivalence = new EquivalenceRuleVisitor();
 	}
 
+	//TODO in realtà abox è una regola forAll e va rinominata
+	//TODO prop è l'esistenziale appena istanziato e va rinominato
 	private OWLObject forAllRule(OWLObject abox, OWLObjectPropertyAssertionAxiom prop ) {
 		OWLObject toAdd = null; 
 		ForAllRuleVisitor vis = new ForAllRuleVisitor();
@@ -44,10 +45,11 @@ public class ALCReasoner{
 			OWLClassExpression filler = (OWLClassExpression) proAndFil.get(1);
 			
 			if(prop.getProperty()==property) {
+				//Data una relazione R(x,z) getObject() restituisce la z, getSubject() restituisce x
 				ind = (OWLNamedIndividual) prop.getObject();
 				try {
 					if(ind!=null) {							
-						toAdd = editor.createClassAssertionHavingIndividual(filler, ind);							
+						toAdd = editor.createClassAssertionWithExistingIndividual(filler, ind);							
 					}
 				} catch (OWLOntologyCreationException e) {
 					// TODO Auto-generated catch block
@@ -61,7 +63,9 @@ public class ALCReasoner{
 		return toAdd;
 	}
 	
-	private Set<OWLObject> existsRule(OWLObject abox, OWLNamedIndividual ind1 , String individual) {
+	//TODO rinominare abox
+	//TODO volendo si può rinominare toAdd in qualcosa che dica che è un assioma
+	private Set<OWLObject> existsRule(OWLObject abox, OWLNamedIndividual ind1 , String newIndividualName) {
 		
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		ExistsRuleVisitor vis = new ExistsRuleVisitor();
@@ -72,8 +76,8 @@ public class ALCReasoner{
 			OWLObjectPropertyExpression property = (OWLObjectPropertyExpression) proAndFil.get(0);
 			OWLClassExpression filler = (OWLClassExpression) proAndFil.get(1);
 			try {
-				toAdd.add(editor.createIndividualForProperty(property, ind1, individual));
-				toAdd.add(editor.createIndividual(filler, individual));
+				toAdd.add(editor.createIndividualForProperty(property, ind1, newIndividualName));
+				toAdd.add(editor.createIndividual(filler, newIndividualName));
 			} catch (OWLOntologyCreationException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -306,6 +310,7 @@ public class ALCReasoner{
 		}
     	
     	//Regola Esiste
+    	//TODO aggiungere controllo che o sono gli esistenziali
     	int i = 1;
     	for (OWLObject o: Lx) {
     		String iri = ind.getIRI().getShortForm();
