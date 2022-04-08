@@ -11,6 +11,7 @@ import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
+import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
@@ -241,7 +242,7 @@ public class ALCReasoner{
             	    		System.out.print(",");
             	    	}	
             			ret = implementTableaux(ind, tmpLx, aBox);
-            			System.out.println("Ret: "+ ret);
+            			//System.out.println("Ret: "+ ret);
             			if (ret) {
             				break;
             			}
@@ -267,6 +268,7 @@ public class ALCReasoner{
     	}
     	
     	if(hasClash(Lx)) {
+    		//System.out.println("HA CLASH");
     		//aBox.removeAll(tmp);
     		/*for (OWLObject o: tmp) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -295,11 +297,14 @@ public class ALCReasoner{
             			if(!aBox.contains(toAddForAll)) {
             				aBox.add(toAddForAll);
             				Set<OWLObject> newLx = new HashSet<>();
+            				newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
             				newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
-            				System.out.println("NEWLX:" +newLx);
+            				//System.out.println("NEWLX:" +newLx);
             				//Chiamata ricorsiva
             				ret = implementTableaux((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox);
-            				
+            				if (!ret) {
+            					return false;
+            				}
             			}
     				}
     				
