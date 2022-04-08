@@ -16,6 +16,7 @@ import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLogicalAxiom;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObject;
+import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectComplementOf;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
@@ -41,12 +42,32 @@ public class ALCReasoner{
 		this.editor = new OntologyEditor(concept);
 		this.equivalence = new EquivalenceRuleVisitor();
 	}
-	//TODO sono stanco ci penso domani a come farlo
-	private Set<OWLObject> forAllRule(OWLObject abox ){
-		Set<OWLObject> toAdd = new HashSet<>(); 
+
+	private OWLObject forAllRule(OWLObject abox, OWLObjectPropertyAssertionAxiom prop ) {
+		OWLObject toAdd = null; 
 		ForAllRuleVisitor vis = new ForAllRuleVisitor();
+		OWLNamedIndividual ind = null;
 		abox.accept(vis);
 		List<OWLObject> proAndFil = vis.getPropertyAndFiller();
+		if (proAndFil.size()>0) {
+			OWLObjectPropertyExpression property = (OWLObjectPropertyExpression) proAndFil.get(0);
+			OWLClassExpression filler = (OWLClassExpression) proAndFil.get(1);
+			
+			if(prop.getProperty()==property) {
+				ind = (OWLNamedIndividual) prop.getObject();
+				try {
+					if(ind!=null) {							
+						toAdd = editor.createClassAssertionHavingIndividual(filler, ind);							
+					}
+				} catch (OWLOntologyCreationException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+						
+				}
+			}
+			
+		}
+		
 		return toAdd;
 	}
 	
@@ -209,9 +230,11 @@ public class ALCReasoner{
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(aBox,ind.getIRI().getShortForm());
     	aBox.addAll(tmp);
+    	
     	for (OWLObject o: tmp) {
     		Lx.add(((OWLClassAssertionAxiom) o).getClassExpression());
     	}
+    	//TODO controllo blocking
     	System.out.println("\nAbox dopo regola intersec: " );
 		for(OWLObject a: aBox){
     		a.accept(printer);
@@ -272,20 +295,52 @@ public class ALCReasoner{
         	}*/
 			return false;
 		}
+    	
     	//Regola Esiste
     	int i = 1;
     	for (OWLObject o: Lx) {
     		String iri = ind.getIRI().getShortForm();
+    		OWLObject toAddForAll = null;
     		Set<OWLObject> toAdd = this.existsRule(o,ind,"x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++);
     		if(toAdd.size()==0) {
     			i--;
     		}
-    		if(this.noOtherIndividual(aBox, toAdd)) {
-    			aBox.addAll(toAdd);
+    		else {
+    			if(this.noOtherIndividual(aBox, toAdd)) {
+        			aBox.addAll(toAdd);
+        		}
+    			//Regola per ogni
+    			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
+    			for (OWLObject forAll: Lx) {
+    				if(forAll instanceof OWLObjectAllValuesFrom) {
+    					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
+            			if(!aBox.contains(toAddForAll)) {
+            				aBox.add(toAddForAll);
+            				Set<OWLObject> newLx = new HashSet<>();
+            				newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
+            				System.out.println("NEWLX:" +newLx);
+            				//Chiamata ricorsiva
+            				ret = implementTableaux((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox);
+            				
+            			}
+    				}
+    				
+    			}
+    			
     		}
     		
     	}
 		return true;
+	}
+	
+	private OWLObjectPropertyAssertionAxiom getPropertyAssertionFromSet(Set<OWLObject> set) {
+		OWLObjectPropertyAssertionAxiom propertyAxiom = null;
+		for(OWLObject o:set) {
+			if (o instanceof OWLObjectPropertyAssertionAxiom) {
+				propertyAxiom = (OWLObjectPropertyAssertionAxiom) o;
+			}
+		}
+		return propertyAxiom;
 	}
 	
 	private boolean noOtherIndividual(Set<OWLObject> abox, Set<OWLObject> toAdd) {

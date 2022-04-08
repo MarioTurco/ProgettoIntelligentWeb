@@ -47,5 +47,13 @@ public class OntologyEditor {
 		OWLNamedIndividual newInd = factory.getOWLNamedIndividual(IRI.create(iri + "#" + ind2));
 		return factory.getOWLObjectPropertyAssertionAxiom(expr, ind1, newInd);
 	}
+	
+	public OWLClassAssertionAxiom createClassAssertionHavingIndividual(OWLClassExpression className, OWLNamedIndividual ind) throws OWLOntologyCreationException {
+		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		OWLOntology ont = manager.createOntology();
+		OWLDataFactory factory = manager.getOWLDataFactory();
+		OWLClassAssertionAxiom axiom= factory.getOWLClassAssertionAxiom(className, ind);
+		return axiom;
+	}
 
 }
