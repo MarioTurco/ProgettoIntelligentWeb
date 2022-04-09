@@ -4,9 +4,7 @@ import java.io.PrintStream;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
-import javax.annotation.Nonnull;
 import org.semanticweb.owlapi.model.IRI;
-import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
@@ -18,7 +16,6 @@ import org.semanticweb.owlapi.model.OWLObjectComplementOf;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectUnionOf;
-import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
@@ -75,13 +72,12 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		
 	}
 	public void visit(OWLEquivalentClassesAxiom eq) {
-		for (OWLClass c: eq.getNamedClasses()) {
-			System.out.println(conceptToString(iri, c.toString()) +" ");
-		}
 
+
+		eq.getOperandsAsList().get(0).accept(this); //sinistra
+		System.out.print(" = ");
 		eq.getOperandsAsList().get(1).accept(this); //destra
-		//System.out.print(" = ");
-		//eq.getOperandsAsList().get(0).accept(this); //sinistra
+		System.out.println("");
 		return;
 	}
 	
@@ -96,7 +92,8 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 				i--;
 			}
 		}
-		System.out.print(")");
+		System.out.print(") ");
+		
 
 	}
 	
@@ -109,7 +106,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	    		
 	}
 	
-	//TODO non funziona
+
 	public void visit(OWLNamedIndividual i) {
 		System.out.print(i.getIRI().getShortForm());
 	}
@@ -128,7 +125,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		
 		System.out.print("(");
 		individual.accept(this);
-		System.out.print(")");
+		System.out.print(") ");
 	}
 	
 	public void visit(OWLObjectUnionOf o) {
@@ -142,14 +139,9 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 				i--;
 			}
 		}
-		System.out.print(")");
+		System.out.print(") ");
 	}
 	
-    public void renderGraph(@Nonnull OWLOntology ontology) {
-    	IRI iri = ontology.getOntologyID().getOntologyIRI().get();
-    	ontology.signature().forEach(s -> System.out.println(s.toString().replace(iri.toString(), "")));
-    	return;
-    }
     
     private String conceptToString(IRI iri, String str) {
 		str = str.replace(iri.toString()+toRemove, "");

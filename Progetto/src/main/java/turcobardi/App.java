@@ -41,7 +41,7 @@ public class App {
 	
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
-		File file = new File("pizza.owl.xml");
+		File file = new File("prova_atomic_concepts.owl");
 
 		OWLOntology concept = man.loadOntologyFromOntologyDocument(file);
 		System.out.println("Numero assiomi :" + concept.getAxiomCount());
@@ -52,7 +52,7 @@ public class App {
     	o.signature().forEach(s -> System.out.println(s.toString().replace(iri.toString(), "")));
     	
     	}*/
-		OntologyPrintingVisitor visitor = new OntologyPrintingVisitor(iri,"/pizza.owl");
+		OntologyPrintingVisitor visitor = new OntologyPrintingVisitor(iri,"");
     	Set<OWLLogicalAxiom> logicalAxioms = concept.getLogicalAxioms(Imports.fromBoolean(false));
 
     	System.out.println("Concept size: " + logicalAxioms.size());
@@ -64,6 +64,7 @@ public class App {
     	ALCReasoner reasoner = new ALCReasoner(concept, null);
     	//executeAndPrintTime("empty", reasoner);
     	ALCReasoner reasoner2 = new ALCReasoner(concept, concept);
+    	System.out.println("\nKB convertita: ");
     	reasoner2.convertKB().accept(visitor);
     	
     	

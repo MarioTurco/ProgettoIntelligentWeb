@@ -9,17 +9,17 @@ import org.semanticweb.owlapi.model.parameters.Imports;
 
 public class EquivalenceRuleVisitor implements OWLObjectVisitor{
 		
-		private OWLClassExpression leftSide = null;
+		private OWLClassExpression rightSide = null;
 		
 		public void visit(OWLEquivalentClassesAxiom eq) {
-			eq.getOperandsAsList().get(1).accept(this); //sinistra
-			leftSide = eq.getOperandsAsList().get(1);
+			eq.getOperandsAsList().get(1).accept(this); //destro
+			rightSide = eq.getOperandsAsList().get(1);
 			return;
 		}
 		
 		
-		public OWLClassExpression getOperands(){
-			return leftSide;
+		public OWLClassExpression getRightSide(){
+			return rightSide;
 		}
 		
 		public void visit(OWLOntology concept) {

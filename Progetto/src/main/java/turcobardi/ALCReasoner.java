@@ -139,6 +139,30 @@ public class ALCReasoner{
 		return toAdd;
 	}
 	
+	private Set<OWLObject> existsRuleNonEmpyTbox(OWLObject abox, OWLNamedIndividual ind1 , String newIndividualName) {
+		
+		Set<OWLObject> toAdd = new HashSet<>(); 
+		ExistsRuleVisitor vis = new ExistsRuleVisitor();
+		abox.accept(vis);
+		List<OWLObject> proAndFil = vis.getPropertyAndFiller();
+
+		if (proAndFil.size()>0) {
+			OWLObjectPropertyExpression property = (OWLObjectPropertyExpression) proAndFil.get(0);
+			OWLClassExpression filler = (OWLClassExpression) proAndFil.get(1);
+			try {
+				toAdd.add(editor.createIndividualForProperty(property, ind1, newIndividualName));
+				toAdd.add(editor.createIndividual(filler, newIndividualName));
+				toAdd.add(editor.createIndividual(this.convertKB().getSuperClass(), newIndividualName));
+			} catch (OWLOntologyCreationException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+
+		return toAdd;
+	}
+	
 	private Set<OWLObject> unionRule(OWLObject abox, String individual) {
 		
 		Set<OWLObject> toAdd = new HashSet<>(); 
@@ -199,13 +223,13 @@ public class ALCReasoner{
 		
 		//for (OWLLogicalAxiom obj :concept.getLogicalAxioms()) {
 			equivalence.visit(concept);
-			OWLClassExpression tmp = equivalence.getOperands();
+			OWLClassExpression tmp = equivalence.getRightSide();
 			
 			try {
 				OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
 				aBox.add(mainConcept);
 				ind = (OWLNamedIndividual) mainConcept.getIndividual();
-				Lx.add(equivalence.getOperands());
+				Lx.add(equivalence.getRightSide());
 				
 			} catch (OWLOntologyCreationException e) {
 				e.printStackTrace();
@@ -217,8 +241,8 @@ public class ALCReasoner{
 	}
 	
 	public boolean alcTableauxNonEmpyTbox() {
-		//TODO
-		/*Set<OWLObject> Lx = new HashSet<>();
+	
+		Set<OWLObject> Lx = new HashSet<>();
 		Set<OWLObject> aBox = new HashSet<>();
 		OWLNamedIndividual ind = null;
 	
@@ -226,22 +250,23 @@ public class ALCReasoner{
 		//Aggiunta degli altri assiomi
 		
 		//for (OWLLogicalAxiom obj :concept.getLogicalAxioms()) {
+		OWLSubClassOfAxiom KBinclusion = this.convertKB();
 			equivalence.visit(concept);
-			OWLClassExpression tmp = equivalence.getOperands();
+			OWLClassExpression tmp = equivalence.getRightSide();
 			try {
 				OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
+				OWLClassAssertionAxiom KBinclusionIstance = editor.createIndividual(KBinclusion.getSuperClass(), "x0");
 				aBox.add(mainConcept);
+				aBox.add(KBinclusionIstance);
 				ind = (OWLNamedIndividual) mainConcept.getIndividual();
-				Lx.add(equivalence.getOperands());
+				Lx.add(equivalence.getRightSide());
+				Lx.add(KBinclusion.getSuperClass());
 				
 			} catch (OWLOntologyCreationException e) {
 				e.printStackTrace();
 			}
 			
-		//}
-		
-		return implementTableauxNonEmptyTbox(ind, Lx, aBox);*/
-		return false;
+		return implementTableauxNonEmptyTbox(ind, Lx, aBox, null);
 	}
 	
 	private boolean hasClash(Set<OWLObject> abox) {
@@ -514,7 +539,7 @@ public class ALCReasoner{
     		String iri = ind.getIRI().getShortForm();
     		OWLObject toAddForAll = null;
     		Set<OWLObject> tmpLx = new HashSet<>(Lx);
-    		Set<OWLObject> toAdd = this.existsRule(o,ind,"x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++);
+    		Set<OWLObject> toAdd = this.existsRuleNonEmpyTbox(o,ind,"x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++);
     		if(toAdd.size()==0) {
     			i--;
     		}
@@ -583,7 +608,9 @@ public class ALCReasoner{
 				propertyAxiom = (OWLObjectPropertyAssertionAxiom) o;
 			}
 			if (o instanceof OWLClassAssertionAxiom) {
-				fillerAxiom = (OWLClassAssertionAxiom) o;
+				if(!((OWLClassAssertionAxiom) o).getClassExpression().equals(this.convertKB().getSuperClass())) {					
+					fillerAxiom = (OWLClassAssertionAxiom) o;
+				}
 			}
 		}
 		
