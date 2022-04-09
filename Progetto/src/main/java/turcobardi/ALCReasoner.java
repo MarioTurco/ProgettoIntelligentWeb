@@ -1,20 +1,32 @@
 package turcobardi;
 
-import java.time.Instant;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.semanticweb.owlapi.model.OWLAnnotation;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
+import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
+import org.semanticweb.owlapi.model.OWLLogicalAxiom;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
+import org.semanticweb.owlapi.model.OWLObjectComplementOf;
+import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
+import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
+import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
+
+import uk.ac.manchester.cs.owl.owlapi.OWLObjectComplementOfImpl;
+import uk.ac.manchester.cs.owl.owlapi.OWLObjectIntersectionOfImpl;
+import uk.ac.manchester.cs.owl.owlapi.OWLObjectUnionOfImpl;
+import uk.ac.manchester.cs.owl.owlapi.OWLSubClassOfAxiomImpl;
 
 /*
  * 
@@ -26,11 +38,50 @@ public class ALCReasoner{
 	private OWLOntology concept = null;
 	private OntologyEditor editor = null;
 	private EquivalenceRuleVisitor equivalence = null;
+	private OWLOntology kb = null;
 
-	public ALCReasoner(OWLOntology concept) {
+	public ALCReasoner(OWLOntology concept, OWLOntology kb) {
 		this.concept = concept;
 		this.editor = new OntologyEditor(concept);
 		this.equivalence = new EquivalenceRuleVisitor();
+		this.kb = kb;
+	}
+	
+	public OWLSubClassOfAxiom convertKB() {
+		List<OWLClassExpression> conjuncts = new ArrayList<>();
+		for(OWLLogicalAxiom logicalAxiom: kb.getLogicalAxioms()) {
+			if(logicalAxiom.getAxiomType().getName().equals("SubClassOf")) {
+				List<OWLClassExpression> operands = new ArrayList<>();
+				OWLObjectComplementOf compl = new OWLObjectComplementOfImpl(((OWLSubClassOfAxiom) logicalAxiom).getSubClass());
+				operands.add(compl);
+				operands.add(((OWLSubClassOfAxiom) logicalAxiom).getSuperClass());
+				OWLObjectUnionOf union = new OWLObjectUnionOfImpl(operands);
+				conjuncts.add(union);
+			}
+			if(logicalAxiom.getAxiomType().getName().equals("EquivalentClasses")) {
+				List<OWLClassExpression> operands1 = new ArrayList<>();
+				List<OWLClassExpression> operands2 = new ArrayList<>();
+				OWLClassExpression left = ((OWLEquivalentClassesAxiom) logicalAxiom).getOperandsAsList().get(0);
+				OWLClassExpression right = ((OWLEquivalentClassesAxiom) logicalAxiom).getOperandsAsList().get(1);
+				
+				OWLObjectComplementOf compl1 = new OWLObjectComplementOfImpl(left);
+				operands1.add(compl1);
+				operands1.add(right);
+				OWLObjectUnionOf union1 = new OWLObjectUnionOfImpl(operands1);
+				conjuncts.add(union1);
+				OWLObjectComplementOf compl2 = new OWLObjectComplementOfImpl(right);
+				operands2.add(compl2);
+				operands2.add(left);
+				OWLObjectUnionOf union2 = new OWLObjectUnionOfImpl(operands2);
+				conjuncts.add(union2);
+			}
+			
+		}
+		OWLObjectIntersectionOf cHat = new OWLObjectIntersectionOfImpl(conjuncts);
+		OntologyEditor ed = new OntologyEditor(kb);
+		Set<OWLAnnotation> ignore = new HashSet<>();
+		OWLSubClassOfAxiom inclusionToAdd = new OWLSubClassOfAxiomImpl(ed.getTop(),cHat,ignore);
+		return inclusionToAdd;
 	}
 
 	//TODO in realtà abox è una regola forAll e va rinominata

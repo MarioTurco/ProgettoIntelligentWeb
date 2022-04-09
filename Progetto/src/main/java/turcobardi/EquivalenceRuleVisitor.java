@@ -23,8 +23,9 @@ public class EquivalenceRuleVisitor implements OWLObjectVisitor{
 		}
 		
 		public void visit(OWLOntology concept) {
-			for(OWLAxiom a: concept.getLogicalAxioms(Imports.fromBoolean(false))) {
-				a.getNNF().accept(this);			//PRENDI OGNI ASSIOMA IN NNF E ESPANDILO		
+			for(OWLAxiom axiom: concept.getLogicalAxioms(Imports.fromBoolean(false))) {
+				System.out.println(axiom.getAxiomType().getName());
+				axiom.getNNF().accept(this);			//PRENDI OGNI ASSIOMA IN NNF E ESPANDILO		
 			}
 		}
 		

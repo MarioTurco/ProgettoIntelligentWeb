@@ -53,5 +53,12 @@ public class OntologyEditor {
 		OWLClassAssertionAxiom axiom= factory.getOWLClassAssertionAxiom(className, existingIndividual);
 		return axiom;
 	}
-
+	
+	public OWLClass getTop() {
+		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		//OWLOntology ont = manager.createOntology();
+		OWLDataFactory factory = manager.getOWLDataFactory();
+		OWLClass top= factory.getOWLThing();
+		return top;
+	}
 }
