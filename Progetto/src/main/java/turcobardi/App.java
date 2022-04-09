@@ -57,9 +57,9 @@ public class App {
 
     	System.out.println("Concept size: " + logicalAxioms.size());
 
-    	for(OWLLogicalAxiom a: logicalAxioms){
+    	for(OWLLogicalAxiom logicalAxiom: logicalAxioms){
 
-    		a.accept(visitor);
+    		logicalAxiom.accept(visitor); //prints the logical axiom
     	}
     	ALCReasoner reasoner = new ALCReasoner(concept);
     	executeAndPrintTime("empty", reasoner);
