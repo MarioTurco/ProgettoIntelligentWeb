@@ -34,7 +34,6 @@ import uk.ac.manchester.cs.owl.owlapi.OWLSubClassOfAxiomImpl;
  * for the reasoning
  */
 public class ALCReasoner{
-	
 	private OWLOntology concept = null;
 	private OntologyEditor editor = null;
 	private EquivalenceRuleVisitor equivalence = null;
