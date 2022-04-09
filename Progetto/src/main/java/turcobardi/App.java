@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -39,7 +41,7 @@ public class App {
 	
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
-		File file = new File("ins2.owl");
+		File file = new File("concept.owl.xml");
 
 		OWLOntology o = man.loadOntologyFromOntologyDocument(file);
 		System.out.println("Numero assiomi :" + o.getAxiomCount());
@@ -60,7 +62,10 @@ public class App {
     		a.accept(visitor);
     	}
     	ALCReasoner alc = new ALCReasoner(o);
+    	Instant start = Instant.now();
     	System.out.println("\nSAT: " + alc.alcTableaux());
+    	Instant end = Instant.now();
+    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
     	
 	}
 	

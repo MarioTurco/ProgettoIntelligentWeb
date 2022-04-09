@@ -1,5 +1,6 @@
 package turcobardi;
 
+import java.time.Instant;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -233,6 +234,7 @@ public class ALCReasoner{
 	}*/
 	
 	private boolean implementTableaux(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox) {
+		
 		OntologyPrintingVisitor printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
 		boolean ret = true;
 		
@@ -321,6 +323,12 @@ public class ALCReasoner{
     		else {
     			if(this.checkExistsRuleCondition(aBox, toAdd)) {
         			aBox.addAll(toAdd);
+        			
+        			System.out.println("\nAbox dopo regola esistenziale: " );
+        			for(OWLObject a: aBox){
+        	    		a.accept(printer);
+        	    		System.out.print(",");
+        	    	}
         			for(OWLObject add: toAdd) {
         				if (add instanceof OWLObjectPropertyAssertionAxiom) {
         					tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
@@ -337,6 +345,13 @@ public class ALCReasoner{
     					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
             			if(!aBox.contains(toAddForAll)) {
             				aBox.add(toAddForAll);
+            				
+            				System.out.println("\nAbox dopo regola per ogni: " );
+            				for(OWLObject a: aBox){
+            		    		a.accept(printer);
+            		    		System.out.print(",");
+            		    	}
+            				
             				tmpLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
             				Set<OWLObject> newLx = new HashSet<>();
             				newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
@@ -432,7 +447,6 @@ public class ALCReasoner{
     				break;
     			}
     		}
-    		
     	}
     	
     	if(hasClash(Lx)) {
