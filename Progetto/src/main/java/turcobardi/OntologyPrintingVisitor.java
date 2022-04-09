@@ -47,7 +47,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	
 	
 	public void visit(OWLObjectSomeValuesFrom desc) {
-		out.print(exists + " ");
+		out.print(" " + exists + " ");
 		System.out.print(conceptToString(iri, desc.getProperty().toString()));
 		desc.getProperty().accept(this);
 		System.out.print(".");
@@ -92,13 +92,13 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 				i--;
 			}
 		}
-		System.out.print(") ");
+		System.out.print(")");
 		
 
 	}
 	
 	public void visit(OWLObjectAllValuesFrom desc) {
-		out.print(foreach + " ");
+		out.print(" " + foreach + " ");
 		System.out.print(conceptToString(iri, desc.getProperty().toString()));
 		desc.getProperty().accept(this);
 		System.out.print(".");
@@ -125,7 +125,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		
 		System.out.print("(");
 		individual.accept(this);
-		System.out.print(") ");
+		System.out.print(")");
 	}
 	
 	public void visit(OWLObjectUnionOf o) {
@@ -139,7 +139,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 				i--;
 			}
 		}
-		System.out.print(") ");
+		System.out.print(")");
 	}
 	
     

@@ -40,32 +40,42 @@ public class App {
 
 	
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
-		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
-		File file = new File("prova_atomic_concepts.owl");
-
-		OWLOntology concept = man.loadOntologyFromOntologyDocument(file);
-		System.out.println("Numero assiomi :" + concept.getAxiomCount());
-		IRI iri = concept.getOntologyID().getOntologyIRI().get();
-		
+		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
+		OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
+		File kbFile = new File("kb1.owl");
+		File queryFile = new File("prova.owl.xml");
+		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
+		System.out.println("Numero assiomi :" + kb.getAxiomCount());
+		IRI iriKb = kb.getOntologyID().getOntologyIRI().get();
+		OWLOntology query = manQ.loadOntologyFromOntologyDocument(queryFile);
+		System.out.println("Numero assiomi :" + query.getAxiomCount());
+		IRI iriQuery = kb.getOntologyID().getOntologyIRI().get();
 		/*
 		//stampa il nome delle entità
     	o.signature().forEach(s -> System.out.println(s.toString().replace(iri.toString(), "")));
     	
     	}*/
-		OntologyPrintingVisitor visitor = new OntologyPrintingVisitor(iri,"");
-    	Set<OWLLogicalAxiom> logicalAxioms = concept.getLogicalAxioms(Imports.fromBoolean(false));
+		OntologyPrintingVisitor visitor = new OntologyPrintingVisitor(iriKb,"");
+		Set<OWLLogicalAxiom> logicalAxiomsKb = kb.getLogicalAxioms(Imports.fromBoolean(false));
+    	Set<OWLLogicalAxiom> logicalAxiomsQuery = query.getLogicalAxioms(Imports.fromBoolean(false));
 
-    	System.out.println("Concept size: " + logicalAxioms.size());
-
-    	for(OWLLogicalAxiom logicalAxiom: logicalAxioms){
+    	System.out.println("KB size: " + logicalAxiomsKb.size());
+    	System.out.println("Query size: " + logicalAxiomsQuery.size());
+    	System.out.println("KB: ");
+    	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsKb){
     		
     		logicalAxiom.accept(visitor); //prints the logical axiom
     	}
-    	ALCReasoner reasoner = new ALCReasoner(concept, null);
-    	//executeAndPrintTime("empty", reasoner);
-    	ALCReasoner reasoner2 = new ALCReasoner(concept, concept);
+    	System.out.println("Query: ");
+    	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsQuery){
+    		
+    		logicalAxiom.accept(visitor); //prints the logical axiom
+    	}
+    	ALCReasoner reasoner = new ALCReasoner(query, kb);
+    	executeAndPrintTime("nonEmpty", reasoner);
+    	/*ALCReasoner reasoner2 = new ALCReasoner(concept, concept);
     	System.out.println("\nKB convertita: ");
-    	reasoner2.convertKB().accept(visitor);
+    	reasoner2.convertKB().accept(visitor);*/
     	
     	
     	
@@ -79,7 +89,10 @@ public class App {
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 		}
 		else if (what.equals("nonEmpty")) {
-			//TODO tbox non vuota
+			Instant start = Instant.now();
+	    	System.out.println("\nSAT: " + reasoner.alcTableauxNonEmpyTbox());
+	    	Instant end = Instant.now();
+	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 		}
 		
 	}

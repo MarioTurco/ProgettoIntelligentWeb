@@ -38,12 +38,14 @@ public class ALCReasoner{
 	private OntologyEditor editor = null;
 	private EquivalenceRuleVisitor equivalence = null;
 	private OWLOntology kb = null;
+	private OntologyPrintingVisitor printer = null;
 
 	public ALCReasoner(OWLOntology concept, OWLOntology kb) {
 		this.concept = concept;
 		this.editor = new OntologyEditor(concept);
 		this.equivalence = new EquivalenceRuleVisitor();
 		this.kb = kb;
+		this.printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
 	}
 	
 	public OWLSubClassOfAxiom convertKB() {
@@ -255,7 +257,7 @@ public class ALCReasoner{
 			OWLClassExpression tmp = equivalence.getRightSide();
 			try {
 				OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
-				OWLClassAssertionAxiom KBinclusionIstance = editor.createIndividual(KBinclusion.getSuperClass(), "x0");
+				OWLClassAssertionAxiom KBinclusionIstance = editor.createIndividual(KBinclusion.getSuperClass().getNNF(), "x0");
 				aBox.add(mainConcept);
 				aBox.add(KBinclusionIstance);
 				ind = (OWLNamedIndividual) mainConcept.getIndividual();
@@ -265,6 +267,12 @@ public class ALCReasoner{
 			} catch (OWLOntologyCreationException e) {
 				e.printStackTrace();
 			}
+			
+			System.out.println("\nAbox iniziale: " );
+			for(OWLObject a: aBox){
+	    		a.accept(printer);
+	    		System.out.print(",");
+	    	}
 			
 		return implementTableauxNonEmptyTbox(ind, Lx, aBox, null);
 	}
@@ -310,10 +318,8 @@ public class ALCReasoner{
 	
 	private boolean implementTableaux(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox) {
 		
-		OntologyPrintingVisitor printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
 		boolean ret = true;
 		
-
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(aBox,ind.getIRI().getShortForm());
     	aBox.addAll(tmp);
@@ -455,9 +461,7 @@ public class ALCReasoner{
 	}
 	
 	private boolean implementTableauxNonEmptyTbox(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx) {
-		OntologyPrintingVisitor printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
 		boolean ret = true;
-		
 
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(aBox,ind.getIRI().getShortForm());
@@ -469,24 +473,29 @@ public class ALCReasoner{
     	//BLOCKING
     	if(predLx!=null) {
     		if(predLx.containsAll(Lx)) {
+    			System.out.println("\nBLOCKING TRUE");
     			return true;  
     		}
     	}
-    	System.out.println("\nAbox dopo regola intersec: " );
+    	System.out.println("\nAbox dopo regola intersezione: " );
 		for(OWLObject a: aBox){
     		a.accept(printer);
-    		System.out.print(",");
+    		System.out.println(",");
     	}
     	//REGOLA UNIONE
     	for (OWLObject ax: Lx) {
+    		System.out.println("\nSPACCHETTO OR: ");
+    		ax.accept(printer);
     		Set<OWLObject> resURule = this.unionRule(ax,ind.getIRI().getShortForm());
     		if(resURule.size()>0) {
-    			System.out.println("INSIEME DISGIUNTI:");
+    			System.out.println("\nINSIEME DISGIUNTI:");
     			for(OWLObject a: resURule){
     	    		a.accept(printer);
     	    		System.out.print(",");
     	    	}
     			for (OWLObject o : resURule) {
+    				System.out.println("\nDISGIUNTO SCELTO: ");
+    				o.accept(printer);
             		if(!aBox.contains(o)) {
             			Set<OWLObject> tmpLx = new HashSet<>(Lx);
             			aBox.add(o);
@@ -494,16 +503,18 @@ public class ALCReasoner{
             			//o.accept(printer);
             			tmpLx.add(((OWLClassAssertionAxiom) o).getClassExpression());
             			
-            			System.out.println("\nAbox dopo regola disg: ");
+            			System.out.println("\nAbox dopo regola disgiunzione: ");
             			for(OWLObject a: aBox){
             	    		a.accept(printer);
-            	    		System.out.print(",");
+            	    		System.out.println(",");
             	    	}	
+            			System.out.println("\nCHiamata ricorsiva");
             			ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null);
-            			//System.out.println("Ret: "+ ret);
-            			if (ret) {
+            			System.out.println("Ret: "+ ret);
+            			
+            			if (ret) 
             				break;
-            			}
+            			
             			else {
             				aBox.remove(o);
             				//System.out.println("RIMOZIONE: ");
@@ -511,21 +522,15 @@ public class ALCReasoner{
             				tmpLx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
             			}
             		}
-            		else {
-            			break;
-            		}
             	}
-    			if (!ret) {
+    			if (!ret) 
     				return false;
-    			}
-    			if(ret) {
-    				break;
-    			}
+    					
     		}
     	}
     	
     	if(hasClash(Lx)) {
-    		//System.out.println("HA CLASH");
+    		System.out.println("HA CLASH");
     		//aBox.removeAll(tmp);
     		/*for (OWLObject o: tmp) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -546,12 +551,21 @@ public class ALCReasoner{
     		else {
     			if(this.checkExistsRuleCondition(aBox, toAdd)) {
         			aBox.addAll(toAdd);
+        			
+        			System.out.println("\nAbox dopo regola esiste: " );
+    				for(OWLObject a: aBox){
+    		    		a.accept(printer);
+    		    		System.out.println(",");
+    		    	}
+        			
         			for(OWLObject add: toAdd) {
         				if (add instanceof OWLObjectPropertyAssertionAxiom) {
         					tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
         				}
         				if (add instanceof OWLClassAssertionAxiom) {
-        					tmpLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+        					if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.convertKB().getSuperClass())) {					
+        						tmpLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+        					}
         				}
         			}
         		}
@@ -563,7 +577,14 @@ public class ALCReasoner{
             			if(!aBox.contains(toAddForAll)) {
             				
             				aBox.add(toAddForAll);
+            				
+            				
             				tmpLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
+            				System.out.println("\nAbox dopo regola per ogni: " );
+            				for(OWLObject a: aBox){
+            					a.accept(printer);
+            					System.out.println(",");
+            				}
             				Set<OWLObject> newLx = new HashSet<>();
             				newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
             				newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
@@ -586,6 +607,7 @@ public class ALCReasoner{
     		}
     		
     	}
+    	System.out.println("\nChiamata finita");
 		return true;
 	}
 	
