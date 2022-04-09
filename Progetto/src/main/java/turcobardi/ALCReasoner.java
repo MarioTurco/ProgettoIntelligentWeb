@@ -246,7 +246,7 @@ public class ALCReasoner{
     	for (OWLObject o: tmp) {
     		Lx.add(((OWLClassAssertionAxiom) o).getClassExpression());
     	}
-    	//TODO controllo blocking
+ 
     	System.out.println("\nAbox dopo regola intersec: " );
 		for(OWLObject a: aBox){
     		a.accept(printer);
@@ -314,6 +314,7 @@ public class ALCReasoner{
     	int i = 1;
     	for (OWLObject o: Lx) {
     		String iri = ind.getIRI().getShortForm();
+    		Set<OWLObject> tmpLx = new HashSet<>();
     		OWLObject toAddForAll = null;
     		Set<OWLObject> toAdd = this.existsRule(o,ind,"x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++);
     		if(toAdd.size()==0) {
@@ -322,6 +323,14 @@ public class ALCReasoner{
     		else {
     			if(this.checkExistsRuleCondition(aBox, toAdd)) {
         			aBox.addAll(toAdd);
+        			for(OWLObject add: toAdd) {
+        				if (add instanceof OWLObjectPropertyAssertionAxiom) {
+        					tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
+        				}
+        				if (add instanceof OWLClassAssertionAxiom) {
+        					tmpLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+        				}
+        			}
         		}
     			//Regola per ogni
     			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
@@ -330,15 +339,18 @@ public class ALCReasoner{
     					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
             			if(!aBox.contains(toAddForAll)) {
             				aBox.add(toAddForAll);
+            				tmpLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
             				Set<OWLObject> newLx = new HashSet<>();
             				newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
             				newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
             				//System.out.println("NEWLX:" +newLx);
             				//Chiamata ricorsiva
             				ret = implementTableaux((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox);
-            				if (!ret) {
+            				/*if (!ret) {
             					return false;
-            				}
+            				}*/
+            				//TODO PENSARE PERCHE' VA BENE
+            				return ret;
             			}
     				}
     				
@@ -350,8 +362,8 @@ public class ALCReasoner{
 		return true;
 	}
 	
-	private boolean implementTableauxNonEmptyTbox(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox) {
-		/*OntologyPrintingVisitor printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
+	private boolean implementTableauxNonEmptyTbox(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx) {
+		OntologyPrintingVisitor printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
 		boolean ret = true;
 		
 
@@ -362,7 +374,12 @@ public class ALCReasoner{
     	for (OWLObject o: tmp) {
     		Lx.add(((OWLClassAssertionAxiom) o).getClassExpression());
     	}
-    	//TODO controllo blocking
+    	//BLOCKING
+    	if(predLx!=null) {
+    		if(predLx.containsAll(Lx)) {
+    			return true;  
+    		}
+    	}
     	System.out.println("\nAbox dopo regola intersec: " );
 		for(OWLObject a: aBox){
     		a.accept(printer);
@@ -390,7 +407,7 @@ public class ALCReasoner{
             	    		a.accept(printer);
             	    		System.out.print(",");
             	    	}	
-            			ret = implementTableaux(ind, tmpLx, aBox);
+            			ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null);
             			//System.out.println("Ret: "+ ret);
             			if (ret) {
             				break;
@@ -421,7 +438,7 @@ public class ALCReasoner{
     		//aBox.removeAll(tmp);
     		/*for (OWLObject o: tmp) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
-        	}
+        	}*/
 			return false;
 		}
     	
@@ -430,6 +447,7 @@ public class ALCReasoner{
     	for (OWLObject o: Lx) {
     		String iri = ind.getIRI().getShortForm();
     		OWLObject toAddForAll = null;
+    		Set<OWLObject> tmpLx = new HashSet<>(Lx);
     		Set<OWLObject> toAdd = this.existsRule(o,ind,"x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++);
     		if(toAdd.size()==0) {
     			i--;
@@ -437,6 +455,14 @@ public class ALCReasoner{
     		else {
     			if(this.checkExistsRuleCondition(aBox, toAdd)) {
         			aBox.addAll(toAdd);
+        			for(OWLObject add: toAdd) {
+        				if (add instanceof OWLObjectPropertyAssertionAxiom) {
+        					tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
+        				}
+        				if (add instanceof OWLClassAssertionAxiom) {
+        					tmpLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+        				}
+        			}
         		}
     			//Regola per ogni
     			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
@@ -444,16 +470,19 @@ public class ALCReasoner{
     				if(forAll instanceof OWLObjectAllValuesFrom) {
     					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
             			if(!aBox.contains(toAddForAll)) {
+            				
             				aBox.add(toAddForAll);
+            				tmpLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
             				Set<OWLObject> newLx = new HashSet<>();
             				newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
             				newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
             				//System.out.println("NEWLX:" +newLx);
             				//Chiamata ricorsiva
-            				ret = implementTableaux((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox);
-            				if (!ret) {
+            				ret = implementTableauxNonEmptyTbox((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox, tmpLx);
+            				/*if (!ret) {
             					return false;
-            				}
+            				}*/
+            				return ret;
             			}
     				}
     				
@@ -461,7 +490,7 @@ public class ALCReasoner{
     			
     		}
     		
-    	}*/
+    	}
 		return true;
 	}
 	
