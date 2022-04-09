@@ -39,7 +39,7 @@ public class App {
 	
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
-		File file = new File("ins2.owl");
+		File file = new File("concept3.owl.xml");
 
 		OWLOntology o = man.loadOntologyFromOntologyDocument(file);
 		System.out.println("Numero assiomi :" + o.getAxiomCount());
