@@ -19,6 +19,7 @@ import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
 public class OntologyPrintingVisitor implements OWLObjectVisitor{
@@ -31,6 +32,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	private final char foreach = '\u2200';
 	private final char exists = '\u2203';
 	private final char not = '\u00AC';
+	private final char inclusion = '\u2291';
 	
 	public OntologyPrintingVisitor(IRI iri, String toRemove) {
 		
@@ -66,7 +68,12 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		eq.getOperand().accept(this);
 		//System.out.print(conceptToString(iri, eq.getOperand().toString()) + " ");
 	}
-
+	public void visit(OWLSubClassOfAxiom sub) {
+		sub.getSubClass().accept(this);
+		out.print(inclusion);
+		sub.getSuperClass().accept(this);
+		
+	}
 	public void visit(OWLEquivalentClassesAxiom eq) {
 		for (OWLClass c: eq.getNamedClasses()) {
 			System.out.println(conceptToString(iri, c.toString()) +" ");

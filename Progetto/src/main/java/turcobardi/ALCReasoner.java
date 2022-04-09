@@ -22,7 +22,6 @@ import org.semanticweb.owlapi.model.OWLOntologyCreationException;
  * for the reasoning
  */
 public class ALCReasoner{
-	
 	private OWLOntology concept = null;
 	private OntologyEditor editor = null;
 	private EquivalenceRuleVisitor equivalence = null;
