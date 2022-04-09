@@ -43,9 +43,9 @@ public class App {
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
 		File file = new File("concept.owl.xml");
 
-		OWLOntology o = man.loadOntologyFromOntologyDocument(file);
-		System.out.println("Numero assiomi :" + o.getAxiomCount());
-		IRI iri = o.getOntologyID().getOntologyIRI().get();
+		OWLOntology concept = man.loadOntologyFromOntologyDocument(file);
+		System.out.println("Numero assiomi :" + concept.getAxiomCount());
+		IRI iri = concept.getOntologyID().getOntologyIRI().get();
 		
 		/*
 		//stampa il nome delle entità
@@ -53,20 +53,30 @@ public class App {
     	
     	}*/
 		OntologyPrintingVisitor visitor = new OntologyPrintingVisitor(iri,"");
-    	Set<OWLLogicalAxiom> aBox = o.getLogicalAxioms(Imports.fromBoolean(false));
+    	Set<OWLLogicalAxiom> logicalAxioms = concept.getLogicalAxioms(Imports.fromBoolean(false));
 
-    	System.out.println("Concept size: " + aBox.size());
+    	System.out.println("Concept size: " + logicalAxioms.size());
 
-    	for(OWLLogicalAxiom a: aBox){
+    	for(OWLLogicalAxiom a: logicalAxioms){
 
     		a.accept(visitor);
     	}
-    	ALCReasoner alc = new ALCReasoner(o);
-    	Instant start = Instant.now();
-    	System.out.println("\nSAT: " + alc.alcTableaux());
-    	Instant end = Instant.now();
-    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
+    	ALCReasoner reasoner = new ALCReasoner(concept);
+    	executeAndPrintTime("empty", reasoner);
     	
+	}
+	
+	private static void executeAndPrintTime(String what, ALCReasoner reasoner) {
+		if (what.equals("empty")) {
+			Instant start = Instant.now();
+	    	System.out.println("\nSAT: " + reasoner.alcTableaux());
+	    	Instant end = Instant.now();
+	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
+		}
+		else if (what.equals("nonEmpty")) {
+			//TODO tbox non vuota
+		}
+		
 	}
 	
 

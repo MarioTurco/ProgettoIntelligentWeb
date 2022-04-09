@@ -301,7 +301,7 @@ public class ALCReasoner{
     	}
     	
     	if(hasClash(Lx)) {
-    		//System.out.println("HA CLASH");
+    		System.out.println("HA CLASH");
     		//aBox.removeAll(tmp);
     		/*for (OWLObject o: tmp) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
