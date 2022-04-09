@@ -140,17 +140,16 @@ public class ALCReasoner{
 	}*/
 	
 	public boolean alcTableaux() {
-		//int ind=0;
 		Set<OWLObject> Lx = new HashSet<>();
 		Set<OWLObject> aBox = new HashSet<>();
 		OWLNamedIndividual ind = null;
 	
-		//Instanziazione del concetto principale
-		//Aggiunta degli altri assiomi
+		//Instanziazione del concetto principale, creazione C(x0)
 		
 		//for (OWLLogicalAxiom obj :concept.getLogicalAxioms()) {
 			equivalence.visit(concept);
 			OWLClassExpression tmp = equivalence.getOperands();
+			
 			try {
 				OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
 				aBox.add(mainConcept);
@@ -168,8 +167,7 @@ public class ALCReasoner{
 	
 	public boolean alcTableauxNonEmpyTbox() {
 		//TODO
-		/*//int ind=0;
-		Set<OWLObject> Lx = new HashSet<>();
+		/*Set<OWLObject> Lx = new HashSet<>();
 		Set<OWLObject> aBox = new HashSet<>();
 		OWLNamedIndividual ind = null;
 	
@@ -191,7 +189,7 @@ public class ALCReasoner{
 			
 		//}
 		
-		return implementTableaux(ind, Lx, aBox);*/
+		return implementTableauxNonEmptyTbox(ind, Lx, aBox);*/
 		return false;
 	}
 	
@@ -346,11 +344,15 @@ public class ALCReasoner{
             				//System.out.println("NEWLX:" +newLx);
             				//Chiamata ricorsiva
             				ret = implementTableaux((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox);
-            				/*if (!ret) {
+            				if (!ret) {
+            					aBox.remove(toAddForAll);
+            					tmpLx.remove(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
             					return false;
-            				}*/
-            				//TODO PENSARE PERCHE' VA BENE
-            				return ret;
+            				}
+            				else {
+            					return true;
+            				}
+
             			}
     				}
     				
@@ -479,10 +481,14 @@ public class ALCReasoner{
             				//System.out.println("NEWLX:" +newLx);
             				//Chiamata ricorsiva
             				ret = implementTableauxNonEmptyTbox((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox, tmpLx);
-            				/*if (!ret) {
+            				if (!ret) {
+            					aBox.remove(toAddForAll);
+            					tmpLx.remove(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
             					return false;
-            				}*/
-            				return ret;
+            				}
+            				else {
+            					return true;
+            				}
             			}
     				}
     				
