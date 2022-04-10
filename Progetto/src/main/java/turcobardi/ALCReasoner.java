@@ -71,12 +71,23 @@ public class ALCReasoner{
 				operands1.add(compl1);
 				operands1.add(right);
 				OWLObjectUnionOf union1 = new OWLObjectUnionOfImpl(operands1);
-				conjuncts.add(union1);
+				if(union1.getOperands().size()>1) {					
+					conjuncts.add(union1);
+				}
+				else if (union1.getOperands().size()==1) {
+					conjuncts.add(right);
+				}
+
 				OWLObjectComplementOf compl2 = new OWLObjectComplementOfImpl(right);
 				operands2.add(compl2);
 				operands2.add(left);
 				OWLObjectUnionOf union2 = new OWLObjectUnionOfImpl(operands2);
-				conjuncts.add(union2);
+				if(union2.getOperands().size()>1) {					
+					conjuncts.add(union2);
+				}
+				else if (union2.getOperands().size()==1) {
+					conjuncts.add(left);
+				}
 			}
 			
 		}
@@ -434,8 +445,8 @@ public class ALCReasoner{
 	}
 	
 	private boolean implementTableauxNonEmptyTbox(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx) {
-		boolean ret = false;
-
+		boolean ret = true;
+		//System.out.println(ind.getIRI().getShortForm());
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(aBox,ind.getIRI().getShortForm());
     	Set<OWLObject> inserted = new HashSet<>();
@@ -495,15 +506,20 @@ public class ALCReasoner{
                 		//System.out.println("Ret: "+ ret);
                 		
                 		if (ret) 
-                			break;
+                			return true;
                 			
                 		if(!ret){
                 			aBox.remove(disjoint);
                 			//System.out.println("RIMOZIONE: ");
                 			//o.accept(printer);
                 			tmpLx.remove(((OWLClassAssertionAxiom) disjoint).getClassExpression());
+                			//System.out.println("UGUALI: " + tmpLx.equals(Lx));
                 			//tmpLx.removeAll(Lx);
-                			//System.out.println("UGUALI: " + tmpLx);
+                			/*for (OWLObject tmp1: tmpLx) {
+                				tmp1.accept(printer);
+                				System.out.print(", ");
+                				
+                			}*/
                 		}
                 		
                 	}
@@ -538,6 +554,7 @@ public class ALCReasoner{
     		OWLObject toAddForAll = null;
     		Set<OWLObject> tmpLx = new HashSet<>(Lx);
     		Set<OWLObject> toAdd = this.existsRuleNonEmpyTbox(o,ind,"x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++);
+    		
     		if(toAdd.size()==0) {
     			i--;
     		}
@@ -567,7 +584,7 @@ public class ALCReasoner{
         			for (OWLObject forAll: Lx) {
         				if(forAll instanceof OWLObjectAllValuesFrom) {
         					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
-        					if(!aBox.contains(toAddForAll)) {
+        					if(!aBox.contains(toAddForAll) && toAddForAll!=null) {
         						
         						aBox.add(toAddForAll);
         						

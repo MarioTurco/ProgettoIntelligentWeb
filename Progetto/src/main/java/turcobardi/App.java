@@ -43,7 +43,7 @@ public class App {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 		OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
 		File kbFile = new File("prova_atomic_concepts.owl");
-		File queryFile = new File("prova.owl.xml");
+		File queryFile = new File("prova2.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("Numero assiomi :" + kb.getAxiomCount());
 		IRI iriKb = kb.getOntologyID().getOntologyIRI().get();
