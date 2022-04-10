@@ -332,11 +332,11 @@ public class ALCReasoner{
 				e.printStackTrace();
 			}
 			
-			System.out.println("\nAbox iniziale: " );
+			/*System.out.println("\nAbox iniziale: " );
 			for(OWLObject a: Lx){
 	    		a.accept(printer);
 	    		System.out.print(",");
-	    	}
+	    	}*/
 		}	
 		return implementTableauxNonEmptyTbox(ind, Lx, aBox, null);
 	}
