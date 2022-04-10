@@ -22,10 +22,12 @@ public class LazyUnfolder {
 	
 	public void doLazyUnfolding() {
 		for(OWLLogicalAxiom axiom: this.kb.getLogicalAxioms()) {
-			T_u.add(axiom);
-			if(!this.isUnfoldable(T_u)) {
-				T_u.remove(axiom);
-				T_g.add(axiom);
+			if(axiom instanceof OWLEquivalentClassesAxiom || axiom instanceof OWLSubClassOfAxiom) {
+				T_u.add(axiom);
+				if(!this.isUnfoldable(T_u)) {
+					T_u.remove(axiom);
+					T_g.add(axiom);
+				}
 			}
 		}
 	}
@@ -35,6 +37,24 @@ public class LazyUnfolder {
 		for(OWLObject axiom: T_u) {
 			if(axiom instanceof OWLEquivalentClassesAxiom) {
 				OWLClassExpression leftSide = ((OWLEquivalentClassesAxiom) axiom).getOperandsAsList().get(0);
+				for(OWLObject axiom1: T_u) {
+					
+					if(axiom1 instanceof OWLSubClassOfAxiom && !axiom1.equals(axiom)) {
+						if(((OWLSubClassOfAxiom) axiom1).getSubClass().equals(leftSide)) {
+							return false;
+						}
+					}
+					
+					if(axiom1 instanceof OWLEquivalentClassesAxiom && !axiom1.equals(axiom)) {
+						if(((OWLEquivalentClassesAxiom) axiom1).getOperandsAsList().get(0).equals(leftSide)) {
+							return false;
+						}
+					}
+				}
+			}
+			
+			if(axiom instanceof OWLSubClassOfAxiom) {
+				OWLClassExpression leftSide = ((OWLSubClassOfAxiom) axiom).getSubClass();
 				for(OWLObject axiom1: T_u) {
 					
 					if(axiom1 instanceof OWLSubClassOfAxiom && !axiom1.equals(axiom)) {
