@@ -12,7 +12,7 @@ public class EquivalenceRuleVisitor implements OWLObjectVisitor{
 		private OWLClassExpression rightSide = null;
 		
 		public void visit(OWLEquivalentClassesAxiom eq) {
-			eq.getOperandsAsList().get(1).accept(this); //destro
+			//eq.getOperandsAsList().get(1).accept(this); //destro
 			rightSide = eq.getOperandsAsList().get(1);
 			return;
 		}
@@ -22,6 +22,7 @@ public class EquivalenceRuleVisitor implements OWLObjectVisitor{
 			return rightSide;
 		}
 		
+		//OLD non più usato
 		public void visit(OWLOntology concept) {
 			for(OWLAxiom axiom: concept.getLogicalAxioms(Imports.fromBoolean(false))) {
 				axiom.getNNF().accept(this);			//PRENDI OGNI ASSIOMA IN NNF E ESPANDILO		

@@ -43,10 +43,10 @@ public class ALCReasoner{
 	private OWLSubClassOfAxiom KBinclusion = null;
 
 	public ALCReasoner(OWLOntology concept, OWLOntology kb) {
+		this.kb = kb;
 		this.concept = concept;
 		this.editor = new OntologyEditor(concept);
 		this.equivalence = new EquivalenceRuleVisitor();
-		this.kb = kb;
 		this.printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
 		this.KBinclusion = this.convertKBWithFactory();
 	}
@@ -312,31 +312,32 @@ public class ALCReasoner{
 		//Instanziazione del concetto principale
 		//Aggiunta degli altri assiomi
 		
-		//for (OWLLogicalAxiom obj :concept.getLogicalAxioms()) {
+		for (OWLLogicalAxiom axiom :concept.getLogicalAxioms()) {
 
-			equivalence.visit(concept);
-			OWLClassExpression tmp = equivalence.getRightSide();
+			axiom.getNNF().accept(equivalence);
+			OWLClassExpression rightSide = equivalence.getRightSide();
+
 			try {
-				OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
+				OWLClassAssertionAxiom mainConcept = editor.createIndividual(rightSide, "x0");
 				//STO STAMPANDO
 				//this.KBinclusion.getSuperClass().accept(printer);
 				OWLClassAssertionAxiom KBinclusionIstance = editor.createIndividual(this.KBinclusion.getSuperClass().getNNF(), "x0");
 				aBox.add(mainConcept);
 				aBox.add(KBinclusionIstance);
 				ind = (OWLNamedIndividual) mainConcept.getIndividual();
-				Lx.add(equivalence.getRightSide());
+				Lx.add(rightSide);
 				Lx.add(this.KBinclusion.getSuperClass());
 				
 			} catch (OWLOntologyCreationException e) {
 				e.printStackTrace();
 			}
 			
-			/*System.out.println("\nAbox iniziale: " );
-			for(OWLObject a: aBox){
+			System.out.println("\nAbox iniziale: " );
+			for(OWLObject a: Lx){
 	    		a.accept(printer);
 	    		System.out.print(",");
-	    	}*/
-			
+	    	}
+		}	
 		return implementTableauxNonEmptyTbox(ind, Lx, aBox, null);
 	}
 	
