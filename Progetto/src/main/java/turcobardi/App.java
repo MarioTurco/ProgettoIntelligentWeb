@@ -42,7 +42,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 		OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
-		File kbFile = new File("kb1.owl");
+		File kbFile = new File("prova_atomic_concepts.owl");
 		File queryFile = new File("prova.owl.xml");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("Numero assiomi :" + kb.getAxiomCount());
@@ -90,7 +90,8 @@ public class App {
 		}
 		else if (what.equals("nonEmpty")) {
 			Instant start = Instant.now();
-	    	System.out.println("\nSAT: " + reasoner.alcTableauxNonEmpyTbox());
+			boolean ret = reasoner.alcTableauxNonEmpyTbox();
+	    	System.out.println("\nSAT: " + ret);
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 		}

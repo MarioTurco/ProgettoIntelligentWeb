@@ -21,7 +21,7 @@ public class IntersectionRuleVisitor implements OWLObjectVisitor{
 		List<OWLClassExpression> operands = o.getOperandsAsList();
 		//System.out.println("Entrato "+ operands);
 		operandsRet.addAll(operands);
-		System.out.print("\n");
+		//System.out.print("\n");
 	}
 	
 	public void visit(OWLEquivalentClassesAxiom eq) {
