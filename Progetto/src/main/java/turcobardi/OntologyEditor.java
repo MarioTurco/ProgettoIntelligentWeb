@@ -61,4 +61,9 @@ public class OntologyEditor {
 		OWLClass top= factory.getOWLThing();
 		return top;
 	}
+	
+	public OWLDataFactory getFactory() {
+		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+		return manager.getOWLDataFactory();
+	}
 }

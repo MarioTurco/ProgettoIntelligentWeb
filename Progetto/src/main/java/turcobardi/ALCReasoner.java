@@ -8,6 +8,7 @@ import java.util.Set;
 import org.semanticweb.owlapi.model.OWLAnnotation;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
+import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLLogicalAxiom;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
@@ -47,7 +48,7 @@ public class ALCReasoner{
 		this.equivalence = new EquivalenceRuleVisitor();
 		this.kb = kb;
 		this.printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
-		this.KBinclusion = this.convertKB();
+		this.KBinclusion = this.convertKBWithFactory();
 	}
 	
 	private OWLSubClassOfAxiom convertKB() {
@@ -100,6 +101,55 @@ public class ALCReasoner{
 		return inclusionToAdd;
 	}
 
+	private OWLSubClassOfAxiom convertKBWithFactory() {
+		OWLDataFactory factory = this.editor.getFactory();
+		List<OWLClassExpression> conjuncts = new ArrayList<>();
+		for(OWLLogicalAxiom logicalAxiom: kb.getLogicalAxioms()) {
+			if(logicalAxiom.getAxiomType().getName().equals("SubClassOf")) {
+				List<OWLClassExpression> operands = new ArrayList<>();
+				OWLObjectComplementOf compl = factory.getOWLObjectComplementOf(((OWLSubClassOfAxiom) logicalAxiom).getSubClass());
+				operands.add(compl);
+				operands.add(((OWLSubClassOfAxiom) logicalAxiom).getSuperClass());
+				OWLObjectUnionOf union = factory.getOWLObjectUnionOf(operands);
+				conjuncts.add(union);
+			}
+			if(logicalAxiom.getAxiomType().getName().equals("EquivalentClasses")) {
+				List<OWLClassExpression> operands1 = new ArrayList<>();
+				List<OWLClassExpression> operands2 = new ArrayList<>();
+				OWLClassExpression left = ((OWLEquivalentClassesAxiom) logicalAxiom).getOperandsAsList().get(0);
+				OWLClassExpression right = ((OWLEquivalentClassesAxiom) logicalAxiom).getOperandsAsList().get(1);
+				
+				OWLObjectComplementOf compl1 = factory.getOWLObjectComplementOf(left);
+				//System.out.println(compl1);
+				//System.out.println(concept);
+				operands1.add(compl1);
+				operands1.add(right);
+				OWLObjectUnionOf union1 = factory.getOWLObjectUnionOf(operands1);
+				if(union1.getOperands().size()>1) {					
+					conjuncts.add(union1);
+				}
+				else if (union1.getOperands().size()==1) {
+					conjuncts.add(right);
+				}
+
+				OWLObjectComplementOf compl2 = factory.getOWLObjectComplementOf(right);
+				operands2.add(compl2);
+				operands2.add(left);
+				OWLObjectUnionOf union2 = factory.getOWLObjectUnionOf(operands2);
+				if(union2.getOperands().size()>1) {					
+					conjuncts.add(union2);
+				}
+				else if (union2.getOperands().size()==1) {
+					conjuncts.add(left);
+				}
+			}
+			
+		}
+		OWLObjectIntersectionOf cHat = factory.getOWLObjectIntersectionOf(conjuncts);
+		OWLSubClassOfAxiom inclusionToAdd = factory.getOWLSubClassOfAxiom(editor.getTop(), cHat);
+		return inclusionToAdd;
+	}
+	
 	//TODO in realtà abox è una regola forAll e va rinominata
 	//TODO prop è l'esistenziale appena istanziato e va rinominato
 	private OWLObject forAllRule(OWLObject abox, OWLObjectPropertyAssertionAxiom prop ) {
