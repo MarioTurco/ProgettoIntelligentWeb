@@ -66,6 +66,8 @@ public class ALCReasoner{
 				OWLClassExpression right = ((OWLEquivalentClassesAxiom) logicalAxiom).getOperandsAsList().get(1);
 				
 				OWLObjectComplementOf compl1 = new OWLObjectComplementOfImpl(left);
+				//System.out.println(compl1);
+				//System.out.println(concept);
 				operands1.add(compl1);
 				operands1.add(right);
 				OWLObjectUnionOf union1 = new OWLObjectUnionOfImpl(operands1);
@@ -170,11 +172,9 @@ public class ALCReasoner{
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		UnionRuleVisitor vis = new UnionRuleVisitor();
 		abox.accept(vis);
-		Set<OWLClassAssertionAxiom> newAxioms = new HashSet<>();
 		for(OWLClassExpression ex : vis.getOperands()) {
 			try {
-				newAxioms.add(editor.createIndividual(ex, individual));
-				toAdd.addAll(newAxioms);
+				toAdd.add(editor.createIndividual(ex, individual));
 			} catch (OWLOntologyCreationException e) {
 				e.printStackTrace();
 			}
@@ -189,11 +189,9 @@ public class ALCReasoner{
 		IntersectionRuleVisitor vis = new IntersectionRuleVisitor();
 		for(OWLObject a: abox) {
 			a.accept(vis);
-			Set<OWLClassAssertionAxiom> newAxioms = new HashSet<>();
 			for(OWLClassExpression ex : vis.getOperands()) {
 				try {
-					newAxioms.add(editor.createIndividual(ex, individual));
-					toAdd.addAll(newAxioms);
+					toAdd.add(editor.createIndividual(ex, individual));
 				} catch (OWLOntologyCreationException e) {
 					e.printStackTrace();
 				}
@@ -257,6 +255,8 @@ public class ALCReasoner{
 			OWLClassExpression tmp = equivalence.getRightSide();
 			try {
 				OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
+				//STO STAMPANDO
+				//KBinclusion.getSuperClass().getNNF().accept(printer);
 				OWLClassAssertionAxiom KBinclusionIstance = editor.createIndividual(KBinclusion.getSuperClass().getNNF(), "x0");
 				aBox.add(mainConcept);
 				aBox.add(KBinclusionIstance);
@@ -287,34 +287,6 @@ public class ALCReasoner{
 		}
 		return false;
 	}
-	/* OLD
-	public boolean alcTableaux() {
-		int ind=0;
-		Set<OWLObject> Lx = new HashSet<>();
-		Set<OWLObject> aBox = new HashSet<>();
-	
-		//Instanziazione del concetto principale
-		 aBox = instantiateMainConcept(aBox);
-		
-		//Aggiunta degli altri assiomi
-		for (OWLObject obj :concept.getLogicalAxioms()) {
-			
-			aBox.add(((OWLLogicalAxiom) obj).getNNF());
-		}
-		
-		return implementTableaux(ind, Lx, aBox);	
-	}
-	
-	private boolean hasClash(Set<OWLObject> abox) {
-		for (OWLObject o: abox) {
-			if (o instanceof OWLClassExpression) {
-				if(((OWLClassExpression) o).isClassExpressionLiteral() && abox.contains(((OWLClassExpression) o).getObjectComplementOf())) {
-					return true;
-				}
-			}
-		}
-		return false;
-	}*/
 	
 	private boolean implementTableaux(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox) {
 		
@@ -462,11 +434,17 @@ public class ALCReasoner{
 	}
 	
 	private boolean implementTableauxNonEmptyTbox(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx) {
-		boolean ret = true;
+		boolean ret = false;
 
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(aBox,ind.getIRI().getShortForm());
-    	aBox.addAll(tmp);
+    	Set<OWLObject> inserted = new HashSet<>();
+    	
+    	for(OWLObject ins: tmp) {
+    		if(aBox.add(ins)) {
+    			inserted.add(ins);
+    		}
+    	}
     	
     	for (OWLObject o: tmp) {
     		Lx.add(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -474,73 +452,82 @@ public class ALCReasoner{
     	//BLOCKING
     	if(predLx!=null) {
     		if(predLx.containsAll(Lx)) {
-    			System.out.println("\nBLOCKING TRUE");
+    			//System.out.println("\nBLOCKING TRUE");
     			return true;  
     		}
     	}
-    	System.out.println("\nAbox dopo regola intersezione: " );
+    /*	System.out.println("\nAbox dopo regola intersezione: " );
 		for(OWLObject a: aBox){
     		a.accept(printer);
     		System.out.println(",");
-    	}
+    	}*/
     	//REGOLA UNIONE
-    	for (OWLObject ax: Lx) {
+    	for (OWLObject axiom: Lx) {
     		//System.out.println("\nSPACCHETTO OR: ");
     		//ax.accept(printer);
-    		Set<OWLObject> resURule = this.unionRule(ax,ind.getIRI().getShortForm());
+    		Set<OWLObject> resURule = this.unionRule(axiom,ind.getIRI().getShortForm());
     		if(resURule.size()>0) {
-    			System.out.println("\nINSIEME DISGIUNTI:");
+    			/*System.out.println("\nINSIEME DISGIUNTI:");
     			for(OWLObject a: resURule){
     	    		a.accept(printer);
     	    		System.out.print(",");
-    	    	}
+    	    	}*/
     			Set<OWLObject> intersec = new HashSet<>(aBox);
     			intersec.retainAll(resURule);
     			if(intersec.size()==0) {
-    				for (OWLObject o : resURule) {
-        				System.out.println("\nDISGIUNTO SCELTO: ");
-        				o.accept(printer);
+    				for (OWLObject disjoint : resURule) {
+        			//	System.out.println("\nDISGIUNTO SCELTO: ");
+        				//o.accept(printer);
                
                 		Set<OWLObject> tmpLx = new HashSet<>(Lx);
-                		aBox.add(o);
+                		aBox.add(disjoint);
                 		//System.out.println("INSERISCO: ");
                 		//o.accept(printer);
-                		tmpLx.add(((OWLClassAssertionAxiom) o).getClassExpression());
+                		tmpLx.add(((OWLClassAssertionAxiom) disjoint).getClassExpression());
                 			
-                		System.out.println("\nAbox dopo regola disgiunzione: ");
+                		/*System.out.println("\nAbox dopo regola disgiunzione: ");
                 		for(OWLObject a: aBox){
                 	    	a.accept(printer);
                 	    	System.out.println(",");
-                	    }	
+                	    }*/	
                 		//System.out.println("\nChiamata ricorsiva");
                 		ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null);
-                		System.out.println("Ret: "+ ret);
+                		//System.out.println("Ret: "+ ret);
                 		
                 		if (ret) 
                 			break;
                 			
-                		else {
-                			aBox.remove(o);
+                		if(!ret){
+                			aBox.remove(disjoint);
                 			//System.out.println("RIMOZIONE: ");
                 			//o.accept(printer);
-                			tmpLx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
+                			tmpLx.remove(((OWLClassAssertionAxiom) disjoint).getClassExpression());
+                			//tmpLx.removeAll(Lx);
+                			//System.out.println("UGUALI: " + tmpLx);
                 		}
                 		
                 	}
+    				
+    				if (!ret) 
+    					return false;	
     			}
     			
-    			if (!ret) 
-    				return false;	
     		}
     	}
     	
     	if(hasClash(Lx)) {
     		
-    		System.out.println("HA CLASH");
-    		//aBox.removeAll(tmp);
-    		/*for (OWLObject o: tmp) {
-        		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
+    		//System.out.println("HA CLASH");
+    		
+    		/*System.out.println("\nLx" );
+    		for(OWLObject a: Lx){
+        		a.accept(printer);
+        		System.out.println(",");
         	}*/
+    		aBox.removeAll(inserted);
+    		for (OWLObject o: inserted) {
+        		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
+        	}
 			return false;
 		}
     	
@@ -558,11 +545,11 @@ public class ALCReasoner{
     			if(this.checkExistsRuleCondition(aBox, toAdd)) {
         			aBox.addAll(toAdd);
         			
-        			System.out.println("\nAbox dopo regola esiste: " );
+        			/*System.out.println("\nAbox dopo regola esiste: " );
     				for(OWLObject a: aBox){
     		    		a.accept(printer);
     		    		System.out.println(",");
-    		    	}
+    		    	}*/
         			
         			for(OWLObject add: toAdd) {
         				if (add instanceof OWLObjectPropertyAssertionAxiom) {
@@ -574,46 +561,51 @@ public class ALCReasoner{
         					}
         				}
         			}
+        			
+        			//Regola per ogni
+        			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
+        			for (OWLObject forAll: Lx) {
+        				if(forAll instanceof OWLObjectAllValuesFrom) {
+        					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
+        					if(!aBox.contains(toAddForAll)) {
+        						
+        						aBox.add(toAddForAll);
+        						
+        						tmpLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
+        						/*System.out.println("\nAbox dopo regola per ogni: " );
+        						for(OWLObject a: aBox){
+        							a.accept(printer);
+        							System.out.println(",");
+        						}*/
+        						Set<OWLObject> newLx = new HashSet<>();
+        						newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
+        						newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
+        						//System.out.println("NEWLX:" +newLx);
+        						//Chiamata ricorsiva
+        						ret = implementTableauxNonEmptyTbox((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox, tmpLx);
+        						if (!ret) {
+        							aBox.remove(toAddForAll); //Asserzioni perogni
+        							aBox.removeAll(toAdd); //Asserzioni esistenziale
+        							tmpLx.remove(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());//Asserzioni perogni
+        							for(OWLObject obj: toAdd) {
+        								tmpLx.remove(((OWLClassAssertionAxiom) obj).getClassExpression());//Asserzioni esistenziale
+        							}
+        							return false;
+        						}
+        						else {
+        							break;
+        						}
+        					}
+        				}
+        				
+        			}
         		}
-    			//Regola per ogni
-    			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
-    			for (OWLObject forAll: Lx) {
-    				if(forAll instanceof OWLObjectAllValuesFrom) {
-    					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
-            			if(!aBox.contains(toAddForAll)) {
-            				
-            				aBox.add(toAddForAll);
-            				        				
-            				tmpLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
-            				System.out.println("\nAbox dopo regola per ogni: " );
-            				for(OWLObject a: aBox){
-            					a.accept(printer);
-            					System.out.println(",");
-            				}
-            				Set<OWLObject> newLx = new HashSet<>();
-            				newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
-            				newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
-            				//System.out.println("NEWLX:" +newLx);
-            				//Chiamata ricorsiva
-            				ret = implementTableauxNonEmptyTbox((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox, tmpLx);
-            				if (!ret) {
-            					aBox.remove(toAddForAll);
-            					tmpLx.remove(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
-            					return false;
-            				}
-            				else {
-            					return true;
-            				}
-            			}
-    				}
-    				
-    			}
     			
     		}
     		
     	}
     	//System.out.println("\nChiamata finita");
-		return true;
+		return ret;
 	}
 	
 	private OWLObjectPropertyAssertionAxiom getPropertyAssertionFromSet(Set<OWLObject> set) {
