@@ -21,6 +21,7 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLException;
 import org.semanticweb.owlapi.model.OWLLogicalAxiom;
+import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectComplementOf;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
@@ -42,7 +43,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 		OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
-		File kbFile = new File("prova_atomic_concepts2.owl");
+		File kbFile = new File("prova_atomic_concepts.owl");
 		File queryFile = new File("prova2.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("Numero assiomi :" + kb.getAxiomCount());
@@ -72,7 +73,17 @@ public class App {
     		logicalAxiom.accept(visitor); //prints the logical axiom
     	}
     	ALCReasoner reasoner = new ALCReasoner(query, kb);
-    	executeAndPrintTime("nonEmpty", reasoner);
+    	LazyUnfolder lazy = new LazyUnfolder(kb);
+    	lazy.doLazyUnfolding();
+    	System.out.println("TU");
+    	for(OWLObject o: lazy.getT_u()) {
+    		o.accept(visitor);
+    	}
+    	System.out.println("Tg");
+    	for(OWLObject o: lazy.getT_g()) {
+    		o.accept(visitor);
+    	}
+    	//executeAndPrintTime("nonEmpty", reasoner);
     	/*ALCReasoner reasoner2 = new ALCReasoner(concept, concept);
     	System.out.println("\nKB convertita: ");
     	reasoner2.convertKB().accept(visitor);*/

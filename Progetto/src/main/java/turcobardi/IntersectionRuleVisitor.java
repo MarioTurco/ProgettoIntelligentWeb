@@ -33,7 +33,6 @@ public class IntersectionRuleVisitor implements OWLObjectVisitor{
 	
 	public void visit(OWLClassAssertionAxiom ca) {
 		ca.getClassExpression().accept(this);
-		
 	}
 	
 	public Set<OWLClassExpression> getOperands(){

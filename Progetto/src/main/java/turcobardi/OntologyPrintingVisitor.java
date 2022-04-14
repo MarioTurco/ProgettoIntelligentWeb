@@ -95,7 +95,6 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		}
 		System.out.print(")");
 		
-
 	}
 	
 	public void visit(OWLObjectAllValuesFrom desc) {
