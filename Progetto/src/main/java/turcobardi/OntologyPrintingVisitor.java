@@ -30,7 +30,9 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	private final char exists = '\u2203';
 	private final char not = '\u00AC';
 	private final char inclusion = '\u2291';
-	private String formula= "";
+	
+	
+	
 	
 	public OntologyPrintingVisitor(IRI iri, String toRemove) {
 		this.iri=iri;
@@ -45,40 +47,31 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		};
 	}
 	
-	public String getFormula() {
-		String tmp = new String(formula);
-		//System.out.println("\nFormula :" + formula);
-		formula = "";
-		return tmp;
-	}
+	
+	
 	
 	public void visit(OWLObjectSomeValuesFrom desc) {
 		out.print(" " + exists + " ");
-		formula=formula.concat("" + exists + "" + desc.getProperty().toString() );
 		System.out.print(conceptToString(iri, desc.getProperty().toString()));
 		desc.getProperty().accept(this);
 		System.out.print(".");
-		formula=formula.concat(".");
 	    desc.getFiller().accept(this);
 		
 	}
 	
 	public void visit(OWLClass c) {
 		System.out.print(conceptToString(iri,c.toString()) + " ");
-		formula=formula.concat(conceptToString(iri,c.toString()) + " ");
 		return;
 	}
 	
 	public void visit(OWLObjectComplementOf eq) {
 		out.print(not);
-		formula=formula.concat(""+not);
 		eq.getOperand().accept(this);
 		//System.out.print(conceptToString(iri, eq.getOperand().toString()) + " ");
 	}
 	public void visit(OWLSubClassOfAxiom sub) {
 		sub.getSubClass().accept(this);
 		out.print(inclusion);
-		formula=formula.concat(inclusion+"");
 		sub.getSuperClass().accept(this);
 		System.out.println("");
 	}
@@ -86,7 +79,6 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 
 
 		eq.getOperandsAsList().get(0).accept(this); //sinistra
-		formula=formula.concat(" = ");
 		System.out.print(" = ");
 		eq.getOperandsAsList().get(1).accept(this); //destra
 		System.out.println("");
@@ -96,28 +88,23 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	public void visit(OWLObjectIntersectionOf o) {
 		List<OWLClassExpression> operands = o.getOperandsAsList(); 
 		int i=operands.size()-1;
-		formula=formula.concat("(");
 		System.out.print("(");
 		for(OWLClassExpression ex: operands) {
 			ex.accept(this);
 			if(i > 0) {
-				formula=formula.concat(intersect + " ");
 				out.print(intersect + " " );
 				i--;
 			}
 		}
 		System.out.print(")");
-		formula=formula.concat(")");
 		
 	}
 	
 	public void visit(OWLObjectAllValuesFrom desc) {
-		formula=formula.concat(" " + foreach + " " + conceptToString(iri, desc.getProperty().toString()));
 		out.print(" " + foreach + " ");
 		System.out.print(conceptToString(iri, desc.getProperty().toString()));
 		desc.getProperty().accept(this);
 		System.out.print(".");
-		formula=formula.concat(".");
 	    desc.getFiller().accept(this);
 	    		
 	}
@@ -125,7 +112,6 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 
 	public void visit(OWLNamedIndividual i) {
 		System.out.print(i.getIRI().getShortForm());
-		formula=formula.concat(i.getIRI().getShortForm());
 	}
 	
 	//TODO cambiare?
@@ -140,28 +126,23 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		OWLIndividual individual = o.getIndividual();
 		//System.out.println(o);
 		o.getClassExpression().accept(this);
-		formula=formula.concat("(");
 		System.out.print("(");
 		individual.accept(this);
 		System.out.print(")");
-		formula=formula.concat(")");
 	}
 	
 	public void visit(OWLObjectUnionOf o) {
 		List<OWLClassExpression> operands = o.getOperandsAsList(); 
 		int i=operands.size()-1;
-		formula=formula.concat("(");
 		System.out.print("(");
 		for(OWLClassExpression ex: operands) {
 			ex.accept(this);
 			if(i > 0) {
-				formula=formula.concat(union +  " ");
 				out.print(union + " " );
 				i--;
 			}
 		}
 		System.out.print(")");
-		formula=formula.concat(")");
 	}
 	
     
@@ -174,19 +155,6 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		return str;
 	}
 
-	public void addSemicolon() {
-		formula = formula.concat(";\n ");
-		
-	}
-
-	public void addQuery() {
-		formula = formula.concat("Query:");
-		
-	}
-
-	public void addIndividual(String individual) {
-		formula = formula.concat("[" + individual + "]");
-		
-	}
+	
 		
 }

@@ -1,12 +1,16 @@
 package turcobardi;
 
+import guru.nidi.graphviz.model.Link;
+import static guru.nidi.graphviz.model.Factory.*;
 import guru.nidi.graphviz.model.MutableGraph;
 import guru.nidi.graphviz.model.Node;
-import static guru.nidi.graphviz.model.Factory.node;
-import static guru.nidi.graphviz.model.Factory.mutGraph;
+
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import guru.nidi.graphviz.attribute.Label;
@@ -15,13 +19,24 @@ import guru.nidi.graphviz.engine.Graphviz;
 
 public class GraphRenderer {
 	private MutableGraph g = mutGraph("tableaux").setDirected(true);
-	private Set<Node> nodes = new HashSet<>();
+	private List<Node> nodes = new ArrayList<>();
+	private int lastNode = 0; //identificativo del nodo che serve per aggiungere gli archi
+	private int lastIndividual = 0;
 	
-	public void createNode(String name, String label) {
+	public void createNode(int id, String label) {
 		if(label==null) 
 			label="";
-		nodes.add(node(name).with(Label.raw(label)));
+		nodes.add(node(Integer.toString(id)).with(Label.raw(label)));
+		lastNode++;
 	}
+	
+	public int getLastNode() {
+		return lastNode;
+	}
+	public int getLastIndividual() {
+		return lastIndividual;
+	}
+	
 	public MutableGraph createGraph() {
 		for(Node n: nodes) {
 			n.addTo(g);
@@ -29,11 +44,37 @@ public class GraphRenderer {
 		return g;
 	}
 	
-	public String renderGraph(String path) throws IOException {
+	public void renderGraph(String path) throws IOException {
 		if(path==null)
-			path = "example/tableaux";
+			path = "example/tableaux2";
+		this.linkprova2();
 		Graphviz.fromGraph(g).render(Format.PNG).toFile(new File(path+".png"));
 		Graphviz.fromGraph(g).render(Format.SVG).toFile(new File(path+".svg"));
-		return "Graph printed at '" + path + "' in SVG and PNG formats";
+		System.out.println("Graph printed at '/" + path + "' in SVG and PNG formats");
+	}
+
+
+	public void createLink(int child, int parent) {
+		Node parentNode = nodes.get(parent);
+		Node childNode = nodes.get(child);
+	
+		this.g.addLink(parentNode).linkTo(childNode);
+		parentNode.link(to(childNode)).addTo(g);
+	
+	}
+	
+	
+	//TODO cancellami servo solo per testare delle cose
+	public void linkprova2() {
+		
+		Node parentNode = (node(Integer.toString(123213321)).with(Label.raw("0")));
+		Node childNode = (node(Integer.toString(134543254)).with(Label.raw("1")));
+		
+		parentNode.asLinkSource().linkTo(childNode.asLinkTarget());
+		parentNode.link(to(childNode)).addTo(g);
+		parentNode.addTo(g);
+		childNode.addTo(g);
+		
+		
 	}
 }

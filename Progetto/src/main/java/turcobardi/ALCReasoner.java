@@ -45,7 +45,7 @@ public class ALCReasoner{
 	private OWLSubClassOfAxiom KBinclusion = null;
 	private OWLSubClassOfAxiom C_g = null;
 	private GraphRenderer gr = null;
-
+	private GraphRenderVisitor gv = null;
 	public ALCReasoner(OWLOntology concept, OWLOntology kb) {
 		this.kb = kb;
 		this.gr = new GraphRenderer();
@@ -53,6 +53,7 @@ public class ALCReasoner{
 		this.editor = new OntologyEditor(concept);
 		this.equivalence = new EquivalenceRuleVisitor();
 		this.printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
+		this.gv = new GraphRenderVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
 	}
 	
 	
@@ -446,12 +447,13 @@ public class ALCReasoner{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			gv.addCurrentLabel("x"+Integer.toString(gr.getLastNode()));
 			for(OWLObject o: Lx) {
-				o.accept(printer);
-				printer.addIndividual("x0");
-				printer.addSemicolon();
+				o.accept(gv);
+				gv.addIndividual("x0");
+				gv.addSemicolon();
 			}
-			gr.createNode("x0", printer.getFormula());
+			gr.createNode(0, gv.getFormula());
 			
 			return implementTableauxNonEmptyTbox(ind, Lx, aBox, null);		
 		}
@@ -674,7 +676,6 @@ public class ALCReasoner{
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(aBox,ind.getIRI().getShortForm());
     	Set<OWLObject> inserted = new HashSet<>();
-    	System.out.println("INDIVIDUO CORRENTE : " +ind.getIRI().getShortForm());
     	for(OWLObject ins: tmp) {
     		if(aBox.add(ins)) {
     			inserted.add(ins);
@@ -683,7 +684,19 @@ public class ALCReasoner{
     	
     	for (OWLObject o: tmp) {
     		Lx.add(((OWLClassAssertionAxiom) o).getClassExpression());
+    		
     	}
+    	gv.addCurrentLabel(ind.getIRI().getShortForm());
+    	for(OWLObject o: Lx) {
+			o.accept(gv);
+			gv.addIndividual(ind.getIRI().getShortForm());
+			gv.addSemicolon();
+		}
+    	
+    	gr.createNode(gr.getLastNode(), gv.getFormula());
+    	gr.createLink(gr.getLastNode()-1, gr.getLastNode()-2);
+    	
+    	
     	//BLOCKING
     	if(predLx!=null) {
     		if(predLx.containsAll(Lx)) {
@@ -725,6 +738,7 @@ public class ALCReasoner{
     						aBox.add(disjoint);
     						//System.out.println("INSERISCO: ");
     						//o.accept(printer);
+    						//printer.addCurrentLabel(Integer.toString(gr.getLastIndividual()-1));
     						tmpLx.add(((OWLClassAssertionAxiom) disjoint).getClassExpression());
     						
     						/*System.out.println("\nAbox dopo regola disgiunzione: ");
