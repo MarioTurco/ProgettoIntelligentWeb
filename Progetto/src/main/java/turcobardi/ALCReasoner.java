@@ -147,8 +147,12 @@ public class ALCReasoner{
 			}
 			
 		}
-		OWLObjectIntersectionOf cHat = factory.getOWLObjectIntersectionOf(conjuncts);
-		OWLSubClassOfAxiom inclusionToAdd = factory.getOWLSubClassOfAxiom(editor.getTop(), cHat);
+		OWLSubClassOfAxiom inclusionToAdd = null;
+		if(conjuncts.size()>0) {
+			OWLObjectIntersectionOf cHat = factory.getOWLObjectIntersectionOf(conjuncts);
+			factory.getOWLSubClassOfAxiom(editor.getTop(), cHat);
+		}
+		
 		return inclusionToAdd;
 	}
 	
@@ -461,15 +465,17 @@ public class ALCReasoner{
 			Set<OWLObject> T_u = lazyUnfolder.getT_u();
 			Set<OWLObject> T_g = lazyUnfolder.getT_g();
 			this.C_g = this.convertT_gWithFactory(T_g);
-			OWLClassAssertionAxiom C_ginclusionIstance;
-			
-			try {
-				C_ginclusionIstance = editor.createIndividual(this.C_g.getSuperClass().getNNF(), "x0");
-				aBox.add(C_ginclusionIstance);
-				Lx.add(this.C_g.getSuperClass().getNNF());
-			} catch (OWLOntologyCreationException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			if(this.C_g!=null) {			
+				OWLClassAssertionAxiom C_ginclusionIstance;
+				
+				try {
+					C_ginclusionIstance = editor.createIndividual(this.C_g.getSuperClass().getNNF(), "x0");
+					aBox.add(C_ginclusionIstance);
+					Lx.add(this.C_g.getSuperClass().getNNF());
+				} catch (OWLOntologyCreationException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 			return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u);
 		}
@@ -823,10 +829,73 @@ public class ALCReasoner{
 		return ret;
 	}
 	
+	private Set<OWLObject> lazyUnfoldingRules(Set<OWLObject> aBox, Set<OWLObject> T_u, String individual) {
+		
+		Set<OWLObject> toAdd = new HashSet<>();
+		for (OWLObject unfoldableAx: T_u) {
+			if(unfoldableAx instanceof OWLEquivalentClassesAxiom) {
+				OWLClassExpression leftSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(0);
+				for(OWLObject aboxAx: aBox) {
+					//PRIMA REGOLA
+					if(aboxAx instanceof OWLClassAssertionAxiom) {
+						if(((OWLClassAssertionAxiom) aboxAx).getClassExpression().equals(leftSide)) {
+							OWLClassExpression rightSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(1);
+							try {
+								toAdd.add(editor.createIndividual(rightSide, individual));
+							} catch (OWLOntologyCreationException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+						//SECONDA REGOLA
+						OWLDataFactory factory = this.editor.getFactory();
+						OWLObjectComplementOf complAx = factory.getOWLObjectComplementOf(((OWLClassAssertionAxiom) aboxAx).getClassExpression());
+						if(complAx.equals(leftSide)) {
+							OWLClassExpression rightSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(1);
+							OWLObjectComplementOf rightSideCompl = factory.getOWLObjectComplementOf(rightSide);
+							try {
+								toAdd.add(editor.createIndividual(rightSideCompl, individual));
+							} catch (OWLOntologyCreationException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					}
+				}
+			}
+			//TERZA REGOLA
+			if(unfoldableAx instanceof OWLSubClassOfAxiom) {
+				OWLClassExpression leftSide = ((OWLSubClassOfAxiom) unfoldableAx).getSubClass();
+				for(OWLObject aboxAx: aBox) {
+					if(aboxAx instanceof OWLClassAssertionAxiom) {
+						if(((OWLClassAssertionAxiom) aboxAx).getClassExpression().equals(leftSide)) {
+							OWLClassExpression rightSide = ((OWLSubClassOfAxiom) unfoldableAx).getSuperClass();
+							try {
+								toAdd.add(editor.createIndividual(rightSide, individual));
+							} catch (OWLOntologyCreationException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					}
+				}
+				
+			}
+			
+		}
+		return toAdd;
+	}
 	
 	private boolean implementTableauxNonEmptyTboxLazyUnfolding(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Set<OWLObject> T_u) {
 		boolean ret = true;
 		//System.out.println(ind.getIRI().getShortForm());
+		
+		Set<OWLObject> lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
+		aBox.addAll(lazyUnfoldingRulesRes);
+		for(OWLObject ins: lazyUnfoldingRulesRes) {
+			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
+		}
+		
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(aBox,ind.getIRI().getShortForm());
     	Set<OWLObject> inserted = new HashSet<>();

@@ -43,7 +43,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 		OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
-		File kbFile = new File("prova_atomic_concepts.owl");
+		File kbFile = new File("kb7.owl");
 		File queryFile = new File("prova2.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("Numero assiomi :" + kb.getAxiomCount());
@@ -73,7 +73,7 @@ public class App {
     		logicalAxiom.accept(visitor); //prints the logical axiom
     	}
     	ALCReasoner reasoner = new ALCReasoner(query, kb);
-    	LazyUnfolder lazy = new LazyUnfolder(kb);
+    	/*LazyUnfolder lazy = new LazyUnfolder(kb);
     	lazy.doLazyUnfolding();
     	System.out.println("TU");
     	for(OWLObject o: lazy.getT_u()) {
@@ -82,8 +82,11 @@ public class App {
     	System.out.println("Tg");
     	for(OWLObject o: lazy.getT_g()) {
     		o.accept(visitor);
-    	}
-    	//executeAndPrintTime("nonEmpty", reasoner);
+    	}*/
+    	System.out.println("\n################Normal################");
+    	executeAndPrintTime("nonEmpty", reasoner);
+    	System.out.println("\n############LazyUnfolding#############");
+    	executeAndPrintTime("lazy", reasoner);
     	/*ALCReasoner reasoner2 = new ALCReasoner(concept, concept);
     	System.out.println("\nKB convertita: ");
     	reasoner2.convertKB().accept(visitor);*/
@@ -102,6 +105,13 @@ public class App {
 		else if (what.equals("nonEmpty")) {
 			Instant start = Instant.now();
 			boolean ret = reasoner.alcTableauxNonEmpyTbox(false);
+	    	System.out.println("\nSAT: " + ret);
+	    	Instant end = Instant.now();
+	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
+		}
+		else if (what.equals("lazy")) {
+			Instant start = Instant.now();
+			boolean ret = reasoner.alcTableauxNonEmpyTbox(true);
 	    	System.out.println("\nSAT: " + ret);
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
