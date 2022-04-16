@@ -88,9 +88,9 @@ public class LazyUnfolder {
 				}
 			}
 		}
+		//SECONDA CONDIZIONE - GRAFO DELLE DIPENDENZE ACICLICO
 		if(!isAcyclic(axiom))
 			return false;
-		//TODO SECONDA CONDIZIONE - GRAFO DELLE DIPENDENZE ACICLICO
 		
 		return true;
 	}

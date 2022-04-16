@@ -101,7 +101,7 @@ public class App {
 		}
 		else if (what.equals("nonEmpty")) {
 			Instant start = Instant.now();
-			boolean ret = reasoner.alcTableauxNonEmpyTbox();
+			boolean ret = reasoner.alcTableauxNonEmpyTbox(false);
 	    	System.out.println("\nSAT: " + ret);
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
