@@ -6,6 +6,7 @@ import static guru.nidi.graphviz.model.Factory.node;
 import static guru.nidi.graphviz.model.Factory.mutGraph;
 import java.io.File;
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.Set;
 
 import guru.nidi.graphviz.attribute.Label;
@@ -13,23 +14,26 @@ import guru.nidi.graphviz.engine.Format;
 import guru.nidi.graphviz.engine.Graphviz;
 
 public class GraphRenderer {
-	public Node createNode(String name, String label) {
+	private MutableGraph g = mutGraph("tableaux").setDirected(true);
+	private Set<Node> nodes = new HashSet<>();
+	
+	public void createNode(String name, String label) {
 		if(label==null) 
 			label="";
-		Node n = node(name).with(Label.raw(label));
-		return n;
+		nodes.add(node(name).with(Label.raw(label)));
 	}
-	public MutableGraph createGraph(Set<Node> nodes) {
-		MutableGraph g = mutGraph("tableaux").setDirected(true);
+	public MutableGraph createGraph() {
 		for(Node n: nodes) {
 			n.addTo(g);
 		}
 		return g;
 	}
 	
-	public void renderGraph(MutableGraph g) throws IOException {
-		Graphviz.fromGraph(g).render(Format.PNG).toFile(new File("example/tableaux.png"));
-		Graphviz.fromGraph(g).render(Format.SVG).toFile(new File("example/tableaux.svg"));
-		return;
+	public String renderGraph(String path) throws IOException {
+		if(path==null)
+			path = "example/tableaux";
+		Graphviz.fromGraph(g).render(Format.PNG).toFile(new File(path+".png"));
+		Graphviz.fromGraph(g).render(Format.SVG).toFile(new File(path+".svg"));
+		return "Graph printed at '" + path + "' in SVG and PNG formats";
 	}
 }

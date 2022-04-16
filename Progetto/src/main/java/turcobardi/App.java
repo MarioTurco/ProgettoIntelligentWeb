@@ -91,7 +91,7 @@ public class App {
     	System.out.println("\nKB convertita: ");
     	reasoner2.convertKB().accept(visitor);*/
     	
-    	
+    	reasoner.renderTableauxGraph();
     	
 	}
 	

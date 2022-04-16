@@ -1,5 +1,6 @@
 package turcobardi;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -24,6 +25,7 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
+import guru.nidi.graphviz.model.Node;
 import uk.ac.manchester.cs.owl.owlapi.OWLObjectComplementOfImpl;
 import uk.ac.manchester.cs.owl.owlapi.OWLObjectIntersectionOfImpl;
 import uk.ac.manchester.cs.owl.owlapi.OWLObjectUnionOfImpl;
@@ -42,9 +44,11 @@ public class ALCReasoner{
 	private OntologyPrintingVisitor printer = null;
 	private OWLSubClassOfAxiom KBinclusion = null;
 	private OWLSubClassOfAxiom C_g = null;
-	
+	private GraphRenderer gr = null;
+
 	public ALCReasoner(OWLOntology concept, OWLOntology kb) {
 		this.kb = kb;
+		this.gr = new GraphRenderer();
 		this.concept = concept;
 		this.editor = new OntologyEditor(concept);
 		this.equivalence = new EquivalenceRuleVisitor();
@@ -360,12 +364,20 @@ public class ALCReasoner{
 		}
 		return aBox;
 	}*/
-	
+	public void renderTableauxGraph() {
+		gr.createGraph();
+		try {
+			gr.renderGraph(null);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	public boolean alcTableaux() {
 		Set<OWLObject> Lx = new HashSet<>();
 		Set<OWLObject> aBox = new HashSet<>();
 		OWLNamedIndividual ind = null;
-	
+		
 		//Instanziazione del concetto principale, creazione C(x0)
 		
 		//for (OWLLogicalAxiom obj :concept.getLogicalAxioms()) {
@@ -373,6 +385,7 @@ public class ALCReasoner{
 			OWLClassExpression tmp = equivalence.getRightSide();
 			
 			try {
+				
 				OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
 				aBox.add(mainConcept);
 				ind = (OWLNamedIndividual) mainConcept.getIndividual();
@@ -383,7 +396,6 @@ public class ALCReasoner{
 			}
 			
 		//}
-		
 		return implementTableaux(ind, Lx, aBox);	
 	}
 	
@@ -396,6 +408,7 @@ public class ALCReasoner{
 			//Instanziazione del concetto principale
 			//Aggiunta degli altri assiomi
 			this.KBinclusion = this.convertKBWithFactory();
+			
 			for (OWLLogicalAxiom axiom :concept.getLogicalAxioms()) {
 				
 				axiom.getNNF().accept(equivalence);
@@ -427,11 +440,18 @@ public class ALCReasoner{
 			try {
 				KBinclusionIstance = editor.createIndividual(this.KBinclusion.getSuperClass().getNNF(), "x0");
 				aBox.add(KBinclusionIstance);
+				//this.KBinclusion.getSuperClass().getNNF().accept(printer);
 				Lx.add(this.KBinclusion.getSuperClass().getNNF());
 			} catch (OWLOntologyCreationException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			for(OWLObject o: Lx) {
+				o.accept(printer);
+				printer.addIndividual("x0");
+				printer.addSemicolon();
+			}
+			gr.createNode("x0", printer.getFormula());
 			
 			return implementTableauxNonEmptyTbox(ind, Lx, aBox, null);		
 		}
@@ -654,7 +674,7 @@ public class ALCReasoner{
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(aBox,ind.getIRI().getShortForm());
     	Set<OWLObject> inserted = new HashSet<>();
-    	
+    	System.out.println("INDIVIDUO CORRENTE : " +ind.getIRI().getShortForm());
     	for(OWLObject ins: tmp) {
     		if(aBox.add(ins)) {
     			inserted.add(ins);

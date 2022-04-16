@@ -1,0 +1,15 @@
+<svg width="1583px" height="91px"
+ viewBox="0.00 0.00 1582.55 90.59" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 86.59)">
+<title>tableaux</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-86.59 1578.55,-86.59 1578.55,4 -4,4"/>
+<!-- x0 -->
+<g id="node1" class="node">
+<title>x0</title>
+<ellipse fill="none" stroke="black" cx="787.28" cy="-41.3" rx="787.05" ry="41.09"/>
+<text text-anchor="middle" x="787.28" y="-53.9" font-family="Times,serif" font-size="14.00">(¬A ⊔ ¬B )[x0];</text>
+<text text-anchor="middle" x="787.28" y="-37.1" font-family="Times,serif" font-size="14.00"> ((A )⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ ¬A )[x0];</text>
+<text text-anchor="middle" x="787.28" y="-20.3" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+</g>
+</svg>
