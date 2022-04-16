@@ -43,7 +43,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 		OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
-		File kbFile = new File("kb7.owl");
+		File kbFile = new File("kb8.owl");
 		File queryFile = new File("prova2.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("Numero assiomi :" + kb.getAxiomCount());
@@ -62,27 +62,27 @@ public class App {
 
     	System.out.println("KB size: " + logicalAxiomsKb.size());
     	System.out.println("Query size: " + logicalAxiomsQuery.size());
-    	System.out.println("KB: ");
+    	System.out.println("##########KB###########");
     	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsKb){
     		
     		logicalAxiom.accept(visitor); //prints the logical axiom
     	}
-    	System.out.println("Query: ");
+    	System.out.println("\n#########Query##########: ");
     	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsQuery){
     		
     		logicalAxiom.accept(visitor); //prints the logical axiom
     	}
     	ALCReasoner reasoner = new ALCReasoner(query, kb);
-    	/*LazyUnfolder lazy = new LazyUnfolder(kb);
+    	LazyUnfolder lazy = new LazyUnfolder(kb);
     	lazy.doLazyUnfolding();
-    	System.out.println("TU");
+    	System.out.println("\n##########Tu#########");
     	for(OWLObject o: lazy.getT_u()) {
     		o.accept(visitor);
     	}
-    	System.out.println("Tg");
+    	System.out.println("\n###########Tg###########");
     	for(OWLObject o: lazy.getT_g()) {
     		o.accept(visitor);
-    	}*/
+    	}
     	System.out.println("\n################Normal################");
     	executeAndPrintTime("nonEmpty", reasoner);
     	System.out.println("\n############LazyUnfolding#############");

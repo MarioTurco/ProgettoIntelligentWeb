@@ -108,6 +108,7 @@ public class ALCReasoner{
 		List<OWLClassExpression> conjuncts = new ArrayList<>();
 		for(OWLObject axiom: T_g) {
 			if(axiom instanceof OWLSubClassOfAxiom) {
+
 				List<OWLClassExpression> operands = new ArrayList<>();
 				OWLObjectComplementOf compl = factory.getOWLObjectComplementOf(((OWLSubClassOfAxiom) axiom).getSubClass());
 				operands.add(compl);
@@ -116,6 +117,7 @@ public class ALCReasoner{
 				conjuncts.add(union);
 			}
 			if(axiom instanceof OWLEquivalentClassesAxiom) {
+				
 				List<OWLClassExpression> operands1 = new ArrayList<>();
 				List<OWLClassExpression> operands2 = new ArrayList<>();
 				OWLClassExpression left = ((OWLEquivalentClassesAxiom) axiom).getOperandsAsList().get(0);
@@ -127,7 +129,7 @@ public class ALCReasoner{
 				operands1.add(compl1);
 				operands1.add(right);
 				OWLObjectUnionOf union1 = factory.getOWLObjectUnionOf(operands1);
-				if(union1.getOperands().size()>1) {					
+				if(union1.getOperands().size()>1) {		
 					conjuncts.add(union1);
 				}
 				else if (union1.getOperands().size()==1) {
@@ -150,7 +152,7 @@ public class ALCReasoner{
 		OWLSubClassOfAxiom inclusionToAdd = null;
 		if(conjuncts.size()>0) {
 			OWLObjectIntersectionOf cHat = factory.getOWLObjectIntersectionOf(conjuncts);
-			factory.getOWLSubClassOfAxiom(editor.getTop(), cHat);
+			inclusionToAdd = factory.getOWLSubClassOfAxiom(editor.getTop(), cHat);
 		}
 		
 		return inclusionToAdd;
@@ -298,7 +300,10 @@ public class ALCReasoner{
 			try {
 				toAdd.add(editor.createIndividualForProperty(property, ind1, newIndividualName));
 				toAdd.add(editor.createIndividual(filler, newIndividualName));
-				toAdd.add(editor.createIndividual(this.C_g.getSuperClass().getNNF(), newIndividualName));
+				if(this.C_g!=null) {
+					toAdd.add(editor.createIndividual(this.C_g.getSuperClass().getNNF(), newIndividualName));
+					
+				}		
 			} catch (OWLOntologyCreationException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -453,11 +458,7 @@ public class ALCReasoner{
 					e.printStackTrace();
 				}
 				
-				/*System.out.println("\nAbox iniziale: " );
-			for(OWLObject a: Lx){
-	    		a.accept(printer);
-	    		System.out.print(",");
-	    	}*/
+			
 			}
 			
 			LazyUnfolder lazyUnfolder = new LazyUnfolder(kb);
@@ -466,17 +467,24 @@ public class ALCReasoner{
 			Set<OWLObject> T_g = lazyUnfolder.getT_g();
 			this.C_g = this.convertT_gWithFactory(T_g);
 			if(this.C_g!=null) {			
-				OWLClassAssertionAxiom C_ginclusionIstance;
+				OWLClassAssertionAxiom C_gInclusionIstance = null;
 				
 				try {
-					C_ginclusionIstance = editor.createIndividual(this.C_g.getSuperClass().getNNF(), "x0");
-					aBox.add(C_ginclusionIstance);
+					C_gInclusionIstance = editor.createIndividual(this.C_g.getSuperClass().getNNF(), "x0");
+					aBox.add(C_gInclusionIstance);
 					Lx.add(this.C_g.getSuperClass().getNNF());
 				} catch (OWLOntologyCreationException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
+			
+			/*System.out.println("\nAbox iniziale: " );
+			for(OWLObject a: aBox){
+	    		a.accept(printer);
+	    		System.out.print(",");
+	    	}*/
+			
 			return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u);
 		}
 		
@@ -892,6 +900,7 @@ public class ALCReasoner{
 		
 		Set<OWLObject> lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
 		aBox.addAll(lazyUnfoldingRulesRes);
+		//System.out.println(lazyUnfoldingRulesRes);
 		for(OWLObject ins: lazyUnfoldingRulesRes) {
 			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
 		}
@@ -916,7 +925,7 @@ public class ALCReasoner{
     			return true;  
     		}
     	}
-    /*	System.out.println("\nAbox dopo regola intersezione: " );
+    	/*System.out.println("\nAbox dopo regola intersezione: " );
 		for(OWLObject a: aBox){
     		a.accept(printer);
     		System.out.println(",");
