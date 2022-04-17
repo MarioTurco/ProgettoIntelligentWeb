@@ -165,10 +165,11 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 		formula = formula.concat("Query:");
 		
 	}
-
+	
+	/* TODO non serve
 	public void addIndividual(String individual) {
 		formula = formula.concat("[" + individual + "]");
 		
-	}
+	}*/
 		
 }

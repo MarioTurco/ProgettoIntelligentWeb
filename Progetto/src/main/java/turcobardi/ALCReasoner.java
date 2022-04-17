@@ -447,13 +447,11 @@ public class ALCReasoner{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			gv.addCurrentLabel("x"+Integer.toString(gr.getLastNode()));
 			for(OWLObject o: Lx) {
 				o.accept(gv);
-				gv.addIndividual("x0");
 				gv.addSemicolon();
 			}
-			gr.createNode(0, gv.getFormula());
+			gr.createNode(gr.getLastNodeID(), gv.getFormula(), "x"+Integer.toString(gr.getLastNodeID()) );
 			
 			return implementTableauxNonEmptyTbox(ind, Lx, aBox, null);		
 		}
@@ -500,7 +498,11 @@ public class ALCReasoner{
 					e.printStackTrace();
 				}
 			}
-			
+			for(OWLObject o: Lx) {
+				o.accept(gv);
+				gv.addSemicolon();
+			}
+			gr.createNode(gr.getLastNodeID(), gv.getFormula(), "x"+Integer.toString(gr.getLastNodeID()) );
 			/*System.out.println("\nAbox iniziale: " );
 			for(OWLObject a: aBox){
 	    		a.accept(printer);
@@ -593,6 +595,11 @@ public class ALCReasoner{
     	
     	if(hasClash(Lx)) {
     		System.out.println("HA CLASH");
+    		gr.createNode(gr.getLastNodeID(), "", "CLASH");
+    		gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1,"");
+    		gr.decrementLastParent();
+    		gr.decrementLastParent();
+    		gr.decrementLastParent();
     		//aBox.removeAll(tmp);
     		/*for (OWLObject o: tmp) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -686,15 +693,13 @@ public class ALCReasoner{
     		Lx.add(((OWLClassAssertionAxiom) o).getClassExpression());
     		
     	}
-    	gv.addCurrentLabel(ind.getIRI().getShortForm());
     	for(OWLObject o: Lx) {
 			o.accept(gv);
-			gv.addIndividual(ind.getIRI().getShortForm());
 			gv.addSemicolon();
 		}
     	
-    	gr.createNode(gr.getLastNode(), gv.getFormula());
-    	gr.createLink(gr.getLastNode()-1, gr.getLastNode()-2);
+    	gr.createNode(gr.getLastNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
+    	gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1, "Intersezione");
     	
     	
     	//BLOCKING
@@ -746,18 +751,31 @@ public class ALCReasoner{
                 	    	a.accept(printer);
                 	    	System.out.println(",");
                 	    }*/	
+    						//TODO grafo
+    						
+    						for(OWLObject a: tmpLx){
+                    	    	a.accept(gv);
+                    	    	gv.addSemicolon();
+                    	    }
     						//System.out.println("\nChiamata ricorsiva");
+    						gr.createNode(gr.getLastNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
+    						gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1, "Union");
     						ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null);
     						//System.out.println("Ret: "+ ret);
-    						
     						if (ret) 
     							return true;
     						
+    						//TODO clash???
     						if(!ret){
     							aBox.remove(disjoint);
+    							//TODO QUII
+    							//gr.decrementLastParent();
+    							//gr.decrementLastParent();
     							//System.out.println("RIMOZIONE: ");
     							//o.accept(printer);
     							tmpLx.remove(((OWLClassAssertionAxiom) disjoint).getClassExpression());
+    							//gr.decrementLastParent();
+    							
     							//System.out.println("UGUALI: " + tmpLx.equals(Lx));
     							//tmpLx.removeAll(Lx);
     							/*for (OWLObject tmp1: tmpLx) {
@@ -769,8 +787,10 @@ public class ALCReasoner{
     						
     					}
     					
-    					if (!ret) 
+    					if (!ret) { 
     						return false;	
+    					
+    					}
     				}
     				
     			}
@@ -778,9 +798,12 @@ public class ALCReasoner{
     	}
     	
     	if(hasClash(Lx)) {
-    		
+    		gr.createNode(gr.getLastNodeID(), "", "CLASH");
+    		gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1, "");
+    		gr.decrementLastParent();
+    		gr.decrementLastParent();
+    		gr.decrementLastParent();
     		//System.out.println("HA CLASH");
-    		
     		/*System.out.println("\nLx" );
     		for(OWLObject a: Lx){
         		a.accept(printer);
@@ -824,7 +847,12 @@ public class ALCReasoner{
         					}
         				}
         			}
-        			
+        			for(OWLObject ax: tmpLx) {
+        				ax.accept(printer);
+        				gv.addSemicolon();
+        			}
+        			gr.createNode(gr.getLastNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
+        			gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1, "Exists");
         			//Regola per ogni
         			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
         			for (OWLObject forAll: Lx) {
