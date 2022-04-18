@@ -85,8 +85,8 @@ public class App {
     	}
     	System.out.println("\n################Normal################");
     	executeAndPrintTime("nonEmpty", reasoner);
-    	System.out.println("\n############LazyUnfolding#############");
-    	executeAndPrintTime("lazy", reasoner);
+    	//System.out.println("\n############LazyUnfolding#############");
+    	//executeAndPrintTime("lazy", reasoner);
     	/*ALCReasoner reasoner2 = new ALCReasoner(concept, concept);
     	System.out.println("\nKB convertita: ");
     	reasoner2.convertKB().accept(visitor);*/

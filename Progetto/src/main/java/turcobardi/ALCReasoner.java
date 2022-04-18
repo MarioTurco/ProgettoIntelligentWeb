@@ -352,28 +352,18 @@ public class ALCReasoner{
     	}
 		return toAdd;
 	}
-	/*private Set<OWLObject> instantiateMainConcept(Set<OWLObject> aBox){
-		equivalence.visit(concept);
-		OWLClassExpression tmp = equivalence.getOperands();
-		try {
-			OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
-			aBox.add(mainConcept);
-		} catch (OWLOntologyCreationException e) {
-			e.printStackTrace();
-		} catch (OWLOntologyStorageException e) {
-			e.printStackTrace();
-		}
-		return aBox;
-	}*/
+	
 	public void renderTableauxGraph() {
 		gr.createGraph();
 		try {
 			gr.renderGraph(null);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
+	
+	
+	//TODO Aggiungere il grafo anche qui in seguito
 	public boolean alcTableaux() {
 		Set<OWLObject> Lx = new HashSet<>();
 		Set<OWLObject> aBox = new HashSet<>();
@@ -451,7 +441,10 @@ public class ALCReasoner{
 				o.accept(gv);
 				gv.addSemicolon();
 			}
-			gr.createNode(gr.getLastNodeID(), gv.getFormula(), "x"+Integer.toString(gr.getLastNodeID()) );
+			//Creiamo il nodo principale
+	    	
+			gr.createNode(gr.getLastNodeID(), gv.getFormula(), ind.getIRI().getShortForm() );
+			System.out.println("NODO : " + gr.getLastNodeID() + " PARENT: " + gr.getLastParent());
 			
 			return implementTableauxNonEmptyTbox(ind, Lx, aBox, null);		
 		}
@@ -502,7 +495,7 @@ public class ALCReasoner{
 				o.accept(gv);
 				gv.addSemicolon();
 			}
-			gr.createNode(gr.getLastNodeID(), gv.getFormula(), "x"+Integer.toString(gr.getLastNodeID()) );
+			gr.createNode(gr.getLastNodeID(), gv.getFormula(), ind.getIRI().getShortForm() );
 			/*System.out.println("\nAbox iniziale: " );
 			for(OWLObject a: aBox){
 	    		a.accept(printer);
@@ -527,6 +520,8 @@ public class ALCReasoner{
 		return false;
 	}
 	
+	
+	//TODO implementare grafo anche qui
 	private boolean implementTableaux(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox) {
 		
 		boolean ret = true;
@@ -593,13 +588,15 @@ public class ALCReasoner{
     		
     	}
     	
+    	//TODO CLASH
     	if(hasClash(Lx)) {
     		System.out.println("HA CLASH");
-    		gr.createNode(gr.getLastNodeID(), "", "CLASH");
+    		/*gr.createNode(gr.getLastNodeID(), "", "CLASH");
     		gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1,"");
     		gr.decrementLastParent();
     		gr.decrementLastParent();
     		gr.decrementLastParent();
+    		*/
     		//aBox.removeAll(tmp);
     		/*for (OWLObject o: tmp) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -697,17 +694,17 @@ public class ALCReasoner{
 			o.accept(gv);
 			gv.addSemicolon();
 		}
-    	
-    	gr.createNode(gr.getLastNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
-    	gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1, "Intersezione");
-    	
-    	
+    	//TODO REGOLA DELL'INTERSEZIONE
     	//BLOCKING
     	if(predLx!=null) {
     		if(predLx.containsAll(Lx)) {
     			//System.out.println("\nBLOCKING TRUE");
     			return true;  
     		}
+    	}
+    	else {
+    		gr.createNode(gr.getLastNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
+        	gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1, "Intersezione");
     	}
     /*	System.out.println("\nAbox dopo regola intersezione: " );
 		for(OWLObject a: aBox){
@@ -734,6 +731,8 @@ public class ALCReasoner{
     	    	}*/
     				Set<OWLObject> intersec = new HashSet<>(aBox);
     				intersec.retainAll(resURule);
+    				//mi salvo il padre comune a tutti i nodi disgiunti
+    				int tmpParent = gr.getLastParent()+1;
     				if(intersec.size()==0) {
     					for (OWLObject disjoint : resURule) {
     						//	System.out.println("\nDISGIUNTO SCELTO: ");
@@ -758,24 +757,25 @@ public class ALCReasoner{
                     	    	gv.addSemicolon();
                     	    }
     						//System.out.println("\nChiamata ricorsiva");
+    			//quindi credo che devo salvarmi il parent da qualche parte e riutilizzarlo per ogni disgiunto altrimenti escono a catena
+    			//però c'è il problema che quando creo un nodo automaticamente mi incrementa anche il padre quindi pure se io glielo metto a mano
+    		    
     						gr.createNode(gr.getLastNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
-    						gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1, "Union");
-    						ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null);
-    						//System.out.println("Ret: "+ ret);
-    						if (ret) 
-    							return true;
     						
-    						//TODO clash???
+    						gr.createLink(gr.getLastNodeID()-1, tmpParent-1, "Union");
+    						
+    						ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null);
+    						gr.decrementLastParent();
+    						
+    						if (ret) {
+    							return true;
+    						}
     						if(!ret){
     							aBox.remove(disjoint);
     							//TODO QUII
-    							//gr.decrementLastParent();
-    							//gr.decrementLastParent();
     							//System.out.println("RIMOZIONE: ");
     							//o.accept(printer);
     							tmpLx.remove(((OWLClassAssertionAxiom) disjoint).getClassExpression());
-    							//gr.decrementLastParent();
-    							
     							//System.out.println("UGUALI: " + tmpLx.equals(Lx));
     							//tmpLx.removeAll(Lx);
     							/*for (OWLObject tmp1: tmpLx) {
@@ -784,25 +784,21 @@ public class ALCReasoner{
                 				
                 			}*/
     						}
-    						
     					}
-    					
     					if (!ret) { 
     						return false;	
-    					
     					}
     				}
     				
     			}
     		}
     	}
-    	
     	if(hasClash(Lx)) {
     		gr.createNode(gr.getLastNodeID(), "", "CLASH");
     		gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1, "");
     		gr.decrementLastParent();
     		gr.decrementLastParent();
-    		gr.decrementLastParent();
+    		
     		//System.out.println("HA CLASH");
     		/*System.out.println("\nLx" );
     		for(OWLObject a: Lx){
@@ -847,12 +843,16 @@ public class ALCReasoner{
         					}
         				}
         			}
+        			/*
+        			 * TODO GRAFO
         			for(OWLObject ax: tmpLx) {
         				ax.accept(printer);
         				gv.addSemicolon();
         			}
+        			
         			gr.createNode(gr.getLastNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
         			gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1, "Exists");
+        			*/
         			//Regola per ogni
         			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
         			for (OWLObject forAll: Lx) {
@@ -900,7 +900,6 @@ public class ALCReasoner{
 	}
 	
 	private Set<OWLObject> lazyUnfoldingRules(Set<OWLObject> aBox, Set<OWLObject> T_u, String individual) {
-		
 		Set<OWLObject> toAdd = new HashSet<>();
 		for (OWLObject unfoldableAx: T_u) {
 			if(unfoldableAx instanceof OWLEquivalentClassesAxiom) {

@@ -20,16 +20,16 @@ import guru.nidi.graphviz.engine.Graphviz;
 public class GraphRenderer {
 	private MutableGraph g = mutGraph("tableaux").setDirected(true);
 	private List<Node> nodes = new ArrayList<>();
-	private int lastNodeID = 0; //identificativo del nodo che serve per aggiungere gli archi
+	private int lastNodeID = 0; //identificativo univoco del nodo che serve per aggiungere gli archi
 	private int lastIndividual = 0;
-	private int lastParent = 0;
+	private int lastParent = -1; //Identificativo dell'ultimo padre conosciuto -1 -> nessuno
 	
 	public void createNode(int id, String externalLabel, String internalLabel) {
 		if(externalLabel==null) 
 			externalLabel="";
 		if(internalLabel==null) 
 			internalLabel="";
-		nodes.add(node(Integer.toString(id)).with(Label.raw(externalLabel).external(), Label.raw(internalLabel)));
+		nodes.add(node(Integer.toString(id)).with(Label.html(externalLabel).external(), Label.html(internalLabel)));
 		lastNodeID+=1;
 		lastParent+=1;
 	}
@@ -37,7 +37,9 @@ public class GraphRenderer {
 	public int getLastParent() {
 		return lastParent;
 	}
-	
+	public void setLastParent(int value) {
+		lastParent=value;
+	}
 	public void decrementLastParent() {
 		lastParent-=1;
 	}
@@ -59,7 +61,7 @@ public class GraphRenderer {
 	public void renderGraph(String path) throws IOException {
 		if(path==null)
 			path = "example/tableaux2";
-		this.linkprova2();
+		
 		Graphviz.fromGraph(g).render(Format.PNG).toFile(new File(path+".png"));
 		Graphviz.fromGraph(g).render(Format.SVG).toFile(new File(path+".svg"));
 		System.out.println("Graph printed at '/" + path + "' in SVG and PNG formats");

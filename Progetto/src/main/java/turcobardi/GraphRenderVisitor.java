@@ -30,7 +30,7 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	private final char exists = '\u2203';
 	private final char not = '\u00AC';
 	private final char inclusion = '\u2291';
-	private String formula= "";
+	private String formula= "\n\n";
 	
 	
 	
@@ -53,7 +53,7 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	
 	public String getFormula() {
 		String tmp = new String(formula);
-		formula = "";
+		formula = "\n\n";
 		return tmp;
 	}
 	
@@ -157,7 +157,7 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	}
 
 	public void addSemicolon() {
-		formula = formula.concat(";\n ");
+		formula = formula.concat("; ");
 		
 	}
 
