@@ -22,7 +22,7 @@ public class GraphRenderer {
 	private List<Node> nodes = new ArrayList<>();
 	private int lastNodeID = 0; //identificativo univoco del nodo che serve per aggiungere gli archi
 	private int lastIndividual = 0;
-	private int lastParent = -1; //Identificativo dell'ultimo padre conosciuto -1 -> nessuno
+	private int lastParent = -2; //Identificativo dell'ultimo padre conosciuto -1 -> nessuno
 	
 	public void createNode(int id, String externalLabel, String internalLabel) {
 		if(externalLabel==null) 

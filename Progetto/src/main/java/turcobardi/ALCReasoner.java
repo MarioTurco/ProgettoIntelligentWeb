@@ -704,7 +704,7 @@ public class ALCReasoner{
     	}
     	else {
     		gr.createNode(gr.getLastNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
-        	gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1, "Intersezione");
+        	gr.createLink(gr.getLastNodeID()-1, gr.getLastParent(), "Intersezione");
     	}
     /*	System.out.println("\nAbox dopo regola intersezione: " );
 		for(OWLObject a: aBox){
@@ -762,7 +762,7 @@ public class ALCReasoner{
     		    
     						gr.createNode(gr.getLastNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
     						
-    						gr.createLink(gr.getLastNodeID()-1, tmpParent-1, "Union");
+    						gr.createLink(gr.getLastNodeID()-1, tmpParent, "Union");
     						
     						ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null);
     						gr.decrementLastParent();
@@ -795,9 +795,9 @@ public class ALCReasoner{
     	}
     	if(hasClash(Lx)) {
     		gr.createNode(gr.getLastNodeID(), "", "CLASH");
-    		gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1, "");
+    		gr.createLink(gr.getLastNodeID()-1, gr.getLastParent(), "");
     		gr.decrementLastParent();
-    		gr.decrementLastParent();
+    		//gr.decrementLastParent();
     		
     		//System.out.println("HA CLASH");
     		/*System.out.println("\nLx" );
