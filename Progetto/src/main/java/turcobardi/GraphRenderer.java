@@ -20,18 +20,31 @@ import guru.nidi.graphviz.engine.Graphviz;
 public class GraphRenderer {
 	private MutableGraph g = mutGraph("tableaux").setDirected(true);
 	private List<Node> nodes = new ArrayList<>();
-	private int lastNodeID = 0; //identificativo univoco del nodo che serve per aggiungere gli archi
-	private int lastIndividual = 0;
-	private int lastParent = -2; //Identificativo dell'ultimo padre conosciuto -1 -> nessuno
+	private int nextNodeID = 0; //identificativo univoco del nodo che serve per aggiungere gli archi
+	//private int lastIndividual = 0;
+	private int lastParent = -2; //Identificativo dell'ultimo padre conosciuto 
 	
-	public void createNode(int id, String externalLabel, String internalLabel) {
+	public int createNode(int id, String externalLabel, String internalLabel) {
 		if(externalLabel==null) 
 			externalLabel="";
 		if(internalLabel==null) 
 			internalLabel="";
 		nodes.add(node(Integer.toString(id)).with(Label.html(externalLabel).external(), Label.html(internalLabel)));
-		lastNodeID+=1;
+		nextNodeID+=1;
 		lastParent+=1;
+		return id;
+	}
+	
+	public Node createNode2(int id, String externalLabel, String internalLabel) {
+		if(externalLabel==null) 
+			externalLabel="";
+		if(internalLabel==null) 
+			internalLabel="";
+		Node current =node(Integer.toString(id)).with(Label.html(externalLabel).external(), Label.html(internalLabel)); 
+		nodes.add(current);
+		nextNodeID+=1;
+		lastParent+=1;
+		return current;
 	}
 	
 	public int getLastParent() {
@@ -43,13 +56,13 @@ public class GraphRenderer {
 	public void decrementLastParent() {
 		lastParent-=1;
 	}
-	public int getLastNodeID() {
-		return lastNodeID;
+	public int getNextNodeID() {
+		return nextNodeID;
 	}
 	
-	public int getLastIndividual() {
+	/*public int getLastIndividual() {
 		return lastIndividual;
-	}
+	}*/
 	
 	public MutableGraph createGraph() {
 		for(Node n: nodes) {
@@ -68,13 +81,16 @@ public class GraphRenderer {
 	}
 
 
-	public void createLink(int child, int parent, String label) {
-		Node parentNode = nodes.get(parent);
-		Node childNode = nodes.get(child);
-	
+	public void createLink(int childID, int parentID, String label) {
+		Node parentNode = nodes.get(parentID);
+		Node childNode = nodes.get(childID);
 		//this.g.addLink((parentNode).linkTo(childNode).with(Label.of(label)));
 		(parentNode.link(to(childNode).with(Label.of(label)))).addTo(g);
+	}
 	
+	public void createLink2(Node childNode, Node parentNode, String label) {
+		//this.g.addLink((parentNode).linkTo(childNode).with(Label.of(label)));
+		(parentNode.link(to(childNode).with(Label.of(label)))).addTo(g);
 	}
 	
 	
@@ -90,8 +106,9 @@ public class GraphRenderer {
 		childNode.addTo(g);
 	}
 
+	/*
 	public void decrementLastIndividual() {
 		lastIndividual--;
 		
-	}
+	}*/
 }
