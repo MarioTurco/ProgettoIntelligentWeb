@@ -34,7 +34,10 @@ public class GraphRenderer {
 		lastParent+=1;
 		return id;
 	}
-	
+	public Node editNodeLabel(Node currentNode, String internal, String external) {
+		Node editedNode = currentNode.with(Label.html(external).external(), Label.html(internal));
+		return editedNode;
+	}
 	public Node createNode2(int id, String externalLabel, String internalLabel) {
 		if(externalLabel==null) 
 			externalLabel="";

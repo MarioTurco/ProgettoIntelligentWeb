@@ -8,7 +8,7 @@
 <title>0</title>
 <ellipse fill="none" stroke="black" cx="1008" cy="-352" rx="27" ry="18"/>
 <text text-anchor="start" x="1001" y="-348.3" font-family="Times New Roman,serif" font-size="14.00">x0</text>
-<text text-anchor="start" x="543" y="-373.8" font-family="Times New Roman,serif" font-size="14.00">(¬A ⊔ ¬B ); ((K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )); </text>
+<text text-anchor="start" x="209" y="-373.8" font-family="Times New Roman,serif" font-size="14.00">(¬A ⊔ ¬B ); (K ⊔ (A ⊔ (¬B ⊓ ¬K ))); ((K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )); (((B ⊔ K )⊓ ¬A )⊔ ¬K ); </text>
 </g>
 <!-- 1 -->
 <g id="node2" class="node">

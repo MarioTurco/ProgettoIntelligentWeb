@@ -604,6 +604,7 @@ public class ALCReasoner{
 	
 	private boolean implementTableauxNonEmptyTbox(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Node parent) {
 		boolean ret = true;
+		
 		//System.out.println(ind.getIRI().getShortForm());
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(aBox,ind.getIRI().getShortForm());
@@ -618,6 +619,11 @@ public class ALCReasoner{
     		Lx.add(((OWLClassAssertionAxiom) o).getClassExpression());
     		
     	}
+    	for (OWLObject o: Lx) {
+    		o.accept(gv);
+    		gv.addSemicolon();
+    	}
+    	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(), gv.getFormula());
     	if(hasClash(Lx)) {
     		Node current = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
     		gr.createLink2(current, parent, "");
