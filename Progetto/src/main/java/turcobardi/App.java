@@ -43,14 +43,16 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 		OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
-		File kbFile = new File("kb2.owl");
-		File queryFile = new File("prova2.owl");
+		File kbFile = new File("KB10.owl");
+		File queryFile = new File("concept_2.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("Numero assiomi :" + kb.getAxiomCount());
 		IRI iriKb = kb.getOntologyID().getOntologyIRI().get();
+		System.out.println("KB: "+iriKb);
 		OWLOntology query = manQ.loadOntologyFromOntologyDocument(queryFile);
 		System.out.println("Numero assiomi :" + query.getAxiomCount());
 		IRI iriQuery = kb.getOntologyID().getOntologyIRI().get();
+		System.out.println("QUERY: " +iriQuery);
 		/*
 		//stampa il nome delle entità
     	o.signature().forEach(s -> System.out.println(s.toString().replace(iri.toString(), "")));

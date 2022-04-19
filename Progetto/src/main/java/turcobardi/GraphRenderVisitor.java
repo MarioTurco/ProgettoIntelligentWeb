@@ -23,7 +23,6 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	
 	private IRI iri = null;
 	private String toRemove = "";
-	private PrintStream out = null;
 	private final char intersect = '\u2293';
 	private final char union = '\u2294';
 	private final char foreach = '\u2200';
@@ -33,18 +32,14 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	private String formula= "\n\n";
 	
 	
-	
+	public void printFormula() {
+		System.out.println(formula);
+	}
 	public GraphRenderVisitor(IRI iri, String toRemove) {
 		this.iri=iri;
 		if(toRemove!=null) {
 			this.toRemove=toRemove;
 		}
-		
-		try {
-			this.out = new PrintStream(System.out, true, "UTF-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		};
 	}
 	
 	public void addCurrentLabel(String node) {
@@ -148,7 +143,8 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	
     
     private String conceptToString(IRI iri, String str) {
-		str = str.replace(iri.toString()+toRemove, "");
+		str = str.replace(iri.toString(), "");
+		str = str.replace(toRemove, "");
 		str = str.replace("#", "");
 		str = str.replace("<", "");
 		str = str.replace(">", "");

@@ -20,8 +20,8 @@ import guru.nidi.graphviz.engine.Graphviz;
 public class GraphRenderer {
 	private MutableGraph g = mutGraph("tableaux").setDirected(true);
 	private List<Node> nodes = new ArrayList<>();
+	//TODO nextNodeID non serve più e può essere levato
 	private int nextNodeID = 0; //identificativo univoco del nodo che serve per aggiungere gli archi
-	//private int lastIndividual = 0;
 	private int lastParent = -2; //Identificativo dell'ultimo padre conosciuto 
 	
 	public int createNode(int id, String externalLabel, String internalLabel) {
@@ -62,11 +62,7 @@ public class GraphRenderer {
 	public int getNextNodeID() {
 		return nextNodeID;
 	}
-	
-	/*public int getLastIndividual() {
-		return lastIndividual;
-	}*/
-	
+
 	public MutableGraph createGraph() {
 		for(Node n: nodes) {
 			n.addTo(g);
@@ -76,7 +72,7 @@ public class GraphRenderer {
 	
 	public void renderGraph(String path) throws IOException {
 		if(path==null)
-			path = "example/tableaux2";
+			path = "example/tableaux3";
 		
 		Graphviz.fromGraph(g).render(Format.PNG).toFile(new File(path+".png"));
 		Graphviz.fromGraph(g).render(Format.SVG).toFile(new File(path+".svg"));

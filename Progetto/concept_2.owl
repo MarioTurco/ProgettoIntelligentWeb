@@ -1,0 +1,28 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13>
+
+
+ObjectProperty: <http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#R>
+
+    
+Class: <http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#A>
+
+    
+Class: <http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#B>
+
+    
+Class: <http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#C>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#R> some 
+            (<http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#A>
+             and (not (<http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#B>)))
+    
+    

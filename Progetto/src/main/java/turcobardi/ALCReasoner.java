@@ -50,10 +50,10 @@ public class ALCReasoner{
 		this.kb = kb;
 		this.gr = new GraphRenderer();
 		this.concept = concept;
-		this.editor = new OntologyEditor(concept);
+		this.editor = new OntologyEditor(kb);
 		this.equivalence = new EquivalenceRuleVisitor();
-		this.printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
-		this.gv = new GraphRenderVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
+		this.printer = new OntologyPrintingVisitor(kb.getOntologyID().getOntologyIRI().get(), "");
+		this.gv = new GraphRenderVisitor(kb.getOntologyID().getOntologyIRI().get(), "");
 	}
 	
 	
@@ -623,6 +623,7 @@ public class ALCReasoner{
     		o.accept(gv);
     		gv.addSemicolon();
     	}
+    	
     	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(), gv.getFormula());
     	if(hasClash(Lx)) {
     		Node current = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
@@ -740,10 +741,11 @@ public class ALCReasoner{
     		    		a.accept(printer);
     		    		System.out.println(",");
     		    	}*/
-        			
+        			String relationName = null;
         			for(OWLObject add: toAdd) {
         				if (add instanceof OWLObjectPropertyAssertionAxiom) {
         					tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
+        					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
         				}
         				if (add instanceof OWLClassAssertionAxiom) {
         					if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
@@ -751,16 +753,14 @@ public class ALCReasoner{
         					}
         				}
         			}
-        			/*
-        			 * TODO GRAFO
-        			for(OWLObject ax: tmpLx) {
-        				ax.accept(printer);
-        				gv.addSemicolon();
-        			}
-        			
-        			gr.createNode(gr.getLastNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
-        			gr.createLink(gr.getLastNodeID()-1, gr.getLastParent()-1, "Exists");
-        			*/
+        			for (OWLObject ax: tmpLx) {
+        	    		ax.accept(gv);
+        	    		gv.addSemicolon();
+        	    	}
+        	    	
+        			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(),  ind.getIRI().getShortForm());
+        			gr.createLink2(current, parent, relationName);
+  
         			//Regola per ogni
         			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
         			for (OWLObject forAll: Lx) {
