@@ -23,7 +23,8 @@ public class GraphRenderer {
 	//TODO nextNodeID non serve più e può essere levato
 	private int nextNodeID = 0; //identificativo univoco del nodo che serve per aggiungere gli archi
 	private int lastParent = -2; //Identificativo dell'ultimo padre conosciuto 
-	
+	 
+	/*
 	public int createNode(int id, String externalLabel, String internalLabel) {
 		if(externalLabel==null) 
 			externalLabel="";
@@ -33,17 +34,19 @@ public class GraphRenderer {
 		nextNodeID+=1;
 		lastParent+=1;
 		return id;
-	}
+	}*/
+	
 	public Node editNodeLabel(Node currentNode, String internal, String external) {
-		Node editedNode = currentNode.with(Label.html(external).external(), Label.html(internal));
+		Node editedNode = currentNode.with(Label.raw(external).external(), Label.raw(internal));
 		return editedNode;
 	}
+	
 	public Node createNode2(int id, String externalLabel, String internalLabel) {
 		if(externalLabel==null) 
 			externalLabel="";
 		if(internalLabel==null) 
 			internalLabel="";
-		Node current =node(Integer.toString(id)).with(Label.html(externalLabel).external(), Label.html(internalLabel)); 
+		Node current =node(Integer.toString(id)).with(Label.raw(externalLabel).external(), Label.raw(internalLabel)); 
 		nodes.add(current);
 		nextNodeID+=1;
 		lastParent+=1;
@@ -74,7 +77,7 @@ public class GraphRenderer {
 		if(path==null)
 			path = "example/tableaux3";
 		
-		Graphviz.fromGraph(g).render(Format.PNG).toFile(new File(path+".png"));
+		//Graphviz.fromGraph(g).render(Format.PNG).toFile(new File(path+".png"));
 		Graphviz.fromGraph(g).render(Format.SVG).toFile(new File(path+".svg"));
 		System.out.println("Graph printed at '/" + path + "' in SVG and PNG formats");
 	}
@@ -92,22 +95,4 @@ public class GraphRenderer {
 		(parentNode.link(to(childNode).with(Label.of(label)))).addTo(g);
 	}
 	
-	
-	//TODO cancellami servo solo per testare delle cose
-	public void linkprova2() {
-		
-		Node parentNode = (node(Integer.toString(123213321)).with(Label.raw("0"), Label.of("AOO")));
-		Node childNode = (node(Integer.toString(134543254)).with(Label.raw("1")));
-		
-		parentNode.asLinkSource().linkTo(childNode.asLinkTarget()).with(Label.of("AAA"));
-		parentNode.link(to(childNode)).addTo(g);
-		parentNode.addTo(g);
-		childNode.addTo(g);
-	}
-
-	/*
-	public void decrementLastIndividual() {
-		lastIndividual--;
-		
-	}*/
 }

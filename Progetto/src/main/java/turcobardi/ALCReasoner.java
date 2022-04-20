@@ -53,7 +53,7 @@ public class ALCReasoner{
 		this.editor = new OntologyEditor(kb);
 		this.equivalence = new EquivalenceRuleVisitor();
 		this.printer = new OntologyPrintingVisitor(kb.getOntologyID().getOntologyIRI().get(), "");
-		this.gv = new GraphRenderVisitor(kb.getOntologyID().getOntologyIRI().get(), "");
+		this.gv = new GraphRenderVisitor(kb.getOntologyID().getOntologyIRI().get(), "http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13");
 	}
 	
 	
@@ -429,7 +429,8 @@ public class ALCReasoner{
 				o.accept(gv);
 				gv.addSemicolon();
 			}
-			gr.createNode(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm() );
+			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm() );
+			//TODO aggiungere current nella chiamata ricorsiva
 			return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u);
 		}
 		
@@ -867,6 +868,7 @@ public class ALCReasoner{
 		return toAdd;
 	}
 	
+	//TODO aggiungere il riferimento al nodo padre come parametrop
 	private boolean implementTableauxNonEmptyTboxLazyUnfolding(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Set<OWLObject> T_u) {
 		boolean ret = true;
 		Set<OWLObject> lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());

@@ -53,7 +53,7 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	}
 	
 	public void visit(OWLObjectSomeValuesFrom desc) {
-		formula=formula.concat("" + exists + "" + desc.getProperty().toString() );
+		formula=formula.concat("" + exists + "" + conceptToString(iri,desc.getProperty().toString()) );
 		desc.getProperty().accept(this);
 		formula=formula.concat(".");
 	    desc.getFiller().accept(this);
