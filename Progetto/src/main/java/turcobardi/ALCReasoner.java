@@ -794,7 +794,7 @@ public class ALCReasoner{
         							ax.accept(gv);
         							gv.addSemicolon();
         						}
-        						gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
+        						current = gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
         						
         					}
         				}
@@ -927,7 +927,11 @@ public class ALCReasoner{
     		gv.addSemicolon();
     	}
     	
+<<<<<<< HEAD
     	//System.out.println("\n Formula Lx"+gv.getFormula());
+=======
+    //	System.out.println("\n Formula Lx"+gv.getFormula());
+>>>>>>> 6b9d27b3f327c45f100a7fe234e385acf7cf15cb
     	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(), gv.getFormula());
     	
     	if(hasClash(Lx)) {
@@ -1081,8 +1085,7 @@ public class ALCReasoner{
         			relationName = relationName.replace("<", "");
         			relationName = relationName.replace(">", "");
         			relationName = relationName.replace("#", "");
-        			String formula = gv.getFormula();
-        			System.out.println("FORMULA " + formula);
+        	
         			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(),  newIndName);
         			gr.createLink2(current, parent, relationName);
         			//Regola per ogni
@@ -1108,7 +1111,7 @@ public class ALCReasoner{
         							ax.accept(gv);
         							gv.addSemicolon();
         						}
-        						gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
+        						current = gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
         						
         					}
         				}

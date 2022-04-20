@@ -1,7 +1,5 @@
 package turcobardi;
 
-import java.io.PrintStream;
-import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import org.semanticweb.owlapi.model.IRI;
@@ -148,7 +146,6 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 		str = str.replace("#", "");
 		str = str.replace("<", "");
 		str = str.replace(">", "");
-		
 		return str;
 	}
 
