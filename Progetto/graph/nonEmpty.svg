@@ -1,290 +1,254 @@
-<svg width="1216px" height="521px"
- viewBox="0.00 0.00 1216.00 521.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1192px" height="521px"
+ viewBox="0.00 0.00 1192.26 521.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 517.0)">
 <title>tableaux</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-517 1212,-517 1212,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-517 1188.26,-517 1188.26,4 -4,4"/>
 <!-- 0 -->
 <g id="node1" class="node">
 <title>0</title>
-<ellipse fill="none" stroke="black" cx="596" cy="-446.2" rx="27" ry="18"/>
-<text text-anchor="middle" x="596" y="-442" font-family="Times,serif" font-size="14.00">x0</text>
-<text text-anchor="middle" x="383.18" y="-468.4" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); ∃R.(A ⊓ ¬B ); (A ⊔ ¬B ); </text>
+<ellipse fill="none" stroke="black" cx="584.08" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="middle" x="584.08" y="-442" font-family="Times,serif" font-size="14.00">x0</text>
+<text text-anchor="middle" x="371.26" y="-468.4" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); ∃R.(A ⊓ ¬B ); (A ⊔ ¬B ); </text>
 </g>
 <!-- 1 -->
 <g id="node2" class="node">
 <title>1</title>
-<ellipse fill="none" stroke="black" cx="545" cy="-357.4" rx="27" ry="18"/>
-<text text-anchor="middle" x="545" y="-353.2" font-family="Times,serif" font-size="14.00">x0</text>
-<polygon fill="none" stroke="black" points="118.5,-378.4 118.5,-400.4 515.5,-400.4 515.5,-378.4 118.5,-378.4"/>
-<text text-anchor="start" x="121.06" y="-384.8" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); B ; ∃R.(A ⊓ ¬B ); (A ⊔ ¬B ); </text>
-<polygon fill="none" stroke="black" points="115,-375.4 115,-403.4 518,-403.4 518,-375.4 115,-375.4"/>
+<ellipse fill="none" stroke="black" cx="533.08" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="middle" x="533.08" y="-353.2" font-family="Times,serif" font-size="14.00">x0</text>
+<text text-anchor="middle" x="310.15" y="-379.6" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); B ; ∃R.(A ⊓ ¬B ); (A ⊔ ¬B ); </text>
 </g>
 <!-- 0&#45;&gt;1 -->
 <g id="edge2" class="edge">
 <title>0&#45;&gt;1</title>
-<path fill="none" stroke="black" d="M586.65,-429.28C579.07,-416.39 568.27,-398.01 559.57,-383.2"/>
-<polygon fill="black" stroke="black" points="562.55,-381.36 554.47,-374.51 556.52,-384.91 562.55,-381.36"/>
-<text text-anchor="middle" x="593.5" y="-397.6" font-family="Times,serif" font-size="14.00">Union</text>
+<path fill="none" stroke="black" d="M574.73,-429.28C567.16,-416.39 556.36,-398.01 547.65,-383.2"/>
+<polygon fill="black" stroke="black" points="550.64,-381.36 542.55,-374.51 544.6,-384.91 550.64,-381.36"/>
+<text text-anchor="middle" x="581.58" y="-397.6" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 <!-- 10 -->
 <g id="node11" class="node">
 <title>10</title>
-<ellipse fill="none" stroke="black" cx="648" cy="-357.4" rx="27" ry="18"/>
-<text text-anchor="middle" x="648" y="-353.2" font-family="Times,serif" font-size="14.00">x0</text>
-<polygon fill="none" stroke="black" points="678.5,-378.4 678.5,-400.4 1085.5,-400.4 1085.5,-378.4 678.5,-378.4"/>
-<text text-anchor="start" x="681.02" y="-384.8" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); ∃R.(A ⊓ ¬B ); ¬A ; (A ⊔ ¬B ); </text>
-<polygon fill="none" stroke="black" points="675,-375.4 675,-403.4 1088,-403.4 1088,-375.4 675,-375.4"/>
+<ellipse fill="none" stroke="black" cx="636.08" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="middle" x="636.08" y="-353.2" font-family="Times,serif" font-size="14.00">x0</text>
+<text text-anchor="middle" x="864.07" y="-379.6" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); ∃R.(A ⊓ ¬B ); ¬A ; (A ⊔ ¬B ); </text>
 </g>
 <!-- 0&#45;&gt;10 -->
 <g id="edge1" class="edge">
 <title>0&#45;&gt;10</title>
-<path fill="none" stroke="black" d="M605.54,-429.28C613.26,-416.39 624.27,-398.01 633.15,-383.2"/>
-<polygon fill="black" stroke="black" points="636.21,-384.89 638.35,-374.51 630.21,-381.29 636.21,-384.89"/>
-<text text-anchor="middle" x="644.5" y="-397.6" font-family="Times,serif" font-size="14.00">Union</text>
+<path fill="none" stroke="black" d="M593.62,-429.28C601.34,-416.39 612.36,-398.01 621.23,-383.2"/>
+<polygon fill="black" stroke="black" points="624.29,-384.89 626.43,-374.51 618.29,-381.29 624.29,-384.89"/>
+<text text-anchor="middle" x="632.58" y="-397.6" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 <!-- 2 -->
 <g id="node3" class="node">
 <title>2</title>
-<ellipse fill="none" stroke="black" cx="465" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="middle" x="465" y="-264.4" font-family="Times,serif" font-size="14.00">x0</text>
-<polygon fill="none" stroke="black" points="8.5,-289.6 8.5,-311.6 435.5,-311.6 435.5,-289.6 8.5,-289.6"/>
-<text text-anchor="start" x="11.29" y="-296" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); B ; ∃R.(A ⊓ ¬B ); ¬B ; (A ⊔ ¬B ); </text>
-<polygon fill="none" stroke="black" points="5,-286.6 5,-314.6 438,-314.6 438,-286.6 5,-286.6"/>
+<ellipse fill="none" stroke="black" cx="453.08" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="middle" x="453.08" y="-264.4" font-family="Times,serif" font-size="14.00">x0</text>
+<text text-anchor="middle" x="215.37" y="-290.8" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); B ; ∃R.(A ⊓ ¬B ); ¬B ; (A ⊔ ¬B ); </text>
 </g>
 <!-- 1&#45;&gt;2 -->
 <g id="edge4" class="edge">
 <title>1&#45;&gt;2</title>
-<path fill="none" stroke="black" d="M528.49,-342.68C521.32,-336.45 512.98,-328.82 506,-321.4 497.79,-312.66 489.44,-302.42 482.44,-293.36"/>
-<polygon fill="black" stroke="black" points="485.03,-290.97 476.19,-285.12 479.45,-295.2 485.03,-290.97"/>
-<text text-anchor="middle" x="524.5" y="-308.8" font-family="Times,serif" font-size="14.00">Union</text>
+<path fill="none" stroke="black" d="M516.57,-342.68C509.4,-336.45 501.07,-328.82 494.09,-321.4 485.87,-312.66 477.53,-302.42 470.53,-293.36"/>
+<polygon fill="black" stroke="black" points="473.11,-290.97 464.28,-285.12 467.53,-295.2 473.11,-290.97"/>
+<text text-anchor="middle" x="512.58" y="-308.8" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 <!-- 4 -->
 <g id="node5" class="node">
 <title>4</title>
-<ellipse fill="none" stroke="black" cx="545" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="middle" x="545" y="-264.4" font-family="Times,serif" font-size="14.00">x0</text>
-<polygon fill="none" stroke="black" points="97,-225.6 97,-247.6 515,-247.6 515,-225.6 97,-225.6"/>
-<text text-anchor="start" x="99.56" y="-232" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; B ; ∃R.(A ⊓ ¬B ); (A ⊔ ¬B ); </text>
-<polygon fill="none" stroke="black" points="94,-222.6 94,-250.6 518,-250.6 518,-222.6 94,-222.6"/>
+<ellipse fill="none" stroke="black" cx="533.08" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="middle" x="533.08" y="-264.4" font-family="Times,serif" font-size="14.00">x0</text>
+<text text-anchor="middle" x="299.65" y="-206" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; B ; ∃R.(A ⊓ ¬B ); (A ⊔ ¬B ); </text>
 </g>
 <!-- 1&#45;&gt;4 -->
 <g id="edge3" class="edge">
 <title>1&#45;&gt;4</title>
-<path fill="none" stroke="black" d="M545,-339.25C545,-327.12 545,-310.62 545,-296.72"/>
-<polygon fill="black" stroke="black" points="548.5,-296.71 545,-286.71 541.5,-296.71 548.5,-296.71"/>
-<text text-anchor="middle" x="562.5" y="-308.8" font-family="Times,serif" font-size="14.00">Union</text>
+<path fill="none" stroke="black" d="M533.08,-339.25C533.08,-327.12 533.08,-310.62 533.08,-296.72"/>
+<polygon fill="black" stroke="black" points="536.58,-296.71 533.08,-286.71 529.58,-296.71 536.58,-296.71"/>
+<text text-anchor="middle" x="550.58" y="-308.8" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 <!-- 3 -->
 <g id="node4" class="node">
 <title>3</title>
-<ellipse fill="none" stroke="black" cx="457" cy="-179.8" rx="42.88" ry="18"/>
-<text text-anchor="start" x="434.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
-<polygon fill="none" stroke="black" points="405.31,-200.8 405.31,-206.8 411.31,-206.8 411.31,-200.8 405.31,-200.8"/>
-<polygon fill="none" stroke="black" points="402.31,-197.8 402.31,-209.8 414.31,-209.8 414.31,-197.8 402.31,-197.8"/>
+<ellipse fill="none" stroke="black" cx="445.08" cy="-179.8" rx="42.88" ry="18"/>
+<text text-anchor="middle" x="445.08" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 2&#45;&gt;3 -->
 <g id="edge5" class="edge">
 <title>2&#45;&gt;3</title>
-<path fill="none" stroke="black" d="M463.42,-250.45C462.3,-238.32 460.78,-221.82 459.5,-207.92"/>
-<polygon fill="black" stroke="black" points="462.98,-207.55 458.58,-197.91 456.01,-208.19 462.98,-207.55"/>
+<path fill="none" stroke="black" d="M451.5,-250.45C450.39,-238.32 448.86,-221.82 447.58,-207.92"/>
+<polygon fill="black" stroke="black" points="451.06,-207.55 446.66,-197.91 444.09,-208.19 451.06,-207.55"/>
 </g>
 <!-- 5 -->
 <g id="node6" class="node">
 <title>5</title>
-<ellipse fill="none" stroke="black" cx="545" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="534.5" y="-175.6" font-family="Times,serif" font-size="14.00">x01</text>
-<polygon fill="none" stroke="black" points="575.5,-200.8 575.5,-222.8 796.5,-222.8 796.5,-200.8 575.5,-200.8"/>
-<text text-anchor="start" x="578.32" y="-207.2" font-family="Times,serif" font-size="14.00">((A ⊔ ¬B )⊓ (B ⊔ ¬A )); (A ⊓ ¬B ); </text>
-<polygon fill="none" stroke="black" points="572,-197.8 572,-225.8 799,-225.8 799,-197.8 572,-197.8"/>
+<ellipse fill="none" stroke="black" cx="533.08" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="middle" x="533.08" y="-175.6" font-family="Times,serif" font-size="14.00">x01</text>
+<text text-anchor="middle" x="667.76" y="-202" font-family="Times,serif" font-size="14.00">((A ⊔ ¬B )⊓ (B ⊔ ¬A )); (A ⊓ ¬B ); </text>
 </g>
 <!-- 4&#45;&gt;5 -->
 <g id="edge6" class="edge">
 <title>4&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M545,-250.45C545,-238.32 545,-221.82 545,-207.92"/>
-<polygon fill="black" stroke="black" points="548.5,-207.91 545,-197.91 541.5,-207.91 548.5,-207.91"/>
-<text text-anchor="middle" x="549.67" y="-220" font-family="Times,serif" font-size="14.00">R</text>
+<path fill="none" stroke="black" d="M533.08,-250.45C533.08,-238.32 533.08,-221.82 533.08,-207.92"/>
+<polygon fill="black" stroke="black" points="536.58,-207.91 533.08,-197.91 529.58,-207.91 536.58,-207.91"/>
+<text text-anchor="middle" x="537.75" y="-220" font-family="Times,serif" font-size="14.00">R</text>
 </g>
 <!-- 6 -->
 <g id="node7" class="node">
 <title>6</title>
-<ellipse fill="none" stroke="black" cx="458" cy="-91" rx="27" ry="18"/>
-<text text-anchor="start" x="447.5" y="-86.8" font-family="Times,serif" font-size="14.00">x01</text>
-<polygon fill="none" stroke="black" points="3.5,-112 3.5,-134 428.5,-134 428.5,-112 3.5,-112"/>
-<text text-anchor="start" x="6.46" y="-118.4" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; B ; (A ⊓ ¬B ); ¬B ; (A ⊔ ¬B ); </text>
-<polygon fill="none" stroke="black" points="0,-109 0,-137 431,-137 431,-109 0,-109"/>
+<ellipse fill="none" stroke="black" cx="446.08" cy="-91" rx="27" ry="18"/>
+<text text-anchor="middle" x="446.08" y="-86.8" font-family="Times,serif" font-size="14.00">x01</text>
+<text text-anchor="middle" x="209.54" y="-113.2" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; B ; (A ⊓ ¬B ); ¬B ; (A ⊔ ¬B ); </text>
 </g>
 <!-- 5&#45;&gt;6 -->
 <g id="edge8" class="edge">
 <title>5&#45;&gt;6</title>
-<path fill="none" stroke="black" d="M529.14,-165.16C521.94,-158.81 513.39,-151.07 506,-143.8 496.54,-134.49 486.49,-123.79 478.05,-114.54"/>
-<polygon fill="black" stroke="black" points="480.4,-111.92 471.1,-106.85 475.21,-116.62 480.4,-111.92"/>
-<text text-anchor="middle" x="524.5" y="-131.2" font-family="Times,serif" font-size="14.00">Union</text>
+<path fill="none" stroke="black" d="M517.22,-165.16C510.02,-158.81 501.48,-151.07 494.09,-143.8 484.63,-134.49 474.58,-123.79 466.14,-114.54"/>
+<polygon fill="black" stroke="black" points="468.49,-111.92 459.18,-106.85 463.3,-116.62 468.49,-111.92"/>
+<text text-anchor="middle" x="512.58" y="-131.2" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 <!-- 8 -->
 <g id="node9" class="node">
 <title>8</title>
-<ellipse fill="none" stroke="black" cx="545" cy="-91" rx="27" ry="18"/>
-<text text-anchor="start" x="534.5" y="-86.8" font-family="Times,serif" font-size="14.00">x01</text>
-<polygon fill="none" stroke="black" points="521.5,-48 521.5,-70 956.5,-70 956.5,-48 521.5,-48"/>
-<text text-anchor="start" x="524.41" y="-54.4" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; (A ⊓ ¬B ); ¬A ; ¬B ; (A ⊔ ¬B ); </text>
-<polygon fill="none" stroke="black" points="518,-45 518,-73 959,-73 959,-45 518,-45"/>
+<ellipse fill="none" stroke="black" cx="533.08" cy="-91" rx="27" ry="18"/>
+<text text-anchor="middle" x="533.08" y="-86.8" font-family="Times,serif" font-size="14.00">x01</text>
+<text text-anchor="middle" x="291.5" y="-28.4" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; (A ⊓ ¬B ); ¬A ; ¬B ; (A ⊔ ¬B ); </text>
 </g>
 <!-- 5&#45;&gt;8 -->
 <g id="edge7" class="edge">
 <title>5&#45;&gt;8</title>
-<path fill="none" stroke="black" d="M545,-161.65C545,-149.52 545,-133.02 545,-119.12"/>
-<polygon fill="black" stroke="black" points="548.5,-119.11 545,-109.11 541.5,-119.11 548.5,-119.11"/>
-<text text-anchor="middle" x="562.5" y="-131.2" font-family="Times,serif" font-size="14.00">Union</text>
+<path fill="none" stroke="black" d="M533.08,-161.65C533.08,-149.52 533.08,-133.02 533.08,-119.12"/>
+<polygon fill="black" stroke="black" points="536.58,-119.11 533.08,-109.11 529.58,-119.11 536.58,-119.11"/>
+<text text-anchor="middle" x="550.58" y="-131.2" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 <!-- 7 -->
 <g id="node8" class="node">
 <title>7</title>
-<ellipse fill="none" stroke="black" cx="442" cy="-18" rx="42.88" ry="18"/>
-<text text-anchor="start" x="419.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
-<polygon fill="none" stroke="black" points="390.31,-39 390.31,-45 396.31,-45 396.31,-39 390.31,-39"/>
-<polygon fill="none" stroke="black" points="387.31,-36 387.31,-48 399.31,-48 399.31,-36 387.31,-36"/>
+<ellipse fill="none" stroke="black" cx="430.08" cy="-18" rx="42.88" ry="18"/>
+<text text-anchor="middle" x="430.08" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 6&#45;&gt;7 -->
 <g id="edge9" class="edge">
 <title>6&#45;&gt;7</title>
-<path fill="none" stroke="black" d="M454.21,-73.17C452.38,-65.07 450.15,-55.15 448.09,-46.03"/>
-<polygon fill="black" stroke="black" points="451.49,-45.18 445.88,-36.2 444.66,-46.72 451.49,-45.18"/>
+<path fill="none" stroke="black" d="M442.29,-73.17C440.47,-65.07 438.23,-55.15 436.17,-46.03"/>
+<polygon fill="black" stroke="black" points="439.57,-45.18 433.96,-36.2 432.74,-46.72 439.57,-45.18"/>
 </g>
 <!-- 9 -->
 <g id="node10" class="node">
 <title>9</title>
-<ellipse fill="none" stroke="black" cx="545" cy="-18" rx="42.88" ry="18"/>
-<text text-anchor="start" x="522.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
-<polygon fill="none" stroke="black" points="493.31,-39 493.31,-45 499.31,-45 499.31,-39 493.31,-39"/>
-<polygon fill="none" stroke="black" points="490.31,-36 490.31,-48 502.31,-48 502.31,-36 490.31,-36"/>
+<ellipse fill="none" stroke="black" cx="533.08" cy="-18" rx="42.88" ry="18"/>
+<text text-anchor="middle" x="533.08" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 8&#45;&gt;9 -->
 <g id="edge10" class="edge">
 <title>8&#45;&gt;9</title>
-<path fill="none" stroke="black" d="M545,-72.81C545,-64.79 545,-55.05 545,-46.07"/>
-<polygon fill="black" stroke="black" points="548.5,-46.03 545,-36.03 541.5,-46.03 548.5,-46.03"/>
+<path fill="none" stroke="black" d="M533.08,-72.81C533.08,-64.79 533.08,-55.05 533.08,-46.07"/>
+<polygon fill="black" stroke="black" points="536.58,-46.03 533.08,-36.03 529.58,-46.03 536.58,-46.03"/>
 </g>
 <!-- 11 -->
 <g id="node12" class="node">
 <title>11</title>
-<ellipse fill="none" stroke="black" cx="648" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="middle" x="648" y="-264.4" font-family="Times,serif" font-size="14.00">x0</text>
-<polygon fill="none" stroke="black" points="678.5,-225.6 678.5,-247.6 1115.5,-247.6 1115.5,-225.6 678.5,-225.6"/>
-<text text-anchor="start" x="681.24" y="-232" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); ∃R.(A ⊓ ¬B ); ¬A ; ¬B ; (A ⊔ ¬B ); </text>
-<polygon fill="none" stroke="black" points="675,-222.6 675,-250.6 1118,-250.6 1118,-222.6 675,-222.6"/>
+<ellipse fill="none" stroke="black" cx="636.08" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="middle" x="636.08" y="-264.4" font-family="Times,serif" font-size="14.00">x0</text>
+<text text-anchor="middle" x="878.84" y="-290.8" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); ∃R.(A ⊓ ¬B ); ¬A ; ¬B ; (A ⊔ ¬B ); </text>
 </g>
 <!-- 10&#45;&gt;11 -->
 <g id="edge12" class="edge">
 <title>10&#45;&gt;11</title>
-<path fill="none" stroke="black" d="M648,-339.25C648,-327.12 648,-310.62 648,-296.72"/>
-<polygon fill="black" stroke="black" points="651.5,-296.71 648,-286.71 644.5,-296.71 651.5,-296.71"/>
-<text text-anchor="middle" x="665.5" y="-308.8" font-family="Times,serif" font-size="14.00">Union</text>
+<path fill="none" stroke="black" d="M636.08,-339.25C636.08,-327.12 636.08,-310.62 636.08,-296.72"/>
+<polygon fill="black" stroke="black" points="639.58,-296.71 636.08,-286.71 632.58,-296.71 639.58,-296.71"/>
+<text text-anchor="middle" x="653.58" y="-308.8" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 <!-- 17 -->
 <g id="node18" class="node">
 <title>17</title>
-<ellipse fill="none" stroke="black" cx="729" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="middle" x="729" y="-264.4" font-family="Times,serif" font-size="14.00">x0</text>
-<polygon fill="none" stroke="black" points="759,-289.6 759,-311.6 1187,-311.6 1187,-289.6 759,-289.6"/>
-<text text-anchor="start" x="761.52" y="-296" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; ∃R.(A ⊓ ¬B ); ¬A ; (A ⊔ ¬B ); </text>
-<polygon fill="none" stroke="black" points="756,-286.6 756,-314.6 1190,-314.6 1190,-286.6 756,-286.6"/>
+<ellipse fill="none" stroke="black" cx="717.08" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="middle" x="717.08" y="-264.4" font-family="Times,serif" font-size="14.00">x0</text>
+<text text-anchor="middle" x="955.57" y="-206" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; ∃R.(A ⊓ ¬B ); ¬A ; (A ⊔ ¬B ); </text>
 </g>
 <!-- 10&#45;&gt;17 -->
 <g id="edge11" class="edge">
 <title>10&#45;&gt;17</title>
-<path fill="none" stroke="black" d="M664.47,-342.64C671.64,-336.41 679.98,-328.78 687,-321.4 695.43,-312.54 704.06,-302.17 711.28,-293.04"/>
-<polygon fill="black" stroke="black" points="714.09,-295.13 717.47,-285.09 708.57,-290.83 714.09,-295.13"/>
-<text text-anchor="middle" x="719.5" y="-308.8" font-family="Times,serif" font-size="14.00">Union</text>
+<path fill="none" stroke="black" d="M652.56,-342.64C659.72,-336.41 668.06,-328.78 675.08,-321.4 683.51,-312.54 692.14,-302.17 699.36,-293.04"/>
+<polygon fill="black" stroke="black" points="702.17,-295.13 705.56,-285.09 696.65,-290.83 702.17,-295.13"/>
+<text text-anchor="middle" x="707.58" y="-308.8" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 <!-- 12 -->
 <g id="node13" class="node">
 <title>12</title>
-<ellipse fill="none" stroke="black" cx="648" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="637.5" y="-175.6" font-family="Times,serif" font-size="14.00">x01</text>
-<polygon fill="none" stroke="black" points="678.5,-136.8 678.5,-158.8 899.5,-158.8 899.5,-136.8 678.5,-136.8"/>
-<text text-anchor="start" x="681.32" y="-143.2" font-family="Times,serif" font-size="14.00">((A ⊔ ¬B )⊓ (B ⊔ ¬A )); (A ⊓ ¬B ); </text>
-<polygon fill="none" stroke="black" points="675,-133.8 675,-161.8 902,-161.8 902,-133.8 675,-133.8"/>
+<ellipse fill="none" stroke="black" cx="636.08" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="middle" x="636.08" y="-175.6" font-family="Times,serif" font-size="14.00">x01</text>
+<text text-anchor="middle" x="770.76" y="-117.2" font-family="Times,serif" font-size="14.00">((A ⊔ ¬B )⊓ (B ⊔ ¬A )); (A ⊓ ¬B ); </text>
 </g>
 <!-- 11&#45;&gt;12 -->
 <g id="edge13" class="edge">
 <title>11&#45;&gt;12</title>
-<path fill="none" stroke="black" d="M648,-250.45C648,-238.32 648,-221.82 648,-207.92"/>
-<polygon fill="black" stroke="black" points="651.5,-207.91 648,-197.91 644.5,-207.91 651.5,-207.91"/>
-<text text-anchor="middle" x="652.67" y="-220" font-family="Times,serif" font-size="14.00">R</text>
+<path fill="none" stroke="black" d="M636.08,-250.45C636.08,-238.32 636.08,-221.82 636.08,-207.92"/>
+<polygon fill="black" stroke="black" points="639.58,-207.91 636.08,-197.91 632.58,-207.91 639.58,-207.91"/>
+<text text-anchor="middle" x="640.75" y="-220" font-family="Times,serif" font-size="14.00">R</text>
 </g>
 <!-- 13 -->
 <g id="node14" class="node">
 <title>13</title>
-<ellipse fill="none" stroke="black" cx="648" cy="-91" rx="27" ry="18"/>
-<text text-anchor="start" x="637.5" y="-86.8" font-family="Times,serif" font-size="14.00">x01</text>
-<polygon fill="none" stroke="black" points="678.5,-76 678.5,-98 1103.5,-98 1103.5,-76 678.5,-76"/>
-<text text-anchor="start" x="681.46" y="-82.4" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; B ; (A ⊓ ¬B ); ¬B ; (A ⊔ ¬B ); </text>
-<polygon fill="none" stroke="black" points="675,-73 675,-101 1106,-101 1106,-73 675,-73"/>
+<ellipse fill="none" stroke="black" cx="636.08" cy="-91" rx="27" ry="18"/>
+<text text-anchor="middle" x="636.08" y="-86.8" font-family="Times,serif" font-size="14.00">x01</text>
+<text text-anchor="middle" x="818.63" y="-28.4" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; B ; (A ⊓ ¬B ); ¬B ; (A ⊔ ¬B ); </text>
 </g>
 <!-- 12&#45;&gt;13 -->
 <g id="edge15" class="edge">
 <title>12&#45;&gt;13</title>
-<path fill="none" stroke="black" d="M648,-161.65C648,-149.52 648,-133.02 648,-119.12"/>
-<polygon fill="black" stroke="black" points="651.5,-119.11 648,-109.11 644.5,-119.11 651.5,-119.11"/>
-<text text-anchor="middle" x="665.5" y="-131.2" font-family="Times,serif" font-size="14.00">Union</text>
+<path fill="none" stroke="black" d="M636.08,-161.65C636.08,-149.52 636.08,-133.02 636.08,-119.12"/>
+<polygon fill="black" stroke="black" points="639.58,-119.11 636.08,-109.11 632.58,-119.11 639.58,-119.11"/>
+<text text-anchor="middle" x="653.58" y="-131.2" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 <!-- 15 -->
 <g id="node16" class="node">
 <title>15</title>
-<ellipse fill="none" stroke="black" cx="740" cy="-91" rx="27" ry="18"/>
-<text text-anchor="start" x="729.5" y="-86.8" font-family="Times,serif" font-size="14.00">x01</text>
-<polygon fill="none" stroke="black" points="770.5,-112 770.5,-134 1205.5,-134 1205.5,-112 770.5,-112"/>
-<text text-anchor="start" x="773.41" y="-118.4" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; (A ⊓ ¬B ); ¬A ; ¬B ; (A ⊔ ¬B ); </text>
-<polygon fill="none" stroke="black" points="767,-109 767,-137 1208,-137 1208,-109 767,-109"/>
+<ellipse fill="none" stroke="black" cx="728.08" cy="-91" rx="27" ry="18"/>
+<text text-anchor="middle" x="728.08" y="-86.8" font-family="Times,serif" font-size="14.00">x01</text>
+<text text-anchor="middle" x="969.67" y="-77.2" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; (A ⊓ ¬B ); ¬A ; ¬B ; (A ⊔ ¬B ); </text>
 </g>
 <!-- 12&#45;&gt;15 -->
 <g id="edge14" class="edge">
 <title>12&#45;&gt;15</title>
-<path fill="none" stroke="black" d="M663.7,-164.98C670.87,-158.61 679.43,-150.89 687,-143.8 697.37,-134.08 708.66,-123.11 718.15,-113.77"/>
-<polygon fill="black" stroke="black" points="720.66,-116.2 725.31,-106.68 715.74,-111.22 720.66,-116.2"/>
-<text text-anchor="middle" x="721.5" y="-131.2" font-family="Times,serif" font-size="14.00">Union</text>
+<path fill="none" stroke="black" d="M651.78,-164.98C658.95,-158.61 667.51,-150.89 675.08,-143.8 685.46,-134.08 696.75,-123.11 706.23,-113.77"/>
+<polygon fill="black" stroke="black" points="708.75,-116.2 713.4,-106.68 703.83,-111.22 708.75,-116.2"/>
+<text text-anchor="middle" x="709.58" y="-131.2" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 <!-- 14 -->
 <g id="node15" class="node">
 <title>14</title>
-<ellipse fill="none" stroke="black" cx="648" cy="-18" rx="42.88" ry="18"/>
-<text text-anchor="start" x="625.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
-<polygon fill="none" stroke="black" points="596.31,-3 596.31,-9 602.31,-9 602.31,-3 596.31,-3"/>
-<polygon fill="none" stroke="black" points="593.31,0 593.31,-12 605.31,-12 605.31,0 593.31,0"/>
+<ellipse fill="none" stroke="black" cx="636.08" cy="-18" rx="42.88" ry="18"/>
+<text text-anchor="middle" x="636.08" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 13&#45;&gt;14 -->
 <g id="edge16" class="edge">
 <title>13&#45;&gt;14</title>
-<path fill="none" stroke="black" d="M648,-72.81C648,-64.79 648,-55.05 648,-46.07"/>
-<polygon fill="black" stroke="black" points="651.5,-46.03 648,-36.03 644.5,-46.03 651.5,-46.03"/>
+<path fill="none" stroke="black" d="M636.08,-72.81C636.08,-64.79 636.08,-55.05 636.08,-46.07"/>
+<polygon fill="black" stroke="black" points="639.58,-46.03 636.08,-36.03 632.58,-46.03 639.58,-46.03"/>
 </g>
 <!-- 16 -->
 <g id="node17" class="node">
 <title>16</title>
-<ellipse fill="none" stroke="black" cx="751" cy="-18" rx="42.88" ry="18"/>
-<text text-anchor="start" x="728.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
-<polygon fill="none" stroke="black" points="699.31,-3 699.31,-9 705.31,-9 705.31,-3 699.31,-3"/>
-<polygon fill="none" stroke="black" points="696.31,0 696.31,-12 708.31,-12 708.31,0 696.31,0"/>
+<ellipse fill="none" stroke="black" cx="739.08" cy="-18" rx="42.88" ry="18"/>
+<text text-anchor="middle" x="739.08" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 15&#45;&gt;16 -->
 <g id="edge17" class="edge">
 <title>15&#45;&gt;16</title>
-<path fill="none" stroke="black" d="M742.66,-72.81C743.91,-64.79 745.42,-55.05 746.81,-46.07"/>
-<polygon fill="black" stroke="black" points="750.29,-46.45 748.36,-36.03 743.37,-45.38 750.29,-46.45"/>
+<path fill="none" stroke="black" d="M730.75,-72.81C731.99,-64.79 733.5,-55.05 734.89,-46.07"/>
+<polygon fill="black" stroke="black" points="738.37,-46.45 736.45,-36.03 731.46,-45.38 738.37,-46.45"/>
 </g>
 <!-- 18 -->
 <g id="node19" class="node">
 <title>18</title>
-<ellipse fill="none" stroke="black" cx="736" cy="-179.8" rx="42.88" ry="18"/>
-<text text-anchor="start" x="713.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
-<polygon fill="none" stroke="black" points="684.31,-164.8 684.31,-170.8 690.31,-170.8 690.31,-164.8 684.31,-164.8"/>
-<polygon fill="none" stroke="black" points="681.31,-161.8 681.31,-173.8 693.31,-173.8 693.31,-161.8 681.31,-161.8"/>
+<ellipse fill="none" stroke="black" cx="724.08" cy="-179.8" rx="42.88" ry="18"/>
+<text text-anchor="middle" x="724.08" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 17&#45;&gt;18 -->
 <g id="edge18" class="edge">
 <title>17&#45;&gt;18</title>
-<path fill="none" stroke="black" d="M730.38,-250.45C731.36,-238.32 732.69,-221.82 733.81,-207.92"/>
-<polygon fill="black" stroke="black" points="737.3,-208.16 734.62,-197.91 730.33,-207.6 737.3,-208.16"/>
+<path fill="none" stroke="black" d="M718.47,-250.45C719.45,-238.32 720.78,-221.82 721.9,-207.92"/>
+<polygon fill="black" stroke="black" points="725.39,-208.16 722.7,-197.91 718.41,-207.6 725.39,-208.16"/>
 </g>
 </g>
 </svg>

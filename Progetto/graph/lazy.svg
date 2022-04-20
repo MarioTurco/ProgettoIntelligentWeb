@@ -14,9 +14,7 @@
 <g id="node2" class="node">
 <title>20</title>
 <ellipse fill="none" stroke="black" cx="116.81" cy="-91" rx="27" ry="18"/>
-<text text-anchor="start" x="106.31" y="-86.8" font-family="Times,serif" font-size="14.00">x01</text>
-<polygon fill="none" stroke="black" points="80.81,-112 80.81,-118 86.81,-118 86.81,-112 80.81,-112"/>
-<polygon fill="none" stroke="black" points="77.81,-109 77.81,-121 89.81,-121 89.81,-109 77.81,-109"/>
+<text text-anchor="middle" x="116.81" y="-86.8" font-family="Times,serif" font-size="14.00">x01</text>
 </g>
 <!-- 19&#45;&gt;20 -->
 <g id="edge1" class="edge">
@@ -29,9 +27,7 @@
 <g id="node3" class="node">
 <title>21</title>
 <ellipse fill="none" stroke="black" cx="116.81" cy="-18" rx="69.52" ry="18"/>
-<text text-anchor="start" x="74.43" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH&#45;FREE</text>
-<polygon fill="none" stroke="black" points="38.3,-39 38.3,-45 44.3,-45 44.3,-39 38.3,-39"/>
-<polygon fill="none" stroke="black" points="35.3,-36 35.3,-48 47.3,-48 47.3,-36 35.3,-36"/>
+<text text-anchor="middle" x="116.81" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH&#45;FREE</text>
 </g>
 <!-- 20&#45;&gt;21 -->
 <g id="edge2" class="edge">
