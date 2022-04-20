@@ -1,6 +1,5 @@
 package turcobardi;
 
-import guru.nidi.graphviz.model.Link;
 import static guru.nidi.graphviz.model.Factory.*;
 import guru.nidi.graphviz.model.MutableGraph;
 import guru.nidi.graphviz.model.Node;
@@ -8,10 +7,7 @@ import guru.nidi.graphviz.model.Node;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 import guru.nidi.graphviz.attribute.Label;
 import guru.nidi.graphviz.engine.Format;

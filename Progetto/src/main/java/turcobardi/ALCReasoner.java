@@ -794,7 +794,7 @@ public class ALCReasoner{
         							ax.accept(gv);
         							gv.addSemicolon();
         						}
-        						gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
+        						current = gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
         						
         					}
         				}
@@ -1075,14 +1075,14 @@ public class ALCReasoner{
         				
         			}
         			for (OWLObject ax: newLx) {
+        				System.out.println("AX " + ax);
         	    		ax.accept(gv);
         	    		gv.addSemicolon();
         	    	}
         			relationName = relationName.replace("<", "");
         			relationName = relationName.replace(">", "");
         			relationName = relationName.replace("#", "");
-        			String formula = gv.getFormula();
-        			System.out.println("FORMULA " + formula);
+        	
         			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(),  newIndName);
         			gr.createLink2(current, parent, relationName);
         			//Regola per ogni
@@ -1108,7 +1108,7 @@ public class ALCReasoner{
         							ax.accept(gv);
         							gv.addSemicolon();
         						}
-        						gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
+        						current = gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
         						
         					}
         				}
