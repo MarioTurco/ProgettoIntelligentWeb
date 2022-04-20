@@ -1010,6 +1010,7 @@ public class ALCReasoner{
     	for (OWLObject o: Lx) {
     		String iri = ind.getIRI().getShortForm();
     		OWLObject toAddForAll = null;
+    		Set<OWLObject> newLx = new HashSet<>();
     		Set<OWLObject> tmpLx = new HashSet<>(Lx);
     		String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
     		Set<OWLObject> toAdd = this.existsRuleNonEmpyTboxLazyUnfolding(o,ind,newIndName);
@@ -1028,18 +1029,26 @@ public class ALCReasoner{
         			String relationName = null;
         			for(OWLObject add: toAdd) {
         				if (add instanceof OWLObjectPropertyAssertionAxiom) {
-        					tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
+        					//tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
         					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
         				}
         				if (add instanceof OWLClassAssertionAxiom) {
         					if(this.C_g!=null) {
         						if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {
-        							tmpLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+        							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
         						}
         					}
         				}
+        				if (add instanceof OWLClassAssertionAxiom) {
+        					if(this.C_g!=null) {
+        						if(((OWLClassAssertionAxiom) add).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {
+        							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+        						}
+        					}
+        				}
+        				
         			}
-        			for (OWLObject ax: tmpLx) {
+        			for (OWLObject ax: newLx) {
         	    		ax.accept(gv);
         	    		gv.addSemicolon();
         	    	}
@@ -1057,37 +1066,42 @@ public class ALCReasoner{
         						
         						aBox.add(toAddForAll);
         						
-        						tmpLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
+        						//tmpLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
         						/*System.out.println("\nAbox dopo regola per ogni: " );
         						for(OWLObject a: aBox){
         							a.accept(printer);
         							System.out.println(",");
         						}*/
-        						Set<OWLObject> newLx = new HashSet<>();
-        						newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
-        						newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
+        				
+        						//newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
+        						//newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
+        						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
         						for(OWLObject ax: newLx) {
         							ax.accept(gv);
         							gv.addSemicolon();
         						}
         						gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
-        						ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox, tmpLx, T_u, current);
-        						if (!ret) {
-        							aBox.remove(toAddForAll); //Asserzioni perogni
-        							aBox.removeAll(toAdd); //Asserzioni esistenziale
-        							tmpLx.remove(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());//Asserzioni perogni
-        							for(OWLObject obj: toAdd) {
-        								tmpLx.remove(((OWLClassAssertionAxiom) obj).getClassExpression());//Asserzioni esistenziale
-        							}
-        							return false;
-        						}
-        						else {
-        							break;
-        						}
+        						
         					}
         				}
         				
         			}
+        			
+        			ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, tmpLx, T_u, current);
+					if (!ret) {
+						aBox.remove(toAddForAll); //Asserzioni perogni
+						aBox.removeAll(toAdd); //Asserzioni esistenziale
+						//tmpLx.remove(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());//Asserzioni perogni
+						/*for(OWLObject obj: toAdd) {
+							tmpLx.remove(((OWLClassAssertionAxiom) obj).getClassExpression());//Asserzioni esistenziale
+						}*/
+						return false;
+					}
+					else {
+						return true;
+						//break;
+					}	
+        			
         		}
     			
     		}
