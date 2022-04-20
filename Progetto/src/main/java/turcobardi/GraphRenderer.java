@@ -81,8 +81,8 @@ public class GraphRenderer {
 		Graphviz.fromGraph(g).render(Format.SVG).toFile(new File(path+".svg"));
 		System.out.println("Graph printed at '/" + path + "' in SVG format");
 		//Pulisco il grafo e la lista dei nodi
-		//g = mutGraph("tableaux").setDirected(true);
-		//nodes.clear();
+		g = mutGraph("tableaux").setDirected(true);
+		nodes.clear();
 		return;
 	}
 

@@ -379,7 +379,7 @@ public class ALCReasoner{
 				gv.addSemicolon();
 			}
 			//Creiamo il nodo principale
-			Node current = gr.createNode2(gr.getNextNodeID(), "<button>"+gv.getFormula()+"</button>", ind.getIRI().getShortForm() );
+			Node current = gr.createNode2(gr.getNextNodeID(), ""+gv.getFormula()+"", ind.getIRI().getShortForm() );
 			return implementTableauxNonEmptyTbox(ind, Lx, aBox, null, current);		
 		}
 		else {
