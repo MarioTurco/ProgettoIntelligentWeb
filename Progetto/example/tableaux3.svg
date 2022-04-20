@@ -68,7 +68,7 @@
 <g id="node6" class="node">
 <title>5</title>
 <ellipse fill="none" stroke="black" cx="528.42" cy="-66.8" rx="27" ry="18"/>
-<text text-anchor="middle" x="528.42" y="-62.6" font-family="Times,serif" font-size="14.00">x0</text>
+<text text-anchor="middle" x="528.42" y="-62.6" font-family="Times,serif" font-size="14.00">x01</text>
 <text text-anchor="middle" x="258.05" y="-4.2" font-family="Times,serif" font-size="14.00">(B ⊔ ¬A ); ((A ⊔ ¬B )⊓ (B ⊔ ¬A )); A ; B ; ∃R.(A ⊓ ¬B ); (A ⊓ ¬B ); ; (A ⊔ ¬B ); </text>
 </g>
 <!-- 4&#45;&gt;5 -->

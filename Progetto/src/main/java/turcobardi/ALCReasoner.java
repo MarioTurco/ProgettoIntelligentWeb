@@ -728,7 +728,8 @@ public class ALCReasoner{
     		String iri = ind.getIRI().getShortForm();
     		OWLObject toAddForAll = null;
     		Set<OWLObject> tmpLx = new HashSet<>(Lx);
-    		Set<OWLObject> toAdd = this.existsRuleNonEmpyTbox(o,ind,"x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++);
+    		String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
+    		Set<OWLObject> toAdd = this.existsRuleNonEmpyTbox(o,ind,newIndName);
     		
     		if(toAdd.size()==0) {
     			i--;
@@ -759,7 +760,7 @@ public class ALCReasoner{
         	    		gv.addSemicolon();
         	    	}
         	    	
-        			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(),  ind.getIRI().getShortForm());
+        			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(),  newIndName);
         			gr.createLink2(current, parent, relationName);
   
         			//Regola per ogni
