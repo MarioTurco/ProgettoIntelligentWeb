@@ -379,7 +379,7 @@ public class ALCReasoner{
 				gv.addSemicolon();
 			}
 			//Creiamo il nodo principale
-			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm() );
+			Node current = gr.createNode2(gr.getNextNodeID(), "<button>"+gv.getFormula()+"</button>", ind.getIRI().getShortForm() );
 			return implementTableauxNonEmptyTbox(ind, Lx, aBox, null, current);		
 		}
 		else {
@@ -429,7 +429,7 @@ public class ALCReasoner{
 				o.accept(gv);
 				gv.addSemicolon();
 			}
-			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm() );
+			Node current = gr.createNode2(gr.getNextNodeID(), "<a href=\"www.google.com\">" +gv.getFormula()+"</a>", ind.getIRI().getShortForm() );
 			//TODO aggiungere current nella chiamata ricorsiva
 			return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u, current);
 		}
@@ -750,7 +750,9 @@ public class ALCReasoner{
         	    		ax.accept(gv);
         	    		gv.addSemicolon();
         	    	}
-        	    	
+        			relationName = relationName.replace("<", "");
+        			relationName = relationName.replace(">", "");
+        			relationName = relationName.replace("#", "");
         			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(),  newIndName);
         			gr.createLink2(current, parent, relationName);
   
@@ -775,6 +777,7 @@ public class ALCReasoner{
         						//System.out.println("NEWLX:" +newLx);
         						//Chiamata ricorsiva
         						//TODO implementare per ogni
+        						gv.getFormula();
         						for(OWLObject ax: newLx) {
         							ax.accept(gv);
         							gv.addSemicolon();
@@ -1027,10 +1030,11 @@ public class ALCReasoner{
         	    		ax.accept(gv);
         	    		gv.addSemicolon();
         	    	}
-        	    	
+        			relationName = relationName.replace("<", "");
+        			relationName = relationName.replace(">", "");
+        			relationName = relationName.replace("#", "");
         			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(),  newIndName);
         			gr.createLink2(current, parent, relationName);
-        			
         			//Regola per ogni
         			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
         			for (OWLObject forAll: Lx) {
