@@ -927,7 +927,7 @@ public class ALCReasoner{
     		gv.addSemicolon();
     	}
     	
-    	System.out.println("\n Formula Lx"+gv.getFormula());
+    //	System.out.println("\n Formula Lx"+gv.getFormula());
     	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(), gv.getFormula());
     	
     	if(hasClash(Lx)) {
@@ -1075,7 +1075,6 @@ public class ALCReasoner{
         				
         			}
         			for (OWLObject ax: newLx) {
-        				System.out.println("AX " + ax);
         	    		ax.accept(gv);
         	    		gv.addSemicolon();
         	    	}
