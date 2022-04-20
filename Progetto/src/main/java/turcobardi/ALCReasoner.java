@@ -627,6 +627,7 @@ public class ALCReasoner{
     		gv.addSemicolon();
     	}
     	
+    	
     	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(), gv.getFormula());
     	
     	if(hasClash(Lx)) {
@@ -917,23 +918,19 @@ public class ALCReasoner{
 			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
 		}
     	
-		System.out.println("\nLx dopo Regole lazy unfolding");
+		/*System.out.println("\nLx dopo Regole lazy unfolding");
     	for (OWLObject o: Lx) {
     		o.accept(printer);
-    	}
+    	}*/
 		
     	for (OWLObject o: Lx) {
     		o.accept(gv);
     		gv.addSemicolon();
     	}
     	
-<<<<<<< HEAD
-    	//System.out.println("\n Formula Lx"+gv.getFormula());
-=======
-    //	System.out.println("\n Formula Lx"+gv.getFormula());
->>>>>>> 6b9d27b3f327c45f100a7fe234e385acf7cf15cb
+    	System.out.println("\nPRima\n"+parent.toString());
     	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(), gv.getFormula());
-    	
+    	System.out.println("\nDopo\n"+parent.toString());
     	if(hasClash(Lx)) {
     		Node current = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
     		gr.createLink2(current, parent, "");

@@ -42,7 +42,7 @@ public class GraphRenderer {
 			externalLabel="";
 		if(internalLabel==null) 
 			internalLabel="";
-		Node current =node(Integer.toString(id)).with(Label.raw(externalLabel).external(), Label.raw(internalLabel)); 
+		Node current = node(Integer.toString(id)).with(Label.raw(externalLabel).external(), Label.raw(internalLabel)); 
 		nodes.add(current);
 		nextNodeID+=1;
 		lastParent+=1;
