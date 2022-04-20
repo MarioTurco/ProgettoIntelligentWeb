@@ -46,7 +46,7 @@ public class GraphRenderer {
 			externalLabel="";
 		if(internalLabel==null) 
 			internalLabel="";
-		Node current =node(Integer.toString(id)).with(Label.raw(externalLabel).external(), Label.raw(internalLabel)); 
+		Node current =node(Integer.toString(id)).with(Label.html("<table><tr><td>" + externalLabel + "</td></tr></table>").external(), Label.html(internalLabel)); 
 		nodes.add(current);
 		nextNodeID+=1;
 		lastParent+=1;
@@ -77,12 +77,12 @@ public class GraphRenderer {
 		if(path==null)
 			path = "example/tableaux3";
 		
-		//Graphviz.fromGraph(g).render(Format.PNG).toFile(new File(path+".png"));
+		
 		Graphviz.fromGraph(g).render(Format.SVG).toFile(new File(path+".svg"));
-		System.out.println("Graph printed at '/" + path + "' in SVG and PNG formats");
+		System.out.println("Graph printed at '/" + path + "' in SVG format");
 		//Pulisco il grafo e la lista dei nodi
-		g = mutGraph("tableaux").setDirected(true);
-		nodes.clear();
+		//g = mutGraph("tableaux").setDirected(true);
+		//nodes.clear();
 		return;
 	}
 
