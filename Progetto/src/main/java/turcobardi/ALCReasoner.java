@@ -379,7 +379,7 @@ public class ALCReasoner{
 				gv.addSemicolon();
 			}
 			//Creiamo il nodo principale
-			Node current = gr.createNode2(gr.getNextNodeID(), "<button>"+gv.getFormula()+"</button>", ind.getIRI().getShortForm() );
+			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm() );
 			return implementTableauxNonEmptyTbox(ind, Lx, aBox, null, current);		
 		}
 		else {
@@ -429,7 +429,9 @@ public class ALCReasoner{
 				o.accept(gv);
 				gv.addSemicolon();
 			}
-			Node current = gr.createNode2(gr.getNextNodeID(), "<a href=\"www.google.com\">" +gv.getFormula()+"</a>", ind.getIRI().getShortForm());
+
+			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm() );
+
 			//TODO aggiungere current nella chiamata ricorsiva
 			return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u, current);
 		}
@@ -1079,6 +1081,8 @@ public class ALCReasoner{
         			relationName = relationName.replace("<", "");
         			relationName = relationName.replace(">", "");
         			relationName = relationName.replace("#", "");
+        			String formula = gv.getFormula();
+        			System.out.println("FORMULA " + formula);
         			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(),  newIndName);
         			gr.createLink2(current, parent, relationName);
         			//Regola per ogni

@@ -75,6 +75,7 @@ public class App {
     		logicalAxiom.accept(visitor); //prints the logical axiom
     	}
     	ALCReasoner reasoner = new ALCReasoner(query, kb);
+
     	LazyUnfolder lazy = new LazyUnfolder(kb);
     	lazy.doLazyUnfolding();
     	System.out.println("\n##########Tu#########");
