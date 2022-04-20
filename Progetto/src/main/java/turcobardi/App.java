@@ -87,13 +87,13 @@ public class App {
     	}
     	System.out.println("\n################Normal################");
     	executeAndPrintTime("nonEmpty", reasoner);
-    	//System.out.println("\n############LazyUnfolding#############");
-    	//executeAndPrintTime("lazy", reasoner);
+    	System.out.println("\n############LazyUnfolding#############");
+    	executeAndPrintTime("lazy", reasoner);
     	/*ALCReasoner reasoner2 = new ALCReasoner(concept, concept);
     	System.out.println("\nKB convertita: ");
     	reasoner2.convertKB().accept(visitor);*/
     	
-    	reasoner.renderTableauxGraph();
+    	
     	
 	}
 	
@@ -103,6 +103,7 @@ public class App {
 	    	System.out.println("\nSAT: " + reasoner.alcTableaux());
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
+	    	//reasoner.renderTableauxGraph();
 		}
 		else if (what.equals("nonEmpty")) {
 			Instant start = Instant.now();
@@ -110,6 +111,7 @@ public class App {
 	    	System.out.println("\nSAT: " + ret);
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
+	    	reasoner.renderTableauxGraph("graph/nonEmpty");
 		}
 		else if (what.equals("lazy")) {
 			Instant start = Instant.now();
@@ -117,6 +119,7 @@ public class App {
 	    	System.out.println("\nSAT: " + ret);
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
+	    	reasoner.renderTableauxGraph("graph/lazy");
 		}
 		
 	}

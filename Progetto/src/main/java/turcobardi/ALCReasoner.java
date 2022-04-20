@@ -303,10 +303,10 @@ public class ALCReasoner{
 		return toAdd;
 	}
 	
-	public void renderTableauxGraph() {
+	public void renderTableauxGraph(String path) {
 		gr.createGraph();
 		try {
-			gr.renderGraph(null);
+			gr.renderGraph(path);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -431,7 +431,7 @@ public class ALCReasoner{
 			}
 			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm() );
 			//TODO aggiungere current nella chiamata ricorsiva
-			return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u);
+			return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u, current);
 		}
 		
 		
@@ -687,22 +687,13 @@ public class ALCReasoner{
     						gr.createLink2(current, parent, "Union");
     						
     						ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null, current);
-    						//gr.decrementLastParent();
     						
     						if (ret) {
     							return true;
     						}
     						if(!ret){
     							aBox.remove(disjoint);
-    							//System.out.println("RIMOZIONE: ");
-    							//o.accept(printer);
     							tmpLx.remove(((OWLClassAssertionAxiom) disjoint).getClassExpression());
-    							//System.out.println("UGUALI: " + tmpLx.equals(Lx));
-    							//tmpLx.removeAll(Lx);
-    							/*for (OWLObject tmp1: tmpLx) {
-                				tmp1.accept(printer);
-                				System.out.print(", ");	
-                			}*/
     						}
     					}
     					if (!ret) { 
@@ -784,7 +775,12 @@ public class ALCReasoner{
         						//System.out.println("NEWLX:" +newLx);
         						//Chiamata ricorsiva
         						//TODO implementare per ogni
-        						ret = implementTableauxNonEmptyTbox((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox, tmpLx, null);
+        						for(OWLObject ax: newLx) {
+        							ax.accept(gv);
+        							gv.addSemicolon();
+        						}
+        						gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
+        						ret = implementTableauxNonEmptyTbox((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox, tmpLx, current);
         						if (!ret) {
         							aBox.remove(toAddForAll); //Asserzioni perogni
         							aBox.removeAll(toAdd); //Asserzioni esistenziale
@@ -870,7 +866,7 @@ public class ALCReasoner{
 	}
 	
 	//TODO aggiungere il riferimento al nodo padre come parametrop
-	private boolean implementTableauxNonEmptyTboxLazyUnfolding(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Set<OWLObject> T_u) {
+	private boolean implementTableauxNonEmptyTboxLazyUnfolding(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Set<OWLObject> T_u, Node parent) {
 		boolean ret = true;
 		Set<OWLObject> lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
 		aBox.addAll(lazyUnfoldingRulesRes);
@@ -890,6 +886,20 @@ public class ALCReasoner{
     	for (OWLObject o: tmp) {
     		Lx.add(((OWLClassAssertionAxiom) o).getClassExpression());
     	}
+    	for (OWLObject o: Lx) {
+    		o.accept(gv);
+    		gv.addSemicolon();
+    	}
+    	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(), gv.getFormula());
+    	if(hasClash(Lx)) {
+    		Node current = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
+    		gr.createLink2(current, parent, "");
+    		aBox.removeAll(inserted);
+    		for (OWLObject o: inserted) {
+        		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
+        	}
+			return false;
+		}
     	//BLOCKING
     	if(predLx!=null) {
     		if(predLx.containsAll(Lx)) {
@@ -897,6 +907,7 @@ public class ALCReasoner{
     			return true;  
     		}
     	}
+    	
     	/*System.out.println("\nAbox dopo regola intersezione: " );
 		for(OWLObject a: aBox){
     		a.accept(printer);
@@ -933,14 +944,13 @@ public class ALCReasoner{
     						//o.accept(printer);
     						tmpLx.add(((OWLClassAssertionAxiom) disjoint).getClassExpression());
     						
-    						/*System.out.println("\nAbox dopo regola disgiunzione: ");
-                		for(OWLObject a: aBox){
-                	    	a.accept(printer);
-                	    	System.out.println(",");
-                	    }*/	
-    						//System.out.println("\nChiamata ricorsiva");
-    						ret = implementTableauxNonEmptyTboxLazyUnfolding(ind, tmpLx, aBox,null, T_u);
-    						//System.out.println("Ret: "+ ret);
+    						for(OWLObject a: tmpLx){
+                    	    	a.accept(gv);
+                    	    	gv.addSemicolon();
+                    	    }
+    						Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
+    						gr.createLink2(current, parent, "Union");
+    						ret = implementTableauxNonEmptyTboxLazyUnfolding(ind, tmpLx, aBox,null, T_u, current);
     						
     						if (ret) 
     							return true;
@@ -970,14 +980,8 @@ public class ALCReasoner{
     	}
     	
     	if(hasClash(Lx)) {
-    		
-    		//System.out.println("HA CLASH");
-    		
-    		/*System.out.println("\nLx" );
-    		for(OWLObject a: Lx){
-        		a.accept(printer);
-        		System.out.println(",");
-        	}*/
+    		Node current = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
+    		gr.createLink2(current, parent, "");
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -991,8 +995,8 @@ public class ALCReasoner{
     		String iri = ind.getIRI().getShortForm();
     		OWLObject toAddForAll = null;
     		Set<OWLObject> tmpLx = new HashSet<>(Lx);
-    		Set<OWLObject> toAdd = this.existsRuleNonEmpyTboxLazyUnfolding(o,ind,"x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++);
-    		
+    		String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
+    		Set<OWLObject> toAdd = this.existsRuleNonEmpyTboxLazyUnfolding(o,ind,newIndName);
     		if(toAdd.size()==0) {
     			i--;
     		}
@@ -1005,10 +1009,11 @@ public class ALCReasoner{
     		    		a.accept(printer);
     		    		System.out.println(",");
     		    	}*/
-        			
+        			String relationName = null;
         			for(OWLObject add: toAdd) {
         				if (add instanceof OWLObjectPropertyAssertionAxiom) {
         					tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
+        					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
         				}
         				if (add instanceof OWLClassAssertionAxiom) {
         					if(this.C_g!=null) {
@@ -1018,6 +1023,13 @@ public class ALCReasoner{
         					}
         				}
         			}
+        			for (OWLObject ax: tmpLx) {
+        	    		ax.accept(gv);
+        	    		gv.addSemicolon();
+        	    	}
+        	    	
+        			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(),  newIndName);
+        			gr.createLink2(current, parent, relationName);
         			
         			//Regola per ogni
         			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
@@ -1037,9 +1049,12 @@ public class ALCReasoner{
         						Set<OWLObject> newLx = new HashSet<>();
         						newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
         						newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
-        						//System.out.println("NEWLX:" +newLx);
-        						//Chiamata ricorsiva
-        						ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox, tmpLx, T_u);
+        						for(OWLObject ax: newLx) {
+        							ax.accept(gv);
+        							gv.addSemicolon();
+        						}
+        						gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
+        						ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual)((OWLClassAssertionAxiom) toAddForAll).getIndividual(),newLx,aBox, tmpLx, T_u, current);
         						if (!ret) {
         							aBox.remove(toAddForAll); //Asserzioni perogni
         							aBox.removeAll(toAdd); //Asserzioni esistenziale
@@ -1061,6 +1076,8 @@ public class ALCReasoner{
     		}
     		
     	}
+    	Node clashFree = gr.createNode2(gr.getNextNodeID(), "", "CLASH-FREE");
+    	gr.createLink2(clashFree, parent, "");
     	//System.out.println("\nChiamata finita");
 		return ret;
 	}
