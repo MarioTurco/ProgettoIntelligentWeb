@@ -429,7 +429,7 @@ public class ALCReasoner{
 				o.accept(gv);
 				gv.addSemicolon();
 			}
-			Node current = gr.createNode2(gr.getNextNodeID(), "<a href=\"www.google.com\">" +gv.getFormula()+"</a>", ind.getIRI().getShortForm() );
+			Node current = gr.createNode2(gr.getNextNodeID(), "<a href=\"www.google.com\">" +gv.getFormula()+"</a>", ind.getIRI().getShortForm());
 			//TODO aggiungere current nella chiamata ricorsiva
 			return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u, current);
 		}
@@ -626,6 +626,7 @@ public class ALCReasoner{
     	}
     	
     	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(), gv.getFormula());
+    	
     	if(hasClash(Lx)) {
     		Node current = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
     		gr.createLink2(current, parent, "");
@@ -643,7 +644,7 @@ public class ALCReasoner{
     	gr.createNode(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
     	gr.createLink(gr.getNextNodeID()-1, gr.getLastParent(), "Intersezione");
     	*/
-    	//TODO REGOLA DELL'INTERSEZIONE
+
     	//BLOCKING
     	if(predLx!=null) {
     		if(predLx.containsAll(Lx)) {
@@ -828,11 +829,15 @@ public class ALCReasoner{
 	private Set<OWLObject> lazyUnfoldingRules(Set<OWLObject> aBox, Set<OWLObject> T_u, String individual) {
 		Set<OWLObject> toAdd = new HashSet<>();
 		for (OWLObject unfoldableAx: T_u) {
+			//System.out.println("\nASSIOMA DA Tu");
+			//unfoldableAx.accept(printer);
 			if(unfoldableAx instanceof OWLEquivalentClassesAxiom) {
 				OWLClassExpression leftSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(0);
 				for(OWLObject aboxAx: aBox) {
 					//PRIMA REGOLA
 					if(aboxAx instanceof OWLClassAssertionAxiom) {
+						//System.out.println("\nAssioma da Abox");
+						//aboxAx.accept(printer);
 						if(((OWLClassAssertionAxiom) aboxAx).getClassExpression().equals(leftSide)) {
 							OWLClassExpression rightSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(1);
 							try {
@@ -902,11 +907,27 @@ public class ALCReasoner{
     	for (OWLObject o: tmp) {
     		Lx.add(((OWLClassAssertionAxiom) o).getClassExpression());
     	}
+    	
+    	lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
+
+		aBox.addAll(lazyUnfoldingRulesRes);
+		for(OWLObject ins: lazyUnfoldingRulesRes) {
+			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
+		}
+    	
+		System.out.println("\nLx dopo Regole lazy unfolding");
+    	for (OWLObject o: Lx) {
+    		o.accept(printer);
+    	}
+		
     	for (OWLObject o: Lx) {
     		o.accept(gv);
     		gv.addSemicolon();
     	}
+    	
+    	System.out.println("\n Formula Lx"+gv.getFormula());
     	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(), gv.getFormula());
+    	
     	if(hasClash(Lx)) {
     		Node current = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
     		gr.createLink2(current, parent, "");
@@ -1037,6 +1058,9 @@ public class ALCReasoner{
         						if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {
         							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
         						}
+        					}
+        					else {
+        							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
         					}
         				}
         				if (add instanceof OWLClassAssertionAxiom) {

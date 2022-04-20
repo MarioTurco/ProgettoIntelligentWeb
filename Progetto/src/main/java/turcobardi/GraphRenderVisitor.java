@@ -153,7 +153,7 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	}
 
 	public void addSemicolon() {
-		formula = formula.concat("; ");
+		formula = formula.concat(", ");
 		
 	}
 

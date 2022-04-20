@@ -1,0 +1,43 @@
+<svg width="156px" height="238px"
+ viewBox="0.00 0.00 155.69 237.80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 233.8)">
+<title>tableaux</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-233.8 151.69,-233.8 151.69,4 -4,4"/>
+<!-- 19 -->
+<g id="node1" class="node">
+<title>19</title>
+<ellipse fill="none" stroke="black" cx="105" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="middle" x="105" y="-175.6" font-family="Times,serif" font-size="14.00">x0</text>
+</g>
+<!-- 20 -->
+<g id="node2" class="node">
+<title>20</title>
+<ellipse fill="none" stroke="black" cx="105" cy="-91" rx="27" ry="18"/>
+<text text-anchor="start" x="94.5" y="-86.8" font-family="Times,serif" font-size="14.00">x01</text>
+<polygon fill="none" stroke="black" points="3,-112 3,-134 75,-134 75,-112 3,-112"/>
+<text text-anchor="start" x="5.96" y="-118.4" font-family="Times,serif" font-size="14.00">(A ⊓ ¬B ), </text>
+<polygon fill="none" stroke="black" points="0,-109 0,-137 78,-137 78,-109 0,-109"/>
+</g>
+<!-- 19&#45;&gt;20 -->
+<g id="edge1" class="edge">
+<title>19&#45;&gt;20</title>
+<path fill="none" stroke="black" d="M105,-161.65C105,-149.52 105,-133.02 105,-119.12"/>
+<polygon fill="black" stroke="black" points="108.5,-119.11 105,-109.11 101.5,-119.11 108.5,-119.11"/>
+<text text-anchor="middle" x="109.67" y="-131.2" font-family="Times,serif" font-size="14.00">R</text>
+</g>
+<!-- 21 -->
+<g id="node3" class="node">
+<title>21</title>
+<ellipse fill="none" stroke="black" cx="105" cy="-18" rx="42.88" ry="18"/>
+<text text-anchor="start" x="82.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+<polygon fill="none" stroke="black" points="53.31,-39 53.31,-45 59.31,-45 59.31,-39 53.31,-39"/>
+<polygon fill="none" stroke="black" points="50.31,-36 50.31,-48 62.31,-48 62.31,-36 50.31,-36"/>
+</g>
+<!-- 20&#45;&gt;21 -->
+<g id="edge2" class="edge">
+<title>20&#45;&gt;21</title>
+<path fill="none" stroke="black" d="M105,-72.81C105,-64.79 105,-55.05 105,-46.07"/>
+<polygon fill="black" stroke="black" points="108.5,-46.03 105,-36.03 101.5,-46.03 108.5,-46.03"/>
+</g>
+</g>
+</svg>
