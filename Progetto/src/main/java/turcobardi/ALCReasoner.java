@@ -1055,6 +1055,8 @@ public class ALCReasoner{
         			relationName = relationName.replace("<", "");
         			relationName = relationName.replace(">", "");
         			relationName = relationName.replace("#", "");
+        			String formula = gv.getFormula();
+        			System.out.println("FORMULA " + formula);
         			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(),  newIndName);
         			gr.createLink2(current, parent, relationName);
         			//Regola per ogni
