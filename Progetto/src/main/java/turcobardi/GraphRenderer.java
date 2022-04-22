@@ -16,12 +16,23 @@ import guru.nidi.graphviz.attribute.Label;
 import guru.nidi.graphviz.engine.Format;
 import guru.nidi.graphviz.engine.Graphviz;
 
+/**
+ * @author Mario
+ *
+ */
 public class GraphRenderer {
 	private MutableGraph g = mutGraph("tableaux").setDirected(true);
 	private List<Node> nodes = new ArrayList<>();
 	private int lastNodeID = 0; //identificativo univoco dell'ultimo nodo creato
 	 
 	
+	/**
+	 * Modifica i label interni ed esterni di un nodo
+	 * @param nodeToEdit - il nodo da modificare
+	 * @param internal - il nuovo label interno
+	 * @param external - il nuovo label esterno
+	 * @return - il riferimento al nodo modificato
+	 */
 	public Node editNodeLabel(Node nodeToEdit, String internal, String external) {
 		Node newNode = nodeToEdit.with(Label.html(external).external(), Label.markdown("x"+"__"+internal+"__"));
 		nodes.remove(nodes.indexOf(nodeToEdit));
@@ -58,7 +69,7 @@ public class GraphRenderer {
 	 * Crea un nodo con label interno ed esterno, aggiunge il nodo alla lista dei nodi creati 
 	 * @param externalLabel - label esterno del nodo
 	 * @param internalLabel - label interno del nodo
-	 * @return
+	 * @return il riferimento al nodo appena creato
 	 */
 	public Node createNode(String externalLabel, String internalLabel) {
 		if(externalLabel==null) 
@@ -74,7 +85,7 @@ public class GraphRenderer {
 	/**
 	 * Crea un nodo con label interno ed aggiunge il nodo alla lista dei nodi creati 
 	 * @param internalLabel - label interno del nodo
-	 * @return
+	 * @return il riferimento al nodo appena creato
 	 */
 	public Node createNode(String internalLabel) {
 		Node current = null;
@@ -89,10 +100,17 @@ public class GraphRenderer {
 		return current;
 	}
 	
+	/**
+	 * @return l'id dell'ultimo nodo creato
+	 */
 	public int getLastNodeID() {
 		return lastNodeID;
 	}
 
+	/**
+	 * Crea un grafo con tutti i nodi ed i link creati tramite le apposite funzioni
+	 * @return il grafo appena creato
+	 */
 	private MutableGraph createGraph() {
 		for(Node n: nodes) {
 			n.addTo(g);
@@ -100,6 +118,11 @@ public class GraphRenderer {
 		return g;
 	}
 	
+	/**
+	 * Crea un file .SVG contenente il grafo 
+	 * @param path - il path del file compreso del nome (ad. es 'folder/file')
+	 * @throws IOException
+	 */
 	public void renderGraph(String path) throws IOException {
 		createGraph();
 		if(path==null)
@@ -111,17 +134,23 @@ public class GraphRenderer {
 		nodes.clear();
 		return;
 	}
-
-/*	TODO cancellare, funzione obsoleta
-	public void createLink(int childID, int parentID, String label) {
-		Node parentNode = nodes.get(parentID);
-		Node childNode = nodes.get(childID);
-		(parentNode.link(to(childNode).with(Label.of(label)))).addTo(g);
-	}
-	*/
+	
+	/**
+	 * Crea un link tra due nodi con label e con arco colorato
+	 * @param childNode - nodo figlio
+	 * @param parentNode - nodo padre
+	 * @param label - label dell'arco
+	 * @param color - colore dell'arco
+	 */
 	public void createLink2(Node childNode, Node parentNode, String label, Color color) {
 		(parentNode.link(to(childNode).with(Label.of(label), color))).addTo(g);
 	}
+	/**
+	 * Crea un link tra due nodi con label 
+	 * @param childNode - nodo figlio
+	 * @param parentNode - nodo padre
+	 * @param label - label dell'arco
+	 */
 	public void createLink2(Node childNode, Node parentNode, String label) {
 		(parentNode.link(to(childNode).with(Label.of(label)))).addTo(g);
 	}
