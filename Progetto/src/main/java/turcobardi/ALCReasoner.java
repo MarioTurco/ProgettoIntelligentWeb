@@ -936,7 +936,7 @@ public class ALCReasoner{
     	gr.printLabel(formula, parent.name().toString(), "lazy");
     	
     	if(hasClash(Lx)) {
-    		Node clashNode = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
+    		Node clashNode = gr.createNode2(gr.getNextNodeID(), "CLASH");
     		gr.createLink2(clashNode, parent, "", Color.RED);
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
@@ -1017,7 +1017,7 @@ public class ALCReasoner{
     		}
     	}
     	if(hasClash(Lx)) {
-    		Node clashNode = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
+    		Node clashNode = gr.createNode2(gr.getNextNodeID(), "CLASH");
     		gr.createLink2(clashNode, parent, "", Color.RED);
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
@@ -1136,7 +1136,7 @@ public class ALCReasoner{
     		}
     		
     	}
-    	Node clashFree = gr.createNode2(gr.getNextNodeID(), "", "CLASH-FREE");
+    	Node clashFree = gr.createNode2(gr.getNextNodeID(),"CLASH-FREE");
     	gr.createLink2(clashFree, parent, "", Color.GREEN);
     	//System.out.println("\nChiamata finita");
 		return ret;

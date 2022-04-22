@@ -40,8 +40,7 @@
 <g id="node3" class="node">
 <title>21</title>
 <ellipse fill="none" stroke="black" cx="78" cy="-18" rx="40.09" ry="18"/>
-<text text-anchor="start" x="55" y="-15.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="62" y="-15.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="55" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 20&#45;&gt;21 -->
 <g id="edge2" class="edge">

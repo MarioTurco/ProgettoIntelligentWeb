@@ -48,7 +48,7 @@ public class GraphRenderer {
 		}
 		return;
 	}
-	
+
 	public Node createNode2(int id, String externalLabel, String internalLabel) {
 		if(externalLabel==null) 
 			externalLabel="";
@@ -58,6 +58,18 @@ public class GraphRenderer {
 		nodes.add(current);
 		nextNodeID+=1;
 		lastParent+=1;
+		return current;
+	}
+	public Node createNode2(int id, String internalLabel) {
+		Node current = null;
+		if(internalLabel=="CLASH")
+			current = node(Integer.toString(id)).with(Label.markdown("CLASH")); 
+		else if	(internalLabel=="CLASH-FREE")
+			current = node(Integer.toString(id)).with(Label.markdown("CLASH-FREE")); 
+		else
+		current = createNode2(id, internalLabel, null);
+		nodes.add(current);
+		nextNodeID+=1;
 		return current;
 	}
 	
@@ -99,7 +111,6 @@ public class GraphRenderer {
 	public void createLink(int childID, int parentID, String label) {
 		Node parentNode = nodes.get(parentID);
 		Node childNode = nodes.get(childID);
-		//this.g.addLink((parentNode).linkTo(childNode).with(Label.of(label)));
 		(parentNode.link(to(childNode).with(Label.of(label)))).addTo(g);
 	}
 	
