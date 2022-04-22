@@ -62,9 +62,8 @@ public class ALCReasoner{
 		this.printer = new OntologyPrintingVisitor(kb.getOntologyID().getOntologyIRI().get(), "");
 		//TODO qui va messo l'iri invece che essere hardcoded
 		this.gv = new GraphRenderVisitor(kb.getOntologyID().getOntologyIRI().get(), "http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13");
-		this.lazyLabelsPath = new File("lazy").getAbsolutePath();
-		this.normalLabelsPath = new File("normal").getAbsolutePath();
-		
+		this.lazyLabelsPath = new File("graph\\lazy").getAbsolutePath();
+		this.normalLabelsPath = new File("graph\\normal").getAbsolutePath();
 	}
 	
 	
@@ -389,7 +388,8 @@ public class ALCReasoner{
 				gv.addSemicolon();
 			}
 			//Creiamo il nodo principale
-			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm() );
+			Node current = gr.createNode(printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x", "") );
+			gr.printLabelToFile(gv.getFormula(),current.name().toString(),"normal");
 			return implementTableauxNonEmptyTbox(ind, Lx, aBox, null, current);		
 		}
 		else {
@@ -439,10 +439,9 @@ public class ALCReasoner{
 				o.accept(gv);
 				gv.addSemicolon();
 			}
-			String formula = gv.getFormula();
-			Node current = gr.createNode2(gr.getNextNodeID(), printingPath1+lazyLabelsPath+"\\"+gr.getNextNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x", "") );
-			gr.printLabel(formula,current.name().toString(),"lazy");
-			//TODO aggiungere current nella chiamata ricorsiva
+			
+			Node current = gr.createNode(printingPath1+lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x", "") );
+			gr.printLabelToFile(gv.getFormula(),current.name().toString(),"lazy");
 			return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u, current);
 		}
 		
@@ -636,10 +635,10 @@ public class ALCReasoner{
     		o.accept(gv);
     		gv.addSemicolon();
     	}
-    	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(), gv.getFormula());
-    	
+    	parent = gr.editNodeLabel(parent, parent.name().toString().replace("x", ""), printingPath1 +normalLabelsPath+"\\"+parent.name().toString()+printingPath2 );
+    	gr.printLabelToFile(gv.getFormula(), parent.name().toString(), "normal");
     	if(hasClash(Lx)) {
-    		Node current = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
+    		Node current = gr.createNode("CLASH");
     		gr.createLink2(current, parent, "");
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
@@ -695,7 +694,7 @@ public class ALCReasoner{
                     	    	a.accept(gv);
                     	    	gv.addSemicolon();
                     	    }
-    						Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
+    						Node current = gr.createNode( gv.getFormula(), ind.getIRI().getShortForm());
     						gr.createLink2(current, parent, "Union");
     						
     						ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null, current);
@@ -716,7 +715,7 @@ public class ALCReasoner{
     		}
     	}
     	if(hasClash(Lx)) {
-    		Node current = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
+    		Node current = gr.createNode("CLASH");
     		gr.createLink2(current, parent, "");
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
@@ -771,7 +770,7 @@ public class ALCReasoner{
         			relationName = relationName.replace("<", "");
         			relationName = relationName.replace(">", "");
         			relationName = relationName.replace("#", "");
-        			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(),  newIndName);
+        			Node current = gr.createNode(gv.getFormula(),  newIndName);
         			gr.createLink2(current, parent, relationName);
   
         			//Regola per ogni
@@ -830,7 +829,7 @@ public class ALCReasoner{
     		}
     		
     	}
-    	Node clashFree = gr.createNode2(gr.getNextNodeID(), "", "CLASH-FREE");
+    	Node clashFree = gr.createNode("CLASH-FREE");
     	gr.createLink2(clashFree, parent, "");
     //	gr.decrementLastParent();
     	//System.out.println("\nChiamata finita");
@@ -930,13 +929,11 @@ public class ALCReasoner{
     		gv.addSemicolon();
     	}
     	//Edit the parent node
-    	String formula = gv.getFormula();
     	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm().replace("x", ""),  printingPath1 +lazyLabelsPath+"\\"+parent.name().toString()+printingPath2 );
-
-    	gr.printLabel(formula, parent.name().toString(), "lazy");
+    	gr.printLabelToFile(gv.getFormula(), parent.name().toString(), "lazy");
     	
     	if(hasClash(Lx)) {
-    		Node clashNode = gr.createNode2(gr.getNextNodeID(), "CLASH");
+    		Node clashNode = gr.createNode("CLASH");
     		gr.createLink2(clashNode, parent, "", Color.RED);
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
@@ -949,7 +946,7 @@ public class ALCReasoner{
     	if(predLx!=null) {
     		if(predLx.containsAll(Lx)) {
     			//System.out.println("\nBLOCKING TRUE");
-    			Node blocking = gr.createNode2(gr.getNextNodeID(), "", "Blocking");
+    			Node blocking = gr.createNode("Blocking");
     			gr.createLink2(blocking, parent, "");
     			return true;  
     		}
@@ -995,11 +992,9 @@ public class ALCReasoner{
                     	    	a.accept(gv);
                     	    	gv.addSemicolon();
                     	    }
-    						formula = gv.getFormula();
-    						Node currentNode = gr.createNode2(gr.getNextNodeID(), printingPath1 +lazyLabelsPath+"\\"+gr.getNextNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x", ""));
-
+    						Node currentNode = gr.createNode( printingPath1 +lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x", ""));
     						gr.createLink2(currentNode, parent, "Union");
-    						gr.printLabel(formula, currentNode.name().toString(), "lazy");
+    						gr.printLabelToFile(gv.getFormula(), currentNode.name().toString(), "lazy");
     						ret = implementTableauxNonEmptyTboxLazyUnfolding(ind, tmpLx, aBox,null, T_u, currentNode);
     						
     						if (ret) 
@@ -1017,7 +1012,7 @@ public class ALCReasoner{
     		}
     	}
     	if(hasClash(Lx)) {
-    		Node clashNode = gr.createNode2(gr.getNextNodeID(), "CLASH");
+    		Node clashNode = gr.createNode( "CLASH");
     		gr.createLink2(clashNode, parent, "", Color.RED);
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
@@ -1079,10 +1074,9 @@ public class ALCReasoner{
         			relationName = relationName.replace("<", "");
         			relationName = relationName.replace(">", "");
         			relationName = relationName.replace("#", "");
-        			formula = gv.getFormula();
-        			Node currentNode = gr.createNode2(gr.getNextNodeID(), printingPath1+ lazyLabelsPath+"\\"+gr.getNextNodeID()+printingPath2,  newIndName.replace("x", ""));
+        			Node currentNode = gr.createNode(printingPath1+ lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath2,  newIndName.replace("x", ""));
 
-        			gr.printLabel(formula, currentNode.name().toString(), "lazy");
+        			gr.printLabelToFile(gv.getFormula(), currentNode.name().toString(), "lazy");
         			gr.createLink2(currentNode, parent, relationName);
         			//Regola per ogni
         			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
@@ -1107,10 +1101,8 @@ public class ALCReasoner{
         							ax.accept(gv);
         							gv.addSemicolon();
         						}
-        						formula = gv.getFormula();
         						currentNode = gr.editNodeLabel(currentNode, ind.getIRI().getShortForm().replace("x",""), printingPath1 +lazyLabelsPath+"\\"+currentNode.name().toString()+printingPath2);
-
-        						gr.printLabel(formula, currentNode.name().toString(), "lazy");
+        						gr.printLabelToFile(gv.getFormula(), currentNode.name().toString(), "lazy");
         					}
         				}
         				
@@ -1136,7 +1128,7 @@ public class ALCReasoner{
     		}
     		
     	}
-    	Node clashFree = gr.createNode2(gr.getNextNodeID(),"CLASH-FREE");
+    	Node clashFree = gr.createNode("CLASH-FREE");
     	gr.createLink2(clashFree, parent, "", Color.GREEN);
     	//System.out.println("\nChiamata finita");
 		return ret;

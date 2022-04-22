@@ -19,24 +19,29 @@ import guru.nidi.graphviz.engine.Graphviz;
 public class GraphRenderer {
 	private MutableGraph g = mutGraph("tableaux").setDirected(true);
 	private List<Node> nodes = new ArrayList<>();
-	//TODO nextNodeID non serve più e può essere levato
-	private int nextNodeID = 0; //identificativo univoco del nodo che serve per aggiungere gli archi
-	private int lastParent = -2; //Identificativo dell'ultimo padre conosciuto 
+	private int lastNodeID = 0; //identificativo univoco dell'ultimo nodo creato
 	 
 	
 	public Node editNodeLabel(Node nodeToEdit, String internal, String external) {
-		System.out.println("External: "+external);
 		Node newNode = nodeToEdit.with(Label.html(external).external(), Label.markdown("x"+"__"+internal+"__"));
 		nodes.remove(nodes.indexOf(nodeToEdit));
 		nodes.add(newNode);
 		return newNode;
 	}
-	public void printLabel(String label, String nodeName, String pathSubfolder){
-		String path = pathSubfolder + "\\" + nodeName + ".txt";
-		System.out.println(path);
+	
+	/**
+	 * Crea un file di nome 'fileName.txt' in posizione 'graph/pathSubfolder/' 
+	 * contenente la stringa 'label'
+	 *
+	 * @param label - Stringa da scrivere sul file
+	 * @param fileName - nome del file da creare
+	 * @param pathSubfolder - path del file ('/graph/pathSubfolder/') 
+	 */
+	public void printLabelToFile(String label, String fileName, String pathSubfolder){
+		String path = "graph\\" + pathSubfolder + "\\" + fileName + ".txt";
 		File file = new File(path);
 		try {
-			File folder = new File(pathSubfolder);
+			File folder = new File("graph\\" + pathSubfolder);
 			folder.mkdir();
 			file.createNewFile();
 			FileWriter myWriter = new FileWriter(file);				
@@ -49,43 +54,43 @@ public class GraphRenderer {
 		return;
 	}
 
-	public Node createNode2(int id, String externalLabel, String internalLabel) {
+	/**
+	 * Crea un nodo con label interno ed esterno, aggiunge il nodo alla lista dei nodi creati 
+	 * @param externalLabel - label esterno del nodo
+	 * @param internalLabel - label interno del nodo
+	 * @return
+	 */
+	public Node createNode(String externalLabel, String internalLabel) {
 		if(externalLabel==null) 
 			externalLabel="";
 		if(internalLabel==null) 
 			internalLabel="";
-		Node current = node(Integer.toString(id)).with(Label.html(externalLabel).external(), Label.markdown("x"+"__"+internalLabel+"__")); 
+		Node current = node(Integer.toString(getLastNodeID())).with(Label.html(externalLabel).external(), Label.markdown("x"+"__"+internalLabel+"__")); 
 		nodes.add(current);
-		nextNodeID+=1;
-		lastParent+=1;
-		return current;
-	}
-	public Node createNode2(int id, String internalLabel) {
-		Node current = null;
-		if(internalLabel=="CLASH")
-			current = node(Integer.toString(id)).with(Label.markdown("CLASH")); 
-		else if	(internalLabel=="CLASH-FREE")
-			current = node(Integer.toString(id)).with(Label.markdown("CLASH-FREE")); 
-		else
-		current = createNode2(id, internalLabel, null);
-		nodes.add(current);
-		nextNodeID+=1;
+		lastNodeID+=1;
 		return current;
 	}
 	
-	public int getLastParent() {
-		return lastParent;
+	/**
+	 * Crea un nodo con label interno ed aggiunge il nodo alla lista dei nodi creati 
+	 * @param internalLabel - label interno del nodo
+	 * @return
+	 */
+	public Node createNode(String internalLabel) {
+		Node current = null;
+		if(internalLabel=="CLASH")
+			current = node(Integer.toString(getLastNodeID())).with(Label.markdown("CLASH")); 
+		else if	(internalLabel=="CLASH-FREE")
+			current = node(Integer.toString(getLastNodeID())).with(Label.markdown("CLASH-FREE")); 
+		else
+		current = createNode(internalLabel, null);
+		nodes.add(current);
+		lastNodeID+=1;
+		return current;
 	}
-	//TODO da cancellare
-	public void setLastParent(int value) {
-		lastParent=value;
-	}
-	//TODO da cancellare
-	public void decrementLastParent() {
-		lastParent-=1;
-	}
-	public int getNextNodeID() {
-		return nextNodeID;
+	
+	public int getLastNodeID() {
+		return lastNodeID;
 	}
 
 	private MutableGraph createGraph() {
@@ -107,13 +112,13 @@ public class GraphRenderer {
 		return;
 	}
 
-
+/*	TODO cancellare, funzione obsoleta
 	public void createLink(int childID, int parentID, String label) {
 		Node parentNode = nodes.get(parentID);
 		Node childNode = nodes.get(childID);
 		(parentNode.link(to(childNode).with(Label.of(label)))).addTo(g);
 	}
-	
+	*/
 	public void createLink2(Node childNode, Node parentNode, String label, Color color) {
 		(parentNode.link(to(childNode).with(Label.of(label), color))).addTo(g);
 	}

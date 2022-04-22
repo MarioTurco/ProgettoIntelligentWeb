@@ -1,15 +1,20 @@
-<svg width="1199px" height="480px"
- viewBox="0.00 0.00 1199.00 480.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 476.0)">
+<svg width="1199px" height="492px"
+ viewBox="0.00 0.00 1199.00 492.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 488.0)">
 <title>tableaux</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-476 1195,-476 1195,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-488 1195,-488 1195,4 -4,4"/>
 <!-- 0 -->
 <g id="node1" class="node">
 <title>0</title>
 <ellipse fill="none" stroke="black" cx="617" cy="-439" rx="27" ry="18"/>
-<text text-anchor="start" x="607.5" y="-436.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="614.5" y="-436.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x0</text>
-<text text-anchor="start" x="176" y="-460.8" font-family="Times New Roman,serif" font-size="14.00">(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), ∃R.(A ⊓ ¬B ), (A ⊔ ¬B ), </text>
+<text text-anchor="start" x="610" y="-436.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="617" y="-436.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node1_0"><a xlink:href="C:\Users\Mario\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\0.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="540.5,-457.5 540.5,-482.5 589.5,-482.5 589.5,-457.5 540.5,-457.5"/>
+<text text-anchor="start" x="545.5" y="-466.3" font-family="Times New Roman,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="539,-457 539,-484 590,-484 590,-457 539,-457"/>
 </g>
 <!-- 1 -->
 <g id="node2" class="node">
@@ -75,8 +80,7 @@
 <g id="node4" class="node">
 <title>3</title>
 <ellipse fill="none" stroke="black" cx="483" cy="-178" rx="40.09" ry="18"/>
-<text text-anchor="start" x="460" y="-175.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="467" y="-175.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="460" y="-174.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 2&#45;&gt;3 -->
 <g id="edge5" class="edge">
@@ -133,8 +137,7 @@
 <g id="node8" class="node">
 <title>7</title>
 <ellipse fill="none" stroke="black" cx="469" cy="-18" rx="40.09" ry="18"/>
-<text text-anchor="start" x="446" y="-15.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="453" y="-15.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="446" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 6&#45;&gt;7 -->
 <g id="edge9" class="edge">
@@ -146,8 +149,7 @@
 <g id="node10" class="node">
 <title>9</title>
 <ellipse fill="none" stroke="black" cx="568" cy="-18" rx="40.09" ry="18"/>
-<text text-anchor="start" x="545" y="-15.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="552" y="-15.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="545" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 8&#45;&gt;9 -->
 <g id="edge10" class="edge">
@@ -234,8 +236,7 @@
 <g id="node15" class="node">
 <title>14</title>
 <ellipse fill="none" stroke="black" cx="667" cy="-18" rx="40.09" ry="18"/>
-<text text-anchor="start" x="644" y="-15.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="651" y="-15.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="644" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 13&#45;&gt;14 -->
 <g id="edge16" class="edge">
@@ -247,8 +248,7 @@
 <g id="node17" class="node">
 <title>16</title>
 <ellipse fill="none" stroke="black" cx="766" cy="-18" rx="40.09" ry="18"/>
-<text text-anchor="start" x="743" y="-15.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="750" y="-15.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="743" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 15&#45;&gt;16 -->
 <g id="edge17" class="edge">
@@ -260,8 +260,7 @@
 <g id="node19" class="node">
 <title>18</title>
 <ellipse fill="none" stroke="black" cx="752" cy="-178" rx="40.09" ry="18"/>
-<text text-anchor="start" x="729" y="-175.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="736" y="-175.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="729" y="-174.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 17&#45;&gt;18 -->
 <g id="edge18" class="edge">
