@@ -1,10 +1,13 @@
 package turcobardi;
 
 import static guru.nidi.graphviz.model.Factory.*;
+
+import guru.nidi.graphviz.model.Link;
 import guru.nidi.graphviz.model.MutableGraph;
 import guru.nidi.graphviz.model.Node;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,21 +23,30 @@ public class GraphRenderer {
 	private int nextNodeID = 0; //identificativo univoco del nodo che serve per aggiungere gli archi
 	private int lastParent = -2; //Identificativo dell'ultimo padre conosciuto 
 	 
-	/*
-	public int createNode(int id, String externalLabel, String internalLabel) {
-		if(externalLabel==null) 
-			externalLabel="";
-		if(internalLabel==null) 
-			internalLabel="";
-		nodes.add(node(Integer.toString(id)).with(Label.html(externalLabel).external(), Label.html(internalLabel)));
-		nextNodeID+=1;
-		lastParent+=1;
-		return id;
-	}*/
 	
-	public Node editNodeLabel(Node currentNode, String internal, String external) {
-		Node editedNode = currentNode.with(Label.raw(external).external(), Label.raw(internal));
-		return editedNode;
+	public Node editNodeLabel(Node nodeToEdit, String internal, String external) {
+		System.out.println("External: "+external);
+		Node newNode = nodeToEdit.with(Label.html(external).external(), Label.raw(internal));
+		nodes.remove(nodes.indexOf(nodeToEdit));
+		nodes.add(newNode);
+		return newNode;
+	}
+	public void printLabel(String label, String nodeName, String pathSubfolder){
+		String path = pathSubfolder + "\\" + nodeName + ".txt";
+		System.out.println(path);
+		File file = new File(path);
+		try {
+			File folder = new File(pathSubfolder);
+			folder.mkdir();
+			file.createNewFile();
+			FileWriter myWriter = new FileWriter(file);				
+			myWriter.append(label);
+			myWriter.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return;
 	}
 	
 	public Node createNode2(int id, String externalLabel, String internalLabel) {
@@ -42,7 +54,7 @@ public class GraphRenderer {
 			externalLabel="";
 		if(internalLabel==null) 
 			internalLabel="";
-		Node current = node(Integer.toString(id)).with(Label.raw(externalLabel).external(), Label.raw(internalLabel)); 
+		Node current = node(Integer.toString(id)).with(Label.html(externalLabel).external(), Label.raw(internalLabel)); 
 		nodes.add(current);
 		nextNodeID+=1;
 		lastParent+=1;
@@ -52,9 +64,11 @@ public class GraphRenderer {
 	public int getLastParent() {
 		return lastParent;
 	}
+	//TODO da cancellare
 	public void setLastParent(int value) {
 		lastParent=value;
 	}
+	//TODO da cancellare
 	public void decrementLastParent() {
 		lastParent-=1;
 	}
@@ -62,7 +76,7 @@ public class GraphRenderer {
 		return nextNodeID;
 	}
 
-	public MutableGraph createGraph() {
+	private MutableGraph createGraph() {
 		for(Node n: nodes) {
 			n.addTo(g);
 		}
@@ -70,10 +84,9 @@ public class GraphRenderer {
 	}
 	
 	public void renderGraph(String path) throws IOException {
+		createGraph();
 		if(path==null)
 			path = "example/tableaux3";
-		
-		
 		Graphviz.fromGraph(g).render(Format.SVG).toFile(new File(path+".svg"));
 		System.out.println("Graph printed at '/" + path + "' in SVG format");
 		//Pulisco il grafo e la lista dei nodi

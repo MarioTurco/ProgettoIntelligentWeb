@@ -66,7 +66,6 @@ public class App {
     	System.out.println("Query size: " + logicalAxiomsQuery.size());
     	System.out.println("##########KB###########");
     	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsKb){
-    		
     		logicalAxiom.accept(visitor); //prints the logical axiom
     	}
     	System.out.println("\n#########Query##########: ");
@@ -121,6 +120,7 @@ public class App {
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 	    	reasoner.renderTableauxGraph("graph/lazy");
+	    	
 		}
 		
 	}

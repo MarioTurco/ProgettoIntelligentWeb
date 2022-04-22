@@ -1,5 +1,6 @@
 package turcobardi;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -38,6 +39,11 @@ import uk.ac.manchester.cs.owl.owlapi.OWLSubClassOfAxiomImpl;
  */
 public class ALCReasoner{
 	private OWLOntology concept = null;
+	private String lazyLabelsPath = null;
+	private String normalLabelsPath = null;
+	private final String printingPath1 = "<table border='0'> <tr> <td href='";
+	private final String printingPath2 = ".txt'> Label </td> </tr> </table>";
+	//<table cellspacing='0' cellpadding='4' border='1'><tr><td href=...</td></tr></table>"
 	private OntologyEditor editor = null;
 	private EquivalenceRuleVisitor equivalence = null;
 	private OWLOntology kb = null;
@@ -53,7 +59,11 @@ public class ALCReasoner{
 		this.editor = new OntologyEditor(kb);
 		this.equivalence = new EquivalenceRuleVisitor();
 		this.printer = new OntologyPrintingVisitor(kb.getOntologyID().getOntologyIRI().get(), "");
+		//TODO qui va messo l'iri invece che essere hardcoded
 		this.gv = new GraphRenderVisitor(kb.getOntologyID().getOntologyIRI().get(), "http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13");
+		this.lazyLabelsPath = new File("lazy").getAbsolutePath();
+		this.normalLabelsPath = new File("normal").getAbsolutePath();
+		
 	}
 	
 	
@@ -304,7 +314,6 @@ public class ALCReasoner{
 	}
 	
 	public void renderTableauxGraph(String path) {
-		gr.createGraph();
 		try {
 			gr.renderGraph(path);
 		} catch (IOException e) {
@@ -429,9 +438,9 @@ public class ALCReasoner{
 				o.accept(gv);
 				gv.addSemicolon();
 			}
-
-			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm() );
-
+			String formula = gv.getFormula();
+			Node current = gr.createNode2(gr.getNextNodeID(), printingPath1+lazyLabelsPath+"\\"+gr.getNextNodeID()+printingPath2, ind.getIRI().getShortForm() );
+			gr.printLabel(formula,current.name().toString(),"lazy");
 			//TODO aggiungere current nella chiamata ricorsiva
 			return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u, current);
 		}
@@ -626,8 +635,6 @@ public class ALCReasoner{
     		o.accept(gv);
     		gv.addSemicolon();
     	}
-    	
-    	
     	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(), gv.getFormula());
     	
     	if(hasClash(Lx)) {
@@ -852,7 +859,7 @@ public class ALCReasoner{
 						}
 						//SECONDA REGOLA
 						OWLDataFactory factory = this.editor.getFactory();
-						OWLObjectComplementOf complAx = factory.getOWLObjectComplementOf(((OWLClassAssertionAxiom) aboxAx).getClassExpression());
+						OWLObjectComplementOf complAx = factory.getOWLObjectComplementOf(((OWLClassAssertionAxiom) aboxAx).getClassExpression().getNNF());
 						if(complAx.equals(leftSide)) {
 							OWLClassExpression rightSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(1);
 							OWLObjectComplementOf rightSideCompl = factory.getOWLObjectComplementOf(rightSide);
@@ -917,33 +924,32 @@ public class ALCReasoner{
 		for(OWLObject ins: lazyUnfoldingRulesRes) {
 			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
 		}
-    	
-		/*System.out.println("\nLx dopo Regole lazy unfolding");
-    	for (OWLObject o: Lx) {
-    		o.accept(printer);
-    	}*/
-		
     	for (OWLObject o: Lx) {
     		o.accept(gv);
     		gv.addSemicolon();
     	}
+    	//Edit the parent node
+    	String formula = gv.getFormula();
+    	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(),  printingPath1 +lazyLabelsPath+"\\"+parent.name().toString()+printingPath2 );
+
+    	gr.printLabel(formula, parent.name().toString(), "lazy");
     	
-    	System.out.println("\nPRima\n"+parent.toString());
-    	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm(), gv.getFormula());
-    	System.out.println("\nDopo\n"+parent.toString());
     	if(hasClash(Lx)) {
-    		Node current = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
-    		gr.createLink2(current, parent, "");
+    		Node clashNode = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
+    		gr.createLink2(clashNode, parent, "");
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
         	}
 			return false;
 		}
+    	
     	//BLOCKING
     	if(predLx!=null) {
     		if(predLx.containsAll(Lx)) {
     			//System.out.println("\nBLOCKING TRUE");
+    			Node blocking = gr.createNode2(gr.getNextNodeID(), "", "Blocking");
+    			gr.createLink2(blocking, parent, "");
     			return true;  
     		}
     	}
@@ -988,40 +994,30 @@ public class ALCReasoner{
                     	    	a.accept(gv);
                     	    	gv.addSemicolon();
                     	    }
-    						Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
-    						gr.createLink2(current, parent, "Union");
-    						ret = implementTableauxNonEmptyTboxLazyUnfolding(ind, tmpLx, aBox,null, T_u, current);
+    						formula = gv.getFormula();
+    						Node currentNode = gr.createNode2(gr.getNextNodeID(), printingPath1 +lazyLabelsPath+"\\"+gr.getNextNodeID()+printingPath2, ind.getIRI().getShortForm());
+
+    						gr.createLink2(currentNode, parent, "Union");
+    						gr.printLabel(formula, currentNode.name().toString(), "lazy");
+    						ret = implementTableauxNonEmptyTboxLazyUnfolding(ind, tmpLx, aBox,null, T_u, currentNode);
     						
     						if (ret) 
     							return true;
     						
     						if(!ret){
     							aBox.remove(disjoint);
-    							//System.out.println("RIMOZIONE: ");
-    							//o.accept(printer);
     							tmpLx.remove(((OWLClassAssertionAxiom) disjoint).getClassExpression());
-    							//System.out.println("UGUALI: " + tmpLx.equals(Lx));
-    							//tmpLx.removeAll(Lx);
-    							/*for (OWLObject tmp1: tmpLx) {
-                				tmp1.accept(printer);
-                				System.out.print(", ");
-                				
-                			}*/
     						}
-    						
     					}
-    					
     					if (!ret) 
     						return false;	
     				}
-    				
     			}
     		}
     	}
-    	
     	if(hasClash(Lx)) {
-    		Node current = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
-    		gr.createLink2(current, parent, "");
+    		Node clashNode = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
+    		gr.createLink2(clashNode, parent, "");
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -1082,9 +1078,11 @@ public class ALCReasoner{
         			relationName = relationName.replace("<", "");
         			relationName = relationName.replace(">", "");
         			relationName = relationName.replace("#", "");
-        	
-        			Node current = gr.createNode2(gr.getNextNodeID(), gv.getFormula(),  newIndName);
-        			gr.createLink2(current, parent, relationName);
+        			formula = gv.getFormula();
+        			Node currentNode = gr.createNode2(gr.getNextNodeID(), printingPath1+ lazyLabelsPath+"\\"+gr.getNextNodeID()+printingPath2,  newIndName);
+
+        			gr.printLabel(formula, currentNode.name().toString(), "lazy");
+        			gr.createLink2(currentNode, parent, relationName);
         			//Regola per ogni
         			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
         			for (OWLObject forAll: Lx) {
@@ -1108,14 +1106,16 @@ public class ALCReasoner{
         							ax.accept(gv);
         							gv.addSemicolon();
         						}
-        						current = gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
-        						
+        						formula = gv.getFormula();
+        						currentNode = gr.editNodeLabel(currentNode, ind.getIRI().getShortForm(), printingPath1 +lazyLabelsPath+"\\"+currentNode.name().toString()+printingPath2);
+
+        						gr.printLabel(formula, currentNode.name().toString(), "lazy");
         					}
         				}
         				
         			}
         			
-        			ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, tmpLx, T_u, current);
+        			ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, tmpLx, T_u, currentNode);
 					if (!ret) {
 						aBox.remove(toAddForAll); //Asserzioni perogni
 						aBox.removeAll(toAdd); //Asserzioni esistenziale
