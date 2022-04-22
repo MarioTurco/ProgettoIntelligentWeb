@@ -26,7 +26,7 @@ public class GraphRenderer {
 	
 	public Node editNodeLabel(Node nodeToEdit, String internal, String external) {
 		System.out.println("External: "+external);
-		Node newNode = nodeToEdit.with(Label.html(external).external(), Label.raw(internal));
+		Node newNode = nodeToEdit.with(Label.html(external).external(), Label.markdown("x"+"__"+internal+"__"));
 		nodes.remove(nodes.indexOf(nodeToEdit));
 		nodes.add(newNode);
 		return newNode;
@@ -54,7 +54,7 @@ public class GraphRenderer {
 			externalLabel="";
 		if(internalLabel==null) 
 			internalLabel="";
-		Node current = node(Integer.toString(id)).with(Label.html(externalLabel).external(), Label.raw(internalLabel)); 
+		Node current = node(Integer.toString(id)).with(Label.html(externalLabel).external(), Label.markdown("x"+"__"+internalLabel+"__")); 
 		nodes.add(current);
 		nextNodeID+=1;
 		lastParent+=1;

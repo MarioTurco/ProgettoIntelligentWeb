@@ -7,14 +7,16 @@
 <g id="node1" class="node">
 <title>0</title>
 <ellipse fill="none" stroke="black" cx="617" cy="-439" rx="27" ry="18"/>
-<text text-anchor="middle" x="617" y="-435.3" font-family="Times New Roman,serif" font-size="14.00">x0</text>
+<text text-anchor="start" x="607.5" y="-436.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="614.5" y="-436.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x0</text>
 <text text-anchor="start" x="176" y="-460.8" font-family="Times New Roman,serif" font-size="14.00">(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), ∃R.(A ⊓ ¬B ), (A ⊔ ¬B ), </text>
 </g>
 <!-- 1 -->
 <g id="node2" class="node">
 <title>1</title>
 <ellipse fill="none" stroke="black" cx="568" cy="-352" rx="27" ry="18"/>
-<text text-anchor="middle" x="568" y="-348.3" font-family="Times New Roman,serif" font-size="14.00">x0</text>
+<text text-anchor="start" x="558.5" y="-349.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="565.5" y="-349.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x0</text>
 <text text-anchor="start" x="107" y="-373.8" font-family="Times New Roman,serif" font-size="14.00">(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), B , ∃R.(A ⊓ ¬B ), (A ⊔ ¬B ), </text>
 </g>
 <!-- 0&#45;&gt;1 -->
@@ -28,7 +30,8 @@
 <g id="node11" class="node">
 <title>10</title>
 <ellipse fill="none" stroke="black" cx="667" cy="-352" rx="27" ry="18"/>
-<text text-anchor="middle" x="667" y="-348.3" font-family="Times New Roman,serif" font-size="14.00">x0</text>
+<text text-anchor="start" x="657.5" y="-349.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="664.5" y="-349.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x0</text>
 <text text-anchor="start" x="197" y="-322.8" font-family="Times New Roman,serif" font-size="14.00">(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), ∃R.(A ⊓ ¬B ), ¬A , (A ⊔ ¬B ), </text>
 </g>
 <!-- 0&#45;&gt;10 -->
@@ -42,7 +45,8 @@
 <g id="node3" class="node">
 <title>2</title>
 <ellipse fill="none" stroke="black" cx="490" cy="-265" rx="27" ry="18"/>
-<text text-anchor="middle" x="490" y="-261.3" font-family="Times New Roman,serif" font-size="14.00">x0</text>
+<text text-anchor="start" x="480.5" y="-262.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="487.5" y="-262.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x0</text>
 <text text-anchor="start" x="0" y="-286.8" font-family="Times New Roman,serif" font-size="14.00">(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), B , ∃R.(A ⊓ ¬B ), ¬B , (A ⊔ ¬B ), </text>
 </g>
 <!-- 1&#45;&gt;2 -->
@@ -56,7 +60,8 @@
 <g id="node5" class="node">
 <title>4</title>
 <ellipse fill="none" stroke="black" cx="568" cy="-265" rx="27" ry="18"/>
-<text text-anchor="middle" x="568" y="-261.3" font-family="Times New Roman,serif" font-size="14.00">x0</text>
+<text text-anchor="start" x="558.5" y="-262.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="565.5" y="-262.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x0</text>
 <text text-anchor="start" x="86" y="-235.8" font-family="Times New Roman,serif" font-size="14.00">(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , B , ∃R.(A ⊓ ¬B ), (A ⊔ ¬B ), </text>
 </g>
 <!-- 1&#45;&gt;4 -->
@@ -70,7 +75,8 @@
 <g id="node4" class="node">
 <title>3</title>
 <ellipse fill="none" stroke="black" cx="483" cy="-178" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="483" y="-174.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="460" y="-175.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="467" y="-175.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
 </g>
 <!-- 2&#45;&gt;3 -->
 <g id="edge5" class="edge">
@@ -82,7 +88,8 @@
 <g id="node6" class="node">
 <title>5</title>
 <ellipse fill="none" stroke="black" cx="568" cy="-178" rx="27" ry="18"/>
-<text text-anchor="middle" x="568" y="-174.3" font-family="Times New Roman,serif" font-size="14.00">x01</text>
+<text text-anchor="start" x="555.5" y="-175.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="562.5" y="-175.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x01</text>
 <text text-anchor="start" x="302" y="-199.8" font-family="Times New Roman,serif" font-size="14.00">((A ⊔ ¬B )⊓ (B ⊔ ¬A )), (A ⊓ ¬B ), </text>
 </g>
 <!-- 4&#45;&gt;5 -->
@@ -96,7 +103,8 @@
 <g id="node7" class="node">
 <title>6</title>
 <ellipse fill="none" stroke="black" cx="483" cy="-91" rx="27" ry="18"/>
-<text text-anchor="middle" x="483" y="-87.3" font-family="Times New Roman,serif" font-size="14.00">x01</text>
+<text text-anchor="start" x="470.5" y="-88.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="477.5" y="-88.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x01</text>
 <text text-anchor="start" x="3" y="-112.8" font-family="Times New Roman,serif" font-size="14.00">(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , B , (A ⊓ ¬B ), ¬B , (A ⊔ ¬B ), </text>
 </g>
 <!-- 5&#45;&gt;6 -->
@@ -110,7 +118,8 @@
 <g id="node9" class="node">
 <title>8</title>
 <ellipse fill="none" stroke="black" cx="568" cy="-91" rx="27" ry="18"/>
-<text text-anchor="middle" x="568" y="-87.3" font-family="Times New Roman,serif" font-size="14.00">x01</text>
+<text text-anchor="start" x="555.5" y="-88.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="562.5" y="-88.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x01</text>
 <text text-anchor="start" x="79" y="-61.8" font-family="Times New Roman,serif" font-size="14.00">(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , (A ⊓ ¬B ), ¬A , ¬B , (A ⊔ ¬B ), </text>
 </g>
 <!-- 5&#45;&gt;8 -->
@@ -124,7 +133,8 @@
 <g id="node8" class="node">
 <title>7</title>
 <ellipse fill="none" stroke="black" cx="469" cy="-18" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="469" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="446" y="-15.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="453" y="-15.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
 </g>
 <!-- 6&#45;&gt;7 -->
 <g id="edge9" class="edge">
@@ -136,7 +146,8 @@
 <g id="node10" class="node">
 <title>9</title>
 <ellipse fill="none" stroke="black" cx="568" cy="-18" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="568" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="545" y="-15.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="552" y="-15.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
 </g>
 <!-- 8&#45;&gt;9 -->
 <g id="edge10" class="edge">
@@ -148,7 +159,8 @@
 <g id="node12" class="node">
 <title>11</title>
 <ellipse fill="none" stroke="black" cx="667" cy="-265" rx="27" ry="18"/>
-<text text-anchor="middle" x="667" y="-261.3" font-family="Times New Roman,serif" font-size="14.00">x0</text>
+<text text-anchor="start" x="657.5" y="-262.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="664.5" y="-262.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x0</text>
 <text text-anchor="start" x="640" y="-286.8" font-family="Times New Roman,serif" font-size="14.00">(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), ∃R.(A ⊓ ¬B ), ¬A , ¬B , (A ⊔ ¬B ), </text>
 </g>
 <!-- 10&#45;&gt;11 -->
@@ -162,7 +174,8 @@
 <g id="node18" class="node">
 <title>17</title>
 <ellipse fill="none" stroke="black" cx="746" cy="-265" rx="27" ry="18"/>
-<text text-anchor="middle" x="746" y="-261.3" font-family="Times New Roman,serif" font-size="14.00">x0</text>
+<text text-anchor="start" x="736.5" y="-262.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="743.5" y="-262.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x0</text>
 <text text-anchor="start" x="719" y="-235.8" font-family="Times New Roman,serif" font-size="14.00">(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , ∃R.(A ⊓ ¬B ), ¬A , (A ⊔ ¬B ), </text>
 </g>
 <!-- 10&#45;&gt;17 -->
@@ -176,7 +189,8 @@
 <g id="node13" class="node">
 <title>12</title>
 <ellipse fill="none" stroke="black" cx="667" cy="-178" rx="27" ry="18"/>
-<text text-anchor="middle" x="667" y="-174.3" font-family="Times New Roman,serif" font-size="14.00">x01</text>
+<text text-anchor="start" x="654.5" y="-175.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="661.5" y="-175.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x01</text>
 <text text-anchor="start" x="401" y="-148.8" font-family="Times New Roman,serif" font-size="14.00">((A ⊔ ¬B )⊓ (B ⊔ ¬A )), (A ⊓ ¬B ), </text>
 </g>
 <!-- 11&#45;&gt;12 -->
@@ -190,7 +204,8 @@
 <g id="node14" class="node">
 <title>13</title>
 <ellipse fill="none" stroke="black" cx="667" cy="-91" rx="27" ry="18"/>
-<text text-anchor="middle" x="667" y="-87.3" font-family="Times New Roman,serif" font-size="14.00">x01</text>
+<text text-anchor="start" x="654.5" y="-88.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="661.5" y="-88.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x01</text>
 <text text-anchor="start" x="640" y="-112.8" font-family="Times New Roman,serif" font-size="14.00">(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , B , (A ⊓ ¬B ), ¬B , (A ⊔ ¬B ), </text>
 </g>
 <!-- 12&#45;&gt;13 -->
@@ -204,7 +219,8 @@
 <g id="node16" class="node">
 <title>15</title>
 <ellipse fill="none" stroke="black" cx="756" cy="-91" rx="27" ry="18"/>
-<text text-anchor="middle" x="756" y="-87.3" font-family="Times New Roman,serif" font-size="14.00">x01</text>
+<text text-anchor="start" x="743.5" y="-88.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="750.5" y="-88.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">x01</text>
 <text text-anchor="start" x="729" y="-61.8" font-family="Times New Roman,serif" font-size="14.00">(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , (A ⊓ ¬B ), ¬A , ¬B , (A ⊔ ¬B ), </text>
 </g>
 <!-- 12&#45;&gt;15 -->
@@ -218,7 +234,8 @@
 <g id="node15" class="node">
 <title>14</title>
 <ellipse fill="none" stroke="black" cx="667" cy="-18" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="667" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="644" y="-15.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="651" y="-15.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
 </g>
 <!-- 13&#45;&gt;14 -->
 <g id="edge16" class="edge">
@@ -230,7 +247,8 @@
 <g id="node17" class="node">
 <title>16</title>
 <ellipse fill="none" stroke="black" cx="766" cy="-18" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="766" y="-14.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="743" y="-15.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="750" y="-15.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
 </g>
 <!-- 15&#45;&gt;16 -->
 <g id="edge17" class="edge">
@@ -242,7 +260,8 @@
 <g id="node19" class="node">
 <title>18</title>
 <ellipse fill="none" stroke="black" cx="752" cy="-178" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="752" y="-174.3" font-family="Times New Roman,serif" font-size="14.00">CLASH</text>
+<text text-anchor="start" x="729" y="-175.3" font-family="Times New Roman,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="736" y="-175.3" font-family="Times New Roman,serif" baseline-shift="sub" font-size="14.00">CLASH</text>
 </g>
 <!-- 17&#45;&gt;18 -->
 <g id="edge18" class="edge">
