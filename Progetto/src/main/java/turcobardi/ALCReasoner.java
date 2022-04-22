@@ -656,6 +656,7 @@ public class ALCReasoner{
     	*/
 
     	//BLOCKING
+    	//TODO non si deve creare un link blocking?
     	if(predLx!=null) {
     		if(predLx.containsAll(Lx)) {
     			//System.out.println("\nBLOCKING TRUE");
@@ -946,8 +947,8 @@ public class ALCReasoner{
     	if(predLx!=null) {
     		if(predLx.containsAll(Lx)) {
     			//System.out.println("\nBLOCKING TRUE");
-    			Node blocking = gr.createNode("Blocking");
-    			gr.createLink2(blocking, parent, "");
+    			Node blocking = gr.createNode("BLOCKING");
+    			gr.createLink2(blocking, parent, "", Color.YELLOW);
     			return true;  
     		}
     	}
