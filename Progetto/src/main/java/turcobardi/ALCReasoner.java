@@ -639,7 +639,7 @@ public class ALCReasoner{
     	gr.printLabelToFile(gv.getFormula(), parent.name().toString(), "normal");
     	if(hasClash(Lx)) {
     		Node current = gr.createNode("CLASH");
-    		gr.createLink2(current, parent, "");
+    		gr.createLink2(current, parent, "",Color.RED);
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -694,9 +694,9 @@ public class ALCReasoner{
                     	    	a.accept(gv);
                     	    	gv.addSemicolon();
                     	    }
-    						Node current = gr.createNode( gv.getFormula(), ind.getIRI().getShortForm());
+    						Node current = gr.createNode( printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x",""));
     						gr.createLink2(current, parent, "Union");
-    						
+    						gr.printLabelToFile(gv.getFormula(),current.name().toString(),"normal");
     						ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null, current);
     						
     						if (ret) {
@@ -716,7 +716,7 @@ public class ALCReasoner{
     	}
     	if(hasClash(Lx)) {
     		Node current = gr.createNode("CLASH");
-    		gr.createLink2(current, parent, "");
+    		gr.createLink2(current, parent, "",Color.RED);
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -770,9 +770,10 @@ public class ALCReasoner{
         			relationName = relationName.replace("<", "");
         			relationName = relationName.replace(">", "");
         			relationName = relationName.replace("#", "");
-        			Node current = gr.createNode(gv.getFormula(),  newIndName);
+        			Node current = gr.createNode(printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2,  newIndName.replace("x",""));
         			gr.createLink2(current, parent, relationName);
-  
+        			gr.printLabelToFile(gv.getFormula(),current.name().toString(),"normal");
+
         			//Regola per ogni
         			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAddExists);
         			for (OWLObject forAll: Lx) {
@@ -796,14 +797,13 @@ public class ALCReasoner{
         						//Chiamata ricorsiva
 
         						//TODO implementare per ogni
-        						gv.getFormula();
-
         						for(OWLObject ax: newLx) {
         							ax.accept(gv);
         							gv.addSemicolon();
         						}
-        						current = gr.editNodeLabel(current, ind.getIRI().getShortForm(), gv.getFormula());
-        						
+        						current = gr.editNodeLabel(current, ind.getIRI().getShortForm().replace("x", ""), printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2);
+        						gr.printLabelToFile(gv.getFormula(), current.name().toString(), "normal");
+        				    	
         					}
         				}
         				
@@ -830,7 +830,7 @@ public class ALCReasoner{
     		
     	}
     	Node clashFree = gr.createNode("CLASH-FREE");
-    	gr.createLink2(clashFree, parent, "");
+    	gr.createLink2(clashFree, parent, "", Color.GREEN);
     //	gr.decrementLastParent();
     	//System.out.println("\nChiamata finita");
 		return ret;
