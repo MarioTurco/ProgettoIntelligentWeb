@@ -2,7 +2,6 @@ package turcobardi;
 
 import static guru.nidi.graphviz.model.Factory.*;
 
-import guru.nidi.graphviz.model.Link;
 import guru.nidi.graphviz.model.MutableGraph;
 import guru.nidi.graphviz.model.Node;
 
@@ -12,6 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import guru.nidi.graphviz.attribute.Color;
 import guru.nidi.graphviz.attribute.Label;
 import guru.nidi.graphviz.engine.Format;
 import guru.nidi.graphviz.engine.Graphviz;
@@ -103,8 +103,10 @@ public class GraphRenderer {
 		(parentNode.link(to(childNode).with(Label.of(label)))).addTo(g);
 	}
 	
+	public void createLink2(Node childNode, Node parentNode, String label, Color color) {
+		(parentNode.link(to(childNode).with(Label.of(label), color))).addTo(g);
+	}
 	public void createLink2(Node childNode, Node parentNode, String label) {
-		//this.g.addLink((parentNode).linkTo(childNode).with(Label.of(label)));
 		(parentNode.link(to(childNode).with(Label.of(label)))).addTo(g);
 	}
 	

@@ -26,6 +26,7 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
+import guru.nidi.graphviz.attribute.Color;
 import guru.nidi.graphviz.model.Node;
 import uk.ac.manchester.cs.owl.owlapi.OWLObjectComplementOfImpl;
 import uk.ac.manchester.cs.owl.owlapi.OWLObjectIntersectionOfImpl;
@@ -41,7 +42,7 @@ public class ALCReasoner{
 	private OWLOntology concept = null;
 	private String lazyLabelsPath = null;
 	private String normalLabelsPath = null;
-	private final String printingPath1 = "<table color='green' scale='both' cellspacing='0' cellpadding='4' border='1'> <tr align='middle'> <td target='_blank' href='";
+	private final String printingPath1 = "<table color='green' scale='both' cellspacing='0' cellpadding='4' border='1'> <tr > <td title='Clicca per visualizzare Lx' target='_blank' href='";
 	private final String printingPath2 = ".txt'> Label </td> </tr> </table>";
 	//<table cellspacing='0' cellpadding='4' border='1'><tr><td href=...</td></tr></table>"
 	private OntologyEditor editor = null;
@@ -936,7 +937,7 @@ public class ALCReasoner{
     	
     	if(hasClash(Lx)) {
     		Node clashNode = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
-    		gr.createLink2(clashNode, parent, "");
+    		gr.createLink2(clashNode, parent, "", Color.RED);
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -1017,7 +1018,7 @@ public class ALCReasoner{
     	}
     	if(hasClash(Lx)) {
     		Node clashNode = gr.createNode2(gr.getNextNodeID(), "", "CLASH");
-    		gr.createLink2(clashNode, parent, "");
+    		gr.createLink2(clashNode, parent, "", Color.RED);
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -1136,7 +1137,7 @@ public class ALCReasoner{
     		
     	}
     	Node clashFree = gr.createNode2(gr.getNextNodeID(), "", "CLASH-FREE");
-    	gr.createLink2(clashFree, parent, "");
+    	gr.createLink2(clashFree, parent, "", Color.GREEN);
     	//System.out.println("\nChiamata finita");
 		return ret;
 	}
