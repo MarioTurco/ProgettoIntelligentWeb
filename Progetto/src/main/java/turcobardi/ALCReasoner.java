@@ -53,6 +53,7 @@ public class ALCReasoner{
 	private OWLSubClassOfAxiom C_g = null;
 	private GraphRenderer gr = null;
 	private GraphRenderVisitor gv = null;
+	
 	public ALCReasoner(OWLOntology concept, OWLOntology kb) {
 		this.kb = kb;
 		this.gr = new GraphRenderer();
@@ -316,6 +317,8 @@ public class ALCReasoner{
 	public void renderTableauxGraph(String path) {
 		try {
 			gr.renderGraph(path);
+			GraphBrowserRenderer gbr = new GraphBrowserRenderer("lazy");
+			gbr.modifySVG();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
