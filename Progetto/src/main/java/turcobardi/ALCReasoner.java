@@ -53,15 +53,22 @@ public class ALCReasoner{
 	private OWLSubClassOfAxiom C_g = null;
 	private GraphRenderer gr = null;
 	private GraphRenderVisitor gv = null;
+	
 	public ALCReasoner(OWLOntology concept, OWLOntology kb) {
 		this.kb = kb;
 		this.gr = new GraphRenderer();
 		this.concept = concept;
-		this.editor = new OntologyEditor(kb);
+		if(kb!=null) {
+			this.editor = new OntologyEditor(kb);
+			this.printer = new OntologyPrintingVisitor(kb.getOntologyID().getOntologyIRI().get(), "");
+			this.gv = new GraphRenderVisitor(kb.getOntologyID().getOntologyIRI().get(), "http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13");		
+		}else {
+			this.editor = new OntologyEditor(concept);
+			this.printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
+			this.gv = new GraphRenderVisitor(concept.getOntologyID().getOntologyIRI().get(), "http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13");
+		}
 		this.equivalence = new EquivalenceRuleVisitor();
-		this.printer = new OntologyPrintingVisitor(kb.getOntologyID().getOntologyIRI().get(), "");
 		//TODO qui va messo l'iri invece che essere hardcoded
-		this.gv = new GraphRenderVisitor(kb.getOntologyID().getOntologyIRI().get(), "http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13");
 		this.lazyLabelsPath = new File("graph\\lazy").getAbsolutePath();
 		this.normalLabelsPath = new File("graph\\normal").getAbsolutePath();
 	}
@@ -357,7 +364,6 @@ public class ALCReasoner{
 		if(!useLazyUnfolding) {
 			//Instanziazione del concetto principale
 			//Aggiunta degli altri assiomi
-			this.KBinclusion = this.convertKBWithFactory();
 			for (OWLLogicalAxiom axiom :concept.getLogicalAxioms()) {
 				axiom.getNNF().accept(equivalence);
 				OWLClassExpression rightSide = equivalence.getRightSide();
@@ -373,15 +379,18 @@ public class ALCReasoner{
 				}
 			}
 			
-			OWLClassAssertionAxiom KBinclusionIstance;
-			try {
-				KBinclusionIstance = editor.createIndividual(this.KBinclusion.getSuperClass().getNNF(), "x0");
-				aBox.add(KBinclusionIstance);
-				//this.KBinclusion.getSuperClass().getNNF().accept(printer);
-				Lx.add(this.KBinclusion.getSuperClass().getNNF());
-			} catch (OWLOntologyCreationException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			if(kb!=null) {
+				this.KBinclusion = this.convertKBWithFactory();
+				OWLClassAssertionAxiom KBinclusionIstance;
+				try {
+					KBinclusionIstance = editor.createIndividual(this.KBinclusion.getSuperClass().getNNF(), "x0");
+					aBox.add(KBinclusionIstance);
+					//this.KBinclusion.getSuperClass().getNNF().accept(printer);
+					Lx.add(this.KBinclusion.getSuperClass().getNNF());
+				} catch (OWLOntologyCreationException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}			
 			}
 			for(OWLObject o: Lx) {
 				o.accept(gv);
@@ -392,9 +401,8 @@ public class ALCReasoner{
 			gr.printLabelToFile(gv.getFormula(),current.name().toString(),"normal");
 			return implementTableauxNonEmptyTbox(ind, Lx, aBox, null, current);		
 		}
-		else {
-			
-			
+		else if (useLazyUnfolding && kb!=null){
+				
 			for (OWLLogicalAxiom axiom :concept.getLogicalAxioms()) {
 				
 				axiom.getNNF().accept(equivalence);
@@ -443,10 +451,11 @@ public class ALCReasoner{
 			Node current = gr.createNode(printingPath1+lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x", "") );
 			gr.printLabelToFile(gv.getFormula(),current.name().toString(),"lazy");
 			return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u, current);
+		}else if(kb==null) {
+			throw new IllegalArgumentException("Cannot use lazy unfolding on empty tbox");
 		}
 		
-		
-	
+		return false;
 	}
 	
 	private boolean hasClash(Set<OWLObject> abox) {
