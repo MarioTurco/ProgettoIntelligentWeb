@@ -27,7 +27,7 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	private final char exists = '\u2203';
 	private final char not = '\u00AC';
 	private final char inclusion = '\u2291';
-	private String formula= "\n\n";
+	private String formula= "";
 	
 	
 	public void printFormula() {
@@ -46,8 +46,9 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	
 	public String getFormula() {
 		String tmp = new String(formula);
-		formula = "\n\n";
-		return tmp;
+		formula = "";
+		//rimuoviamo gli ultimi due caratteri, ovvero una virgola ed uno spazio		
+		return tmp.substring(0, tmp.length()-2);
 	}
 	
 	public void visit(OWLObjectSomeValuesFrom desc) {
