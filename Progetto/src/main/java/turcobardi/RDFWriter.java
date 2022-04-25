@@ -1,6 +1,8 @@
 package turcobardi;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,14 +17,11 @@ public class RDFWriter {
 	File rdfFile = null;
 	Model model = null;
 	String IRI = null;
-	List<Resource > res = null;
 
 	public RDFWriter(String path, String fileName, String IRI) {
-		this.rdfFile = new File(path.concat("\\").concat(fileName).concat(".rdf"));
+		this.rdfFile = new File(path.concat("\\").concat(fileName));
 		model = ModelFactory.createDefaultModel();
 		model.createProperty(IRI.concat("label"));
-		
-		res = new ArrayList<>();
 		this.IRI = IRI.concat("#");
 	}
 	
@@ -36,10 +35,10 @@ public class RDFWriter {
 	}
 	
 	//TODO non serve
-	public Resource editProperty(String URI, String propValue) {
+	public Resource editLabelProperty(String URI, String newPropValue) {
 		Resource editedRes = model.getResource(this.IRI.concat(URI));
 		editedRes = editedRes.removeProperties();
-		editedRes.addProperty(model.getProperty(IRI.concat("label")), propValue);
+		editedRes.addProperty(model.getProperty(IRI.concat("label")), newPropValue);
 		return editedRes;
 	}
 	
@@ -47,19 +46,32 @@ public class RDFWriter {
 		System.out.println(this.IRI.concat(URI));
 		Resource newRes = model.createResource(this.IRI.concat(URI));
 		newRes.addProperty(model.getProperty(IRI.concat("label")), propValue);
-		res.add(newRes);
+//		res.add(newRes);
 		return newRes;
 		
 	}
 	//TODO
 	public Resource addResource(String URI) {
 		Resource newRes = model.createResource(this.IRI.concat(URI));
-		res.add(newRes);
 		return newRes;
 	}
-	
-	public void printModel() {
+	private void clearModel() {
+		this.model= ModelFactory.createDefaultModel();
+		this.model.createProperty(IRI.concat("label"));
+	}
+	public void printAndClearModel() {
+		try {
+			model.write(new FileWriter(rdfFile), "RDF/XML");
+			System.out.println("RDF file created at: " + rdfFile.getAbsolutePath());
+		} catch (IOException e) {
+			System.out.println("Cannot print to file\n");
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("\n##################RDF#######################");
 		model.write(System.out, "RDF/XML");
+		System.out.println("############################################\n");
+		clearModel();
 		//TODO bisogna pulire il modello 
 		return;
 	}

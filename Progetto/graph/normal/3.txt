@@ -1,0 +1,1 @@
+(¬http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16A ⊔ ¬http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16B ), (B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), B , ¬http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16B , ¬B , (A ⊔ ¬B )

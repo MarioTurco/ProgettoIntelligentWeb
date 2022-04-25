@@ -330,7 +330,7 @@ public class ALCReasoner{
 			e.printStackTrace();
 		}
 		//TODO spostare da qualche altra parte
-		rdf.printModel();
+		rdf.printAndClearModel();
 	}
 	
 	
@@ -402,8 +402,11 @@ public class ALCReasoner{
 				gv.addSemicolon();
 			}
 			//Creiamo il nodo principale
+			String formula = gv.getFormula();
 			Node current = gr.createNode(printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x", "") );
-			gr.printLabelToFile(gv.getFormula(),current.name().toString(),"normal");
+			gr.printLabelToFile(formula,current.name().toString(),"normal");
+			System.out.println("FORMULA: " + formula);
+			rdf.addResource(current.name().toString(), formula);
 			return implementTableauxNonEmptyTbox(ind, Lx, aBox, null, current);		
 		}
 		else if (useLazyUnfolding && kb!=null){
@@ -650,11 +653,16 @@ public class ALCReasoner{
     		o.accept(gv);
     		gv.addSemicolon();
     	}
+    	String formula = gv.getFormula();
     	parent = gr.editNodeLabel(parent, parent.name().toString().replace("x", ""), printingPath1 +normalLabelsPath+"\\"+parent.name().toString()+printingPath2 );
-    	gr.printLabelToFile(gv.getFormula(), parent.name().toString(), "normal");
+    	rdf.editLabelProperty(parent.name().toString().replace("x", ""), formula);
+    	gr.printLabelToFile(formula, parent.name().toString().replace("x", ""), "normal");
     	if(hasClash(Lx)) {
     		Node current = gr.createNode("CLASH");
     		gr.createLink2(current, parent, "",Color.RED);
+    		rdf.addResource("clashNode"+nClash);
+    		rdf.addStatement(parent.name().toString().replace("x", ""), "clash", "clashNode"+nClash  );
+    		nClash++;
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -710,9 +718,12 @@ public class ALCReasoner{
                     	    	a.accept(gv);
                     	    	gv.addSemicolon();
                     	    }
+    						formula = gv.getFormula();
     						Node current = gr.createNode( printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x",""));
     						gr.createLink2(current, parent, "Union");
-    						gr.printLabelToFile(gv.getFormula(),current.name().toString(),"normal");
+    						gr.printLabelToFile(formula,current.name().toString(),"normal");
+    						rdf.addResource(current.name().toString().replace("x", ""), formula);
+    						rdf.addStatement(parent.name().toString().replace("x",""), "Union", current.name().toString().replace("x", ""));
     						ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null, current);
     						
     						if (ret) {
@@ -733,6 +744,9 @@ public class ALCReasoner{
     	if(hasClash(Lx)) {
     		Node current = gr.createNode("CLASH");
     		gr.createLink2(current, parent, "",Color.RED);
+    		rdf.addResource("clashNode"+nClash);
+    		rdf.addStatement(parent.name().toString().replace("x", ""), "clash", "clashNode"+nClash  );
+    		nClash++;
     		aBox.removeAll(inserted);
     		for (OWLObject o: inserted) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
@@ -783,12 +797,16 @@ public class ALCReasoner{
         	    		ax.accept(gv);
         	    		gv.addSemicolon();
         	    	}
+        			formula = gv.getFormula();
         			relationName = relationName.replace("<", "");
         			relationName = relationName.replace(">", "");
         			relationName = relationName.replace("#", "");
         			Node current = gr.createNode(printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2,  newIndName.replace("x",""));
         			gr.createLink2(current, parent, relationName);
-        			gr.printLabelToFile(gv.getFormula(),current.name().toString(),"normal");
+        			gr.printLabelToFile(formula,current.name().toString(),"normal");
+        			rdf.addResource(current.name().toString(), formula);
+        			rdf.addStatement(parent.name().toString(), "Esiste " +  relationName, current.name().toString());
+        			
 
         			//Regola per ogni
         			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAddExists);
@@ -817,8 +835,10 @@ public class ALCReasoner{
         							ax.accept(gv);
         							gv.addSemicolon();
         						}
+        						formula = gv.getFormula();
         						current = gr.editNodeLabel(current, ind.getIRI().getShortForm().replace("x", ""), printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2);
-        						gr.printLabelToFile(gv.getFormula(), current.name().toString(), "normal");
+        						gr.printLabelToFile(formula, current.name().toString(), "normal");
+        						rdf.editLabelProperty(current.name().toString(), formula);
         				    	
         					}
         				}
@@ -847,9 +867,9 @@ public class ALCReasoner{
     	}
     	Node clashFree = gr.createNode("CLASH-FREE");
     	gr.createLink2(clashFree, parent, "", Color.GREEN);
-    //	gr.decrementLastParent();
-    	//System.out.println("\nChiamata finita");
-		return ret;
+    	rdf.addResource("clash-Free");
+		rdf.addStatement(parent.name().toString(), "clash-free", "clash-Free"  );
+    	return ret;
 	}
 	
 	private Set<OWLObject> lazyUnfoldingRules(Set<OWLObject> aBox, Set<OWLObject> T_u, String individual) {
@@ -948,7 +968,7 @@ public class ALCReasoner{
     	String formula = gv.getFormula();
     	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm().replace("x", ""),  printingPath1 +lazyLabelsPath+"\\"+parent.name().toString()+printingPath2 );
     	gr.printLabelToFile(formula, parent.name().toString(), "lazy");
-    	rdf.addResource(parent.name().toString(), formula);
+    	rdf.editLabelProperty(parent.name().toString(), formula);
     	
     	if(hasClash(Lx)) {
     		Node clashNode = gr.createNode("CLASH");
@@ -1107,7 +1127,7 @@ public class ALCReasoner{
         			gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
         			gr.createLink2(currentNode, parent, relationName);
         			rdf.addResource(currentNode.name().toString(), formula);
-        			rdf.addStatement(parent.name().toString(), "Esiste", currentNode.name().toString());
+        			rdf.addStatement(parent.name().toString(), "Esiste ".concat(relationName), currentNode.name().toString());
         			//Regola per ogni
         			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
         			for (OWLObject forAll: Lx) {
@@ -1134,7 +1154,7 @@ public class ALCReasoner{
         						formula = gv.getFormula();
         						currentNode = gr.editNodeLabel(currentNode, ind.getIRI().getShortForm().replace("x",""), printingPath1 +lazyLabelsPath+"\\"+currentNode.name().toString()+printingPath2);
         						gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
-        						rdf.addResource(currentNode.name().toString(), formula);
+        						rdf.editLabelProperty(currentNode.name().toString(), formula);
         					}
         				}
         				
