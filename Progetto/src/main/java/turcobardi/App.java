@@ -1,18 +1,26 @@
 package turcobardi;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.time.Duration;
 import java.time.Instant;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
-
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.expression.ShortFormEntityChecker;
+import org.semanticweb.owlapi.manchestersyntax.parser.ManchesterOWLSyntaxParserImpl;
+import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAnnotationProperty;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassAxiom;
@@ -31,11 +39,21 @@ import org.semanticweb.owlapi.model.OWLObjectVisitor;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.model.OntologyConfigurator;
 import org.semanticweb.owlapi.model.parameters.Imports;
 import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.util.AnnotationValueShortFormProvider;
+import org.semanticweb.owlapi.util.BidirectionalShortFormProvider;
+import org.semanticweb.owlapi.util.BidirectionalShortFormProviderAdapter;
+import org.semanticweb.owlapi.util.OWLOntologyImportsClosureSetProvider;
 import org.semanticweb.owlapi.util.OWLOntologyWalker;
 import org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor;
+import org.semanticweb.owlapi.util.ShortFormProvider;
+import org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser;
+
+import uk.ac.manchester.cs.owl.owlapi.OWLClassAxiomImpl;
+import uk.ac.manchester.cs.owl.owlapi.OWLLogicalAxiomImpl;
 
 public class App {
 
@@ -43,8 +61,8 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 		OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
-		File kbFile = new File("KB10.owl");
-		File queryFile = new File("concept_2.owl");
+		File kbFile = new File("kb10.owl");
+		File queryFile = new File("prova2.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("Numero assiomi :" + kb.getAxiomCount());
 		IRI iriKb = kb.getOntologyID().getOntologyIRI().get();
@@ -89,12 +107,45 @@ public class App {
     	executeAndPrintTime("nonEmpty", reasoner);
     	System.out.println("\n############LazyUnfolding#############");
     	executeAndPrintTime("lazy", reasoner);
-    	/*ALCReasoner reasoner2 = new ALCReasoner(concept, concept);
-    	System.out.println("\nKB convertita: ");
-    	reasoner2.convertKB().accept(visitor);*/
+    	
+    	/*TODO LETTURA QUERY DA TASTIERA
+    	OWLOntology queryFromKeyboard = getQueryFromStdIn(kb);
+    	System.out.println("QUERY CREATA");
+    	for (OWLLogicalAxiom ax :queryFromKeyboard.getLogicalAxioms()) {
+    		ax.accept(visitor);
+    	}*/
     	
     	
-    	
+	}
+	
+	private static OWLOntology getQueryFromStdIn(OWLOntology kb) throws OWLOntologyCreationException {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    	System.out.println("Enter query: ");
+    	String queryInput = null;
+    	try {
+    		queryInput = new String(reader.readLine());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	Set<OWLOntology> ont = new HashSet<>();
+    	Set<OWLAxiom> toAdd = new HashSet<OWLAxiom>();
+    	OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+    	ont.add(kb);
+    	ShortFormProvider sfp =new AnnotationValueShortFormProvider(Arrays.asList(new OntologyEditor(kb).getFactory().getRDFSLabel()),
+    																Collections.<OWLAnnotationProperty, List<String>>emptyMap(), manager);
+
+    	BidirectionalShortFormProvider shortFormProvider = new BidirectionalShortFormProviderAdapter(ont, sfp);
+        ShortFormEntityChecker owlEntityChecker = new ShortFormEntityChecker(shortFormProvider);
+    	        
+        ManchesterOWLSyntaxParser parser = OWLManager.createManchesterParser();
+        parser.setOWLEntityChecker(owlEntityChecker);
+        parser.setStringToParse(queryInput);
+        parser.setDefaultOntology(kb);
+        toAdd.add(parser.parseAxiom());
+
+    	OWLOntology queryIn = manager.createOntology(toAdd, kb.getOntologyID().getOntologyIRI().get());
+    	return queryIn;
 	}
 	
 	private static void executeAndPrintTime(String what, ALCReasoner reasoner) {
