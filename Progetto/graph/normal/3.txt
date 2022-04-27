@@ -1,1 +1,1 @@
-(¬http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16A ⊔ ¬http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16B ), (B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), B , ¬http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16B , ¬B , (A ⊔ ¬B )
+A , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ¬A , ∃R.∃R.A , (((B ⊔ K )⊓ ¬A )⊔ ¬K )

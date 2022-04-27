@@ -50,6 +50,7 @@ import org.semanticweb.owlapi.util.OWLOntologyImportsClosureSetProvider;
 import org.semanticweb.owlapi.util.OWLOntologyWalker;
 import org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor;
 import org.semanticweb.owlapi.util.ShortFormProvider;
+import org.semanticweb.owlapi.util.SimpleShortFormProvider;
 import org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser;
 
 import uk.ac.manchester.cs.owl.owlapi.OWLClassAxiomImpl;
@@ -60,17 +61,17 @@ public class App {
 	
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
-		OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
-		File kbFile = new File("kb10.owl");
-		File queryFile = new File("concept_2.owl");
+		//OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
+		File kbFile = new File("kb5.owl");
+		//File queryFile = new File("concept_2.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("Numero assiomi :" + kb.getAxiomCount());
 		IRI iriKb = kb.getOntologyID().getOntologyIRI().get();
-		System.out.println("KB: "+iriKb);
-		OWLOntology query = manQ.loadOntologyFromOntologyDocument(queryFile);
-		System.out.println("Numero assiomi :" + query.getAxiomCount());
+		//System.out.println("KB: "+iriKb);
+		//OWLOntology query = manQ.loadOntologyFromOntologyDocument(queryFile);
+		//System.out.println("Numero assiomi :" + query.getAxiomCount());
 		IRI iriQuery = kb.getOntologyID().getOntologyIRI().get();
-		System.out.println("QUERY: " +iriQuery);
+		//System.out.println("QUERY: " +iriQuery);
 		/*
 		//stampa il nome delle entità
     	o.signature().forEach(s -> System.out.println(s.toString().replace(iri.toString(), "")));
@@ -78,14 +79,19 @@ public class App {
     	}*/
 		OntologyPrintingVisitor visitor = new OntologyPrintingVisitor(iriKb,"");
 		Set<OWLLogicalAxiom> logicalAxiomsKb = kb.getLogicalAxioms(Imports.fromBoolean(false));
-    	Set<OWLLogicalAxiom> logicalAxiomsQuery = query.getLogicalAxioms(Imports.fromBoolean(false));
-
-    	System.out.println("KB size: " + logicalAxiomsKb.size());
-    	System.out.println("Query size: " + logicalAxiomsQuery.size());
-    	System.out.println("##########KB###########");
+		System.out.println("KB size: " + logicalAxiomsKb.size());
+		
+		System.out.println("##########KB###########");
     	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsKb){
     		logicalAxiom.accept(visitor); //prints the logical axiom
     	}
+    	OWLOntology query = getQueryFromStdIn(kb);
+    	System.out.println("QUERY CREATA");
+
+    	Set<OWLLogicalAxiom> logicalAxiomsQuery = query.getLogicalAxioms(Imports.fromBoolean(false));
+
+    	System.out.println("Query size: " + logicalAxiomsQuery.size());
+    	
     	System.out.println("\n#########Query##########: ");
     	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsQuery){
     		
@@ -108,12 +114,7 @@ public class App {
     	System.out.println("\n############LazyUnfolding#############");
     	executeAndPrintTime("lazy", reasoner);
     	
-    	/*TODO LETTURA QUERY DA TASTIERA
-    	OWLOntology queryFromKeyboard = getQueryFromStdIn(kb);
-    	System.out.println("QUERY CREATA");
-    	for (OWLLogicalAxiom ax :queryFromKeyboard.getLogicalAxioms()) {
-    		ax.accept(visitor);
-    	}*/
+    	
     	
     	
 	}
@@ -129,11 +130,12 @@ public class App {
 			e.printStackTrace();
 		}
     	Set<OWLOntology> ont = new HashSet<>();
-    	Set<OWLAxiom> toAdd = new HashSet<OWLAxiom>();
+    	Set<OWLAxiom> toAdd = new HashSet<>();
     	OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
     	ont.add(kb);
-    	ShortFormProvider sfp =new AnnotationValueShortFormProvider(Arrays.asList(new OntologyEditor(kb).getFactory().getRDFSLabel()),
-    																Collections.<OWLAnnotationProperty, List<String>>emptyMap(), manager);
+    	ShortFormProvider sfp = new SimpleShortFormProvider();
+    			/*new AnnotationValueShortFormProvider(Arrays.asList(new OntologyEditor(kb).getFactory().getRDFSLabel()),
+    																Collections.<OWLAnnotationProperty, List<String>>emptyMap(), manager);*/
 
     	BidirectionalShortFormProvider shortFormProvider = new BidirectionalShortFormProviderAdapter(ont, sfp);
         ShortFormEntityChecker owlEntityChecker = new ShortFormEntityChecker(shortFormProvider);
