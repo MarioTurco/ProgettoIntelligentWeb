@@ -58,7 +58,7 @@ public class ALCReasoner{
 	
 	public ALCReasoner(OWLOntology concept, OWLOntology kb) {
 		this.kb = kb;
-		this.rdf = new RDFWriter("graph", "graph.rdf", concept.getOntologyID().getOntologyIRI().get().toString());
+		this.rdf = new RDFWriter("graph", concept.getOntologyID().getOntologyIRI().get().toString());
 		this.gr = new GraphRenderer();
 		this.concept = concept;
 		if(kb!=null) {
@@ -330,9 +330,11 @@ public class ALCReasoner{
 			e.printStackTrace();
 		}
 		//TODO spostare da qualche altra parte
-		rdf.printAndClearModel();
+		
 	}
-	
+	 public void printRDF(String fileName) {
+		 rdf.printAndClearModel(fileName);
+	 }
 	
 	//TODO Aggiungere il grafo anche qui in seguito
 	public boolean alcTableaux() {
@@ -1127,7 +1129,7 @@ public class ALCReasoner{
         			gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
         			gr.createLink2(currentNode, parent, relationName);
         			rdf.addResource(currentNode.name().toString(), formula);
-        			rdf.addStatement(parent.name().toString(), "Esiste ".concat(relationName), currentNode.name().toString());
+        			rdf.addStatement(parent.name().toString(), "Esiste_".concat(relationName), currentNode.name().toString());
         			//Regola per ogni
         			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
         			for (OWLObject forAll: Lx) {

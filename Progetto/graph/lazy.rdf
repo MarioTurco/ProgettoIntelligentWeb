@@ -1,14 +1,13 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:j.0="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#"
-    xmlns:j.1="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#Esiste ">
+    xmlns:j.0="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#">
   <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#19">
-    <j.1:R>
+    <j.0:Esiste_R>
       <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#20">
         <j.0:clash rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#clashNode6"/>
         <j.0:label>A , B , (A ⊓ ¬B ), ¬B </j.0:label>
       </rdf:Description>
-    </j.1:R>
+    </j.0:Esiste_R>
     <j.0:label>∃R.(A ⊓ ¬B )</j.0:label>
   </rdf:Description>
 </rdf:RDF>

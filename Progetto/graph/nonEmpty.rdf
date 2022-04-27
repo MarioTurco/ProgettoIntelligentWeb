@@ -1,0 +1,74 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#"
+    xmlns:j.1="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#Esiste ">
+  <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#0">
+    <j.0:Union>
+      <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#10">
+        <j.0:Union>
+          <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#17">
+            <j.0:clash rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#clashNode5"/>
+            <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , ∃R.(A ⊓ ¬B ), ¬A , (A ⊔ ¬B )</j.0:label>
+          </rdf:Description>
+        </j.0:Union>
+        <j.0:Union>
+          <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#11">
+            <j.1:R>
+              <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#12">
+                <j.0:Union>
+                  <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#15">
+                    <j.0:clash rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#clashNode4"/>
+                    <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , (A ⊓ ¬B ), ¬A , ¬B , (A ⊔ ¬B )</j.0:label>
+                  </rdf:Description>
+                </j.0:Union>
+                <j.0:Union>
+                  <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#13">
+                    <j.0:clash rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#clashNode3"/>
+                    <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , B , (A ⊓ ¬B ), ¬B , (A ⊔ ¬B )</j.0:label>
+                  </rdf:Description>
+                </j.0:Union>
+                <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , (A ⊓ ¬B ), ¬B , (A ⊔ ¬B )</j.0:label>
+              </rdf:Description>
+            </j.1:R>
+            <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), ∃R.(A ⊓ ¬B ), ¬A , ¬B , (A ⊔ ¬B )</j.0:label>
+          </rdf:Description>
+        </j.0:Union>
+        <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), ∃R.(A ⊓ ¬B ), ¬A , (A ⊔ ¬B )</j.0:label>
+      </rdf:Description>
+    </j.0:Union>
+    <j.0:Union>
+      <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#1">
+        <j.0:Union>
+          <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#4">
+            <j.1:R>
+              <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#5">
+                <j.0:Union>
+                  <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#8">
+                    <j.0:clash rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#clashNode2"/>
+                    <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , (A ⊓ ¬B ), ¬A , ¬B , (A ⊔ ¬B )</j.0:label>
+                  </rdf:Description>
+                </j.0:Union>
+                <j.0:Union>
+                  <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#6">
+                    <j.0:clash rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#clashNode1"/>
+                    <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , B , (A ⊓ ¬B ), ¬B , (A ⊔ ¬B )</j.0:label>
+                  </rdf:Description>
+                </j.0:Union>
+                <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , (A ⊓ ¬B ), ¬B , (A ⊔ ¬B )</j.0:label>
+              </rdf:Description>
+            </j.1:R>
+            <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), A , B , ∃R.(A ⊓ ¬B ), (A ⊔ ¬B )</j.0:label>
+          </rdf:Description>
+        </j.0:Union>
+        <j.0:Union>
+          <rdf:Description rdf:about="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#2">
+            <j.0:clash rdf:resource="http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13#clashNode0"/>
+            <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), B , ∃R.(A ⊓ ¬B ), ¬B , (A ⊔ ¬B )</j.0:label>
+          </rdf:Description>
+        </j.0:Union>
+        <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), B , ∃R.(A ⊓ ¬B ), (A ⊔ ¬B )</j.0:label>
+      </rdf:Description>
+    </j.0:Union>
+    <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), ∃R.(A ⊓ ¬B ), (A ⊔ ¬B )</j.0:label>
+  </rdf:Description>
+</rdf:RDF>
