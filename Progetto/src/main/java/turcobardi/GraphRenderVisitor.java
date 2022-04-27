@@ -112,7 +112,7 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	//TODO cambiare?
 	public void visit(OWLIndividual i) {
 		for (OWLNamedIndividual ind: i.getIndividualsInSignature()) {
-			i.accept(this);
+			ind.accept(this);
 		}
 		
 	}

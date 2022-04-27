@@ -4,17 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
-import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
-import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
-import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
 public class ForAllRuleVisitor implements OWLObjectVisitor{
 
-	private OWLObjectPropertyExpression property;
-	private OWLClassExpression filler;
+	//private OWLObjectPropertyExpression property;
+	//private OWLClassExpression filler;
 	private List<OWLObject> ret = new ArrayList<>();
 	
 
