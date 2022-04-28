@@ -105,14 +105,11 @@ public class RDFWriter {
 			System.out.println("RDF file created at: " + rdfFile.getAbsolutePath());
 		} catch (IOException e) {
 			System.out.println("Cannot print to file\n");
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
 		System.out.println("\n##################RDF#######################");
 		model.write(System.out, "RDF/XML");
 		System.out.println("############################################\n");
 		clearModel();
-		//TODO bisogna pulire il modello 
 		return;
 	}
 }
