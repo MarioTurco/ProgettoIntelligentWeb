@@ -34,15 +34,7 @@ import guru.nidi.graphviz.model.Node;
  * for the reasoning
  */
 /**
- * @author Mario
- *
- */
-/**
- * @author Mario
- *
- */
-/**
- * @author Mario
+ * Reasoner ALC che implementa i metodi per il tableaux
  *
  */
 public class ALCReasoner{
@@ -53,7 +45,6 @@ public class ALCReasoner{
 	private RDFWriter rdf= null;
 	private final String printingPath1 = "<table color='green' scale='both' cellspacing='0' cellpadding='4' border='1'> <tr > <td title='Clicca per visualizzare Lx' target='_blank' href='";
 	private final String printingPath2 = ".txt'> Label </td> </tr> </table>";
-	//<table cellspacing='0' cellpadding='4' border='1'><tr><td href=...</td></tr></table>"
 	private OntologyEditor editor = null;
 	private EquivalenceRuleVisitor equivalence = null;
 	private OWLOntology kb = null;
@@ -83,8 +74,6 @@ public class ALCReasoner{
 		this.normalLabelsPath = new File("graph\\normal").getAbsolutePath();
 	}
 	
-	
-		
 	private OWLSubClassOfAxiom convertT_gWithFactory(Set<OWLObject> T_g) {
 		OWLDataFactory factory = this.editor.getFactory();
 		List<OWLClassExpression> conjuncts = new ArrayList<>();
@@ -338,10 +327,8 @@ public class ALCReasoner{
 		try {
 			gr.renderGraph(path);
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("Impossibile stampare il grafo in: " + path);
 		}
-		//TODO spostare da qualche altra parte
-		
 	}
 	 
 	/** Stampa il grafo RDF su file
@@ -352,7 +339,7 @@ public class ALCReasoner{
 		 rdf.printAndClearModel(fileName, printToConsole);
 	 }
 	
-	//TODO Aggiungere il grafo anche qui in seguito
+	//TODO QUESTA FUNZIONE NON SERVE PIù
 	public boolean alcTableaux() {
 		Set<OWLObject> Lx = new HashSet<>();
 		Set<OWLObject> aBox = new HashSet<>();
@@ -502,7 +489,7 @@ public class ALCReasoner{
 	}
 	
 	
-	//TODO implementare grafo anche qui
+	//TODO Questa funzione non serve più
 	private boolean implementTableaux(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox) {
 		
 		boolean ret = true;
