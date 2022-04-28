@@ -52,24 +52,24 @@
                         <j.0:label>B , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
                       </rdf:Description>
                     </j.0:Esiste_R>
-                    <j.0:label>A , ∃R.(B ⊓ (A ⊔ ¬A )), ¬K , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ∃R.∃R.A , (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+                    <j.0:label>A , C , ∃R.(B ⊓ (A ⊔ ¬A )), ¬K , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
                   </rdf:Description>
                 </j.0:Union>
-                <j.0:label>A , ∃R.(B ⊓ (A ⊔ ¬A )), (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ∃R.∃R.A , (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+                <j.0:label>A , C , ∃R.(B ⊓ (A ⊔ ¬A )), (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
               </rdf:Description>
             </j.0:Union>
             <j.0:Union>
               <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#20">
                 <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode3"/>
-                <j.0:label>A , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ¬A , ∃R.∃R.A , (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+                <j.0:label>A , C , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ¬A , (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
               </rdf:Description>
             </j.0:Union>
-            <j.0:label>A , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ∃R.∃R.A , (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+            <j.0:label>A , C , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
           </rdf:Description>
         </j.0:Union>
-        <j.0:label>(A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ∃R.∃R.A , (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+        <j.0:label>C , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
       </rdf:Description>
     </j.0:Union>
-    <j.0:label>(K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ∃R.∃R.A , (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+    <j.0:label>C , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
   </rdf:Description>
 </rdf:RDF>

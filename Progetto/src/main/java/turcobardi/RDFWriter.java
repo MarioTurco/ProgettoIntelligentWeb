@@ -13,8 +13,9 @@ import org.apache.jena.rdf.model.Statement;
 public class RDFWriter {
 	File rdfFile = null;
 	Model model = null;
-	String IRI = null;
+	String IRI = null; //Viene utilizzato per costruire l'URI delle risorse RDF
 	String filePath = null;
+	
 	public RDFWriter(String path, String IRI) {
 		this.filePath = path;
 		model = ModelFactory.createDefaultModel();
@@ -27,7 +28,14 @@ public class RDFWriter {
 		this.IRI = IRI.concat("#");
 	}
 	
-	//TODO
+	
+	/**
+	 * Crea un arco tra due Risorse RDF (da 'subject' ad 'object') 
+	 * con proprietà 'predicate' 
+	 * @param subject - (sorgente arco)
+	 * @param predicate
+	 * @param object - (destinazione arco)
+	 */
 	public void addStatement(String subject, String predicate, String object) {
 		Property p = model.getProperty(IRI.concat(predicate));
 		//Property p = model.createProperty(IRI.concat(predicate));
@@ -37,6 +45,12 @@ public class RDFWriter {
 		this.model = model.add(statement);
 	}
 	
+	/**
+	 * Modifica la proprietà 'label' di una risorsa e ritorna la risorsa modificata
+	 * @param URI - URI della risorsa 
+	 * @param newPropValue - Nuovo valore della prorietà 'label'
+	 * @return
+	 */
 	public Resource editLabelProperty(String URI, String newPropValue) {
 		Resource editedRes = model.getResource(this.IRI.concat(URI));
 		editedRes = editedRes.removeProperties();
@@ -44,6 +58,11 @@ public class RDFWriter {
 		return editedRes;
 	}
 	
+	/** Crea una nuova risorsa con proprietà 'label' di valore 'propValue'
+	 * @param URI - URI della nuova risorsa
+	 * @param propValue - valore da asseganre alla proprietà label
+	 * @return
+	 */
 	public Resource addResource(String URI,  String propValue) {
 		System.out.println(this.IRI.concat(URI));
 		Resource newRes = model.createResource(this.IRI.concat(URI));
@@ -52,15 +71,33 @@ public class RDFWriter {
 		return newRes;
 	}
 	
-	//TODO
+	
+	/** Crea una nuova risorsa RDF
+	 * @param URI - URI della risorsa
+	 * @return
+	 */
 	public Resource addResource(String URI) {
 		Resource newRes = model.createResource(this.IRI.concat(URI));
 		return newRes;
 	}
+	
+	/**
+	 * Crea un nuovo modello RDF (eliminando il vecchio) così da poter 
+	 * riutilizzare la classe per generare un nuovo file RDF
+	 */
 	private void clearModel() {
 		this.model= ModelFactory.createDefaultModel();
 		this.model.createProperty(IRI.concat("label"));
 	}
+	
+	
+	/**
+	 * Stampa il modello RDF su file e pulisce il modello 
+	 * @see RDFWriter.clearModel()
+	 * @param fileName - il nome del file da creare. Deve includere l'estensione del 
+	 * file (ad es. "file.rdf")
+	 * 
+	 */
 	public void printAndClearModel(String fileName) {
 		try {
 			this.rdfFile = new File(filePath.concat("\\").concat(fileName));
