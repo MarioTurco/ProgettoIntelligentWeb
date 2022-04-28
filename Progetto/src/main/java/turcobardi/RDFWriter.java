@@ -98,7 +98,7 @@ public class RDFWriter {
 	 * file (ad es. "file.rdf")
 	 * 
 	 */
-	public void printAndClearModel(String fileName) {
+	public void printAndClearModel(String fileName, boolean printToConsole) {
 		try {
 			this.rdfFile = new File(filePath.concat("\\").concat(fileName));
 			model.write(new FileWriter(rdfFile), "RDF/XML");
@@ -106,9 +106,11 @@ public class RDFWriter {
 		} catch (IOException e) {
 			System.out.println("Cannot print to file\n");
 		}
-		System.out.println("\n##################RDF#######################");
-		model.write(System.out, "RDF/XML");
-		System.out.println("############################################\n");
+		if(printToConsole) {
+			System.out.println("\n##################RDF#######################");
+			model.write(System.out, "RDF/XML");
+			System.out.println("############################################\n");			
+		}
 		clearModel();
 		return;
 	}

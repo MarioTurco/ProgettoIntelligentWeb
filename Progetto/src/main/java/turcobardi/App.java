@@ -135,7 +135,7 @@ public class App {
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 	    	reasoner.renderTableauxGraph("graph/nonEmpty");
-	    	reasoner.printRDF("nonEmpty.rdf");
+	    	reasoner.printRDF("nonEmpty.rdf", false);
 		}
 		else if (what.equals("lazy")) {
 			Instant start = Instant.now();
@@ -144,7 +144,7 @@ public class App {
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 	    	reasoner.renderTableauxGraph("graph/lazy");
-	    	reasoner.printRDF("lazy.rdf");
+	    	reasoner.printRDF("lazy.rdf", false);
 		}
 		
 	}

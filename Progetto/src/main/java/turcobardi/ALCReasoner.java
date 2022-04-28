@@ -327,8 +327,8 @@ public class ALCReasoner{
 		//TODO spostare da qualche altra parte
 		
 	}
-	 public void printRDF(String fileName) {
-		 rdf.printAndClearModel(fileName);
+	 public void printRDF(String fileName, boolean printToConsole) {
+		 rdf.printAndClearModel(fileName, printToConsole);
 	 }
 	
 	//TODO Aggiungere il grafo anche qui in seguito
