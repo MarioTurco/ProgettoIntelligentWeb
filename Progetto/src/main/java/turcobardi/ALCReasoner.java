@@ -33,6 +33,18 @@ import guru.nidi.graphviz.model.Node;
  * This class is the ALC Reasoner and contains all the methods
  * for the reasoning
  */
+/**
+ * @author Mario
+ *
+ */
+/**
+ * @author Mario
+ *
+ */
+/**
+ * @author Mario
+ *
+ */
 public class ALCReasoner{
 	private OWLOntology concept = null;
 	private String lazyLabelsPath = null;
@@ -318,6 +330,10 @@ public class ALCReasoner{
 		return toAdd;
 	}
 	
+	
+	/** Stampa il grafo del tableaux su file svg
+	 * @param path - path del file su cui stampare (ad es. "graph/lazy")
+	 */
 	public void renderTableauxGraph(String path) {
 		try {
 			gr.renderGraph(path);
@@ -327,7 +343,12 @@ public class ALCReasoner{
 		//TODO spostare da qualche altra parte
 		
 	}
-	 public void printRDF(String fileName, boolean printToConsole) {
+	 
+	/** Stampa il grafo RDF su file
+	 * @param fileName - nome del file rdf su cui stampare (senza estensione) 
+	 * @param printToConsole - se true, stampa il grafo anche sulla console
+	 */
+	public void printRDF(String fileName, boolean printToConsole) {
 		 rdf.printAndClearModel(fileName, printToConsole);
 	 }
 	
@@ -464,6 +485,11 @@ public class ALCReasoner{
 		return false;
 	}
 	
+	
+	/** Controlla se c'è un clash nell'abox
+	 * @param abox
+	 * @return true se c'è un clash, false altrimenti
+	 */
 	private boolean hasClash(Set<OWLObject> abox) {
 		for (OWLObject o: abox) {
 			if (o instanceof OWLClassExpression) {

@@ -94,14 +94,13 @@ public class RDFWriter {
 	/**
 	 * Stampa il modello RDF su file e pulisce il modello 
 	 * @see RDFWriter.clearModel()
-	 * @param fileName - il nome del file da creare. Deve includere l'estensione del 
-	 * file (ad es. "file.rdf")
+	 * @param fileName - il nome del file da creare. 
 	 * @param printToConsole - Se true, stampa l'RDF anche sulla console
 	 * 
 	 */
 	public void printAndClearModel(String fileName, boolean printToConsole) {
 		try {
-			this.rdfFile = new File(filePath.concat("\\").concat(fileName));
+			this.rdfFile = new File(filePath.concat("\\").concat(fileName).concat(".rdf"));
 			model.write(new FileWriter(rdfFile), "RDF/XML");
 			System.out.println("RDF file created at: " + rdfFile.getAbsolutePath());
 		} catch (IOException e) {
