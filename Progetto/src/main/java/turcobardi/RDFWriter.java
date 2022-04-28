@@ -96,6 +96,7 @@ public class RDFWriter {
 	 * @see RDFWriter.clearModel()
 	 * @param fileName - il nome del file da creare. Deve includere l'estensione del 
 	 * file (ad es. "file.rdf")
+	 * @param printToConsole - Se true, stampa l'RDF anche sulla console
 	 * 
 	 */
 	public void printAndClearModel(String fileName, boolean printToConsole) {
