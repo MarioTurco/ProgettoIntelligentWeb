@@ -10,12 +10,22 @@ import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.Statement;
 
+/**
+ * Classe che si occupa di creare il file .rdf corrispondente al Tableaux e stamparlo su file o terminale
+ * @author turco
+ *
+ */
 public class RDFWriter {
 	File rdfFile = null;
 	Model model = null;
 	String IRI = null; //Viene utilizzato per costruire l'URI delle risorse RDF
 	String filePath = null;
 	
+	
+	/**	Costruttore del RDFWriter 
+	 * @param path  percorso nel quale stampare il file rdf
+	 * @param IRI  IRI da usare come parte dell'URI delle risorse RDF
+	 */
 	public RDFWriter(String path, String IRI) {
 		this.filePath = path;
 		model = ModelFactory.createDefaultModel();
@@ -32,9 +42,9 @@ public class RDFWriter {
 	/**
 	 * Crea un arco tra due Risorse RDF (da 'subject' ad 'object') 
 	 * con proprietà 'predicate' 
-	 * @param subject - (sorgente arco)
+	 * @param subject  (sorgente arco)
 	 * @param predicate
-	 * @param object - (destinazione arco)
+	 * @param object  (destinazione arco)
 	 */
 	public void addStatement(String subject, String predicate, String object) {
 		Property p = model.getProperty(IRI.concat(predicate));
@@ -47,8 +57,8 @@ public class RDFWriter {
 	
 	/**
 	 * Modifica la proprietà 'label' di una risorsa e ritorna la risorsa modificata
-	 * @param URI - URI della risorsa 
-	 * @param newPropValue - Nuovo valore della prorietà 'label'
+	 * @param URI  URI della risorsa 
+	 * @param newPropValue  Nuovo valore della prorietà 'label'
 	 * @return
 	 */
 	public Resource editLabelProperty(String URI, String newPropValue) {
@@ -59,8 +69,8 @@ public class RDFWriter {
 	}
 	
 	/** Crea una nuova risorsa con proprietà 'label' di valore 'propValue'
-	 * @param URI - URI della nuova risorsa
-	 * @param propValue - valore da asseganre alla proprietà label
+	 * @param URI  URI della nuova risorsa
+	 * @param propValue  valore da asseganre alla proprietà label
 	 * @return
 	 */
 	public Resource addResource(String URI,  String propValue) {
@@ -73,7 +83,7 @@ public class RDFWriter {
 	
 	
 	/** Crea una nuova risorsa RDF
-	 * @param URI - URI della risorsa
+	 * @param URI  URI della risorsa
 	 * @return
 	 */
 	public Resource addResource(String URI) {
@@ -94,8 +104,8 @@ public class RDFWriter {
 	/**
 	 * Stampa il modello RDF su file e pulisce il modello 
 	 * @see RDFWriter.clearModel()
-	 * @param fileName - il nome del file da creare. 
-	 * @param printToConsole - Se true, stampa l'RDF anche sulla console
+	 * @param fileName  il nome del file da creare. 
+	 * @param printToConsole  Se true, stampa l'RDF anche sulla console
 	 * 
 	 */
 	public void printAndClearModel(String fileName, boolean printToConsole) {

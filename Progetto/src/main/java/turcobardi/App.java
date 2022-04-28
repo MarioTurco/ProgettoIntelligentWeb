@@ -26,6 +26,10 @@ import org.semanticweb.owlapi.util.ShortFormProvider;
 import org.semanticweb.owlapi.util.SimpleShortFormProvider;
 import org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser;
 
+/**
+ * Classe che contiene il main 
+ *
+ */
 public class App {
 
 	
@@ -135,7 +139,7 @@ public class App {
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 	    	reasoner.renderTableauxGraph("graph/nonEmpty");
-	    	reasoner.printRDF("nonEmpty.rdf", false);
+	    	reasoner.printRDF("nonEmpty", false);
 		}
 		else if (what.equals("lazy")) {
 			Instant start = Instant.now();
@@ -144,7 +148,7 @@ public class App {
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 	    	reasoner.renderTableauxGraph("graph/lazy");
-	    	reasoner.printRDF("lazy.rdf", false);
+	    	reasoner.printRDF("lazy", false);
 		}
 		
 	}

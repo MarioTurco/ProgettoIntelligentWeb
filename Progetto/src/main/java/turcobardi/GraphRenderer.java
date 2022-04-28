@@ -17,6 +17,7 @@ import guru.nidi.graphviz.engine.Format;
 import guru.nidi.graphviz.engine.Graphviz;
 
 /**
+ * Classe che si occupa di creare il grafo corrispondete al tableaux in formato .SVG
  * @author Mario
  *
  */
