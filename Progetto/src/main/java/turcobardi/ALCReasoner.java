@@ -960,7 +960,13 @@ public class ALCReasoner{
 	private boolean implementTableauxNonEmptyTboxLazyUnfolding(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Set<OWLObject> T_u, Node parent) {
 		boolean ret = true;
 		Set<OWLObject> lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
-		aBox.addAll(lazyUnfoldingRulesRes);
+		Set<OWLObject> insertedLazyUnf = new HashSet<>();
+
+		for(OWLObject ins: lazyUnfoldingRulesRes) {
+			if (aBox.add(ins)) {	
+				insertedLazyUnf.add(ins);
+			}
+		}
 		for(OWLObject ins: lazyUnfoldingRulesRes) {
 			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
 		}
@@ -980,7 +986,11 @@ public class ALCReasoner{
     	
     	lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
 
-		aBox.addAll(lazyUnfoldingRulesRes);
+    	for(OWLObject ins: lazyUnfoldingRulesRes) {
+			if (aBox.add(ins)) {	
+				insertedLazyUnf.add(ins);
+			}
+		}
 		for(OWLObject ins: lazyUnfoldingRulesRes) {
 			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
 		}
@@ -1001,7 +1011,12 @@ public class ALCReasoner{
     		rdf.addStatement(parent.name().toString(), "clash", "clashNode"+nClash  );
     		nClash++;
     		aBox.removeAll(inserted);
+    		aBox.removeAll(insertedLazyUnf);
     		for (OWLObject o: inserted) {
+        		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
+        	}
+    		
+    		for (OWLObject o: insertedLazyUnf) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
         	}
 			return false;
@@ -1086,7 +1101,12 @@ public class ALCReasoner{
     		rdf.addStatement(parent.name().toString(), "clash", "clashNode"+nClash  );
     		nClash++;
     		aBox.removeAll(inserted);
+    		aBox.removeAll(insertedLazyUnf);
     		for (OWLObject o: inserted) {
+        		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
+        	}
+    		
+    		for (OWLObject o: insertedLazyUnf) {
         		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
         	}
 			return false;
