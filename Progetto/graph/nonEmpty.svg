@@ -1,72 +1,72 @@
-<svg width="556px" height="323px"
- viewBox="0.00 0.00 555.51 322.60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="511px" height="323px"
+ viewBox="0.00 0.00 510.51 322.60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 318.6)">
 <title>tableaux</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-318.6 551.51,-318.6 551.51,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-318.6 506.51,-318.6 506.51,4 -4,4"/>
 <!-- 0 -->
 <g id="node1" class="node">
 <title>0</title>
-<ellipse fill="none" stroke="black" cx="353" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="start" x="346" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="353" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node1_0"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\0.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
-<polygon fill="none" stroke="green" points="277,-287.6 277,-313.6 325,-313.6 325,-287.6 277,-287.6"/>
-<text text-anchor="start" x="281.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="318" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="311" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="318" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node1_0"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\0.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="242,-287.6 242,-313.6 290,-313.6 290,-287.6 242,-287.6"/>
+<text text-anchor="start" x="246.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="276,-286.6 276,-314.6 326,-314.6 326,-286.6 276,-286.6"/>
+<polygon fill="none" stroke="green" points="241,-286.6 241,-314.6 291,-314.6 291,-286.6 241,-286.6"/>
 </g>
 <!-- 1 -->
 <g id="node2" class="node">
 <title>1</title>
-<ellipse fill="none" stroke="black" cx="202" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="195" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="202" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
-<g id="a_node2_1"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\1.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
-<polygon fill="none" stroke="green" points="126,-198.8 126,-224.8 174,-224.8 174,-198.8 126,-198.8"/>
-<text text-anchor="start" x="130.56" y="-207.2" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="192" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="185" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="192" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<g id="a_node2_1"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\1.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="116,-198.8 116,-224.8 164,-224.8 164,-198.8 116,-198.8"/>
+<text text-anchor="start" x="120.56" y="-207.2" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="125,-197.8 125,-225.8 175,-225.8 175,-197.8 125,-197.8"/>
+<polygon fill="none" stroke="green" points="115,-197.8 115,-225.8 165,-225.8 165,-197.8 115,-197.8"/>
 </g>
 <!-- 0&#45;&gt;1 -->
 <g id="edge3" class="edge">
 <title>0&#45;&gt;1</title>
-<path fill="none" stroke="black" d="M326.33,-264.42C301.68,-260.4 265,-251.54 238.77,-232.6 229.28,-225.75 221.34,-215.68 215.3,-206.24"/>
-<polygon fill="black" stroke="black" points="218.22,-204.3 210.1,-197.5 212.21,-207.88 218.22,-204.3"/>
-<text text-anchor="middle" x="294.62" y="-220" font-family="Times,serif" font-size="14.00">http://ontology&#45;28R</text>
+<path fill="none" stroke="black" d="M299.95,-255.16C278.61,-240.47 242.93,-215.89 218.48,-199.04"/>
+<polygon fill="black" stroke="black" points="220.24,-196 210.02,-193.21 216.27,-201.77 220.24,-196"/>
+<text text-anchor="middle" x="271.67" y="-220" font-family="Times,serif" font-size="14.00">R</text>
 </g>
 <!-- 5 -->
 <g id="node6" class="node">
 <title>5</title>
-<ellipse fill="none" stroke="black" cx="356" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="349" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="356" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">3</text>
-<g id="a_node6_2"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\5.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
-<polygon fill="none" stroke="green" points="280,-162.8 280,-188.8 328,-188.8 328,-162.8 280,-162.8"/>
-<text text-anchor="start" x="284.56" y="-171.2" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="318" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="311" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="318" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">3</text>
+<g id="a_node6_2"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\5.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="242,-162.8 242,-188.8 290,-188.8 290,-162.8 242,-162.8"/>
+<text text-anchor="start" x="246.56" y="-171.2" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="279,-161.8 279,-189.8 329,-189.8 329,-161.8 279,-161.8"/>
+<polygon fill="none" stroke="green" points="241,-161.8 241,-189.8 291,-189.8 291,-161.8 241,-161.8"/>
 </g>
 <!-- 0&#45;&gt;5 -->
 <g id="edge2" class="edge">
 <title>0&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M353.34,-250.33C353.57,-240.26 353.9,-227.31 354.32,-215.8 354.42,-213.25 354.52,-210.59 354.64,-207.93"/>
-<polygon fill="black" stroke="black" points="358.14,-208.04 355.1,-197.89 351.15,-207.71 358.14,-208.04"/>
-<text text-anchor="middle" x="409.84" y="-220" font-family="Times,serif" font-size="14.00">http://ontology&#45;28S</text>
+<path fill="none" stroke="black" d="M318,-250.45C318,-238.32 318,-221.82 318,-207.92"/>
+<polygon fill="black" stroke="black" points="321.5,-207.91 318,-197.91 314.5,-207.91 321.5,-207.91"/>
+<text text-anchor="middle" x="321.89" y="-220" font-family="Times,serif" font-size="14.00">S</text>
 </g>
 <!-- 7 -->
 <g id="node8" class="node">
 <title>7</title>
-<ellipse fill="none" stroke="black" cx="478" cy="-179.8" rx="69.52" ry="18"/>
-<text text-anchor="start" x="435.62" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH&#45;FREE</text>
+<ellipse fill="none" stroke="black" cx="433" cy="-179.8" rx="69.52" ry="18"/>
+<text text-anchor="start" x="390.62" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH&#45;FREE</text>
 </g>
 <!-- 0&#45;&gt;7 -->
 <g id="edge1" class="edge">
 <title>0&#45;&gt;7</title>
-<path fill="none" stroke="green" d="M380.11,-266.22C405.27,-263.47 442.04,-255.49 464,-232.6 470.3,-226.03 473.84,-216.92 475.79,-208.18"/>
-<polygon fill="green" stroke="green" points="479.25,-208.69 477.44,-198.25 472.35,-207.54 479.25,-208.69"/>
+<path fill="none" stroke="green" d="M335.47,-254.42C353.44,-240.85 381.77,-219.47 403.28,-203.23"/>
+<polygon fill="green" stroke="green" points="405.57,-205.89 411.44,-197.07 401.35,-200.3 405.57,-205.89"/>
 </g>
 <!-- 2 -->
 <g id="node3" class="node">
@@ -74,7 +74,7 @@
 <ellipse fill="none" stroke="black" cx="77" cy="-91" rx="27" ry="18"/>
 <text text-anchor="start" x="70" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
 <text text-anchor="start" x="77" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
-<g id="a_node3_3"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\2.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<g id="a_node3_3"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\2.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
 <polygon fill="none" stroke="green" points="1,-110 1,-136 49,-136 49,-110 1,-110"/>
 <text text-anchor="start" x="5.56" y="-118.4" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
@@ -84,21 +84,21 @@
 <!-- 1&#45;&gt;2 -->
 <g id="edge5" class="edge">
 <title>1&#45;&gt;2</title>
-<path fill="none" stroke="black" d="M174.98,-177.94C149.02,-175.61 110.55,-167.97 88.32,-143.8 82.3,-137.25 79.21,-128.26 77.7,-119.6"/>
-<polygon fill="black" stroke="black" points="81.14,-118.95 76.54,-109.4 74.19,-119.73 81.14,-118.95"/>
-<text text-anchor="middle" x="143.84" y="-131.2" font-family="Times,serif" font-size="14.00">http://ontology&#45;28S</text>
+<path fill="none" stroke="black" d="M174.53,-165.62C155.34,-151.13 124.33,-127.73 102.44,-111.2"/>
+<polygon fill="black" stroke="black" points="104.34,-108.25 94.25,-105.02 100.13,-113.84 104.34,-108.25"/>
+<text text-anchor="middle" x="148.89" y="-131.2" font-family="Times,serif" font-size="14.00">S</text>
 </g>
 <!-- 4 -->
 <g id="node5" class="node">
 <title>4</title>
-<ellipse fill="none" stroke="black" cx="202" cy="-91" rx="69.52" ry="18"/>
-<text text-anchor="start" x="159.62" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH&#45;FREE</text>
+<ellipse fill="none" stroke="black" cx="192" cy="-91" rx="69.52" ry="18"/>
+<text text-anchor="start" x="149.62" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH&#45;FREE</text>
 </g>
 <!-- 1&#45;&gt;4 -->
 <g id="edge4" class="edge">
 <title>1&#45;&gt;4</title>
-<path fill="none" stroke="green" d="M202,-161.65C202,-149.52 202,-133.02 202,-119.12"/>
-<polygon fill="green" stroke="green" points="205.5,-119.11 202,-109.11 198.5,-119.11 205.5,-119.11"/>
+<path fill="none" stroke="green" d="M192,-161.65C192,-149.52 192,-133.02 192,-119.12"/>
+<polygon fill="green" stroke="green" points="195.5,-119.11 192,-109.11 188.5,-119.11 195.5,-119.11"/>
 </g>
 <!-- 3 -->
 <g id="node4" class="node">
@@ -115,14 +115,14 @@
 <!-- 6 -->
 <g id="node7" class="node">
 <title>6</title>
-<ellipse fill="none" stroke="black" cx="359" cy="-91" rx="69.52" ry="18"/>
-<text text-anchor="start" x="316.62" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH&#45;FREE</text>
+<ellipse fill="none" stroke="black" cx="349" cy="-91" rx="69.52" ry="18"/>
+<text text-anchor="start" x="306.62" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH&#45;FREE</text>
 </g>
 <!-- 5&#45;&gt;6 -->
 <g id="edge7" class="edge">
 <title>5&#45;&gt;6</title>
-<path fill="none" stroke="green" d="M356.59,-161.65C357.01,-149.52 357.58,-133.02 358.06,-119.12"/>
-<polygon fill="green" stroke="green" points="361.56,-119.23 358.41,-109.11 354.57,-118.99 361.56,-119.23"/>
+<path fill="none" stroke="green" d="M323.98,-162.06C328.37,-149.78 334.42,-132.83 339.47,-118.68"/>
+<polygon fill="green" stroke="green" points="342.87,-119.58 342.94,-108.98 336.28,-117.22 342.87,-119.58"/>
 </g>
 </g>
 </svg>

@@ -799,7 +799,10 @@ public class ALCReasoner{
         			for(OWLObject add: toAddExists) {
         				if (add instanceof OWLObjectPropertyAssertionAxiom) {
         					//tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
-        					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(iri,"");
+        					if(kb!=null)
+        						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
+        					else
+            					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
         				}
         				
         				if (kb!=null) {
@@ -829,6 +832,7 @@ public class ALCReasoner{
         			relationName = relationName.replace("<", "");
         			relationName = relationName.replace(">", "");
         			relationName = relationName.replace("#", "");
+        			
         			Node current = gr.createNode(printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2,  newIndName.replace("x",""));
         			gr.createLink2(current, parent, relationName);
         			gr.printLabelToFile(formula,current.name().toString(),"normal");
@@ -1141,7 +1145,10 @@ public class ALCReasoner{
         			for(OWLObject add: toAdd) {
         				if (add instanceof OWLObjectPropertyAssertionAxiom) {
         					//tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
-        					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
+        					if(kb!=null)
+        						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
+        					else
+            					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
         				}
         				if (add instanceof OWLClassAssertionAxiom) {
         					if(this.C_g!=null) {
