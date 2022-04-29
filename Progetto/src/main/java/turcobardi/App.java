@@ -85,12 +85,19 @@ public class App {
     	}
     	System.out.println("\n################Normal################");
     	executeAndPrintTime("nonEmpty", reasoner);
-    	System.out.println("\n############LazyUnfolding#############");
-    	executeAndPrintTime("lazy", reasoner);
+    	//System.out.println("\n############LazyUnfolding#############");
+    	//executeAndPrintTime("lazy", reasoner);
     	
     	
     	
     	
+	}
+	
+	private static OWLOntology getQueryFromFile()  throws OWLOntologyCreationException {
+		OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
+		File queryFile = new File("concept_2.owl");
+		OWLOntology query = manQ.loadOntologyFromOntologyDocument(queryFile);
+		return  query;
 	}
 	
 	private static OWLOntology getQueryFromStdIn(OWLOntology kb) throws OWLOntologyCreationException {
