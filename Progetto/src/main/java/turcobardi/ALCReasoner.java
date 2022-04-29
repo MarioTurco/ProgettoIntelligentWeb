@@ -484,7 +484,7 @@ public class ALCReasoner{
 	 * @param Lx
 	 * @return true se c'è un clash, false altrimenti
 	 */
-	private boolean hasClash(Set<OWLObject> Lx) {
+	private boolean hasClash(Set<OWLObject> Lx) {  //TODO controllare la presenza di bottom
 		for (OWLObject o: Lx) {
 			if (o instanceof OWLClassExpression) {
 				if(((OWLClassExpression) o).isClassExpressionLiteral() && Lx.contains(((OWLClassExpression) o).getObjectComplementOf())) {
@@ -1097,6 +1097,7 @@ public class ALCReasoner{
 		}
     	
     	//Regola Esiste
+    	//TODO i ed iri non sono usate, controllare se si possono eliminare
     	int i = 1;
     	for (OWLObject o: Lx) {
     		String iri = ind.getIRI().getShortForm();
