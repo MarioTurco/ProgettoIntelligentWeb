@@ -36,7 +36,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 		//OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
-		File kbFile = new File("kb1.owl");
+		File kbFile = new File("KB_13.owl");
 		//File queryFile = new File("concept_2.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("Numero assiomi :" + kb.getAxiomCount());
@@ -71,7 +71,7 @@ public class App {
     		
     		logicalAxiom.accept(visitor); //prints the logical axiom
     	}
-    	ALCReasoner reasoner = new ALCReasoner(query, kb);
+    	ALCReasoner reasoner = new ALCReasoner(query, null);
 
     	LazyUnfolder lazy = new LazyUnfolder(kb);
     	lazy.doLazyUnfolding();

@@ -252,8 +252,9 @@ public class ALCReasoner{
 			try {
 				toAdd.add(editor.createIndividualForProperty(property, ind1, newIndividualName));
 				toAdd.add(editor.createIndividual(filler, newIndividualName));
-				if (kb!=null)
-					toAdd.add(editor.createIndividual(this.KBinclusion.getSuperClass().getNNF(), newIndividualName));
+				if (kb!=null) {
+					toAdd.add(editor.createIndividual(this.KBinclusion.getSuperClass().getNNF(), newIndividualName));					
+				}
 			} catch (OWLOntologyCreationException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -651,10 +652,9 @@ public class ALCReasoner{
 	
 	private boolean implementTableauxNonEmptyTbox(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Node parent) {
 		boolean ret = true;
-		
 		//System.out.println(ind.getIRI().getShortForm());
 		//REGOLA INTERSEZIONE
-		Set<OWLObject> tmp = this.intersectionRule(aBox,ind.getIRI().getShortForm());
+		Set<OWLObject> tmp = this.intersectionRule(Lx,ind.getIRI().getShortForm());
     	Set<OWLObject> inserted = new HashSet<>();
     	for(OWLObject ins: tmp) {
     		if(aBox.add(ins)) {
@@ -872,15 +872,11 @@ public class ALCReasoner{
         				}
         				
         			}
-        			
         			ret = implementTableauxNonEmptyTbox((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, tmpLx, current);
+        			
 					if (!ret) {
 						aBox.remove(toAddForAll); //Asserzioni perogni
 						aBox.removeAll(toAddExists); //Asserzioni esistenziale
-						/*tmpLx.remove(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());//Asserzioni perogni
-						for(OWLObject obj: toAddExists) {
-							tmpLx.remove(((OWLClassAssertionAxiom) obj).getClassExpression());//Asserzioni esistenziale
-						}*/
 						return false;
 					}
 					else {
@@ -969,7 +965,7 @@ public class ALCReasoner{
 			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
 		}
 		//REGOLA INTERSEZIONE
-		Set<OWLObject> tmp = this.intersectionRule(aBox,ind.getIRI().getShortForm());
+		Set<OWLObject> tmp = this.intersectionRule(Lx,ind.getIRI().getShortForm());
     	Set<OWLObject> inserted = new HashSet<>();
     	
     	for(OWLObject ins: tmp) {
@@ -1194,10 +1190,7 @@ public class ALCReasoner{
 					if (!ret) {
 						aBox.remove(toAddForAll); //Asserzioni perogni
 						aBox.removeAll(toAdd); //Asserzioni esistenziale
-						//tmpLx.remove(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());//Asserzioni perogni
-						/*for(OWLObject obj: toAdd) {
-							tmpLx.remove(((OWLClassAssertionAxiom) obj).getClassExpression());//Asserzioni esistenziale
-						}*/
+
 						return false;
 					}
 					else {
