@@ -880,7 +880,8 @@ public class ALCReasoner{
 						return false;
 					}
 					else {
-						return true;
+						continue;
+						//return true;
 						//break;
 					}
         			
@@ -1215,7 +1216,8 @@ public class ALCReasoner{
 						return false;
 					}
 					else {
-						return true;
+						continue;
+						//return true;
 						//break;
 					}	
         			

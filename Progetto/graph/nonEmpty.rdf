@@ -3,12 +3,25 @@
     xmlns:j.0="http://ontology-28#Esiste http://"
     xmlns:j.1="http://ontology-28#">
   <rdf:Description rdf:about="http://ontology-28#0">
+    <j.1:clash-free rdf:resource="http://ontology-28#clash-Free"/>
+    <j.0:ontology-28S>
+      <rdf:Description rdf:about="http://ontology-28#5">
+        <j.1:clash-free rdf:resource="http://ontology-28#clash-Free"/>
+        <j.1:label>B </j.1:label>
+      </rdf:Description>
+    </j.0:ontology-28S>
     <j.0:ontology-28R>
       <rdf:Description rdf:about="http://ontology-28#1">
-        <j.1:clash rdf:resource="http://ontology-28#clashNode0"/>
-        <j.1:label>¬A , A </j.1:label>
+        <j.1:clash-free rdf:resource="http://ontology-28#clash-Free"/>
+        <j.0:ontology-28S>
+          <rdf:Description rdf:about="http://ontology-28#2">
+            <j.1:clash-free rdf:resource="http://ontology-28#clash-Free"/>
+            <j.1:label>B </j.1:label>
+          </rdf:Description>
+        </j.0:ontology-28S>
+        <j.1:label>∃S.B </j.1:label>
       </rdf:Description>
     </j.0:ontology-28R>
-    <j.1:label> ∀ R.¬A , ∃R.A , (∃R.A ⊓  ∀ R.¬A )</j.1:label>
+    <j.1:label>∃R.∃S.B , (∃R.∃S.B ⊓ ∃S.B ), ∃S.B </j.1:label>
   </rdf:Description>
 </rdf:RDF>
