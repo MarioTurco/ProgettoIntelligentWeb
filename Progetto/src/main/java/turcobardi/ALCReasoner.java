@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLDataFactory;
@@ -53,6 +54,8 @@ public class ALCReasoner{
 	private OWLSubClassOfAxiom C_g = null;
 	private GraphRenderer gr = null;
 	private GraphRenderVisitor gv = null;
+	private IRI iri = null;
+	private int individual = 0;
 	
 	public ALCReasoner(OWLOntology concept, OWLOntology kb) {
 		this.kb = kb;
@@ -60,13 +63,15 @@ public class ALCReasoner{
 		this.gr = new GraphRenderer();
 		this.concept = concept;
 		if(kb!=null) {
+			this.iri = kb.getOntologyID().getOntologyIRI().get();
 			this.editor = new OntologyEditor(kb);
-			this.printer = new OntologyPrintingVisitor(kb.getOntologyID().getOntologyIRI().get(), "");
-			this.gv = new GraphRenderVisitor(kb.getOntologyID().getOntologyIRI().get(), "http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13");		
+			this.printer = new OntologyPrintingVisitor(iri, "");
+			this.gv = new GraphRenderVisitor(iri, "http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13");		
 		}else {
+			this.iri = concept.getOntologyID().getOntologyIRI().get();
 			this.editor = new OntologyEditor(concept);
-			this.printer = new OntologyPrintingVisitor(concept.getOntologyID().getOntologyIRI().get(), "");
-			this.gv = new GraphRenderVisitor(concept.getOntologyID().getOntologyIRI().get(), "http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13");
+			this.printer = new OntologyPrintingVisitor(iri, "");
+			this.gv = new GraphRenderVisitor(iri, "http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13");
 		}
 		this.equivalence = new EquivalenceRuleVisitor();
 		//TODO qui va messo l'iri invece che essere hardcoded
@@ -247,7 +252,8 @@ public class ALCReasoner{
 			try {
 				toAdd.add(editor.createIndividualForProperty(property, ind1, newIndividualName));
 				toAdd.add(editor.createIndividual(filler, newIndividualName));
-				toAdd.add(editor.createIndividual(this.KBinclusion.getSuperClass().getNNF(), newIndividualName));
+				if (kb!=null)
+					toAdd.add(editor.createIndividual(this.KBinclusion.getSuperClass().getNNF(), newIndividualName));
 			} catch (OWLOntologyCreationException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -367,6 +373,7 @@ public class ALCReasoner{
 	}
 	
 	public boolean alcTableauxNonEmpyTbox(boolean useLazyUnfolding) {
+		this.individual = 0;
 		Set<OWLObject> Lx = new HashSet<>();
 		Set<OWLObject> aBox = new HashSet<>();
 		OWLNamedIndividual ind = null;
@@ -690,7 +697,7 @@ public class ALCReasoner{
 
     	//BLOCKING
     	//TODO non si deve creare un link blocking?
-    	if(predLx!=null) {
+    	if(kb!=null && predLx!=null) {
     		if(predLx.containsAll(Lx)) {
     			//System.out.println("\nBLOCKING TRUE");
     			return true;  
@@ -771,7 +778,9 @@ public class ALCReasoner{
     		String iri = ind.getIRI().getShortForm();
     		OWLObject toAddForAll = null;
     		Set<OWLObject> tmpLx = new HashSet<>(Lx);
-    		String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
+    		//String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
+    		this.individual++;
+    		String newIndName = "x"+ this.individual;
     		Set<OWLObject> toAddExists = this.existsRuleNonEmpyTbox(o,ind,newIndName);
     		
     		if(toAddExists.isEmpty()) {
@@ -790,18 +799,27 @@ public class ALCReasoner{
         			for(OWLObject add: toAddExists) {
         				if (add instanceof OWLObjectPropertyAssertionAxiom) {
         					//tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
-        					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
+        					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(iri,"");
         				}
-        				if (add instanceof OWLClassAssertionAxiom) {
-        					if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
-        						newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
-        					}
+        				
+        				if (kb!=null) {
+        					if (add instanceof OWLClassAssertionAxiom) {
+            					if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
+            						newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+            					}
+            				}
+            				if (add instanceof OWLClassAssertionAxiom) {
+            					if(((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
+            						newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+            					}
+            				}
+        				}  else {
+        					if (add instanceof OWLClassAssertionAxiom) {
+            					newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());         				
+            				}
         				}
-        				if (add instanceof OWLClassAssertionAxiom) {
-        					if(((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
-        						newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
-        					}
-        				}
+        				
+        				
         			}
         			for (OWLObject ax: newLx) {
         	    		ax.accept(gv);
