@@ -12,7 +12,6 @@ import org.apache.jena.rdf.model.Statement;
 
 /**
  * Classe che si occupa di creare il file .rdf corrispondente al Tableaux e stamparlo su file o terminale
- * @author turco
  *
  */
 public class RDFWriter {
