@@ -784,7 +784,7 @@ public class ALCReasoner{
     		Set<OWLObject> toAddExists = this.existsRuleNonEmpyTbox(o,ind,newIndName);
     		
     		if(toAddExists.isEmpty()) {
-    			i--;
+    			this.individual--;
     		}
     		else {
     			if(this.checkExistsRuleCondition(aBox, toAddExists)) {
