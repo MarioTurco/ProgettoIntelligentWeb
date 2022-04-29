@@ -777,7 +777,7 @@ public class ALCReasoner{
     		Set<OWLObject> newLx = new HashSet<>();
     		String iri = ind.getIRI().getShortForm();
     		OWLObject toAddForAll = null;
-    		Set<OWLObject> tmpLx = new HashSet<>(Lx);
+    		//Set<OWLObject> tmpLx = new HashSet<>(Lx);
     		//String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
     		this.individual++;
     		String newIndName = "x"+ this.individual;
@@ -872,7 +872,7 @@ public class ALCReasoner{
         				}
         				
         			}
-        			ret = implementTableauxNonEmptyTbox((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, tmpLx, current);
+        			ret = implementTableauxNonEmptyTbox((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, current);
         			
 					if (!ret) {
 						aBox.remove(toAddForAll); //Asserzioni perogni
@@ -1099,7 +1099,7 @@ public class ALCReasoner{
     		String iri = ind.getIRI().getShortForm();
     		OWLObject toAddForAll = null;
     		Set<OWLObject> newLx = new HashSet<>();
-    		Set<OWLObject> tmpLx = new HashSet<>(Lx);
+    		//Set<OWLObject> tmpLx = new HashSet<>(Lx);
     		//String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
     		this.individual++;
     		String newIndName = "x"+ this.individual;
@@ -1187,7 +1187,7 @@ public class ALCReasoner{
         				
         			}
         			
-        			ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, tmpLx, T_u, currentNode);
+        			ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, T_u, currentNode);
 					if (!ret) {
 						aBox.remove(toAddForAll); //Asserzioni perogni
 						aBox.removeAll(toAdd); //Asserzioni esistenziale
