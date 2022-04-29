@@ -480,14 +480,14 @@ public class ALCReasoner{
 	}
 	
 	
-	/** Controlla se c'è un clash nell'abox
-	 * @param abox
+	/** Controlla se c'è un clash nell'etichetta
+	 * @param Lx
 	 * @return true se c'è un clash, false altrimenti
 	 */
-	private boolean hasClash(Set<OWLObject> abox) {
-		for (OWLObject o: abox) {
+	private boolean hasClash(Set<OWLObject> Lx) {
+		for (OWLObject o: Lx) {
 			if (o instanceof OWLClassExpression) {
-				if(((OWLClassExpression) o).isClassExpressionLiteral() && abox.contains(((OWLClassExpression) o).getObjectComplementOf())) {
+				if(((OWLClassExpression) o).isClassExpressionLiteral() && Lx.contains(((OWLClassExpression) o).getObjectComplementOf())) {
 					return true;
 				}
 			}
@@ -1103,10 +1103,12 @@ public class ALCReasoner{
     		OWLObject toAddForAll = null;
     		Set<OWLObject> newLx = new HashSet<>();
     		Set<OWLObject> tmpLx = new HashSet<>(Lx);
-    		String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
+    		//String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
+    		this.individual++;
+    		String newIndName = "x"+ this.individual;
     		Set<OWLObject> toAdd = this.existsRuleNonEmpyTboxLazyUnfolding(o,ind,newIndName);
     		if(toAdd.size()==0) {
-    			i--;
+    			this.individual--;
     		}
     		else {
     			if(this.checkExistsRuleCondition(aBox, toAdd)) {

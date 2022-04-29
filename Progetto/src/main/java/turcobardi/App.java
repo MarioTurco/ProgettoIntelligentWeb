@@ -85,8 +85,8 @@ public class App {
     	}
     	System.out.println("\n################Normal################");
     	executeAndPrintTime("nonEmpty", reasoner);
-    	//System.out.println("\n############LazyUnfolding#############");
-    	//executeAndPrintTime("lazy", reasoner);
+    	System.out.println("\n############LazyUnfolding#############");
+    	executeAndPrintTime("lazy", reasoner);
     	
     	
     	

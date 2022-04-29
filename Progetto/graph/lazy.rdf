@@ -1,75 +1,137 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:j.0="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#">
-  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#17">
+  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#35">
     <j.0:Union>
-      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#18">
+      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#36">
         <j.0:Union>
-          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#19">
-            <j.0:Union>
-              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#22">
+          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#39">
+            <j.0:Esiste_R>
+              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#40">
                 <j.0:Union>
-                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#23">
-                    <j.0:Esiste_R>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#24">
+                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#41">
+                    <j.0:Union>
+                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#42">
                         <j.0:Union>
-                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#25">
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#67">
                             <j.0:Union>
-                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#26">
-                                <j.0:Union>
-                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#29">
-                                    <j.0:Union>
-                                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#32">
-                                        <j.0:Esiste_R>
-                                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#33">
-                                            <j.0:label>B , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
-                                          </rdf:Description>
-                                        </j.0:Esiste_R>
-                                        <j.0:label>A , B , ∃R.(B ⊓ (A ⊔ ¬A )), ¬K , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
-                                      </rdf:Description>
-                                    </j.0:Union>
-                                    <j.0:Union>
-                                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#30">
-                                        <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode5"/>
-                                        <j.0:label>A , B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ¬A , (A ⊔ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), ∃R.(B ⊓ (A ⊔ ¬A )), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ (A ⊔ ¬A )), (B ⊔ K )</j.0:label>
-                                      </rdf:Description>
-                                    </j.0:Union>
-                                    <j.0:label>A , B , ∃R.(B ⊓ (A ⊔ ¬A )), (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
-                                  </rdf:Description>
-                                </j.0:Union>
-                                <j.0:Union>
-                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#27">
-                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode4"/>
-                                    <j.0:label>A , B , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ¬A , (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
-                                  </rdf:Description>
-                                </j.0:Union>
-                                <j.0:label>A , B , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#68">
+                                <j.0:clash-free rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clash-Free"/>
+                                <j.0:label>(A ⊔  ∀ R.B ),  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), ¬A , ¬B ,  ∀ R.B , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
                               </rdf:Description>
                             </j.0:Union>
-                            <j.0:label>B , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+                            <j.0:label>(A ⊔  ∀ R.B ),  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), ¬A ,  ∀ R.B , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
                           </rdf:Description>
                         </j.0:Union>
-                        <j.0:label>B , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#43">
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#65">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode17"/>
+                                <j.0:label>(A ⊔  ∀ R.B ), A , ∃R.(B ⊓ (A ⊔ ¬A )),  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), ¬A , (A ⊓ ¬A ),  ∀ R.B , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#44">
+                                <j.0:Esiste_R>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#45">
+                                    <j.0:Union>
+                                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#54">
+                                        <j.0:Union>
+                                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#60">
+                                            <j.0:Union>
+                                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#63">
+                                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode16"/>
+                                                <j.0:label>A , B , ∃R.(B ⊓ (A ⊔ ¬A )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), ¬A , (A ⊓ ¬A ), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                              </rdf:Description>
+                                            </j.0:Union>
+                                            <j.0:Union>
+                                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#61">
+                                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode15"/>
+                                                <j.0:label>A , B , ∃R.(B ⊓ (A ⊔ ¬A )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), ¬B , (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                              </rdf:Description>
+                                            </j.0:Union>
+                                            <j.0:label>A , B , ∃R.(B ⊓ (A ⊔ ¬A )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                          </rdf:Description>
+                                        </j.0:Union>
+                                        <j.0:Union>
+                                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#55">
+                                            <j.0:Union>
+                                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#58">
+                                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode14"/>
+                                                <j.0:label>A , B , ∃R.(B ⊓ (A ⊔ ¬A )),  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), ¬A , (A ⊓ ¬A ), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                              </rdf:Description>
+                                            </j.0:Union>
+                                            <j.0:Union>
+                                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#56">
+                                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode13"/>
+                                                <j.0:label>B , ∃R.(B ⊓ (A ⊔ ¬A )),  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), ¬B , (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                              </rdf:Description>
+                                            </j.0:Union>
+                                            <j.0:label>B , ∃R.(B ⊓ (A ⊔ ¬A )),  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                          </rdf:Description>
+                                        </j.0:Union>
+                                        <j.0:label>B , ∃R.(B ⊓ (A ⊔ ¬A )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                      </rdf:Description>
+                                    </j.0:Union>
+                                    <j.0:Union>
+                                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#46">
+                                        <j.0:Union>
+                                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#52">
+                                            <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode12"/>
+                                            <j.0:label>A , B , (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), ¬A , (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                          </rdf:Description>
+                                        </j.0:Union>
+                                        <j.0:Union>
+                                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#47">
+                                            <j.0:Union>
+                                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#50">
+                                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode11"/>
+                                                <j.0:label>A , B ,  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), ¬A , (A ⊓ ¬A ), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                              </rdf:Description>
+                                            </j.0:Union>
+                                            <j.0:Union>
+                                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#48">
+                                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode10"/>
+                                                <j.0:label>B ,  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), ¬A , ¬B , (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                              </rdf:Description>
+                                            </j.0:Union>
+                                            <j.0:label>B ,  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), ¬A , (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                          </rdf:Description>
+                                        </j.0:Union>
+                                        <j.0:label>B , (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), ¬A , (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                      </rdf:Description>
+                                    </j.0:Union>
+                                    <j.0:label>B , (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ((A ⊓ ¬A )⊔ ¬B ), (B ⊓ (A ⊔ ¬A )), (A ⊔ ¬A ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Esiste_R>
+                                <j.0:label>(A ⊔  ∀ R.B ), ∃R.(B ⊓ (A ⊔ ¬A )),  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), ¬B ,  ∀ R.B , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:label>(A ⊔  ∀ R.B ), ∃R.(B ⊓ (A ⊔ ¬A )),  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ),  ∀ R.B , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:label>(A ⊔  ∀ R.B ),  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ),  ∀ R.B , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
                       </rdf:Description>
-                    </j.0:Esiste_R>
-                    <j.0:label>A , B , ∃R.(B ⊓ (A ⊔ ¬A )), ¬K , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+                    </j.0:Union>
+                    <j.0:label>(A ⊔  ∀ R.B ), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ),  ∀ R.B , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
                   </rdf:Description>
                 </j.0:Union>
-                <j.0:label>A , B , ∃R.(B ⊓ (A ⊔ ¬A )), (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+                <j.0:label>(A ⊔  ∀ R.B ), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
               </rdf:Description>
-            </j.0:Union>
-            <j.0:Union>
-              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#20">
-                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode3"/>
-                <j.0:label>A , B , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ¬A , (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
-              </rdf:Description>
-            </j.0:Union>
-            <j.0:label>A , B , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+            </j.0:Esiste_R>
+            <j.0:label> ∀ R.((A ⊓ ¬A )⊔ ¬B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ∃R.(A ⊔  ∀ R.B ), ¬A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
           </rdf:Description>
         </j.0:Union>
-        <j.0:label>B , (A ⊔ (¬B ⊓ ¬K )), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+        <j.0:Union>
+          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#37">
+            <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode9"/>
+            <j.0:label>A , (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ∃R.(A ⊔  ∀ R.B ), ¬A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
+          </rdf:Description>
+        </j.0:Union>
+        <j.0:label>(¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ∃R.(A ⊔  ∀ R.B ), ¬A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
       </rdf:Description>
     </j.0:Union>
-    <j.0:label>B , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+    <j.0:label>(¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), ∃R.(A ⊔  ∀ R.B ), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))))</j.0:label>
   </rdf:Description>
 </rdf:RDF>
