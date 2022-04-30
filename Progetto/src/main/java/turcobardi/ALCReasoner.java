@@ -481,9 +481,9 @@ public class ALCReasoner{
 	}
 	
 	
-	/** Controlla se c'è un clash nell'etichetta
-	 * @param Lx
-	 * @return true se c'è un clash, false altrimenti
+	/** Controlla se c'è un clash nell'etichetta Lx di un nodo
+	 * @param Lx etichetta 
+	 * @return <i>true</i> se c'è un clash, false altrimenti
 	 */
 	private boolean hasClash(Set<OWLObject> Lx) {  //TODO controllare la presenza di bottom
 		for (OWLObject o: Lx) {
@@ -492,6 +492,8 @@ public class ALCReasoner{
 					return true;
 				}
 			}
+			if(o.isBottomEntity())
+				return true;
 		}
 		return false;
 	}
@@ -1149,6 +1151,7 @@ public class ALCReasoner{
         						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
         					else
             					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
+        					
         				}
         				if (add instanceof OWLClassAssertionAxiom) {
         					if(this.C_g!=null) {
