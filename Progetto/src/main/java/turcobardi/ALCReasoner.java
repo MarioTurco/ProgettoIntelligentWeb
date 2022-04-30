@@ -474,7 +474,8 @@ public class ALCReasoner{
 			rdf.addResource(current.name().toString(), formula);
 			return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u, current);
 		}else if(kb==null) {
-			throw new IllegalArgumentException("Cannot use lazy unfolding on empty tbox");
+			System.out.println("Impossibile usare il lazy unfolding su TBox vuota");
+			//throw new IllegalArgumentException("Cannot use lazy unfolding on empty tbox");
 		}
 		
 		return false;
@@ -485,7 +486,7 @@ public class ALCReasoner{
 	 * @param Lx etichetta 
 	 * @return <i>true</i> se c'è un clash, false altrimenti
 	 */
-	private boolean hasClash(Set<OWLObject> Lx) {  //TODO controllare la presenza di bottom
+	private boolean hasClash(Set<OWLObject> Lx) { 
 		for (OWLObject o: Lx) {
 			if (o instanceof OWLClassExpression) {
 				if(((OWLClassExpression) o).isClassExpressionLiteral() && Lx.contains(((OWLClassExpression) o).getObjectComplementOf())) {
@@ -836,10 +837,10 @@ public class ALCReasoner{
         			relationName = relationName.replace("#", "");
         			
         			Node current = gr.createNode(printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2,  newIndName.replace("x",""));
-        			gr.createLink2(current, parent, relationName);
         			gr.printLabelToFile(formula,current.name().toString(),"normal");
+        			gr.createLink2(current, parent, relationName);
         			rdf.addResource(current.name().toString(), formula);
-        			rdf.addStatement(parent.name().toString(), "Esiste " +  relationName, current.name().toString());
+        			rdf.addStatement(parent.name().toString(), "Esiste_".concat(relationName), current.name().toString());
         			
 
         			//Regola per ogni

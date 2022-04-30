@@ -26,7 +26,9 @@ public class RDFWriter {
 	 * @param IRI  IRI da usare come parte dell'URI delle risorse RDF
 	 */
 	public RDFWriter(String path, String IRI) {
+		this.IRI = IRI.concat("#");
 		this.filePath = path;
+		clearModel();
 		model = ModelFactory.createDefaultModel();
 		model.createProperty(IRI.concat("label"));
 		model.createProperty(IRI.concat("Esiste"));
@@ -34,7 +36,6 @@ public class RDFWriter {
 		model.createProperty(IRI.concat("Per ogni"));
 		model.createProperty(IRI.concat("Clash"));
 		model.createProperty(IRI.concat("Clash-Free"));
-		this.IRI = IRI.concat("#");
 	}
 	
 	
