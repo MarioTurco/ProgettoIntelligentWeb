@@ -30,6 +30,10 @@ import org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser;
  * Classe che contiene il main 
  *
  */
+/**
+ * @author turco
+ *
+ */
 public class App {
 
 	
@@ -92,6 +96,8 @@ public class App {
     	
     	
 	}
+	
+	
 	
 	private static OWLOntology getQueryFromFile()  throws OWLOntologyCreationException {
 		OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();

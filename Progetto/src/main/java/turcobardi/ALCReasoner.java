@@ -701,6 +701,8 @@ public class ALCReasoner{
     	//TODO non si deve creare un link blocking?
     	if(kb!=null && predLx!=null) {
     		if(predLx.containsAll(Lx)) {
+    			Node blocking = gr.createNode("BLOCKING");
+    			gr.createLink2(blocking, parent, "", Color.YELLOW);
     			//System.out.println("\nBLOCKING TRUE");
     			return true;  
     		}
@@ -770,10 +772,8 @@ public class ALCReasoner{
 		}
     	
     	//Regola Esiste
-    	int i = 1;
     	for (OWLObject o: Lx) {
     		Set<OWLObject> newLx = new HashSet<>();
-    		String iri = ind.getIRI().getShortForm();
     		OWLObject toAddForAll = null;
     		//Set<OWLObject> tmpLx = new HashSet<>(Lx);
     		//String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
@@ -849,7 +849,6 @@ public class ALCReasoner{
         						//newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
         						//newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
         						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
-        						//Chiamata ricorsiva
         						for(OWLObject ax: newLx) {
         							ax.accept(gv);
         							gv.addSemicolon();
@@ -894,8 +893,6 @@ public class ALCReasoner{
 	private Set<OWLObject> lazyUnfoldingRules(Set<OWLObject> aBox, Set<OWLObject> T_u, String individual) {
 		Set<OWLObject> toAdd = new HashSet<>();
 		for (OWLObject unfoldableAx: T_u) {
-			//System.out.println("\nASSIOMA DA Tu");
-			//unfoldableAx.accept(printer);
 			if(unfoldableAx instanceof OWLEquivalentClassesAxiom) {
 				OWLClassExpression leftSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(0);
 				for(OWLObject aboxAx: aBox) {
@@ -908,7 +905,6 @@ public class ALCReasoner{
 							try {
 								toAdd.add(editor.createIndividual(rightSide, individual));
 							} catch (OWLOntologyCreationException e) {
-								// TODO Auto-generated catch block
 								e.printStackTrace();
 							}
 						}
@@ -921,7 +917,6 @@ public class ALCReasoner{
 							try {
 								toAdd.add(editor.createIndividual(rightSideCompl, individual));
 							} catch (OWLOntologyCreationException e) {
-								// TODO Auto-generated catch block
 								e.printStackTrace();
 							}
 						}
@@ -938,7 +933,6 @@ public class ALCReasoner{
 							try {
 								toAdd.add(editor.createIndividual(rightSide, individual));
 							} catch (OWLOntologyCreationException e) {
-								// TODO Auto-generated catch block
 								e.printStackTrace();
 							}
 						}
@@ -951,7 +945,6 @@ public class ALCReasoner{
 		return toAdd;
 	}
 	
-	//TODO aggiungere il riferimento al nodo padre come parametrop
 	private boolean implementTableauxNonEmptyTboxLazyUnfolding(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Set<OWLObject> T_u, Node parent) {
 		boolean ret = true;
 		Set<OWLObject> lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
@@ -1108,10 +1101,7 @@ public class ALCReasoner{
 		}
     	
     	//Regola Esiste
-    	//TODO i ed iri non sono usate, controllare se si possono eliminare
-    	int i = 1;
     	for (OWLObject o: Lx) {
-    		String iri = ind.getIRI().getShortForm();
     		OWLObject toAddForAll = null;
     		Set<OWLObject> newLx = new HashSet<>();
     		//Set<OWLObject> tmpLx = new HashSet<>(Lx);
