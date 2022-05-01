@@ -40,6 +40,10 @@ import guru.nidi.graphviz.model.Node;
  * Reasoner ALC che implementa i metodi per il tableaux
  *
  */
+/**
+ * @author turco
+ *
+ */
 public class ALCReasoner{
 	private OWLOntology concept = null;
 	private String lazyLabelsPath = null;
@@ -878,14 +882,7 @@ public class ALCReasoner{
     		}
     		
     	}
-    	boolean finito = true;
-    	for (OWLObject obj: Lx) {
-    		if(!(obj instanceof OWLClass)) {
-    			finito = false;
-    			break;
-    		}
-    	}
-    	if(finito) {
+    	if(onlyClassAxioms(Lx)) {
     		Node clashFree = gr.createNode("CLASH-FREE");
     		gr.createLink2(clashFree, parent, "", Color.GREEN);
     		rdf.addResource("clash-Free");
@@ -1183,16 +1180,7 @@ public class ALCReasoner{
         				if(forAll instanceof OWLObjectAllValuesFrom) {
         					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
         					if(!aBox.contains(toAddForAll) && toAddForAll!=null) {
-        						
         						aBox.add(toAddForAll);
-        						
-        						//tmpLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
-        						/*System.out.println("\nAbox dopo regola per ogni: " );
-        						for(OWLObject a: aBox){
-        							a.accept(printer);
-        							System.out.println(",");
-        						}*/
-        				
         						//newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
         						//newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
         						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
@@ -1227,14 +1215,7 @@ public class ALCReasoner{
     		}
     		
     	}
-    	boolean finito = true;
-    	for (OWLObject obj: Lx) {
-    		if(!(obj instanceof OWLClass)) {
-    			finito = false;
-    			break;
-    		}
-    	}
-    	if(finito) {
+    	if(onlyClassAxioms(Lx)) {
     		Node clashFree = gr.createNode("CLASH-FREE");
     		gr.createLink2(clashFree, parent, "", Color.GREEN);
     		rdf.addResource("clash-Free");
@@ -1243,6 +1224,19 @@ public class ALCReasoner{
     	return ret;
 	}
 	
+	
+	/** Data una Lx controlla se contiene solo classi (non ci sono altre regole da applicare)
+	 * @param Lx
+	 * @return true se non ci sono altre regole da applicare
+	 */
+	private boolean onlyClassAxioms( Set<OWLObject> Lx) {
+		for (OWLObject obj: Lx) {
+    		if(!(obj instanceof OWLClass)) {
+    			return false;
+    		}
+    	}
+		return true;
+	}
 	private OWLObjectPropertyAssertionAxiom getPropertyAssertionFromSet(Set<OWLObject> set) {
 		OWLObjectPropertyAssertionAxiom propertyAxiom = null;
 		for(OWLObject o:set) {
