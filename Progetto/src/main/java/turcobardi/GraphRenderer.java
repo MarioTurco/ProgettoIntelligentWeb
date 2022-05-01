@@ -22,10 +22,14 @@ import guru.nidi.graphviz.engine.Graphviz;
  *
  */
 public class GraphRenderer {
-	private MutableGraph g = mutGraph("tableaux").setDirected(true);
-	private List<Node> nodes = new ArrayList<>();
+	private MutableGraph g = null;
+	private List<Node> nodes = null;
 	private int lastNodeID = 0; //identificativo univoco dell'ultimo nodo creato
-	 
+	
+	public GraphRenderer() {
+		g = mutGraph("tableaux").setDirected(true);
+		nodes = new ArrayList<>();
+	}
 	
 	/**
 	 * Modifica i label interni ed esterni di un nodo

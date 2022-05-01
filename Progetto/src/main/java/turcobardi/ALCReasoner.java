@@ -8,7 +8,9 @@ import java.util.List;
 import java.util.Set;
 
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
+import org.semanticweb.owlapi.model.OWLClassAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
@@ -655,7 +657,7 @@ public class ALCReasoner{
 	
 	private boolean implementTableauxNonEmptyTbox(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Node parent) {
 		boolean ret = true;
-		//System.out.println(ind.getIRI().getShortForm());
+		
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(Lx,ind.getIRI().getShortForm());
     	Set<OWLObject> inserted = new HashSet<>();
@@ -689,14 +691,7 @@ public class ALCReasoner{
         	}
 			return false;
 		}
-    	/*
-    	for(OWLObject o: Lx) {
-			o.accept(gv);
-			gv.addSemicolon();
-		}
-    	gr.createNode(gr.getNextNodeID(), gv.getFormula(), ind.getIRI().getShortForm());
-    	gr.createLink(gr.getNextNodeID()-1, gr.getLastParent(), "Intersezione");
-    	*/
+    	
 
     	//BLOCKING
     	//TODO non si deve creare un link blocking?
@@ -706,11 +701,7 @@ public class ALCReasoner{
     			return true;  
     		}
     	}
-    /*	System.out.println("\nAbox dopo regola intersezione: " );
-		for(OWLObject a: aBox){
-    		a.accept(printer);
-    		System.out.println(",");
-    	}*/
+   
     	boolean arePresentDisj = false;
     	for(OWLObject axiom: Lx) {
     		if(axiom instanceof OWLObjectUnionOf)
@@ -851,21 +842,10 @@ public class ALCReasoner{
         					if(!aBox.contains(toAddForAll) && toAddForAll!=null) {
         						
         						aBox.add(toAddForAll);
-        						
-        						//tmpLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
-        						/*System.out.println("\nAbox dopo regola per ogni: " );
-        						for(OWLObject a: aBox){
-        							a.accept(printer);
-        							System.out.println(",");
-        						}*/
         						//newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
         						//newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
         						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
-        						
-        						//System.out.println("NEWLX:" +newLx);
         						//Chiamata ricorsiva
-
-        						//TODO implementare per ogni
         						for(OWLObject ax: newLx) {
         							ax.accept(gv);
         							gv.addSemicolon();
@@ -879,6 +859,7 @@ public class ALCReasoner{
         				}
         				
         			}
+        			
         			ret = implementTableauxNonEmptyTbox((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, current);
         			
 					if (!ret) {
@@ -897,10 +878,19 @@ public class ALCReasoner{
     		}
     		
     	}
-    	Node clashFree = gr.createNode("CLASH-FREE");
-    	gr.createLink2(clashFree, parent, "", Color.GREEN);
-    	rdf.addResource("clash-Free");
-		rdf.addStatement(parent.name().toString(), "clash-free", "clash-Free"  );
+    	boolean finito = true;
+    	for (OWLObject obj: Lx) {
+    		if(!(obj instanceof OWLClass)) {
+    			finito = false;
+    			break;
+    		}
+    	}
+    	if(finito) {
+    		Node clashFree = gr.createNode("CLASH-FREE");
+    		gr.createLink2(clashFree, parent, "", Color.GREEN);
+    		rdf.addResource("clash-Free");
+    		rdf.addStatement(parent.name().toString(), "clash-free", "clash-Free"  );    	
+    	}
     	return ret;
 	}
 	
@@ -1237,12 +1227,20 @@ public class ALCReasoner{
     		}
     		
     	}
-    	Node clashFree = gr.createNode("CLASH-FREE");
-    	gr.createLink2(clashFree, parent, "", Color.GREEN);
-    	rdf.addResource("clash-Free");
-		rdf.addStatement(parent.name().toString(), "clash-free", "clash-Free"  );
-    	//System.out.println("\nChiamata finita");
-		return ret;
+    	boolean finito = true;
+    	for (OWLObject obj: Lx) {
+    		if(!(obj instanceof OWLClass)) {
+    			finito = false;
+    			break;
+    		}
+    	}
+    	if(finito) {
+    		Node clashFree = gr.createNode("CLASH-FREE");
+    		gr.createLink2(clashFree, parent, "", Color.GREEN);
+    		rdf.addResource("clash-Free");
+    		rdf.addStatement(parent.name().toString(), "clash-free", "clash-Free"  );    	
+    	}
+    	return ret;
 	}
 	
 	private OWLObjectPropertyAssertionAxiom getPropertyAssertionFromSet(Set<OWLObject> set) {

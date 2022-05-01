@@ -74,7 +74,6 @@ public class RDFWriter {
 	 * @return
 	 */
 	public Resource addResource(String URI,  String propValue) {
-		System.out.println(this.IRI.concat(URI));
 		Resource newRes = model.createResource(this.IRI.concat(URI));
 		newRes.addProperty(model.getProperty(IRI.concat("label")), propValue);
 //		res.add(newRes);
