@@ -3,32 +3,61 @@
     xmlns:j.0="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#">
   <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#0">
     <j.0:Union>
-      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#3">
+      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#6">
         <j.0:Union>
-          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#6">
+          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#9">
             <j.0:Union>
-              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#7">
-                <j.0:label>Veicolo ,  ∀ haComponente.Sterzo , ((Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Manubrio ⊔ ¬Sterzo )), (Veicolo ⊔ ¬Auto ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , Auto , (¬Manubrio ⊔ ¬Sterzo ), ¬Sterzo </j.0:label>
+              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#12">
+                <j.0:Union>
+                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#15">
+                    <j.0:clash-free rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clash-Free"/>
+                    <j.0:label>Veicolo , (Componente ⊔ ¬Manubrio ),  ∀ haComponente.Sterzo , (Veicolo ⊔ ¬Auto ), ¬Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )), ¬Bicicletta , Auto , ¬Sterzo </j.0:label>
+                  </rdf:Description>
+                </j.0:Union>
+                <j.0:Union>
+                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#13">
+                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode4"/>
+                    <j.0:label>Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ¬Manubrio , ¬Auto , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )), ¬Bicicletta , Auto , ¬Sterzo </j.0:label>
+                  </rdf:Description>
+                </j.0:Union>
+                <j.0:label>Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ¬Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )), ¬Bicicletta , Auto , ¬Sterzo </j.0:label>
               </rdf:Description>
             </j.0:Union>
-            <j.0:label>Veicolo ,  ∀ haComponente.Sterzo , ((Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Manubrio ⊔ ¬Sterzo )), (Veicolo ⊔ ¬Auto ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , Auto , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+            <j.0:Union>
+              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#10">
+                <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode3"/>
+                <j.0:label>Veicolo , Componente , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ¬Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , (¬Auto ⊔  ∀ haComponente.Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )), ¬Bicicletta , Auto </j.0:label>
+              </rdf:Description>
+            </j.0:Union>
+            <j.0:label>Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ¬Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )), ¬Bicicletta , Auto </j.0:label>
           </rdf:Description>
         </j.0:Union>
         <j.0:Union>
-          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#4">
-            <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode1"/>
-            <j.0:label>Veicolo , ((Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Manubrio ⊔ ¬Sterzo )), (Veicolo ⊔ ¬Auto ), ¬Auto , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , Auto , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#7">
+            <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode2"/>
+            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ¬Manubrio , ¬Auto , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )), ¬Bicicletta , Auto </j.0:label>
           </rdf:Description>
         </j.0:Union>
-        <j.0:label>Veicolo , ((Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Manubrio ⊔ ¬Sterzo )), (Veicolo ⊔ ¬Auto ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , Auto , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ¬Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )), ¬Bicicletta , Auto </j.0:label>
       </rdf:Description>
     </j.0:Union>
     <j.0:Union>
       <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#1">
-        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode0"/>
-        <j.0:label>((Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Manubrio ⊔ ¬Sterzo )), (Veicolo ⊔ ¬Auto ), ¬Auto , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , Auto , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+        <j.0:Union>
+          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#4">
+            <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode1"/>
+            <j.0:label>Componente , Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , (¬Auto ⊔  ∀ haComponente.Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )), ¬Bicicletta , Auto </j.0:label>
+          </rdf:Description>
+        </j.0:Union>
+        <j.0:Union>
+          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#2">
+            <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode0"/>
+            <j.0:label>Componente , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ¬Auto , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , (¬Auto ⊔  ∀ haComponente.Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )), ¬Bicicletta , Auto </j.0:label>
+          </rdf:Description>
+        </j.0:Union>
+        <j.0:label>Componente , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , (¬Auto ⊔  ∀ haComponente.Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )), ¬Bicicletta , Auto </j.0:label>
       </rdf:Description>
     </j.0:Union>
-    <j.0:label>((Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Manubrio ⊔ ¬Sterzo )), (Veicolo ⊔ ¬Auto ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , Auto , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+    <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )), ¬Bicicletta , Auto </j.0:label>
   </rdf:Description>
 </rdf:RDF>

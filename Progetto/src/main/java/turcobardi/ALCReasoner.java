@@ -491,7 +491,7 @@ public class ALCReasoner{
 	
 	private boolean implementTableauxNonEmptyTbox(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Node parent) {
 		boolean ret = true;
-		
+		boolean hasChildren = false;
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(Lx,ind.getIRI().getShortForm());
     	Set<OWLObject> inserted = new HashSet<>();
@@ -568,8 +568,8 @@ public class ALCReasoner{
     						gr.printLabelToFile(formula,current.name().toString(),"normal");
     						rdf.addResource(current.name().toString().replace("x", ""), formula);
     						rdf.addStatement(parent.name().toString().replace("x",""), "Union", current.name().toString().replace("x", ""));
+    						hasChildren=true;
     						ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null, current);
-    						
     						if (ret) {
     							return true;
     						}
@@ -686,7 +686,7 @@ public class ALCReasoner{
             				}
             				
             			}
-            			
+            			hasChildren=true;
             			ret = implementTableauxNonEmptyTbox((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, current);
             			
     					if (!ret) {
@@ -707,7 +707,7 @@ public class ALCReasoner{
         	}
     	}
     	
-    	if(onlyClassAxioms(Lx)) {
+    	if(!hasChildren) {
     		Node clashFree = gr.createNode("CLASH-FREE");
     		gr.createLink2(clashFree, parent, "", Color.GREEN);
     		rdf.addResource("clash-Free");
@@ -1008,6 +1008,7 @@ public class ALCReasoner{
 	
 	private boolean implementTableauxNonEmptyTboxLazyUnfolding(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Set<OWLObject> T_u, Node parent) {
 		boolean ret = true;
+		boolean hasChildren = false;
 		//Set<OWLObject> lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
 		Set<OWLObject> insertedLazyUnf = lazyUnfoldingRules2(aBox, Lx, T_u, ind.getIRI().getShortForm());
 		//Set<OWLObject> insertedLazyUnf = new HashSet<>();
@@ -1115,6 +1116,7 @@ public class ALCReasoner{
     						gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
     						rdf.addResource(currentNode.name().toString(), formula);
     						rdf.addStatement(parent.name().toString(), "Union", currentNode.name().toString());
+    						hasChildren = true;
     						ret = implementTableauxNonEmptyTboxLazyUnfolding(ind, tmpLx, aBox,null, T_u, currentNode);
     						
     						if (ret) 
@@ -1231,7 +1233,7 @@ public class ALCReasoner{
             				}
             				
             			}
-            			
+            			hasChildren = true;
             			ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, T_u, currentNode);
     					if (!ret) {
     						aBox.remove(toAddForAll); //Asserzioni perogni
@@ -1252,7 +1254,7 @@ public class ALCReasoner{
         	}
     	}
     	
-    	if(onlyClassAxioms(Lx)) {
+    	if(!hasChildren) {
     		Node clashFree = gr.createNode("CLASH-FREE");
     		gr.createLink2(clashFree, parent, "", Color.GREEN);
     		rdf.addResource("clash-Free");
@@ -1466,6 +1468,7 @@ public class ALCReasoner{
 	/** Data una Lx controlla se contiene solo classi (non ci sono altre regole da applicare)
 	 * @param Lx
 	 * @return true se non ci sono altre regole da applicare
+	 * @deprecated
 	 */
 	private boolean onlyClassAxioms( Set<OWLObject> Lx) {
 		for (OWLObject obj: Lx) {
@@ -1475,7 +1478,8 @@ public class ALCReasoner{
     	}
 		return true;
 	}
-	private OWLObjectPropertyAssertionAxiom getPropertyAssertionFromSet(Set<OWLObject> set) {
+	
+private OWLObjectPropertyAssertionAxiom getPropertyAssertionFromSet(Set<OWLObject> set) {
 		OWLObjectPropertyAssertionAxiom propertyAxiom = null;
 		for(OWLObject o:set) {
 			if (o instanceof OWLObjectPropertyAssertionAxiom) {

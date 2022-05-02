@@ -14,6 +14,7 @@
                       <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#27">
                         <j.0:Union>
                           <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#30">
+                            <j.0:clash-free rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clash-Free"/>
                             <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), Auto , (¬Componente ⊔ ¬Veicolo ), ¬Sterzo , Veicolo ,  ∀ haComponente.Sterzo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Componente , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
                           </rdf:Description>
                         </j.0:Union>
