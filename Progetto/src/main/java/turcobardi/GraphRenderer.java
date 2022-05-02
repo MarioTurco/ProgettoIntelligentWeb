@@ -134,8 +134,9 @@ public class GraphRenderer {
 		createGraph();
 		if(path==null)
 			path = "example/tableaux3";
-		Graphviz.fromGraph(g).render(Format.SVG).toFile(new File(path+".svg"));
-		System.out.println("Graph printed at '/" + path + "' in SVG format");
+		File f = new File(path+".svg");
+		Graphviz.fromGraph(g).render(Format.SVG).toFile(f);
+		System.out.println("Graph printed at " + f.getAbsolutePath());
 		//Pulisco il grafo e la lista dei nodi
 		g = mutGraph("tableaux").setDirected(true);
 		nodes.clear();

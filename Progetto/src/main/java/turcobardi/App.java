@@ -138,14 +138,14 @@ public class App {
 	}
 	
 	private static void executeAndPrintTime(String what, ALCReasoner reasoner) {
-		if (what.equals("empty")) {
+	/*	if (what.equals("empty")) {
 			Instant start = Instant.now();
 	    	System.out.println("\nSAT: " + reasoner.alcTableaux());
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 	    	//reasoner.renderTableauxGraph();
 		}
-		else if (what.equals("nonEmpty")) {
+		else*/ if (what.equals("nonEmpty")) {
 			Instant start = Instant.now();
 			boolean ret = reasoner.alcTableauxNonEmpyTbox(false);
 	    	System.out.println("\nSAT: " + ret);

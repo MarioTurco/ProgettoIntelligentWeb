@@ -411,7 +411,6 @@ public class ALCReasoner{
 					//this.KBinclusion.getSuperClass().getNNF().accept(printer);
 					Lx.add(this.KBinclusion.getSuperClass().getNNF());
 				} catch (OWLOntologyCreationException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}			
 			}
@@ -436,14 +435,9 @@ public class ALCReasoner{
 				
 				try {
 					OWLClassAssertionAxiom mainConcept = editor.createIndividual(rightSide, "x0");
-					//STO STAMPANDO
-					//this.KBinclusion.getSuperClass().accept(printer);
-					
 					aBox.add(mainConcept);
-					
 					ind = (OWLNamedIndividual) mainConcept.getIndividual();
 					Lx.add(rightSide);
-					
 					
 				} catch (OWLOntologyCreationException e) {
 					e.printStackTrace();
@@ -465,7 +459,6 @@ public class ALCReasoner{
 					aBox.add(C_gInclusionIstance);
 					Lx.add(this.C_g.getSuperClass().getNNF());
 				} catch (OWLOntologyCreationException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
