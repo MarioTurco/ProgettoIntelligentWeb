@@ -48,7 +48,6 @@ public class RDFWriter {
 	 */
 	public void addStatement(String subject, String predicate, String object) {
 		Property p = model.getProperty(IRI.concat(predicate));
-		//Property p = model.createProperty(IRI.concat(predicate));
 		Resource s = model.getResource(IRI.concat(subject));
 		Resource o = model.getResource(IRI.concat(object));
 		Statement statement = model.createStatement(s, p, o); 
@@ -76,7 +75,6 @@ public class RDFWriter {
 	public Resource addResource(String URI,  String propValue) {
 		Resource newRes = model.createResource(this.IRI.concat(URI));
 		newRes.addProperty(model.getProperty(IRI.concat("label")), propValue);
-//		res.add(newRes);
 		return newRes;
 	}
 	

@@ -41,7 +41,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 		//OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
-		File kbFile = new File("veicolo.owl");
+		File kbFile = new File("prova_atomic_concepts.owl");
 		//File queryFile = new File("concept_2.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("Numero assiomi :" + kb.getAxiomCount());

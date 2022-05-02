@@ -1,456 +1,477 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:j.0="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#">
-  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#0">
+    xmlns:j.0="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#">
+  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#0">
     <j.0:Union>
-      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#15">
+      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#1">
         <j.0:Union>
-          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#18">
+          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#4">
             <j.0:Union>
-              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#30">
+              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#86">
                 <j.0:Union>
-                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#76">
+                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#87">
                     <j.0:Union>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#79">
+                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#90">
                         <j.0:Union>
-                          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#82">
-                            <j.0:Esiste_haComponente>
-                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#83">
-                                <j.0:Union>
-                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#116">
-                                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode38"/>
-                                    <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                  </rdf:Description>
-                                </j.0:Union>
-                                <j.0:Union>
-                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#84">
-                                    <j.0:Union>
-                                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#105">
-                                        <j.0:Union>
-                                          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#111">
-                                            <j.0:Union>
-                                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#114">
-                                                <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode37"/>
-                                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Componente , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                              </rdf:Description>
-                                            </j.0:Union>
-                                            <j.0:Union>
-                                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#112">
-                                                <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode36"/>
-                                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                              </rdf:Description>
-                                            </j.0:Union>
-                                            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                          </rdf:Description>
-                                        </j.0:Union>
-                                        <j.0:Union>
-                                          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#106">
-                                            <j.0:Union>
-                                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#109">
-                                                <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode35"/>
-                                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Componente ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                              </rdf:Description>
-                                            </j.0:Union>
-                                            <j.0:Union>
-                                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#107">
-                                                <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode34"/>
-                                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ),  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                              </rdf:Description>
-                                            </j.0:Union>
-                                            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ),  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                          </rdf:Description>
-                                        </j.0:Union>
-                                        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                      </rdf:Description>
-                                    </j.0:Union>
-                                    <j.0:Union>
-                                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#85">
-                                        <j.0:Union>
-                                          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#97">
-                                            <j.0:Union>
-                                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#103">
-                                                <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode33"/>
-                                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , ¬Componente , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                              </rdf:Description>
-                                            </j.0:Union>
-                                            <j.0:Union>
-                                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#98">
-                                                <j.0:Union>
-                                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#101">
-                                                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode32"/>
-                                                    <j.0:label
-                                                    >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                  </rdf:Description>
-                                                </j.0:Union>
-                                                <j.0:Union>
-                                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#99">
-                                                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode31"/>
-                                                    <j.0:label
-                                                    >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), ¬Sterzo , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                  </rdf:Description>
-                                                </j.0:Union>
-                                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                              </rdf:Description>
-                                            </j.0:Union>
-                                            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                          </rdf:Description>
-                                        </j.0:Union>
-                                        <j.0:Union>
-                                          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#86">
-                                            <j.0:Union>
-                                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#95">
-                                                <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode30"/>
-                                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , ¬Componente ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                              </rdf:Description>
-                                            </j.0:Union>
-                                            <j.0:Union>
-                                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#87">
-                                                <j.0:Union>
-                                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#90">
-                                                    <j.0:Union>
-                                                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#93">
-                                                        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode29"/>
-                                                        <j.0:label
-                                                        >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                      </rdf:Description>
-                                                    </j.0:Union>
-                                                    <j.0:Union>
-                                                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#91">
-                                                        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode28"/>
-                                                        <j.0:label
-                                                        >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), ¬Sterzo , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                      </rdf:Description>
-                                                    </j.0:Union>
-                                                    <j.0:label
-                                                    >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                  </rdf:Description>
-                                                </j.0:Union>
-                                                <j.0:Union>
-                                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#88">
-                                                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode27"/>
-                                                    <j.0:label
-                                                    >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                  </rdf:Description>
-                                                </j.0:Union>
-                                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                              </rdf:Description>
-                                            </j.0:Union>
-                                            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                          </rdf:Description>
-                                        </j.0:Union>
-                                        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                      </rdf:Description>
-                                    </j.0:Union>
-                                    <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                  </rdf:Description>
-                                </j.0:Union>
-                                <j.0:label>(Componente ⊔ ¬Manubrio ), (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), Sterzo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (Componente ⊔ ¬Sterzo ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo ), (¬Componente ⊔ ¬Veicolo )</j.0:label>
-                              </rdf:Description>
-                            </j.0:Esiste_haComponente>
-                            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo ,  ∀ haComponente.Sterzo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Componente , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                          </rdf:Description>
-                        </j.0:Union>
-                        <j.0:Union>
-                          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#80">
-                            <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode26"/>
-                            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Componente , ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                          </rdf:Description>
-                        </j.0:Union>
-                        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Componente , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                      </rdf:Description>
-                    </j.0:Union>
-                    <j.0:Union>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#77">
-                        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode25"/>
-                        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                      </rdf:Description>
-                    </j.0:Union>
-                    <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                  </rdf:Description>
-                </j.0:Union>
-                <j.0:Union>
-                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#31">
-                    <j.0:Union>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#34">
-                        <j.0:Union>
-                          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#37">
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#91">
                             <j.0:Union>
-                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#40">
-                                <j.0:Esiste_haComponente>
-                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#41">
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#94">
+                                <j.0:Esiste_R>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#95">
                                     <j.0:Union>
-                                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#44">
+                                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#96">
                                         <j.0:Union>
-                                          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#65">
+                                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#99">
                                             <j.0:Union>
-                                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#71">
+                                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#100">
                                                 <j.0:Union>
-                                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#74">
-                                                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode24"/>
-                                                    <j.0:label
-                                                    >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ),  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                  </rdf:Description>
-                                                </j.0:Union>
-                                                <j.0:Union>
-                                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#72">
-                                                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode23"/>
-                                                    <j.0:label
-                                                    >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Componente ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                  </rdf:Description>
-                                                </j.0:Union>
-                                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ),  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                              </rdf:Description>
-                                            </j.0:Union>
-                                            <j.0:Union>
-                                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#66">
-                                                <j.0:Union>
-                                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#69">
-                                                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode22"/>
-                                                    <j.0:label
-                                                    >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                  </rdf:Description>
-                                                </j.0:Union>
-                                                <j.0:Union>
-                                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#67">
-                                                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode21"/>
-                                                    <j.0:label
-                                                    >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Componente , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                  </rdf:Description>
-                                                </j.0:Union>
-                                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                              </rdf:Description>
-                                            </j.0:Union>
-                                            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                          </rdf:Description>
-                                        </j.0:Union>
-                                        <j.0:Union>
-                                          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#45">
-                                            <j.0:Union>
-                                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#54">
-                                                <j.0:Union>
-                                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#57">
+                                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#103">
                                                     <j.0:Union>
-                                                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#63">
-                                                        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode20"/>
-                                                        <j.0:label
-                                                        >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                      </rdf:Description>
-                                                    </j.0:Union>
-                                                    <j.0:Union>
-                                                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#58">
+                                                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#104">
                                                         <j.0:Union>
-                                                          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#61">
-                                                            <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode19"/>
-                                                            <j.0:label
-                                                            >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), ¬Sterzo , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                          </rdf:Description>
-                                                        </j.0:Union>
-                                                        <j.0:Union>
-                                                          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#59">
-                                                            <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode18"/>
-                                                            <j.0:label
-                                                            >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                          </rdf:Description>
-                                                        </j.0:Union>
-                                                        <j.0:label
-                                                        >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                      </rdf:Description>
-                                                    </j.0:Union>
-                                                    <j.0:label
-                                                    >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                  </rdf:Description>
-                                                </j.0:Union>
-                                                <j.0:Union>
-                                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#55">
-                                                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode17"/>
-                                                    <j.0:label
-                                                    >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , ¬Componente ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                  </rdf:Description>
-                                                </j.0:Union>
-                                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                              </rdf:Description>
-                                            </j.0:Union>
-                                            <j.0:Union>
-                                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#46">
-                                                <j.0:Union>
-                                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#49">
-                                                    <j.0:Union>
-                                                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#52">
-                                                        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode16"/>
-                                                        <j.0:label
-                                                        >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), ¬Sterzo , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                      </rdf:Description>
-                                                    </j.0:Union>
-                                                    <j.0:Union>
-                                                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#50">
-                                                        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode15"/>
-                                                        <j.0:label
-                                                        >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                      </rdf:Description>
-                                                    </j.0:Union>
-                                                    <j.0:label
-                                                    >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                  </rdf:Description>
-                                                </j.0:Union>
-                                                <j.0:Union>
-                                                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#47">
-                                                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode14"/>
-                                                    <j.0:label
-                                                    >(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , ¬Componente , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                                  </rdf:Description>
-                                                </j.0:Union>
-                                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                              </rdf:Description>
-                                            </j.0:Union>
-                                            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                          </rdf:Description>
-                                        </j.0:Union>
-                                        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                      </rdf:Description>
-                                    </j.0:Union>
-                                    <j.0:Union>
-                                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#42">
-                                        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode13"/>
-                                        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                      </rdf:Description>
-                                    </j.0:Union>
-                                    <j.0:label>(Componente ⊔ ¬Manubrio ), (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Auto ), Sterzo , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , (¬Componente ⊔ ¬Veicolo ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                                  </rdf:Description>
-                                </j.0:Esiste_haComponente>
-                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo ,  ∀ haComponente.Sterzo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Componente ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+                                                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#105">
+                                                            <j.0:Union>
+                                                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#106">
+    <j.0:Esiste_R>
+      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#107">
+        <j.0:Union>
+          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#108">
+            <j.0:Union>
+              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#111">
+                <j.0:Union>
+                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#112">
+                    <j.0:Union>
+                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#125">
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#126">
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), C ,  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊓ K ), (A ⊔ ¬A ), (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A )), (B ⊔ K )</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), C , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊓ K ), (A ⊔ ¬A ), (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A )), (B ⊔ K )</j.0:label>
+                      </rdf:Description>
+                    </j.0:Union>
+                    <j.0:Union>
+                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#113">
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#120">
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#123">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode40"/>
+                                <j.0:label>(A ⊔ ¬A ), ((B ⊓ ¬B )⊓ ¬A ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (B ⊓ ¬B ), (A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊓ K ), (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (¬A ⊔ ¬B ), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A )), (B ⊔ K )</j.0:label>
                               </rdf:Description>
                             </j.0:Union>
                             <j.0:Union>
-                              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#38">
-                                <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode12"/>
-                                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Componente , ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#121">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode39"/>
+                                <j.0:label>(A ⊔ ¬A ), ((B ⊓ ¬B )⊓ ¬A ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (B ⊓ ¬B ), (A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ),  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊓ K ), (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (¬A ⊔ ¬B ), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A )), (B ⊔ K )</j.0:label>
                               </rdf:Description>
                             </j.0:Union>
-                            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Componente ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊓ K ), (A ⊔ ¬A ), (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ ¬B ), (B ⊓ (A ⊔ ¬A )), (B ⊔ K )</j.0:label>
                           </rdf:Description>
                         </j.0:Union>
                         <j.0:Union>
-                          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#35">
-                            <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode11"/>
-                            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Componente , ¬Auto ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#118">
+                            <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode38"/>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊓ K ), (A ⊔ ¬A ), (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A )), (B ⊔ K )</j.0:label>
                           </rdf:Description>
                         </j.0:Union>
-                        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Componente ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#116">
+                            <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode37"/>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (A ⊓ B ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊓ K ), (A ⊔ ¬A ), (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A )), (B ⊔ K )</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#114">
+                            <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode36"/>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (¬A ⊓ ¬B ), ¬A , ¬B , (B ⊓ K ), (A ⊔ ¬A ), (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A )), (B ⊔ K )</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊓ K ), (A ⊔ ¬A ), (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A )), (B ⊔ K )</j.0:label>
                       </rdf:Description>
                     </j.0:Union>
-                    <j.0:Union>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#32">
-                        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode10"/>
-                        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                      </rdf:Description>
-                    </j.0:Union>
-                    <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+                    <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊓ K ), (A ⊔ ¬A ), (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A )), (B ⊔ K )</j.0:label>
                   </rdf:Description>
                 </j.0:Union>
-                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , ¬Sterzo , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊓ K ), (A ⊔ ¬A ), (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A ))</j.0:label>
               </rdf:Description>
             </j.0:Union>
             <j.0:Union>
-              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#19">
-                <j.0:Union>
-                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#25">
-                    <j.0:Union>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#28">
-                        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode9"/>
-                        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Veicolo , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Componente , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                      </rdf:Description>
-                    </j.0:Union>
-                    <j.0:Union>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#26">
-                        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode8"/>
-                        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Veicolo , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                      </rdf:Description>
-                    </j.0:Union>
-                    <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Veicolo , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                  </rdf:Description>
-                </j.0:Union>
-                <j.0:Union>
-                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#20">
-                    <j.0:Union>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#23">
-                        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode7"/>
-                        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Veicolo , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Componente ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                      </rdf:Description>
-                    </j.0:Union>
-                    <j.0:Union>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#21">
-                        <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode6"/>
-                        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Veicolo , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                      </rdf:Description>
-                    </j.0:Union>
-                    <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Veicolo , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                  </rdf:Description>
-                </j.0:Union>
-                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Veicolo , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#109">
+                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode35"/>
+                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊓ K ), (A ⊔ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A ))</j.0:label>
               </rdf:Description>
             </j.0:Union>
-            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊓ K ), (A ⊔ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A ))</j.0:label>
+          </rdf:Description>
+        </j.0:Union>
+        <j.0:label>((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊓ (A ⊔ ¬A )), (B ⊓ K ), (A ⊔ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+      </rdf:Description>
+    </j.0:Esiste_R>
+    <j.0:label>A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ¬K , (A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬B , ¬C , (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ∃R.(B ⊓ (A ⊔ ¬A )),  ∀ R.(B ⊓ K ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ (¬B ⊓ ¬K )), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), (B ⊔  ∀ R.(B ⊓ K ))</j.0:label>
+                                                              </rdf:Description>
+                                                            </j.0:Union>
+                                                            <j.0:label
+                                                            >A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ¬K , (A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬B , ¬C , (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ∃R.(B ⊓ (A ⊔ ¬A )), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ (¬B ⊓ ¬K )), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), (B ⊔  ∀ R.(B ⊓ K ))</j.0:label>
+                                                          </rdf:Description>
+                                                        </j.0:Union>
+                                                        <j.0:label
+                                                        >A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ¬K , (A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬C , (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ∃R.(B ⊓ (A ⊔ ¬A )), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ (¬B ⊓ ¬K )), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), (B ⊔  ∀ R.(B ⊓ K ))</j.0:label>
+                                                      </rdf:Description>
+                                                    </j.0:Union>
+                                                    <j.0:label
+                                                    >A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ¬K , (A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬C , (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ (¬B ⊓ ¬K )), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), (B ⊔  ∀ R.(B ⊓ K ))</j.0:label>
+                                                  </rdf:Description>
+                                                </j.0:Union>
+                                                <j.0:Union>
+                                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#101">
+                                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode34"/>
+                                                    <j.0:label
+                                                    >A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), (A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬C , (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ (¬B ⊓ ¬K )), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), (B ⊔  ∀ R.(B ⊓ K )), (B ⊔ K )</j.0:label>
+                                                  </rdf:Description>
+                                                </j.0:Union>
+                                                <j.0:label>A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬C , (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔ (¬B ⊓ ¬K )), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), (B ⊔  ∀ R.(B ⊓ K ))</j.0:label>
+                                              </rdf:Description>
+                                            </j.0:Union>
+                                            <j.0:label>A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬C , (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), (B ⊔  ∀ R.(B ⊓ K ))</j.0:label>
+                                          </rdf:Description>
+                                        </j.0:Union>
+                                        <j.0:Union>
+                                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#97">
+                                            <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode33"/>
+                                            <j.0:label>A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), C , (A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬C , (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), (B ⊔  ∀ R.(B ⊓ K ))</j.0:label>
+                                          </rdf:Description>
+                                        </j.0:Union>
+                                        <j.0:label>A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), (B ⊔  ∀ R.(B ⊓ K )), ¬C , (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+                                      </rdf:Description>
+                                    </j.0:Union>
+                                    <j.0:label>A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), (A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), ((A ⊓ ¬A )⊔ ¬B ), (B ⊔  ∀ R.(B ⊓ K )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Esiste_R>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), C ,  ∀ R.((A ⊓ ¬A )⊔ ¬B ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#92">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode32"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), C , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), C , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊔ K )</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K , (B ⊔ K )</j.0:label>
+                      </rdf:Description>
+                    </j.0:Union>
+                    <j.0:Union>
+                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#88">
+                        <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode31"/>
+                        <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K </j.0:label>
+                      </rdf:Description>
+                    </j.0:Union>
+                    <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K </j.0:label>
+                  </rdf:Description>
+                </j.0:Union>
+                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), K </j.0:label>
+              </rdf:Description>
+            </j.0:Union>
+            <j.0:Union>
+              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#5">
+                <j.0:Union>
+                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#43">
+                    <j.0:Union>
+                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#65">
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#71">
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#84">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode30"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), B , (A ⊓ B ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#79">
+                                <j.0:Union>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#82">
+                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode29"/>
+                                    <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), B , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ ¬B ), (B ⊔ K )</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Union>
+                                <j.0:Union>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#80">
+                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode28"/>
+                                    <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), B , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ ¬B ), (B ⊔ K )</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Union>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ ¬B ), (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#77">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode27"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#72">
+                                <j.0:Union>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#75">
+                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode26"/>
+                                    <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (¬A ⊓ ¬B ), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Union>
+                                <j.0:Union>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#73">
+                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode25"/>
+                                    <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), B , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (¬A ⊓ ¬B ), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Union>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (¬A ⊓ ¬B ), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#66">
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#69">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode24"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), C , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#67">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode23"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), B , C , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), C , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                      </rdf:Description>
+                    </j.0:Union>
+                    <j.0:Union>
+                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#44">
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#50">
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#63">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode22"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (A ⊓ B ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#58">
+                                <j.0:Union>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#61">
+                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode21"/>
+                                    <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ ¬B )</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Union>
+                                <j.0:Union>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#59">
+                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode20"/>
+                                    <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ ¬B )</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Union>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ ¬B )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#56">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode19"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#51">
+                                <j.0:Union>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#54">
+                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode18"/>
+                                    <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (¬A ⊓ ¬B ), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Union>
+                                <j.0:Union>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#52">
+                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode17"/>
+                                    <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (¬A ⊓ ¬B ), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Union>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (¬A ⊓ ¬B ), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#45">
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#48">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode16"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), C , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#46">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode15"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , C , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), C , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                      </rdf:Description>
+                    </j.0:Union>
+                    <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                  </rdf:Description>
+                </j.0:Union>
+                <j.0:Union>
+                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#6">
+                    <j.0:Union>
+                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#25">
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#31">
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#41">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode14"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (A ⊓ B ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#36">
+                                <j.0:Union>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#39">
+                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode13"/>
+                                    <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (¬B ⊓ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ ¬B ), (B ⊔ K )</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Union>
+                                <j.0:Union>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#37">
+                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode12"/>
+                                    <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ ¬B ), (B ⊔ K )</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Union>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ ¬B ), (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#34">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode11"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#32">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode10"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (¬A ⊓ ¬B ), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#26">
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#29">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode9"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), C , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (¬B ⊓ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#27">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode8"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), C , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), C , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ((B ⊔ K )⊓ ¬A ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊔ K )</j.0:label>
+                      </rdf:Description>
+                    </j.0:Union>
+                    <j.0:Union>
+                      <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#7">
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#13">
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#23">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode7"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (A ⊓ B ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#18">
+                                <j.0:Union>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#21">
+                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode6"/>
+                                    <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (¬B ⊓ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ ¬B )</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Union>
+                                <j.0:Union>
+                                  <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#19">
+                                    <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode5"/>
+                                    <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ ¬B )</j.0:label>
+                                  </rdf:Description>
+                                </j.0:Union>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), ((B ⊓ ¬B )⊓ ¬A ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (B ⊓ ¬B )</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#16">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode4"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#14">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode3"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (¬A ⊓ ¬B ), ¬A , ¬B , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:Union>
+                          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#8">
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#11">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode2"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , C , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , ¬B , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (¬B ⊓ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:Union>
+                              <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#9">
+                                <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode1"/>
+                                <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , C , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                              </rdf:Description>
+                            </j.0:Union>
+                            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , C , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                          </rdf:Description>
+                        </j.0:Union>
+                        <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , ¬K , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                      </rdf:Description>
+                    </j.0:Union>
+                    <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), B , (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+                  </rdf:Description>
+                </j.0:Union>
+                <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (A ⊔ (¬B ⊓ ¬K )), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
+              </rdf:Description>
+            </j.0:Union>
+            <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (B ⊔ ¬B ), (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
           </rdf:Description>
         </j.0:Union>
         <j.0:Union>
-          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#16">
-            <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode5"/>
-            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+          <rdf:Description rdf:about="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#2">
+            <j.0:clash rdf:resource="http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#clashNode0"/>
+            <j.0:label>(A ⊔ (B ⊔ ¬B )), A , ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
           </rdf:Description>
         </j.0:Union>
-        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+        <j.0:label>(A ⊔ (B ⊔ ¬B )), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ¬A , (((B ⊔ K )⊓ ¬A )⊔ ¬K ), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), ((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A ), (¬A ⊔ ¬B ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (A ⊔ B ), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))</j.0:label>
       </rdf:Description>
     </j.0:Union>
-    <j.0:Union>
-      <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#1">
-        <j.0:Union>
-          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#4">
-            <j.0:Union>
-              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#10">
-                <j.0:Union>
-                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#13">
-                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode4"/>
-                    <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Componente , (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                  </rdf:Description>
-                </j.0:Union>
-                <j.0:Union>
-                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#11">
-                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode3"/>
-                    <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                  </rdf:Description>
-                </j.0:Union>
-                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), ¬Bicicletta , (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-              </rdf:Description>
-            </j.0:Union>
-            <j.0:Union>
-              <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#5">
-                <j.0:Union>
-                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#8">
-                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode2"/>
-                    <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Componente ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                  </rdf:Description>
-                </j.0:Union>
-                <j.0:Union>
-                  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#6">
-                    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode1"/>
-                    <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ¬Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ),  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-                  </rdf:Description>
-                </j.0:Union>
-                <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ),  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-              </rdf:Description>
-            </j.0:Union>
-            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Componente , Veicolo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-          </rdf:Description>
-        </j.0:Union>
-        <j.0:Union>
-          <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#2">
-            <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode0"/>
-            <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ¬Auto , (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-          </rdf:Description>
-        </j.0:Union>
-        <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
-      </rdf:Description>
-    </j.0:Union>
-    <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Componente ⊔ ¬Veicolo ), Auto , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ ∃haComponente.Manubrio ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+    <j.0:label>((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B )))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C )⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (((A ⊔ B )⊓ (A ⊔ (B ⊔ ¬B ))⊓ (¬A ⊔ ¬B )⊓ ¬A )⊔ ¬C ), (C ⊔ (A ⊔ (A ⊓ B )⊔ ((B ⊓ ¬B )⊓ ¬A )⊔ (¬A ⊓ ¬B ))), ∃R.(A ⊓ (B ⊔  ∀ R.(B ⊓ K ))), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )</j.0:label>
   </rdf:Description>
 </rdf:RDF>

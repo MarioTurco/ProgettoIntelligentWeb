@@ -165,8 +165,6 @@ public class ALCReasoner{
 				OWLClassExpression right = ((OWLEquivalentClassesAxiom) logicalAxiom).getOperandsAsList().get(1);
 				
 				OWLObjectComplementOf compl1 = factory.getOWLObjectComplementOf(left);
-				//System.out.println(compl1);
-				//System.out.println(concept);
 				operands1.add(compl1);
 				operands1.add(right);
 				OWLObjectUnionOf union1 = factory.getOWLObjectUnionOf(operands1);
@@ -215,7 +213,6 @@ public class ALCReasoner{
 						toAdd = editor.createClassAssertionWithExistingIndividual(filler, ind);							
 					}
 				} catch (OWLOntologyCreationException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 						
 				}
@@ -251,8 +248,8 @@ public class ALCReasoner{
 		return toAdd;
 	}
 	
+	
 	private Set<OWLObject> existsRuleNonEmpyTbox(OWLObject abox, OWLNamedIndividual ind1 , String newIndividualName) {
-		
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		ExistsRuleVisitor vis = new ExistsRuleVisitor();
 		abox.accept(vis);
