@@ -7,12 +7,15 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLDataFactory;
+import org.semanticweb.owlapi.model.OWLDisjointClassesAxiom;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLLogicalAxiom;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
@@ -26,6 +29,7 @@ import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
+import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
 import guru.nidi.graphviz.attribute.Color;
@@ -83,6 +87,7 @@ public class ALCReasoner{
 		//TODO qui va messo l'iri invece che essere hardcoded
 		this.lazyLabelsPath = new File("graph\\lazy").getAbsolutePath();
 		this.normalLabelsPath = new File("graph\\normal").getAbsolutePath();
+		this.kb = this.preProcDisjointClassesAxioms(kb);
 	}
 	
 	private OWLSubClassOfAxiom convertT_gWithFactory(Set<OWLObject> T_g) {
@@ -379,12 +384,33 @@ public class ALCReasoner{
 		return implementTableaux(ind, Lx, aBox);	
 	}
 	
+	/**
+	 * @param kb - Knowledge Base da processare
+	 * @return Knowledge Base modificata aggiungendo ad essa un preprocessing pairwise degli assiom di tipo OWLDisjointClassesAxiom in questo modo:
+	 * 		   Disj(A,B) ---> A SubClassOf not(B)
+	 */
+	private OWLOntology preProcDisjointClassesAxioms(OWLOntology kb) {
+		OWLDataFactory factory = this.editor.getFactory();
+		for (OWLLogicalAxiom axiom: kb.getLogicalAxioms()) {
+			if(axiom instanceof OWLDisjointClassesAxiom)
+				for (OWLDisjointClassesAxiom disjAx: ((OWLDisjointClassesAxiom) axiom).asPairwiseAxioms()) {
+					OWLClassExpression left = disjAx.getOperandsAsList().get(0);
+					OWLClassExpression right = disjAx.getOperandsAsList().get(1);
+					OWLClassExpression complRight = factory.getOWLObjectComplementOf(right);
+					OWLSubClassOfAxiom axiomToAdd = factory.getOWLSubClassOfAxiom(left, complRight);
+					OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
+					manKb.addAxiom(kb, axiomToAdd);
+				}
+		}
+		return kb;
+	}
+	
+	
 	public boolean alcTableauxNonEmpyTbox(boolean useLazyUnfolding) {
 		this.individual = 0;
 		Set<OWLObject> Lx = new HashSet<>();
 		Set<OWLObject> aBox = new HashSet<>();
 		OWLNamedIndividual ind = null;
-		
 		if(!useLazyUnfolding) {
 			//Instanziazione del concetto principale
 			//Aggiunta degli altri assiomi

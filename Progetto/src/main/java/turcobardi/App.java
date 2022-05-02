@@ -14,6 +14,7 @@ import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.expression.ShortFormEntityChecker;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
+import org.semanticweb.owlapi.model.OWLDisjointClassesAxiom;
 import org.semanticweb.owlapi.model.OWLLogicalAxiom;
 import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -40,7 +41,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 		//OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
-		File kbFile = new File("prova_atomic_concepts.owl");
+		File kbFile = new File("veicolo.owl");
 		//File queryFile = new File("concept_2.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("Numero assiomi :" + kb.getAxiomCount());
@@ -64,7 +65,7 @@ public class App {
     		logicalAxiom.accept(visitor); //prints the logical axiom
     	}
     	OWLOntology query = getQueryFromStdIn(kb);
-    	System.out.println("QUERY CREATA");
+    	//System.out.println("QUERY CREATA");
 
     	Set<OWLLogicalAxiom> logicalAxiomsQuery = query.getLogicalAxioms(Imports.fromBoolean(false));
 
@@ -96,7 +97,6 @@ public class App {
     	
     	
 	}
-	
 	
 	
 	private static OWLOntology getQueryFromFile()  throws OWLOntologyCreationException {
