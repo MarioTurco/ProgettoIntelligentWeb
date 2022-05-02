@@ -23,6 +23,7 @@ import org.semanticweb.owlapi.model.OWLObjectComplementOf;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
+import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
@@ -179,7 +180,7 @@ public class ALCReasoner{
 	}
 	
 
-	private OWLObject forAllRule(OWLObject forAll, OWLObjectPropertyAssertionAxiom existsProperty ) {
+	private OWLObject forAllRule(OWLObject forAll, OWLObjectPropertyAssertionAxiom existsProperty) {
 		OWLObject toAdd = null; 
 		ForAllRuleVisitor vis = new ForAllRuleVisitor();
 		OWLNamedIndividual ind = null;
@@ -598,116 +599,115 @@ public class ALCReasoner{
 			return false;
 		}
     	
+    	boolean arePresentExists = false;
+    	for(OWLObject axiom: Lx) {
+    		if(axiom instanceof OWLObjectSomeValuesFrom)
+    			arePresentExists = true;
+    	}
     	//Regola Esiste
-    	for (OWLObject o: Lx) {
-    		Set<OWLObject> newLx = new HashSet<>();
-    		OWLObject toAddForAll = null;
-    		//Set<OWLObject> tmpLx = new HashSet<>(Lx);
-    		//String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
-    		this.individual++;
-    		String newIndName = "x"+ this.individual;
-    		Set<OWLObject> toAddExists = this.existsRuleNonEmpyTbox(o,ind,newIndName);
-    		
-    		if(toAddExists.isEmpty()) {
-    			this.individual--;
-    		}
-    		else {
-    			if(this.checkExistsRuleCondition(aBox, toAddExists)) {
-        			aBox.addAll(toAddExists);
-        			
-        			/*System.out.println("\nAbox dopo regola esiste: " );
-    				for(OWLObject a: aBox){
-    		    		a.accept(printer);
-    		    		System.out.println(",");
-    		    	}*/
-        			String relationName = null;
-        			for(OWLObject add: toAddExists) {
-        				if (add instanceof OWLObjectPropertyAssertionAxiom) {
-        					//tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
-        					if(kb!=null)
-        						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
-        					else
-            					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
-        				}
-        				
-        				if (kb!=null) {
-        					if (add instanceof OWLClassAssertionAxiom) {
-            					if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
-            						newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
-            					}
+    	if(arePresentExists) {
+    		for (OWLObject o: Lx) {
+        		Set<OWLObject> newLx = new HashSet<>();
+        		OWLObject toAddForAll = null;
+        		this.individual++;
+        		String newIndName = "x"+ this.individual;
+        		Set<OWLObject> toAddExists = this.existsRuleNonEmpyTbox(o,ind,newIndName);
+        		
+        		if(toAddExists.isEmpty()) {
+        			this.individual--;
+        		}
+        		else {
+        			if(this.checkExistsRuleCondition(aBox, toAddExists)) {
+            			aBox.addAll(toAddExists);
+            			String relationName = null;
+            			for(OWLObject add: toAddExists) {
+            				if (add instanceof OWLObjectPropertyAssertionAxiom) {
+            					if(kb!=null)
+            						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
+            					else
+                					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
             				}
-            				if (add instanceof OWLClassAssertionAxiom) {
-            					if(((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
-            						newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
-            					}
+            				
+            				if (kb!=null) {
+            					if (add instanceof OWLClassAssertionAxiom) {
+                					if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
+                						newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+                					}
+                				}
+                				if (add instanceof OWLClassAssertionAxiom) {
+                					if(((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
+                						newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+                					}
+                				}
+            				}  else {
+            					if (add instanceof OWLClassAssertionAxiom) {
+                					newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());         				
+                				}
             				}
-        				}  else {
-        					if (add instanceof OWLClassAssertionAxiom) {
-            					newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());         				
-            				}
-        				}
-        				
-        				
-        			}
-        			for (OWLObject ax: newLx) {
-        	    		ax.accept(gv);
-        	    		gv.addColonToFormula();
-        	    	}
-        			formula = gv.getAndClearFormula();
-        			relationName = relationName.replace("<", "");
-        			relationName = relationName.replace(">", "");
-        			relationName = relationName.replace("#", "");
-        			
-        			Node current = gr.createNode(printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2,  newIndName.replace("x",""));
-        			gr.printLabelToFile(formula,current.name().toString(),"normal");
-        			gr.createLink2(current, parent, relationName);
-        			rdf.addResource(current.name().toString(), formula);
-        			rdf.addStatement(parent.name().toString(), "Esiste_".concat(relationName), current.name().toString());
-        			
+            				
+            				
+            			}
+            			for (OWLObject ax: newLx) {
+            	    		ax.accept(gv);
+            	    		gv.addColonToFormula();
+            	    	}
+            			formula = gv.getAndClearFormula();
+            			relationName = relationName.replace("<", "");
+            			relationName = relationName.replace(">", "");
+            			relationName = relationName.replace("#", "");
+            			
+            			Node current = gr.createNode(printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2,  newIndName.replace("x",""));
+            			gr.printLabelToFile(formula,current.name().toString(),"normal");
+            			gr.createLink2(current, parent, relationName);
+            			rdf.addResource(current.name().toString(), formula);
+            			rdf.addStatement(parent.name().toString(), "Esiste_".concat(relationName), current.name().toString());
+            			
 
-        			//Regola per ogni
-        			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAddExists);
-        			for (OWLObject forAll: Lx) {
-        				if(forAll instanceof OWLObjectAllValuesFrom) {
-        					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
-        					if(!aBox.contains(toAddForAll) && toAddForAll!=null) {
-        						
-        						aBox.add(toAddForAll);
-        						//newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
-        						//newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
-        						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
-        						for(OWLObject ax: newLx) {
-        							ax.accept(gv);
-        							gv.addColonToFormula();
-        						}
-        						formula = gv.getAndClearFormula();
-        						current = gr.editNodeLabel(current, ind.getIRI().getShortForm().replace("x", ""), printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2);
-        						gr.printLabelToFile(formula, current.name().toString(), "normal");
-        						rdf.editLabelProperty(current.name().toString(), formula);
-        				    	
-        					}
-        				}
-        				
-        			}
-        			
-        			ret = implementTableauxNonEmptyTbox((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, current);
-        			
-					if (!ret) {
-						aBox.remove(toAddForAll); //Asserzioni perogni
-						aBox.removeAll(toAddExists); //Asserzioni esistenziale
-						return false;
-					}
-					else {
-						continue;
-						//return true;
-						//break;
-					}
+            			//Regola per ogni
+            			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAddExists);
+            			for (OWLObject forAll: Lx) {
+            				if(forAll instanceof OWLObjectAllValuesFrom) {
+            					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
+            					if(!aBox.contains(toAddForAll) && toAddForAll!=null) {
+            						
+            						aBox.add(toAddForAll);
+            						//newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
+            						//newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
+            						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
+            						for(OWLObject ax: newLx) {
+            							ax.accept(gv);
+            							gv.addColonToFormula();
+            						}
+            						formula = gv.getAndClearFormula();
+            						current = gr.editNodeLabel(current, ind.getIRI().getShortForm().replace("x", ""), printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2);
+            						gr.printLabelToFile(formula, current.name().toString(), "normal");
+            						rdf.editLabelProperty(current.name().toString(), formula);
+            				    	
+            					}
+            				}
+            				
+            			}
+            			
+            			ret = implementTableauxNonEmptyTbox((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, current);
+            			
+    					if (!ret) {
+    						aBox.remove(toAddForAll); //Asserzioni perogni
+    						aBox.removeAll(toAddExists); //Asserzioni esistenziale
+    						return false;
+    					}
+    					else {
+    						continue;
+    						//return true;
+    						//break;
+    					}
+            			
+            		}
         			
         		}
-    			
-    		}
-    		
+        		
+        	}
     	}
+    	
     	if(onlyClassAxioms(Lx)) {
     		Node clashFree = gr.createNode("CLASH-FREE");
     		gr.createLink2(clashFree, parent, "", Color.GREEN);
@@ -797,90 +797,98 @@ public class ALCReasoner{
 			return false;
 		}
     	
+    	boolean arePresentExists = false;
+    	for(OWLObject axiom: Lx) {
+    		if(axiom instanceof OWLObjectSomeValuesFrom)
+    			arePresentExists = true;
+    	}
+    	
     	//Regola Esiste
-    	for (OWLObject o: Lx) {
-    		Set<OWLObject> newLx = new HashSet<>();
-    		OWLObject toAddForAll = null;
-    		//Set<OWLObject> tmpLx = new HashSet<>(Lx);
-    		//String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
-    		this.individual++;
-    		String newIndName = "x"+ this.individual;
-    		Set<OWLObject> toAddExists = this.existsRuleNonEmpyTbox(o,ind,newIndName);
-    		
-    		if(toAddExists.isEmpty()) {
-    			this.individual--;
-    		}
-    		else {
-    			if(this.checkExistsRuleCondition(aBox, toAddExists)) {
-        			aBox.addAll(toAddExists);
-        			
-        			/*System.out.println("\nAbox dopo regola esiste: " );
-    				for(OWLObject a: aBox){
-    		    		a.accept(printer);
-    		    		System.out.println(",");
-    		    	}*/
-        			String relationName = null;
-        			for(OWLObject add: toAddExists) {
-        				if (add instanceof OWLObjectPropertyAssertionAxiom) {
-        					//tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
-        					if(kb!=null)
-        						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
-        					else
-            					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
-        				}
-        				
-        				if (kb!=null) {
-        					if (add instanceof OWLClassAssertionAxiom) {
-            					if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
-            						newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
-            					}
+    	if(arePresentExists) {
+    		for (OWLObject o: Lx) {
+        		Set<OWLObject> newLx = new HashSet<>();
+        		OWLObject toAddForAll = null;
+        		//Set<OWLObject> tmpLx = new HashSet<>(Lx);
+        		//String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
+        		this.individual++;
+        		String newIndName = "x"+ this.individual;
+        		Set<OWLObject> toAddExists = this.existsRuleNonEmpyTbox(o,ind,newIndName);
+        		
+        		if(toAddExists.isEmpty()) {
+        			this.individual--;
+        		}
+        		else {
+        			if(this.checkExistsRuleCondition(aBox, toAddExists)) {
+            			aBox.addAll(toAddExists);
+            			
+            			/*System.out.println("\nAbox dopo regola esiste: " );
+        				for(OWLObject a: aBox){
+        		    		a.accept(printer);
+        		    		System.out.println(",");
+        		    	}*/
+            			String relationName = null;
+            			for(OWLObject add: toAddExists) {
+            				if (add instanceof OWLObjectPropertyAssertionAxiom) {
+            					if(kb!=null)
+            						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
+            					else
+                					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
             				}
-            				if (add instanceof OWLClassAssertionAxiom) {
-            					if(((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
-            						newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
-            					}
+            				
+            				if (kb!=null) {
+            					if (add instanceof OWLClassAssertionAxiom) {
+                					if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
+                						newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+                					}
+                				}
+                				if (add instanceof OWLClassAssertionAxiom) {
+                					if(((OWLClassAssertionAxiom) add).getClassExpression().equals(this.KBinclusion.getSuperClass())) {					
+                						newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+                					}
+                				}
+            				}  else {
+            					if (add instanceof OWLClassAssertionAxiom) {
+                					newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());         				
+                				}
             				}
-        				}  else {
-        					if (add instanceof OWLClassAssertionAxiom) {
-            					newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());         				
-            				}
-        				}
-        				
-        				
-        			}
+            				
+            				
+            			}
 
-        			//Regola per ogni
-        			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAddExists);
-        			for (OWLObject forAll: Lx) {
-        				if(forAll instanceof OWLObjectAllValuesFrom) {
-        					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
-        					if(!aBox.contains(toAddForAll) && toAddForAll!=null) {
-        					
-        						aBox.add(toAddForAll);
-        						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression()); 				    	
-        					}
-        				}
-        				
-        			}
-        			
-        			ret = implementTableauxNonEmptyTboxNoPrint((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx);
-        			
-					if (!ret) {
-						aBox.remove(toAddForAll); //Asserzioni perogni
-						aBox.removeAll(toAddExists); //Asserzioni esistenziale
-						return false;
-					}
-					else {
-						continue;
-						//return true;
-						//break;
-					}
+            			//Regola per ogni
+            			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAddExists);
+            			for (OWLObject forAll: Lx) {
+            				if(forAll instanceof OWLObjectAllValuesFrom) {
+            					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
+            					if(!aBox.contains(toAddForAll) && toAddForAll!=null) {
+            					
+            						aBox.add(toAddForAll);
+            						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression()); 				    	
+            					}
+            				}
+            				
+            			}
+            			
+            			ret = implementTableauxNonEmptyTboxNoPrint((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx);
+            			
+    					if (!ret) {
+    						aBox.remove(toAddForAll); //Asserzioni perogni
+    						aBox.removeAll(toAddExists); //Asserzioni esistenziale
+    						return false;
+    					}
+    					else {
+    						continue;
+    						//return true;
+    						//break;
+    					}
+            			
+            		}
         			
         		}
-    			
-    		}
-    		
+        		
+        	}
     	}
+    	
     	return ret;
 	}
 	
@@ -1077,11 +1085,6 @@ public class ALCReasoner{
     		}
     	}
     	
-    	/*System.out.println("\nAbox dopo regola intersezione: " );
-		for(OWLObject a: aBox){
-    		a.accept(printer);
-    		System.out.println(",");
-    	}*/
     	boolean arePresentDisj = false;
     	for(OWLObject axiom: Lx) {
     		if(axiom instanceof OWLObjectUnionOf)
@@ -1091,26 +1094,16 @@ public class ALCReasoner{
     	if(arePresentDisj) {
     		
     		for (OWLObject axiom: Lx) {
-    			//System.out.println("\nSPACCHETTO OR: ");
-    			//ax.accept(printer);
     			Set<OWLObject> resURule = this.unionRule(axiom,ind.getIRI().getShortForm());
     			if(resURule.size()>0) {
-    				/*System.out.println("\nINSIEME DISGIUNTI:");
-    			for(OWLObject a: resURule){
-    	    		a.accept(printer);
-    	    		System.out.print(",");
-    	    	}*/
     				Set<OWLObject> intersec = new HashSet<>(aBox);
     				intersec.retainAll(resURule);
     				if(intersec.size()==0) {
     					for (OWLObject disjoint : resURule) {
-    						//	System.out.println("\nDISGIUNTO SCELTO: ");
-    						//o.accept(printer);
-    						
+
     						Set<OWLObject> tmpLx = new HashSet<>(Lx);
     						aBox.add(disjoint);
-    						//System.out.println("INSERISCO: ");
-    						//o.accept(printer);
+
     						tmpLx.add(((OWLClassAssertionAxiom) disjoint).getClassExpression());
     						
     						for(OWLObject a: tmpLx){
@@ -1157,111 +1150,109 @@ public class ALCReasoner{
 			return false;
 		}
     	
+    	boolean arePresentExists = false;
+    	for(OWLObject axiom: Lx) {
+    		if(axiom instanceof OWLObjectSomeValuesFrom)
+    			arePresentExists = true;
+    	}
+    	
     	//Regola Esiste
-    	for (OWLObject o: Lx) {
-    		OWLObject toAddForAll = null;
-    		Set<OWLObject> newLx = new HashSet<>();
-    		//Set<OWLObject> tmpLx = new HashSet<>(Lx);
-    		//String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
-    		this.individual++;
-    		String newIndName = "x"+ this.individual;
-    		Set<OWLObject> toAdd = this.existsRuleNonEmpyTboxLazyUnfolding(o,ind,newIndName);
-    		if(toAdd.size()==0) {
-    			this.individual--;
-    		}
-    		else {
-    			if(this.checkExistsRuleCondition(aBox, toAdd)) {
-        			aBox.addAll(toAdd);
-        			
-        			/*System.out.println("\nAbox dopo regola esiste: " );
-    				for(OWLObject a: aBox){
-    		    		a.accept(printer);
-    		    		System.out.println(",");
-    		    	}*/
-        			String relationName = null;
-        			for(OWLObject add: toAdd) {
-        				if (add instanceof OWLObjectPropertyAssertionAxiom) {
-        					//tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
-        					if(kb!=null)
-        						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
-        					else
-            					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
-        					
-        				}
-        				if (add instanceof OWLClassAssertionAxiom) {
-        					if(this.C_g!=null) {
-        						if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {
-        							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
-        						}
-        					}
-        					else {
-        							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
-        					}
-        				}
-        				if (add instanceof OWLClassAssertionAxiom) {
-        					if(this.C_g!=null) {
-        						if(((OWLClassAssertionAxiom) add).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {
-        							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
-        						}
-        					}
-        				}
-        				
-        			}
-        			for (OWLObject ax: newLx) {
-        	    		ax.accept(gv);
-        	    		gv.addColonToFormula();
-        	    	}
-        			relationName = relationName.replace("<", "");
-        			relationName = relationName.replace(">", "");
-        			relationName = relationName.replace("#", "");
-        			formula = gv.getAndClearFormula();
-        			Node currentNode = gr.createNode(printingPath1+ lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath2,  newIndName.replace("x", ""));
+    	if (arePresentExists) {
+    		for (OWLObject o: Lx) {
+        		OWLObject toAddForAll = null;
+        		Set<OWLObject> newLx = new HashSet<>();
+        		this.individual++;
+        		String newIndName = "x"+ this.individual;
+        		Set<OWLObject> toAdd = this.existsRuleNonEmpyTboxLazyUnfolding(o,ind,newIndName);
+        		if(toAdd.size()==0) {
+        			this.individual--;
+        		}
+        		else {
+        			if(this.checkExistsRuleCondition(aBox, toAdd)) {
+            			aBox.addAll(toAdd);
+            			String relationName = null;
+            			for(OWLObject add: toAdd) {
+            				if (add instanceof OWLObjectPropertyAssertionAxiom) {
+            					if(kb!=null)
+            						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
+            					else
+                					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
+            					
+            				}
+            				if (add instanceof OWLClassAssertionAxiom) {
+            					if(this.C_g!=null) {
+            						if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {
+            							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+            						}
+            					}
+            					else {
+            							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+            					}
+            				}
+            				if (add instanceof OWLClassAssertionAxiom) {
+            					if(this.C_g!=null) {
+            						if(((OWLClassAssertionAxiom) add).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {
+            							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+            						}
+            					}
+            				}
+            				
+            			}
+            			for (OWLObject ax: newLx) {
+            	    		ax.accept(gv);
+            	    		gv.addColonToFormula();
+            	    	}
+            			relationName = relationName.replace("<", "");
+            			relationName = relationName.replace(">", "");
+            			relationName = relationName.replace("#", "");
+            			formula = gv.getAndClearFormula();
+            			Node currentNode = gr.createNode(printingPath1+ lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath2,  newIndName.replace("x", ""));
 
-        			gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
-        			gr.createLink2(currentNode, parent, relationName);
-        			rdf.addResource(currentNode.name().toString(), formula);
-        			rdf.addStatement(parent.name().toString(), "Esiste_".concat(relationName), currentNode.name().toString());
-        			//Regola per ogni
-        			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
-        			for (OWLObject forAll: Lx) {
-        				if(forAll instanceof OWLObjectAllValuesFrom) {
-        					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
-        					if(!aBox.contains(toAddForAll) && toAddForAll!=null) {
-        						aBox.add(toAddForAll);
-        						//newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
-        						//newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
-        						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
-        						for(OWLObject ax: newLx) {
-        							ax.accept(gv);
-        							gv.addColonToFormula();
-        						}
-        						formula = gv.getAndClearFormula();
-        						currentNode = gr.editNodeLabel(currentNode, ind.getIRI().getShortForm().replace("x",""), printingPath1 +lazyLabelsPath+"\\"+currentNode.name().toString()+printingPath2);
-        						gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
-        						rdf.editLabelProperty(currentNode.name().toString(), formula);
-        					}
-        				}
-        				
-        			}
-        			
-        			ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, T_u, currentNode);
-					if (!ret) {
-						aBox.remove(toAddForAll); //Asserzioni perogni
-						aBox.removeAll(toAdd); //Asserzioni esistenziale
+            			gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
+            			gr.createLink2(currentNode, parent, relationName);
+            			rdf.addResource(currentNode.name().toString(), formula);
+            			rdf.addStatement(parent.name().toString(), "Esiste_".concat(relationName), currentNode.name().toString());
+            			//Regola per ogni
+            			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
+            			for (OWLObject forAll: Lx) {
+            				if(forAll instanceof OWLObjectAllValuesFrom) {
+            					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
+            					if(!aBox.contains(toAddForAll) && toAddForAll!=null) {
+            						aBox.add(toAddForAll);
+            						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
+            						for(OWLObject ax: newLx) {
+            							ax.accept(gv);
+            							gv.addColonToFormula();
+            						}
+            						formula = gv.getAndClearFormula();
+            						currentNode = gr.editNodeLabel(currentNode, ind.getIRI().getShortForm().replace("x",""), printingPath1 +lazyLabelsPath+"\\"+currentNode.name().toString()+printingPath2);
+            						gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
+            						rdf.editLabelProperty(currentNode.name().toString(), formula);
+            					}
+            				}
+            				
+            			}
+            			
+            			ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, T_u, currentNode);
+    					if (!ret) {
+    						aBox.remove(toAddForAll); //Asserzioni perogni
+    						aBox.removeAll(toAdd); //Asserzioni esistenziale
 
-						return false;
-					}
-					else {
-						continue;
-						//return true;
-						//break;
-					}	
+    						return false;
+    					}
+    					else {
+    						continue;
+    						//return true;
+    						//break;
+    					}	
+            			
+            		}
         			
         		}
-    			
-    		}
-    		
+        		
+        	}
     	}
+    	
     	if(onlyClassAxioms(Lx)) {
     		Node clashFree = gr.createNode("CLASH-FREE");
     		gr.createLink2(clashFree, parent, "", Color.GREEN);
@@ -1342,26 +1333,19 @@ public class ALCReasoner{
     	if(arePresentDisj) {
     		
     		for (OWLObject axiom: Lx) {
-    			//System.out.println("\nSPACCHETTO OR: ");
-    			//ax.accept(printer);
+
     			Set<OWLObject> resURule = this.unionRule(axiom,ind.getIRI().getShortForm());
     			if(resURule.size()>0) {
-    				/*System.out.println("\nINSIEME DISGIUNTI:");
-    			for(OWLObject a: resURule){
-    	    		a.accept(printer);
-    	    		System.out.print(",");
-    	    	}*/
+
     				Set<OWLObject> intersec = new HashSet<>(aBox);
     				intersec.retainAll(resURule);
     				if(intersec.size()==0) {
     					for (OWLObject disjoint : resURule) {
-    						//	System.out.println("\nDISGIUNTO SCELTO: ");
-    						//o.accept(printer);
+
     						
     						Set<OWLObject> tmpLx = new HashSet<>(Lx);
     						aBox.add(disjoint);
-    						//System.out.println("INSERISCO: ");
-    						//o.accept(printer);
+
     						tmpLx.add(((OWLClassAssertionAxiom) disjoint).getClassExpression());
     						ret = implementTableauxNonEmptyTboxLazyUnfoldingNoPrint(ind, tmpLx, aBox,null, T_u);
     						
@@ -1391,91 +1375,90 @@ public class ALCReasoner{
         	}
 			return false;
 		}
-    	
+    	boolean arePresentExists = false;
+    	for(OWLObject axiom: Lx) {
+    		if(axiom instanceof OWLObjectSomeValuesFrom)
+    			arePresentExists = true;
+    	}
     	//Regola Esiste
-    	for (OWLObject o: Lx) {
-    		OWLObject toAddForAll = null;
-    		Set<OWLObject> newLx = new HashSet<>();
-    		//Set<OWLObject> tmpLx = new HashSet<>(Lx);
-    		//String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
-    		this.individual++;
-    		String newIndName = "x"+ this.individual;
-    		Set<OWLObject> toAdd = this.existsRuleNonEmpyTboxLazyUnfolding(o,ind,newIndName);
-    		if(toAdd.size()==0) {
-    			this.individual--;
-    		}
-    		else {
-    			if(this.checkExistsRuleCondition(aBox, toAdd)) {
-        			aBox.addAll(toAdd);
-        			
-        			/*System.out.println("\nAbox dopo regola esiste: " );
-    				for(OWLObject a: aBox){
-    		    		a.accept(printer);
-    		    		System.out.println(",");
-    		    	}*/
-        			String relationName = null;
-        			for(OWLObject add: toAdd) {
-        				if (add instanceof OWLObjectPropertyAssertionAxiom) {
-        					//tmpLx.add(((OWLObjectPropertyAssertionAxiom) add).getProperty());
-        					if(kb!=null)
-        						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
-        					else
-            					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
-        					
-        				}
-        				if (add instanceof OWLClassAssertionAxiom) {
-        					if(this.C_g!=null) {
-        						if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {
-        							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
-        						}
-        					}
-        					else {
-        							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
-        					}
-        				}
-        				if (add instanceof OWLClassAssertionAxiom) {
-        					if(this.C_g!=null) {
-        						if(((OWLClassAssertionAxiom) add).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {
-        							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
-        						}
-        					}
-        				}
-        				
-        			}
+    	if(arePresentExists) {
+    		for (OWLObject o: Lx) {
+        		OWLObject toAddForAll = null;
+        		Set<OWLObject> newLx = new HashSet<>();
 
-        			//Regola per ogni
-        			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
-        			for (OWLObject forAll: Lx) {
-        				if(forAll instanceof OWLObjectAllValuesFrom) {
-        					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
-        					if(!aBox.contains(toAddForAll) && toAddForAll!=null) {
-        						aBox.add(toAddForAll);
-        						//newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
-        						//newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
-        						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
-        					}
-        				}
-        				
-        			}
-        			
-        			ret = implementTableauxNonEmptyTboxLazyUnfoldingNoPrint((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, T_u);
-					if (!ret) {
-						aBox.remove(toAddForAll); //Asserzioni perogni
-						aBox.removeAll(toAdd); //Asserzioni esistenziale
+        		this.individual++;
+        		String newIndName = "x"+ this.individual;
+        		Set<OWLObject> toAdd = this.existsRuleNonEmpyTboxLazyUnfolding(o,ind,newIndName);
+        		if(toAdd.size()==0) {
+        			this.individual--;
+        		}
+        		else {
+        			if(this.checkExistsRuleCondition(aBox, toAdd)) {
+            			aBox.addAll(toAdd);
 
-						return false;
-					}
-					else {
-						continue;
-						//return true;
-						//break;
-					}	
+            			String relationName = null;
+            			for(OWLObject add: toAdd) {
+            				if (add instanceof OWLObjectPropertyAssertionAxiom) {
+
+            					if(kb!=null)
+            						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
+            					else
+                					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
+            					
+            				}
+            				if (add instanceof OWLClassAssertionAxiom) {
+            					if(this.C_g!=null) {
+            						if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {
+            							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+            						}
+            					}
+            					else {
+            							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+            					}
+            				}
+            				if (add instanceof OWLClassAssertionAxiom) {
+            					if(this.C_g!=null) {
+            						if(((OWLClassAssertionAxiom) add).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {
+            							newLx.add(((OWLClassAssertionAxiom) add).getClassExpression());
+            						}
+            					}
+            				}
+            				
+            			}
+
+            			//Regola per ogni
+            			OWLObjectPropertyAssertionAxiom propAxiom = this.getPropertyAssertionFromSet(toAdd);
+            			for (OWLObject forAll: Lx) {
+            				if(forAll instanceof OWLObjectAllValuesFrom) {
+            					toAddForAll = this.forAllRule((OWLObjectAllValuesFrom) forAll, propAxiom);
+            					if(!aBox.contains(toAddForAll) && toAddForAll!=null) {
+            						aBox.add(toAddForAll);
+            						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
+            					}
+            				}
+            				
+            			}
+            			
+            			ret = implementTableauxNonEmptyTboxLazyUnfoldingNoPrint((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, T_u);
+    					if (!ret) {
+    						aBox.remove(toAddForAll); //Asserzioni perogni
+    						aBox.removeAll(toAdd); //Asserzioni esistenziale
+
+    						return false;
+    					}
+    					else {
+    						continue;
+    						//return true;
+    						//break;
+    					}	
+            			
+            		}
         			
         		}
-    			
-    		}
-    		
+        		
+        	}
     	}
+    	
     	return ret;
 	}
 
