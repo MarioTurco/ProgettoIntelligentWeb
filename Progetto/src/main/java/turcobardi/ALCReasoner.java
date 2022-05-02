@@ -325,6 +325,7 @@ public class ALCReasoner{
 	
 	/** Stampa il grafo del tableaux su file svg
 	 * @param path - path del file su cui stampare (ad es. "graph/lazy", senza estensione)
+	 * @see GraphRenderer.renderGraph()
 	 */
 	public void renderTableauxGraph(String path) {
 		try {
