@@ -37,8 +37,6 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	private final char inclusion = '\u2291';
 	
 	
-	
-	
 	public OntologyPrintingVisitor(IRI iri) {
 		this.iri=iri;
 		try {
@@ -47,8 +45,6 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 			e.printStackTrace();
 		};
 	}
-	
-	
 	
 	
 	public void visit(OWLObjectSomeValuesFrom desc) {
@@ -68,20 +64,19 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	public void visit(OWLObjectComplementOf eq) {
 		out.print(not);
 		eq.getOperand().accept(this);
-		//System.out.print(conceptToString(iri, eq.getOperand().toString()) + " ");
 	}
+	
 	public void visit(OWLSubClassOfAxiom sub) {
 		sub.getSubClass().accept(this);
 		out.print(inclusion);
 		sub.getSuperClass().accept(this);
 		System.out.println("");
 	}
+	
 	public void visit(OWLEquivalentClassesAxiom eq) {
-
-
-		eq.getOperandsAsList().get(0).accept(this); //sinistra
+		eq.getOperandsAsList().get(0).accept(this); 
 		System.out.print(" = ");
-		eq.getOperandsAsList().get(1).accept(this); //destra
+		eq.getOperandsAsList().get(1).accept(this); 
 		System.out.println("");
 		return;
 	}
