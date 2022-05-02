@@ -78,10 +78,6 @@ public class ALCReasoner{
 		}
 	}
 	
-	public OWLOntology getConcept() {
-		return this.concept;
-	}
-	
 	private OWLSubClassOfAxiom convertT_gWithFactory(Set<OWLObject> T_g) {
 		OWLDataFactory factory = this.editor.getFactory();
 		List<OWLClassExpression> conjuncts = new ArrayList<>();
