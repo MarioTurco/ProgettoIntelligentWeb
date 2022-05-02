@@ -23,10 +23,6 @@ import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
  * @author turco
  *
  */
-/**
- * @author turco
- *
- */
 public class GraphRenderVisitor implements OWLObjectVisitor{
 	
 	private IRI iri = null;
@@ -51,12 +47,7 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 		System.out.println(formula);
 	}
 	
-	
-	public void addCurrentLabel(String node) {
-		formula = formula.concat("{" + node +"}\n");
-	}
-	
-	
+		
 	/** Metodo che restituisce l'ultima formula visitata e la cancella dal visitor. </br>
 	 * Si noti che quindi dopo la chiamata di tale funzione, il valore <code> this.formula </code> sarà la stringa vuota
 	 * @return una stringa contenente la formula 
@@ -69,7 +60,7 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	}
 	
 	public void visit(OWLObjectSomeValuesFrom desc) {
-		formula=formula.concat("" + exists + "" + conceptToString(iri,desc.getProperty().toString()) );
+		formula=formula.concat("" + exists + "" + removeIRIFromString(iri,desc.getProperty().toString()) );
 		desc.getProperty().accept(this);
 		formula=formula.concat(".");
 	    desc.getFiller().accept(this);
@@ -77,7 +68,7 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	}
 	
 	public void visit(OWLClass c) {
-		formula=formula.concat(conceptToString(iri,c.toString()) + " ");
+		formula=formula.concat(removeIRIFromString(iri,c.toString()) + " ");
 		return;
 	}
 	
@@ -114,7 +105,7 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	}
 	
 	public void visit(OWLObjectAllValuesFrom desc) {
-		formula=formula.concat(" " + foreach + " " + conceptToString(iri, desc.getProperty().toString()));
+		formula=formula.concat(" " + foreach + " " + removeIRIFromString(iri, desc.getProperty().toString()));
 		desc.getProperty().accept(this);
 		formula=formula.concat(".");
 	    desc.getFiller().accept(this);
@@ -157,7 +148,12 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	}
 	
     
-    private String conceptToString(IRI iri, String str) {
+    /** Data una stringa ed un iri, rimuove dalla stringa l'iri più i caratteri <code> "#", "<", ">"</code>
+     * @param iri
+     * @param str
+     * @return la stringa modificata
+     */
+    private String removeIRIFromString(IRI iri, String str) {
 		str = str.replace(iri.toString(), "");
 		str = str.replace("#", "");
 		str = str.replace("<", "");
@@ -171,11 +167,6 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	 */
 	public void addColonToFormula() {
 		formula = formula.concat(", ");
-		
-	}
-
-	public void addQuery() {
-		formula = formula.concat("Query:");
 		
 	}
 		
