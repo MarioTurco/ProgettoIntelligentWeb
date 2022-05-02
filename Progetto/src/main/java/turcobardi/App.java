@@ -14,6 +14,10 @@ import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.expression.ShortFormEntityChecker;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
+import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLClassExpression;
+import org.semanticweb.owlapi.model.OWLDataFactory;
+import org.semanticweb.owlapi.model.OWLDeclarationAxiom;
 import org.semanticweb.owlapi.model.OWLLogicalAxiom;
 import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -88,6 +92,14 @@ public class App {
 	
 	private static OWLOntology getQueryFromStdIn(OWLOntology kb) throws OWLOntologyCreationException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		//System.out.println("Enter concept name:");
+		String name = "Query";
+    	/*try {
+    		name = new String(reader.readLine());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
     	System.out.println("Enter query: ");
     	String queryInput = null;
     	try {
@@ -96,6 +108,9 @@ public class App {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+    	OWLDataFactory factory = new OntologyEditor(kb).getFactory(); 
+    	OWLClass cl = factory.getOWLClass(kb.getOntologyID().getOntologyIRI().get()+"#"+name);
+    	OWLDeclarationAxiom decAx = factory.getOWLDeclarationAxiom(cl);
     	Set<OWLOntology> ont = new HashSet<>();
     	Set<OWLAxiom> toAdd = new HashSet<>();
     	OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
@@ -111,8 +126,10 @@ public class App {
         parser.setOWLEntityChecker(owlEntityChecker);
         parser.setStringToParse(queryInput);
         parser.setDefaultOntology(kb);
-        toAdd.add(parser.parseAxiom());
-
+        OWLClassExpression classExpr = parser.parseClassExpression();
+        OWLAxiom axiom = factory.getOWLEquivalentClassesAxiom(cl, classExpr);
+        toAdd.add(decAx);
+        toAdd.add(axiom);
     	OWLOntology queryIn = manager.createOntology(toAdd, kb.getOntologyID().getOntologyIRI().get());
     	return queryIn;
 	}

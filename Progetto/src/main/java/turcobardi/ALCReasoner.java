@@ -367,13 +367,13 @@ public class ALCReasoner{
 			
 			if(axiom instanceof OWLObjectPropertyDomainAxiom) {
 				OWLObjectSomeValuesFrom relAx = factory.getOWLObjectSomeValuesFrom(((OWLObjectPropertyDomainAxiom) axiom).getProperty(), factory.getOWLThing());
-				OWLSubClassOfAxiom ax = factory.getOWLSubClassOfAxiom(relAx, ((OWLObjectPropertyDomainAxiom) axiom).getDomain());
-				manKb.addAxiom(kb, ax);
+				OWLSubClassOfAxiom axiomToAdd = factory.getOWLSubClassOfAxiom(relAx, ((OWLObjectPropertyDomainAxiom) axiom).getDomain());
+				manKb.addAxiom(kb, axiomToAdd);
 			}
 			if(axiom instanceof OWLObjectPropertyRangeAxiom) {
 				OWLObjectAllValuesFrom relAx = factory.getOWLObjectAllValuesFrom(((OWLObjectPropertyRangeAxiom) axiom).getProperty(),((OWLObjectPropertyRangeAxiom) axiom).getRange());
-				OWLSubClassOfAxiom ax = factory.getOWLSubClassOfAxiom(factory.getOWLThing(), relAx);
-				manKb.addAxiom(kb, ax);
+				OWLSubClassOfAxiom axiomToAdd = factory.getOWLSubClassOfAxiom(factory.getOWLThing(), relAx);
+				manKb.addAxiom(kb, axiomToAdd);
 			}
 			
 		}
