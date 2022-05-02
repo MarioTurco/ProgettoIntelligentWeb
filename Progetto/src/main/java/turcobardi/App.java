@@ -41,7 +41,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 		//OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
-		File kbFile = new File("KB_13.owl");
+		File kbFile = new File("veicolo.owl");
 		//File queryFile = new File("concept_2.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("Numero assiomi :" + kb.getAxiomCount());
@@ -76,8 +76,7 @@ public class App {
     		
     		logicalAxiom.accept(visitor); //prints the logical axiom
     	}
-    	ALCReasoner reasoner = new ALCReasoner(query, null);
-
+    	
     	LazyUnfolder lazy = new LazyUnfolder(kb);
     	lazy.doLazyUnfolding();
     	System.out.println("\n##########Tu#########");
@@ -89,9 +88,9 @@ public class App {
     		o.accept(visitor);
     	}
     	System.out.println("\n################Normal################");
-    	executeAndPrintTime("nonEmpty", reasoner);
+    	executeAndPrintTime("nonEmpty", kb, query);
     	System.out.println("\n############LazyUnfolding#############");
-    	executeAndPrintTime("lazy", reasoner);
+    	executeAndPrintTime("lazy", kb, query);
     	
     	
     	
@@ -137,15 +136,17 @@ public class App {
     	return queryIn;
 	}
 	
-	private static void executeAndPrintTime(String what, ALCReasoner reasoner) {
-	/*	if (what.equals("empty")) {
+	private static void executeAndPrintTime(String what, OWLOntology kb, OWLOntology query) {
+		if (what.equals("empty")) {
+			ALCReasoner reasoner = new ALCReasoner(query, null);
 			Instant start = Instant.now();
-	    	System.out.println("\nSAT: " + reasoner.alcTableaux());
+	    	System.out.println("\nSAT: " + reasoner.alcTableauxNonEmpyTbox(false));
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 	    	//reasoner.renderTableauxGraph();
 		}
-		else*/ if (what.equals("nonEmpty")) {
+		else if (what.equals("nonEmpty")) {
+			ALCReasoner reasoner = new ALCReasoner(query, kb);
 			Instant start = Instant.now();
 			boolean ret = reasoner.alcTableauxNonEmpyTbox(false);
 	    	System.out.println("\nSAT: " + ret);
@@ -155,6 +156,7 @@ public class App {
 	    	reasoner.printRDF("nonEmpty", false);
 		}
 		else if (what.equals("lazy")) {
+			ALCReasoner reasoner = new ALCReasoner(query, kb);
 			Instant start = Instant.now();
 			boolean ret = reasoner.alcTableauxNonEmpyTbox(true);
 	    	System.out.println("\nSAT: " + ret);
