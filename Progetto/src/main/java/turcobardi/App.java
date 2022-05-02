@@ -75,14 +75,11 @@ public class App {
     	for(OWLObject o: lazy.getT_g()) {
     		o.accept(visitor);
 <<<<<<< HEAD
-    	}
+    	}*/
     	System.out.println("\n################Empty TBox################");
     	executeAndPrintTime("empty", kb, query, true);
     	System.out.println("\n################Non-Empty TBox################");
-=======
-    	}*/
-    	System.out.println("\n################Normal################");
->>>>>>> 014b70c5e6f21aa5cd3638ef26289123d03abd43
+
     	executeAndPrintTime("nonEmpty", kb, query, true);
     	System.out.println("\n############LazyUnfolding#############");
     	executeAndPrintTime("lazy", kb, query, true);
@@ -161,7 +158,6 @@ public class App {
 			ALCReasoner reasoner = new ALCReasoner(query, kb);
 			Instant start = Instant.now();
 	    	System.out.println("\nSAT: " + reasoner.alcTableauxNonEmpyTbox(false, printGraph));
-	    	//TODO stampare true e false in blu e rosso 
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 	    	if(printGraph) {
