@@ -88,9 +88,9 @@ public class App {
     		o.accept(visitor);
     	}
     	System.out.println("\n################Normal################");
-    	executeAndPrintTime("nonEmpty", kb, query);
+    	executeAndPrintTime("nonEmpty", kb, query, false);
     	System.out.println("\n############LazyUnfolding#############");
-    	executeAndPrintTime("lazy", kb, query);
+    	executeAndPrintTime("lazy", kb, query, false);
     	
     	
     	
@@ -136,35 +136,40 @@ public class App {
     	return queryIn;
 	}
 	
-	private static void executeAndPrintTime(String what, OWLOntology kb, OWLOntology query) {
+	private static void executeAndPrintTime(String what, OWLOntology kb, OWLOntology query, boolean printGraph) {
 		if (what.equals("empty")) {
 			ALCReasoner reasoner = new ALCReasoner(query, null);
 			Instant start = Instant.now();
-	    	System.out.println("\nSAT: " + reasoner.alcTableauxNonEmpyTbox(false));
+	    	System.out.println("\nSAT: " + reasoner.alcTableauxNonEmpyTbox(false, printGraph));
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
-	    	//reasoner.renderTableauxGraph();
+	    	if(printGraph) {	    		
+	    		reasoner.renderTableauxGraph("graph/Empty");
+	    		reasoner.printRDF("Empty", false);
+	    	}
 		}
 		else if (what.equals("nonEmpty")) {
 			ALCReasoner reasoner = new ALCReasoner(query, kb);
 			Instant start = Instant.now();
-			boolean ret = reasoner.alcTableauxNonEmpyTbox(false);
-	    	System.out.println("\nSAT: " + ret);
+	    	System.out.println("\nSAT: " + reasoner.alcTableauxNonEmpyTbox(false, printGraph));
 	    	//TODO stampare true e false in blu e rosso 
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
-	    	reasoner.renderTableauxGraph("graph/nonEmpty");
-	    	reasoner.printRDF("nonEmpty", false);
+	    	if(printGraph) {
+	    		reasoner.renderTableauxGraph("graph/nonEmpty");
+		    	reasoner.printRDF("nonEmpty", false);
+	    	}    	
 		}
 		else if (what.equals("lazy")) {
 			ALCReasoner reasoner = new ALCReasoner(query, kb);
 			Instant start = Instant.now();
-			boolean ret = reasoner.alcTableauxNonEmpyTbox(true);
-	    	System.out.println("\nSAT: " + ret);
+	    	System.out.println("\nSAT: " + reasoner.alcTableauxNonEmpyTbox(true, printGraph));
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
-	    	reasoner.renderTableauxGraph("graph/lazy");
-	    	reasoner.printRDF("lazy", false);
+	    	if(printGraph) {
+	    		reasoner.renderTableauxGraph("graph/lazy");
+		    	reasoner.printRDF("lazy", false);
+	    	} 	
 		}
 		
 	}
