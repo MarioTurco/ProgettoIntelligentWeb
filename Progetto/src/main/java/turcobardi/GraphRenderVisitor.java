@@ -19,7 +19,7 @@ import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
 
 /**
- * Visitor di formule che permette di stampare la formula visitata in modo compatto con simboli utf-8
+ * Visitor di formule che permette di ottenere la formula visitata in modo compatto con simboli utf-8 per essere utilizzata nel grafo del tableaux
  * @author turco
  *
  */

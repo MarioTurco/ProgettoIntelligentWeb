@@ -19,6 +19,12 @@ import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
+
+/**
+ * Visitor di formule che permette di stampare la formula visitata in modo compatto con simboli utf-8
+ * @author turco
+ *
+ */
 public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	
 	private IRI iri = null;
