@@ -31,10 +31,6 @@ import org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser;
  * Classe che contiene il main 
  *
  */
-/**
- * @author turco
- *
- */
 public class App {
 
 	
