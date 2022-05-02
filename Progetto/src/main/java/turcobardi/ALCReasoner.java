@@ -35,17 +35,9 @@ import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 import guru.nidi.graphviz.attribute.Color;
 import guru.nidi.graphviz.model.Node;
 
-/*
- * 
- * This class is the ALC Reasoner and contains all the methods
- * for the reasoning
- */
+
 /**
  * Reasoner ALC che implementa i metodi per il tableaux
- *
- */
-/**
- * @author turco
  *
  */
 public class ALCReasoner{
@@ -60,7 +52,6 @@ public class ALCReasoner{
 	private OntologyEditor editor = null;
 	private EquivalenceRuleVisitor equivalence = null;
 	private OWLOntology kb = null;
-	private OntologyPrintingVisitor printer = null;
 	private OWLSubClassOfAxiom KBinclusion = null;
 	private OWLSubClassOfAxiom C_g = null;
 	private GraphRenderer gr = null;
@@ -76,12 +67,10 @@ public class ALCReasoner{
 		if(kb!=null) {
 			this.iri = kb.getOntologyID().getOntologyIRI().get();
 			this.editor = new OntologyEditor(kb);
-			this.printer = new OntologyPrintingVisitor(iri, "");
 			this.gv = new GraphRenderVisitor(iri);		
 		}else {
 			this.iri = concept.getOntologyID().getOntologyIRI().get();
 			this.editor = new OntologyEditor(concept);
-			this.printer = new OntologyPrintingVisitor(iri, "");
 			this.gv = new GraphRenderVisitor(iri);
 		}
 		this.equivalence = new EquivalenceRuleVisitor();
