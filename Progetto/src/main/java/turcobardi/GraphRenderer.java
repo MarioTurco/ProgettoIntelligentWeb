@@ -98,8 +98,10 @@ public class GraphRenderer {
 			current = node(Integer.toString(getLastNodeID())).with(Label.markdown("CLASH")); 
 		else if	(internalLabel=="CLASH-FREE")
 			current = node(Integer.toString(getLastNodeID())).with(Label.markdown("CLASH-FREE")); 
+		else if	(internalLabel=="BLOCKING")
+			current = node(Integer.toString(getLastNodeID())).with(Label.markdown("BLOCKING")); 
 		else
-		current = createNode(internalLabel, null);
+		current = createNode(null, internalLabel);
 		nodes.add(current);
 		lastNodeID+=1;
 		return current;
