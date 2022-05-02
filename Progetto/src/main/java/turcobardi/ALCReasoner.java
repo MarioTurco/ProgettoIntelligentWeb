@@ -698,7 +698,6 @@ public class ALCReasoner{
     	
 
     	//BLOCKING
-    	//TODO non si deve creare un link blocking?
     	if(kb!=null && predLx!=null) {
     		if(predLx.containsAll(Lx)) {
     			Node blocking = gr.createNode("BLOCKING");
