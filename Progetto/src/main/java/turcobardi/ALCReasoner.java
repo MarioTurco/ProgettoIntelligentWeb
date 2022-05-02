@@ -292,7 +292,6 @@ public class ALCReasoner{
 					
 				}		
 			} catch (OWLOntologyCreationException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -347,6 +346,7 @@ public class ALCReasoner{
 		}
 	}
 	 
+	
 	/** Stampa il grafo RDF su file
 	 * @param fileName - nome del file rdf su cui stampare (senza estensione) 
 	 * @param printToConsole - se true, stampa il grafo anche sulla console
@@ -355,32 +355,6 @@ public class ALCReasoner{
 		 rdf.printAndClearModel(fileName, printToConsole);
 	 }
 	
-	//TODO QUESTA FUNZIONE NON SERVE PIù
-	public boolean alcTableaux() {
-		Set<OWLObject> Lx = new HashSet<>();
-		Set<OWLObject> aBox = new HashSet<>();
-		OWLNamedIndividual ind = null;
-		
-		//Instanziazione del concetto principale, creazione C(x0)
-		
-		//for (OWLLogicalAxiom obj :concept.getLogicalAxioms()) {
-			equivalence.visit(concept);
-			OWLClassExpression tmp = equivalence.getRightSide();
-			
-			try {
-				
-				OWLClassAssertionAxiom mainConcept = editor.createIndividual(tmp, "x0");
-				aBox.add(mainConcept);
-				ind = (OWLNamedIndividual) mainConcept.getIndividual();
-				Lx.add(equivalence.getRightSide());
-				
-			} catch (OWLOntologyCreationException e) {
-				e.printStackTrace();
-			}
-			
-		//}
-		return implementTableaux(ind, Lx, aBox);	
-	}
 	
 	/**
 	 * @param kb - Knowledge Base da processare
