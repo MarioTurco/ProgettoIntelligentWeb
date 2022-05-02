@@ -36,7 +36,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 
-		File kbFile = new File("veicolo_pep.owl");
+		File kbFile = new File("KB_13.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("KB size:" + kb.getAxiomCount());
 		IRI iriKb = kb.getOntologyID().getOntologyIRI().get();
@@ -71,7 +71,9 @@ public class App {
     	for(OWLObject o: lazy.getT_g()) {
     		o.accept(visitor);
     	}
-    	System.out.println("\n################Normal################");
+    	System.out.println("\n################Empty TBox################");
+    	executeAndPrintTime("empty", kb, query, true);
+    	System.out.println("\n################Non-Empty TBox################");
     	executeAndPrintTime("nonEmpty", kb, query, true);
     	System.out.println("\n############LazyUnfolding#############");
     	executeAndPrintTime("lazy", kb, query, true);
@@ -130,6 +132,10 @@ public class App {
 	    	}
 		}
 		else if (what.equals("nonEmpty")) {
+			if(kb.getLogicalAxiomCount()==0) {
+				System.out.println("TBox vuota.");
+				return;
+			}
 			ALCReasoner reasoner = new ALCReasoner(query, kb);
 			Instant start = Instant.now();
 	    	System.out.println("\nSAT: " + reasoner.alcTableauxNonEmpyTbox(false, printGraph));

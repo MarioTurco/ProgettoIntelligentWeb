@@ -9,7 +9,7 @@
 <ellipse fill="none" stroke="black" cx="77" cy="-90" rx="27" ry="18"/>
 <text text-anchor="start" x="70" y="-86.8" font-family="Times,serif" font-size="14.00">x</text>
 <text text-anchor="start" x="77" y="-86.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node1_1"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\0.txt" xlink:title="Nodo 0: (A ⊓ B ), A , B " target="_blank">
+<g id="a_node1_0"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\0.txt" xlink:title="Nodo 0: (A ⊓ B ), A , B " target="_blank">
 <polygon fill="none" stroke="green" points="1,-109 1,-135 49,-135 49,-109 1,-109"/>
 <text text-anchor="start" x="5.56" y="-117.4" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
