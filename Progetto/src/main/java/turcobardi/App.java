@@ -36,7 +36,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 
-		File kbFile = new File("veicolo.owl");
+		File kbFile = new File("veicolo_pep.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("KB size:" + kb.getAxiomCount());
 		IRI iriKb = kb.getOntologyID().getOntologyIRI().get();
@@ -61,7 +61,7 @@ public class App {
     		logicalAxiom.accept(visitor); 
     	}
     	
-    	LazyUnfolder lazy = new LazyUnfolder(kb);
+    	/*LazyUnfolder lazy = new LazyUnfolder(kb);
     	lazy.doLazyUnfolding();
     	System.out.println("\n##########Tu#########");
     	for(OWLObject o: lazy.getT_u()) {
@@ -70,7 +70,7 @@ public class App {
     	System.out.println("\n###########Tg###########");
     	for(OWLObject o: lazy.getT_g()) {
     		o.accept(visitor);
-    	}
+    	}*/
     	System.out.println("\n################Normal################");
     	executeAndPrintTime("nonEmpty", kb, query, true);
     	System.out.println("\n############LazyUnfolding#############");

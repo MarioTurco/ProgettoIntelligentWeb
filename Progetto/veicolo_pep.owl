@@ -1,0 +1,76 @@
+Prefix: : <http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13>
+
+
+
+ObjectProperty: haComponente
+
+    Domain: 
+        Veicolo
+    
+    Range: 
+        Componente
+    
+
+
+Class: Componente
+    DisjointWith:
+	Veicolo
+
+Class: Veicolo    
+    DisjointWith:
+	Componente
+
+Class: Auto
+
+    SubClassOf: 
+	Veicolo,
+        haComponente only
+            (Sterzo
+             )
+
+    DisjointWith: 
+        Bicicletta
+    
+Class: Bicicletta
+
+    SubClassOf:
+	Veicolo, 
+        haComponente only
+            (Manubrio
+             )
+	
+
+    DisjointWith: 
+        Auto
+  
+    
+
+    
+Class: Manubrio
+
+    SubClassOf: 
+        Componente
+    
+    DisjointWith: 
+        Sterzo
+    
+    
+Class: Sterzo
+
+    SubClassOf: 
+        Componente
+    
+    DisjointWith: 
+        Manubrio
+    
+    
