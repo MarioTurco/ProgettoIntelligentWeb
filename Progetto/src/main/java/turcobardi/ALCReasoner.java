@@ -702,7 +702,7 @@ public class ALCReasoner{
     	if(kb!=null && predLx!=null) {
     		if(predLx.containsAll(Lx)) {
     			Node blocking = gr.createNode("BLOCKING");
-    			gr.createLink2(blocking, parent, "", Color.YELLOW);
+    			gr.createLink2(blocking, parent, "", Color.ORANGE);
     			//System.out.println("\nBLOCKING TRUE");
     			return true;  
     		}
@@ -1077,7 +1077,7 @@ public class ALCReasoner{
     		if(predLx.containsAll(Lx)) {
     			//System.out.println("\nBLOCKING TRUE");
     			Node blocking = gr.createNode("BLOCKING");
-    			gr.createLink2(blocking, parent, "", Color.YELLOW);
+    			gr.createLink2(blocking, parent, "", Color.ORANGE);
     			return true;  
     		}
     	}
