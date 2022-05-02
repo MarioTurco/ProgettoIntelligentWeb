@@ -150,6 +150,7 @@ public class App {
 			Instant start = Instant.now();
 			boolean ret = reasoner.alcTableauxNonEmpyTbox(false);
 	    	System.out.println("\nSAT: " + ret);
+	    	//TODO stampare true e false in blu e rosso 
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 	    	reasoner.renderTableauxGraph("graph/nonEmpty");
