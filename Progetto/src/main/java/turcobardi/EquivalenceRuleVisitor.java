@@ -12,8 +12,10 @@ public class EquivalenceRuleVisitor implements OWLObjectVisitor{
 		private OWLClassExpression rightSide = null;
 		
 		public void visit(OWLEquivalentClassesAxiom eq) {
-			//eq.getOperandsAsList().get(1).accept(this); //destro
-			rightSide = eq.getOperandsAsList().get(1);
+			if(eq.getOperandsAsList().size() > 1)
+				rightSide = eq.getOperandsAsList().get(1);
+			else 
+				rightSide = eq.getOperandsAsList().get(0);
 			return;
 		}
 		

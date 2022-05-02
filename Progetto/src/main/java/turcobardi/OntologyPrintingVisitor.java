@@ -74,10 +74,16 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	}
 	
 	public void visit(OWLEquivalentClassesAxiom eq) {
-		eq.getOperandsAsList().get(0).accept(this); 
-		System.out.print(" = ");
-		eq.getOperandsAsList().get(1).accept(this); 
-		System.out.println("");
+		if(eq.getOperandsAsList().size() > 1) {
+			eq.getOperandsAsList().get(0).accept(this); 
+			System.out.print(" = ");
+			eq.getOperandsAsList().get(1).accept(this); 
+			System.out.println("");
+		}
+		else {
+			eq.getOperandsAsList().get(0).accept(this); 
+			System.out.println("");
+		}
 		return;
 	}
 	

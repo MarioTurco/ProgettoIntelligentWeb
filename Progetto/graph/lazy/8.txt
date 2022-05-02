@@ -1,1 +1,1 @@
-(¬http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16A ⊔ ¬http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16B ), ¬http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16B 
+Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Auto ), Sterzo , ¬Veicolo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), Manubrio , ((Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Manubrio ⊔ ¬Sterzo )

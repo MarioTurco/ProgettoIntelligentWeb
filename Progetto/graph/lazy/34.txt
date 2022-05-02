@@ -1,1 +1,1 @@
-A , (A ⊔ B ), (K ⊔ (A ⊔ (¬B ⊓ ¬K ))), ((A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B ))⊓ (K ⊔ (A ⊔ (¬B ⊓ ¬K )))⊓ (((B ⊔ K )⊓ ¬A )⊔ ¬K )⊓ (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A )))), (¬A ⊔ ∃R.(B ⊓ (A ⊔ ¬A ))), (A ⊔  ∀ R.((A ⊓ ¬A )⊔ ¬B )), (A ⊓ ¬B ), ¬B , K , ((A ⊓ ¬B )⊓ (A ⊔ B )), (((B ⊔ K )⊓ ¬A )⊔ ¬K )
+Componente , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Auto ), ¬Manubrio , Sterzo , ¬Auto , ¬Veicolo , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ),  ∀ haComponente.Manubrio , Manubrio , ((Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Manubrio ⊔ ¬Sterzo )
