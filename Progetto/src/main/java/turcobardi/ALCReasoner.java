@@ -356,10 +356,11 @@ public class ALCReasoner{
 	 }
 	
 	
-	/**
+	/** Modifica una knowledge base trasformando tutti gli assiomi di disgiunzione in assiomi di contenimento
+	 *  (Disj(A,B) ---> A SubClassOf not(B))
 	 * @param kb - Knowledge Base da processare
-	 * @return Knowledge Base modificata aggiungendo ad essa un preprocessing pairwise degli assiom di tipo OWLDisjointClassesAxiom in questo modo:
-	 * 		   Disj(A,B) ---> A SubClassOf not(B)
+	 * @return kb modificata
+	 * 		   
 	 */
 	private OWLOntology preProcDisjointClassesAxioms(OWLOntology kb) {
 		OWLDataFactory factory = this.editor.getFactory();
