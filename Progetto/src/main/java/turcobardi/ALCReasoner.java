@@ -76,12 +76,12 @@ public class ALCReasoner{
 		if(kb!=null) {
 			this.iri = kb.getOntologyID().getOntologyIRI().get();
 			this.editor = new OntologyEditor(kb);
-			this.printer = new OntologyPrintingVisitor(iri, "");
+			this.printer = new OntologyPrintingVisitor(iri);
 			this.gv = new GraphRenderVisitor(iri);		
 		}else {
 			this.iri = concept.getOntologyID().getOntologyIRI().get();
 			this.editor = new OntologyEditor(concept);
-			this.printer = new OntologyPrintingVisitor(iri, "");
+			this.printer = new OntologyPrintingVisitor(iri);
 			this.gv = new GraphRenderVisitor(iri);
 		}
 		this.equivalence = new EquivalenceRuleVisitor();

@@ -28,7 +28,6 @@ import org.semanticweb.owlapi.model.OWLObjectVisitor;
 public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	
 	private IRI iri = null;
-	private String toRemove = "";
 	private PrintStream out = null;
 	private final char intersect = '\u2293';
 	private final char union = '\u2294';
@@ -40,12 +39,8 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	
 	
 	
-	public OntologyPrintingVisitor(IRI iri, String toRemove) {
+	public OntologyPrintingVisitor(IRI iri) {
 		this.iri=iri;
-		if(toRemove!=null) {
-			this.toRemove=toRemove;
-		}
-		
 		try {
 			this.out = new PrintStream(System.out, true, "UTF-8");
 		} catch (UnsupportedEncodingException e) {
@@ -58,7 +53,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	
 	public void visit(OWLObjectSomeValuesFrom desc) {
 		out.print(" " + exists + " ");
-		System.out.print(conceptToString(iri, desc.getProperty().toString()));
+		System.out.print(removeIRIFromString(iri, desc.getProperty().toString()));
 		desc.getProperty().accept(this);
 		System.out.print(".");
 	    desc.getFiller().accept(this);
@@ -66,7 +61,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	}
 	
 	public void visit(OWLClass c) {
-		System.out.print(conceptToString(iri,c.toString()) + " ");
+		System.out.print(removeIRIFromString(iri,c.toString()) + " ");
 		return;
 	}
 	
@@ -108,7 +103,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	
 	public void visit(OWLObjectAllValuesFrom desc) {
 		out.print(" " + foreach + " ");
-		System.out.print(conceptToString(iri, desc.getProperty().toString()));
+		System.out.print(removeIRIFromString(iri, desc.getProperty().toString()));
 		desc.getProperty().accept(this);
 		System.out.print(".");
 	    desc.getFiller().accept(this);
@@ -120,7 +115,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		System.out.print(i.getIRI().getShortForm());
 	}
 	
-	//TODO cambiare?
+	
 	public void visit(OWLIndividual i) {
 		for (OWLNamedIndividual ind: i.getIndividualsInSignature()) {
 			ind.accept(this);
@@ -151,9 +146,13 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		System.out.print(")");
 	}
 	
-    
-    private String conceptToString(IRI iri, String str) {
-		str = str.replace(iri.toString()+toRemove, "");
+	 /** Data una stringa ed un iri, rimuove dalla stringa l'iri più i caratteri <code> "#", "<", ">"</code>
+     * @param iri
+     * @param str
+     * @return la stringa modificata
+     */
+    private String removeIRIFromString(IRI iri, String str) {
+		str = str.replace(iri.toString(), "");
 		str = str.replace("#", "");
 		str = str.replace("<", "");
 		str = str.replace(">", "");
