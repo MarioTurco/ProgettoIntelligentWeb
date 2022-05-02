@@ -1,8 +1,0 @@
-<rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:j.0="http://ontology-28#">
-  <rdf:Description rdf:about="http://ontology-28#0">
-    <j.0:clash-free rdf:resource="http://ontology-28#clash-Free"/>
-    <j.0:label>(A ⊓ B ), A , B </j.0:label>
-  </rdf:Description>
-</rdf:RDF>

@@ -22,12 +22,15 @@ import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectComplementOf;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
+import org.semanticweb.owlapi.model.OWLObjectPropertyDomainAxiom;
 import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
+import org.semanticweb.owlapi.model.OWLObjectPropertyRangeAxiom;
 import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.model.OWLPropertyDomain;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
 import guru.nidi.graphviz.attribute.Color;
@@ -351,6 +354,7 @@ public class ALCReasoner{
 	 */
 	private OWLOntology preProcDisjointClassesAxioms(OWLOntology kb) {
 		OWLDataFactory factory = this.editor.getFactory();
+		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 		for (OWLLogicalAxiom axiom: kb.getLogicalAxioms()) {
 			if(axiom instanceof OWLDisjointClassesAxiom)
 				for (OWLDisjointClassesAxiom disjAx: ((OWLDisjointClassesAxiom) axiom).asPairwiseAxioms()) {
@@ -358,9 +362,20 @@ public class ALCReasoner{
 					OWLClassExpression right = disjAx.getOperandsAsList().get(1);
 					OWLClassExpression complRight = factory.getOWLObjectComplementOf(right);
 					OWLSubClassOfAxiom axiomToAdd = factory.getOWLSubClassOfAxiom(left, complRight);
-					OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 					manKb.addAxiom(kb, axiomToAdd);
 				}
+			
+			if(axiom instanceof OWLObjectPropertyDomainAxiom) {
+				OWLObjectSomeValuesFrom relAx = factory.getOWLObjectSomeValuesFrom(((OWLObjectPropertyDomainAxiom) axiom).getProperty(), factory.getOWLThing());
+				OWLSubClassOfAxiom axiomToAdd = factory.getOWLSubClassOfAxiom(relAx, ((OWLObjectPropertyDomainAxiom) axiom).getDomain());
+				manKb.addAxiom(kb, axiomToAdd);
+			}
+			if(axiom instanceof OWLObjectPropertyRangeAxiom) {
+				OWLObjectAllValuesFrom relAx = factory.getOWLObjectAllValuesFrom(((OWLObjectPropertyRangeAxiom) axiom).getProperty(),((OWLObjectPropertyRangeAxiom) axiom).getRange());
+				OWLSubClassOfAxiom axiomToAdd = factory.getOWLSubClassOfAxiom(factory.getOWLThing(), relAx);
+				manKb.addAxiom(kb, axiomToAdd);
+			}
+			
 		}
 		return kb;
 	}
@@ -439,6 +454,15 @@ public class ALCReasoner{
 			lazyUnfolder.doLazyUnfolding();
 			Set<OWLObject> T_u = lazyUnfolder.getT_u();
 			Set<OWLObject> T_g = lazyUnfolder.getT_g();
+			OntologyPrintingVisitor printer = new OntologyPrintingVisitor(this.iri);
+	    	System.out.println("\n##########Tu#########");
+	    	for(OWLObject o: T_u) {
+	    		o.accept(printer);
+	    	}
+	    	System.out.println("\n###########Tg###########");
+	    	for(OWLObject o: T_g) {
+	    		o.accept(printer);
+	    	}
 			this.C_g = this.convertT_gWithFactory(T_g);
 			if(this.C_g!=null) {			
 				OWLClassAssertionAxiom C_gInclusionIstance = null;

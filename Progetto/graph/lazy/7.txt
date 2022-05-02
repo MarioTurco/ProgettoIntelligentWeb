@@ -1,1 +1,0 @@
-(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Componente ⊔ ¬Sterzo ), (Auto ⊓ Bicicletta ), Auto ,  ∀ haComponente.Sterzo , (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), Bicicletta , ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )), ¬Manubrio , ¬Auto ,  ∀ haComponente.Manubrio 
