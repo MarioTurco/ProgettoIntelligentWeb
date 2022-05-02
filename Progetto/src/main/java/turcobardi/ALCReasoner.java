@@ -77,12 +77,12 @@ public class ALCReasoner{
 			this.iri = kb.getOntologyID().getOntologyIRI().get();
 			this.editor = new OntologyEditor(kb);
 			this.printer = new OntologyPrintingVisitor(iri, "");
-			this.gv = new GraphRenderVisitor(iri, "http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13");		
+			this.gv = new GraphRenderVisitor(iri);		
 		}else {
 			this.iri = concept.getOntologyID().getOntologyIRI().get();
 			this.editor = new OntologyEditor(concept);
 			this.printer = new OntologyPrintingVisitor(iri, "");
-			this.gv = new GraphRenderVisitor(iri, "http://www.semanticweb.org/mario/ontologies/2022/3/untitled-ontology-13");
+			this.gv = new GraphRenderVisitor(iri);
 		}
 		this.equivalence = new EquivalenceRuleVisitor();
 		//TODO qui va messo l'iri invece che essere hardcoded

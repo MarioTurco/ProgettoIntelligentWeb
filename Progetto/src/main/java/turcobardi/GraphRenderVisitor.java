@@ -20,7 +20,6 @@ import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 public class GraphRenderVisitor implements OWLObjectVisitor{
 	
 	private IRI iri = null;
-	private String toRemove = "";
 	private final char intersect = '\u2293';
 	private final char union = '\u2294';
 	private final char foreach = '\u2200';
@@ -33,11 +32,8 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	public void printFormula() {
 		System.out.println(formula);
 	}
-	public GraphRenderVisitor(IRI iri, String toRemove) {
+	public GraphRenderVisitor(IRI iri) {
 		this.iri=iri;
-		if(toRemove!=null) {
-			this.toRemove=toRemove;
-		}
 	}
 	
 	public void addCurrentLabel(String node) {
@@ -109,7 +105,6 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 		formula=formula.concat(i.getIRI().getShortForm());
 	}
 	
-	//TODO cambiare?
 	public void visit(OWLIndividual i) {
 		for (OWLNamedIndividual ind: i.getIndividualsInSignature()) {
 			ind.accept(this);
@@ -143,7 +138,6 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
     
     private String conceptToString(IRI iri, String str) {
 		str = str.replace(iri.toString(), "");
-		str = str.replace(toRemove, "");
 		str = str.replace("#", "");
 		str = str.replace("<", "");
 		str = str.replace(">", "");
@@ -159,11 +153,5 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 		formula = formula.concat("Query:");
 		
 	}
-	
-	/* TODO non serve
-	public void addIndividual(String individual) {
-		formula = formula.concat("[" + individual + "]");
-		
-	}*/
 		
 }
