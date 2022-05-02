@@ -49,6 +49,7 @@ public class ALCReasoner{
 	private String lazyLabelsPath = null;
 	private String normalLabelsPath = null;
 	private int nClash=0;
+	private final char union = '\u2294';
 	private RDFWriter rdf= null;
 	private final String printingPath1 = "<table color='green' scale='both' cellspacing='0' cellpadding='4' border='1'> <tr > <td title='Clicca per visualizzare Lx' target='_blank' href='";
 	private final String printingPath2 = ".txt'> Label </td> </tr> </table>";
@@ -736,7 +737,7 @@ public class ALCReasoner{
                     	    }
     						formula = gv.getFormula();
     						Node current = gr.createNode( printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x",""));
-    						gr.createLink2(current, parent, "Union");
+    						gr.createLink2(current, parent, union+"");
     						gr.printLabelToFile(formula,current.name().toString(),"normal");
     						rdf.addResource(current.name().toString().replace("x", ""), formula);
     						rdf.addStatement(parent.name().toString().replace("x",""), "Union", current.name().toString().replace("x", ""));
@@ -1123,7 +1124,7 @@ public class ALCReasoner{
                     	    }
     						formula = gv.getFormula();
     						Node currentNode = gr.createNode( printingPath1 +lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x", ""));
-    						gr.createLink2(currentNode, parent, "Union");
+    						gr.createLink2(currentNode, parent, union+"");
     						gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
     						rdf.addResource(currentNode.name().toString(), formula);
     						rdf.addStatement(parent.name().toString(), "Union", currentNode.name().toString());
