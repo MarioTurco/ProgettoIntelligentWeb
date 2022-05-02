@@ -40,7 +40,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 
-		File kbFile = new File("KB_13.owl");
+		File kbFile = new File("veicolo_pep.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("KB size:" + kb.getAxiomCount());
 		IRI iriKb = kb.getOntologyID().getOntologyIRI().get();
@@ -82,10 +82,9 @@ public class App {
 =======
     	}*/
     	System.out.println("\n################Normal################");
->>>>>>> 014b70c5e6f21aa5cd3638ef26289123d03abd43
-    	executeAndPrintTime("nonEmpty", kb, query, true);
+    	executeAndPrintTime("nonEmpty", kb, query, false);
     	System.out.println("\n############LazyUnfolding#############");
-    	executeAndPrintTime("lazy", kb, query, true);
+    	executeAndPrintTime("lazy", kb, query, false);
     	
 	}
 	
