@@ -17,6 +17,16 @@ import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
+
+/**
+ * Visitor di formule che permette di stampare la formula visitata in modo compatto con simboli utf-8
+ * @author turco
+ *
+ */
+/**
+ * @author turco
+ *
+ */
 public class GraphRenderVisitor implements OWLObjectVisitor{
 	
 	private IRI iri = null;
@@ -29,18 +39,29 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	private String formula= "";
 	
 	
-	public void printFormula() {
-		System.out.println(formula);
-	}
 	public GraphRenderVisitor(IRI iri) {
 		this.iri=iri;
 	}
+	
+	
+	/**
+	 *  Stampa la formula visitata
+	 */
+	public void printFormula() {
+		System.out.println(formula);
+	}
+	
 	
 	public void addCurrentLabel(String node) {
 		formula = formula.concat("{" + node +"}\n");
 	}
 	
-	public String getFormula() {
+	
+	/** Metodo che restituisce l'ultima formula visitata e la cancella dal visitor. </br>
+	 * Si noti che quindi dopo la chiamata di tale funzione, il valore <code> this.formula </code> sarà la stringa vuota
+	 * @return una stringa contenente la formula 
+	 */
+	public String getAndClearFormula() {
 		String tmp = new String(formula);
 		formula = "";
 		//rimuoviamo gli ultimi due caratteri, ovvero una virgola ed uno spazio		
@@ -143,8 +164,12 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 		str = str.replace(">", "");
 		return str;
 	}
-
-	public void addSemicolon() {
+    
+    
+	/**
+	 * Aggiunge una virgola come ultimo carattere della formula
+	 */
+	public void addColonToFormula() {
 		formula = formula.concat(", ");
 		
 	}

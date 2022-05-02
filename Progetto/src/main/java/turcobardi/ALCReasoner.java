@@ -415,10 +415,10 @@ public class ALCReasoner{
 			}
 			for(OWLObject o: Lx) {
 				o.accept(gv);
-				gv.addSemicolon();
+				gv.addColonToFormula();
 			}
 			//Creiamo il nodo principale
-			String formula = gv.getFormula();
+			String formula = gv.getAndClearFormula();
 			Node current = gr.createNode(printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x", "") );
 			gr.printLabelToFile(formula,current.name().toString(),"normal");
 			System.out.println("FORMULA: " + formula);
@@ -463,9 +463,9 @@ public class ALCReasoner{
 			}
 			for(OWLObject o: Lx) {
 				o.accept(gv);
-				gv.addSemicolon();
+				gv.addColonToFormula();
 			}
-			String formula = gv.getFormula();
+			String formula = gv.getAndClearFormula();
 			Node current = gr.createNode(printingPath1+lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x", "") );
 			gr.printLabelToFile(formula,current.name().toString(),"lazy");
 			rdf.addResource(current.name().toString(), formula);
@@ -514,9 +514,9 @@ public class ALCReasoner{
     	}
     	for (OWLObject o: Lx) {
     		o.accept(gv);
-    		gv.addSemicolon();
+    		gv.addColonToFormula();
     	}
-    	String formula = gv.getFormula();
+    	String formula = gv.getAndClearFormula();
     	parent = gr.editNodeLabel(parent, parent.name().toString().replace("x", ""), printingPath1 +normalLabelsPath+"\\"+parent.name().toString()+printingPath2 );
     	rdf.editLabelProperty(parent.name().toString().replace("x", ""), formula);
     	gr.printLabelToFile(formula, parent.name().toString().replace("x", ""), "normal");
@@ -539,7 +539,6 @@ public class ALCReasoner{
     		if(predLx.containsAll(Lx)) {
     			Node blocking = gr.createNode("BLOCKING");
     			gr.createLink2(blocking, parent, "", Color.ORANGE);
-    			//System.out.println("\nBLOCKING TRUE");
     			return true;  
     		}
     	}
@@ -553,7 +552,6 @@ public class ALCReasoner{
     	if(arePresentDisj) {
     		
     		for (OWLObject axiom: Lx) {
-    			//System.out.println("\nSPACCHETTO OR: ");
     			//ax.accept(printer);
     			Set<OWLObject> resURule = this.unionRule(axiom,ind.getIRI().getShortForm());
     			if(resURule.size()>0) {
@@ -569,9 +567,9 @@ public class ALCReasoner{
     						//TODO grafo
     						for(OWLObject a: tmpLx){
                     	    	a.accept(gv);
-                    	    	gv.addSemicolon();
+                    	    	gv.addColonToFormula();
                     	    }
-    						formula = gv.getFormula();
+    						formula = gv.getAndClearFormula();
     						Node current = gr.createNode( printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x",""));
     						gr.createLink2(current, parent, union+"");
     						gr.printLabelToFile(formula,current.name().toString(),"normal");
@@ -660,9 +658,9 @@ public class ALCReasoner{
         			}
         			for (OWLObject ax: newLx) {
         	    		ax.accept(gv);
-        	    		gv.addSemicolon();
+        	    		gv.addColonToFormula();
         	    	}
-        			formula = gv.getFormula();
+        			formula = gv.getAndClearFormula();
         			relationName = relationName.replace("<", "");
         			relationName = relationName.replace(">", "");
         			relationName = relationName.replace("#", "");
@@ -687,9 +685,9 @@ public class ALCReasoner{
         						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
         						for(OWLObject ax: newLx) {
         							ax.accept(gv);
-        							gv.addSemicolon();
+        							gv.addColonToFormula();
         						}
-        						formula = gv.getFormula();
+        						formula = gv.getAndClearFormula();
         						current = gr.editNodeLabel(current, ind.getIRI().getShortForm().replace("x", ""), printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2);
         						gr.printLabelToFile(formula, current.name().toString(), "normal");
         						rdf.editLabelProperty(current.name().toString(), formula);
@@ -882,10 +880,10 @@ public class ALCReasoner{
 		}*/
     	for (OWLObject o: Lx) {
     		o.accept(gv);
-    		gv.addSemicolon();
+    		gv.addColonToFormula();
     	}
     	//Edit the parent node
-    	String formula = gv.getFormula();
+    	String formula = gv.getAndClearFormula();
     	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm().replace("x", ""),  printingPath1 +lazyLabelsPath+"\\"+parent.name().toString()+printingPath2 );
     	gr.printLabelToFile(formula, parent.name().toString(), "lazy");
     	rdf.editLabelProperty(parent.name().toString(), formula);
@@ -956,9 +954,9 @@ public class ALCReasoner{
     						
     						for(OWLObject a: tmpLx){
                     	    	a.accept(gv);
-                    	    	gv.addSemicolon();
+                    	    	gv.addColonToFormula();
                     	    }
-    						formula = gv.getFormula();
+    						formula = gv.getAndClearFormula();
     						Node currentNode = gr.createNode( printingPath1 +lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x", ""));
     						gr.createLink2(currentNode, parent, union+"");
     						gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
@@ -1050,12 +1048,12 @@ public class ALCReasoner{
         			}
         			for (OWLObject ax: newLx) {
         	    		ax.accept(gv);
-        	    		gv.addSemicolon();
+        	    		gv.addColonToFormula();
         	    	}
         			relationName = relationName.replace("<", "");
         			relationName = relationName.replace(">", "");
         			relationName = relationName.replace("#", "");
-        			formula = gv.getFormula();
+        			formula = gv.getAndClearFormula();
         			Node currentNode = gr.createNode(printingPath1+ lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath2,  newIndName.replace("x", ""));
 
         			gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
@@ -1074,9 +1072,9 @@ public class ALCReasoner{
         						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
         						for(OWLObject ax: newLx) {
         							ax.accept(gv);
-        							gv.addSemicolon();
+        							gv.addColonToFormula();
         						}
-        						formula = gv.getFormula();
+        						formula = gv.getAndClearFormula();
         						currentNode = gr.editNodeLabel(currentNode, ind.getIRI().getShortForm().replace("x",""), printingPath1 +lazyLabelsPath+"\\"+currentNode.name().toString()+printingPath2);
         						gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
         						rdf.editLabelProperty(currentNode.name().toString(), formula);
