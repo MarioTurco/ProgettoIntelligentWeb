@@ -126,7 +126,8 @@ public class GraphRenderer {
 	}
 	
 	/**
-	 * Crea un file .SVG contenente il grafo 
+	 * Crea un file .SVG contenente il grafo. 
+	 * Si noti che dopo la stampa, il grafo viene reinizializzato ed i nodi vengono cancellati.
 	 * @param path - il path del file compreso del nome (ad. es 'folder/file')
 	 * @throws IOException
 	 */
