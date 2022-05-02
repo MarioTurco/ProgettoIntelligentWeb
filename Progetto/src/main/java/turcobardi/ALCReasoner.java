@@ -87,7 +87,9 @@ public class ALCReasoner{
 		this.equivalence = new EquivalenceRuleVisitor();
 		this.lazyLabelsPath = new File("graph\\lazy").getAbsolutePath();
 		this.normalLabelsPath = new File("graph\\normal").getAbsolutePath();
-		this.kb = this.preProcDisjointClassesAxioms(kb);
+		if (kb!=null) {
+			this.kb = this.preProcDisjointClassesAxioms(kb);
+		}
 	}
 	
 	private OWLSubClassOfAxiom convertT_gWithFactory(Set<OWLObject> T_g) {
