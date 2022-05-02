@@ -36,32 +36,21 @@ public class App {
 	
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
-		//OWLOntologyManager manQ = OWLManager.createOWLOntologyManager();
+
 		File kbFile = new File("veicolo.owl");
-		//File queryFile = new File("concept_2.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
-		System.out.println("Numero assiomi :" + kb.getAxiomCount());
+		System.out.println("KB size:" + kb.getAxiomCount());
 		IRI iriKb = kb.getOntologyID().getOntologyIRI().get();
-		//System.out.println("KB: "+iriKb);
-		//OWLOntology query = manQ.loadOntologyFromOntologyDocument(queryFile);
-		//System.out.println("Numero assiomi :" + query.getAxiomCount());
-		//IRI iriQuery = kb.getOntologyID().getOntologyIRI().get();
-		//System.out.println("QUERY: " +iriQuery);
-		/*
-		//stampa il nome delle entità
-    	o.signature().forEach(s -> System.out.println(s.toString().replace(iri.toString(), "")));
-    	
-    	}*/
+
 		OntologyPrintingVisitor visitor = new OntologyPrintingVisitor(iriKb);
 		Set<OWLLogicalAxiom> logicalAxiomsKb = kb.getLogicalAxioms(Imports.fromBoolean(false));
-		System.out.println("KB size: " + logicalAxiomsKb.size());
+		System.out.println("KB has " + logicalAxiomsKb.size()+ " axioms");
 		
 		System.out.println("##########KB###########");
     	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsKb){
-    		logicalAxiom.accept(visitor); //prints the logical axiom
+    		logicalAxiom.accept(visitor); 
     	}
     	OWLOntology query = getQueryFromStdIn(kb);
-    	//System.out.println("QUERY CREATA");
 
     	Set<OWLLogicalAxiom> logicalAxiomsQuery = query.getLogicalAxioms(Imports.fromBoolean(false));
 
@@ -70,7 +59,7 @@ public class App {
     	System.out.println("\n#########Query##########: ");
     	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsQuery){
     		
-    		logicalAxiom.accept(visitor); //prints the logical axiom
+    		logicalAxiom.accept(visitor); 
     	}
     	
     	LazyUnfolder lazy = new LazyUnfolder(kb);
@@ -87,9 +76,6 @@ public class App {
     	executeAndPrintTime("nonEmpty", kb, query, false);
     	System.out.println("\n############LazyUnfolding#############");
     	executeAndPrintTime("lazy", kb, query, false);
-    	
-    	
-    	
     	
 	}
 	
