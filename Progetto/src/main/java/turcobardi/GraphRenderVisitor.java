@@ -75,17 +75,18 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	public void visit(OWLObjectComplementOf eq) {
 		formula=formula.concat(""+not);
 		eq.getOperand().accept(this);
-		//System.out.print(conceptToString(iri, eq.getOperand().toString()) + " ");
 	}
+	
 	public void visit(OWLSubClassOfAxiom sub) {
 		sub.getSubClass().accept(this);
 		formula=formula.concat(inclusion+"");
 		sub.getSuperClass().accept(this);
 	}
+	
 	public void visit(OWLEquivalentClassesAxiom eq) {
-		eq.getOperandsAsList().get(0).accept(this); //sinistra
+		eq.getOperandsAsList().get(0).accept(this); 
 		formula=formula.concat(" = ");
-		eq.getOperandsAsList().get(1).accept(this); //destra
+		eq.getOperandsAsList().get(1).accept(this); 
 		return;
 	}
 	
@@ -126,7 +127,6 @@ public class GraphRenderVisitor implements OWLObjectVisitor{
 	
 	public void visit(OWLClassAssertionAxiom o) {
 		OWLIndividual individual = o.getIndividual();
-		//System.out.println(o);
 		o.getClassExpression().accept(this);
 		formula=formula.concat("(");
 		individual.accept(this);

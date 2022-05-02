@@ -408,7 +408,6 @@ public class ALCReasoner{
 			String formula = gv.getAndClearFormula();
 			Node current = gr.createNode(printingPath1+normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath2, ind.getIRI().getShortForm().replace("x", "") );
 			gr.printLabelToFile(formula,current.name().toString(),"normal");
-			System.out.println("FORMULA: " + formula);
 			rdf.addResource(current.name().toString(), formula);
 			if(printGraph)
 				return implementTableauxNonEmptyTbox(ind, Lx, aBox, null, current);	
