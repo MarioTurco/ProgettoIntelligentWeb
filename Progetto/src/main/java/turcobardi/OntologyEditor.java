@@ -15,6 +15,10 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 
 
 
+/**
+ * Classe che serve a creare individui ed asserzioni
+ *
+ */
 public class OntologyEditor {
 	OWLOntology ontology = null;
 	IRI iri = null;
@@ -51,7 +55,6 @@ public class OntologyEditor {
 	
 	public OWLClass getTop() {
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		//OWLOntology ont = manager.createOntology();
 		OWLDataFactory factory = manager.getOWLDataFactory();
 		OWLClass top= factory.getOWLThing();
 		return top;
