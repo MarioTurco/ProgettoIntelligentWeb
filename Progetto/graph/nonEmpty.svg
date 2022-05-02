@@ -1,104 +1,2212 @@
-<svg width="270px" height="323px"
- viewBox="0.00 0.00 269.51 322.60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 318.6)">
+<svg width="3208px" height="2099px"
+ viewBox="0.00 0.00 3208.00 2098.60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 2094.6)">
 <title>tableaux</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-318.6 265.51,-318.6 265.51,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-2094.6 3204,-2094.6 3204,4 -4,4"/>
 <!-- 0 -->
 <g id="node1" class="node">
 <title>0</title>
-<ellipse fill="none" stroke="black" cx="140" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="start" x="133" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="140" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node1_0"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\0.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
-<polygon fill="none" stroke="green" points="64,-287.6 64,-313.6 112,-313.6 112,-287.6 64,-287.6"/>
-<text text-anchor="start" x="68.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="1875" cy="-2044.6" rx="27" ry="18"/>
+<text text-anchor="start" x="1868" y="-2041.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1875" y="-2041.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node1_0"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\0.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1799,-2063.6 1799,-2089.6 1847,-2089.6 1847,-2063.6 1799,-2063.6"/>
+<text text-anchor="start" x="1803.56" y="-2072" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="63,-286.6 63,-314.6 113,-314.6 113,-286.6 63,-286.6"/>
+<polygon fill="none" stroke="green" points="1798,-2062.6 1798,-2090.6 1848,-2090.6 1848,-2062.6 1798,-2062.6"/>
 </g>
 <!-- 1 -->
 <g id="node2" class="node">
 <title>1</title>
-<ellipse fill="none" stroke="black" cx="104" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="97" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="104" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
-<g id="a_node2_1"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\1.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
-<polygon fill="none" stroke="green" points="28,-198.8 28,-224.8 76,-224.8 76,-198.8 28,-198.8"/>
-<text text-anchor="start" x="32.56" y="-207.2" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="1875" cy="-1955.8" rx="27" ry="18"/>
+<text text-anchor="start" x="1868" y="-1952.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1875" y="-1952.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node2_1"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\1.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1799,-1974.8 1799,-2000.8 1847,-2000.8 1847,-1974.8 1799,-1974.8"/>
+<text text-anchor="start" x="1803.56" y="-1983.2" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="27,-197.8 27,-225.8 77,-225.8 77,-197.8 27,-197.8"/>
+<polygon fill="none" stroke="green" points="1798,-1973.8 1798,-2001.8 1848,-2001.8 1848,-1973.8 1798,-1973.8"/>
 </g>
 <!-- 0&#45;&gt;1 -->
-<g id="edge2" class="edge">
-<title>0&#45;&gt;1</title>
-<path fill="none" stroke="black" d="M133.06,-250.86C127.88,-238.38 120.71,-221.08 114.78,-206.8"/>
-<polygon fill="black" stroke="black" points="117.98,-205.38 110.92,-197.48 111.52,-208.06 117.98,-205.38"/>
-<text text-anchor="middle" x="130.67" y="-220" font-family="Times,serif" font-size="14.00">R</text>
-</g>
-<!-- 4 -->
-<g id="node5" class="node">
-<title>4</title>
-<ellipse fill="none" stroke="black" cx="187" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="180" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="187" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">3</text>
-<g id="a_node5_2"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\4.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
-<polygon fill="none" stroke="green" points="111,-134.8 111,-160.8 159,-160.8 159,-134.8 111,-134.8"/>
-<text text-anchor="start" x="115.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="110,-133.8 110,-161.8 160,-161.8 160,-133.8 110,-133.8"/>
-</g>
-<!-- 0&#45;&gt;4 -->
 <g id="edge1" class="edge">
-<title>0&#45;&gt;4</title>
-<path fill="none" stroke="black" d="M148.84,-251.27C155.73,-238.54 165.43,-220.64 173.32,-206.06"/>
-<polygon fill="black" stroke="black" points="176.52,-207.51 178.2,-197.05 170.36,-204.18 176.52,-207.51"/>
-<text text-anchor="middle" x="171.89" y="-220" font-family="Times,serif" font-size="14.00">S</text>
+<title>0&#45;&gt;1</title>
+<path fill="none" stroke="black" d="M1875,-2026.45C1875,-2014.32 1875,-1997.82 1875,-1983.92"/>
+<polygon fill="black" stroke="black" points="1878.5,-1983.91 1875,-1973.91 1871.5,-1983.91 1878.5,-1983.91"/>
+<text text-anchor="middle" x="1892.5" y="-1996" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 <!-- 2 -->
 <g id="node3" class="node">
 <title>2</title>
-<ellipse fill="none" stroke="black" cx="77" cy="-91" rx="27" ry="18"/>
-<text text-anchor="start" x="70" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="77" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
-<g id="a_node3_3"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\2.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
-<polygon fill="none" stroke="green" points="1,-110 1,-136 49,-136 49,-110 1,-110"/>
-<text text-anchor="start" x="5.56" y="-118.4" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="1835" cy="-1867" rx="27" ry="18"/>
+<text text-anchor="start" x="1828" y="-1863.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1835" y="-1863.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node3_2"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\2.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1759,-1886 1759,-1912 1807,-1912 1807,-1886 1759,-1886"/>
+<text text-anchor="start" x="1763.56" y="-1894.4" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="0,-109 0,-137 50,-137 50,-109 0,-109"/>
+<polygon fill="none" stroke="green" points="1758,-1885 1758,-1913 1808,-1913 1808,-1885 1758,-1885"/>
 </g>
 <!-- 1&#45;&gt;2 -->
 <g id="edge3" class="edge">
 <title>1&#45;&gt;2</title>
-<path fill="none" stroke="black" d="M98.79,-162.06C94.95,-149.7 89.63,-132.61 85.21,-118.41"/>
-<polygon fill="black" stroke="black" points="88.5,-117.19 82.19,-108.68 81.82,-119.27 88.5,-117.19"/>
-<text text-anchor="middle" x="96.89" y="-131.2" font-family="Times,serif" font-size="14.00">S</text>
+<path fill="none" stroke="black" d="M1864.14,-1939.2C1860.31,-1933.3 1856.17,-1926.4 1853,-1919.8 1849.19,-1911.87 1845.79,-1902.91 1842.99,-1894.71"/>
+<polygon fill="black" stroke="black" points="1846.32,-1893.61 1839.9,-1885.19 1839.66,-1895.78 1846.32,-1893.61"/>
+<text text-anchor="middle" x="1871.5" y="-1907.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 4 -->
+<g id="node5" class="node">
+<title>4</title>
+<ellipse fill="none" stroke="black" cx="1915" cy="-1867" rx="27" ry="18"/>
+<text text-anchor="start" x="1908" y="-1863.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1915" y="-1863.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node5_3"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\4.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1839,-1822 1839,-1848 1887,-1848 1887,-1822 1839,-1822"/>
+<text text-anchor="start" x="1843.56" y="-1830.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1838,-1821 1838,-1849 1888,-1849 1888,-1821 1838,-1821"/>
+</g>
+<!-- 1&#45;&gt;4 -->
+<g id="edge2" class="edge">
+<title>1&#45;&gt;4</title>
+<path fill="none" stroke="black" d="M1882.52,-1938.47C1888.3,-1925.94 1896.38,-1908.4 1903.04,-1893.96"/>
+<polygon fill="black" stroke="black" points="1906.37,-1895.1 1907.37,-1884.55 1900.01,-1892.17 1906.37,-1895.1"/>
+<text text-anchor="middle" x="1916.5" y="-1907.2" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 <!-- 3 -->
 <g id="node4" class="node">
 <title>3</title>
-<ellipse fill="none" stroke="black" cx="77" cy="-18" rx="69.52" ry="18"/>
-<text text-anchor="start" x="34.62" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH&#45;FREE</text>
+<ellipse fill="none" stroke="black" cx="1827" cy="-1778.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1804.06" y="-1774" font-family="Times,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 2&#45;&gt;3 -->
 <g id="edge4" class="edge">
 <title>2&#45;&gt;3</title>
-<path fill="none" stroke="green" d="M77,-72.81C77,-64.79 77,-55.05 77,-46.07"/>
-<polygon fill="green" stroke="green" points="80.5,-46.03 77,-36.03 73.5,-46.03 80.5,-46.03"/>
+<path fill="none" stroke="red" d="M1833.42,-1848.85C1832.3,-1836.72 1830.78,-1820.22 1829.5,-1806.32"/>
+<polygon fill="red" stroke="red" points="1832.98,-1805.95 1828.58,-1796.31 1826.01,-1806.59 1832.98,-1805.95"/>
 </g>
 <!-- 5 -->
 <g id="node6" class="node">
 <title>5</title>
-<ellipse fill="none" stroke="black" cx="192" cy="-91" rx="69.52" ry="18"/>
-<text text-anchor="start" x="149.62" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH&#45;FREE</text>
+<ellipse fill="none" stroke="black" cx="1915" cy="-1778.2" rx="27" ry="18"/>
+<text text-anchor="start" x="1908" y="-1775" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1915" y="-1775" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node6_4"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\5.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1839,-1733.2 1839,-1759.2 1887,-1759.2 1887,-1733.2 1839,-1733.2"/>
+<text text-anchor="start" x="1843.56" y="-1741.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1838,-1732.2 1838,-1760.2 1888,-1760.2 1888,-1732.2 1838,-1732.2"/>
 </g>
 <!-- 4&#45;&gt;5 -->
-<g id="edge5" class="edge">
+<g id="edge6" class="edge">
 <title>4&#45;&gt;5</title>
-<path fill="none" stroke="green" d="M187.99,-161.65C188.69,-149.52 189.64,-133.02 190.44,-119.12"/>
-<polygon fill="green" stroke="green" points="193.93,-119.3 191.01,-109.11 186.94,-118.9 193.93,-119.3"/>
+<path fill="none" stroke="black" d="M1915,-1848.85C1915,-1836.72 1915,-1820.22 1915,-1806.32"/>
+<polygon fill="black" stroke="black" points="1918.5,-1806.31 1915,-1796.31 1911.5,-1806.31 1918.5,-1806.31"/>
+<text text-anchor="middle" x="1932.5" y="-1818.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 86 -->
+<g id="node87" class="node">
+<title>86</title>
+<ellipse fill="none" stroke="black" cx="2329" cy="-1778.2" rx="27" ry="18"/>
+<text text-anchor="start" x="2322" y="-1775" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2329" y="-1775" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node87_5"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\86.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2253,-1797.2 2253,-1823.2 2301,-1823.2 2301,-1797.2 2253,-1797.2"/>
+<text text-anchor="start" x="2257.56" y="-1805.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2252,-1796.2 2252,-1824.2 2302,-1824.2 2302,-1796.2 2252,-1796.2"/>
+</g>
+<!-- 4&#45;&gt;86 -->
+<g id="edge5" class="edge">
+<title>4&#45;&gt;86</title>
+<path fill="none" stroke="black" d="M1940.59,-1860.64C2011.76,-1845.71 2212.2,-1803.69 2293.79,-1786.58"/>
+<polygon fill="black" stroke="black" points="2294.52,-1790.01 2303.59,-1784.53 2293.08,-1783.15 2294.52,-1790.01"/>
+<text text-anchor="middle" x="2177.5" y="-1818.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 6 -->
+<g id="node7" class="node">
+<title>6</title>
+<ellipse fill="none" stroke="black" cx="932" cy="-1689.4" rx="27" ry="18"/>
+<text text-anchor="start" x="925" y="-1686.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="932" y="-1686.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node7_6"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\6.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="856,-1708.4 856,-1734.4 904,-1734.4 904,-1708.4 856,-1708.4"/>
+<text text-anchor="start" x="860.56" y="-1716.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="855,-1707.4 855,-1735.4 905,-1735.4 905,-1707.4 855,-1707.4"/>
+</g>
+<!-- 5&#45;&gt;6 -->
+<g id="edge8" class="edge">
+<title>5&#45;&gt;6</title>
+<path fill="none" stroke="black" d="M1894.93,-1766.14C1889.87,-1763.8 1884.35,-1761.61 1879,-1760.2 1702.49,-1713.74 1122.79,-1695.43 969.48,-1691.33"/>
+<polygon fill="black" stroke="black" points="969.27,-1687.83 959.18,-1691.06 969.09,-1694.82 969.27,-1687.83"/>
+<text text-anchor="middle" x="1783.5" y="-1729.6" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 43 -->
+<g id="node44" class="node">
+<title>43</title>
+<ellipse fill="none" stroke="black" cx="1915" cy="-1689.4" rx="27" ry="18"/>
+<text text-anchor="start" x="1908" y="-1686.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1915" y="-1686.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node44_7"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\43.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1839,-1672.4 1839,-1698.4 1887,-1698.4 1887,-1672.4 1839,-1672.4"/>
+<text text-anchor="start" x="1843.56" y="-1680.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1838,-1671.4 1838,-1699.4 1888,-1699.4 1888,-1671.4 1838,-1671.4"/>
+</g>
+<!-- 5&#45;&gt;43 -->
+<g id="edge7" class="edge">
+<title>5&#45;&gt;43</title>
+<path fill="none" stroke="black" d="M1915,-1760.05C1915,-1747.92 1915,-1731.42 1915,-1717.52"/>
+<polygon fill="black" stroke="black" points="1918.5,-1717.51 1915,-1707.51 1911.5,-1717.51 1918.5,-1717.51"/>
+<text text-anchor="middle" x="1932.5" y="-1729.6" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 7 -->
+<g id="node8" class="node">
+<title>7</title>
+<ellipse fill="none" stroke="black" cx="423" cy="-1600.6" rx="27" ry="18"/>
+<text text-anchor="start" x="416" y="-1597.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="423" y="-1597.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node8_8"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\7.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="347,-1619.6 347,-1645.6 395,-1645.6 395,-1619.6 347,-1619.6"/>
+<text text-anchor="start" x="351.56" y="-1628" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="346,-1618.6 346,-1646.6 396,-1646.6 396,-1618.6 346,-1618.6"/>
+</g>
+<!-- 6&#45;&gt;7 -->
+<g id="edge10" class="edge">
+<title>6&#45;&gt;7</title>
+<path fill="none" stroke="black" d="M906.06,-1683.98C821.81,-1669.61 555.76,-1624.24 458.8,-1607.7"/>
+<polygon fill="black" stroke="black" points="459.34,-1604.25 448.89,-1606.01 458.16,-1611.15 459.34,-1604.25"/>
+<text text-anchor="middle" x="741.5" y="-1640.8" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 25 -->
+<g id="node26" class="node">
+<title>25</title>
+<ellipse fill="none" stroke="black" cx="932" cy="-1600.6" rx="27" ry="18"/>
+<text text-anchor="start" x="925" y="-1597.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="932" y="-1597.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node26_9"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\25.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="856,-1619.6 856,-1645.6 904,-1645.6 904,-1619.6 856,-1619.6"/>
+<text text-anchor="start" x="860.56" y="-1628" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="855,-1618.6 855,-1646.6 905,-1646.6 905,-1618.6 855,-1618.6"/>
+</g>
+<!-- 6&#45;&gt;25 -->
+<g id="edge9" class="edge">
+<title>6&#45;&gt;25</title>
+<path fill="none" stroke="black" d="M932,-1671.25C932,-1659.12 932,-1642.62 932,-1628.72"/>
+<polygon fill="black" stroke="black" points="935.5,-1628.71 932,-1618.71 928.5,-1628.71 935.5,-1628.71"/>
+<text text-anchor="middle" x="949.5" y="-1640.8" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 8 -->
+<g id="node9" class="node">
+<title>8</title>
+<ellipse fill="none" stroke="black" cx="169" cy="-1511.8" rx="27" ry="18"/>
+<text text-anchor="start" x="162" y="-1508.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="169" y="-1508.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node9_10"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\8.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="93,-1530.8 93,-1556.8 141,-1556.8 141,-1530.8 93,-1530.8"/>
+<text text-anchor="start" x="97.56" y="-1539.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="92,-1529.8 92,-1557.8 142,-1557.8 142,-1529.8 92,-1529.8"/>
+</g>
+<!-- 7&#45;&gt;8 -->
+<g id="edge12" class="edge">
+<title>7&#45;&gt;8</title>
+<path fill="none" stroke="black" d="M399.56,-1591.59C354.22,-1576.09 254.38,-1541.98 202.22,-1524.15"/>
+<polygon fill="black" stroke="black" points="203.35,-1520.84 192.75,-1520.92 201.08,-1527.46 203.35,-1520.84"/>
+<text text-anchor="middle" x="336.5" y="-1552" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 13 -->
+<g id="node14" class="node">
+<title>13</title>
+<ellipse fill="none" stroke="black" cx="423" cy="-1511.8" rx="27" ry="18"/>
+<text text-anchor="start" x="416" y="-1508.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="423" y="-1508.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node14_11"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\13.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="347,-1494.8 347,-1520.8 395,-1520.8 395,-1494.8 347,-1494.8"/>
+<text text-anchor="start" x="351.56" y="-1503.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="346,-1493.8 346,-1521.8 396,-1521.8 396,-1493.8 346,-1493.8"/>
+</g>
+<!-- 7&#45;&gt;13 -->
+<g id="edge11" class="edge">
+<title>7&#45;&gt;13</title>
+<path fill="none" stroke="black" d="M423,-1582.45C423,-1570.32 423,-1553.82 423,-1539.92"/>
+<polygon fill="black" stroke="black" points="426.5,-1539.91 423,-1529.91 419.5,-1539.91 426.5,-1539.91"/>
+<text text-anchor="middle" x="440.5" y="-1552" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 9 -->
+<g id="node10" class="node">
+<title>9</title>
+<ellipse fill="none" stroke="black" cx="77" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="70" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="77" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node10_12"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\9.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1,-1442 1,-1468 49,-1468 49,-1442 1,-1442"/>
+<text text-anchor="start" x="5.56" y="-1450.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="0,-1441 0,-1469 50,-1469 50,-1441 0,-1441"/>
+</g>
+<!-- 8&#45;&gt;9 -->
+<g id="edge14" class="edge">
+<title>8&#45;&gt;9</title>
+<path fill="none" stroke="black" d="M153.3,-1496.98C146.13,-1490.61 137.57,-1482.89 130,-1475.8 119.63,-1466.08 108.34,-1455.11 98.85,-1445.77"/>
+<polygon fill="black" stroke="black" points="101.26,-1443.22 91.69,-1438.68 96.34,-1448.2 101.26,-1443.22"/>
+<text text-anchor="middle" x="148.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 11 -->
+<g id="node12" class="node">
+<title>11</title>
+<ellipse fill="none" stroke="black" cx="169" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="162" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="169" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node12_13"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\11.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="93,-1378 93,-1404 141,-1404 141,-1378 93,-1378"/>
+<text text-anchor="start" x="97.56" y="-1386.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="92,-1377 92,-1405 142,-1405 142,-1377 92,-1377"/>
+</g>
+<!-- 8&#45;&gt;11 -->
+<g id="edge13" class="edge">
+<title>8&#45;&gt;11</title>
+<path fill="none" stroke="black" d="M169,-1493.65C169,-1481.52 169,-1465.02 169,-1451.12"/>
+<polygon fill="black" stroke="black" points="172.5,-1451.11 169,-1441.11 165.5,-1451.11 172.5,-1451.11"/>
+<text text-anchor="middle" x="186.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 10 -->
+<g id="node11" class="node">
+<title>10</title>
+<ellipse fill="none" stroke="black" cx="66" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="43.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 9&#45;&gt;10 -->
+<g id="edge15" class="edge">
+<title>9&#45;&gt;10</title>
+<path fill="none" stroke="red" d="M74.83,-1404.85C73.29,-1392.72 71.2,-1376.22 69.44,-1362.32"/>
+<polygon fill="red" stroke="red" points="72.9,-1361.79 68.17,-1352.31 65.95,-1362.67 72.9,-1361.79"/>
+</g>
+<!-- 12 -->
+<g id="node13" class="node">
+<title>12</title>
+<ellipse fill="none" stroke="black" cx="169" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="146.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 11&#45;&gt;12 -->
+<g id="edge16" class="edge">
+<title>11&#45;&gt;12</title>
+<path fill="none" stroke="red" d="M169,-1404.85C169,-1392.72 169,-1376.22 169,-1362.32"/>
+<polygon fill="red" stroke="red" points="172.5,-1362.31 169,-1352.31 165.5,-1362.31 172.5,-1362.31"/>
+</g>
+<!-- 14 -->
+<g id="node15" class="node">
+<title>14</title>
+<ellipse fill="none" stroke="black" cx="287" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="280" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="287" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node15_14"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\14.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="211,-1442 211,-1468 259,-1468 259,-1442 211,-1442"/>
+<text text-anchor="start" x="215.56" y="-1450.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="210,-1441 210,-1469 260,-1469 260,-1441 210,-1441"/>
+</g>
+<!-- 13&#45;&gt;14 -->
+<g id="edge20" class="edge">
+<title>13&#45;&gt;14</title>
+<path fill="none" stroke="black" d="M401.38,-1500.62C388.01,-1494.06 370.65,-1485.04 356,-1475.8 340.62,-1466.1 324.31,-1453.95 311.41,-1443.85"/>
+<polygon fill="black" stroke="black" points="313.48,-1441.03 303.47,-1437.56 309.13,-1446.52 313.48,-1441.03"/>
+<text text-anchor="middle" x="374.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 16 -->
+<g id="node17" class="node">
+<title>16</title>
+<ellipse fill="none" stroke="black" cx="383" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="376" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="383" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node17_15"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\16.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="307,-1442 307,-1468 355,-1468 355,-1442 307,-1442"/>
+<text text-anchor="start" x="311.56" y="-1450.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="306,-1441 306,-1469 356,-1469 356,-1441 306,-1441"/>
+</g>
+<!-- 13&#45;&gt;16 -->
+<g id="edge19" class="edge">
+<title>13&#45;&gt;16</title>
+<path fill="none" stroke="black" d="M412.14,-1495.2C408.31,-1489.3 404.17,-1482.4 401,-1475.8 397.19,-1467.87 393.79,-1458.91 390.99,-1450.71"/>
+<polygon fill="black" stroke="black" points="394.32,-1449.61 387.9,-1441.19 387.66,-1451.78 394.32,-1449.61"/>
+<text text-anchor="middle" x="419.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 18 -->
+<g id="node19" class="node">
+<title>18</title>
+<ellipse fill="none" stroke="black" cx="463" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="456" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="463" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node19_16"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\18.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="387,-1378 387,-1404 435,-1404 435,-1378 387,-1378"/>
+<text text-anchor="start" x="391.56" y="-1386.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="386,-1377 386,-1405 436,-1405 436,-1377 386,-1377"/>
+</g>
+<!-- 13&#45;&gt;18 -->
+<g id="edge18" class="edge">
+<title>13&#45;&gt;18</title>
+<path fill="none" stroke="black" d="M430.52,-1494.47C436.3,-1481.94 444.38,-1464.4 451.04,-1449.96"/>
+<polygon fill="black" stroke="black" points="454.37,-1451.1 455.37,-1440.55 448.01,-1448.17 454.37,-1451.1"/>
+<text text-anchor="middle" x="464.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 23 -->
+<g id="node24" class="node">
+<title>23</title>
+<ellipse fill="none" stroke="black" cx="594" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="587" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="594" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node24_17"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\23.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="518,-1406 518,-1432 566,-1432 566,-1406 518,-1406"/>
+<text text-anchor="start" x="522.56" y="-1414.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="517,-1405 517,-1433 567,-1433 567,-1405 517,-1405"/>
+</g>
+<!-- 13&#45;&gt;23 -->
+<g id="edge17" class="edge">
+<title>13&#45;&gt;23</title>
+<path fill="none" stroke="black" d="M443.97,-1500.16C474.05,-1484.89 529.61,-1456.69 564.02,-1439.22"/>
+<polygon fill="black" stroke="black" points="565.8,-1442.24 573.13,-1434.59 562.63,-1436 565.8,-1442.24"/>
+<text text-anchor="middle" x="541.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 15 -->
+<g id="node16" class="node">
+<title>15</title>
+<ellipse fill="none" stroke="black" cx="272" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="249.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 14&#45;&gt;15 -->
+<g id="edge21" class="edge">
+<title>14&#45;&gt;15</title>
+<path fill="none" stroke="red" d="M284.04,-1404.85C281.94,-1392.72 279.09,-1376.22 276.69,-1362.32"/>
+<polygon fill="red" stroke="red" points="280.11,-1361.57 274.96,-1352.31 273.21,-1362.76 280.11,-1361.57"/>
+</g>
+<!-- 17 -->
+<g id="node18" class="node">
+<title>17</title>
+<ellipse fill="none" stroke="black" cx="375" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="352.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 16&#45;&gt;17 -->
+<g id="edge22" class="edge">
+<title>16&#45;&gt;17</title>
+<path fill="none" stroke="red" d="M381.42,-1404.85C380.3,-1392.72 378.78,-1376.22 377.5,-1362.32"/>
+<polygon fill="red" stroke="red" points="380.98,-1361.95 376.58,-1352.31 374.01,-1362.59 380.98,-1361.95"/>
+</g>
+<!-- 19 -->
+<g id="node20" class="node">
+<title>19</title>
+<ellipse fill="none" stroke="black" cx="463" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="456" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="463" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node20_18"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\19.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="387,-1289.2 387,-1315.2 435,-1315.2 435,-1289.2 387,-1289.2"/>
+<text text-anchor="start" x="391.56" y="-1297.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="386,-1288.2 386,-1316.2 436,-1316.2 436,-1288.2 386,-1288.2"/>
+</g>
+<!-- 18&#45;&gt;19 -->
+<g id="edge24" class="edge">
+<title>18&#45;&gt;19</title>
+<path fill="none" stroke="black" d="M463,-1404.85C463,-1392.72 463,-1376.22 463,-1362.32"/>
+<polygon fill="black" stroke="black" points="466.5,-1362.31 463,-1352.31 459.5,-1362.31 466.5,-1362.31"/>
+<text text-anchor="middle" x="480.5" y="-1374.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 21 -->
+<g id="node22" class="node">
+<title>21</title>
+<ellipse fill="none" stroke="black" cx="535" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="528" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="535" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node22_19"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\21.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="459,-1289.2 459,-1315.2 507,-1315.2 507,-1289.2 459,-1289.2"/>
+<text text-anchor="start" x="463.56" y="-1297.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="458,-1288.2 458,-1316.2 508,-1316.2 508,-1288.2 458,-1288.2"/>
+</g>
+<!-- 18&#45;&gt;21 -->
+<g id="edge23" class="edge">
+<title>18&#45;&gt;21</title>
+<path fill="none" stroke="black" d="M479.88,-1408.61C487.12,-1402.44 495.41,-1394.77 502,-1387 508.96,-1378.79 515.56,-1369 521.01,-1360.16"/>
+<polygon fill="black" stroke="black" points="524.12,-1361.77 526.23,-1351.38 518.11,-1358.19 524.12,-1361.77"/>
+<text text-anchor="middle" x="532.5" y="-1374.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 20 -->
+<g id="node21" class="node">
+<title>20</title>
+<ellipse fill="none" stroke="black" cx="448" cy="-1245.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="425.06" y="-1241.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 19&#45;&gt;20 -->
+<g id="edge25" class="edge">
+<title>19&#45;&gt;20</title>
+<path fill="none" stroke="red" d="M460.04,-1316.05C457.94,-1303.92 455.09,-1287.42 452.69,-1273.52"/>
+<polygon fill="red" stroke="red" points="456.11,-1272.77 450.96,-1263.51 449.21,-1273.96 456.11,-1272.77"/>
+</g>
+<!-- 22 -->
+<g id="node23" class="node">
+<title>22</title>
+<ellipse fill="none" stroke="black" cx="551" cy="-1245.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="528.06" y="-1241.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 21&#45;&gt;22 -->
+<g id="edge26" class="edge">
+<title>21&#45;&gt;22</title>
+<path fill="none" stroke="red" d="M538.16,-1316.05C540.4,-1303.92 543.44,-1287.42 546,-1273.52"/>
+<polygon fill="red" stroke="red" points="549.47,-1273.98 547.85,-1263.51 542.59,-1272.71 549.47,-1273.98"/>
+</g>
+<!-- 24 -->
+<g id="node25" class="node">
+<title>24</title>
+<ellipse fill="none" stroke="black" cx="623" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="600.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 23&#45;&gt;24 -->
+<g id="edge27" class="edge">
+<title>23&#45;&gt;24</title>
+<path fill="none" stroke="red" d="M599.59,-1405.26C603.7,-1392.98 609.36,-1376.03 614.09,-1361.88"/>
+<polygon fill="red" stroke="red" points="617.48,-1362.77 617.33,-1352.18 610.84,-1360.56 617.48,-1362.77"/>
+</g>
+<!-- 26 -->
+<g id="node27" class="node">
+<title>26</title>
+<ellipse fill="none" stroke="black" cx="829" cy="-1511.8" rx="27" ry="18"/>
+<text text-anchor="start" x="822" y="-1508.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="829" y="-1508.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node27_20"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\26.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="753,-1530.8 753,-1556.8 801,-1556.8 801,-1530.8 753,-1530.8"/>
+<text text-anchor="start" x="757.56" y="-1539.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="752,-1529.8 752,-1557.8 802,-1557.8 802,-1529.8 752,-1529.8"/>
+</g>
+<!-- 25&#45;&gt;26 -->
+<g id="edge29" class="edge">
+<title>25&#45;&gt;26</title>
+<path fill="none" stroke="black" d="M915.91,-1586.04C899.07,-1571.85 872.46,-1549.43 853.12,-1533.12"/>
+<polygon fill="black" stroke="black" points="855.22,-1530.32 845.32,-1526.55 850.71,-1535.67 855.22,-1530.32"/>
+<text text-anchor="middle" x="907.5" y="-1552" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 31 -->
+<g id="node32" class="node">
+<title>31</title>
+<ellipse fill="none" stroke="black" cx="1035" cy="-1511.8" rx="27" ry="18"/>
+<text text-anchor="start" x="1028" y="-1508.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1035" y="-1508.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node32_21"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\31.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="959,-1494.8 959,-1520.8 1007,-1520.8 1007,-1494.8 959,-1494.8"/>
+<text text-anchor="start" x="963.56" y="-1503.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="958,-1493.8 958,-1521.8 1008,-1521.8 1008,-1493.8 958,-1493.8"/>
+</g>
+<!-- 25&#45;&gt;31 -->
+<g id="edge28" class="edge">
+<title>25&#45;&gt;31</title>
+<path fill="none" stroke="black" d="M948.09,-1586.04C964.93,-1571.85 991.54,-1549.43 1010.88,-1533.12"/>
+<polygon fill="black" stroke="black" points="1013.29,-1535.67 1018.68,-1526.55 1008.78,-1530.32 1013.29,-1535.67"/>
+<text text-anchor="middle" x="1010.5" y="-1552" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 27 -->
+<g id="node28" class="node">
+<title>27</title>
+<ellipse fill="none" stroke="black" cx="741" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="734" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="741" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node28_22"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\27.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="665,-1442 665,-1468 713,-1468 713,-1442 665,-1442"/>
+<text text-anchor="start" x="669.56" y="-1450.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="664,-1441 664,-1469 714,-1469 714,-1441 664,-1441"/>
+</g>
+<!-- 26&#45;&gt;27 -->
+<g id="edge31" class="edge">
+<title>26&#45;&gt;27</title>
+<path fill="none" stroke="black" d="M813.17,-1497.12C805.98,-1490.77 797.43,-1483.04 790,-1475.8 780.3,-1466.35 769.95,-1455.52 761.27,-1446.22"/>
+<polygon fill="black" stroke="black" points="763.78,-1443.78 754.42,-1438.82 758.64,-1448.54 763.78,-1443.78"/>
+<text text-anchor="middle" x="808.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 29 -->
+<g id="node30" class="node">
+<title>29</title>
+<ellipse fill="none" stroke="black" cx="829" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="822" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="829" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node30_23"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\29.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="753,-1378 753,-1404 801,-1404 801,-1378 753,-1378"/>
+<text text-anchor="start" x="757.56" y="-1386.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="752,-1377 752,-1405 802,-1405 802,-1377 752,-1377"/>
+</g>
+<!-- 26&#45;&gt;29 -->
+<g id="edge30" class="edge">
+<title>26&#45;&gt;29</title>
+<path fill="none" stroke="black" d="M829,-1493.65C829,-1481.52 829,-1465.02 829,-1451.12"/>
+<polygon fill="black" stroke="black" points="832.5,-1451.11 829,-1441.11 825.5,-1451.11 832.5,-1451.11"/>
+<text text-anchor="middle" x="846.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 28 -->
+<g id="node29" class="node">
+<title>28</title>
+<ellipse fill="none" stroke="black" cx="726" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="703.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 27&#45;&gt;28 -->
+<g id="edge32" class="edge">
+<title>27&#45;&gt;28</title>
+<path fill="none" stroke="red" d="M738.04,-1404.85C735.94,-1392.72 733.09,-1376.22 730.69,-1362.32"/>
+<polygon fill="red" stroke="red" points="734.11,-1361.57 728.96,-1352.31 727.21,-1362.76 734.11,-1361.57"/>
+</g>
+<!-- 30 -->
+<g id="node31" class="node">
+<title>30</title>
+<ellipse fill="none" stroke="black" cx="829" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="806.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 29&#45;&gt;30 -->
+<g id="edge33" class="edge">
+<title>29&#45;&gt;30</title>
+<path fill="none" stroke="red" d="M829,-1404.85C829,-1392.72 829,-1376.22 829,-1362.32"/>
+<polygon fill="red" stroke="red" points="832.5,-1362.31 829,-1352.31 825.5,-1362.31 832.5,-1362.31"/>
+</g>
+<!-- 32 -->
+<g id="node33" class="node">
+<title>32</title>
+<ellipse fill="none" stroke="black" cx="948" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="941" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="948" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node33_24"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\32.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="872,-1442 872,-1468 920,-1468 920,-1442 872,-1442"/>
+<text text-anchor="start" x="876.56" y="-1450.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="871,-1441 871,-1469 921,-1469 921,-1441 871,-1441"/>
+</g>
+<!-- 31&#45;&gt;32 -->
+<g id="edge37" class="edge">
+<title>31&#45;&gt;32</title>
+<path fill="none" stroke="black" d="M1019.14,-1497.16C1011.94,-1490.81 1003.39,-1483.07 996,-1475.8 986.54,-1466.49 976.49,-1455.79 968.05,-1446.54"/>
+<polygon fill="black" stroke="black" points="970.4,-1443.92 961.1,-1438.85 965.21,-1448.62 970.4,-1443.92"/>
+<text text-anchor="middle" x="1014.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 34 -->
+<g id="node35" class="node">
+<title>34</title>
+<ellipse fill="none" stroke="black" cx="1035" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="1028" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1035" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node35_25"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\34.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="959,-1378 959,-1404 1007,-1404 1007,-1378 959,-1378"/>
+<text text-anchor="start" x="963.56" y="-1386.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="958,-1377 958,-1405 1008,-1405 1008,-1377 958,-1377"/>
+</g>
+<!-- 31&#45;&gt;34 -->
+<g id="edge36" class="edge">
+<title>31&#45;&gt;34</title>
+<path fill="none" stroke="black" d="M1035,-1493.65C1035,-1481.52 1035,-1465.02 1035,-1451.12"/>
+<polygon fill="black" stroke="black" points="1038.5,-1451.11 1035,-1441.11 1031.5,-1451.11 1038.5,-1451.11"/>
+<text text-anchor="middle" x="1052.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 36 -->
+<g id="node37" class="node">
+<title>36</title>
+<ellipse fill="none" stroke="black" cx="1123" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="1116" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1123" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node37_26"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\36.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1047,-1378 1047,-1404 1095,-1404 1095,-1378 1047,-1378"/>
+<text text-anchor="start" x="1051.56" y="-1386.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1046,-1377 1046,-1405 1096,-1405 1096,-1377 1046,-1377"/>
+</g>
+<!-- 31&#45;&gt;36 -->
+<g id="edge35" class="edge">
+<title>31&#45;&gt;36</title>
+<path fill="none" stroke="black" d="M1050.83,-1497.12C1058.02,-1490.77 1066.57,-1483.04 1074,-1475.8 1083.7,-1466.35 1094.05,-1455.52 1102.74,-1446.22"/>
+<polygon fill="black" stroke="black" points="1105.36,-1448.54 1109.58,-1438.82 1100.22,-1443.78 1105.36,-1448.54"/>
+<text text-anchor="middle" x="1108.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 41 -->
+<g id="node42" class="node">
+<title>41</title>
+<ellipse fill="none" stroke="black" cx="1258" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="1251" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1258" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node42_27"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\41.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1182,-1406 1182,-1432 1230,-1432 1230,-1406 1182,-1406"/>
+<text text-anchor="start" x="1186.56" y="-1414.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1181,-1405 1181,-1433 1231,-1433 1231,-1405 1181,-1405"/>
+</g>
+<!-- 31&#45;&gt;41 -->
+<g id="edge34" class="edge">
+<title>31&#45;&gt;41</title>
+<path fill="none" stroke="black" d="M1058.5,-1502.37C1077.77,-1495.41 1105.74,-1485.18 1130,-1475.8 1162.91,-1463.08 1200.3,-1447.86 1226.13,-1437.22"/>
+<polygon fill="black" stroke="black" points="1227.52,-1440.44 1235.43,-1433.39 1224.85,-1433.97 1227.52,-1440.44"/>
+<text text-anchor="middle" x="1190.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 33 -->
+<g id="node34" class="node">
+<title>33</title>
+<ellipse fill="none" stroke="black" cx="932" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="909.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 32&#45;&gt;33 -->
+<g id="edge38" class="edge">
+<title>32&#45;&gt;33</title>
+<path fill="none" stroke="red" d="M944.84,-1404.85C942.6,-1392.72 939.56,-1376.22 937,-1362.32"/>
+<polygon fill="red" stroke="red" points="940.41,-1361.51 935.15,-1352.31 933.53,-1362.78 940.41,-1361.51"/>
+</g>
+<!-- 35 -->
+<g id="node36" class="node">
+<title>35</title>
+<ellipse fill="none" stroke="black" cx="1035" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1012.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 34&#45;&gt;35 -->
+<g id="edge39" class="edge">
+<title>34&#45;&gt;35</title>
+<path fill="none" stroke="red" d="M1035,-1404.85C1035,-1392.72 1035,-1376.22 1035,-1362.32"/>
+<polygon fill="red" stroke="red" points="1038.5,-1362.31 1035,-1352.31 1031.5,-1362.31 1038.5,-1362.31"/>
+</g>
+<!-- 37 -->
+<g id="node38" class="node">
+<title>37</title>
+<ellipse fill="none" stroke="black" cx="1123" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="1116" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1123" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node38_28"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\37.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1047,-1289.2 1047,-1315.2 1095,-1315.2 1095,-1289.2 1047,-1289.2"/>
+<text text-anchor="start" x="1051.56" y="-1297.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1046,-1288.2 1046,-1316.2 1096,-1316.2 1096,-1288.2 1046,-1288.2"/>
+</g>
+<!-- 36&#45;&gt;37 -->
+<g id="edge41" class="edge">
+<title>36&#45;&gt;37</title>
+<path fill="none" stroke="black" d="M1123,-1404.85C1123,-1392.72 1123,-1376.22 1123,-1362.32"/>
+<polygon fill="black" stroke="black" points="1126.5,-1362.31 1123,-1352.31 1119.5,-1362.31 1126.5,-1362.31"/>
+<text text-anchor="middle" x="1140.5" y="-1374.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 39 -->
+<g id="node40" class="node">
+<title>39</title>
+<ellipse fill="none" stroke="black" cx="1195" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="1188" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1195" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node40_29"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\39.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1119,-1289.2 1119,-1315.2 1167,-1315.2 1167,-1289.2 1119,-1289.2"/>
+<text text-anchor="start" x="1123.56" y="-1297.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1118,-1288.2 1118,-1316.2 1168,-1316.2 1168,-1288.2 1118,-1288.2"/>
+</g>
+<!-- 36&#45;&gt;39 -->
+<g id="edge40" class="edge">
+<title>36&#45;&gt;39</title>
+<path fill="none" stroke="black" d="M1139.88,-1408.61C1147.12,-1402.44 1155.41,-1394.77 1162,-1387 1168.96,-1378.79 1175.56,-1369 1181.01,-1360.16"/>
+<polygon fill="black" stroke="black" points="1184.12,-1361.77 1186.23,-1351.38 1178.11,-1358.19 1184.12,-1361.77"/>
+<text text-anchor="middle" x="1192.5" y="-1374.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 38 -->
+<g id="node39" class="node">
+<title>38</title>
+<ellipse fill="none" stroke="black" cx="1107" cy="-1245.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1084.06" y="-1241.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 37&#45;&gt;38 -->
+<g id="edge42" class="edge">
+<title>37&#45;&gt;38</title>
+<path fill="none" stroke="red" d="M1119.84,-1316.05C1117.6,-1303.92 1114.56,-1287.42 1112,-1273.52"/>
+<polygon fill="red" stroke="red" points="1115.41,-1272.71 1110.15,-1263.51 1108.53,-1273.98 1115.41,-1272.71"/>
+</g>
+<!-- 40 -->
+<g id="node41" class="node">
+<title>40</title>
+<ellipse fill="none" stroke="black" cx="1210" cy="-1245.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1187.06" y="-1241.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 39&#45;&gt;40 -->
+<g id="edge43" class="edge">
+<title>39&#45;&gt;40</title>
+<path fill="none" stroke="red" d="M1197.96,-1316.05C1200.06,-1303.92 1202.91,-1287.42 1205.31,-1273.52"/>
+<polygon fill="red" stroke="red" points="1208.79,-1273.96 1207.04,-1263.51 1201.89,-1272.77 1208.79,-1273.96"/>
+</g>
+<!-- 42 -->
+<g id="node43" class="node">
+<title>42</title>
+<ellipse fill="none" stroke="black" cx="1283" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1260.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 41&#45;&gt;42 -->
+<g id="edge44" class="edge">
+<title>41&#45;&gt;42</title>
+<path fill="none" stroke="red" d="M1262.82,-1405.26C1266.36,-1392.98 1271.24,-1376.03 1275.32,-1361.88"/>
+<polygon fill="red" stroke="red" points="1278.7,-1362.76 1278.11,-1352.18 1271.98,-1360.82 1278.7,-1362.76"/>
+</g>
+<!-- 44 -->
+<g id="node45" class="node">
+<title>44</title>
+<ellipse fill="none" stroke="black" cx="1789" cy="-1600.6" rx="27" ry="18"/>
+<text text-anchor="start" x="1782" y="-1597.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1789" y="-1597.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node45_30"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\44.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1713,-1619.6 1713,-1645.6 1761,-1645.6 1761,-1619.6 1713,-1619.6"/>
+<text text-anchor="start" x="1717.56" y="-1628" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1712,-1618.6 1712,-1646.6 1762,-1646.6 1762,-1618.6 1712,-1618.6"/>
+</g>
+<!-- 43&#45;&gt;44 -->
+<g id="edge46" class="edge">
+<title>43&#45;&gt;44</title>
+<path fill="none" stroke="black" d="M1896.95,-1675.96C1875.61,-1661.27 1839.93,-1636.69 1815.48,-1619.84"/>
+<polygon fill="black" stroke="black" points="1817.24,-1616.8 1807.02,-1614.01 1813.27,-1622.57 1817.24,-1616.8"/>
+<text text-anchor="middle" x="1881.5" y="-1640.8" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 65 -->
+<g id="node66" class="node">
+<title>65</title>
+<ellipse fill="none" stroke="black" cx="2129" cy="-1600.6" rx="27" ry="18"/>
+<text text-anchor="start" x="2122" y="-1597.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2129" y="-1597.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node66_31"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\65.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2053,-1583.6 2053,-1609.6 2101,-1609.6 2101,-1583.6 2053,-1583.6"/>
+<text text-anchor="start" x="2057.56" y="-1592" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2052,-1582.6 2052,-1610.6 2102,-1610.6 2102,-1582.6 2052,-1582.6"/>
+</g>
+<!-- 43&#45;&gt;65 -->
+<g id="edge45" class="edge">
+<title>43&#45;&gt;65</title>
+<path fill="none" stroke="black" d="M1937.5,-1679.27C1975.71,-1663.78 2053.39,-1632.27 2097.16,-1614.51"/>
+<polygon fill="black" stroke="black" points="2098.53,-1617.74 2106.48,-1610.73 2095.9,-1611.25 2098.53,-1617.74"/>
+<text text-anchor="middle" x="2059.5" y="-1640.8" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 45 -->
+<g id="node46" class="node">
+<title>45</title>
+<ellipse fill="none" stroke="black" cx="1489" cy="-1511.8" rx="27" ry="18"/>
+<text text-anchor="start" x="1482" y="-1508.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1489" y="-1508.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node46_32"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\45.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1413,-1530.8 1413,-1556.8 1461,-1556.8 1461,-1530.8 1413,-1530.8"/>
+<text text-anchor="start" x="1417.56" y="-1539.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1412,-1529.8 1412,-1557.8 1462,-1557.8 1462,-1529.8 1412,-1529.8"/>
+</g>
+<!-- 44&#45;&gt;45 -->
+<g id="edge48" class="edge">
+<title>44&#45;&gt;45</title>
+<path fill="none" stroke="black" d="M1764.7,-1592.57C1711.56,-1577.19 1584.86,-1540.54 1523.49,-1522.78"/>
+<polygon fill="black" stroke="black" points="1524.1,-1519.31 1513.52,-1519.9 1522.16,-1526.04 1524.1,-1519.31"/>
+<text text-anchor="middle" x="1683.5" y="-1552" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 50 -->
+<g id="node51" class="node">
+<title>50</title>
+<ellipse fill="none" stroke="black" cx="1789" cy="-1511.8" rx="27" ry="18"/>
+<text text-anchor="start" x="1782" y="-1508.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1789" y="-1508.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node51_33"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\50.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1713,-1530.8 1713,-1556.8 1761,-1556.8 1761,-1530.8 1713,-1530.8"/>
+<text text-anchor="start" x="1717.56" y="-1539.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1712,-1529.8 1712,-1557.8 1762,-1557.8 1762,-1529.8 1712,-1529.8"/>
+</g>
+<!-- 44&#45;&gt;50 -->
+<g id="edge47" class="edge">
+<title>44&#45;&gt;50</title>
+<path fill="none" stroke="black" d="M1789,-1582.45C1789,-1570.32 1789,-1553.82 1789,-1539.92"/>
+<polygon fill="black" stroke="black" points="1792.5,-1539.91 1789,-1529.91 1785.5,-1539.91 1792.5,-1539.91"/>
+<text text-anchor="middle" x="1806.5" y="-1552" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 46 -->
+<g id="node47" class="node">
+<title>46</title>
+<ellipse fill="none" stroke="black" cx="1401" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="1394" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1401" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node47_34"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\46.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1325,-1442 1325,-1468 1373,-1468 1373,-1442 1325,-1442"/>
+<text text-anchor="start" x="1329.56" y="-1450.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1324,-1441 1324,-1469 1374,-1469 1374,-1441 1324,-1441"/>
+</g>
+<!-- 45&#45;&gt;46 -->
+<g id="edge50" class="edge">
+<title>45&#45;&gt;46</title>
+<path fill="none" stroke="black" d="M1473.17,-1497.12C1465.98,-1490.77 1457.43,-1483.04 1450,-1475.8 1440.3,-1466.35 1429.95,-1455.52 1421.27,-1446.22"/>
+<polygon fill="black" stroke="black" points="1423.78,-1443.78 1414.42,-1438.82 1418.64,-1448.54 1423.78,-1443.78"/>
+<text text-anchor="middle" x="1468.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 48 -->
+<g id="node49" class="node">
+<title>48</title>
+<ellipse fill="none" stroke="black" cx="1489" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="1482" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1489" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node49_35"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\48.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1413,-1378 1413,-1404 1461,-1404 1461,-1378 1413,-1378"/>
+<text text-anchor="start" x="1417.56" y="-1386.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1412,-1377 1412,-1405 1462,-1405 1462,-1377 1412,-1377"/>
+</g>
+<!-- 45&#45;&gt;48 -->
+<g id="edge49" class="edge">
+<title>45&#45;&gt;48</title>
+<path fill="none" stroke="black" d="M1489,-1493.65C1489,-1481.52 1489,-1465.02 1489,-1451.12"/>
+<polygon fill="black" stroke="black" points="1492.5,-1451.11 1489,-1441.11 1485.5,-1451.11 1492.5,-1451.11"/>
+<text text-anchor="middle" x="1506.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 47 -->
+<g id="node48" class="node">
+<title>47</title>
+<ellipse fill="none" stroke="black" cx="1386" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1363.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 46&#45;&gt;47 -->
+<g id="edge51" class="edge">
+<title>46&#45;&gt;47</title>
+<path fill="none" stroke="red" d="M1398.04,-1404.85C1395.94,-1392.72 1393.09,-1376.22 1390.69,-1362.32"/>
+<polygon fill="red" stroke="red" points="1394.11,-1361.57 1388.96,-1352.31 1387.21,-1362.76 1394.11,-1361.57"/>
+</g>
+<!-- 49 -->
+<g id="node50" class="node">
+<title>49</title>
+<ellipse fill="none" stroke="black" cx="1489" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1466.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 48&#45;&gt;49 -->
+<g id="edge52" class="edge">
+<title>48&#45;&gt;49</title>
+<path fill="none" stroke="red" d="M1489,-1404.85C1489,-1392.72 1489,-1376.22 1489,-1362.32"/>
+<polygon fill="red" stroke="red" points="1492.5,-1362.31 1489,-1352.31 1485.5,-1362.31 1492.5,-1362.31"/>
+</g>
+<!-- 51 -->
+<g id="node52" class="node">
+<title>51</title>
+<ellipse fill="none" stroke="black" cx="1649" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="1642" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1649" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node52_36"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\51.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1573,-1442 1573,-1468 1621,-1468 1621,-1442 1573,-1442"/>
+<text text-anchor="start" x="1577.56" y="-1450.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1572,-1441 1572,-1469 1622,-1469 1622,-1441 1572,-1441"/>
+</g>
+<!-- 50&#45;&gt;51 -->
+<g id="edge56" class="edge">
+<title>50&#45;&gt;51</title>
+<path fill="none" stroke="black" d="M1767.03,-1501.02C1752.97,-1494.46 1734.52,-1485.32 1719,-1475.8 1703.25,-1466.14 1686.58,-1453.89 1673.47,-1443.73"/>
+<polygon fill="black" stroke="black" points="1675.43,-1440.83 1665.4,-1437.41 1671.11,-1446.33 1675.43,-1440.83"/>
+<text text-anchor="middle" x="1737.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 56 -->
+<g id="node57" class="node">
+<title>56</title>
+<ellipse fill="none" stroke="black" cx="1745" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="1738" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1745" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node57_37"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\56.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1669,-1442 1669,-1468 1717,-1468 1717,-1442 1669,-1442"/>
+<text text-anchor="start" x="1673.56" y="-1450.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1668,-1441 1668,-1469 1718,-1469 1718,-1441 1668,-1441"/>
+</g>
+<!-- 50&#45;&gt;56 -->
+<g id="edge55" class="edge">
+<title>50&#45;&gt;56</title>
+<path fill="none" stroke="black" d="M1777.2,-1495.26C1773.03,-1489.36 1768.5,-1482.45 1765,-1475.8 1760.79,-1467.8 1756.97,-1458.7 1753.84,-1450.39"/>
+<polygon fill="black" stroke="black" points="1757.05,-1448.98 1750.36,-1440.76 1750.46,-1451.36 1757.05,-1448.98"/>
+<text text-anchor="middle" x="1783.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 58 -->
+<g id="node59" class="node">
+<title>58</title>
+<ellipse fill="none" stroke="black" cx="1825" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="1818" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1825" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node59_38"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\58.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1749,-1378 1749,-1404 1797,-1404 1797,-1378 1749,-1378"/>
+<text text-anchor="start" x="1753.56" y="-1386.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1748,-1377 1748,-1405 1798,-1405 1798,-1377 1748,-1377"/>
+</g>
+<!-- 50&#45;&gt;58 -->
+<g id="edge54" class="edge">
+<title>50&#45;&gt;58</title>
+<path fill="none" stroke="black" d="M1795.94,-1494.06C1801.12,-1481.58 1808.29,-1464.28 1814.22,-1450"/>
+<polygon fill="black" stroke="black" points="1817.48,-1451.26 1818.08,-1440.68 1811.02,-1448.58 1817.48,-1451.26"/>
+<text text-anchor="middle" x="1828.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 63 -->
+<g id="node64" class="node">
+<title>63</title>
+<ellipse fill="none" stroke="black" cx="1958" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="1951" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1958" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node64_39"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\63.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1882,-1406 1882,-1432 1930,-1432 1930,-1406 1882,-1406"/>
+<text text-anchor="start" x="1886.56" y="-1414.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1881,-1405 1881,-1433 1931,-1433 1931,-1405 1881,-1405"/>
+</g>
+<!-- 50&#45;&gt;63 -->
+<g id="edge53" class="edge">
+<title>50&#45;&gt;63</title>
+<path fill="none" stroke="black" d="M1809.72,-1500.16C1839.37,-1484.93 1894.06,-1456.84 1928.09,-1439.36"/>
+<polygon fill="black" stroke="black" points="1929.81,-1442.41 1937.11,-1434.73 1926.61,-1436.19 1929.81,-1442.41"/>
+<text text-anchor="middle" x="1906.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 52 -->
+<g id="node53" class="node">
+<title>52</title>
+<ellipse fill="none" stroke="black" cx="1577" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="1570" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1577" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node53_40"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\52.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1501,-1353.2 1501,-1379.2 1549,-1379.2 1549,-1353.2 1501,-1353.2"/>
+<text text-anchor="start" x="1505.56" y="-1361.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1500,-1352.2 1500,-1380.2 1550,-1380.2 1550,-1352.2 1500,-1352.2"/>
+</g>
+<!-- 51&#45;&gt;52 -->
+<g id="edge58" class="edge">
+<title>51&#45;&gt;52</title>
+<path fill="none" stroke="black" d="M1632.12,-1408.61C1624.88,-1402.44 1616.59,-1394.77 1610,-1387 1603.04,-1378.79 1596.44,-1369 1590.99,-1360.16"/>
+<polygon fill="black" stroke="black" points="1593.9,-1358.19 1585.77,-1351.38 1587.88,-1361.77 1593.9,-1358.19"/>
+<text text-anchor="middle" x="1628.5" y="-1374.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 54 -->
+<g id="node55" class="node">
+<title>54</title>
+<ellipse fill="none" stroke="black" cx="1649" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="1642" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1649" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node55_41"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\54.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1573,-1289.2 1573,-1315.2 1621,-1315.2 1621,-1289.2 1573,-1289.2"/>
+<text text-anchor="start" x="1577.56" y="-1297.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1572,-1288.2 1572,-1316.2 1622,-1316.2 1622,-1288.2 1572,-1288.2"/>
+</g>
+<!-- 51&#45;&gt;54 -->
+<g id="edge57" class="edge">
+<title>51&#45;&gt;54</title>
+<path fill="none" stroke="black" d="M1649,-1404.85C1649,-1392.72 1649,-1376.22 1649,-1362.32"/>
+<polygon fill="black" stroke="black" points="1652.5,-1362.31 1649,-1352.31 1645.5,-1362.31 1652.5,-1362.31"/>
+<text text-anchor="middle" x="1666.5" y="-1374.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 53 -->
+<g id="node54" class="node">
+<title>53</title>
+<ellipse fill="none" stroke="black" cx="1561" cy="-1245.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1538.06" y="-1241.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 52&#45;&gt;53 -->
+<g id="edge59" class="edge">
+<title>52&#45;&gt;53</title>
+<path fill="none" stroke="red" d="M1573.84,-1316.05C1571.6,-1303.92 1568.56,-1287.42 1566,-1273.52"/>
+<polygon fill="red" stroke="red" points="1569.41,-1272.71 1564.15,-1263.51 1562.53,-1273.98 1569.41,-1272.71"/>
+</g>
+<!-- 55 -->
+<g id="node56" class="node">
+<title>55</title>
+<ellipse fill="none" stroke="black" cx="1664" cy="-1245.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1641.06" y="-1241.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 54&#45;&gt;55 -->
+<g id="edge60" class="edge">
+<title>54&#45;&gt;55</title>
+<path fill="none" stroke="red" d="M1651.96,-1316.05C1654.06,-1303.92 1656.91,-1287.42 1659.31,-1273.52"/>
+<polygon fill="red" stroke="red" points="1662.79,-1273.96 1661.04,-1263.51 1655.89,-1272.77 1662.79,-1273.96"/>
+</g>
+<!-- 57 -->
+<g id="node58" class="node">
+<title>57</title>
+<ellipse fill="none" stroke="black" cx="1737" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1714.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 56&#45;&gt;57 -->
+<g id="edge61" class="edge">
+<title>56&#45;&gt;57</title>
+<path fill="none" stroke="red" d="M1743.42,-1404.85C1742.3,-1392.72 1740.78,-1376.22 1739.5,-1362.32"/>
+<polygon fill="red" stroke="red" points="1742.98,-1361.95 1738.58,-1352.31 1736.01,-1362.59 1742.98,-1361.95"/>
+</g>
+<!-- 59 -->
+<g id="node60" class="node">
+<title>59</title>
+<ellipse fill="none" stroke="black" cx="1825" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="1818" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1825" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node60_42"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\59.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1749,-1289.2 1749,-1315.2 1797,-1315.2 1797,-1289.2 1749,-1289.2"/>
+<text text-anchor="start" x="1753.56" y="-1297.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1748,-1288.2 1748,-1316.2 1798,-1316.2 1798,-1288.2 1748,-1288.2"/>
+</g>
+<!-- 58&#45;&gt;59 -->
+<g id="edge63" class="edge">
+<title>58&#45;&gt;59</title>
+<path fill="none" stroke="black" d="M1825,-1404.85C1825,-1392.72 1825,-1376.22 1825,-1362.32"/>
+<polygon fill="black" stroke="black" points="1828.5,-1362.31 1825,-1352.31 1821.5,-1362.31 1828.5,-1362.31"/>
+<text text-anchor="middle" x="1842.5" y="-1374.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 61 -->
+<g id="node62" class="node">
+<title>61</title>
+<ellipse fill="none" stroke="black" cx="1897" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="1890" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1897" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node62_43"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\61.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="1821,-1289.2 1821,-1315.2 1869,-1315.2 1869,-1289.2 1821,-1289.2"/>
+<text text-anchor="start" x="1825.56" y="-1297.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1820,-1288.2 1820,-1316.2 1870,-1316.2 1870,-1288.2 1820,-1288.2"/>
+</g>
+<!-- 58&#45;&gt;61 -->
+<g id="edge62" class="edge">
+<title>58&#45;&gt;61</title>
+<path fill="none" stroke="black" d="M1841.88,-1408.61C1849.12,-1402.44 1857.41,-1394.77 1864,-1387 1870.96,-1378.79 1877.56,-1369 1883.01,-1360.16"/>
+<polygon fill="black" stroke="black" points="1886.12,-1361.77 1888.23,-1351.38 1880.11,-1358.19 1886.12,-1361.77"/>
+<text text-anchor="middle" x="1894.5" y="-1374.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 60 -->
+<g id="node61" class="node">
+<title>60</title>
+<ellipse fill="none" stroke="black" cx="1809" cy="-1245.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1786.06" y="-1241.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 59&#45;&gt;60 -->
+<g id="edge64" class="edge">
+<title>59&#45;&gt;60</title>
+<path fill="none" stroke="red" d="M1821.84,-1316.05C1819.6,-1303.92 1816.56,-1287.42 1814,-1273.52"/>
+<polygon fill="red" stroke="red" points="1817.41,-1272.71 1812.15,-1263.51 1810.53,-1273.98 1817.41,-1272.71"/>
+</g>
+<!-- 62 -->
+<g id="node63" class="node">
+<title>62</title>
+<ellipse fill="none" stroke="black" cx="1912" cy="-1245.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1889.06" y="-1241.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 61&#45;&gt;62 -->
+<g id="edge65" class="edge">
+<title>61&#45;&gt;62</title>
+<path fill="none" stroke="red" d="M1899.96,-1316.05C1902.06,-1303.92 1904.91,-1287.42 1907.31,-1273.52"/>
+<polygon fill="red" stroke="red" points="1910.79,-1273.96 1909.04,-1263.51 1903.89,-1272.77 1910.79,-1273.96"/>
+</g>
+<!-- 64 -->
+<g id="node65" class="node">
+<title>64</title>
+<ellipse fill="none" stroke="black" cx="1985" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1962.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 63&#45;&gt;64 -->
+<g id="edge66" class="edge">
+<title>63&#45;&gt;64</title>
+<path fill="none" stroke="red" d="M1963.21,-1405.26C1967.03,-1392.98 1972.3,-1376.03 1976.7,-1361.88"/>
+<polygon fill="red" stroke="red" points="1980.09,-1362.77 1979.72,-1352.18 1973.41,-1360.69 1980.09,-1362.77"/>
+</g>
+<!-- 66 -->
+<g id="node67" class="node">
+<title>66</title>
+<ellipse fill="none" stroke="black" cx="2129" cy="-1511.8" rx="27" ry="18"/>
+<text text-anchor="start" x="2122" y="-1508.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2129" y="-1508.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node67_44"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\66.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2053,-1530.8 2053,-1556.8 2101,-1556.8 2101,-1530.8 2053,-1530.8"/>
+<text text-anchor="start" x="2057.56" y="-1539.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2052,-1529.8 2052,-1557.8 2102,-1557.8 2102,-1529.8 2052,-1529.8"/>
+</g>
+<!-- 65&#45;&gt;66 -->
+<g id="edge68" class="edge">
+<title>65&#45;&gt;66</title>
+<path fill="none" stroke="black" d="M2129,-1582.45C2129,-1570.32 2129,-1553.82 2129,-1539.92"/>
+<polygon fill="black" stroke="black" points="2132.5,-1539.91 2129,-1529.91 2125.5,-1539.91 2132.5,-1539.91"/>
+<text text-anchor="middle" x="2146.5" y="-1552" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 71 -->
+<g id="node72" class="node">
+<title>71</title>
+<ellipse fill="none" stroke="black" cx="2439" cy="-1511.8" rx="27" ry="18"/>
+<text text-anchor="start" x="2432" y="-1508.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2439" y="-1508.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node72_45"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\71.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2363,-1530.8 2363,-1556.8 2411,-1556.8 2411,-1530.8 2363,-1530.8"/>
+<text text-anchor="start" x="2367.56" y="-1539.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2362,-1529.8 2362,-1557.8 2412,-1557.8 2412,-1529.8 2362,-1529.8"/>
+</g>
+<!-- 65&#45;&gt;71 -->
+<g id="edge67" class="edge">
+<title>65&#45;&gt;71</title>
+<path fill="none" stroke="black" d="M2153.58,-1592.72C2208.52,-1577.33 2341.38,-1540.13 2404.54,-1522.45"/>
+<polygon fill="black" stroke="black" points="2405.73,-1525.75 2414.41,-1519.68 2403.84,-1519.01 2405.73,-1525.75"/>
+<text text-anchor="middle" x="2329.5" y="-1552" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 67 -->
+<g id="node68" class="node">
+<title>67</title>
+<ellipse fill="none" stroke="black" cx="2094" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="2087" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2094" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node68_46"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\67.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2018,-1442 2018,-1468 2066,-1468 2066,-1442 2018,-1442"/>
+<text text-anchor="start" x="2022.56" y="-1450.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2017,-1441 2017,-1469 2067,-1469 2067,-1441 2017,-1441"/>
+</g>
+<!-- 66&#45;&gt;67 -->
+<g id="edge70" class="edge">
+<title>66&#45;&gt;67</title>
+<path fill="none" stroke="black" d="M2114.48,-1496.3C2109.41,-1490.41 2104.19,-1483.24 2101,-1475.8 2097.77,-1468.26 2095.95,-1459.59 2094.95,-1451.52"/>
+<polygon fill="black" stroke="black" points="2098.42,-1451.06 2094.04,-1441.41 2091.45,-1451.68 2098.42,-1451.06"/>
+<text text-anchor="middle" x="2119.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 69 -->
+<g id="node70" class="node">
+<title>69</title>
+<ellipse fill="none" stroke="black" cx="2180" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="2173" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2180" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node70_47"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\69.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2104,-1378 2104,-1404 2152,-1404 2152,-1378 2104,-1378"/>
+<text text-anchor="start" x="2108.56" y="-1386.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2103,-1377 2103,-1405 2153,-1405 2153,-1377 2103,-1377"/>
+</g>
+<!-- 66&#45;&gt;69 -->
+<g id="edge69" class="edge">
+<title>66&#45;&gt;69</title>
+<path fill="none" stroke="black" d="M2138.35,-1494.88C2145.93,-1481.99 2156.73,-1463.61 2165.43,-1448.8"/>
+<polygon fill="black" stroke="black" points="2168.48,-1450.51 2170.53,-1440.11 2162.45,-1446.96 2168.48,-1450.51"/>
+<text text-anchor="middle" x="2177.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 68 -->
+<g id="node69" class="node">
+<title>68</title>
+<ellipse fill="none" stroke="black" cx="2088" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2065.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 67&#45;&gt;68 -->
+<g id="edge71" class="edge">
+<title>67&#45;&gt;68</title>
+<path fill="none" stroke="red" d="M2092.81,-1404.85C2091.98,-1392.72 2090.84,-1376.22 2089.87,-1362.32"/>
+<polygon fill="red" stroke="red" points="2093.36,-1362.05 2089.18,-1352.31 2086.38,-1362.53 2093.36,-1362.05"/>
+</g>
+<!-- 70 -->
+<g id="node71" class="node">
+<title>70</title>
+<ellipse fill="none" stroke="black" cx="2191" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2168.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 69&#45;&gt;70 -->
+<g id="edge72" class="edge">
+<title>69&#45;&gt;70</title>
+<path fill="none" stroke="red" d="M2182.17,-1404.85C2183.71,-1392.72 2185.8,-1376.22 2187.56,-1362.32"/>
+<polygon fill="red" stroke="red" points="2191.05,-1362.67 2188.83,-1352.31 2184.1,-1361.79 2191.05,-1362.67"/>
+</g>
+<!-- 72 -->
+<g id="node73" class="node">
+<title>72</title>
+<ellipse fill="none" stroke="black" cx="2351" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="2344" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2351" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node73_48"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\72.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2275,-1442 2275,-1468 2323,-1468 2323,-1442 2275,-1442"/>
+<text text-anchor="start" x="2279.56" y="-1450.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2274,-1441 2274,-1469 2324,-1469 2324,-1441 2274,-1441"/>
+</g>
+<!-- 71&#45;&gt;72 -->
+<g id="edge76" class="edge">
+<title>71&#45;&gt;72</title>
+<path fill="none" stroke="black" d="M2423.17,-1497.12C2415.98,-1490.77 2407.43,-1483.04 2400,-1475.8 2390.3,-1466.35 2379.95,-1455.52 2371.27,-1446.22"/>
+<polygon fill="black" stroke="black" points="2373.78,-1443.78 2364.42,-1438.82 2368.64,-1448.54 2373.78,-1443.78"/>
+<text text-anchor="middle" x="2418.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 77 -->
+<g id="node78" class="node">
+<title>77</title>
+<ellipse fill="none" stroke="black" cx="2439" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="2432" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2439" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node78_49"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\77.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2413,-1378 2413,-1404 2461,-1404 2461,-1378 2413,-1378"/>
+<text text-anchor="start" x="2417.56" y="-1386.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2412,-1377 2412,-1405 2462,-1405 2462,-1377 2412,-1377"/>
+</g>
+<!-- 71&#45;&gt;77 -->
+<g id="edge75" class="edge">
+<title>71&#45;&gt;77</title>
+<path fill="none" stroke="black" d="M2439,-1493.65C2439,-1481.52 2439,-1465.02 2439,-1451.12"/>
+<polygon fill="black" stroke="black" points="2442.5,-1451.11 2439,-1441.11 2435.5,-1451.11 2442.5,-1451.11"/>
+<text text-anchor="middle" x="2456.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 79 -->
+<g id="node80" class="node">
+<title>79</title>
+<ellipse fill="none" stroke="black" cx="2527" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="2520" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2527" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node80_50"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\79.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2555,-1406 2555,-1432 2603,-1432 2603,-1406 2555,-1406"/>
+<text text-anchor="start" x="2559.56" y="-1414.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2554,-1405 2554,-1433 2604,-1433 2604,-1405 2554,-1405"/>
+</g>
+<!-- 71&#45;&gt;79 -->
+<g id="edge74" class="edge">
+<title>71&#45;&gt;79</title>
+<path fill="none" stroke="black" d="M2454.83,-1497.12C2462.02,-1490.77 2470.57,-1483.04 2478,-1475.8 2487.7,-1466.35 2498.05,-1455.52 2506.74,-1446.22"/>
+<polygon fill="black" stroke="black" points="2509.36,-1448.54 2513.58,-1438.82 2504.22,-1443.78 2509.36,-1448.54"/>
+<text text-anchor="middle" x="2512.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 84 -->
+<g id="node85" class="node">
+<title>84</title>
+<ellipse fill="none" stroke="black" cx="2658" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="2651" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2658" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node85_51"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\84.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2632,-1442 2632,-1468 2680,-1468 2680,-1442 2632,-1442"/>
+<text text-anchor="start" x="2636.56" y="-1450.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2631,-1441 2631,-1469 2681,-1469 2681,-1441 2631,-1441"/>
+</g>
+<!-- 71&#45;&gt;84 -->
+<g id="edge73" class="edge">
+<title>71&#45;&gt;84</title>
+<path fill="none" stroke="black" d="M2462.53,-1502.45C2481.82,-1495.52 2509.79,-1485.31 2534,-1475.8 2565.63,-1463.37 2601.41,-1448.32 2626.38,-1437.65"/>
+<polygon fill="black" stroke="black" points="2627.9,-1440.8 2635.72,-1433.65 2625.15,-1434.37 2627.9,-1440.8"/>
+<text text-anchor="middle" x="2593.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 73 -->
+<g id="node74" class="node">
+<title>73</title>
+<ellipse fill="none" stroke="black" cx="2279" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="2272" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2279" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node74_52"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\73.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2203,-1353.2 2203,-1379.2 2251,-1379.2 2251,-1353.2 2203,-1353.2"/>
+<text text-anchor="start" x="2207.56" y="-1361.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2202,-1352.2 2202,-1380.2 2252,-1380.2 2252,-1352.2 2202,-1352.2"/>
+</g>
+<!-- 72&#45;&gt;73 -->
+<g id="edge78" class="edge">
+<title>72&#45;&gt;73</title>
+<path fill="none" stroke="black" d="M2334.12,-1408.61C2326.88,-1402.44 2318.59,-1394.77 2312,-1387 2305.04,-1378.79 2298.44,-1369 2292.99,-1360.16"/>
+<polygon fill="black" stroke="black" points="2295.9,-1358.19 2287.77,-1351.38 2289.88,-1361.77 2295.9,-1358.19"/>
+<text text-anchor="middle" x="2330.5" y="-1374.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 75 -->
+<g id="node76" class="node">
+<title>75</title>
+<ellipse fill="none" stroke="black" cx="2351" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="2344" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2351" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node76_53"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\75.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2275,-1289.2 2275,-1315.2 2323,-1315.2 2323,-1289.2 2275,-1289.2"/>
+<text text-anchor="start" x="2279.56" y="-1297.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2274,-1288.2 2274,-1316.2 2324,-1316.2 2324,-1288.2 2274,-1288.2"/>
+</g>
+<!-- 72&#45;&gt;75 -->
+<g id="edge77" class="edge">
+<title>72&#45;&gt;75</title>
+<path fill="none" stroke="black" d="M2351,-1404.85C2351,-1392.72 2351,-1376.22 2351,-1362.32"/>
+<polygon fill="black" stroke="black" points="2354.5,-1362.31 2351,-1352.31 2347.5,-1362.31 2354.5,-1362.31"/>
+<text text-anchor="middle" x="2368.5" y="-1374.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 74 -->
+<g id="node75" class="node">
+<title>74</title>
+<ellipse fill="none" stroke="black" cx="2263" cy="-1245.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2240.06" y="-1241.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 73&#45;&gt;74 -->
+<g id="edge79" class="edge">
+<title>73&#45;&gt;74</title>
+<path fill="none" stroke="red" d="M2275.84,-1316.05C2273.6,-1303.92 2270.56,-1287.42 2268,-1273.52"/>
+<polygon fill="red" stroke="red" points="2271.41,-1272.71 2266.15,-1263.51 2264.53,-1273.98 2271.41,-1272.71"/>
+</g>
+<!-- 76 -->
+<g id="node77" class="node">
+<title>76</title>
+<ellipse fill="none" stroke="black" cx="2366" cy="-1245.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2343.06" y="-1241.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 75&#45;&gt;76 -->
+<g id="edge80" class="edge">
+<title>75&#45;&gt;76</title>
+<path fill="none" stroke="red" d="M2353.96,-1316.05C2356.06,-1303.92 2358.91,-1287.42 2361.31,-1273.52"/>
+<polygon fill="red" stroke="red" points="2364.79,-1273.96 2363.04,-1263.51 2357.89,-1272.77 2364.79,-1273.96"/>
+</g>
+<!-- 78 -->
+<g id="node79" class="node">
+<title>78</title>
+<ellipse fill="none" stroke="black" cx="2439" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2416.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 77&#45;&gt;78 -->
+<g id="edge81" class="edge">
+<title>77&#45;&gt;78</title>
+<path fill="none" stroke="red" d="M2439,-1404.85C2439,-1392.72 2439,-1376.22 2439,-1362.32"/>
+<polygon fill="red" stroke="red" points="2442.5,-1362.31 2439,-1352.31 2435.5,-1362.31 2442.5,-1362.31"/>
+</g>
+<!-- 80 -->
+<g id="node81" class="node">
+<title>80</title>
+<ellipse fill="none" stroke="black" cx="2527" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="2520" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2527" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node81_54"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\80.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2451,-1289.2 2451,-1315.2 2499,-1315.2 2499,-1289.2 2451,-1289.2"/>
+<text text-anchor="start" x="2455.56" y="-1297.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2450,-1288.2 2450,-1316.2 2500,-1316.2 2500,-1288.2 2450,-1288.2"/>
+</g>
+<!-- 79&#45;&gt;80 -->
+<g id="edge83" class="edge">
+<title>79&#45;&gt;80</title>
+<path fill="none" stroke="black" d="M2527,-1404.85C2527,-1392.72 2527,-1376.22 2527,-1362.32"/>
+<polygon fill="black" stroke="black" points="2530.5,-1362.31 2527,-1352.31 2523.5,-1362.31 2530.5,-1362.31"/>
+<text text-anchor="middle" x="2544.5" y="-1374.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 82 -->
+<g id="node83" class="node">
+<title>82</title>
+<ellipse fill="none" stroke="black" cx="2599" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="2592" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2599" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node83_55"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\82.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2523,-1289.2 2523,-1315.2 2571,-1315.2 2571,-1289.2 2523,-1289.2"/>
+<text text-anchor="start" x="2527.56" y="-1297.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2522,-1288.2 2522,-1316.2 2572,-1316.2 2572,-1288.2 2522,-1288.2"/>
+</g>
+<!-- 79&#45;&gt;82 -->
+<g id="edge82" class="edge">
+<title>79&#45;&gt;82</title>
+<path fill="none" stroke="black" d="M2543.88,-1408.61C2551.12,-1402.44 2559.41,-1394.77 2566,-1387 2572.96,-1378.79 2579.56,-1369 2585.01,-1360.16"/>
+<polygon fill="black" stroke="black" points="2588.12,-1361.77 2590.23,-1351.38 2582.11,-1358.19 2588.12,-1361.77"/>
+<text text-anchor="middle" x="2596.5" y="-1374.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 81 -->
+<g id="node82" class="node">
+<title>81</title>
+<ellipse fill="none" stroke="black" cx="2511" cy="-1245.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2488.06" y="-1241.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 80&#45;&gt;81 -->
+<g id="edge84" class="edge">
+<title>80&#45;&gt;81</title>
+<path fill="none" stroke="red" d="M2523.84,-1316.05C2521.6,-1303.92 2518.56,-1287.42 2516,-1273.52"/>
+<polygon fill="red" stroke="red" points="2519.41,-1272.71 2514.15,-1263.51 2512.53,-1273.98 2519.41,-1272.71"/>
+</g>
+<!-- 83 -->
+<g id="node84" class="node">
+<title>83</title>
+<ellipse fill="none" stroke="black" cx="2614" cy="-1245.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2591.06" y="-1241.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 82&#45;&gt;83 -->
+<g id="edge85" class="edge">
+<title>82&#45;&gt;83</title>
+<path fill="none" stroke="red" d="M2601.96,-1316.05C2604.06,-1303.92 2606.91,-1287.42 2609.31,-1273.52"/>
+<polygon fill="red" stroke="red" points="2612.79,-1273.96 2611.04,-1263.51 2605.89,-1272.77 2612.79,-1273.96"/>
+</g>
+<!-- 85 -->
+<g id="node86" class="node">
+<title>85</title>
+<ellipse fill="none" stroke="black" cx="2687" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2664.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 84&#45;&gt;85 -->
+<g id="edge86" class="edge">
+<title>84&#45;&gt;85</title>
+<path fill="none" stroke="red" d="M2663.59,-1405.26C2667.7,-1392.98 2673.36,-1376.03 2678.09,-1361.88"/>
+<polygon fill="red" stroke="red" points="2681.48,-1362.77 2681.33,-1352.18 2674.84,-1360.56 2681.48,-1362.77"/>
+</g>
+<!-- 87 -->
+<g id="node88" class="node">
+<title>87</title>
+<ellipse fill="none" stroke="black" cx="2575" cy="-1689.4" rx="27" ry="18"/>
+<text text-anchor="start" x="2568" y="-1686.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2575" y="-1686.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node88_56"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\87.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2499,-1672.4 2499,-1698.4 2547,-1698.4 2547,-1672.4 2499,-1672.4"/>
+<text text-anchor="start" x="2503.56" y="-1680.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2498,-1671.4 2498,-1699.4 2548,-1699.4 2548,-1671.4 2498,-1671.4"/>
+</g>
+<!-- 86&#45;&gt;87 -->
+<g id="edge87" class="edge">
+<title>86&#45;&gt;87</title>
+<path fill="none" stroke="black" d="M2352.59,-1768.88C2396.67,-1753.32 2491.63,-1719.82 2542.03,-1702.03"/>
+<polygon fill="black" stroke="black" points="2543.22,-1705.33 2551.48,-1698.7 2540.89,-1698.72 2543.22,-1705.33"/>
+<text text-anchor="middle" x="2492.5" y="-1729.6" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 88 -->
+<g id="node89" class="node">
+<title>88</title>
+<ellipse fill="none" stroke="black" cx="2575" cy="-1600.6" rx="27" ry="18"/>
+<text text-anchor="start" x="2568" y="-1597.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2575" y="-1597.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node89_57"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\88.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2499,-1619.6 2499,-1645.6 2547,-1645.6 2547,-1619.6 2499,-1619.6"/>
+<text text-anchor="start" x="2503.56" y="-1628" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2498,-1618.6 2498,-1646.6 2548,-1646.6 2548,-1618.6 2498,-1618.6"/>
+</g>
+<!-- 87&#45;&gt;88 -->
+<g id="edge89" class="edge">
+<title>87&#45;&gt;88</title>
+<path fill="none" stroke="black" d="M2575,-1671.25C2575,-1659.12 2575,-1642.62 2575,-1628.72"/>
+<polygon fill="black" stroke="black" points="2578.5,-1628.71 2575,-1618.71 2571.5,-1628.71 2578.5,-1628.71"/>
+<text text-anchor="middle" x="2592.5" y="-1640.8" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 90 -->
+<g id="node91" class="node">
+<title>90</title>
+<ellipse fill="none" stroke="black" cx="2742" cy="-1600.6" rx="27" ry="18"/>
+<text text-anchor="start" x="2735" y="-1597.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2742" y="-1597.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node91_58"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\90.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2666,-1583.6 2666,-1609.6 2714,-1609.6 2714,-1583.6 2666,-1583.6"/>
+<text text-anchor="start" x="2670.56" y="-1592" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2665,-1582.6 2665,-1610.6 2715,-1610.6 2715,-1582.6 2665,-1582.6"/>
+</g>
+<!-- 87&#45;&gt;90 -->
+<g id="edge88" class="edge">
+<title>87&#45;&gt;90</title>
+<path fill="none" stroke="black" d="M2595.81,-1677.58C2625.1,-1662.36 2678.63,-1634.54 2712.15,-1617.11"/>
+<polygon fill="black" stroke="black" points="2714.19,-1620 2721.45,-1612.28 2710.96,-1613.79 2714.19,-1620"/>
+<text text-anchor="middle" x="2691.5" y="-1640.8" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 89 -->
+<g id="node90" class="node">
+<title>89</title>
+<ellipse fill="none" stroke="black" cx="2575" cy="-1511.8" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2552.06" y="-1507.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 88&#45;&gt;89 -->
+<g id="edge90" class="edge">
+<title>88&#45;&gt;89</title>
+<path fill="none" stroke="red" d="M2575,-1582.45C2575,-1570.32 2575,-1553.82 2575,-1539.92"/>
+<polygon fill="red" stroke="red" points="2578.5,-1539.91 2575,-1529.91 2571.5,-1539.91 2578.5,-1539.91"/>
+</g>
+<!-- 91 -->
+<g id="node92" class="node">
+<title>91</title>
+<ellipse fill="none" stroke="black" cx="2790" cy="-1511.8" rx="27" ry="18"/>
+<text text-anchor="start" x="2783" y="-1508.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2790" y="-1508.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node92_59"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\91.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2714,-1530.8 2714,-1556.8 2762,-1556.8 2762,-1530.8 2714,-1530.8"/>
+<text text-anchor="start" x="2718.56" y="-1539.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2713,-1529.8 2713,-1557.8 2763,-1557.8 2763,-1529.8 2713,-1529.8"/>
+</g>
+<!-- 90&#45;&gt;91 -->
+<g id="edge91" class="edge">
+<title>90&#45;&gt;91</title>
+<path fill="none" stroke="black" d="M2751.03,-1583.27C2758.07,-1570.54 2767.97,-1552.64 2776.03,-1538.06"/>
+<polygon fill="black" stroke="black" points="2779.24,-1539.5 2781.01,-1529.05 2773.11,-1536.11 2779.24,-1539.5"/>
+<text text-anchor="middle" x="2788.5" y="-1552" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 92 -->
+<g id="node93" class="node">
+<title>92</title>
+<ellipse fill="none" stroke="black" cx="2790" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="2783" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2790" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node93_60"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\92.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2714,-1442 2714,-1468 2762,-1468 2762,-1442 2714,-1442"/>
+<text text-anchor="start" x="2718.56" y="-1450.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2713,-1441 2713,-1469 2763,-1469 2763,-1441 2713,-1441"/>
+</g>
+<!-- 91&#45;&gt;92 -->
+<g id="edge93" class="edge">
+<title>91&#45;&gt;92</title>
+<path fill="none" stroke="black" d="M2790,-1493.65C2790,-1481.52 2790,-1465.02 2790,-1451.12"/>
+<polygon fill="black" stroke="black" points="2793.5,-1451.11 2790,-1441.11 2786.5,-1451.11 2793.5,-1451.11"/>
+<text text-anchor="middle" x="2807.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 94 -->
+<g id="node95" class="node">
+<title>94</title>
+<ellipse fill="none" stroke="black" cx="2866" cy="-1423" rx="27" ry="18"/>
+<text text-anchor="start" x="2859" y="-1419.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2866" y="-1419.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node95_61"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\94.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2790,-1378 2790,-1404 2838,-1404 2838,-1378 2790,-1378"/>
+<text text-anchor="start" x="2794.56" y="-1386.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2789,-1377 2789,-1405 2839,-1405 2839,-1377 2789,-1377"/>
+</g>
+<!-- 91&#45;&gt;94 -->
+<g id="edge92" class="edge">
+<title>91&#45;&gt;94</title>
+<path fill="none" stroke="black" d="M2806.69,-1497.24C2813.89,-1491.04 2822.21,-1483.39 2829,-1475.8 2836.52,-1467.4 2843.92,-1457.47 2850.1,-1448.56"/>
+<polygon fill="black" stroke="black" points="2853.13,-1450.33 2855.84,-1440.09 2847.33,-1446.41 2853.13,-1450.33"/>
+<text text-anchor="middle" x="2860.5" y="-1463.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 93 -->
+<g id="node94" class="node">
+<title>93</title>
+<ellipse fill="none" stroke="black" cx="2790" cy="-1334.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2767.06" y="-1330" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 92&#45;&gt;93 -->
+<g id="edge94" class="edge">
+<title>92&#45;&gt;93</title>
+<path fill="none" stroke="red" d="M2790,-1404.85C2790,-1392.72 2790,-1376.22 2790,-1362.32"/>
+<polygon fill="red" stroke="red" points="2793.5,-1362.31 2790,-1352.31 2786.5,-1362.31 2793.5,-1362.31"/>
+</g>
+<!-- 95 -->
+<g id="node96" class="node">
+<title>95</title>
+<ellipse fill="none" stroke="black" cx="2878" cy="-1334.2" rx="27" ry="18"/>
+<text text-anchor="start" x="2871" y="-1331" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2878" y="-1331" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<g id="a_node96_62"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\95.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2802,-1289.2 2802,-1315.2 2850,-1315.2 2850,-1289.2 2802,-1289.2"/>
+<text text-anchor="start" x="2806.56" y="-1297.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2801,-1288.2 2801,-1316.2 2851,-1316.2 2851,-1288.2 2801,-1288.2"/>
+</g>
+<!-- 94&#45;&gt;95 -->
+<g id="edge95" class="edge">
+<title>94&#45;&gt;95</title>
+<path fill="none" stroke="black" d="M2868.37,-1404.85C2870.05,-1392.72 2872.33,-1376.22 2874.25,-1362.32"/>
+<polygon fill="black" stroke="black" points="2877.73,-1362.7 2875.63,-1352.31 2870.8,-1361.74 2877.73,-1362.7"/>
+<text text-anchor="middle" x="2878.67" y="-1374.4" font-family="Times,serif" font-size="14.00">R</text>
+</g>
+<!-- 96 -->
+<g id="node97" class="node">
+<title>96</title>
+<ellipse fill="none" stroke="black" cx="2878" cy="-1245.4" rx="27" ry="18"/>
+<text text-anchor="start" x="2871" y="-1242.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2878" y="-1242.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<g id="a_node97_63"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\96.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2802,-1228.4 2802,-1254.4 2850,-1254.4 2850,-1228.4 2802,-1228.4"/>
+<text text-anchor="start" x="2806.56" y="-1236.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2801,-1227.4 2801,-1255.4 2851,-1255.4 2851,-1227.4 2801,-1227.4"/>
+</g>
+<!-- 95&#45;&gt;96 -->
+<g id="edge96" class="edge">
+<title>95&#45;&gt;96</title>
+<path fill="none" stroke="black" d="M2878,-1316.05C2878,-1303.92 2878,-1287.42 2878,-1273.52"/>
+<polygon fill="black" stroke="black" points="2881.5,-1273.51 2878,-1263.51 2874.5,-1273.51 2881.5,-1273.51"/>
+<text text-anchor="middle" x="2895.5" y="-1285.6" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 97 -->
+<g id="node98" class="node">
+<title>97</title>
+<ellipse fill="none" stroke="black" cx="2841" cy="-1156.6" rx="27" ry="18"/>
+<text text-anchor="start" x="2834" y="-1153.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2841" y="-1153.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<g id="a_node98_64"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\97.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2765,-1175.6 2765,-1201.6 2813,-1201.6 2813,-1175.6 2765,-1175.6"/>
+<text text-anchor="start" x="2769.56" y="-1184" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2764,-1174.6 2764,-1202.6 2814,-1202.6 2814,-1174.6 2764,-1174.6"/>
+</g>
+<!-- 96&#45;&gt;97 -->
+<g id="edge98" class="edge">
+<title>96&#45;&gt;97</title>
+<path fill="none" stroke="black" d="M2864.81,-1229.62C2860.14,-1223.7 2855.24,-1216.57 2852,-1209.4 2848.58,-1201.83 2846.21,-1193.14 2844.56,-1185.08"/>
+<polygon fill="black" stroke="black" points="2847.97,-1184.22 2842.8,-1174.98 2841.07,-1185.43 2847.97,-1184.22"/>
+<text text-anchor="middle" x="2870.5" y="-1196.8" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 99 -->
+<g id="node100" class="node">
+<title>99</title>
+<ellipse fill="none" stroke="black" cx="2917" cy="-1156.6" rx="27" ry="18"/>
+<text text-anchor="start" x="2910" y="-1153.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2917" y="-1153.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<g id="a_node100_65"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\99.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2841,-1111.6 2841,-1137.6 2889,-1137.6 2889,-1111.6 2841,-1111.6"/>
+<text text-anchor="start" x="2845.56" y="-1120" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2840,-1110.6 2840,-1138.6 2890,-1138.6 2890,-1110.6 2840,-1110.6"/>
+</g>
+<!-- 96&#45;&gt;99 -->
+<g id="edge97" class="edge">
+<title>96&#45;&gt;99</title>
+<path fill="none" stroke="black" d="M2885.34,-1228.07C2890.96,-1215.54 2898.85,-1198 2905.34,-1183.56"/>
+<polygon fill="black" stroke="black" points="2908.66,-1184.7 2909.56,-1174.15 2902.27,-1181.84 2908.66,-1184.7"/>
+<text text-anchor="middle" x="2918.5" y="-1196.8" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 98 -->
+<g id="node99" class="node">
+<title>98</title>
+<ellipse fill="none" stroke="black" cx="2833" cy="-1067.8" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2810.06" y="-1063.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 97&#45;&gt;98 -->
+<g id="edge99" class="edge">
+<title>97&#45;&gt;98</title>
+<path fill="none" stroke="red" d="M2839.42,-1138.45C2838.3,-1126.32 2836.78,-1109.82 2835.5,-1095.92"/>
+<polygon fill="red" stroke="red" points="2838.98,-1095.55 2834.58,-1085.91 2832.01,-1096.19 2838.98,-1095.55"/>
+</g>
+<!-- 100 -->
+<g id="node101" class="node">
+<title>100</title>
+<ellipse fill="none" stroke="black" cx="2921" cy="-1067.8" rx="27" ry="18"/>
+<text text-anchor="start" x="2914" y="-1064.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2921" y="-1064.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<g id="a_node101_66"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\100.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2845,-1022.8 2845,-1048.8 2893,-1048.8 2893,-1022.8 2845,-1022.8"/>
+<text text-anchor="start" x="2849.56" y="-1031.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2844,-1021.8 2844,-1049.8 2894,-1049.8 2894,-1021.8 2844,-1021.8"/>
+</g>
+<!-- 99&#45;&gt;100 -->
+<g id="edge100" class="edge">
+<title>99&#45;&gt;100</title>
+<path fill="none" stroke="black" d="M2917.79,-1138.45C2918.35,-1126.32 2919.11,-1109.82 2919.75,-1095.92"/>
+<polygon fill="black" stroke="black" points="2923.25,-1096.06 2920.21,-1085.91 2916.25,-1095.74 2923.25,-1096.06"/>
+<text text-anchor="middle" x="2937.5" y="-1108" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 101 -->
+<g id="node102" class="node">
+<title>101</title>
+<ellipse fill="none" stroke="black" cx="2884" cy="-979" rx="27" ry="18"/>
+<text text-anchor="start" x="2877" y="-975.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2884" y="-975.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<g id="a_node102_67"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\101.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2808,-962 2808,-988 2856,-988 2856,-962 2808,-962"/>
+<text text-anchor="start" x="2812.56" y="-970.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2807,-961 2807,-989 2857,-989 2857,-961 2807,-961"/>
+</g>
+<!-- 100&#45;&gt;101 -->
+<g id="edge102" class="edge">
+<title>100&#45;&gt;101</title>
+<path fill="none" stroke="black" d="M2907.81,-1052.02C2903.14,-1046.1 2898.24,-1038.97 2895,-1031.8 2891.58,-1024.23 2889.21,-1015.54 2887.56,-1007.48"/>
+<polygon fill="black" stroke="black" points="2890.97,-1006.62 2885.8,-997.38 2884.07,-1007.83 2890.97,-1006.62"/>
+<text text-anchor="middle" x="2913.5" y="-1019.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 103 -->
+<g id="node104" class="node">
+<title>103</title>
+<ellipse fill="none" stroke="black" cx="2960" cy="-979" rx="27" ry="18"/>
+<text text-anchor="start" x="2953" y="-975.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2960" y="-975.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<g id="a_node104_68"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\103.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2884,-934 2884,-960 2932,-960 2932,-934 2884,-934"/>
+<text text-anchor="start" x="2888.56" y="-942.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2883,-933 2883,-961 2933,-961 2933,-933 2883,-933"/>
+</g>
+<!-- 100&#45;&gt;103 -->
+<g id="edge101" class="edge">
+<title>100&#45;&gt;103</title>
+<path fill="none" stroke="black" d="M2928.34,-1050.47C2933.96,-1037.94 2941.85,-1020.4 2948.34,-1005.96"/>
+<polygon fill="black" stroke="black" points="2951.66,-1007.1 2952.56,-996.55 2945.27,-1004.24 2951.66,-1007.1"/>
+<text text-anchor="middle" x="2961.5" y="-1019.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 102 -->
+<g id="node103" class="node">
+<title>102</title>
+<ellipse fill="none" stroke="black" cx="2876" cy="-890.2" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2853.06" y="-886" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 101&#45;&gt;102 -->
+<g id="edge103" class="edge">
+<title>101&#45;&gt;102</title>
+<path fill="none" stroke="red" d="M2882.42,-960.85C2881.3,-948.72 2879.78,-932.22 2878.5,-918.32"/>
+<polygon fill="red" stroke="red" points="2881.98,-917.95 2877.58,-908.31 2875.01,-918.59 2881.98,-917.95"/>
+</g>
+<!-- 104 -->
+<g id="node105" class="node">
+<title>104</title>
+<ellipse fill="none" stroke="black" cx="2964" cy="-890.2" rx="27" ry="18"/>
+<text text-anchor="start" x="2957" y="-887" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2964" y="-887" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<g id="a_node105_69"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\104.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2888,-845.2 2888,-871.2 2936,-871.2 2936,-845.2 2888,-845.2"/>
+<text text-anchor="start" x="2892.56" y="-853.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2887,-844.2 2887,-872.2 2937,-872.2 2937,-844.2 2887,-844.2"/>
+</g>
+<!-- 103&#45;&gt;104 -->
+<g id="edge104" class="edge">
+<title>103&#45;&gt;104</title>
+<path fill="none" stroke="black" d="M2960.79,-960.85C2961.35,-948.72 2962.11,-932.22 2962.75,-918.32"/>
+<polygon fill="black" stroke="black" points="2966.25,-918.46 2963.21,-908.31 2959.25,-918.14 2966.25,-918.46"/>
+<text text-anchor="middle" x="2979.5" y="-930.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 105 -->
+<g id="node106" class="node">
+<title>105</title>
+<ellipse fill="none" stroke="black" cx="2964" cy="-801.4" rx="27" ry="18"/>
+<text text-anchor="start" x="2957" y="-798.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2964" y="-798.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<g id="a_node106_70"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\105.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2888,-784.4 2888,-810.4 2936,-810.4 2936,-784.4 2888,-784.4"/>
+<text text-anchor="start" x="2892.56" y="-792.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2887,-783.4 2887,-811.4 2937,-811.4 2937,-783.4 2887,-783.4"/>
+</g>
+<!-- 104&#45;&gt;105 -->
+<g id="edge105" class="edge">
+<title>104&#45;&gt;105</title>
+<path fill="none" stroke="black" d="M2964,-872.05C2964,-859.92 2964,-843.42 2964,-829.52"/>
+<polygon fill="black" stroke="black" points="2967.5,-829.51 2964,-819.51 2960.5,-829.51 2967.5,-829.51"/>
+<text text-anchor="middle" x="2981.5" y="-841.6" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 106 -->
+<g id="node107" class="node">
+<title>106</title>
+<ellipse fill="none" stroke="black" cx="2964" cy="-712.6" rx="27" ry="18"/>
+<text text-anchor="start" x="2957" y="-709.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2964" y="-709.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<g id="a_node107_71"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\106.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2888,-731.6 2888,-757.6 2936,-757.6 2936,-731.6 2888,-731.6"/>
+<text text-anchor="start" x="2892.56" y="-740" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2887,-730.6 2887,-758.6 2937,-758.6 2937,-730.6 2887,-730.6"/>
+</g>
+<!-- 105&#45;&gt;106 -->
+<g id="edge106" class="edge">
+<title>105&#45;&gt;106</title>
+<path fill="none" stroke="black" d="M2964,-783.25C2964,-771.12 2964,-754.62 2964,-740.72"/>
+<polygon fill="black" stroke="black" points="2967.5,-740.71 2964,-730.71 2960.5,-740.71 2967.5,-740.71"/>
+<text text-anchor="middle" x="2981.5" y="-752.8" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 107 -->
+<g id="node108" class="node">
+<title>107</title>
+<ellipse fill="none" stroke="black" cx="2964" cy="-623.8" rx="27" ry="18"/>
+<text text-anchor="start" x="2957" y="-620.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2964" y="-620.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node108_72"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\107.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2888,-642.8 2888,-668.8 2936,-668.8 2936,-642.8 2888,-642.8"/>
+<text text-anchor="start" x="2892.56" y="-651.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2887,-641.8 2887,-669.8 2937,-669.8 2937,-641.8 2887,-641.8"/>
+</g>
+<!-- 106&#45;&gt;107 -->
+<g id="edge107" class="edge">
+<title>106&#45;&gt;107</title>
+<path fill="none" stroke="black" d="M2964,-694.45C2964,-682.32 2964,-665.82 2964,-651.92"/>
+<polygon fill="black" stroke="black" points="2967.5,-651.91 2964,-641.91 2960.5,-651.91 2967.5,-651.91"/>
+<text text-anchor="middle" x="2968.67" y="-664" font-family="Times,serif" font-size="14.00">R</text>
+</g>
+<!-- 108 -->
+<g id="node109" class="node">
+<title>108</title>
+<ellipse fill="none" stroke="black" cx="2964" cy="-535" rx="27" ry="18"/>
+<text text-anchor="start" x="2957" y="-531.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2964" y="-531.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node109_73"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\108.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2888,-554 2888,-580 2936,-580 2936,-554 2888,-554"/>
+<text text-anchor="start" x="2892.56" y="-562.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2887,-553 2887,-581 2937,-581 2937,-553 2887,-553"/>
+</g>
+<!-- 107&#45;&gt;108 -->
+<g id="edge108" class="edge">
+<title>107&#45;&gt;108</title>
+<path fill="none" stroke="black" d="M2964,-605.65C2964,-593.52 2964,-577.02 2964,-563.12"/>
+<polygon fill="black" stroke="black" points="2967.5,-563.11 2964,-553.11 2960.5,-563.11 2967.5,-563.11"/>
+<text text-anchor="middle" x="2981.5" y="-575.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 109 -->
+<g id="node110" class="node">
+<title>109</title>
+<ellipse fill="none" stroke="black" cx="2928" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="2921" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2928" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node110_74"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\109.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2852,-465.2 2852,-491.2 2900,-491.2 2900,-465.2 2852,-465.2"/>
+<text text-anchor="start" x="2856.56" y="-473.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2851,-464.2 2851,-492.2 2901,-492.2 2901,-464.2 2851,-464.2"/>
+</g>
+<!-- 108&#45;&gt;109 -->
+<g id="edge110" class="edge">
+<title>108&#45;&gt;109</title>
+<path fill="none" stroke="black" d="M2951.08,-518.81C2946.66,-512.94 2942.07,-505.97 2939,-499 2935.65,-491.39 2933.3,-482.7 2931.65,-474.64"/>
+<polygon fill="black" stroke="black" points="2935.06,-473.78 2929.87,-464.54 2928.16,-475 2935.06,-473.78"/>
+<text text-anchor="middle" x="2957.5" y="-486.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 111 -->
+<g id="node112" class="node">
+<title>111</title>
+<ellipse fill="none" stroke="black" cx="3004" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="2997" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="3004" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node112_75"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\111.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2928,-401.2 2928,-427.2 2976,-427.2 2976,-401.2 2928,-401.2"/>
+<text text-anchor="start" x="2932.56" y="-409.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2927,-400.2 2927,-428.2 2977,-428.2 2977,-400.2 2927,-400.2"/>
+</g>
+<!-- 108&#45;&gt;111 -->
+<g id="edge109" class="edge">
+<title>108&#45;&gt;111</title>
+<path fill="none" stroke="black" d="M2971.52,-517.67C2977.3,-505.14 2985.38,-487.6 2992.04,-473.16"/>
+<polygon fill="black" stroke="black" points="2995.37,-474.3 2996.37,-463.75 2989.01,-471.37 2995.37,-474.3"/>
+<text text-anchor="middle" x="3004.5" y="-486.4" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 110 -->
+<g id="node111" class="node">
+<title>110</title>
+<ellipse fill="none" stroke="black" cx="2920" cy="-357.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2897.06" y="-353.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 109&#45;&gt;110 -->
+<g id="edge111" class="edge">
+<title>109&#45;&gt;110</title>
+<path fill="none" stroke="red" d="M2926.42,-428.05C2925.3,-415.92 2923.78,-399.42 2922.5,-385.52"/>
+<polygon fill="red" stroke="red" points="2925.98,-385.15 2921.58,-375.51 2919.01,-385.79 2925.98,-385.15"/>
+</g>
+<!-- 112 -->
+<g id="node113" class="node">
+<title>112</title>
+<ellipse fill="none" stroke="black" cx="3008" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="3001" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="3008" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node113_76"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\112.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2932,-312.4 2932,-338.4 2980,-338.4 2980,-312.4 2932,-312.4"/>
+<text text-anchor="start" x="2936.56" y="-320.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2931,-311.4 2931,-339.4 2981,-339.4 2981,-311.4 2931,-311.4"/>
+</g>
+<!-- 111&#45;&gt;112 -->
+<g id="edge112" class="edge">
+<title>111&#45;&gt;112</title>
+<path fill="none" stroke="black" d="M3004.79,-428.05C3005.35,-415.92 3006.11,-399.42 3006.75,-385.52"/>
+<polygon fill="black" stroke="black" points="3010.25,-385.66 3007.21,-375.51 3003.25,-385.34 3010.25,-385.66"/>
+<text text-anchor="middle" x="3023.5" y="-397.6" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 113 -->
+<g id="node114" class="node">
+<title>113</title>
+<ellipse fill="none" stroke="black" cx="2971" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="2964" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2971" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node114_77"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\113.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2895,-251.6 2895,-277.6 2943,-277.6 2943,-251.6 2895,-251.6"/>
+<text text-anchor="start" x="2899.56" y="-260" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2894,-250.6 2894,-278.6 2944,-278.6 2944,-250.6 2894,-250.6"/>
+</g>
+<!-- 112&#45;&gt;113 -->
+<g id="edge114" class="edge">
+<title>112&#45;&gt;113</title>
+<path fill="none" stroke="black" d="M2994.81,-341.62C2990.14,-335.7 2985.24,-328.57 2982,-321.4 2978.58,-313.83 2976.21,-305.14 2974.56,-297.08"/>
+<polygon fill="black" stroke="black" points="2977.97,-296.22 2972.8,-286.98 2971.07,-297.43 2977.97,-296.22"/>
+<text text-anchor="middle" x="2999.5" y="-308.8" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 125 -->
+<g id="node126" class="node">
+<title>125</title>
+<ellipse fill="none" stroke="black" cx="3079" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="3072" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="3079" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node126_78"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\125.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="3003,-251.6 3003,-277.6 3051,-277.6 3051,-251.6 3003,-251.6"/>
+<text text-anchor="start" x="3007.56" y="-260" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="3002,-250.6 3002,-278.6 3052,-278.6 3052,-250.6 3002,-250.6"/>
+</g>
+<!-- 112&#45;&gt;125 -->
+<g id="edge113" class="edge">
+<title>112&#45;&gt;125</title>
+<path fill="none" stroke="black" d="M3020.37,-341.28C3031.3,-327.92 3047.4,-308.23 3059.97,-292.86"/>
+<polygon fill="black" stroke="black" points="3062.91,-294.79 3066.54,-284.84 3057.5,-290.36 3062.91,-294.79"/>
+<text text-anchor="middle" x="3066.5" y="-308.8" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 114 -->
+<g id="node115" class="node">
+<title>114</title>
+<ellipse fill="none" stroke="black" cx="2796" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="2789" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2796" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node115_79"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\114.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2720,-198.8 2720,-224.8 2768,-224.8 2768,-198.8 2720,-198.8"/>
+<text text-anchor="start" x="2724.56" y="-207.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2719,-197.8 2719,-225.8 2769,-225.8 2769,-197.8 2719,-197.8"/>
+</g>
+<!-- 113&#45;&gt;114 -->
+<g id="edge118" class="edge">
+<title>113&#45;&gt;114</title>
+<path fill="none" stroke="black" d="M2946.85,-260.18C2927.5,-253.87 2899.91,-244.03 2877,-232.6 2857.9,-223.07 2837.66,-210.13 2822.2,-199.57"/>
+<polygon fill="black" stroke="black" points="2823.9,-196.49 2813.69,-193.67 2819.91,-202.25 2823.9,-196.49"/>
+<text text-anchor="middle" x="2895.5" y="-220" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 116 -->
+<g id="node117" class="node">
+<title>116</title>
+<ellipse fill="none" stroke="black" cx="2883" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="2876" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2883" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node117_80"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\116.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2807,-198.8 2807,-224.8 2855,-224.8 2855,-198.8 2807,-198.8"/>
+<text text-anchor="start" x="2811.56" y="-207.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2806,-197.8 2806,-225.8 2856,-225.8 2856,-197.8 2806,-197.8"/>
+</g>
+<!-- 113&#45;&gt;116 -->
+<g id="edge117" class="edge">
+<title>113&#45;&gt;116</title>
+<path fill="none" stroke="black" d="M2955.17,-253.92C2947.98,-247.57 2939.43,-239.84 2932,-232.6 2922.3,-223.15 2911.95,-212.32 2903.27,-203.02"/>
+<polygon fill="black" stroke="black" points="2905.78,-200.58 2896.42,-195.62 2900.64,-205.34 2905.78,-200.58"/>
+<text text-anchor="middle" x="2950.5" y="-220" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 118 -->
+<g id="node119" class="node">
+<title>118</title>
+<ellipse fill="none" stroke="black" cx="2971" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="2964" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="2971" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node119_81"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\118.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2895,-134.8 2895,-160.8 2943,-160.8 2943,-134.8 2895,-134.8"/>
+<text text-anchor="start" x="2899.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2894,-133.8 2894,-161.8 2944,-161.8 2944,-133.8 2894,-133.8"/>
+</g>
+<!-- 113&#45;&gt;118 -->
+<g id="edge116" class="edge">
+<title>113&#45;&gt;118</title>
+<path fill="none" stroke="black" d="M2971,-250.45C2971,-238.32 2971,-221.82 2971,-207.92"/>
+<polygon fill="black" stroke="black" points="2974.5,-207.91 2971,-197.91 2967.5,-207.91 2974.5,-207.91"/>
+<text text-anchor="middle" x="2988.5" y="-220" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 120 -->
+<g id="node121" class="node">
+<title>120</title>
+<ellipse fill="none" stroke="black" cx="3051" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="3044" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="3051" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node121_82"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\120.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2975,-134.8 2975,-160.8 3023,-160.8 3023,-134.8 2975,-134.8"/>
+<text text-anchor="start" x="2979.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2974,-133.8 2974,-161.8 3024,-161.8 3024,-133.8 2974,-133.8"/>
+</g>
+<!-- 113&#45;&gt;120 -->
+<g id="edge115" class="edge">
+<title>113&#45;&gt;120</title>
+<path fill="none" stroke="black" d="M2987.51,-253.88C2994.68,-247.65 3003.02,-240.02 3010,-232.6 3018.21,-223.86 3026.56,-213.62 3033.56,-204.56"/>
+<polygon fill="black" stroke="black" points="3036.55,-206.4 3039.81,-196.32 3030.97,-202.17 3036.55,-206.4"/>
+<text text-anchor="middle" x="3041.5" y="-220" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 115 -->
+<g id="node116" class="node">
+<title>115</title>
+<ellipse fill="none" stroke="black" cx="2765" cy="-91" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2742.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 114&#45;&gt;115 -->
+<g id="edge119" class="edge">
+<title>114&#45;&gt;115</title>
+<path fill="none" stroke="red" d="M2790.02,-162.06C2785.63,-149.78 2779.58,-132.83 2774.53,-118.68"/>
+<polygon fill="red" stroke="red" points="2777.72,-117.22 2771.06,-108.98 2771.13,-119.58 2777.72,-117.22"/>
+</g>
+<!-- 117 -->
+<g id="node118" class="node">
+<title>117</title>
+<ellipse fill="none" stroke="black" cx="2868" cy="-91" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2845.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 116&#45;&gt;117 -->
+<g id="edge120" class="edge">
+<title>116&#45;&gt;117</title>
+<path fill="none" stroke="red" d="M2880.04,-161.65C2877.94,-149.52 2875.09,-133.02 2872.69,-119.12"/>
+<polygon fill="red" stroke="red" points="2876.11,-118.37 2870.96,-109.11 2869.21,-119.56 2876.11,-118.37"/>
+</g>
+<!-- 119 -->
+<g id="node120" class="node">
+<title>119</title>
+<ellipse fill="none" stroke="black" cx="2971" cy="-91" rx="42.88" ry="18"/>
+<text text-anchor="start" x="2948.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 118&#45;&gt;119 -->
+<g id="edge121" class="edge">
+<title>118&#45;&gt;119</title>
+<path fill="none" stroke="red" d="M2971,-161.65C2971,-149.52 2971,-133.02 2971,-119.12"/>
+<polygon fill="red" stroke="red" points="2974.5,-119.11 2971,-109.11 2967.5,-119.11 2974.5,-119.11"/>
+</g>
+<!-- 121 -->
+<g id="node122" class="node">
+<title>121</title>
+<ellipse fill="none" stroke="black" cx="3059" cy="-91" rx="27" ry="18"/>
+<text text-anchor="start" x="3052" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="3059" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node122_83"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\121.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="2983,-46 2983,-72 3031,-72 3031,-46 2983,-46"/>
+<text text-anchor="start" x="2987.56" y="-54.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="2982,-45 2982,-73 3032,-73 3032,-45 2982,-45"/>
+</g>
+<!-- 120&#45;&gt;121 -->
+<g id="edge123" class="edge">
+<title>120&#45;&gt;121</title>
+<path fill="none" stroke="black" d="M3052.58,-161.65C3053.7,-149.52 3055.22,-133.02 3056.5,-119.12"/>
+<polygon fill="black" stroke="black" points="3059.99,-119.39 3057.42,-109.11 3053.02,-118.75 3059.99,-119.39"/>
+<text text-anchor="middle" x="3072.5" y="-131.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 123 -->
+<g id="node124" class="node">
+<title>123</title>
+<ellipse fill="none" stroke="black" cx="3146" cy="-91" rx="27" ry="18"/>
+<text text-anchor="start" x="3139" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="3146" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node124_84"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\123.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="3070,-46 3070,-72 3118,-72 3118,-46 3070,-46"/>
+<text text-anchor="start" x="3074.56" y="-54.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="3069,-45 3069,-73 3119,-73 3119,-45 3069,-45"/>
+</g>
+<!-- 120&#45;&gt;123 -->
+<g id="edge122" class="edge">
+<title>120&#45;&gt;123</title>
+<path fill="none" stroke="black" d="M3068.07,-165.55C3076.1,-159.16 3085.7,-151.27 3094,-143.8 3104.35,-134.47 3115.35,-123.66 3124.56,-114.33"/>
+<polygon fill="black" stroke="black" points="3127.32,-116.51 3131.81,-106.91 3122.32,-111.62 3127.32,-116.51"/>
+<text text-anchor="middle" x="3128.5" y="-131.2" font-family="Times,serif" font-size="14.00">Union</text>
+</g>
+<!-- 122 -->
+<g id="node123" class="node">
+<title>122</title>
+<ellipse fill="none" stroke="black" cx="3051" cy="-18" rx="42.88" ry="18"/>
+<text text-anchor="start" x="3028.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 121&#45;&gt;122 -->
+<g id="edge124" class="edge">
+<title>121&#45;&gt;122</title>
+<path fill="none" stroke="red" d="M3057.06,-72.81C3056.16,-64.79 3055.06,-55.05 3054.05,-46.07"/>
+<polygon fill="red" stroke="red" points="3057.52,-45.57 3052.92,-36.03 3050.56,-46.36 3057.52,-45.57"/>
+</g>
+<!-- 124 -->
+<g id="node125" class="node">
+<title>124</title>
+<ellipse fill="none" stroke="black" cx="3154" cy="-18" rx="42.88" ry="18"/>
+<text text-anchor="start" x="3131.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 123&#45;&gt;124 -->
+<g id="edge125" class="edge">
+<title>123&#45;&gt;124</title>
+<path fill="none" stroke="red" d="M3147.94,-72.81C3148.84,-64.79 3149.94,-55.05 3150.95,-46.07"/>
+<polygon fill="red" stroke="red" points="3154.44,-46.36 3152.08,-36.03 3147.48,-45.57 3154.44,-46.36"/>
+</g>
+<!-- 126 -->
+<g id="node127" class="node">
+<title>126</title>
+<ellipse fill="none" stroke="black" cx="3123" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="3116" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="3123" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node127_85"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\normal\126.txt" xlink:title="Clicca per visualizzare Lx" target="_blank">
+<polygon fill="none" stroke="green" points="3151,-198.8 3151,-224.8 3199,-224.8 3199,-198.8 3151,-198.8"/>
+<text text-anchor="start" x="3155.56" y="-207.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="3150,-197.8 3150,-225.8 3200,-225.8 3200,-197.8 3150,-197.8"/>
+</g>
+<!-- 125&#45;&gt;126 -->
+<g id="edge126" class="edge">
+<title>125&#45;&gt;126</title>
+<path fill="none" stroke="black" d="M3087.28,-251.27C3093.73,-238.54 3102.8,-220.64 3110.19,-206.06"/>
+<polygon fill="black" stroke="black" points="3113.36,-207.56 3114.76,-197.05 3107.12,-204.39 3113.36,-207.56"/>
+<text text-anchor="middle" x="3121.5" y="-220" font-family="Times,serif" font-size="14.00">Union</text>
 </g>
 </g>
 </svg>

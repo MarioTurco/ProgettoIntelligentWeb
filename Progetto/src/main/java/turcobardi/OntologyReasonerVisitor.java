@@ -4,7 +4,6 @@ import java.io.PrintStream;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
-import javax.annotation.Nonnull;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassExpression;
@@ -108,7 +107,7 @@ public class OntologyReasonerVisitor implements OWLObjectVisitor{
 		}
 	}
 	
-    public void renderGraph(@Nonnull OWLOntology ontology) {
+    public void renderGraph(OWLOntology ontology) {
     	IRI iri = ontology.getOntologyID().getOntologyIRI().get();
     	ontology.signature().forEach(s -> System.out.println(s.toString().replace(iri.toString(), "")));
     	return;

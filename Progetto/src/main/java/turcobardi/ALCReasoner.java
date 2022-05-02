@@ -945,19 +945,80 @@ public class ALCReasoner{
 		return toAdd;
 	}
 	
+	private Set<OWLObject> lazyUnfoldingRules2(Set<OWLObject> aBox , Set<OWLObject> Lx, Set<OWLObject> T_u, String individual) {
+		Set<OWLObject> insertedLazy = new HashSet<>();
+		for (OWLObject unfoldableAx: T_u) {
+			if(unfoldableAx instanceof OWLEquivalentClassesAxiom) {
+				OWLClassExpression leftSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(0);
+				//PRIMA REGOLA
+				if (Lx.contains(leftSide)) {
+					OWLClassExpression rightSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(1);
+					Lx.add(rightSide);
+					try {
+						OWLClassAssertionAxiom ax = editor.createIndividual(rightSide, individual);
+						aBox.add(ax);
+						insertedLazy.add(ax);
+					} catch (OWLOntologyCreationException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				//SECONDA REGOLA
+				OWLDataFactory factory = this.editor.getFactory();
+				OWLObjectComplementOf complLeftSide = factory.getOWLObjectComplementOf(leftSide.getNNF());
+				if (Lx.contains(complLeftSide)) {
+					OWLClassExpression rightSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(1);
+					OWLObjectComplementOf rightSideCompl = factory.getOWLObjectComplementOf(rightSide);
+					Lx.add(rightSideCompl);
+					try {
+						OWLClassAssertionAxiom ax =editor.createIndividual(rightSideCompl, individual);
+						aBox.add(ax);
+						insertedLazy.add(ax);
+					} catch (OWLOntologyCreationException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				
+			}
+			
+			//TERZA REGOLA
+			if(unfoldableAx instanceof OWLSubClassOfAxiom) {
+				OWLClassExpression leftSide = ((OWLSubClassOfAxiom) unfoldableAx).getSubClass();
+				
+				if(Lx.contains(leftSide)) {
+					OWLClassExpression rightSide = ((OWLSubClassOfAxiom) unfoldableAx).getSuperClass();
+					Lx.add(rightSide);
+					try {
+						OWLClassAssertionAxiom ax = editor.createIndividual(rightSide, individual);
+						aBox.add(ax);
+						insertedLazy.add(ax);
+					} catch (OWLOntologyCreationException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}	
+			}
+			
+		}
+		return insertedLazy;
+	}
+	
 	private boolean implementTableauxNonEmptyTboxLazyUnfolding(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Set<OWLObject> T_u, Node parent) {
 		boolean ret = true;
-		Set<OWLObject> lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
-		Set<OWLObject> insertedLazyUnf = new HashSet<>();
+		//Set<OWLObject> lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
+		Set<OWLObject> insertedLazyUnf = lazyUnfoldingRules2(aBox, Lx, T_u, ind.getIRI().getShortForm());
+		//Set<OWLObject> insertedLazyUnf = new HashSet<>();
 
-		for(OWLObject ins: lazyUnfoldingRulesRes) {
+		/*for(OWLObject ins: lazyUnfoldingRulesRes) {
 			if (aBox.add(ins)) {	
 				insertedLazyUnf.add(ins);
 			}
 		}
 		for(OWLObject ins: lazyUnfoldingRulesRes) {
 			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
-		}
+		}*/
+		
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(Lx,ind.getIRI().getShortForm());
     	Set<OWLObject> inserted = new HashSet<>();
@@ -972,16 +1033,17 @@ public class ALCReasoner{
     		Lx.add(((OWLClassAssertionAxiom) o).getClassExpression());
     	}
     	
-    	lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
+    	insertedLazyUnf.addAll(lazyUnfoldingRules2(aBox, Lx, T_u, ind.getIRI().getShortForm()));
+    	//lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
 
-    	for(OWLObject ins: lazyUnfoldingRulesRes) {
+    	/*for(OWLObject ins: lazyUnfoldingRulesRes) {
 			if (aBox.add(ins)) {	
 				insertedLazyUnf.add(ins);
 			}
 		}
 		for(OWLObject ins: lazyUnfoldingRulesRes) {
 			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
-		}
+		}*/
     	for (OWLObject o: Lx) {
     		o.accept(gv);
     		gv.addSemicolon();
