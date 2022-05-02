@@ -99,8 +99,6 @@ public class ALCReasoner{
 				OWLClassExpression right = ((OWLEquivalentClassesAxiom) axiom).getOperandsAsList().get(1);
 				
 				OWLObjectComplementOf compl1 = factory.getOWLObjectComplementOf(left);
-				//System.out.println(compl1);
-				//System.out.println(concept);
 				operands1.add(compl1);
 				operands1.add(right);
 				OWLObjectUnionOf union1 = factory.getOWLObjectUnionOf(operands1);
@@ -180,21 +178,20 @@ public class ALCReasoner{
 		return inclusionToAdd;
 	}
 	
-	//TODO in realtà abox è una regola forAll e va rinominata
-	//TODO prop è l'esistenziale appena istanziato e va rinominato
-	private OWLObject forAllRule(OWLObject abox, OWLObjectPropertyAssertionAxiom prop ) {
+
+	private OWLObject forAllRule(OWLObject forAll, OWLObjectPropertyAssertionAxiom existsProperty ) {
 		OWLObject toAdd = null; 
 		ForAllRuleVisitor vis = new ForAllRuleVisitor();
 		OWLNamedIndividual ind = null;
-		abox.accept(vis);
+		forAll.accept(vis);
 		List<OWLObject> proAndFil = vis.getPropertyAndFiller();
 		if (proAndFil.size()>0) {
 			OWLObjectPropertyExpression property = (OWLObjectPropertyExpression) proAndFil.get(0);
 			OWLClassExpression filler = (OWLClassExpression) proAndFil.get(1);
 			
-			if(prop.getProperty().equals(property)) {
+			if(existsProperty.getProperty().equals(property)) {
 				//Data una relazione R(x,z) getObject() restituisce la z, getSubject() restituisce x
-				ind = (OWLNamedIndividual) prop.getObject();
+				ind = (OWLNamedIndividual) existsProperty.getObject();
 				try {
 					if(ind!=null) {							
 						toAdd = editor.createClassAssertionWithExistingIndividual(filler, ind);							
@@ -209,7 +206,7 @@ public class ALCReasoner{
 		
 		return toAdd;
 	}
-	
+	//TODO OLD
 	//TODO rinominare abox
 	//TODO volendo si può rinominare toAdd in qualcosa che dica che è un assioma
 	private Set<OWLObject> existsRule(OWLObject abox, OWLNamedIndividual ind1 , String newIndividualName) {
@@ -887,6 +884,7 @@ public class ALCReasoner{
     	return ret;
 	}
 	
+	//TODO OLD
 	private Set<OWLObject> lazyUnfoldingRules(Set<OWLObject> aBox, Set<OWLObject> T_u, String individual) {
 		Set<OWLObject> toAdd = new HashSet<>();
 		for (OWLObject unfoldableAx: T_u) {
