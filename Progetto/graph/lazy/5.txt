@@ -1,1 +1,1 @@
-Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )), (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), Bicicletta , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), Manubrio , ¬Sterzo 
+((Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (Veicolo ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Auto ), Bicicletta ,  ∀ haComponente.Manubrio , (¬Auto ⊔  ∀ haComponente.Sterzo ), (¬Manubrio ⊔ ¬Sterzo )

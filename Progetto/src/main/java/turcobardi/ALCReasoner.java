@@ -407,7 +407,7 @@ public class ALCReasoner{
 			}
 			//Creiamo il nodo principale
 			String formula = gv.getAndClearFormula();
-			Node current = gr.createNode(printingPath1+formula + printingPath2 + normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath3, ind.getIRI().getShortForm().replace("x", "") );
+			Node current = gr.createNode(printingPath1+"Nodo " + (gr.getLastNodeID()-1) + ": " + formula + printingPath2 + normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath3, ind.getIRI().getShortForm().replace("x", "") );
 			gr.printLabelToFile(formula,current.name().toString(),"normal");
 			rdf.addResource(current.name().toString(), formula);
 			if(printGraph)
@@ -456,7 +456,7 @@ public class ALCReasoner{
 				gv.addColonToFormula();
 			}
 			String formula = gv.getAndClearFormula();
-			Node current = gr.createNode(printingPath1+formula + printingPath2 +lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath3, ind.getIRI().getShortForm().replace("x", "") );
+			Node current = gr.createNode(printingPath1+"Nodo " + (gr.getLastNodeID()-1) + ": " +formula + printingPath2 +lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath3, ind.getIRI().getShortForm().replace("x", "") );
 			gr.printLabelToFile(formula,current.name().toString(),"lazy");
 			rdf.addResource(current.name().toString(), formula);
 			if(printGraph) 
@@ -511,7 +511,7 @@ public class ALCReasoner{
     		gv.addColonToFormula();
     	}
     	String formula = gv.getAndClearFormula();
-    	parent = gr.editNodeLabel(parent, parent.name().toString().replace("x", ""), printingPath1+formula + printingPath2  +normalLabelsPath+"\\"+parent.name().toString()+printingPath3 );
+    	parent = gr.editNodeLabel(parent, parent.name().toString().replace("x", ""), printingPath1+"Nodo " + parent.name().toString() + ": " +formula + printingPath2  +normalLabelsPath+"\\"+parent.name().toString()+printingPath3 );
     	rdf.editLabelProperty(parent.name().toString().replace("x", ""), formula);
     	gr.printLabelToFile(formula, parent.name().toString().replace("x", ""), "normal");
     	if(hasClash(Lx)) {
@@ -564,7 +564,7 @@ public class ALCReasoner{
                     	    	gv.addColonToFormula();
                     	    }
     						formula = gv.getAndClearFormula();
-    						Node current = gr.createNode(printingPath1+formula + printingPath2 +normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath3, ind.getIRI().getShortForm().replace("x",""));
+    						Node current = gr.createNode(printingPath1+"Nodo " + (gr.getLastNodeID()) + ": " +formula + printingPath2 +normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath3, ind.getIRI().getShortForm().replace("x",""));
     						gr.createLink2(current, parent, union+"");
     						gr.printLabelToFile(formula,current.name().toString(),"normal");
     						rdf.addResource(current.name().toString().replace("x", ""), formula);
@@ -656,7 +656,7 @@ public class ALCReasoner{
             			relationName = relationName.replace(">", "");
             			relationName = relationName.replace("#", "");
             			
-            			Node current = gr.createNode(printingPath1+formula + printingPath2 +normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath3,  newIndName.replace("x",""));
+            			Node current = gr.createNode(printingPath1+"Nodo " + (gr.getLastNodeID()) + ": " +formula + printingPath2 +normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath3,  newIndName.replace("x",""));
             			gr.printLabelToFile(formula,current.name().toString(),"normal");
             			gr.createLink2(current, parent, relationName);
             			rdf.addResource(current.name().toString(), formula);
@@ -679,7 +679,7 @@ public class ALCReasoner{
             							gv.addColonToFormula();
             						}
             						formula = gv.getAndClearFormula();
-            						current = gr.editNodeLabel(current, ind.getIRI().getShortForm().replace("x", ""), printingPath1+formula + printingPath2 +normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath3);
+            						current = gr.editNodeLabel(current, ind.getIRI().getShortForm().replace("x", ""), printingPath1+"Nodo " +  current.name().toString() + ": " +formula + printingPath2 +normalLabelsPath+"\\"+gr.getLastNodeID()+printingPath3);
             						gr.printLabelToFile(formula, current.name().toString(), "normal");
             						rdf.editLabelProperty(current.name().toString(), formula);
             				    	
@@ -1054,7 +1054,7 @@ public class ALCReasoner{
     	}
     	//Edit the parent node
     	String formula = gv.getAndClearFormula();
-    	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm().replace("x", ""),  printingPath1+formula + printingPath2 +lazyLabelsPath+"\\"+parent.name().toString()+printingPath3 );
+    	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm().replace("x", ""),  printingPath1+"Nodo " + parent.name().toString() + ": " +formula + printingPath2 +lazyLabelsPath+"\\"+parent.name().toString()+printingPath3 );
     	gr.printLabelToFile(formula, parent.name().toString(), "lazy");
     	rdf.editLabelProperty(parent.name().toString(), formula);
     	
@@ -1112,7 +1112,7 @@ public class ALCReasoner{
                     	    	gv.addColonToFormula();
                     	    }
     						formula = gv.getAndClearFormula();
-    						Node currentNode = gr.createNode( printingPath1+formula + printingPath2 +lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath3, ind.getIRI().getShortForm().replace("x", ""));
+    						Node currentNode = gr.createNode( printingPath1+"Nodo " + (gr.getLastNodeID()) + ": " +formula + printingPath2 +lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath3, ind.getIRI().getShortForm().replace("x", ""));
     						gr.createLink2(currentNode, parent, union+"");
     						gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
     						rdf.addResource(currentNode.name().toString(), formula);
@@ -1208,7 +1208,7 @@ public class ALCReasoner{
             			relationName = relationName.replace(">", "");
             			relationName = relationName.replace("#", "");
             			formula = gv.getAndClearFormula();
-            			Node currentNode = gr.createNode(printingPath1+formula + printingPath2 + lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath3,  newIndName.replace("x", ""));
+            			Node currentNode = gr.createNode(printingPath1+"Nodo " + (gr.getLastNodeID()) + ": " +formula + printingPath2 + lazyLabelsPath+"\\"+gr.getLastNodeID()+printingPath3,  newIndName.replace("x", ""));
 
             			gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
             			gr.createLink2(currentNode, parent, relationName);
@@ -1227,7 +1227,7 @@ public class ALCReasoner{
             							gv.addColonToFormula();
             						}
             						formula = gv.getAndClearFormula();
-            						currentNode = gr.editNodeLabel(currentNode, ind.getIRI().getShortForm().replace("x",""), printingPath1+formula + printingPath2 +lazyLabelsPath+"\\"+currentNode.name().toString()+printingPath3);
+            						currentNode = gr.editNodeLabel(currentNode, ind.getIRI().getShortForm().replace("x",""), printingPath1+"Nodo " + currentNode.name().toString() + ": " +formula + printingPath2 +lazyLabelsPath+"\\"+currentNode.name().toString()+printingPath3);
             						gr.printLabelToFile(formula, currentNode.name().toString(), "lazy");
             						rdf.editLabelProperty(currentNode.name().toString(), formula);
             					}
