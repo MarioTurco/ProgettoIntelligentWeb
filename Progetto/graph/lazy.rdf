@@ -1,8 +1,8 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:j.0="http://ontology-28#">
-  <rdf:Description rdf:about="http://ontology-28#0">
-    <j.0:clash-free rdf:resource="http://ontology-28#clash-Free"/>
-    <j.0:label>(A ⊓ B ), A , B </j.0:label>
+    xmlns:j.0="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#">
+  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#0">
+    <j.0:clash rdf:resource="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#clashNode0"/>
+    <j.0:label>Veicolo , ((Veicolo ⊔ ¬Auto )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Manubrio ⊔ ¬Sterzo )), (Veicolo ⊔ ¬Auto ), Bicicletta , (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (¬Auto ⊔  ∀ haComponente.Sterzo ), (Auto ⊓ Bicicletta ), ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo ), Auto </j.0:label>
   </rdf:Description>
 </rdf:RDF>

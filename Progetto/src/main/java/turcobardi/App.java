@@ -40,7 +40,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 
-		File kbFile = new File("KB_13.owl");
+		File kbFile = new File("veicolo.owl");
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("KB size:" + kb.getAxiomCount());
 		IRI iriKb = kb.getOntologyID().getOntologyIRI().get();
@@ -74,12 +74,9 @@ public class App {
     	System.out.println("\n###########Tg###########");
     	for(OWLObject o: lazy.getT_g()) {
     		o.accept(visitor);
-<<<<<<< HEAD
     	}*/
-    	System.out.println("\n################Empty TBox################");
-    	executeAndPrintTime("empty", kb, query, true);
-    	System.out.println("\n################Non-Empty TBox################");
 
+    	System.out.println("\n################Normal################");
     	executeAndPrintTime("nonEmpty", kb, query, true);
     	System.out.println("\n############LazyUnfolding#############");
     	executeAndPrintTime("lazy", kb, query, true);
@@ -139,18 +136,19 @@ public class App {
 	}
 	
 	private static void executeAndPrintTime(String what, OWLOntology kb, OWLOntology query, boolean printGraph) {
-		if (what.equals("empty")) {
+	/*	if (what.equals("empty")) {
 			ALCReasoner reasoner = new ALCReasoner(query, null);
 			Instant start = Instant.now();
 	    	System.out.println("\nSAT: " + reasoner.alcTableauxNonEmpyTbox(false, printGraph));
 	    	Instant end = Instant.now();
 	    	System.out.println("\nElapsed Time: "+ Duration.between(start, end).toMillis()+"ms");
 	    	if(printGraph) {	    		
-	    		reasoner.renderTableauxGraph("graph/Empty");
-	    		reasoner.printRDF("Empty", false);
+	    		reasoner.renderTableauxGraph("graph/empty");
+	    		reasoner.printRDF("empty", false);
 	    	}
 		}
-		else if (what.equals("nonEmpty")) {
+		else*/
+		if (what.equals("nonEmpty")) {
 			if(kb.getLogicalAxiomCount()==0) {
 				System.out.println("TBox vuota.");
 				return;
