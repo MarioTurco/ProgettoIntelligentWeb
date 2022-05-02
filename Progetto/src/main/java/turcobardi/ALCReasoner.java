@@ -464,7 +464,7 @@ public class ALCReasoner{
 			else
 				return implementTableauxNonEmptyTboxLazyUnfoldingNoPrint(ind, Lx, aBox, null, T_u);
 			
-		}else if(kb==null) {
+		}else if(useLazyUnfolding && kb==null) {
 			System.out.println("Impossibile usare il lazy unfolding su TBox vuota");
 			//throw new IllegalArgumentException("Cannot use lazy unfolding on empty tbox");
 		}
