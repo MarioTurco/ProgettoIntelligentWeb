@@ -569,14 +569,11 @@ public class ALCReasoner{
     	if(arePresentDisj) {
     		
     		for (OWLObject axiom: Lx) {
-    			//ax.accept(printer);
     			Set<OWLObject> resURule = this.unionRule(axiom,ind.getIRI().getShortForm());
     			if(resURule.size()>0) {
     				Set<OWLObject> intersec = new HashSet<>(aBox);
     				intersec.retainAll(resURule);
-    				//mi salvo il padre comune a tutti i nodi disgiunti
     				if(intersec.size()==0) {
-    					//int tmpParent = gr.getLastParent()+1;
     					for (OWLObject disjoint : resURule) {
     						Set<OWLObject> tmpLx = new HashSet<>(Lx);
     						aBox.add(disjoint);

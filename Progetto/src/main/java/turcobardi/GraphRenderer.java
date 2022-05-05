@@ -64,7 +64,6 @@ public class GraphRenderer {
 			myWriter.append(label);
 			myWriter.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return;
@@ -134,7 +133,7 @@ public class GraphRenderer {
 	public void renderGraph(String path) throws IOException {
 		createGraph();
 		if(path==null)
-			path = "example/tableaux3";
+			path = "example/tableaux";
 		File f = new File(path+".svg");
 		Graphviz.fromGraph(g).render(Format.SVG).toFile(f);
 		System.out.println("Graph printed at " + f.getAbsolutePath());
