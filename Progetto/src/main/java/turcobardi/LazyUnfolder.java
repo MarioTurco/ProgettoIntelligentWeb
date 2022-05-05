@@ -29,12 +29,12 @@ public class LazyUnfolder {
 			if(axiom instanceof OWLEquivalentClassesAxiom || axiom instanceof OWLSubClassOfAxiom) {
 				boolean inserted = false;
 				if(axiom instanceof OWLEquivalentClassesAxiom) {
-					if(((OWLEquivalentClassesAxiom) axiom).getOperandsAsList().get(0).isTopEntity()) {
+					if(((OWLEquivalentClassesAxiom) axiom).getOperandsAsList().get(0).isTopEntity() || !((OWLEquivalentClassesAxiom) axiom).getOperandsAsList().get(0).isClassExpressionLiteral()) {
 						T_g.add(axiom);	
 						inserted = true;
 					}
 				}else if(axiom instanceof OWLSubClassOfAxiom) {
-					if(((OWLSubClassOfAxiom) axiom).getSubClass().isTopEntity()) {
+					if(((OWLSubClassOfAxiom) axiom).getSubClass().isTopEntity() || !((OWLSubClassOfAxiom) axiom).getSubClass().isClassExpressionLiteral()) {
 						T_g.add(axiom);	
 						inserted = true;
 					}
