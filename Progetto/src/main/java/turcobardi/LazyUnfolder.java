@@ -27,8 +27,23 @@ public class LazyUnfolder {
 		LazyUnfoldingVisitor visitor = new LazyUnfoldingVisitor();
 		for(OWLLogicalAxiom axiom: this.kb.getLogicalAxioms()) {
 			if(axiom instanceof OWLEquivalentClassesAxiom || axiom instanceof OWLSubClassOfAxiom) {
+				boolean inserted = false;
+				if(axiom instanceof OWLEquivalentClassesAxiom) {
+					if(((OWLEquivalentClassesAxiom) axiom).getOperandsAsList().get(0).isTopEntity()) {
+						T_g.add(axiom);	
+						inserted = true;
+					}
+				}else if(axiom instanceof OWLSubClassOfAxiom) {
+					if(((OWLSubClassOfAxiom) axiom).getSubClass().isTopEntity()) {
+						T_g.add(axiom);	
+						inserted = true;
+					}
+					
+
+				}
 				
-				if(this.isUnfoldable(T_u, axiom)) {
+				
+				if(!inserted && this.isUnfoldable(T_u, axiom)) {
 					T_u.add(axiom);
 					//Controlla se è aciclico
 					if(axiom instanceof OWLEquivalentClassesAxiom) {
@@ -45,10 +60,10 @@ public class LazyUnfolder {
 					//System.out.println("Right side dep: " + rightSideDependencies);
 					//System.out.println("Left side dep: " + leftSideDependencies);
 
-				}else {
-					
+				}else if(!inserted && !this.isUnfoldable(T_u, axiom)) {
 					T_g.add(axiom);		
 				}
+				inserted = false;
 			}
 		}
 	}

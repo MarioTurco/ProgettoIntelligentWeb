@@ -1,0 +1,776 @@
+<svg width="1018px" height="678px"
+ viewBox="0.00 0.00 1017.76 677.80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 673.8)">
+<title>tableaux</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-673.8 1013.76,-673.8 1013.76,4 -4,4"/>
+<!-- 0 -->
+<g id="node1" class="node">
+<title>0</title>
+<ellipse fill="none" stroke="black" cx="371" cy="-623.8" rx="27" ry="18"/>
+<text text-anchor="start" x="364" y="-620.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="371" y="-620.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node1_203"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\0.txt" xlink:title="Nodo 0: ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="295,-642.8 295,-668.8 343,-668.8 343,-642.8 295,-642.8"/>
+<text text-anchor="start" x="299.56" y="-651.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="294,-641.8 294,-669.8 344,-669.8 344,-641.8 294,-641.8"/>
+</g>
+<!-- 1 -->
+<g id="node2" class="node">
+<title>1</title>
+<ellipse fill="none" stroke="black" cx="294" cy="-535" rx="27" ry="18"/>
+<text text-anchor="start" x="287" y="-531.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="294" y="-531.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node2_204"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\1.txt" xlink:title="Nodo 1: Componente , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="218,-554 218,-580 266,-580 266,-554 218,-554"/>
+<text text-anchor="start" x="222.56" y="-562.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="217,-553 217,-581 267,-581 267,-553 217,-553"/>
+</g>
+<!-- 0&#45;&gt;1 -->
+<g id="edge2" class="edge">
+<title>0&#45;&gt;1</title>
+<path fill="none" stroke="black" d="M357.59,-607.68C345.55,-594.11 327.72,-574.02 314.01,-558.55"/>
+<polygon fill="black" stroke="black" points="316.51,-556.1 307.26,-550.95 311.28,-560.75 316.51,-556.1"/>
+<text text-anchor="middle" x="345.25" y="-575.2" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 17 -->
+<g id="node18" class="node">
+<title>17</title>
+<ellipse fill="none" stroke="black" cx="433" cy="-535" rx="27" ry="18"/>
+<text text-anchor="start" x="426" y="-531.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="433" y="-531.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node18_205"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\17.txt" xlink:title="Nodo 17: ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="357,-554 357,-580 405,-580 405,-554 357,-554"/>
+<text text-anchor="start" x="361.56" y="-562.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="356,-553 356,-581 406,-581 406,-553 356,-553"/>
+</g>
+<!-- 0&#45;&gt;17 -->
+<g id="edge1" class="edge">
+<title>0&#45;&gt;17</title>
+<path fill="none" stroke="black" d="M382.08,-607.28C391.46,-594.16 405.05,-575.13 415.83,-560.04"/>
+<polygon fill="black" stroke="black" points="418.84,-561.85 421.8,-551.68 413.14,-557.78 418.84,-561.85"/>
+<text text-anchor="middle" x="413.25" y="-575.2" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 2 -->
+<g id="node3" class="node">
+<title>2</title>
+<ellipse fill="none" stroke="black" cx="193" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="186" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="193" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node3_206"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\2.txt" xlink:title="Nodo 2: Componente , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , ¬Veicolo , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="117,-465.2 117,-491.2 165,-491.2 165,-465.2 117,-465.2"/>
+<text text-anchor="start" x="121.56" y="-473.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="116,-464.2 116,-492.2 166,-492.2 166,-464.2 116,-464.2"/>
+</g>
+<!-- 1&#45;&gt;2 -->
+<g id="edge4" class="edge">
+<title>1&#45;&gt;2</title>
+<path fill="none" stroke="black" d="M277.77,-520.05C261.26,-505.86 235.48,-483.71 216.69,-467.56"/>
+<polygon fill="black" stroke="black" points="218.72,-464.69 208.85,-460.83 214.16,-470 218.72,-464.69"/>
+<text text-anchor="middle" x="258.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 15 -->
+<g id="node16" class="node">
+<title>15</title>
+<ellipse fill="none" stroke="black" cx="294" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="287" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="294" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node16_207"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\15.txt" xlink:title="Nodo 15: Componente , Veicolo , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Veicolo , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="218,-401.2 218,-427.2 266,-427.2 266,-401.2 218,-401.2"/>
+<text text-anchor="start" x="222.56" y="-409.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="217,-400.2 217,-428.2 267,-428.2 267,-400.2 217,-400.2"/>
+</g>
+<!-- 1&#45;&gt;15 -->
+<g id="edge3" class="edge">
+<title>1&#45;&gt;15</title>
+<path fill="none" stroke="black" d="M294,-516.85C294,-504.72 294,-488.22 294,-474.32"/>
+<polygon fill="black" stroke="black" points="297.5,-474.31 294,-464.31 290.5,-474.31 297.5,-474.31"/>
+<text text-anchor="middle" x="299.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 3 -->
+<g id="node4" class="node">
+<title>3</title>
+<ellipse fill="none" stroke="black" cx="77" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="70" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="77" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node4_208"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\3.txt" xlink:title="Nodo 3: Componente , Veicolo , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , ¬Veicolo , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="1,-376.4 1,-402.4 49,-402.4 49,-376.4 1,-376.4"/>
+<text text-anchor="start" x="5.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="0,-375.4 0,-403.4 50,-403.4 50,-375.4 0,-375.4"/>
+</g>
+<!-- 2&#45;&gt;3 -->
+<g id="edge6" class="edge">
+<title>2&#45;&gt;3</title>
+<path fill="none" stroke="black" d="M175.63,-432.21C156.33,-417.76 124.95,-394.28 102.78,-377.69"/>
+<polygon fill="black" stroke="black" points="104.59,-374.67 94.49,-371.48 100.39,-380.28 104.59,-374.67"/>
+<text text-anchor="middle" x="151.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 5 -->
+<g id="node6" class="node">
+<title>5</title>
+<ellipse fill="none" stroke="black" cx="193" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="186" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="193" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node6_209"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\5.txt" xlink:title="Nodo 5: Componente , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , ¬Veicolo , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="117,-340.4 117,-366.4 165,-366.4 165,-340.4 117,-340.4"/>
+<text text-anchor="start" x="121.56" y="-348.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="116,-339.4 116,-367.4 166,-367.4 166,-339.4 116,-339.4"/>
+</g>
+<!-- 2&#45;&gt;5 -->
+<g id="edge5" class="edge">
+<title>2&#45;&gt;5</title>
+<path fill="none" stroke="black" d="M193,-428.05C193,-415.92 193,-399.42 193,-385.52"/>
+<polygon fill="black" stroke="black" points="196.5,-385.51 193,-375.51 189.5,-385.51 196.5,-385.51"/>
+<text text-anchor="middle" x="198.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 4 -->
+<g id="node5" class="node">
+<title>4</title>
+<ellipse fill="none" stroke="black" cx="56" cy="-268.6" rx="42.88" ry="18"/>
+<text text-anchor="start" x="33.06" y="-264.4" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 3&#45;&gt;4 -->
+<g id="edge7" class="edge">
+<title>3&#45;&gt;4</title>
+<path fill="none" stroke="red" d="M72.85,-339.25C69.92,-327.12 65.92,-310.62 62.56,-296.72"/>
+<polygon fill="red" stroke="red" points="65.89,-295.61 60.14,-286.71 59.09,-297.26 65.89,-295.61"/>
+</g>
+<!-- 6 -->
+<g id="node7" class="node">
+<title>6</title>
+<ellipse fill="none" stroke="black" cx="144" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="137" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="144" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node7_210"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\6.txt" xlink:title="Nodo 6: ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Veicolo , (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), Componente , (Veicolo ⊔ ¬Bicicletta ), owl:Nothing , ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="68,-287.6 68,-313.6 116,-313.6 116,-287.6 68,-287.6"/>
+<text text-anchor="start" x="72.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="67,-286.6 67,-314.6 117,-314.6 117,-286.6 67,-286.6"/>
+</g>
+<!-- 5&#45;&gt;6 -->
+<g id="edge9" class="edge">
+<title>5&#45;&gt;6</title>
+<path fill="none" stroke="black" d="M183.78,-340.07C176.6,-327.34 166.49,-309.44 158.26,-294.86"/>
+<polygon fill="black" stroke="black" points="161.14,-292.84 153.18,-285.85 155.04,-296.28 161.14,-292.84"/>
+<text text-anchor="middle" x="178.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 8 -->
+<g id="node9" class="node">
+<title>8</title>
+<ellipse fill="none" stroke="black" cx="216" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="209" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="216" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node9_211"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\8.txt" xlink:title="Nodo 8: ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Veicolo , (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), &#160;∀ haComponente.Componente , Componente , (Veicolo ⊔ ¬Bicicletta ), ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="140,-223.6 140,-249.6 188,-249.6 188,-223.6 140,-223.6"/>
+<text text-anchor="start" x="144.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="139,-222.6 139,-250.6 189,-250.6 189,-222.6 139,-222.6"/>
+</g>
+<!-- 5&#45;&gt;8 -->
+<g id="edge8" class="edge">
+<title>5&#45;&gt;8</title>
+<path fill="none" stroke="black" d="M197.54,-339.25C200.78,-327.05 205.19,-310.4 208.89,-296.45"/>
+<polygon fill="black" stroke="black" points="212.37,-296.98 211.54,-286.42 205.6,-295.19 212.37,-296.98"/>
+<text text-anchor="middle" x="212.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 7 -->
+<g id="node8" class="node">
+<title>7</title>
+<ellipse fill="none" stroke="black" cx="64" cy="-179.8" rx="42.88" ry="18"/>
+<text text-anchor="start" x="41.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 6&#45;&gt;7 -->
+<g id="edge10" class="edge">
+<title>6&#45;&gt;7</title>
+<path fill="none" stroke="red" d="M130.43,-252.88C118.21,-239.61 100.02,-219.88 85.77,-204.42"/>
+<polygon fill="red" stroke="red" points="88.08,-201.76 78.72,-196.78 82.93,-206.5 88.08,-201.76"/>
+</g>
+<!-- 9 -->
+<g id="node10" class="node">
+<title>9</title>
+<ellipse fill="none" stroke="black" cx="152" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="145" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="152" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node10_212"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\9.txt" xlink:title="Nodo 9: ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Veicolo , (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), &#160;∀ haComponente.Componente , ¬Sterzo , Componente , (Veicolo ⊔ ¬Bicicletta ), ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="76,-198.8 76,-224.8 124,-224.8 124,-198.8 76,-198.8"/>
+<text text-anchor="start" x="80.56" y="-207.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="75,-197.8 75,-225.8 125,-225.8 125,-197.8 75,-197.8"/>
+</g>
+<!-- 8&#45;&gt;9 -->
+<g id="edge12" class="edge">
+<title>8&#45;&gt;9</title>
+<path fill="none" stroke="black" d="M204.56,-252.08C194.82,-238.87 180.68,-219.69 169.51,-204.55"/>
+<polygon fill="black" stroke="black" points="172.09,-202.16 163.34,-196.18 166.46,-206.31 172.09,-202.16"/>
+<text text-anchor="middle" x="195.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 12 -->
+<g id="node13" class="node">
+<title>12</title>
+<ellipse fill="none" stroke="black" cx="224" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="217" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="224" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node13_213"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\12.txt" xlink:title="Nodo 12: ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Veicolo , (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), &#160;∀ haComponente.Componente , Componente , (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="252,-198.8 252,-224.8 300,-224.8 300,-198.8 252,-198.8"/>
+<text text-anchor="start" x="256.56" y="-207.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="251,-197.8 251,-225.8 301,-225.8 301,-197.8 251,-197.8"/>
+</g>
+<!-- 8&#45;&gt;12 -->
+<g id="edge11" class="edge">
+<title>8&#45;&gt;12</title>
+<path fill="none" stroke="black" d="M217.58,-250.45C218.7,-238.32 220.22,-221.82 221.5,-207.92"/>
+<polygon fill="black" stroke="black" points="224.99,-208.19 222.42,-197.91 218.02,-207.55 224.99,-208.19"/>
+<text text-anchor="middle" x="226.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 10 -->
+<g id="node11" class="node">
+<title>10</title>
+<ellipse fill="none" stroke="black" cx="134" cy="-91" rx="27" ry="18"/>
+<text text-anchor="start" x="127" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="134" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<g id="a_node11_214"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\10.txt" xlink:title="Nodo 10: Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo ))" target="_blank">
+<polygon fill="none" stroke="green" points="58,-110 58,-136 106,-136 106,-110 58,-110"/>
+<text text-anchor="start" x="62.56" y="-118.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="57,-109 57,-137 107,-137 107,-109 57,-109"/>
+</g>
+<!-- 9&#45;&gt;10 -->
+<g id="edge13" class="edge">
+<title>9&#45;&gt;10</title>
+<path fill="none" stroke="black" d="M142.49,-162.6C139.59,-156.85 136.78,-150.22 135.24,-143.8 133.34,-135.89 132.63,-127.11 132.5,-119.06"/>
+<polygon fill="black" stroke="black" points="136,-119.07 132.62,-109.03 129.01,-118.99 136,-119.07"/>
+<text text-anchor="middle" x="178.38" y="-131.2" font-family="Times,serif" font-size="14.00">haComponente</text>
+</g>
+<!-- 11 -->
+<g id="node12" class="node">
+<title>11</title>
+<ellipse fill="none" stroke="black" cx="134" cy="-18" rx="42.88" ry="18"/>
+<text text-anchor="start" x="111.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 10&#45;&gt;11 -->
+<g id="edge14" class="edge">
+<title>10&#45;&gt;11</title>
+<path fill="none" stroke="red" d="M134,-72.81C134,-64.79 134,-55.05 134,-46.07"/>
+<polygon fill="red" stroke="red" points="137.5,-46.03 134,-36.03 130.5,-46.03 137.5,-46.03"/>
+</g>
+<!-- 13 -->
+<g id="node14" class="node">
+<title>13</title>
+<ellipse fill="none" stroke="black" cx="242" cy="-91" rx="27" ry="18"/>
+<text text-anchor="start" x="235" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="242" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<g id="a_node14_215"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\13.txt" xlink:title="Nodo 13: Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo ))" target="_blank">
+<polygon fill="none" stroke="green" points="166,-74 166,-100 214,-100 214,-74 166,-74"/>
+<text text-anchor="start" x="170.56" y="-82.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="165,-73 165,-101 215,-101 215,-73 165,-73"/>
+</g>
+<!-- 12&#45;&gt;13 -->
+<g id="edge15" class="edge">
+<title>12&#45;&gt;13</title>
+<path fill="none" stroke="black" d="M227.56,-161.65C230.07,-149.52 233.49,-133.02 236.38,-119.12"/>
+<polygon fill="black" stroke="black" points="239.85,-119.62 238.45,-109.11 232.99,-118.19 239.85,-119.62"/>
+<text text-anchor="middle" x="277.38" y="-131.2" font-family="Times,serif" font-size="14.00">haComponente</text>
+</g>
+<!-- 14 -->
+<g id="node15" class="node">
+<title>14</title>
+<ellipse fill="none" stroke="black" cx="242" cy="-18" rx="42.88" ry="18"/>
+<text text-anchor="start" x="219.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 13&#45;&gt;14 -->
+<g id="edge16" class="edge">
+<title>13&#45;&gt;14</title>
+<path fill="none" stroke="red" d="M242,-72.81C242,-64.79 242,-55.05 242,-46.07"/>
+<polygon fill="red" stroke="red" points="245.5,-46.03 242,-36.03 238.5,-46.03 245.5,-46.03"/>
+</g>
+<!-- 16 -->
+<g id="node17" class="node">
+<title>16</title>
+<ellipse fill="none" stroke="black" cx="294" cy="-357.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="271.06" y="-353.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 15&#45;&gt;16 -->
+<g id="edge17" class="edge">
+<title>15&#45;&gt;16</title>
+<path fill="none" stroke="red" d="M294,-428.05C294,-415.92 294,-399.42 294,-385.52"/>
+<polygon fill="red" stroke="red" points="297.5,-385.51 294,-375.51 290.5,-385.51 297.5,-385.51"/>
+</g>
+<!-- 18 -->
+<g id="node19" class="node">
+<title>18</title>
+<ellipse fill="none" stroke="black" cx="433" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="426" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="433" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node19_216"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\18.txt" xlink:title="Nodo 18: ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="357,-465.2 357,-491.2 405,-491.2 405,-465.2 357,-465.2"/>
+<text text-anchor="start" x="361.56" y="-473.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="356,-464.2 356,-492.2 406,-492.2 406,-464.2 356,-464.2"/>
+</g>
+<!-- 17&#45;&gt;18 -->
+<g id="edge19" class="edge">
+<title>17&#45;&gt;18</title>
+<path fill="none" stroke="black" d="M433,-516.85C433,-504.72 433,-488.22 433,-474.32"/>
+<polygon fill="black" stroke="black" points="436.5,-474.31 433,-464.31 429.5,-474.31 436.5,-474.31"/>
+<text text-anchor="middle" x="438.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 31 -->
+<g id="node32" class="node">
+<title>31</title>
+<ellipse fill="none" stroke="black" cx="693" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="686" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="693" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node32_217"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\31.txt" xlink:title="Nodo 31: Veicolo , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="617,-465.2 617,-491.2 665,-491.2 665,-465.2 617,-465.2"/>
+<text text-anchor="start" x="621.56" y="-473.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="616,-464.2 616,-492.2 666,-492.2 666,-464.2 616,-464.2"/>
+</g>
+<!-- 17&#45;&gt;31 -->
+<g id="edge18" class="edge">
+<title>17&#45;&gt;31</title>
+<path fill="none" stroke="black" d="M456.53,-526.14C502.92,-510.66 606.28,-476.15 659.66,-458.33"/>
+<polygon fill="black" stroke="black" points="660.96,-461.59 669.33,-455.1 658.74,-454.95 660.96,-461.59"/>
+<text text-anchor="middle" x="592.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 19 -->
+<g id="node20" class="node">
+<title>19</title>
+<ellipse fill="none" stroke="black" cx="388" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="381" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="388" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node20_218"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\19.txt" xlink:title="Nodo 19: Veicolo , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="312,-376.4 312,-402.4 360,-402.4 360,-376.4 312,-376.4"/>
+<text text-anchor="start" x="316.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="311,-375.4 311,-403.4 361,-403.4 361,-375.4 311,-375.4"/>
+</g>
+<!-- 18&#45;&gt;19 -->
+<g id="edge21" class="edge">
+<title>18&#45;&gt;19</title>
+<path fill="none" stroke="black" d="M424.54,-428.87C417.94,-416.14 408.65,-398.24 401.1,-383.66"/>
+<polygon fill="black" stroke="black" points="404.14,-381.92 396.43,-374.65 397.92,-385.14 404.14,-381.92"/>
+<text text-anchor="middle" x="420.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 25 -->
+<g id="node26" class="node">
+<title>25</title>
+<ellipse fill="none" stroke="black" cx="488" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="481" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="488" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node26_219"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\25.txt" xlink:title="Nodo 25: ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="412,-312.4 412,-338.4 460,-338.4 460,-312.4 412,-312.4"/>
+<text text-anchor="start" x="416.56" y="-320.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="411,-311.4 411,-339.4 461,-339.4 461,-311.4 411,-311.4"/>
+</g>
+<!-- 18&#45;&gt;25 -->
+<g id="edge20" class="edge">
+<title>18&#45;&gt;25</title>
+<path fill="none" stroke="black" d="M443.09,-429.28C451.31,-416.31 463.05,-397.78 472.47,-382.92"/>
+<polygon fill="black" stroke="black" points="475.58,-384.54 477.98,-374.22 469.67,-380.79 475.58,-384.54"/>
+<text text-anchor="middle" x="471.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 20 -->
+<g id="node21" class="node">
+<title>20</title>
+<ellipse fill="none" stroke="black" cx="314" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="307" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="314" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node21_220"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\20.txt" xlink:title="Nodo 20: Veicolo , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , owl:Nothing , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="238,-287.6 238,-313.6 286,-313.6 286,-287.6 238,-287.6"/>
+<text text-anchor="start" x="242.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="237,-286.6 237,-314.6 287,-314.6 287,-286.6 237,-286.6"/>
+</g>
+<!-- 19&#45;&gt;20 -->
+<g id="edge23" class="edge">
+<title>19&#45;&gt;20</title>
+<path fill="none" stroke="black" d="M375.11,-341.28C363.65,-327.84 346.72,-307.98 333.59,-292.58"/>
+<polygon fill="black" stroke="black" points="335.89,-289.89 326.74,-284.55 330.57,-294.43 335.89,-289.89"/>
+<text text-anchor="middle" x="363.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 22 -->
+<g id="node23" class="node">
+<title>22</title>
+<ellipse fill="none" stroke="black" cx="388" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="381" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="388" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node23_221"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\22.txt" xlink:title="Nodo 22: Veicolo , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), &#160;∀ haComponente.Componente , (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="312,-223.6 312,-249.6 360,-249.6 360,-223.6 312,-223.6"/>
+<text text-anchor="start" x="316.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="311,-222.6 311,-250.6 361,-250.6 361,-222.6 311,-222.6"/>
+</g>
+<!-- 19&#45;&gt;22 -->
+<g id="edge22" class="edge">
+<title>19&#45;&gt;22</title>
+<path fill="none" stroke="black" d="M388,-339.25C388,-327.12 388,-310.62 388,-296.72"/>
+<polygon fill="black" stroke="black" points="391.5,-296.71 388,-286.71 384.5,-296.71 391.5,-296.71"/>
+<text text-anchor="middle" x="393.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 21 -->
+<g id="node22" class="node">
+<title>21</title>
+<ellipse fill="none" stroke="black" cx="312" cy="-179.8" rx="42.88" ry="18"/>
+<text text-anchor="start" x="289.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 20&#45;&gt;21 -->
+<g id="edge24" class="edge">
+<title>20&#45;&gt;21</title>
+<path fill="none" stroke="red" d="M313.6,-250.45C313.33,-238.32 312.95,-221.82 312.62,-207.92"/>
+<polygon fill="red" stroke="red" points="316.12,-207.83 312.39,-197.91 309.13,-207.99 316.12,-207.83"/>
+</g>
+<!-- 23 -->
+<g id="node24" class="node">
+<title>23</title>
+<ellipse fill="none" stroke="black" cx="400" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="393" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="400" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">3</text>
+<g id="a_node24_222"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\23.txt" xlink:title="Nodo 23: Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo ))" target="_blank">
+<polygon fill="none" stroke="green" points="324,-134.8 324,-160.8 372,-160.8 372,-134.8 324,-134.8"/>
+<text text-anchor="start" x="328.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="323,-133.8 323,-161.8 373,-161.8 373,-133.8 323,-133.8"/>
+</g>
+<!-- 22&#45;&gt;23 -->
+<g id="edge25" class="edge">
+<title>22&#45;&gt;23</title>
+<path fill="none" stroke="black" d="M390.37,-250.45C392.05,-238.32 394.33,-221.82 396.25,-207.92"/>
+<polygon fill="black" stroke="black" points="399.73,-208.3 397.63,-197.91 392.8,-207.34 399.73,-208.3"/>
+<text text-anchor="middle" x="438.38" y="-220" font-family="Times,serif" font-size="14.00">haComponente</text>
+</g>
+<!-- 24 -->
+<g id="node25" class="node">
+<title>24</title>
+<ellipse fill="none" stroke="black" cx="400" cy="-91" rx="42.88" ry="18"/>
+<text text-anchor="start" x="377.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 23&#45;&gt;24 -->
+<g id="edge26" class="edge">
+<title>23&#45;&gt;24</title>
+<path fill="none" stroke="red" d="M400,-161.65C400,-149.52 400,-133.02 400,-119.12"/>
+<polygon fill="red" stroke="red" points="403.5,-119.11 400,-109.11 396.5,-119.11 403.5,-119.11"/>
+</g>
+<!-- 26 -->
+<g id="node27" class="node">
+<title>26</title>
+<ellipse fill="none" stroke="black" cx="488" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="481" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="488" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node27_223"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\26.txt" xlink:title="Nodo 26: ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , owl:Nothing , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), ¬Bicicletta , (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="516,-223.6 516,-249.6 564,-249.6 564,-223.6 516,-223.6"/>
+<text text-anchor="start" x="520.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="515,-222.6 515,-250.6 565,-250.6 565,-222.6 515,-222.6"/>
+</g>
+<!-- 25&#45;&gt;26 -->
+<g id="edge28" class="edge">
+<title>25&#45;&gt;26</title>
+<path fill="none" stroke="black" d="M488,-339.25C488,-327.12 488,-310.62 488,-296.72"/>
+<polygon fill="black" stroke="black" points="491.5,-296.71 488,-286.71 484.5,-296.71 491.5,-296.71"/>
+<text text-anchor="middle" x="493.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 28 -->
+<g id="node29" class="node">
+<title>28</title>
+<ellipse fill="none" stroke="black" cx="561" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="554" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="561" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node29_224"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\28.txt" xlink:title="Nodo 28: ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), ¬Bicicletta , &#160;∀ haComponente.Componente , (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="589,-287.6 589,-313.6 637,-313.6 637,-287.6 589,-287.6"/>
+<text text-anchor="start" x="593.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="588,-286.6 588,-314.6 638,-314.6 638,-286.6 588,-286.6"/>
+</g>
+<!-- 25&#45;&gt;28 -->
+<g id="edge27" class="edge">
+<title>25&#45;&gt;28</title>
+<path fill="none" stroke="black" d="M500.72,-341.28C512.02,-327.84 528.72,-307.98 541.67,-292.58"/>
+<polygon fill="black" stroke="black" points="544.67,-294.45 548.43,-284.55 539.31,-289.95 544.67,-294.45"/>
+<text text-anchor="middle" x="537.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 27 -->
+<g id="node28" class="node">
+<title>27</title>
+<ellipse fill="none" stroke="black" cx="488" cy="-179.8" rx="42.88" ry="18"/>
+<text text-anchor="start" x="465.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 26&#45;&gt;27 -->
+<g id="edge29" class="edge">
+<title>26&#45;&gt;27</title>
+<path fill="none" stroke="red" d="M488,-250.45C488,-238.32 488,-221.82 488,-207.92"/>
+<polygon fill="red" stroke="red" points="491.5,-207.91 488,-197.91 484.5,-207.91 491.5,-207.91"/>
+</g>
+<!-- 29 -->
+<g id="node30" class="node">
+<title>29</title>
+<ellipse fill="none" stroke="black" cx="576" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="569" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="576" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">4</text>
+<g id="a_node30_225"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\29.txt" xlink:title="Nodo 29: Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo ))" target="_blank">
+<polygon fill="none" stroke="green" points="500,-134.8 500,-160.8 548,-160.8 548,-134.8 500,-134.8"/>
+<text text-anchor="start" x="504.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="499,-133.8 499,-161.8 549,-161.8 549,-133.8 499,-133.8"/>
+</g>
+<!-- 28&#45;&gt;29 -->
+<g id="edge30" class="edge">
+<title>28&#45;&gt;29</title>
+<path fill="none" stroke="black" d="M563.96,-250.45C566.06,-238.32 568.91,-221.82 571.31,-207.92"/>
+<polygon fill="black" stroke="black" points="574.79,-208.36 573.04,-197.91 567.89,-207.17 574.79,-208.36"/>
+<text text-anchor="middle" x="612.38" y="-220" font-family="Times,serif" font-size="14.00">haComponente</text>
+</g>
+<!-- 30 -->
+<g id="node31" class="node">
+<title>30</title>
+<ellipse fill="none" stroke="black" cx="576" cy="-91" rx="42.88" ry="18"/>
+<text text-anchor="start" x="553.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 29&#45;&gt;30 -->
+<g id="edge31" class="edge">
+<title>29&#45;&gt;30</title>
+<path fill="none" stroke="red" d="M576,-161.65C576,-149.52 576,-133.02 576,-119.12"/>
+<polygon fill="red" stroke="red" points="579.5,-119.11 576,-109.11 572.5,-119.11 579.5,-119.11"/>
+</g>
+<!-- 32 -->
+<g id="node33" class="node">
+<title>32</title>
+<ellipse fill="none" stroke="black" cx="693" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="686" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="693" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node33_226"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\32.txt" xlink:title="Nodo 32: Veicolo , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="617,-376.4 617,-402.4 665,-402.4 665,-376.4 617,-376.4"/>
+<text text-anchor="start" x="621.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="616,-375.4 616,-403.4 666,-403.4 666,-375.4 616,-375.4"/>
+</g>
+<!-- 31&#45;&gt;32 -->
+<g id="edge33" class="edge">
+<title>31&#45;&gt;32</title>
+<path fill="none" stroke="black" d="M693,-428.05C693,-415.92 693,-399.42 693,-385.52"/>
+<polygon fill="black" stroke="black" points="696.5,-385.51 693,-375.51 689.5,-385.51 696.5,-385.51"/>
+<text text-anchor="middle" x="698.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 38 -->
+<g id="node39" class="node">
+<title>38</title>
+<ellipse fill="none" stroke="black" cx="840" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="833" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="840" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node39_227"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\38.txt" xlink:title="Nodo 38: Veicolo , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), &#160;∀ haComponente.Sterzo , (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="764,-340.4 764,-366.4 812,-366.4 812,-340.4 764,-340.4"/>
+<text text-anchor="start" x="768.56" y="-348.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="763,-339.4 763,-367.4 813,-367.4 813,-339.4 763,-339.4"/>
+</g>
+<!-- 31&#45;&gt;38 -->
+<g id="edge32" class="edge">
+<title>31&#45;&gt;38</title>
+<path fill="none" stroke="black" d="M712.52,-433.67C737.89,-418.69 782.38,-392.42 811.52,-375.22"/>
+<polygon fill="black" stroke="black" points="813.57,-378.07 820.4,-369.97 810.01,-372.04 813.57,-378.07"/>
+<text text-anchor="middle" x="785.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 33 -->
+<g id="node34" class="node">
+<title>33</title>
+<ellipse fill="none" stroke="black" cx="666" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="659" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="666" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node34_228"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\33.txt" xlink:title="Nodo 33: Veicolo , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , owl:Nothing , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="590,-251.6 590,-277.6 638,-277.6 638,-251.6 590,-251.6"/>
+<text text-anchor="start" x="594.56" y="-260" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="589,-250.6 589,-278.6 639,-278.6 639,-250.6 589,-250.6"/>
+</g>
+<!-- 32&#45;&gt;33 -->
+<g id="edge35" class="edge">
+<title>32&#45;&gt;33</title>
+<path fill="none" stroke="black" d="M687.79,-339.66C683.95,-327.3 678.63,-310.21 674.21,-296.01"/>
+<polygon fill="black" stroke="black" points="677.5,-294.79 671.19,-286.28 670.82,-296.87 677.5,-294.79"/>
+<text text-anchor="middle" x="687.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 35 -->
+<g id="node36" class="node">
+<title>35</title>
+<ellipse fill="none" stroke="black" cx="739" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="732" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="739" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node36_229"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\35.txt" xlink:title="Nodo 35: Veicolo , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), ¬Auto , (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), &#160;∀ haComponente.Componente , (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="663,-223.6 663,-249.6 711,-249.6 711,-223.6 663,-223.6"/>
+<text text-anchor="start" x="667.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="662,-222.6 662,-250.6 712,-250.6 712,-222.6 662,-222.6"/>
+</g>
+<!-- 32&#45;&gt;35 -->
+<g id="edge34" class="edge">
+<title>32&#45;&gt;35</title>
+<path fill="none" stroke="black" d="M701.65,-340.07C708.4,-327.34 717.89,-309.44 725.61,-294.86"/>
+<polygon fill="black" stroke="black" points="728.8,-296.33 730.39,-285.85 722.61,-293.05 728.8,-296.33"/>
+<text text-anchor="middle" x="726.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 34 -->
+<g id="node35" class="node">
+<title>34</title>
+<ellipse fill="none" stroke="black" cx="664" cy="-179.8" rx="42.88" ry="18"/>
+<text text-anchor="start" x="641.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 33&#45;&gt;34 -->
+<g id="edge36" class="edge">
+<title>33&#45;&gt;34</title>
+<path fill="none" stroke="red" d="M665.6,-250.45C665.33,-238.32 664.95,-221.82 664.62,-207.92"/>
+<polygon fill="red" stroke="red" points="668.12,-207.83 664.39,-197.91 661.13,-207.99 668.12,-207.83"/>
+</g>
+<!-- 36 -->
+<g id="node37" class="node">
+<title>36</title>
+<ellipse fill="none" stroke="black" cx="752" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="745" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="752" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">5</text>
+<g id="a_node37_230"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\36.txt" xlink:title="Nodo 36: Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo ))" target="_blank">
+<polygon fill="none" stroke="green" points="676,-134.8 676,-160.8 724,-160.8 724,-134.8 676,-134.8"/>
+<text text-anchor="start" x="680.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="675,-133.8 675,-161.8 725,-161.8 725,-133.8 675,-133.8"/>
+</g>
+<!-- 35&#45;&gt;36 -->
+<g id="edge37" class="edge">
+<title>35&#45;&gt;36</title>
+<path fill="none" stroke="black" d="M741.57,-250.45C743.38,-238.32 745.86,-221.82 747.94,-207.92"/>
+<polygon fill="black" stroke="black" points="751.42,-208.32 749.44,-197.91 744.49,-207.28 751.42,-208.32"/>
+<text text-anchor="middle" x="789.38" y="-220" font-family="Times,serif" font-size="14.00">haComponente</text>
+</g>
+<!-- 37 -->
+<g id="node38" class="node">
+<title>37</title>
+<ellipse fill="none" stroke="black" cx="752" cy="-91" rx="42.88" ry="18"/>
+<text text-anchor="start" x="729.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 36&#45;&gt;37 -->
+<g id="edge38" class="edge">
+<title>36&#45;&gt;37</title>
+<path fill="none" stroke="red" d="M752,-161.65C752,-149.52 752,-133.02 752,-119.12"/>
+<polygon fill="red" stroke="red" points="755.5,-119.11 752,-109.11 748.5,-119.11 755.5,-119.11"/>
+</g>
+<!-- 39 -->
+<g id="node40" class="node">
+<title>39</title>
+<ellipse fill="none" stroke="black" cx="840" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="833" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="840" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node40_231"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\39.txt" xlink:title="Nodo 39: Veicolo , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), &#160;∀ haComponente.Sterzo , (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , owl:Nothing , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="764,-287.6 764,-313.6 812,-313.6 812,-287.6 764,-287.6"/>
+<text text-anchor="start" x="768.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="763,-286.6 763,-314.6 813,-314.6 813,-286.6 763,-286.6"/>
+</g>
+<!-- 38&#45;&gt;39 -->
+<g id="edge40" class="edge">
+<title>38&#45;&gt;39</title>
+<path fill="none" stroke="black" d="M840,-339.25C840,-327.12 840,-310.62 840,-296.72"/>
+<polygon fill="black" stroke="black" points="843.5,-296.71 840,-286.71 836.5,-296.71 843.5,-296.71"/>
+<text text-anchor="middle" x="845.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 41 -->
+<g id="node42" class="node">
+<title>41</title>
+<ellipse fill="none" stroke="black" cx="920" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="913" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="920" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node42_232"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\41.txt" xlink:title="Nodo 41: Veicolo , ∃haComponente.Veicolo , (Componente ⊔ ¬Manubrio ), &#160;∀ haComponente.Sterzo , (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ¬Manubrio , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (¬Auto ⊔ &#160;∀ haComponente.Sterzo ), (owl:Nothing ⊔ &#160;∀ haComponente.Componente ), &#160;∀ haComponente.Componente , (¬Manubrio ⊔ ¬Sterzo )" target="_blank">
+<polygon fill="none" stroke="green" points="844,-223.6 844,-249.6 892,-249.6 892,-223.6 844,-223.6"/>
+<text text-anchor="start" x="848.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="843,-222.6 843,-250.6 893,-250.6 893,-222.6 843,-222.6"/>
+</g>
+<!-- 38&#45;&gt;41 -->
+<g id="edge39" class="edge">
+<title>38&#45;&gt;41</title>
+<path fill="none" stroke="black" d="M853.57,-341.68C866.1,-328.08 884.89,-307.7 899.29,-292.07"/>
+<polygon fill="black" stroke="black" points="902.16,-294.12 906.36,-284.4 897.01,-289.38 902.16,-294.12"/>
+<text text-anchor="middle" x="893.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 40 -->
+<g id="node41" class="node">
+<title>40</title>
+<ellipse fill="none" stroke="black" cx="840" cy="-179.8" rx="42.88" ry="18"/>
+<text text-anchor="start" x="817.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 39&#45;&gt;40 -->
+<g id="edge41" class="edge">
+<title>39&#45;&gt;40</title>
+<path fill="none" stroke="red" d="M840,-250.45C840,-238.32 840,-221.82 840,-207.92"/>
+<polygon fill="red" stroke="red" points="843.5,-207.91 840,-197.91 836.5,-207.91 843.5,-207.91"/>
+</g>
+<!-- 42 -->
+<g id="node43" class="node">
+<title>42</title>
+<ellipse fill="none" stroke="black" cx="928" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="921" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="928" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">6</text>
+<g id="a_node43_233"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\42.txt" xlink:title="Nodo 42: Veicolo , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (owl:Nothing ⊔ &#160;∀ haComponente.Componente )⊓ (¬Auto ⊔ &#160;∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo ))" target="_blank">
+<polygon fill="none" stroke="green" points="852,-134.8 852,-160.8 900,-160.8 900,-134.8 852,-134.8"/>
+<text text-anchor="start" x="856.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="851,-133.8 851,-161.8 901,-161.8 901,-133.8 851,-133.8"/>
+</g>
+<!-- 41&#45;&gt;42 -->
+<g id="edge42" class="edge">
+<title>41&#45;&gt;42</title>
+<path fill="none" stroke="black" d="M921.58,-250.45C922.7,-238.32 924.22,-221.82 925.5,-207.92"/>
+<polygon fill="black" stroke="black" points="928.99,-208.19 926.42,-197.91 922.02,-207.55 928.99,-208.19"/>
+<text text-anchor="middle" x="967.38" y="-220" font-family="Times,serif" font-size="14.00">haComponente</text>
+</g>
+<!-- 43 -->
+<g id="node44" class="node">
+<title>43</title>
+<ellipse fill="none" stroke="black" cx="928" cy="-91" rx="42.88" ry="18"/>
+<text text-anchor="start" x="905.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 42&#45;&gt;43 -->
+<g id="edge43" class="edge">
+<title>42&#45;&gt;43</title>
+<path fill="none" stroke="red" d="M928,-161.65C928,-149.52 928,-133.02 928,-119.12"/>
+<polygon fill="red" stroke="red" points="931.5,-119.11 928,-109.11 924.5,-119.11 931.5,-119.11"/>
+</g>
+</g>
+</svg>
