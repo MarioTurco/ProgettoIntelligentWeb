@@ -19,7 +19,6 @@ import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDeclarationAxiom;
 import org.semanticweb.owlapi.model.OWLLogicalAxiom;
-import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -64,33 +63,11 @@ public class App {
     		
     		logicalAxiom.accept(visitor); 
     	}
-    	
-    	/*LazyUnfolder lazy = new LazyUnfolder(kb);
-    	lazy.doLazyUnfolding();
-    	System.out.println("\n##########Tu#########");
-    	for(OWLObject o: lazy.getT_u()) {
-    		o.accept(visitor);
-    	}
-    	System.out.println("\n###########Tg###########");
-    	for(OWLObject o: lazy.getT_g()) {
-    		o.accept(visitor);
-<<<<<<< HEAD
-    	}*/
-    	System.out.println("\n################Empty TBox################");
-    	executeAndPrintTime("empty", kb, query, true);
-    	System.out.println("\n################Non-Empty TBox################");
-<<<<<<< HEAD
-=======
-    	}*/
-    	System.out.println("\n################Normal################");
-    	executeAndPrintTime("nonEmpty", kb, query, false);
-=======
 
+    	System.out.println("\n################Normal################");
     	executeAndPrintTime("nonEmpty", kb, query, true);
->>>>>>> c6df8e316b493affc4f26f587714af2c5f12b9a1
     	System.out.println("\n############LazyUnfolding#############");
-    	executeAndPrintTime("lazy", kb, query, false);
-    	
+    	executeAndPrintTime("lazy", kb, query, true);	
 	}
 	
 	
@@ -185,6 +162,4 @@ public class App {
 		}
 		
 	}
-	
-
 }

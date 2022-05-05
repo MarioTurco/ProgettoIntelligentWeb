@@ -30,7 +30,6 @@ import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
-import org.semanticweb.owlapi.model.OWLPropertyDomain;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
 import guru.nidi.graphviz.attribute.Color;

@@ -1,0 +1,1 @@
+Componente , (Componente ⊔ ¬Manubrio ), (¬Auto ⊔ ¬Bicicletta ), ∃haComponente.Auto , (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (¬Auto ⊔ ¬Bicicletta )), ¬Auto , ¬Veicolo , ¬Bicicletta 
