@@ -391,9 +391,6 @@ public class ALCReasoner{
 			for (OWLLogicalAxiom axiom :concept.getLogicalAxioms()) {
 				axiom.getNNF().accept(equivalence);
 				OWLClassExpression rightSide = equivalence.getRightSide();
-				if(rightSide==null) {
-					
-				}
 				try {
 					OWLClassAssertionAxiom mainConcept = editor.createIndividual(rightSide, "x0");
 					//STO STAMPANDO
