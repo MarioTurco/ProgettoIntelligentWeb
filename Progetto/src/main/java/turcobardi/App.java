@@ -53,8 +53,9 @@ public class App {
     	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsKb){
     		logicalAxiom.accept(visitor); 
     	}
-    	//OWLOntology query = getQueryFromStdIn(kb);
-    	OWLOntology query = getQueryFromFile("marioq.owl");
+    	OWLOntology query = getQueryFromStdIn(kb);
+    	
+    	//OWLOntology query = getQueryFromFile("marioq.owl");
     	visitor.setToRemove(query.getOntologyID().getOntologyIRI().get().toString());
     	Set<OWLLogicalAxiom> logicalAxiomsQuery = query.getLogicalAxioms(Imports.fromBoolean(false));
 
@@ -77,12 +78,15 @@ public class App {
     		o.accept(visitor);
     	}*/
 
-
+    	try {
     	System.out.println("\n################Normal################");
-    	executeAndPrintTime("nonEmpty", kb, query, true);
+    	executeAndPrintTime("nonEmpty", kb, query, false);
     	System.out.println("\n############LazyUnfolding#############");
-    	executeAndPrintTime("lazy", kb, query, true);	
-	}
+    	executeAndPrintTime("lazy", kb, query, false);	
+    	}catch(NullPointerException np) {
+    		System.out.println("Inserire una query valida.");
+    	}
+    }
 	
 	
 	private static OWLOntology getQueryFromFile(String filename)  throws OWLOntologyCreationException {

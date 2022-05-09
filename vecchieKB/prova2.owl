@@ -1,0 +1,27 @@
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16>
+
+
+ObjectProperty: <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#R>
+
+    
+Class: <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#A>
+
+    
+Class: <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#B>
+
+    
+Class: <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#P>
+
+    EquivalentTo: 
+        (not (<http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#A>)) or (not (<http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-16#B>))
+    
+    
