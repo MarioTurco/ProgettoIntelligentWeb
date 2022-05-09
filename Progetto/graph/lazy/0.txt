@@ -1,1 +1,1 @@
-(Mirrorless ⊓  ∀ haSensore.APSC ⊓  ∀ haSpecchio.¬Specchio ), ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ))
+(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), (A ⊔ ¬B )

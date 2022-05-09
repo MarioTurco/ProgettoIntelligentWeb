@@ -35,8 +35,6 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	private final char exists = '\u2203';
 	private final char not = '\u00AC';
 	private final char inclusion = '\u2291';
-	private final char top = '\u27D9';
-	private final char bottom = '\u27D8';
 	private String toRemove = null;
 	
 	
@@ -63,14 +61,7 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	}
 	
 	public void visit(OWLClass c) {
-		if(c.isBottomEntity()) {
-			System.out.print(bottom + " ");
-		}else if(c.isTopEntity()) {
-			System.out.print(top + " ");
-		}
-		else {
-			System.out.print(removeIRIFromString(iri,c.toString()) + " ");
-		}
+		System.out.print(removeIRIFromString(iri,c.toString()) + " ");
 		return;
 	}
 	
