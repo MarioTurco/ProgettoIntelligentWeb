@@ -35,8 +35,10 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	private final char exists = '\u2203';
 	private final char not = '\u00AC';
 	private final char inclusion = '\u2291';
+	private String toRemove = null;
 	
 	
+		
 	public OntologyPrintingVisitor(IRI iri) {
 		this.iri=iri;
 		try {
@@ -46,7 +48,9 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		};
 	}
 	
-	
+	public void setToRemove(String toRemove) {
+		this.toRemove = toRemove;
+	}
 	public void visit(OWLObjectSomeValuesFrom desc) {
 		out.print(" " + exists + " ");
 		System.out.print(removeIRIFromString(iri, desc.getProperty().toString()));
@@ -157,6 +161,8 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 		str = str.replace("#", "");
 		str = str.replace("<", "");
 		str = str.replace(">", "");
+		if(this.toRemove!=null)
+			str = str.replace(this.toRemove, "");
 		
 		return str;
 	}

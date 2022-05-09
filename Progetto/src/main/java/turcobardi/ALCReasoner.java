@@ -391,6 +391,9 @@ public class ALCReasoner{
 			for (OWLLogicalAxiom axiom :concept.getLogicalAxioms()) {
 				axiom.getNNF().accept(equivalence);
 				OWLClassExpression rightSide = equivalence.getRightSide();
+				if(rightSide==null) {
+					
+				}
 				try {
 					OWLClassAssertionAxiom mainConcept = editor.createIndividual(rightSide, "x0");
 					//STO STAMPANDO
@@ -399,8 +402,9 @@ public class ALCReasoner{
 					ind = (OWLNamedIndividual) mainConcept.getIndividual();
 					Lx.add(rightSide);
 				} catch (OWLOntologyCreationException e) {
+				
 					e.printStackTrace();
-				}
+				} 
 			}
 			
 			if(kb!=null) {

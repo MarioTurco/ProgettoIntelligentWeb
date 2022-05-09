@@ -39,7 +39,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 
-		File kbFile = new File("veicolo_pep.owl");
+		File kbFile = new File("mario.owl");
 
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("KB size:" + kb.getAxiomCount());
@@ -53,8 +53,9 @@ public class App {
     	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsKb){
     		logicalAxiom.accept(visitor); 
     	}
-    	OWLOntology query = getQueryFromStdIn(kb);
-
+    	//OWLOntology query = getQueryFromStdIn(kb);
+    	OWLOntology query = getQueryFromFile("marioq.owl");
+    	visitor.setToRemove(query.getOntologyID().getOntologyIRI().get().toString());
     	Set<OWLLogicalAxiom> logicalAxiomsQuery = query.getLogicalAxioms(Imports.fromBoolean(false));
 
     	System.out.println("Query size: " + logicalAxiomsQuery.size());
