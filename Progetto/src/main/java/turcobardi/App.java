@@ -39,7 +39,7 @@ public class App {
 	public static void main(String[] args) throws OWLOntologyCreationException, UnsupportedEncodingException {
 		OWLOntologyManager manKb = OWLManager.createOWLOntologyManager();
 
-		File kbFile = new File("mario.owl");
+		File kbFile = new File("macchina_fotografica.owl");
 
 		OWLOntology kb = manKb.loadOntologyFromOntologyDocument(kbFile);
 		System.out.println("KB size:" + kb.getAxiomCount());

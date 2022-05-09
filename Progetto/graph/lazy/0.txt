@@ -1,1 +1,1 @@
-(A ⊓ B )
+((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), Query 
