@@ -5,6 +5,7 @@ import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 import org.semanticweb.owlapi.model.parameters.Imports;
 
 public class EquivalenceRuleVisitor implements OWLObjectVisitor{
@@ -19,11 +20,11 @@ public class EquivalenceRuleVisitor implements OWLObjectVisitor{
 			return;
 		}
 		
-		
 		public OWLClassExpression getRightSide(){
 			return rightSide;
 		}
 		
+		//TODO da cancellare
 		//OLD non più usato
 		public void visit(OWLOntology concept) {
 			for(OWLAxiom axiom: concept.getLogicalAxioms(Imports.fromBoolean(false))) {

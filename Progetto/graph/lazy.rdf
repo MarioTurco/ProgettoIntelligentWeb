@@ -1,8 +1,9 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:j.0="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#">
-  <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#0">
+    xmlns:j.0="http://www.semanticweb.org/turco/ontologies/2022/4/untitled-ontology-21#">
+  <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/untitled-ontology-21#0">
     <j.0:Union>
+<<<<<<< HEAD
       <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#20">
         <j.0:Union>
           <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#21">
@@ -155,5 +156,24 @@
       </rdf:Description>
     </j.0:Union>
     <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), (Veicolo ⊔ ¬Bicicletta ), ∃haComponente.Manubrio , ((Componente ⊔ ¬Manubrio )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (Veicolo ⊔  ∀ haComponente.owl:Nothing )⊓ (owl:Nothing ⊔  ∀ haComponente.Componente )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (Veicolo ⊔  ∀ haComponente.owl:Nothing ), (¬Auto ⊔  ∀ haComponente.Sterzo ), (owl:Nothing ⊔  ∀ haComponente.Componente ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
+=======
+      <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/untitled-ontology-21#1">
+        <j.0:Union>
+          <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/untitled-ontology-21#4">
+            <j.0:clash-free rdf:resource="http://www.semanticweb.org/turco/ontologies/2022/4/untitled-ontology-21#clash-Free"/>
+            <j.0:label>A , B , (B ⊔ ¬A ),  ∀ R.∃S.(B ⊓ ¬D ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )),  ∀ S.D , (A ⊔ ¬B )</j.0:label>
+          </rdf:Description>
+        </j.0:Union>
+        <j.0:Union>
+          <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/untitled-ontology-21#2">
+            <j.0:clash rdf:resource="http://www.semanticweb.org/turco/ontologies/2022/4/untitled-ontology-21#clashNode0"/>
+            <j.0:label>B , (B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), ¬B ,  ∀ S.D , (A ⊔ ¬B )</j.0:label>
+          </rdf:Description>
+        </j.0:Union>
+        <j.0:label>B , (B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )),  ∀ S.D , (A ⊔ ¬B )</j.0:label>
+      </rdf:Description>
+    </j.0:Union>
+    <j.0:label>(B ⊔ ¬A ), ((A ⊔ ¬B )⊓ (B ⊔ ¬A )), (A ⊔ ¬B )</j.0:label>
+>>>>>>> 6e3ee384b4f7475faca77fd695aec45d5f7ef8a3
   </rdf:Description>
 </rdf:RDF>

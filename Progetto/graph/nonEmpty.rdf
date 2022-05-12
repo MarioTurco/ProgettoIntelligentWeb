@@ -1,4 +1,5 @@
 <rdf:RDF
+<<<<<<< HEAD
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:j.0="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#">
   <rdf:Description rdf:about="http://www.semanticweb.org/giusy/ontologies/2022/3/untitled-ontology-13#0">
@@ -454,4 +455,7 @@
     </j.0:Union>
     <j.0:label>(Componente ⊔ ¬Manubrio ), (Veicolo ⊔ ¬Auto ), ∃haComponente.Manubrio , (Componente ⊔ ¬Sterzo ), (¬Bicicletta ⊔  ∀ haComponente.Manubrio ), (owl:Nothing ⊔  ∀ haComponente.Componente ), (¬Componente ⊔ ¬Veicolo ), (¬Auto ⊔ ¬Bicicletta ), (Veicolo ⊔ ¬Bicicletta ), ((Componente ⊔ ¬Manubrio )⊓ (Componente ⊔ ¬Sterzo )⊓ (Veicolo ⊔ ¬Auto )⊓ (Veicolo ⊔ ¬Bicicletta )⊓ (Veicolo ⊔  ∀ haComponente.owl:Nothing )⊓ (owl:Nothing ⊔  ∀ haComponente.Componente )⊓ (¬Auto ⊔ ¬Bicicletta )⊓ (¬Auto ⊔  ∀ haComponente.Sterzo )⊓ (¬Bicicletta ⊔  ∀ haComponente.Manubrio )⊓ (¬Componente ⊔ ¬Veicolo )⊓ (¬Manubrio ⊔ ¬Sterzo )), (Veicolo ⊔  ∀ haComponente.owl:Nothing ), (¬Auto ⊔  ∀ haComponente.Sterzo ), (¬Manubrio ⊔ ¬Sterzo )</j.0:label>
   </rdf:Description>
+=======
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+>>>>>>> 6e3ee384b4f7475faca77fd695aec45d5f7ef8a3
 </rdf:RDF>

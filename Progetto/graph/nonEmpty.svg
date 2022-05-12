@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <svg width="2185px" height="1477px"
  viewBox="0.00 0.00 2184.51 1477.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 1473.0)">
@@ -2076,5 +2077,12 @@
 <path fill="none" stroke="green" d="M2095.63,-72.81C2097.33,-64.79 2099.38,-55.05 2101.28,-46.07"/>
 <polygon fill="green" stroke="green" points="2104.76,-46.54 2103.4,-36.03 2097.91,-45.09 2104.76,-46.54"/>
 </g>
+=======
+<svg width="8px" height="8px"
+ viewBox="0.00 0.00 8.00 8.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 4.0)">
+<title>tableaux</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-4 4,-4 4,4 -4,4"/>
+>>>>>>> 6e3ee384b4f7475faca77fd695aec45d5f7ef8a3
 </g>
 </svg>
