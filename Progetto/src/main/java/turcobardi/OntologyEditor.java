@@ -29,7 +29,6 @@ public class OntologyEditor {
 	
 	public OWLClassAssertionAxiom createIndividual(OWLClassExpression className, String indName) throws OWLOntologyCreationException {
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		//OWLOntology ont = manager.createOntology();
 		OWLDataFactory factory = manager.getOWLDataFactory();
 		OWLNamedIndividual newInd = factory.getOWLNamedIndividual(IRI.create(iri + "#" + indName));
 		OWLClassAssertionAxiom axiom= factory.getOWLClassAssertionAxiom(className, newInd);
@@ -38,7 +37,6 @@ public class OntologyEditor {
 	
 	public OWLObjectPropertyAssertionAxiom createIndividualForProperty(OWLObjectPropertyExpression expr, OWLNamedIndividual ind1, String ind2) throws OWLOntologyCreationException {
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		//OWLOntology ont = manager.createOntology();
 		OWLDataFactory factory = manager.getOWLDataFactory();
 		OWLNamedIndividual newInd = factory.getOWLNamedIndividual(IRI.create(iri + "#" + ind2));
 		return factory.getOWLObjectPropertyAssertionAxiom(expr, ind1, newInd);
@@ -47,7 +45,6 @@ public class OntologyEditor {
 	//
 	public OWLClassAssertionAxiom createClassAssertionWithExistingIndividual(OWLClassExpression className, OWLNamedIndividual existingIndividual) throws OWLOntologyCreationException {
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		//OWLOntology ont = manager.createOntology();
 		OWLDataFactory factory = manager.getOWLDataFactory();
 		OWLClassAssertionAxiom axiom= factory.getOWLClassAssertionAxiom(className, existingIndividual);
 		return axiom;

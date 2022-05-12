@@ -213,11 +213,11 @@ public class ALCReasoner{
 	//TODO OLD
 	//TODO rinominare abox
 	//TODO volendo si può rinominare toAdd in qualcosa che dica che è un assioma
-	private Set<OWLObject> existsRule(OWLObject abox, OWLNamedIndividual ind1 , String newIndividualName) {
+	private Set<OWLObject> existsRule(OWLObject exists, OWLNamedIndividual ind1 , String newIndividualName) {
 		
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		ExistsRuleVisitor vis = new ExistsRuleVisitor();
-		abox.accept(vis);
+		exists.accept(vis);
 		List<OWLObject> proAndFil = vis.getPropertyAndFiller();
 
 		if (proAndFil.size()>0) {
@@ -237,10 +237,10 @@ public class ALCReasoner{
 	}
 	
 	
-	private Set<OWLObject> existsRuleNonEmpyTbox(OWLObject abox, OWLNamedIndividual ind1 , String newIndividualName) {
+	private Set<OWLObject> existsRuleNonEmpyTbox(OWLObject exists, OWLNamedIndividual ind1 , String newIndividualName) {
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		ExistsRuleVisitor vis = new ExistsRuleVisitor();
-		abox.accept(vis);
+		exists.accept(vis);
 		List<OWLObject> proAndFil = vis.getPropertyAndFiller();
 
 		if (proAndFil.size()>0) {
@@ -262,11 +262,11 @@ public class ALCReasoner{
 		return toAdd;
 	}
 	
-	private Set<OWLObject> existsRuleNonEmpyTboxLazyUnfolding(OWLObject abox, OWLNamedIndividual ind1 , String newIndividualName) {
+	private Set<OWLObject> existsRuleNonEmpyTboxLazyUnfolding(OWLObject exists, OWLNamedIndividual ind1 , String newIndividualName) {
 		
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		ExistsRuleVisitor vis = new ExistsRuleVisitor();
-		abox.accept(vis);
+		exists.accept(vis);
 		List<OWLObject> proAndFil = vis.getPropertyAndFiller();
 
 		if (proAndFil.size()>0) {
@@ -345,7 +345,7 @@ public class ALCReasoner{
 	 }
 	
 	
-	/** Modifica una knowledge base trasformando tutti gli assiomi di disgiunzione in assiomi di contenimento <br>
+	/** Modifica una knowledge base trasformando tutti gli assiomi di disgiunzione e assiomi di dominio e codominio di relazioni in assiomi di contenimento<br>
 	 *  <code>(Disj(A,B) -> A SubClassOf not(B)</code>
 	 * @param kb - Knowledge Base da processare
 	 * @return kb modificata
@@ -387,14 +387,11 @@ public class ALCReasoner{
 		OWLNamedIndividual ind = null;
 		if(!useLazyUnfolding) {
 			//Instanziazione del concetto principale
-			//Aggiunta degli altri assiomi
 			for (OWLLogicalAxiom axiom :concept.getLogicalAxioms()) {
 				axiom.getNNF().accept(equivalence);
 				OWLClassExpression rightSide = equivalence.getRightSide();
 				try {
 					OWLClassAssertionAxiom mainConcept = editor.createIndividual(rightSide, "x0");
-					//STO STAMPANDO
-					//this.KBinclusion.getSuperClass().accept(printer);
 					aBox.add(mainConcept);
 					ind = (OWLNamedIndividual) mainConcept.getIndividual();
 					Lx.add(rightSide);
@@ -409,7 +406,6 @@ public class ALCReasoner{
 				try {
 					KBinclusionIstance = editor.createIndividual(this.KBinclusion.getSuperClass().getNNF(), "x0");
 					aBox.add(KBinclusionIstance);
-					//this.KBinclusion.getSuperClass().getNNF().accept(printer);
 					Lx.add(this.KBinclusion.getSuperClass().getNNF());
 				} catch (OWLOntologyCreationException e) {
 					e.printStackTrace();
@@ -489,7 +485,6 @@ public class ALCReasoner{
 			
 		}else if(useLazyUnfolding && kb==null) {
 			System.out.println("Impossibile usare il lazy unfolding su TBox vuota");
-			//throw new IllegalArgumentException("Cannot use lazy unfolding on empty tbox");
 		}
 		
 		return false;
@@ -691,8 +686,6 @@ public class ALCReasoner{
             					if(!aBox.contains(toAddForAll) && toAddForAll!=null) {
             						
             						aBox.add(toAddForAll);
-            						//newLx.add(((OWLObjectSomeValuesFrom) o).getFiller());
-            						//newLx.add(((OWLObjectAllValuesFrom) forAll).getFiller());
             						newLx.add(((OWLClassAssertionAxiom) toAddForAll).getClassExpression());
             						for(OWLObject ax: newLx) {
             							ax.accept(gv);
@@ -717,8 +710,6 @@ public class ALCReasoner{
     					}
     					else {
     						continue;
-    						//return true;
-    						//break;
     					}
             			
             		}
@@ -780,7 +771,6 @@ public class ALCReasoner{
     	if(arePresentDisj) {
     		
     		for (OWLObject axiom: Lx) {
-    			//ax.accept(printer);
     			Set<OWLObject> resURule = this.unionRule(axiom,ind.getIRI().getShortForm());
     			if(resURule.size()>0) {
     				Set<OWLObject> intersec = new HashSet<>(aBox);
@@ -828,8 +818,6 @@ public class ALCReasoner{
     		for (OWLObject o: Lx) {
         		Set<OWLObject> newLx = new HashSet<>();
         		OWLObject toAddForAll = null;
-        		//Set<OWLObject> tmpLx = new HashSet<>(Lx);
-        		//String newIndName = "x"+Integer.parseInt(""+iri.charAt(iri.indexOf('x')+1))+i++;
         		this.individual++;
         		String newIndName = "x"+ this.individual;
         		Set<OWLObject> toAddExists = this.existsRuleNonEmpyTbox(o,ind,newIndName);
@@ -840,12 +828,6 @@ public class ALCReasoner{
         		else {
         			if(this.checkExistsRuleCondition(aBox, toAddExists)) {
             			aBox.addAll(toAddExists);
-            			
-            			/*System.out.println("\nAbox dopo regola esiste: " );
-        				for(OWLObject a: aBox){
-        		    		a.accept(printer);
-        		    		System.out.println(",");
-        		    	}*/
             			String relationName = null;
             			for(OWLObject add: toAddExists) {
             				if (add instanceof OWLObjectPropertyAssertionAxiom) {
@@ -898,8 +880,6 @@ public class ALCReasoner{
     					}
     					else {
     						continue;
-    						//return true;
-    						//break;
     					}
             			
             		}
@@ -921,8 +901,6 @@ public class ALCReasoner{
 				for(OWLObject aboxAx: aBox) {
 					//PRIMA REGOLA
 					if(aboxAx instanceof OWLClassAssertionAxiom) {
-						//System.out.println("\nAssioma da Abox");
-						//aboxAx.accept(printer);
 						if(((OWLClassAssertionAxiom) aboxAx).getClassExpression().equals(leftSide)) {
 							OWLClassExpression rightSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(1);
 							try {
@@ -1099,7 +1077,6 @@ public class ALCReasoner{
     	//BLOCKING
     	if(predLx!=null) {
     		if(predLx.containsAll(Lx)) {
-    			//System.out.println("\nBLOCKING TRUE");
     			Node blocking = gr.createNode("BLOCKING");
     			gr.createLink2(blocking, parent, "", Color.ORANGE);
     			return true;  
@@ -1264,8 +1241,6 @@ public class ALCReasoner{
     					}
     					else {
     						continue;
-    						//return true;
-    						//break;
     					}	
             			
             		}
@@ -1470,8 +1445,6 @@ public class ALCReasoner{
     					}
     					else {
     						continue;
-    						//return true;
-    						//break;
     					}	
             			
             		}
@@ -1528,6 +1501,9 @@ private OWLObjectPropertyAssertionAxiom getPropertyAssertionFromSet(Set<OWLObjec
 					if(!((OWLClassAssertionAxiom) axiomToAdd).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {
 						fillerAxiom = (OWLClassAssertionAxiom) axiomToAdd;
 					}
+				}
+				else if(this.C_g==null && this.KBinclusion==null) {
+					fillerAxiom = (OWLClassAssertionAxiom) axiomToAdd;
 				}
 			}
 		}
