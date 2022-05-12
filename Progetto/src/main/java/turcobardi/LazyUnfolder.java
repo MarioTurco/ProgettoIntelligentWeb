@@ -57,8 +57,6 @@ public class LazyUnfolder {
 						((OWLSubClassOfAxiom) axiom).getSuperClass().accept(visitor);
 						rightSideDependencies.addAll(visitor.getDependencies());	
 					}
-					//System.out.println("Right side dep: " + rightSideDependencies);
-					//System.out.println("Left side dep: " + leftSideDependencies);
 
 				}else if(!inserted && !this.isUnfoldable(T_u, axiom)) {
 					T_g.add(axiom);		
@@ -164,9 +162,7 @@ public class LazyUnfolder {
 			Set<OWLClass> tmp = new HashSet<>();
 			((OWLSubClassOfAxiom) axiom).getSuperClass().accept(visitor);
 			tmp.addAll(visitor.getDependencies());
-			//System.out.println("Tmp 1" + tmp);
 			tmp.retainAll(leftSideDependencies);
-			//System.out.println("Intersezioni" + tmp);
 			if(tmp.size()>0) {
 				cond1 = false;
 			}
@@ -174,9 +170,7 @@ public class LazyUnfolder {
 			
 			((OWLSubClassOfAxiom) axiom).getSubClass().accept(visitor);
 			tmp.addAll(visitor.getDependencies());
-			//System.out.println("Tmp 2" + tmp);
 			tmp.retainAll(rightSideDependencies);
-			//System.out.println("Intersezioni" + tmp);
 			if(tmp.size()>0) {
 				cond2 = false;
 			}
