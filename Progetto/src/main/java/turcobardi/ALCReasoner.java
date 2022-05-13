@@ -210,31 +210,6 @@ public class ALCReasoner{
 		
 		return toAdd;
 	}
-	//TODO OLD
-	//TODO rinominare abox
-	//TODO volendo si può rinominare toAdd in qualcosa che dica che è un assioma
-	private Set<OWLObject> existsRule(OWLObject exists, OWLNamedIndividual ind1 , String newIndividualName) {
-		
-		Set<OWLObject> toAdd = new HashSet<>(); 
-		ExistsRuleVisitor vis = new ExistsRuleVisitor();
-		exists.accept(vis);
-		List<OWLObject> proAndFil = vis.getPropertyAndFiller();
-
-		if (proAndFil.size()>0) {
-			OWLObjectPropertyExpression property = (OWLObjectPropertyExpression) proAndFil.get(0);
-			OWLClassExpression filler = (OWLClassExpression) proAndFil.get(1);
-			try {
-				toAdd.add(editor.createIndividualForProperty(property, ind1, newIndividualName));
-				toAdd.add(editor.createIndividual(filler, newIndividualName));
-			} catch (OWLOntologyCreationException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-		
-
-		return toAdd;
-	}
 	
 	
 	private Set<OWLObject> existsRuleNonEmpyTbox(OWLObject exists, OWLNamedIndividual ind1 , String newIndividualName) {
@@ -896,59 +871,6 @@ public class ALCReasoner{
     	return ret;
 	}
 	
-	//TODO OLD
-	private Set<OWLObject> lazyUnfoldingRules(Set<OWLObject> aBox, Set<OWLObject> T_u, String individual) {
-		Set<OWLObject> toAdd = new HashSet<>();
-		for (OWLObject unfoldableAx: T_u) {
-			if(unfoldableAx instanceof OWLEquivalentClassesAxiom) {
-				OWLClassExpression leftSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(0);
-				for(OWLObject aboxAx: aBox) {
-					//PRIMA REGOLA
-					if(aboxAx instanceof OWLClassAssertionAxiom) {
-						if(((OWLClassAssertionAxiom) aboxAx).getClassExpression().equals(leftSide)) {
-							OWLClassExpression rightSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(1);
-							try {
-								toAdd.add(editor.createIndividual(rightSide, individual));
-							} catch (OWLOntologyCreationException e) {
-								e.printStackTrace();
-							}
-						}
-						//SECONDA REGOLA
-						OWLDataFactory factory = this.editor.getFactory();
-						OWLObjectComplementOf complAx = factory.getOWLObjectComplementOf(((OWLClassAssertionAxiom) aboxAx).getClassExpression().getNNF());
-						if(complAx.equals(leftSide)) {
-							OWLClassExpression rightSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(1);
-							OWLObjectComplementOf rightSideCompl = factory.getOWLObjectComplementOf(rightSide);
-							try {
-								toAdd.add(editor.createIndividual(rightSideCompl, individual));
-							} catch (OWLOntologyCreationException e) {
-								e.printStackTrace();
-							}
-						}
-					}
-				}
-			}
-			//TERZA REGOLA
-			if(unfoldableAx instanceof OWLSubClassOfAxiom) {
-				OWLClassExpression leftSide = ((OWLSubClassOfAxiom) unfoldableAx).getSubClass();
-				for(OWLObject aboxAx: aBox) {
-					if(aboxAx instanceof OWLClassAssertionAxiom) {
-						if(((OWLClassAssertionAxiom) aboxAx).getClassExpression().equals(leftSide)) {
-							OWLClassExpression rightSide = ((OWLSubClassOfAxiom) unfoldableAx).getSuperClass();
-							try {
-								toAdd.add(editor.createIndividual(rightSide, individual));
-							} catch (OWLOntologyCreationException e) {
-								e.printStackTrace();
-							}
-						}
-					}
-				}
-				
-			}
-			
-		}
-		return toAdd;
-	}
 	
 	private Set<OWLObject> lazyUnfoldingRules2(Set<OWLObject> aBox , Set<OWLObject> Lx, Set<OWLObject> T_u, String individual) {
 		Set<OWLObject> insertedLazy = new HashSet<>();
@@ -1461,21 +1383,6 @@ public class ALCReasoner{
     	return ret;
 	}
 
-	
-	
-	/** Data una Lx controlla se contiene solo classi (non ci sono altre regole da applicare)
-	 * @param Lx
-	 * @return true se non ci sono altre regole da applicare
-	 * @deprecated
-	 */
-	private boolean onlyClassAxioms( Set<OWLObject> Lx) {
-		for (OWLObject obj: Lx) {
-    		if(!(obj instanceof OWLClass)) {
-    			return false;
-    		}
-    	}
-		return true;
-	}
 	
 private OWLObjectPropertyAssertionAxiom getPropertyAssertionFromSet(Set<OWLObject> set) {
 		OWLObjectPropertyAssertionAxiom propertyAxiom = null;

@@ -69,9 +69,9 @@ public class App {
     	
     	try {
     	System.out.println("\n################Normal################");
-    	executeAndPrintTime("nonEmpty", kb, query, false);
+    	executeAndPrintTime("nonEmpty", kb, query, true);
     	System.out.println("\n############LazyUnfolding#############");
-    	executeAndPrintTime("lazy", kb, query, false);	
+    	executeAndPrintTime("lazy", kb, query, true);	
     	}catch(NullPointerException np) {
     		System.out.println("Inserire una query valida.");
     	}
