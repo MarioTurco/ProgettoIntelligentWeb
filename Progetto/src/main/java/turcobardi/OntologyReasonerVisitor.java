@@ -58,7 +58,6 @@ public class OntologyReasonerVisitor implements OWLObjectVisitor{
 	public void visit(OWLObjectComplementOf eq) {
 		out.print(not);
 		eq.getOperand().accept(this);
-		//System.out.print(conceptToString(iri, eq.getOperand().toString()) + " ");
 	}
 
 	public void visit(OWLEquivalentClassesAxiom eq) {

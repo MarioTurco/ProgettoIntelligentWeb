@@ -10,8 +10,6 @@ import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
 public class ForAllRuleVisitor implements OWLObjectVisitor{
 
-	//private OWLObjectPropertyExpression property;
-	//private OWLClassExpression filler;
 	private List<OWLObject> ret = new ArrayList<>();
 	
 

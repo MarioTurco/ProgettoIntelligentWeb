@@ -9,7 +9,6 @@ import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
-import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLDataFactory;
@@ -807,14 +806,7 @@ public class ALCReasoner{
         		else {
         			if(this.checkExistsRuleCondition(aBox, toAddExists)) {
             			aBox.addAll(toAddExists);
-            			String relationName = null;
             			for(OWLObject add: toAddExists) {
-            				if (add instanceof OWLObjectPropertyAssertionAxiom) {
-            					if(kb!=null)
-            						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
-            					else
-                					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
-            				}
             				
             				if (kb!=null) {
             					if (add instanceof OWLClassAssertionAxiom) {
@@ -1318,17 +1310,8 @@ public class ALCReasoner{
         		else {
         			if(this.checkExistsRuleCondition(aBox, toAdd)) {
             			aBox.addAll(toAdd);
-
-            			String relationName = null;
             			for(OWLObject add: toAdd) {
-            				if (add instanceof OWLObjectPropertyAssertionAxiom) {
-
-            					if(kb!=null)
-            						relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(kb.getOntologyID().getOntologyIRI().get(),"");
-            					else
-                					relationName=((OWLObjectPropertyAssertionAxiom) add).getProperty().toString().replace(concept.getOntologyID().getOntologyIRI().get(),"");
-            					
-            				}
+ 
             				if (add instanceof OWLClassAssertionAxiom) {
             					if(this.C_g!=null) {
             						if(!((OWLClassAssertionAxiom) add).getClassExpression().equals(this.C_g.getSuperClass().getNNF())) {

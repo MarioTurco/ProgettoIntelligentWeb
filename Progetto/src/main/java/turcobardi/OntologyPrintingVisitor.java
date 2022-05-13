@@ -139,7 +139,6 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	
 	public void visit(OWLClassAssertionAxiom o) {
 		OWLIndividual individual = o.getIndividual();
-		//System.out.println(o);
 		o.getClassExpression().accept(this);
 		System.out.print("(");
 		individual.accept(this);
