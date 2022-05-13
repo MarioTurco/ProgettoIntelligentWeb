@@ -39,10 +39,7 @@ import guru.nidi.graphviz.model.Node;
  * Reasoner ALC che implementa i metodi per il tableaux
  *
  */
-/**
- * @author turco
- *
- */
+
 public class ALCReasoner{
 	private OWLOntology concept = null;
 	private String lazyLabelsPath = null;
@@ -196,12 +193,19 @@ public class ALCReasoner{
 		return inclusionToAdd;
 	}
 	
-
+	
+	/** Implementazione della regola del per ogni del tableaux
+	 * @param forAll - Quantificatore universale
+	 * @param existsProperty - Quantificatore esistenziale 
+	 * @return gli assiomi da aggiungere alla abox
+	 */
 	private OWLObject forAllRule(OWLObject forAll, OWLObjectPropertyAssertionAxiom existsProperty) {
 		OWLObject toAdd = null; 
 		ForAllRuleVisitor vis = new ForAllRuleVisitor();
 		OWLNamedIndividual ind = null;
 		forAll.accept(vis);
+		
+		//Restituisce il nome delle relazione (Property) ed il concetto (Filler)
 		List<OWLObject> proAndFil = vis.getPropertyAndFiller();
 		if (proAndFil.size()>0) {
 			OWLObjectPropertyExpression property = (OWLObjectPropertyExpression) proAndFil.get(0);
@@ -226,6 +230,12 @@ public class ALCReasoner{
 	}
 	
 	
+	/** Regola dell'esistenziale per il tableaux con TBox non vuota
+	 * @param exists - Quantificatore esistenziale
+	 * @param ind1 - Nome individuo corrente
+ 	 * @param newIndividualName - nome del nuovo individuo
+	 * @return assiomi da aggiungere alla abox
+	 */
 	private Set<OWLObject> existsRuleNonEmpyTbox(OWLObject exists, OWLNamedIndividual ind1 , String newIndividualName) {
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		ExistsRuleVisitor vis = new ExistsRuleVisitor();
