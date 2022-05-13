@@ -62,8 +62,7 @@ public class App {
     	System.out.println("Query size: " + logicalAxiomsQuery.size());
     	
     	System.out.println("\n#########Query##########: ");
-    	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsQuery){
-    		
+    	for(OWLLogicalAxiom logicalAxiom: logicalAxiomsQuery){  		
     		logicalAxiom.accept(visitor); 
     	}
     	

@@ -510,20 +510,7 @@ public class ALCReasoner{
     	parent = gr.editNodeLabel(parent, parent.name().toString().replace("x", ""), printingPath1+"Nodo " + parent.name().toString() + ": " +formula + printingPath2  +normalLabelsPath+"\\"+parent.name().toString()+printingPath3 );
     	rdf.editLabelProperty(parent.name().toString().replace("x", ""), formula);
     	gr.printLabelToFile(formula, parent.name().toString().replace("x", ""), "normal");
-    	if(hasClash(Lx)) {
-    		Node current = gr.createNode("CLASH");
-    		gr.createLink2(current, parent, "",Color.RED);
-    		rdf.addResource("clashNode"+nClash);
-    		rdf.addStatement(parent.name().toString().replace("x", ""), "clash", "clashNode"+nClash  );
-    		nClash++;
-    		aBox.removeAll(inserted);
-    		for (OWLObject o: inserted) {
-        		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
-        	}
-			return false;
-		}
     	
-
     	//BLOCKING
     	if(kb!=null && !ancestorsLx.isEmpty() && chkBlocking) {
     		for(Set<OWLObject> predLx: ancestorsLx) {  			
@@ -535,6 +522,19 @@ public class ALCReasoner{
     		}
     	}
    
+    	if(hasClash(Lx)) {
+    		Node current = gr.createNode("CLASH");
+    		gr.createLink2(current, parent, "",Color.RED);
+    		rdf.addResource("clashNode"+nClash);
+    		rdf.addStatement(parent.name().toString().replace("x", ""), "clash", "clashNode"+nClash  );
+    		nClash++;
+    		aBox.removeAll(inserted);
+    		for (OWLObject o: inserted) {
+    			Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
+    		}
+    		return false;
+    	}
+    	
     	boolean arePresentDisj = false;
     	for(OWLObject axiom: Lx) {
     		if(axiom instanceof OWLObjectUnionOf)
@@ -726,16 +726,6 @@ public class ALCReasoner{
     		
     	}
 
-
-    	if(hasClash(Lx)) {
-    		aBox.removeAll(inserted);
-    		for (OWLObject o: inserted) {
-        		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
-        	}
-			return false;
-		}
-    	
-
     	//BLOCKING
     	if(kb!=null && !ancestorsLx.isEmpty() && chkBlocking) {
     		for(Set<OWLObject> predLx: ancestorsLx) {  			
@@ -744,6 +734,14 @@ public class ALCReasoner{
     			}
     		}
     	}
+    	
+    	if(hasClash(Lx)) {
+    		aBox.removeAll(inserted);
+    		for (OWLObject o: inserted) {
+        		Lx.remove(((OWLClassAssertionAxiom) o).getClassExpression());
+        	}
+			return false;
+		}
    
     	boolean arePresentDisj = false;
     	for(OWLObject axiom: Lx) {
@@ -958,6 +956,17 @@ public class ALCReasoner{
     	parent = gr.editNodeLabel(parent, ind.getIRI().getShortForm().replace("x", ""),  printingPath1+"Nodo " + parent.name().toString() + ": " +formula + printingPath2 +lazyLabelsPath+"\\"+parent.name().toString()+printingPath3 );
     	gr.printLabelToFile(formula, parent.name().toString(), "lazy");
     	rdf.editLabelProperty(parent.name().toString(), formula);
+    	    	
+    	//BLOCKING
+    	if(kb!=null && !ancestorsLx.isEmpty() && chkBlocking) {
+    		for(Set<OWLObject> predLx: ancestorsLx) {  			
+    			if(predLx.containsAll(Lx)) {
+    				Node blocking = gr.createNode("BLOCKING");
+    				gr.createLink2(blocking, parent, "", Color.ORANGE);
+    				return true;  
+    			}
+    		}
+    	}
     	
     	if(hasClash(Lx)) {
     		Node clashNode = gr.createNode("CLASH");
@@ -976,17 +985,6 @@ public class ALCReasoner{
         	}
 			return false;
 		}
-    	
-    	//BLOCKING
-    	if(kb!=null && !ancestorsLx.isEmpty() && chkBlocking) {
-    		for(Set<OWLObject> predLx: ancestorsLx) {  			
-    			if(predLx.containsAll(Lx)) {
-    				Node blocking = gr.createNode("BLOCKING");
-    				gr.createLink2(blocking, parent, "", Color.ORANGE);
-    				return true;  
-    			}
-    		}
-    	}
     	
     	boolean arePresentDisj = false;
     	for(OWLObject axiom: Lx) {
@@ -1186,6 +1184,15 @@ public class ALCReasoner{
     	}
     	
     	insertedLazyUnf.addAll(lazyUnfoldingRules2(aBox, Lx, T_u, ind.getIRI().getShortForm()));
+    	    	
+    	//BLOCKING
+    	if(kb!=null && !ancestorsLx.isEmpty() && chkBlocking) {
+    		for(Set<OWLObject> predLx: ancestorsLx) {  			
+    			if(predLx.containsAll(Lx)) {
+    				return true;  
+    			}
+    		}
+    	}
     	
     	if(hasClash(Lx)) {
     		aBox.removeAll(inserted);
@@ -1199,15 +1206,6 @@ public class ALCReasoner{
         	}
 			return false;
 		}
-    	
-    	//BLOCKING
-    	if(kb!=null && !ancestorsLx.isEmpty() && chkBlocking) {
-    		for(Set<OWLObject> predLx: ancestorsLx) {  			
-    			if(predLx.containsAll(Lx)) {
-    				return true;  
-    			}
-    		}
-    	}
     	
     	boolean arePresentDisj = false;
     	for(OWLObject axiom: Lx) {
