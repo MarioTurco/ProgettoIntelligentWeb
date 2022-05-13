@@ -261,6 +261,12 @@ public class ALCReasoner{
 		return toAdd;
 	}
 	
+	/** Regola dell'esistenziale per il tableaux con TBox non vuota con lazy unfolding
+	 * @param exists - Quantificatore esistenziale
+	 * @param ind1 - Nome individuo corrente
+ 	 * @param newIndividualName - nome del nuovo individuo
+	 * @return assiomi da aggiungere alla abox
+	 */
 	private Set<OWLObject> existsRuleNonEmpyTboxLazyUnfolding(OWLObject exists, OWLNamedIndividual ind1 , String newIndividualName) {
 		
 		Set<OWLObject> toAdd = new HashSet<>(); 
