@@ -39,6 +39,10 @@ import guru.nidi.graphviz.model.Node;
  * Reasoner ALC che implementa i metodi per il tableaux
  *
  */
+/**
+ * @author turco
+ *
+ */
 public class ALCReasoner{
 	private OWLOntology concept = null;
 	private String lazyLabelsPath = null;
@@ -81,6 +85,11 @@ public class ALCReasoner{
 		}
 	}
 	
+	
+	/** Trasforma gli assiomi (di equivalenza o di sottoclasse) della Tg nelle corrispondenti disgiunzioni da mettere in C cappelletto
+	 * @param T_g - insieme degli assiomi non unfoldable
+	 * @return
+	 */
 	private OWLSubClassOfAxiom convertT_gWithFactory(Set<OWLObject> T_g) {
 		OWLDataFactory factory = this.editor.getFactory();
 		List<OWLClassExpression> conjuncts = new ArrayList<>();
