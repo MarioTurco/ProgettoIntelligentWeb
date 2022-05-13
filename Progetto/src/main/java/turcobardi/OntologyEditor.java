@@ -42,7 +42,7 @@ public class OntologyEditor {
 		return axiom;
 	}
 	
-	/** Crea un assioma del tipo Proprietà(ind1,ind2)
+	/** Crea un nuovo individuo <i>ind2</i> ed un assioma del tipo <i>Proprietà(ind1,ind2)</i>
 	 * @param expr - proprietà 
 	 * @param ind1 - primo individuo
 	 * @param ind2 - secondo individuo

@@ -1368,6 +1368,10 @@ public class ALCReasoner{
 	}
 
 	
+/** Dato un insieme di assiomi, restituisce l'assioma che riguardano le proprietà, ovvero del tipo R(A,B)
+ * @param set - insieme di assiomi
+ * @return 
+ */
 private OWLObjectPropertyAssertionAxiom getPropertyAssertionFromSet(Set<OWLObject> set) {
 		OWLObjectPropertyAssertionAxiom propertyAxiom = null;
 		for(OWLObject o:set) {
