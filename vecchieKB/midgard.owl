@@ -1,0 +1,86 @@
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard>
+
+
+ObjectProperty: <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#useInCombat>
+
+    Domain: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Creature>
+    
+    Range: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Weapon>
+    
+    
+Class: <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Creature>
+
+    DisjointWith: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Weapon>
+    
+    
+Class: <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Elf>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Creature>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Orc>
+    
+    
+Class: <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Human>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Creature>,
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#useInCombat> only <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Sword>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Orc>
+    
+    
+Class: <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Magic>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Weapon>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Sword>
+    
+    
+Class: <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Orc>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Creature>,
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#useInCombat> only <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Sword>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Elf>, <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Human>
+    
+    
+Class: <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Sword>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Weapon>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Magic>
+    
+    
+Class: <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Weapon>
+
+    DisjointWith: 
+        <http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#Creature>
+    
+    
+Class: owl:Nothing
+
+    
+Class: owl:Thing
+
+    

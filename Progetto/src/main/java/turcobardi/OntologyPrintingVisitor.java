@@ -8,12 +8,16 @@ import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
+import org.semanticweb.owlapi.model.OWLDisjointClassesAxiom;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectComplementOf;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
+import org.semanticweb.owlapi.model.OWLObjectPropertyDomainAxiom;
+import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
+import org.semanticweb.owlapi.model.OWLObjectPropertyRangeAxiom;
 import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
@@ -157,6 +161,31 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 			}
 		}
 		System.out.print(")");
+	}
+	
+	public void visit(OWLDisjointClassesAxiom ax) {
+		for(OWLDisjointClassesAxiom axiom: ax.asPairwiseAxioms()) {
+			axiom.getOperandsAsList().get(0).accept(this);
+			System.out.print("Disjoint ");
+			axiom.getOperandsAsList().get(1).accept(this);
+			System.out.println("");
+		}
+	}
+	
+	public void visit(OWLObjectPropertyDomainAxiom ax) {
+		System.out.print(removeIRIFromString(iri, ax.getProperty().toString()));
+		ax.getProperty().accept(this);
+		System.out.print(" Domain: ");
+		ax.getDomain().accept(this);
+		System.out.println("");
+	}
+
+	public void visit(OWLObjectPropertyRangeAxiom ax) {
+		System.out.print(removeIRIFromString(iri, ax.getProperty().toString()));
+		ax.getProperty().accept(this);
+		System.out.print(" Range: ");
+		ax.getRange().accept(this);
+		System.out.println("");
 	}
 	
 	 /** Data una stringa ed un iri, rimuove dalla stringa l'iri più i caratteri <code> "#", "<", ">"</code>
