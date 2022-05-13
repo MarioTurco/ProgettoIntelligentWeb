@@ -88,12 +88,13 @@ public class ALCReasoner{
 	
 	/** Trasforma gli assiomi (di equivalenza o di sottoclasse) della Tg nelle corrispondenti disgiunzioni da mettere in C cappelletto
 	 * @param T_g - insieme degli assiomi non unfoldable
-	 * @return
+	 * @return la congiunzione di tutte le disgiunzioni da aggiungere a C cappelletto
 	 */
 	private OWLSubClassOfAxiom convertT_gWithFactory(Set<OWLObject> T_g) {
 		OWLDataFactory factory = this.editor.getFactory();
 		List<OWLClassExpression> conjuncts = new ArrayList<>();
 		for(OWLObject axiom: T_g) {
+			
 			if(axiom instanceof OWLSubClassOfAxiom) {
 
 				List<OWLClassExpression> operands = new ArrayList<>();
@@ -103,6 +104,7 @@ public class ALCReasoner{
 				OWLObjectUnionOf union = factory.getOWLObjectUnionOf(operands);
 				conjuncts.add(union);
 			}
+			
 			if(axiom instanceof OWLEquivalentClassesAxiom) {
 				
 				List<OWLClassExpression> operands1 = new ArrayList<>();
@@ -117,6 +119,7 @@ public class ALCReasoner{
 				if(union1.getOperands().size()>1) {		
 					conjuncts.add(union1);
 				}
+				
 				else if (union1.getOperands().size()==1) {
 					conjuncts.add(right);
 				}
@@ -143,6 +146,9 @@ public class ALCReasoner{
 		return inclusionToAdd;
 	}
 	
+	/** Trasforma gli assiomi (di equivalenza o di sottoclasse) della KB nelle corrispondenti disgiunzioni 
+	 * @return la congiunzione di tutte le disgiunzioni da aggiungere a C cappelletto
+	 */
 	private OWLSubClassOfAxiom convertKBWithFactory() {
 		OWLDataFactory factory = this.editor.getFactory();
 		List<OWLClassExpression> conjuncts = new ArrayList<>();
