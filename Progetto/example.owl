@@ -1,0 +1,34 @@
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3>
+
+
+ObjectProperty: <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#isFailureOf>
+
+    
+Class: <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#C>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#Column>
+         and (<http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#Column> or <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#Pillar>)
+         and (not (<http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#Column>))
+         and (not (<http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#isFailureOf> some 
+            (<http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#Column>
+             and <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#Pillar>)))
+         and (<http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#isFailureOf> some <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#Column>)
+         and (<http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#isFailureOf> some <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#Pillar>)
+    
+    
+Class: <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#Column>
+
+    
+Class: <http://www.semanticweb.org/gpepp/ontologies/2022/3/untitled-ontology-3#Pillar>
+
+    

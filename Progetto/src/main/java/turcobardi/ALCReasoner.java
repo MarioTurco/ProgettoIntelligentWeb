@@ -399,9 +399,9 @@ public class ALCReasoner{
 			gr.printLabelToFile(formula,current.name().toString(),"normal");
 			rdf.addResource(current.name().toString(), formula);
 			if(printGraph)
-				return implementTableauxNonEmptyTbox(ind, Lx, aBox, null, current);	
+				return implementTableauxNonEmptyTbox(ind, Lx, aBox, new HashSet<Set<OWLObject>>(), current, false);	
 			else
-				return implementTableauxNonEmptyTboxNoPrint(ind, Lx, aBox, null);	
+				return implementTableauxNonEmptyTboxNoPrint(ind, Lx, aBox, new HashSet<Set<OWLObject>>() , false);	
 		}
 		else if (useLazyUnfolding && kb!=null){
 				
@@ -457,9 +457,9 @@ public class ALCReasoner{
 			gr.printLabelToFile(formula,current.name().toString(),"lazy");
 			rdf.addResource(current.name().toString(), formula);
 			if(printGraph) 
-				return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, null, T_u, current);
+				return implementTableauxNonEmptyTboxLazyUnfolding(ind, Lx, aBox, new HashSet<Set<OWLObject>>(), T_u, current, false);
 			else
-				return implementTableauxNonEmptyTboxLazyUnfoldingNoPrint(ind, Lx, aBox, null, T_u);
+				return implementTableauxNonEmptyTboxLazyUnfoldingNoPrint(ind, Lx, aBox, new HashSet<Set<OWLObject>>(), T_u, false);
 			
 		}else if(useLazyUnfolding && kb==null) {
 			System.out.println("Impossibile usare il lazy unfolding su TBox vuota");
@@ -486,7 +486,7 @@ public class ALCReasoner{
 		return false;
 	}
 	
-	private boolean implementTableauxNonEmptyTbox(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Node parent) {
+	private boolean implementTableauxNonEmptyTbox(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<Set<OWLObject>> ancestorsLx, Node parent, boolean chkBlocking) {
 		boolean ret = true;
 		boolean hasChildren = false;
 		//REGOLA INTERSEZIONE
@@ -525,11 +525,13 @@ public class ALCReasoner{
     	
 
     	//BLOCKING
-    	if(kb!=null && predLx!=null) {
-    		if(predLx.containsAll(Lx)) {
-    			Node blocking = gr.createNode("BLOCKING");
-    			gr.createLink2(blocking, parent, "", Color.ORANGE);
-    			return true;  
+    	if(kb!=null && !ancestorsLx.isEmpty() && chkBlocking) {
+    		for(Set<OWLObject> predLx: ancestorsLx) {  			
+    			if(predLx.containsAll(Lx)) {
+    				Node blocking = gr.createNode("BLOCKING");
+    				gr.createLink2(blocking, parent, "", Color.ORANGE);
+    				return true;  
+    			}
     		}
     	}
    
@@ -563,7 +565,7 @@ public class ALCReasoner{
     						rdf.addResource(current.name().toString().replace("x", ""), formula);
     						rdf.addStatement(parent.name().toString().replace("x",""), "Union", current.name().toString().replace("x", ""));
     						hasChildren=true;
-    						ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox,null, current);
+    						ret = implementTableauxNonEmptyTbox(ind, tmpLx, aBox, ancestorsLx, current, false);
     						if (ret) {
     							return true;
     						}
@@ -612,6 +614,7 @@ public class ALCReasoner{
         		else {
         			if(this.checkExistsRuleCondition(aBox, toAddExists)) {
             			aBox.addAll(toAddExists);
+            			ancestorsLx.add(Lx);
             			String relationName = null;
             			for(OWLObject add: toAddExists) {
             				if (add instanceof OWLObjectPropertyAssertionAxiom) {
@@ -679,11 +682,11 @@ public class ALCReasoner{
             				
             			}
             			hasChildren=true;
-            			ret = implementTableauxNonEmptyTbox((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, current);
-            			
+            			ret = implementTableauxNonEmptyTbox((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, ancestorsLx, current, true);
+            			ancestorsLx.remove(Lx);
     					if (!ret) {
     						aBox.remove(toAddForAll); //Asserzioni perogni
-    						aBox.removeAll(toAddExists); //Asserzioni esistenziale
+    						aBox.removeAll(toAddExists); //Asserzioni esistenziale   						
     						return false;
     					}
     					else {
@@ -706,7 +709,7 @@ public class ALCReasoner{
     	return ret;
 	}
 	
-	private boolean implementTableauxNonEmptyTboxNoPrint(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx) {
+	private boolean implementTableauxNonEmptyTboxNoPrint(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<Set<OWLObject>> ancestorsLx, boolean chkBlocking) {
 		boolean ret = true;
 		
 		//REGOLA INTERSEZIONE
@@ -734,9 +737,11 @@ public class ALCReasoner{
     	
 
     	//BLOCKING
-    	if(kb!=null && predLx!=null) {
-    		if(predLx.containsAll(Lx)) {
-    			return true;  
+    	if(kb!=null && !ancestorsLx.isEmpty() && chkBlocking) {
+    		for(Set<OWLObject> predLx: ancestorsLx) {  			
+    			if(predLx.containsAll(Lx)) {
+    				return true;  
+    			}
     		}
     	}
    
@@ -760,7 +765,7 @@ public class ALCReasoner{
     						Set<OWLObject> tmpLx = new HashSet<>(Lx);
     						aBox.add(disjoint);
     						tmpLx.add(((OWLClassAssertionAxiom) disjoint).getClassExpression());
-    						ret = implementTableauxNonEmptyTboxNoPrint(ind, tmpLx, aBox,null);
+    						ret = implementTableauxNonEmptyTboxNoPrint(ind, tmpLx, aBox, ancestorsLx, false);
     						
     						if (ret) {
     							return true;
@@ -806,6 +811,7 @@ public class ALCReasoner{
         		else {
         			if(this.checkExistsRuleCondition(aBox, toAddExists)) {
             			aBox.addAll(toAddExists);
+            			ancestorsLx.add(Lx);
             			for(OWLObject add: toAddExists) {
             				
             				if (kb!=null) {
@@ -842,8 +848,8 @@ public class ALCReasoner{
             				
             			}
             			
-            			ret = implementTableauxNonEmptyTboxNoPrint((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx);
-            			
+            			ret = implementTableauxNonEmptyTboxNoPrint((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, ancestorsLx, true);
+            			ancestorsLx.remove(Lx);
     					if (!ret) {
     						aBox.remove(toAddForAll); //Asserzioni perogni
     						aBox.removeAll(toAddExists); //Asserzioni esistenziale
@@ -923,21 +929,10 @@ public class ALCReasoner{
 		return insertedLazy;
 	}
 	
-	private boolean implementTableauxNonEmptyTboxLazyUnfolding(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Set<OWLObject> T_u, Node parent) {
+	private boolean implementTableauxNonEmptyTboxLazyUnfolding(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<Set<OWLObject>> ancestorsLx, Set<OWLObject> T_u, Node parent, boolean chkBlocking) {
 		boolean ret = true;
 		boolean hasChildren = false;
-		//Set<OWLObject> lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
 		Set<OWLObject> insertedLazyUnf = lazyUnfoldingRules2(aBox, Lx, T_u, ind.getIRI().getShortForm());
-		//Set<OWLObject> insertedLazyUnf = new HashSet<>();
-
-		/*for(OWLObject ins: lazyUnfoldingRulesRes) {
-			if (aBox.add(ins)) {	
-				insertedLazyUnf.add(ins);
-			}
-		}
-		for(OWLObject ins: lazyUnfoldingRulesRes) {
-			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
-		}*/
 		
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(Lx,ind.getIRI().getShortForm());
@@ -954,16 +949,6 @@ public class ALCReasoner{
     	}
     	
     	insertedLazyUnf.addAll(lazyUnfoldingRules2(aBox, Lx, T_u, ind.getIRI().getShortForm()));
-    	//lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
-
-    	/*for(OWLObject ins: lazyUnfoldingRulesRes) {
-			if (aBox.add(ins)) {	
-				insertedLazyUnf.add(ins);
-			}
-		}
-		for(OWLObject ins: lazyUnfoldingRulesRes) {
-			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
-		}*/
     	for (OWLObject o: Lx) {
     		o.accept(gv);
     		gv.addColonToFormula();
@@ -993,11 +978,13 @@ public class ALCReasoner{
 		}
     	
     	//BLOCKING
-    	if(predLx!=null) {
-    		if(predLx.containsAll(Lx)) {
-    			Node blocking = gr.createNode("BLOCKING");
-    			gr.createLink2(blocking, parent, "", Color.ORANGE);
-    			return true;  
+    	if(kb!=null && !ancestorsLx.isEmpty() && chkBlocking) {
+    		for(Set<OWLObject> predLx: ancestorsLx) {  			
+    			if(predLx.containsAll(Lx)) {
+    				Node blocking = gr.createNode("BLOCKING");
+    				gr.createLink2(blocking, parent, "", Color.ORANGE);
+    				return true;  
+    			}
     		}
     	}
     	
@@ -1033,7 +1020,7 @@ public class ALCReasoner{
     						rdf.addResource(currentNode.name().toString(), formula);
     						rdf.addStatement(parent.name().toString(), "Union", currentNode.name().toString());
     						hasChildren = true;
-    						ret = implementTableauxNonEmptyTboxLazyUnfolding(ind, tmpLx, aBox,null, T_u, currentNode);
+    						ret = implementTableauxNonEmptyTboxLazyUnfolding(ind, tmpLx, aBox, ancestorsLx, T_u, currentNode, false);
     						
     						if (ret) 
     							return true;
@@ -1087,6 +1074,7 @@ public class ALCReasoner{
         		else {
         			if(this.checkExistsRuleCondition(aBox, toAdd)) {
             			aBox.addAll(toAdd);
+            			ancestorsLx.add(Lx);
             			String relationName = null;
             			for(OWLObject add: toAdd) {
             				if (add instanceof OWLObjectPropertyAssertionAxiom) {
@@ -1150,7 +1138,8 @@ public class ALCReasoner{
             				
             			}
             			hasChildren = true;
-            			ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, T_u, currentNode);
+            			ret = implementTableauxNonEmptyTboxLazyUnfolding((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, ancestorsLx, T_u, currentNode, true);
+            			ancestorsLx.remove(Lx);
     					if (!ret) {
     						aBox.remove(toAddForAll); //Asserzioni perogni
     						aBox.removeAll(toAdd); //Asserzioni esistenziale
@@ -1178,20 +1167,9 @@ public class ALCReasoner{
 	}
 	
 	
-	private boolean implementTableauxNonEmptyTboxLazyUnfoldingNoPrint(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<OWLObject> predLx, Set<OWLObject> T_u) {
+	private boolean implementTableauxNonEmptyTboxLazyUnfoldingNoPrint(OWLNamedIndividual ind, Set<OWLObject> Lx, Set<OWLObject> aBox, Set<Set<OWLObject>> ancestorsLx, Set<OWLObject> T_u, boolean chkBlocking) {
 		boolean ret = true;
-		//Set<OWLObject> lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
 		Set<OWLObject> insertedLazyUnf = lazyUnfoldingRules2(aBox, Lx, T_u, ind.getIRI().getShortForm());
-		//Set<OWLObject> insertedLazyUnf = new HashSet<>();
-
-		/*for(OWLObject ins: lazyUnfoldingRulesRes) {
-			if (aBox.add(ins)) {	
-				insertedLazyUnf.add(ins);
-			}
-		}
-		for(OWLObject ins: lazyUnfoldingRulesRes) {
-			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
-		}*/
 		
 		//REGOLA INTERSEZIONE
 		Set<OWLObject> tmp = this.intersectionRule(Lx,ind.getIRI().getShortForm());
@@ -1208,16 +1186,6 @@ public class ALCReasoner{
     	}
     	
     	insertedLazyUnf.addAll(lazyUnfoldingRules2(aBox, Lx, T_u, ind.getIRI().getShortForm()));
-    	//lazyUnfoldingRulesRes = lazyUnfoldingRules(aBox, T_u, ind.getIRI().getShortForm());
-
-    	/*for(OWLObject ins: lazyUnfoldingRulesRes) {
-			if (aBox.add(ins)) {	
-				insertedLazyUnf.add(ins);
-			}
-		}
-		for(OWLObject ins: lazyUnfoldingRulesRes) {
-			Lx.add(((OWLClassAssertionAxiom) ins).getClassExpression());
-		}*/
     	
     	if(hasClash(Lx)) {
     		aBox.removeAll(inserted);
@@ -1233,9 +1201,11 @@ public class ALCReasoner{
 		}
     	
     	//BLOCKING
-    	if(predLx!=null) {
-    		if(predLx.containsAll(Lx)) {
-    			return true;  
+    	if(kb!=null && !ancestorsLx.isEmpty() && chkBlocking) {
+    		for(Set<OWLObject> predLx: ancestorsLx) {  			
+    			if(predLx.containsAll(Lx)) {
+    				return true;  
+    			}
     		}
     	}
     	
@@ -1262,7 +1232,7 @@ public class ALCReasoner{
     						aBox.add(disjoint);
 
     						tmpLx.add(((OWLClassAssertionAxiom) disjoint).getClassExpression());
-    						ret = implementTableauxNonEmptyTboxLazyUnfoldingNoPrint(ind, tmpLx, aBox,null, T_u);
+    						ret = implementTableauxNonEmptyTboxLazyUnfoldingNoPrint(ind, tmpLx, aBox, ancestorsLx, T_u, false);
     						
     						if (ret) 
     							return true;
@@ -1310,6 +1280,7 @@ public class ALCReasoner{
         		else {
         			if(this.checkExistsRuleCondition(aBox, toAdd)) {
             			aBox.addAll(toAdd);
+            			ancestorsLx.add(Lx);
             			for(OWLObject add: toAdd) {
  
             				if (add instanceof OWLClassAssertionAxiom) {
@@ -1345,8 +1316,9 @@ public class ALCReasoner{
             				
             			}
             			
-            			ret = implementTableauxNonEmptyTboxLazyUnfoldingNoPrint((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, Lx, T_u);
-    					if (!ret) {
+            			ret = implementTableauxNonEmptyTboxLazyUnfoldingNoPrint((OWLNamedIndividual) propAxiom.getObject(),newLx,aBox, ancestorsLx, T_u, true);
+    					ancestorsLx.remove(Lx);
+            			if (!ret) {
     						aBox.remove(toAddForAll); //Asserzioni perogni
     						aBox.removeAll(toAdd); //Asserzioni esistenziale
 

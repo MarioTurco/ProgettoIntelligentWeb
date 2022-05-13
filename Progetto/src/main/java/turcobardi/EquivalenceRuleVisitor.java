@@ -1,11 +1,11 @@
 package turcobardi;
 
 import org.semanticweb.owlapi.model.OWLAxiom;
+import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 import org.semanticweb.owlapi.model.OWLOntology;
-import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 import org.semanticweb.owlapi.model.parameters.Imports;
 
 public class EquivalenceRuleVisitor implements OWLObjectVisitor{
@@ -17,6 +17,12 @@ public class EquivalenceRuleVisitor implements OWLObjectVisitor{
 				rightSide = eq.getOperandsAsList().get(1);
 			else 
 				rightSide = eq.getOperandsAsList().get(0);
+			
+			for (OWLClass cl: rightSide.getClassesInSignature()) {
+				if (cl.getIRI().toString().contains("Query")) {
+					rightSide = eq.getOperandsAsList().get(0);
+				}
+			}
 			return;
 		}
 		
