@@ -10,6 +10,10 @@ import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
+
+/**
+ * Visitor dei quantificatori esistenziali
+ */
 public class ExistsRuleVisitor implements OWLObjectVisitor{
 
 	private OWLObjectPropertyExpression property;
@@ -28,11 +32,19 @@ public class ExistsRuleVisitor implements OWLObjectVisitor{
 		ca.getClassExpression().accept(this);
 		
 	}
+	
+	/**
+	 * @return la property ed il filler(Concetto) dell'esistenziale visitato
+	 */
 	public List<OWLObject> getPropertyAndFiller() {
 		List<OWLObject> tmp = new ArrayList<>(ret);
 		ret.clear();
 		return tmp;
 	}
+	
+	/**
+	 * @return il filler (Concetto) dell'esistenziale visitato
+	 */
 	public OWLClassExpression getFiller() {
 		return filler;
 	}

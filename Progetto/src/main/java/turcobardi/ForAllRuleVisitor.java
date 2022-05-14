@@ -8,6 +8,10 @@ import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
+
+/**
+ * Visitor dei quantificatori universali
+ */
 public class ForAllRuleVisitor implements OWLObjectVisitor{
 
 	private List<OWLObject> ret = new ArrayList<>();
@@ -22,6 +26,9 @@ public class ForAllRuleVisitor implements OWLObjectVisitor{
 		ca.getClassExpression().accept(this);
 	}
 	
+	/**
+	 * @return la property ed il filler(Concetto) dell'esistenziale visitato
+	 */
 	public List<OWLObject> getPropertyAndFiller() {
 		List<OWLObject> tmp = new ArrayList<>(ret);
 		ret.clear();
