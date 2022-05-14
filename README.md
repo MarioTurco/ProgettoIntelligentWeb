@@ -29,7 +29,7 @@ come riportato in figura.
 
 Per caricare una knowledge base differente da quella caricata in automatico è necessario modificare il rigo
 42 del file App.java, come riportato in figura.
-
+![Alt text](/Figures/2.png "Import")
 ### Query
 
 È possibile caricare una query scrivendola da tastiera nel terminale all’avvio dell’applicazione.
@@ -41,19 +41,19 @@ Prima di eseguire il programma si può scegliere se durante l’esecuzione verr�
 successivamente stampato il grafo del tabluex sotto forma di file .SVG e .RDF.
 Se si vuole generare tali file andrà passato il parametro **“true”** alla funzione _‘executeAndPrintTime’_
 alle righe 72 e 74 del file ‘App.java’, come riportato in figura:
-
+![Alt text](/Figures/4.png "Import")
 Se invece il parametro sarà settato a ‘false’ non verranno generati i file contenente i grafi.
 
 ### Posizione dei tabluex
 
 Tutti i file generati dal programma si troveranno nella cartella “Progetto/graph/”
-
+![Alt text](/Figures/5.png "Import")
 Lazy corrisponde ai tablueax con il LazyUnboxing mentre NonEmpty corrisponde ai tableaux con tbox non
 vuota senza LazyUnboxing.
 Abbiamo scelto il formato .SVG per i tableaux poiché, essendo un file vettoriale, può essere zoomato senza
 mai perdere qualità e di conseguenza si presta bene alla visualizzazione di immagini molto grandi.
 
-
+![Alt text](/Figures/6.png "Import")
 _Figura 1 I label possono essere visualizzati sia passando il mouse sulla dicitura 'Label', sia cliccando sulla stessa._
 
 
