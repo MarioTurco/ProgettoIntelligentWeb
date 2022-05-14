@@ -1,944 +1,1072 @@
-<svg width="1110px" height="767px"
- viewBox="0.00 0.00 1109.53 766.60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1449px" height="767px"
+ viewBox="0.00 0.00 1448.69 766.60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 762.6)">
 <title>tableaux</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-762.6 1105.53,-762.6 1105.53,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-762.6 1444.69,-762.6 1444.69,4 -4,4"/>
 <!-- 0 -->
 <g id="node1" class="node">
 <title>0</title>
-<ellipse fill="none" stroke="black" cx="626" cy="-712.6" rx="27" ry="18"/>
-<text text-anchor="start" x="619" y="-709.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="626" y="-709.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node1_197"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\0.txt" xlink:title="Nodo 0: (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="550,-731.6 550,-757.6 598,-757.6 598,-731.6 550,-731.6"/>
-<text text-anchor="start" x="554.56" y="-740" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="991" cy="-712.6" rx="27" ry="18"/>
+<text text-anchor="start" x="984" y="-709.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="991" y="-709.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node1_47"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\0.txt" xlink:title="Nodo 0: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="915,-731.6 915,-757.6 963,-757.6 963,-731.6 915,-731.6"/>
+<text text-anchor="start" x="919.56" y="-740" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="549,-730.6 549,-758.6 599,-758.6 599,-730.6 549,-730.6"/>
+<polygon fill="none" stroke="green" points="914,-730.6 914,-758.6 964,-758.6 964,-730.6 914,-730.6"/>
 </g>
 <!-- 1 -->
 <g id="node2" class="node">
 <title>1</title>
-<ellipse fill="none" stroke="black" cx="590" cy="-623.8" rx="27" ry="18"/>
-<text text-anchor="start" x="583" y="-620.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="590" y="-620.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node2_198"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\1.txt" xlink:title="Nodo 1: (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="514,-642.8 514,-668.8 562,-668.8 562,-642.8 514,-642.8"/>
-<text text-anchor="start" x="518.56" y="-651.2" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="840" cy="-623.8" rx="27" ry="18"/>
+<text text-anchor="start" x="833" y="-620.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="840" y="-620.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node2_48"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\1.txt" xlink:title="Nodo 1: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="764,-642.8 764,-668.8 812,-668.8 812,-642.8 764,-642.8"/>
+<text text-anchor="start" x="768.56" y="-651.2" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="513,-641.8 513,-669.8 563,-669.8 563,-641.8 513,-641.8"/>
+<polygon fill="none" stroke="green" points="763,-641.8 763,-669.8 813,-669.8 813,-641.8 763,-641.8"/>
 </g>
 <!-- 0&#45;&gt;1 -->
 <g id="edge2" class="edge">
 <title>0&#45;&gt;1</title>
-<path fill="none" stroke="black" d="M619.06,-694.86C613.88,-682.38 606.71,-665.08 600.78,-650.8"/>
-<polygon fill="black" stroke="black" points="603.98,-649.38 596.92,-641.48 597.52,-652.06 603.98,-649.38"/>
-<text text-anchor="middle" x="617.25" y="-664" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 52 -->
-<g id="node53" class="node">
-<title>52</title>
-<ellipse fill="none" stroke="black" cx="670" cy="-623.8" rx="27" ry="18"/>
-<text text-anchor="start" x="663" y="-620.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="670" y="-620.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node53_199"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\52.txt" xlink:title="Nodo 52: (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), (¬Mirrorless ⊔ ¬Reflex ), ¬MacchinaFotografica , ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="644,-578.8 644,-604.8 692,-604.8 692,-578.8 644,-578.8"/>
-<text text-anchor="start" x="648.56" y="-587.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="643,-577.8 643,-605.8 693,-605.8 693,-577.8 643,-577.8"/>
-</g>
-<!-- 0&#45;&gt;52 -->
-<g id="edge1" class="edge">
-<title>0&#45;&gt;52</title>
-<path fill="none" stroke="black" d="M634.28,-695.27C640.73,-682.54 649.8,-664.64 657.19,-650.06"/>
-<polygon fill="black" stroke="black" points="660.36,-651.56 661.76,-641.05 654.12,-648.39 660.36,-651.56"/>
-<text text-anchor="middle" x="657.25" y="-664" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 2 -->
-<g id="node3" class="node">
-<title>2</title>
-<ellipse fill="none" stroke="black" cx="341" cy="-535" rx="27" ry="18"/>
-<text text-anchor="start" x="334" y="-531.8" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="341" y="-531.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node3_200"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\2.txt" xlink:title="Nodo 2: (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="265,-554 265,-580 313,-580 313,-554 265,-554"/>
-<text text-anchor="start" x="269.56" y="-562.4" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="264,-553 264,-581 314,-581 314,-553 264,-553"/>
-</g>
-<!-- 1&#45;&gt;2 -->
-<g id="edge4" class="edge">
-<title>1&#45;&gt;2</title>
-<path fill="none" stroke="black" d="M566.57,-614.63C522.08,-599.12 425.25,-565.37 374.13,-547.55"/>
-<polygon fill="black" stroke="black" points="375.14,-544.19 364.54,-544.21 372.84,-550.8 375.14,-544.19"/>
-<text text-anchor="middle" x="493.25" y="-575.2" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 27 -->
-<g id="node28" class="node">
-<title>27</title>
-<ellipse fill="none" stroke="black" cx="590" cy="-535" rx="27" ry="18"/>
-<text text-anchor="start" x="583" y="-531.8" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="590" y="-531.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node28_201"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\27.txt" xlink:title="Nodo 27: (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="514,-554 514,-580 562,-580 562,-554 514,-554"/>
-<text text-anchor="start" x="518.56" y="-562.4" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="513,-553 513,-581 563,-581 563,-553 513,-553"/>
-</g>
-<!-- 1&#45;&gt;27 -->
-<g id="edge3" class="edge">
-<title>1&#45;&gt;27</title>
-<path fill="none" stroke="black" d="M590,-605.65C590,-593.52 590,-577.02 590,-563.12"/>
-<polygon fill="black" stroke="black" points="593.5,-563.11 590,-553.11 586.5,-563.11 593.5,-563.11"/>
-<text text-anchor="middle" x="595.25" y="-575.2" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 3 -->
-<g id="node4" class="node">
-<title>3</title>
-<ellipse fill="none" stroke="black" cx="183" cy="-446.2" rx="27" ry="18"/>
-<text text-anchor="start" x="176" y="-443" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="183" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node4_202"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\3.txt" xlink:title="Nodo 3: (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="107,-465.2 107,-491.2 155,-491.2 155,-465.2 107,-465.2"/>
-<text text-anchor="start" x="111.56" y="-473.6" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="106,-464.2 106,-492.2 156,-492.2 156,-464.2 106,-464.2"/>
-</g>
-<!-- 2&#45;&gt;3 -->
-<g id="edge6" class="edge">
-<title>2&#45;&gt;3</title>
-<path fill="none" stroke="black" d="M320.67,-522.83C293.06,-507.66 243.54,-480.46 212.02,-463.14"/>
-<polygon fill="black" stroke="black" points="213.7,-460.07 203.25,-458.33 210.33,-466.21 213.7,-460.07"/>
-<text text-anchor="middle" x="282.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 15 -->
-<g id="node16" class="node">
-<title>15</title>
-<ellipse fill="none" stroke="black" cx="341" cy="-446.2" rx="27" ry="18"/>
-<text text-anchor="start" x="334" y="-443" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="341" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node16_203"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\15.txt" xlink:title="Nodo 15: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="265,-429.2 265,-455.2 313,-455.2 313,-429.2 265,-429.2"/>
-<text text-anchor="start" x="269.56" y="-437.6" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="264,-428.2 264,-456.2 314,-456.2 314,-428.2 264,-428.2"/>
-</g>
-<!-- 2&#45;&gt;15 -->
-<g id="edge5" class="edge">
-<title>2&#45;&gt;15</title>
-<path fill="none" stroke="black" d="M341,-516.85C341,-504.72 341,-488.22 341,-474.32"/>
-<polygon fill="black" stroke="black" points="344.5,-474.31 341,-464.31 337.5,-474.31 344.5,-474.31"/>
-<text text-anchor="middle" x="346.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 4 -->
-<g id="node5" class="node">
-<title>4</title>
-<ellipse fill="none" stroke="black" cx="77" cy="-357.4" rx="27" ry="18"/>
-<text text-anchor="start" x="70" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="77" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node5_204"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\4.txt" xlink:title="Nodo 4: (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ¬MacchinaFotografica , ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="1,-376.4 1,-402.4 49,-402.4 49,-376.4 1,-376.4"/>
-<text text-anchor="start" x="5.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="0,-375.4 0,-403.4 50,-403.4 50,-375.4 0,-375.4"/>
-</g>
-<!-- 3&#45;&gt;4 -->
-<g id="edge8" class="edge">
-<title>3&#45;&gt;4</title>
-<path fill="none" stroke="black" d="M166.44,-431.64C148.94,-417.31 121.16,-394.56 101.2,-378.22"/>
-<polygon fill="black" stroke="black" points="103.4,-375.49 93.45,-371.87 98.97,-380.91 103.4,-375.49"/>
-<text text-anchor="middle" x="145.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 6 -->
-<g id="node7" class="node">
-<title>6</title>
-<ellipse fill="none" stroke="black" cx="183" cy="-357.4" rx="27" ry="18"/>
-<text text-anchor="start" x="176" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="183" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node7_205"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\6.txt" xlink:title="Nodo 6: (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="107,-340.4 107,-366.4 155,-366.4 155,-340.4 107,-340.4"/>
-<text text-anchor="start" x="111.56" y="-348.8" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="106,-339.4 106,-367.4 156,-367.4 156,-339.4 106,-339.4"/>
-</g>
-<!-- 3&#45;&gt;6 -->
-<g id="edge7" class="edge">
-<title>3&#45;&gt;6</title>
-<path fill="none" stroke="black" d="M183,-428.05C183,-415.92 183,-399.42 183,-385.52"/>
-<polygon fill="black" stroke="black" points="186.5,-385.51 183,-375.51 179.5,-385.51 186.5,-385.51"/>
-<text text-anchor="middle" x="188.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 5 -->
-<g id="node6" class="node">
-<title>5</title>
-<ellipse fill="none" stroke="black" cx="59" cy="-268.6" rx="42.88" ry="18"/>
-<text text-anchor="start" x="36.06" y="-264.4" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 4&#45;&gt;5 -->
-<g id="edge9" class="edge">
-<title>4&#45;&gt;5</title>
-<path fill="none" stroke="red" d="M73.44,-339.25C70.93,-327.12 67.51,-310.62 64.62,-296.72"/>
-<polygon fill="red" stroke="red" points="68.01,-295.79 62.55,-286.71 61.15,-297.22 68.01,-295.79"/>
-</g>
-<!-- 7 -->
-<g id="node8" class="node">
-<title>7</title>
-<ellipse fill="none" stroke="black" cx="147" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="start" x="140" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="147" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node8_206"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\7.txt" xlink:title="Nodo 7: (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , owl:Nothing , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="71,-287.6 71,-313.6 119,-313.6 119,-287.6 71,-287.6"/>
-<text text-anchor="start" x="75.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="70,-286.6 70,-314.6 120,-314.6 120,-286.6 70,-286.6"/>
-</g>
-<!-- 6&#45;&gt;7 -->
-<g id="edge11" class="edge">
-<title>6&#45;&gt;7</title>
-<path fill="none" stroke="black" d="M176.06,-339.66C170.88,-327.18 163.71,-309.88 157.78,-295.6"/>
-<polygon fill="black" stroke="black" points="160.98,-294.18 153.92,-286.28 154.52,-296.86 160.98,-294.18"/>
-<text text-anchor="middle" x="174.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 9 -->
-<g id="node10" class="node">
-<title>9</title>
-<ellipse fill="none" stroke="black" cx="219" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="start" x="212" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="219" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node10_207"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\9.txt" xlink:title="Nodo 9: (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), &#160;∀ haSpecchio.Specchio , (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="143,-223.6 143,-249.6 191,-249.6 191,-223.6 143,-223.6"/>
-<text text-anchor="start" x="147.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="142,-222.6 142,-250.6 192,-250.6 192,-222.6 142,-222.6"/>
-</g>
-<!-- 6&#45;&gt;9 -->
-<g id="edge10" class="edge">
-<title>6&#45;&gt;9</title>
-<path fill="none" stroke="black" d="M189.94,-339.66C195.12,-327.18 202.29,-309.88 208.22,-295.6"/>
-<polygon fill="black" stroke="black" points="211.48,-296.86 212.08,-286.28 205.02,-294.18 211.48,-296.86"/>
-<text text-anchor="middle" x="210.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 8 -->
-<g id="node9" class="node">
-<title>8</title>
-<ellipse fill="none" stroke="black" cx="131" cy="-179.8" rx="42.88" ry="18"/>
-<text text-anchor="start" x="108.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 7&#45;&gt;8 -->
-<g id="edge12" class="edge">
-<title>7&#45;&gt;8</title>
-<path fill="none" stroke="red" d="M143.84,-250.45C141.6,-238.32 138.56,-221.82 136,-207.92"/>
-<polygon fill="red" stroke="red" points="139.41,-207.11 134.15,-197.91 132.53,-208.38 139.41,-207.11"/>
-</g>
-<!-- 10 -->
-<g id="node11" class="node">
-<title>10</title>
-<ellipse fill="none" stroke="black" cx="219" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="212" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="219" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node11_208"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\10.txt" xlink:title="Nodo 10: (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , owl:Nothing , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), &#160;∀ haSpecchio.Specchio , (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="143,-134.8 143,-160.8 191,-160.8 191,-134.8 143,-134.8"/>
-<text text-anchor="start" x="147.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="142,-133.8 142,-161.8 192,-161.8 192,-133.8 142,-133.8"/>
-</g>
-<!-- 9&#45;&gt;10 -->
-<g id="edge14" class="edge">
-<title>9&#45;&gt;10</title>
-<path fill="none" stroke="black" d="M219,-250.45C219,-238.32 219,-221.82 219,-207.92"/>
-<polygon fill="black" stroke="black" points="222.5,-207.91 219,-197.91 215.5,-207.91 222.5,-207.91"/>
-<text text-anchor="middle" x="224.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 12 -->
-<g id="node13" class="node">
-<title>12</title>
-<ellipse fill="none" stroke="black" cx="291" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="284" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="291" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node13_209"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\12.txt" xlink:title="Nodo 12: (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , &#160;∀ haSensore.Sensore , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), &#160;∀ haSpecchio.Specchio , (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="215,-134.8 215,-160.8 263,-160.8 263,-134.8 215,-134.8"/>
-<text text-anchor="start" x="219.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="214,-133.8 214,-161.8 264,-161.8 264,-133.8 214,-133.8"/>
-</g>
-<!-- 9&#45;&gt;12 -->
-<g id="edge13" class="edge">
-<title>9&#45;&gt;12</title>
-<path fill="none" stroke="black" d="M231.54,-252.48C242.62,-239.12 258.96,-219.43 271.71,-204.06"/>
-<polygon fill="black" stroke="black" points="274.67,-205.97 278.36,-196.04 269.28,-201.5 274.67,-205.97"/>
-<text text-anchor="middle" x="267.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 11 -->
-<g id="node12" class="node">
-<title>11</title>
-<ellipse fill="none" stroke="black" cx="211" cy="-91" rx="42.88" ry="18"/>
-<text text-anchor="start" x="188.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 10&#45;&gt;11 -->
-<g id="edge15" class="edge">
-<title>10&#45;&gt;11</title>
-<path fill="none" stroke="red" d="M217.42,-161.65C216.3,-149.52 214.78,-133.02 213.5,-119.12"/>
-<polygon fill="red" stroke="red" points="216.98,-118.75 212.58,-109.11 210.01,-119.39 216.98,-118.75"/>
-</g>
-<!-- 13 -->
-<g id="node14" class="node">
-<title>13</title>
-<ellipse fill="none" stroke="black" cx="299" cy="-91" rx="27" ry="18"/>
-<text text-anchor="start" x="292" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="299" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
-<g id="a_node14_210"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\13.txt" xlink:title="Nodo 13: ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex ))" target="_blank">
-<polygon fill="none" stroke="green" points="223,-46 223,-72 271,-72 271,-46 223,-46"/>
-<text text-anchor="start" x="227.56" y="-54.4" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="222,-45 222,-73 272,-73 272,-45 222,-45"/>
-</g>
-<!-- 12&#45;&gt;13 -->
-<g id="edge16" class="edge">
-<title>12&#45;&gt;13</title>
-<path fill="none" stroke="black" d="M292.58,-161.65C293.7,-149.52 295.22,-133.02 296.5,-119.12"/>
-<polygon fill="black" stroke="black" points="299.99,-119.39 297.42,-109.11 293.02,-118.75 299.99,-119.39"/>
-<text text-anchor="middle" x="324.77" y="-131.2" font-family="Times,serif" font-size="14.00">haSensore</text>
-</g>
-<!-- 14 -->
-<g id="node15" class="node">
-<title>14</title>
-<ellipse fill="none" stroke="black" cx="299" cy="-18" rx="42.88" ry="18"/>
-<text text-anchor="start" x="276.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 13&#45;&gt;14 -->
-<g id="edge17" class="edge">
-<title>13&#45;&gt;14</title>
-<path fill="none" stroke="red" d="M299,-72.81C299,-64.79 299,-55.05 299,-46.07"/>
-<polygon fill="red" stroke="red" points="302.5,-46.03 299,-36.03 295.5,-46.03 302.5,-46.03"/>
-</g>
-<!-- 16 -->
-<g id="node17" class="node">
-<title>16</title>
-<ellipse fill="none" stroke="black" cx="315" cy="-357.4" rx="27" ry="18"/>
-<text text-anchor="start" x="308" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="315" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node17_211"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\16.txt" xlink:title="Nodo 16: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ¬MacchinaFotografica , ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="239,-376.4 239,-402.4 287,-402.4 287,-376.4 239,-376.4"/>
-<text text-anchor="start" x="243.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="238,-375.4 238,-403.4 288,-403.4 288,-375.4 238,-375.4"/>
-</g>
-<!-- 15&#45;&gt;16 -->
-<g id="edge19" class="edge">
-<title>15&#45;&gt;16</title>
-<path fill="none" stroke="black" d="M335.99,-428.46C332.31,-416.18 327.23,-399.23 322.99,-385.08"/>
-<polygon fill="black" stroke="black" points="326.31,-383.96 320.09,-375.38 319.6,-385.96 326.31,-383.96"/>
-<text text-anchor="middle" x="336.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 18 -->
-<g id="node19" class="node">
-<title>18</title>
-<ellipse fill="none" stroke="black" cx="395" cy="-357.4" rx="27" ry="18"/>
-<text text-anchor="start" x="388" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="395" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node19_212"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\18.txt" xlink:title="Nodo 18: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="319,-312.4 319,-338.4 367,-338.4 367,-312.4 319,-312.4"/>
-<text text-anchor="start" x="323.56" y="-320.8" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="318,-311.4 318,-339.4 368,-339.4 368,-311.4 318,-311.4"/>
-</g>
-<!-- 15&#45;&gt;18 -->
-<g id="edge18" class="edge">
-<title>15&#45;&gt;18</title>
-<path fill="none" stroke="black" d="M350.9,-429.28C358.97,-416.31 370.5,-397.78 379.75,-382.92"/>
-<polygon fill="black" stroke="black" points="382.85,-384.56 385.16,-374.22 376.9,-380.86 382.85,-384.56"/>
-<text text-anchor="middle" x="378.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 17 -->
-<g id="node18" class="node">
-<title>17</title>
-<ellipse fill="none" stroke="black" cx="307" cy="-268.6" rx="42.88" ry="18"/>
-<text text-anchor="start" x="284.06" y="-264.4" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 16&#45;&gt;17 -->
-<g id="edge20" class="edge">
-<title>16&#45;&gt;17</title>
-<path fill="none" stroke="red" d="M313.42,-339.25C312.3,-327.12 310.78,-310.62 309.5,-296.72"/>
-<polygon fill="red" stroke="red" points="312.98,-296.35 308.58,-286.71 306.01,-296.99 312.98,-296.35"/>
-</g>
-<!-- 19 -->
-<g id="node20" class="node">
-<title>19</title>
-<ellipse fill="none" stroke="black" cx="395" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="start" x="388" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="395" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node20_213"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\19.txt" xlink:title="Nodo 19: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , owl:Nothing , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="319,-223.6 319,-249.6 367,-249.6 367,-223.6 319,-223.6"/>
-<text text-anchor="start" x="323.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="318,-222.6 318,-250.6 368,-250.6 368,-222.6 318,-222.6"/>
-</g>
-<!-- 18&#45;&gt;19 -->
-<g id="edge22" class="edge">
-<title>18&#45;&gt;19</title>
-<path fill="none" stroke="black" d="M395,-339.25C395,-327.12 395,-310.62 395,-296.72"/>
-<polygon fill="black" stroke="black" points="398.5,-296.71 395,-286.71 391.5,-296.71 398.5,-296.71"/>
-<text text-anchor="middle" x="400.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 21 -->
-<g id="node22" class="node">
-<title>21</title>
-<ellipse fill="none" stroke="black" cx="467" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="start" x="460" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="467" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node22_214"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\21.txt" xlink:title="Nodo 21: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), &#160;∀ haSpecchio.Specchio , (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="391,-223.6 391,-249.6 439,-249.6 439,-223.6 391,-223.6"/>
-<text text-anchor="start" x="395.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="390,-222.6 390,-250.6 440,-250.6 440,-222.6 390,-222.6"/>
-</g>
-<!-- 18&#45;&gt;21 -->
-<g id="edge21" class="edge">
-<title>18&#45;&gt;21</title>
-<path fill="none" stroke="black" d="M407.54,-341.28C418.62,-327.92 434.96,-308.23 447.71,-292.86"/>
-<polygon fill="black" stroke="black" points="450.67,-294.77 454.36,-284.84 445.28,-290.3 450.67,-294.77"/>
-<text text-anchor="middle" x="443.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 20 -->
-<g id="node21" class="node">
-<title>20</title>
-<ellipse fill="none" stroke="black" cx="379" cy="-179.8" rx="42.88" ry="18"/>
-<text text-anchor="start" x="356.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 19&#45;&gt;20 -->
-<g id="edge23" class="edge">
-<title>19&#45;&gt;20</title>
-<path fill="none" stroke="red" d="M391.84,-250.45C389.6,-238.32 386.56,-221.82 384,-207.92"/>
-<polygon fill="red" stroke="red" points="387.41,-207.11 382.15,-197.91 380.53,-208.38 387.41,-207.11"/>
-</g>
-<!-- 22 -->
-<g id="node23" class="node">
-<title>22</title>
-<ellipse fill="none" stroke="black" cx="467" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="460" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="467" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node23_215"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\22.txt" xlink:title="Nodo 22: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , owl:Nothing , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), &#160;∀ haSpecchio.Specchio , (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="391,-134.8 391,-160.8 439,-160.8 439,-134.8 391,-134.8"/>
-<text text-anchor="start" x="395.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="390,-133.8 390,-161.8 440,-161.8 440,-133.8 390,-133.8"/>
-</g>
-<!-- 21&#45;&gt;22 -->
-<g id="edge25" class="edge">
-<title>21&#45;&gt;22</title>
-<path fill="none" stroke="black" d="M467,-250.45C467,-238.32 467,-221.82 467,-207.92"/>
-<polygon fill="black" stroke="black" points="470.5,-207.91 467,-197.91 463.5,-207.91 470.5,-207.91"/>
-<text text-anchor="middle" x="472.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 24 -->
-<g id="node25" class="node">
-<title>24</title>
-<ellipse fill="none" stroke="black" cx="539" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="532" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="539" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node25_216"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\24.txt" xlink:title="Nodo 24: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬Reflex , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , &#160;∀ haSensore.Sensore , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), &#160;∀ haSpecchio.Specchio , (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="463,-134.8 463,-160.8 511,-160.8 511,-134.8 463,-134.8"/>
-<text text-anchor="start" x="467.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="462,-133.8 462,-161.8 512,-161.8 512,-133.8 462,-133.8"/>
-</g>
-<!-- 21&#45;&gt;24 -->
-<g id="edge24" class="edge">
-<title>21&#45;&gt;24</title>
-<path fill="none" stroke="black" d="M479.54,-252.48C490.62,-239.12 506.96,-219.43 519.71,-204.06"/>
-<polygon fill="black" stroke="black" points="522.67,-205.97 526.36,-196.04 517.28,-201.5 522.67,-205.97"/>
-<text text-anchor="middle" x="515.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 23 -->
-<g id="node24" class="node">
-<title>23</title>
-<ellipse fill="none" stroke="black" cx="463" cy="-91" rx="42.88" ry="18"/>
-<text text-anchor="start" x="440.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 22&#45;&gt;23 -->
-<g id="edge26" class="edge">
-<title>22&#45;&gt;23</title>
-<path fill="none" stroke="red" d="M466.21,-161.65C465.65,-149.52 464.89,-133.02 464.25,-119.12"/>
-<polygon fill="red" stroke="red" points="467.75,-118.94 463.79,-109.11 460.75,-119.26 467.75,-118.94"/>
-</g>
-<!-- 25 -->
-<g id="node26" class="node">
-<title>25</title>
-<ellipse fill="none" stroke="black" cx="551" cy="-91" rx="27" ry="18"/>
-<text text-anchor="start" x="544" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="551" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
-<g id="a_node26_217"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\25.txt" xlink:title="Nodo 25: ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex ))" target="_blank">
-<polygon fill="none" stroke="green" points="475,-46 475,-72 523,-72 523,-46 475,-46"/>
-<text text-anchor="start" x="479.56" y="-54.4" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="474,-45 474,-73 524,-73 524,-45 474,-45"/>
-</g>
-<!-- 24&#45;&gt;25 -->
-<g id="edge27" class="edge">
-<title>24&#45;&gt;25</title>
-<path fill="none" stroke="black" d="M541.37,-161.65C543.05,-149.52 545.33,-133.02 547.25,-119.12"/>
-<polygon fill="black" stroke="black" points="550.73,-119.5 548.63,-109.11 543.8,-118.54 550.73,-119.5"/>
-<text text-anchor="middle" x="575.77" y="-131.2" font-family="Times,serif" font-size="14.00">haSensore</text>
-</g>
-<!-- 26 -->
-<g id="node27" class="node">
-<title>26</title>
-<ellipse fill="none" stroke="black" cx="551" cy="-18" rx="42.88" ry="18"/>
-<text text-anchor="start" x="528.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 25&#45;&gt;26 -->
-<g id="edge28" class="edge">
-<title>25&#45;&gt;26</title>
-<path fill="none" stroke="red" d="M551,-72.81C551,-64.79 551,-55.05 551,-46.07"/>
-<polygon fill="red" stroke="red" points="554.5,-46.03 551,-36.03 547.5,-46.03 554.5,-46.03"/>
-</g>
-<!-- 28 -->
-<g id="node29" class="node">
-<title>28</title>
-<ellipse fill="none" stroke="black" cx="590" cy="-446.2" rx="27" ry="18"/>
-<text text-anchor="start" x="583" y="-443" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="590" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node29_218"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\28.txt" xlink:title="Nodo 28: (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="514,-465.2 514,-491.2 562,-491.2 562,-465.2 514,-465.2"/>
-<text text-anchor="start" x="518.56" y="-473.6" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="513,-464.2 513,-492.2 563,-492.2 563,-464.2 513,-464.2"/>
-</g>
-<!-- 27&#45;&gt;28 -->
-<g id="edge30" class="edge">
-<title>27&#45;&gt;28</title>
-<path fill="none" stroke="black" d="M590,-516.85C590,-504.72 590,-488.22 590,-474.32"/>
-<polygon fill="black" stroke="black" points="593.5,-474.31 590,-464.31 586.5,-474.31 593.5,-474.31"/>
-<text text-anchor="middle" x="595.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 40 -->
-<g id="node41" class="node">
-<title>40</title>
-<ellipse fill="none" stroke="black" cx="803" cy="-446.2" rx="27" ry="18"/>
-<text text-anchor="start" x="796" y="-443" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="803" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node41_219"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\40.txt" xlink:title="Nodo 40: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="727,-465.2 727,-491.2 775,-491.2 775,-465.2 727,-465.2"/>
-<text text-anchor="start" x="731.56" y="-473.6" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="726,-464.2 726,-492.2 776,-492.2 776,-464.2 726,-464.2"/>
-</g>
-<!-- 27&#45;&gt;40 -->
-<g id="edge29" class="edge">
-<title>27&#45;&gt;40</title>
-<path fill="none" stroke="black" d="M611.22,-523.7C616.05,-521.43 621.18,-519.09 626,-517 675.88,-495.42 734.76,-472.74 770.46,-459.3"/>
-<polygon fill="black" stroke="black" points="771.76,-462.55 779.89,-455.76 769.3,-456 771.76,-462.55"/>
-<text text-anchor="middle" x="712.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 29 -->
-<g id="node30" class="node">
-<title>29</title>
-<ellipse fill="none" stroke="black" cx="563" cy="-357.4" rx="27" ry="18"/>
-<text text-anchor="start" x="556" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="563" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node30_220"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\29.txt" xlink:title="Nodo 29: (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , (¬Mirrorless ⊔ ¬Reflex ), ¬MacchinaFotografica , ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="487,-376.4 487,-402.4 535,-402.4 535,-376.4 487,-376.4"/>
-<text text-anchor="start" x="491.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="486,-375.4 486,-403.4 536,-403.4 536,-375.4 486,-375.4"/>
-</g>
-<!-- 28&#45;&gt;29 -->
-<g id="edge32" class="edge">
-<title>28&#45;&gt;29</title>
-<path fill="none" stroke="black" d="M584.79,-428.46C580.95,-416.1 575.63,-399.01 571.21,-384.81"/>
-<polygon fill="black" stroke="black" points="574.5,-383.59 568.19,-375.08 567.82,-385.67 574.5,-383.59"/>
-<text text-anchor="middle" x="584.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 31 -->
-<g id="node32" class="node">
-<title>31</title>
-<ellipse fill="none" stroke="black" cx="643" cy="-357.4" rx="27" ry="18"/>
-<text text-anchor="start" x="636" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="643" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node32_221"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\31.txt" xlink:title="Nodo 31: (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="567,-312.4 567,-338.4 615,-338.4 615,-312.4 567,-312.4"/>
-<text text-anchor="start" x="571.56" y="-320.8" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="566,-311.4 566,-339.4 616,-339.4 616,-311.4 566,-311.4"/>
-</g>
-<!-- 28&#45;&gt;31 -->
-<g id="edge31" class="edge">
-<title>28&#45;&gt;31</title>
-<path fill="none" stroke="black" d="M599.72,-429.28C607.64,-416.31 618.96,-397.78 628.03,-382.92"/>
-<polygon fill="black" stroke="black" points="631.12,-384.58 633.34,-374.22 625.14,-380.93 631.12,-384.58"/>
-<text text-anchor="middle" x="627.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 30 -->
-<g id="node31" class="node">
-<title>30</title>
-<ellipse fill="none" stroke="black" cx="555" cy="-268.6" rx="42.88" ry="18"/>
-<text text-anchor="start" x="532.06" y="-264.4" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 29&#45;&gt;30 -->
-<g id="edge33" class="edge">
-<title>29&#45;&gt;30</title>
-<path fill="none" stroke="red" d="M561.42,-339.25C560.3,-327.12 558.78,-310.62 557.5,-296.72"/>
-<polygon fill="red" stroke="red" points="560.98,-296.35 556.58,-286.71 554.01,-296.99 560.98,-296.35"/>
-</g>
-<!-- 32 -->
-<g id="node33" class="node">
-<title>32</title>
-<ellipse fill="none" stroke="black" cx="643" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="start" x="636" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="643" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node33_222"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\32.txt" xlink:title="Nodo 32: (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , owl:Nothing , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="567,-223.6 567,-249.6 615,-249.6 615,-223.6 567,-223.6"/>
-<text text-anchor="start" x="571.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="566,-222.6 566,-250.6 616,-250.6 616,-222.6 566,-222.6"/>
-</g>
-<!-- 31&#45;&gt;32 -->
-<g id="edge35" class="edge">
-<title>31&#45;&gt;32</title>
-<path fill="none" stroke="black" d="M643,-339.25C643,-327.12 643,-310.62 643,-296.72"/>
-<polygon fill="black" stroke="black" points="646.5,-296.71 643,-286.71 639.5,-296.71 646.5,-296.71"/>
-<text text-anchor="middle" x="648.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 34 -->
-<g id="node35" class="node">
-<title>34</title>
-<ellipse fill="none" stroke="black" cx="715" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="start" x="708" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="715" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node35_223"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\34.txt" xlink:title="Nodo 34: (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), &#160;∀ haSpecchio.Specchio , (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="639,-223.6 639,-249.6 687,-249.6 687,-223.6 639,-223.6"/>
-<text text-anchor="start" x="643.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="638,-222.6 638,-250.6 688,-250.6 688,-222.6 638,-222.6"/>
-</g>
-<!-- 31&#45;&gt;34 -->
-<g id="edge34" class="edge">
-<title>31&#45;&gt;34</title>
-<path fill="none" stroke="black" d="M655.54,-341.28C666.62,-327.92 682.96,-308.23 695.71,-292.86"/>
-<polygon fill="black" stroke="black" points="698.67,-294.77 702.36,-284.84 693.28,-290.3 698.67,-294.77"/>
-<text text-anchor="middle" x="690.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 33 -->
-<g id="node34" class="node">
-<title>33</title>
-<ellipse fill="none" stroke="black" cx="627" cy="-179.8" rx="42.88" ry="18"/>
-<text text-anchor="start" x="604.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 32&#45;&gt;33 -->
-<g id="edge36" class="edge">
-<title>32&#45;&gt;33</title>
-<path fill="none" stroke="red" d="M639.84,-250.45C637.6,-238.32 634.56,-221.82 632,-207.92"/>
-<polygon fill="red" stroke="red" points="635.41,-207.11 630.15,-197.91 628.53,-208.38 635.41,-207.11"/>
-</g>
-<!-- 35 -->
-<g id="node36" class="node">
-<title>35</title>
-<ellipse fill="none" stroke="black" cx="715" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="708" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="715" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node36_224"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\35.txt" xlink:title="Nodo 35: (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , owl:Nothing , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), &#160;∀ haSpecchio.Specchio , (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="639,-134.8 639,-160.8 687,-160.8 687,-134.8 639,-134.8"/>
-<text text-anchor="start" x="643.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="638,-133.8 638,-161.8 688,-161.8 688,-133.8 638,-133.8"/>
-</g>
-<!-- 34&#45;&gt;35 -->
-<g id="edge38" class="edge">
-<title>34&#45;&gt;35</title>
-<path fill="none" stroke="black" d="M715,-250.45C715,-238.32 715,-221.82 715,-207.92"/>
-<polygon fill="black" stroke="black" points="718.5,-207.91 715,-197.91 711.5,-207.91 718.5,-207.91"/>
-<text text-anchor="middle" x="720.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 37 -->
-<g id="node38" class="node">
-<title>37</title>
-<ellipse fill="none" stroke="black" cx="787" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="780" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="787" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node38_225"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\37.txt" xlink:title="Nodo 37: (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , &#160;∀ haSensore.Sensore , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), &#160;∀ haSpecchio.Specchio , (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="711,-134.8 711,-160.8 759,-160.8 759,-134.8 711,-134.8"/>
-<text text-anchor="start" x="715.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="710,-133.8 710,-161.8 760,-161.8 760,-133.8 710,-133.8"/>
-</g>
-<!-- 34&#45;&gt;37 -->
-<g id="edge37" class="edge">
-<title>34&#45;&gt;37</title>
-<path fill="none" stroke="black" d="M727.54,-252.48C738.62,-239.12 754.96,-219.43 767.71,-204.06"/>
-<polygon fill="black" stroke="black" points="770.67,-205.97 774.36,-196.04 765.28,-201.5 770.67,-205.97"/>
-<text text-anchor="middle" x="762.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
+<path fill="none" stroke="black" d="M971.26,-700.25C945.03,-685.18 898.53,-658.44 868.5,-641.18"/>
+<polygon fill="black" stroke="black" points="870.16,-638.1 859.75,-636.15 866.67,-644.17 870.16,-638.1"/>
+<text text-anchor="middle" x="935.25" y="-664" font-family="Times,serif" font-size="14.00">⊔</text>
 </g>
 <!-- 36 -->
 <g id="node37" class="node">
 <title>36</title>
-<ellipse fill="none" stroke="black" cx="711" cy="-91" rx="42.88" ry="18"/>
-<text text-anchor="start" x="688.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+<ellipse fill="none" stroke="black" cx="1089" cy="-623.8" rx="27" ry="18"/>
+<text text-anchor="start" x="1082" y="-620.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1089" y="-620.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node37_49"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\36.txt" xlink:title="Nodo 36: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="1013,-606.8 1013,-632.8 1061,-632.8 1061,-606.8 1013,-606.8"/>
+<text text-anchor="start" x="1017.56" y="-615.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
 </g>
-<!-- 35&#45;&gt;36 -->
-<g id="edge39" class="edge">
-<title>35&#45;&gt;36</title>
-<path fill="none" stroke="red" d="M714.21,-161.65C713.65,-149.52 712.89,-133.02 712.25,-119.12"/>
-<polygon fill="red" stroke="red" points="715.75,-118.94 711.79,-109.11 708.75,-119.26 715.75,-118.94"/>
+<polygon fill="none" stroke="green" points="1012,-605.8 1012,-633.8 1062,-633.8 1062,-605.8 1012,-605.8"/>
+</g>
+<!-- 0&#45;&gt;36 -->
+<g id="edge1" class="edge">
+<title>0&#45;&gt;36</title>
+<path fill="none" stroke="black" d="M1006.75,-697.65C1022.6,-683.61 1047.26,-661.77 1065.45,-645.66"/>
+<polygon fill="black" stroke="black" points="1068.13,-647.96 1073.29,-638.71 1063.49,-642.72 1068.13,-647.96"/>
+<text text-anchor="middle" x="1054.25" y="-664" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 2 -->
+<g id="node3" class="node">
+<title>2</title>
+<ellipse fill="none" stroke="black" cx="571" cy="-535" rx="27" ry="18"/>
+<text text-anchor="start" x="564" y="-531.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="571" y="-531.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node3_50"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\2.txt" xlink:title="Nodo 2: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="495,-554 495,-580 543,-580 543,-554 495,-554"/>
+<text text-anchor="start" x="499.56" y="-562.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="494,-553 494,-581 544,-581 544,-553 494,-553"/>
+</g>
+<!-- 1&#45;&gt;2 -->
+<g id="edge4" class="edge">
+<title>1&#45;&gt;2</title>
+<path fill="none" stroke="black" d="M816.13,-615.1C768.07,-599.59 659.56,-564.58 604.46,-546.8"/>
+<polygon fill="black" stroke="black" points="605.41,-543.43 594.82,-543.69 603.26,-550.09 605.41,-543.43"/>
+<text text-anchor="middle" x="735.25" y="-575.2" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 28 -->
+<g id="node29" class="node">
+<title>28</title>
+<ellipse fill="none" stroke="black" cx="840" cy="-535" rx="27" ry="18"/>
+<text text-anchor="start" x="833" y="-531.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="840" y="-531.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node29_51"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\28.txt" xlink:title="Nodo 28: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="764,-554 764,-580 812,-580 812,-554 764,-554"/>
+<text text-anchor="start" x="768.56" y="-562.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="763,-553 763,-581 813,-581 813,-553 763,-553"/>
+</g>
+<!-- 1&#45;&gt;28 -->
+<g id="edge3" class="edge">
+<title>1&#45;&gt;28</title>
+<path fill="none" stroke="black" d="M840,-605.65C840,-593.52 840,-577.02 840,-563.12"/>
+<polygon fill="black" stroke="black" points="843.5,-563.11 840,-553.11 836.5,-563.11 843.5,-563.11"/>
+<text text-anchor="middle" x="845.25" y="-575.2" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 3 -->
+<g id="node4" class="node">
+<title>3</title>
+<ellipse fill="none" stroke="black" cx="376" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="369" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="376" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node4_52"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\3.txt" xlink:title="Nodo 3: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="300,-465.2 300,-491.2 348,-491.2 348,-465.2 300,-465.2"/>
+<text text-anchor="start" x="304.56" y="-473.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="299,-464.2 299,-492.2 349,-492.2 349,-464.2 299,-464.2"/>
+</g>
+<!-- 2&#45;&gt;3 -->
+<g id="edge6" class="edge">
+<title>2&#45;&gt;3</title>
+<path fill="none" stroke="black" d="M549.01,-524.21C514.39,-508.8 447.05,-478.83 407.37,-461.16"/>
+<polygon fill="black" stroke="black" points="408.47,-457.82 397.91,-456.95 405.62,-464.22 408.47,-457.82"/>
+<text text-anchor="middle" x="496.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 20 -->
+<g id="node21" class="node">
+<title>20</title>
+<ellipse fill="none" stroke="black" cx="571" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="564" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="571" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node21_53"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\20.txt" xlink:title="Nodo 20: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="495,-429.2 495,-455.2 543,-455.2 543,-429.2 495,-429.2"/>
+<text text-anchor="start" x="499.56" y="-437.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="494,-428.2 494,-456.2 544,-456.2 544,-428.2 494,-428.2"/>
+</g>
+<!-- 2&#45;&gt;20 -->
+<g id="edge5" class="edge">
+<title>2&#45;&gt;20</title>
+<path fill="none" stroke="black" d="M571,-516.85C571,-504.72 571,-488.22 571,-474.32"/>
+<polygon fill="black" stroke="black" points="574.5,-474.31 571,-464.31 567.5,-474.31 574.5,-474.31"/>
+<text text-anchor="middle" x="576.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 4 -->
+<g id="node5" class="node">
+<title>4</title>
+<ellipse fill="none" stroke="black" cx="288" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="281" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="288" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node5_54"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\4.txt" xlink:title="Nodo 4: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="212,-376.4 212,-402.4 260,-402.4 260,-376.4 212,-376.4"/>
+<text text-anchor="start" x="216.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="211,-375.4 211,-403.4 261,-403.4 261,-375.4 211,-375.4"/>
+</g>
+<!-- 3&#45;&gt;4 -->
+<g id="edge8" class="edge">
+<title>3&#45;&gt;4</title>
+<path fill="none" stroke="black" d="M361.47,-430.87C347.46,-417.05 326.07,-395.95 309.97,-380.07"/>
+<polygon fill="black" stroke="black" points="312.13,-377.29 302.55,-372.75 307.21,-382.27 312.13,-377.29"/>
+<text text-anchor="middle" x="345.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 18 -->
+<g id="node19" class="node">
+<title>18</title>
+<ellipse fill="none" stroke="black" cx="376" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="369" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="376" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node19_55"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\18.txt" xlink:title="Nodo 18: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="300,-312.4 300,-338.4 348,-338.4 348,-312.4 300,-312.4"/>
+<text text-anchor="start" x="304.56" y="-320.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="299,-311.4 299,-339.4 349,-339.4 349,-311.4 299,-311.4"/>
+</g>
+<!-- 3&#45;&gt;18 -->
+<g id="edge7" class="edge">
+<title>3&#45;&gt;18</title>
+<path fill="none" stroke="black" d="M376,-428.05C376,-415.92 376,-399.42 376,-385.52"/>
+<polygon fill="black" stroke="black" points="379.5,-385.51 376,-375.51 372.5,-385.51 379.5,-385.51"/>
+<text text-anchor="middle" x="381.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 5 -->
+<g id="node6" class="node">
+<title>5</title>
+<ellipse fill="none" stroke="black" cx="164" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="157" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="164" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node6_56"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\5.txt" xlink:title="Nodo 5: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="88,-287.6 88,-313.6 136,-313.6 136,-287.6 88,-287.6"/>
+<text text-anchor="start" x="92.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="87,-286.6 87,-314.6 137,-314.6 137,-286.6 87,-286.6"/>
+</g>
+<!-- 4&#45;&gt;5 -->
+<g id="edge10" class="edge">
+<title>4&#45;&gt;5</title>
+<path fill="none" stroke="black" d="M269.97,-343.78C249.03,-329.12 214.31,-304.82 190.35,-288.04"/>
+<polygon fill="black" stroke="black" points="192.25,-285.1 182.05,-282.24 188.24,-290.84 192.25,-285.1"/>
+<text text-anchor="middle" x="243.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 10 -->
+<g id="node11" class="node">
+<title>10</title>
+<ellipse fill="none" stroke="black" cx="288" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="281" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="288" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node11_57"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\10.txt" xlink:title="Nodo 10: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , &#160;∀ haSensore.owl:Nothing , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="212,-251.6 212,-277.6 260,-277.6 260,-251.6 212,-251.6"/>
+<text text-anchor="start" x="216.56" y="-260" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="211,-250.6 211,-278.6 261,-278.6 261,-250.6 211,-250.6"/>
+</g>
+<!-- 4&#45;&gt;10 -->
+<g id="edge9" class="edge">
+<title>4&#45;&gt;10</title>
+<path fill="none" stroke="black" d="M288,-339.25C288,-327.12 288,-310.62 288,-296.72"/>
+<polygon fill="black" stroke="black" points="291.5,-296.71 288,-286.71 284.5,-296.71 291.5,-296.71"/>
+<text text-anchor="middle" x="293.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 6 -->
+<g id="node7" class="node">
+<title>6</title>
+<ellipse fill="none" stroke="black" cx="77" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="70" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="77" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node7_58"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\6.txt" xlink:title="Nodo 6: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , ¬MacchinaFotografica , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="1,-198.8 1,-224.8 49,-224.8 49,-198.8 1,-198.8"/>
+<text text-anchor="start" x="5.56" y="-207.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="0,-197.8 0,-225.8 50,-225.8 50,-197.8 0,-197.8"/>
+</g>
+<!-- 5&#45;&gt;6 -->
+<g id="edge12" class="edge">
+<title>5&#45;&gt;6</title>
+<path fill="none" stroke="black" d="M149.63,-253.27C135.78,-239.45 114.63,-218.35 98.72,-202.47"/>
+<polygon fill="black" stroke="black" points="100.94,-199.74 91.39,-195.15 95.99,-204.7 100.94,-199.74"/>
+<text text-anchor="middle" x="134.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 8 -->
+<g id="node9" class="node">
+<title>8</title>
+<ellipse fill="none" stroke="black" cx="164" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="157" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="164" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node9_59"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\8.txt" xlink:title="Nodo 8: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ¬Sensore , &#160;∀ haSpecchio.owl:Nothing , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="88,-134.8 88,-160.8 136,-160.8 136,-134.8 88,-134.8"/>
+<text text-anchor="start" x="92.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="87,-133.8 87,-161.8 137,-161.8 137,-133.8 87,-133.8"/>
+</g>
+<!-- 5&#45;&gt;8 -->
+<g id="edge11" class="edge">
+<title>5&#45;&gt;8</title>
+<path fill="none" stroke="black" d="M164,-250.45C164,-238.32 164,-221.82 164,-207.92"/>
+<polygon fill="black" stroke="black" points="167.5,-207.91 164,-197.91 160.5,-207.91 167.5,-207.91"/>
+<text text-anchor="middle" x="169.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 7 -->
+<g id="node8" class="node">
+<title>7</title>
+<ellipse fill="none" stroke="black" cx="61" cy="-91" rx="42.88" ry="18"/>
+<text text-anchor="start" x="38.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 6&#45;&gt;7 -->
+<g id="edge13" class="edge">
+<title>6&#45;&gt;7</title>
+<path fill="none" stroke="red" d="M73.84,-161.65C71.6,-149.52 68.56,-133.02 66,-119.12"/>
+<polygon fill="red" stroke="red" points="69.41,-118.31 64.15,-109.11 62.53,-119.58 69.41,-118.31"/>
+</g>
+<!-- 9 -->
+<g id="node10" class="node">
+<title>9</title>
+<ellipse fill="none" stroke="black" cx="164" cy="-91" rx="42.88" ry="18"/>
+<text text-anchor="start" x="141.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 8&#45;&gt;9 -->
+<g id="edge14" class="edge">
+<title>8&#45;&gt;9</title>
+<path fill="none" stroke="red" d="M164,-161.65C164,-149.52 164,-133.02 164,-119.12"/>
+<polygon fill="red" stroke="red" points="167.5,-119.11 164,-109.11 160.5,-119.11 167.5,-119.11"/>
+</g>
+<!-- 11 -->
+<g id="node12" class="node">
+<title>11</title>
+<ellipse fill="none" stroke="black" cx="288" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="281" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="288" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node12_60"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\11.txt" xlink:title="Nodo 11: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , &#160;∀ haSensore.owl:Nothing , Sensore , ¬MacchinaFotografica , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="212,-198.8 212,-224.8 260,-224.8 260,-198.8 212,-198.8"/>
+<text text-anchor="start" x="216.56" y="-207.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="211,-197.8 211,-225.8 261,-225.8 261,-197.8 211,-197.8"/>
+</g>
+<!-- 10&#45;&gt;11 -->
+<g id="edge16" class="edge">
+<title>10&#45;&gt;11</title>
+<path fill="none" stroke="black" d="M288,-250.45C288,-238.32 288,-221.82 288,-207.92"/>
+<polygon fill="black" stroke="black" points="291.5,-207.91 288,-197.91 284.5,-207.91 291.5,-207.91"/>
+<text text-anchor="middle" x="293.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 16 -->
+<g id="node17" class="node">
+<title>16</title>
+<ellipse fill="none" stroke="black" cx="364" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="357" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="364" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node17_61"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\16.txt" xlink:title="Nodo 16: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , &#160;∀ haSensore.owl:Nothing , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ¬Sensore , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="338,-134.8 338,-160.8 386,-160.8 386,-134.8 338,-134.8"/>
+<text text-anchor="start" x="342.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="337,-133.8 337,-161.8 387,-161.8 387,-133.8 337,-133.8"/>
+</g>
+<!-- 10&#45;&gt;16 -->
+<g id="edge15" class="edge">
+<title>10&#45;&gt;16</title>
+<path fill="none" stroke="black" d="M301.24,-252.48C313.12,-238.91 330.71,-218.82 344.25,-203.35"/>
+<polygon fill="black" stroke="black" points="346.96,-205.58 350.91,-195.75 341.69,-200.96 346.96,-205.58"/>
+<text text-anchor="middle" x="338.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 12 -->
+<g id="node13" class="node">
+<title>12</title>
+<ellipse fill="none" stroke="black" cx="252" cy="-91" rx="27" ry="18"/>
+<text text-anchor="start" x="245" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="252" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node13_62"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\12.txt" xlink:title="Nodo 12: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , &#160;∀ haSensore.owl:Nothing , Sensore , ¬Reflex , ¬MacchinaFotografica , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="176,-110 176,-136 224,-136 224,-110 176,-110"/>
+<text text-anchor="start" x="180.56" y="-118.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="175,-109 175,-137 225,-137 225,-109 175,-109"/>
+</g>
+<!-- 11&#45;&gt;12 -->
+<g id="edge18" class="edge">
+<title>11&#45;&gt;12</title>
+<path fill="none" stroke="black" d="M281.06,-162.06C275.88,-149.58 268.71,-132.28 262.78,-118"/>
+<polygon fill="black" stroke="black" points="265.98,-116.58 258.92,-108.68 259.52,-119.26 265.98,-116.58"/>
+<text text-anchor="middle" x="279.25" y="-131.2" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 14 -->
+<g id="node15" class="node">
+<title>14</title>
+<ellipse fill="none" stroke="black" cx="324" cy="-91" rx="27" ry="18"/>
+<text text-anchor="start" x="317" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="324" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node15_63"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\14.txt" xlink:title="Nodo 14: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , &#160;∀ haSensore.owl:Nothing , Sensore , ¬MacchinaFotografica , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="248,-46 248,-72 296,-72 296,-46 248,-46"/>
+<text text-anchor="start" x="252.56" y="-54.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="247,-45 247,-73 297,-73 297,-45 247,-45"/>
+</g>
+<!-- 11&#45;&gt;14 -->
+<g id="edge17" class="edge">
+<title>11&#45;&gt;14</title>
+<path fill="none" stroke="black" d="M294.94,-162.06C300.12,-149.58 307.29,-132.28 313.22,-118"/>
+<polygon fill="black" stroke="black" points="316.48,-119.26 317.08,-108.68 310.02,-116.58 316.48,-119.26"/>
+<text text-anchor="middle" x="315.25" y="-131.2" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 13 -->
+<g id="node14" class="node">
+<title>13</title>
+<ellipse fill="none" stroke="black" cx="237" cy="-18" rx="42.88" ry="18"/>
+<text text-anchor="start" x="214.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 12&#45;&gt;13 -->
+<g id="edge19" class="edge">
+<title>12&#45;&gt;13</title>
+<path fill="none" stroke="red" d="M248.37,-72.81C246.67,-64.79 244.62,-55.05 242.72,-46.07"/>
+<polygon fill="red" stroke="red" points="246.09,-45.09 240.6,-36.03 239.24,-46.54 246.09,-45.09"/>
+</g>
+<!-- 15 -->
+<g id="node16" class="node">
+<title>15</title>
+<ellipse fill="none" stroke="black" cx="340" cy="-18" rx="42.88" ry="18"/>
+<text text-anchor="start" x="317.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 14&#45;&gt;15 -->
+<g id="edge20" class="edge">
+<title>14&#45;&gt;15</title>
+<path fill="none" stroke="red" d="M327.79,-73.17C329.62,-65.07 331.85,-55.15 333.91,-46.03"/>
+<polygon fill="red" stroke="red" points="337.34,-46.72 336.12,-36.2 330.51,-45.18 337.34,-46.72"/>
+</g>
+<!-- 17 -->
+<g id="node18" class="node">
+<title>17</title>
+<ellipse fill="none" stroke="black" cx="412" cy="-91" rx="42.88" ry="18"/>
+<text text-anchor="start" x="389.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 16&#45;&gt;17 -->
+<g id="edge21" class="edge">
+<title>16&#45;&gt;17</title>
+<path fill="none" stroke="red" d="M373.03,-162.47C379.98,-149.9 389.72,-132.29 397.72,-117.82"/>
+<polygon fill="red" stroke="red" points="400.91,-119.29 402.68,-108.85 394.78,-115.9 400.91,-119.29"/>
+</g>
+<!-- 19 -->
+<g id="node20" class="node">
+<title>19</title>
+<ellipse fill="none" stroke="black" cx="376" cy="-268.6" rx="42.88" ry="18"/>
+<text text-anchor="start" x="353.06" y="-264.4" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 18&#45;&gt;19 -->
+<g id="edge22" class="edge">
+<title>18&#45;&gt;19</title>
+<path fill="none" stroke="red" d="M376,-339.25C376,-327.12 376,-310.62 376,-296.72"/>
+<polygon fill="red" stroke="red" points="379.5,-296.71 376,-286.71 372.5,-296.71 379.5,-296.71"/>
+</g>
+<!-- 21 -->
+<g id="node22" class="node">
+<title>21</title>
+<ellipse fill="none" stroke="black" cx="536" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="529" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="536" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node22_64"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\21.txt" xlink:title="Nodo 21: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="460,-376.4 460,-402.4 508,-402.4 508,-376.4 460,-376.4"/>
+<text text-anchor="start" x="464.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="459,-375.4 459,-403.4 509,-403.4 509,-375.4 459,-375.4"/>
+</g>
+<!-- 20&#45;&gt;21 -->
+<g id="edge24" class="edge">
+<title>20&#45;&gt;21</title>
+<path fill="none" stroke="black" d="M564.25,-428.46C559.22,-415.98 552.24,-398.68 546.48,-384.4"/>
+<polygon fill="black" stroke="black" points="549.71,-383.05 542.73,-375.08 543.22,-385.67 549.71,-383.05"/>
+<text text-anchor="middle" x="562.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 26 -->
+<g id="node27" class="node">
+<title>26</title>
+<ellipse fill="none" stroke="black" cx="616" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="609" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="616" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node27_65"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\26.txt" xlink:title="Nodo 26: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="590,-312.4 590,-338.4 638,-338.4 638,-312.4 590,-312.4"/>
+<text text-anchor="start" x="594.56" y="-320.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="589,-311.4 589,-339.4 639,-339.4 639,-311.4 589,-311.4"/>
+</g>
+<!-- 20&#45;&gt;26 -->
+<g id="edge23" class="edge">
+<title>20&#45;&gt;26</title>
+<path fill="none" stroke="black" d="M579.46,-428.87C586.06,-416.14 595.35,-398.24 602.9,-383.66"/>
+<polygon fill="black" stroke="black" points="606.08,-385.14 607.57,-374.65 599.86,-381.92 606.08,-385.14"/>
+<text text-anchor="middle" x="603.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 22 -->
+<g id="node23" class="node">
+<title>22</title>
+<ellipse fill="none" stroke="black" cx="464" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="457" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="464" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node23_66"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\22.txt" xlink:title="Nodo 22: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , ¬MacchinaFotografica , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="388,-287.6 388,-313.6 436,-313.6 436,-287.6 388,-287.6"/>
+<text text-anchor="start" x="392.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="387,-286.6 387,-314.6 437,-314.6 437,-286.6 387,-286.6"/>
+</g>
+<!-- 21&#45;&gt;22 -->
+<g id="edge26" class="edge">
+<title>21&#45;&gt;22</title>
+<path fill="none" stroke="black" d="M523.46,-341.28C512.38,-327.92 496.04,-308.23 483.29,-292.86"/>
+<polygon fill="black" stroke="black" points="485.72,-290.3 476.64,-284.84 480.33,-294.77 485.72,-290.3"/>
+<text text-anchor="middle" x="512.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 24 -->
+<g id="node25" class="node">
+<title>24</title>
+<ellipse fill="none" stroke="black" cx="536" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="529" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="536" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node25_67"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\24.txt" xlink:title="Nodo 24: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="460,-223.6 460,-249.6 508,-249.6 508,-223.6 460,-223.6"/>
+<text text-anchor="start" x="464.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="459,-222.6 459,-250.6 509,-250.6 509,-222.6 459,-222.6"/>
+</g>
+<!-- 21&#45;&gt;24 -->
+<g id="edge25" class="edge">
+<title>21&#45;&gt;24</title>
+<path fill="none" stroke="black" d="M536,-339.25C536,-327.12 536,-310.62 536,-296.72"/>
+<polygon fill="black" stroke="black" points="539.5,-296.71 536,-286.71 532.5,-296.71 539.5,-296.71"/>
+<text text-anchor="middle" x="541.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 23 -->
+<g id="node24" class="node">
+<title>23</title>
+<ellipse fill="none" stroke="black" cx="460" cy="-179.8" rx="42.88" ry="18"/>
+<text text-anchor="start" x="437.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 22&#45;&gt;23 -->
+<g id="edge27" class="edge">
+<title>22&#45;&gt;23</title>
+<path fill="none" stroke="red" d="M463.21,-250.45C462.65,-238.32 461.89,-221.82 461.25,-207.92"/>
+<polygon fill="red" stroke="red" points="464.75,-207.74 460.79,-197.91 457.75,-208.06 464.75,-207.74"/>
+</g>
+<!-- 25 -->
+<g id="node26" class="node">
+<title>25</title>
+<ellipse fill="none" stroke="black" cx="563" cy="-179.8" rx="42.88" ry="18"/>
+<text text-anchor="start" x="540.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 24&#45;&gt;25 -->
+<g id="edge28" class="edge">
+<title>24&#45;&gt;25</title>
+<path fill="none" stroke="red" d="M541.21,-250.86C545.03,-238.58 550.3,-221.63 554.7,-207.48"/>
+<polygon fill="red" stroke="red" points="558.09,-208.37 557.72,-197.78 551.41,-206.29 558.09,-208.37"/>
+</g>
+<!-- 27 -->
+<g id="node28" class="node">
+<title>27</title>
+<ellipse fill="none" stroke="black" cx="624" cy="-268.6" rx="42.88" ry="18"/>
+<text text-anchor="start" x="601.06" y="-264.4" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 26&#45;&gt;27 -->
+<g id="edge29" class="edge">
+<title>26&#45;&gt;27</title>
+<path fill="none" stroke="red" d="M617.58,-339.25C618.7,-327.12 620.22,-310.62 621.5,-296.72"/>
+<polygon fill="red" stroke="red" points="624.99,-296.99 622.42,-286.71 618.02,-296.35 624.99,-296.99"/>
+</g>
+<!-- 29 -->
+<g id="node30" class="node">
+<title>29</title>
+<ellipse fill="none" stroke="black" cx="810" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="803" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="810" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node30_68"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\29.txt" xlink:title="Nodo 29: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="734,-465.2 734,-491.2 782,-491.2 782,-465.2 734,-465.2"/>
+<text text-anchor="start" x="738.56" y="-473.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="733,-464.2 733,-492.2 783,-492.2 783,-464.2 733,-464.2"/>
+</g>
+<!-- 28&#45;&gt;29 -->
+<g id="edge31" class="edge">
+<title>28&#45;&gt;29</title>
+<path fill="none" stroke="black" d="M834.22,-517.26C829.94,-504.9 824.04,-487.81 819.13,-473.61"/>
+<polygon fill="black" stroke="black" points="822.34,-472.19 815.77,-463.88 815.73,-474.48 822.34,-472.19"/>
+<text text-anchor="middle" x="833.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 34 -->
+<g id="node35" class="node">
+<title>34</title>
+<ellipse fill="none" stroke="black" cx="891" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="884" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="891" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node35_69"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\34.txt" xlink:title="Nodo 34: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="865,-401.2 865,-427.2 913,-427.2 913,-401.2 865,-401.2"/>
+<text text-anchor="start" x="869.56" y="-409.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="864,-400.2 864,-428.2 914,-428.2 914,-400.2 864,-400.2"/>
+</g>
+<!-- 28&#45;&gt;34 -->
+<g id="edge30" class="edge">
+<title>28&#45;&gt;34</title>
+<path fill="none" stroke="black" d="M849.35,-518.08C856.93,-505.19 867.73,-486.81 876.43,-472"/>
+<polygon fill="black" stroke="black" points="879.48,-473.71 881.53,-463.31 873.45,-470.16 879.48,-473.71"/>
+<text text-anchor="middle" x="876.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 30 -->
+<g id="node31" class="node">
+<title>30</title>
+<ellipse fill="none" stroke="black" cx="731" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="724" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="731" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node31_70"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\30.txt" xlink:title="Nodo 30: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , ¬MacchinaFotografica , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="655,-376.4 655,-402.4 703,-402.4 703,-376.4 655,-376.4"/>
+<text text-anchor="start" x="659.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="654,-375.4 654,-403.4 704,-403.4 704,-375.4 654,-375.4"/>
+</g>
+<!-- 29&#45;&gt;30 -->
+<g id="edge33" class="edge">
+<title>29&#45;&gt;30</title>
+<path fill="none" stroke="black" d="M796.6,-430.48C784.23,-416.88 765.68,-396.5 751.45,-380.87"/>
+<polygon fill="black" stroke="black" points="753.79,-378.24 744.47,-373.2 748.61,-382.95 753.79,-378.24"/>
+<text text-anchor="middle" x="783.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 32 -->
+<g id="node33" class="node">
+<title>32</title>
+<ellipse fill="none" stroke="black" cx="810" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="803" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="810" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node33_71"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\32.txt" xlink:title="Nodo 32: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , &#160;∀ haSpecchio.¬Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="734,-312.4 734,-338.4 782,-338.4 782,-312.4 734,-312.4"/>
+<text text-anchor="start" x="738.56" y="-320.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="733,-311.4 733,-339.4 783,-339.4 783,-311.4 733,-311.4"/>
+</g>
+<!-- 29&#45;&gt;32 -->
+<g id="edge32" class="edge">
+<title>29&#45;&gt;32</title>
+<path fill="none" stroke="black" d="M810,-428.05C810,-415.92 810,-399.42 810,-385.52"/>
+<polygon fill="black" stroke="black" points="813.5,-385.51 810,-375.51 806.5,-385.51 813.5,-385.51"/>
+<text text-anchor="middle" x="815.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 31 -->
+<g id="node32" class="node">
+<title>31</title>
+<ellipse fill="none" stroke="black" cx="727" cy="-268.6" rx="42.88" ry="18"/>
+<text text-anchor="start" x="704.06" y="-264.4" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 30&#45;&gt;31 -->
+<g id="edge34" class="edge">
+<title>30&#45;&gt;31</title>
+<path fill="none" stroke="red" d="M730.21,-339.25C729.65,-327.12 728.89,-310.62 728.25,-296.72"/>
+<polygon fill="red" stroke="red" points="731.75,-296.54 727.79,-286.71 724.75,-296.86 731.75,-296.54"/>
+</g>
+<!-- 33 -->
+<g id="node34" class="node">
+<title>33</title>
+<ellipse fill="none" stroke="black" cx="830" cy="-268.6" rx="42.88" ry="18"/>
+<text text-anchor="start" x="807.06" y="-264.4" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 32&#45;&gt;33 -->
+<g id="edge35" class="edge">
+<title>32&#45;&gt;33</title>
+<path fill="none" stroke="red" d="M813.95,-339.25C816.75,-327.12 820.55,-310.62 823.75,-296.72"/>
+<polygon fill="red" stroke="red" points="827.22,-297.24 826.06,-286.71 820.4,-295.67 827.22,-297.24"/>
+</g>
+<!-- 35 -->
+<g id="node36" class="node">
+<title>35</title>
+<ellipse fill="none" stroke="black" cx="898" cy="-357.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="875.06" y="-353.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 34&#45;&gt;35 -->
+<g id="edge36" class="edge">
+<title>34&#45;&gt;35</title>
+<path fill="none" stroke="red" d="M892.38,-428.05C893.36,-415.92 894.69,-399.42 895.81,-385.52"/>
+<polygon fill="red" stroke="red" points="899.3,-385.76 896.62,-375.51 892.33,-385.2 899.3,-385.76"/>
+</g>
+<!-- 37 -->
+<g id="node38" class="node">
+<title>37</title>
+<ellipse fill="none" stroke="black" cx="1089" cy="-535" rx="27" ry="18"/>
+<text text-anchor="start" x="1082" y="-531.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1089" y="-531.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node38_72"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\37.txt" xlink:title="Nodo 37: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="1013,-554 1013,-580 1061,-580 1061,-554 1013,-554"/>
+<text text-anchor="start" x="1017.56" y="-562.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1012,-553 1012,-581 1062,-581 1062,-553 1012,-553"/>
+</g>
+<!-- 36&#45;&gt;37 -->
+<g id="edge38" class="edge">
+<title>36&#45;&gt;37</title>
+<path fill="none" stroke="black" d="M1089,-605.65C1089,-593.52 1089,-577.02 1089,-563.12"/>
+<polygon fill="black" stroke="black" points="1092.5,-563.11 1089,-553.11 1085.5,-563.11 1092.5,-563.11"/>
+<text text-anchor="middle" x="1094.25" y="-575.2" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 54 -->
+<g id="node55" class="node">
+<title>54</title>
+<ellipse fill="none" stroke="black" cx="1271" cy="-535" rx="27" ry="18"/>
+<text text-anchor="start" x="1264" y="-531.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1271" y="-531.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node55_73"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\54.txt" xlink:title="Nodo 54: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="1195,-518 1195,-544 1243,-544 1243,-518 1195,-518"/>
+<text text-anchor="start" x="1199.56" y="-526.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1194,-517 1194,-545 1244,-545 1244,-517 1194,-517"/>
+</g>
+<!-- 36&#45;&gt;54 -->
+<g id="edge37" class="edge">
+<title>36&#45;&gt;54</title>
+<path fill="none" stroke="black" d="M1110.23,-612.67C1142.34,-597.36 1203.4,-568.24 1240.34,-550.62"/>
+<polygon fill="black" stroke="black" points="1242.1,-553.66 1249.62,-546.2 1239.09,-547.34 1242.1,-553.66"/>
+<text text-anchor="middle" x="1202.25" y="-575.2" font-family="Times,serif" font-size="14.00">⊔</text>
 </g>
 <!-- 38 -->
 <g id="node39" class="node">
 <title>38</title>
-<ellipse fill="none" stroke="black" cx="799" cy="-91" rx="27" ry="18"/>
-<text text-anchor="start" x="792" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="799" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">3</text>
-<g id="a_node39_226"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\38.txt" xlink:title="Nodo 38: ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex ))" target="_blank">
-<polygon fill="none" stroke="green" points="723,-46 723,-72 771,-72 771,-46 723,-46"/>
-<text text-anchor="start" x="727.56" y="-54.4" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="1062" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="1055" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1062" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node39_74"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\38.txt" xlink:title="Nodo 38: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="986,-465.2 986,-491.2 1034,-491.2 1034,-465.2 986,-465.2"/>
+<text text-anchor="start" x="990.56" y="-473.6" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="722,-45 722,-73 772,-73 772,-45 722,-45"/>
+<polygon fill="none" stroke="green" points="985,-464.2 985,-492.2 1035,-492.2 1035,-464.2 985,-464.2"/>
 </g>
 <!-- 37&#45;&gt;38 -->
 <g id="edge40" class="edge">
 <title>37&#45;&gt;38</title>
-<path fill="none" stroke="black" d="M789.37,-161.65C791.05,-149.52 793.33,-133.02 795.25,-119.12"/>
-<polygon fill="black" stroke="black" points="798.73,-119.5 796.63,-109.11 791.8,-118.54 798.73,-119.5"/>
-<text text-anchor="middle" x="822.77" y="-131.2" font-family="Times,serif" font-size="14.00">haSensore</text>
+<path fill="none" stroke="black" d="M1083.79,-517.26C1079.95,-504.9 1074.63,-487.81 1070.21,-473.61"/>
+<polygon fill="black" stroke="black" points="1073.5,-472.39 1067.19,-463.88 1066.82,-474.47 1073.5,-472.39"/>
+<text text-anchor="middle" x="1083.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 52 -->
+<g id="node53" class="node">
+<title>52</title>
+<ellipse fill="none" stroke="black" cx="1142" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="1135" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1142" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node53_75"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\52.txt" xlink:title="Nodo 52: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="1170,-465.2 1170,-491.2 1218,-491.2 1218,-465.2 1170,-465.2"/>
+<text text-anchor="start" x="1174.56" y="-473.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1169,-464.2 1169,-492.2 1219,-492.2 1219,-464.2 1169,-464.2"/>
+</g>
+<!-- 37&#45;&gt;52 -->
+<g id="edge39" class="edge">
+<title>37&#45;&gt;52</title>
+<path fill="none" stroke="black" d="M1098.72,-518.08C1106.64,-505.11 1117.96,-486.58 1127.03,-471.72"/>
+<polygon fill="black" stroke="black" points="1130.12,-473.38 1132.34,-463.02 1124.14,-469.73 1130.12,-473.38"/>
+<text text-anchor="middle" x="1126.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
 </g>
 <!-- 39 -->
 <g id="node40" class="node">
 <title>39</title>
-<ellipse fill="none" stroke="black" cx="799" cy="-18" rx="42.88" ry="18"/>
-<text text-anchor="start" x="776.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+<ellipse fill="none" stroke="black" cx="990" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="983" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="990" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node40_76"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\39.txt" xlink:title="Nodo 39: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="964,-376.4 964,-402.4 1012,-402.4 1012,-376.4 964,-376.4"/>
+<text text-anchor="start" x="968.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="963,-375.4 963,-403.4 1013,-403.4 1013,-375.4 963,-375.4"/>
 </g>
 <!-- 38&#45;&gt;39 -->
-<g id="edge41" class="edge">
-<title>38&#45;&gt;39</title>
-<path fill="none" stroke="red" d="M799,-72.81C799,-64.79 799,-55.05 799,-46.07"/>
-<polygon fill="red" stroke="red" points="802.5,-46.03 799,-36.03 795.5,-46.03 802.5,-46.03"/>
-</g>
-<!-- 41 -->
-<g id="node42" class="node">
-<title>41</title>
-<ellipse fill="none" stroke="black" cx="803" cy="-357.4" rx="27" ry="18"/>
-<text text-anchor="start" x="796" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="803" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node42_227"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\41.txt" xlink:title="Nodo 41: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), (¬Mirrorless ⊔ ¬Reflex ), ¬MacchinaFotografica , ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="727,-376.4 727,-402.4 775,-402.4 775,-376.4 727,-376.4"/>
-<text text-anchor="start" x="731.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="726,-375.4 726,-403.4 776,-403.4 776,-375.4 726,-375.4"/>
-</g>
-<!-- 40&#45;&gt;41 -->
-<g id="edge43" class="edge">
-<title>40&#45;&gt;41</title>
-<path fill="none" stroke="black" d="M803,-428.05C803,-415.92 803,-399.42 803,-385.52"/>
-<polygon fill="black" stroke="black" points="806.5,-385.51 803,-375.51 799.5,-385.51 806.5,-385.51"/>
-<text text-anchor="middle" x="808.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 43 -->
-<g id="node44" class="node">
-<title>43</title>
-<ellipse fill="none" stroke="black" cx="891" cy="-357.4" rx="27" ry="18"/>
-<text text-anchor="start" x="884" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="891" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node44_228"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\43.txt" xlink:title="Nodo 43: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="815,-312.4 815,-338.4 863,-338.4 863,-312.4 815,-312.4"/>
-<text text-anchor="start" x="819.56" y="-320.8" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="814,-311.4 814,-339.4 864,-339.4 864,-311.4 814,-311.4"/>
-</g>
-<!-- 40&#45;&gt;43 -->
 <g id="edge42" class="edge">
-<title>40&#45;&gt;43</title>
-<path fill="none" stroke="black" d="M817.53,-430.87C831.54,-417.05 852.93,-395.95 869.03,-380.07"/>
-<polygon fill="black" stroke="black" points="871.79,-382.27 876.45,-372.75 866.87,-377.29 871.79,-382.27"/>
-<text text-anchor="middle" x="859.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 42 -->
-<g id="node43" class="node">
-<title>42</title>
-<ellipse fill="none" stroke="black" cx="803" cy="-268.6" rx="42.88" ry="18"/>
-<text text-anchor="start" x="780.06" y="-264.4" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 41&#45;&gt;42 -->
-<g id="edge44" class="edge">
-<title>41&#45;&gt;42</title>
-<path fill="none" stroke="red" d="M803,-339.25C803,-327.12 803,-310.62 803,-296.72"/>
-<polygon fill="red" stroke="red" points="806.5,-296.71 803,-286.71 799.5,-296.71 806.5,-296.71"/>
+<title>38&#45;&gt;39</title>
+<path fill="none" stroke="black" d="M1049.46,-430.08C1038.38,-416.72 1022.04,-397.03 1009.29,-381.66"/>
+<polygon fill="black" stroke="black" points="1011.72,-379.1 1002.64,-373.64 1006.33,-383.57 1011.72,-379.1"/>
+<text text-anchor="middle" x="1038.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
 </g>
 <!-- 44 -->
 <g id="node45" class="node">
 <title>44</title>
-<ellipse fill="none" stroke="black" cx="891" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="start" x="884" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="891" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node45_229"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\44.txt" xlink:title="Nodo 44: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , owl:Nothing , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="815,-223.6 815,-249.6 863,-249.6 863,-223.6 815,-223.6"/>
-<text text-anchor="start" x="819.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="1062" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="1055" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1062" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node45_77"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\44.txt" xlink:title="Nodo 44: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , &#160;∀ haSensore.owl:Nothing , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="1090,-376.4 1090,-402.4 1138,-402.4 1138,-376.4 1090,-376.4"/>
+<text text-anchor="start" x="1094.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="814,-222.6 814,-250.6 864,-250.6 864,-222.6 814,-222.6"/>
+<polygon fill="none" stroke="green" points="1089,-375.4 1089,-403.4 1139,-403.4 1139,-375.4 1089,-375.4"/>
 </g>
-<!-- 43&#45;&gt;44 -->
-<g id="edge46" class="edge">
-<title>43&#45;&gt;44</title>
-<path fill="none" stroke="black" d="M891,-339.25C891,-327.12 891,-310.62 891,-296.72"/>
-<polygon fill="black" stroke="black" points="894.5,-296.71 891,-286.71 887.5,-296.71 894.5,-296.71"/>
-<text text-anchor="middle" x="896.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+<!-- 38&#45;&gt;44 -->
+<g id="edge41" class="edge">
+<title>38&#45;&gt;44</title>
+<path fill="none" stroke="black" d="M1062,-428.05C1062,-415.92 1062,-399.42 1062,-385.52"/>
+<polygon fill="black" stroke="black" points="1065.5,-385.51 1062,-375.51 1058.5,-385.51 1065.5,-385.51"/>
+<text text-anchor="middle" x="1067.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
 </g>
-<!-- 46 -->
-<g id="node47" class="node">
-<title>46</title>
-<ellipse fill="none" stroke="black" cx="963" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="start" x="956" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="963" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node47_230"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\46.txt" xlink:title="Nodo 46: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), &#160;∀ haSpecchio.Specchio , (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="887,-223.6 887,-249.6 935,-249.6 935,-223.6 887,-223.6"/>
-<text text-anchor="start" x="891.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
+<!-- 40 -->
+<g id="node41" class="node">
+<title>40</title>
+<ellipse fill="none" stroke="black" cx="918" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="911" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="918" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node41_78"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\40.txt" xlink:title="Nodo 40: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , ¬MacchinaFotografica , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="842,-287.6 842,-313.6 890,-313.6 890,-287.6 842,-287.6"/>
+<text text-anchor="start" x="846.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="886,-222.6 886,-250.6 936,-250.6 936,-222.6 886,-222.6"/>
+<polygon fill="none" stroke="green" points="841,-286.6 841,-314.6 891,-314.6 891,-286.6 841,-286.6"/>
 </g>
-<!-- 43&#45;&gt;46 -->
+<!-- 39&#45;&gt;40 -->
+<g id="edge44" class="edge">
+<title>39&#45;&gt;40</title>
+<path fill="none" stroke="black" d="M977.46,-341.28C966.38,-327.92 950.04,-308.23 937.29,-292.86"/>
+<polygon fill="black" stroke="black" points="939.72,-290.3 930.64,-284.84 934.33,-294.77 939.72,-290.3"/>
+<text text-anchor="middle" x="966.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 42 -->
+<g id="node43" class="node">
+<title>42</title>
+<ellipse fill="none" stroke="black" cx="990" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="983" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="990" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node43_79"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\42.txt" xlink:title="Nodo 42: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ¬Sensore , &#160;∀ haSpecchio.owl:Nothing , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="914,-223.6 914,-249.6 962,-249.6 962,-223.6 914,-223.6"/>
+<text text-anchor="start" x="918.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="913,-222.6 913,-250.6 963,-250.6 963,-222.6 913,-222.6"/>
+</g>
+<!-- 39&#45;&gt;42 -->
+<g id="edge43" class="edge">
+<title>39&#45;&gt;42</title>
+<path fill="none" stroke="black" d="M990,-339.25C990,-327.12 990,-310.62 990,-296.72"/>
+<polygon fill="black" stroke="black" points="993.5,-296.71 990,-286.71 986.5,-296.71 993.5,-296.71"/>
+<text text-anchor="middle" x="995.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 41 -->
+<g id="node42" class="node">
+<title>41</title>
+<ellipse fill="none" stroke="black" cx="879" cy="-179.8" rx="42.88" ry="18"/>
+<text text-anchor="start" x="856.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 40&#45;&gt;41 -->
 <g id="edge45" class="edge">
-<title>43&#45;&gt;46</title>
-<path fill="none" stroke="black" d="M903.54,-341.28C914.62,-327.92 930.96,-308.23 943.71,-292.86"/>
-<polygon fill="black" stroke="black" points="946.67,-294.77 950.36,-284.84 941.28,-290.3 946.67,-294.77"/>
-<text text-anchor="middle" x="938.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+<title>40&#45;&gt;41</title>
+<path fill="none" stroke="red" d="M910.66,-251.27C905.07,-238.82 897.25,-221.43 890.79,-207.03"/>
+<polygon fill="red" stroke="red" points="893.86,-205.33 886.57,-197.65 887.47,-208.2 893.86,-205.33"/>
+</g>
+<!-- 43 -->
+<g id="node44" class="node">
+<title>43</title>
+<ellipse fill="none" stroke="black" cx="982" cy="-179.8" rx="42.88" ry="18"/>
+<text text-anchor="start" x="959.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 42&#45;&gt;43 -->
+<g id="edge46" class="edge">
+<title>42&#45;&gt;43</title>
+<path fill="none" stroke="red" d="M988.42,-250.45C987.3,-238.32 985.78,-221.82 984.5,-207.92"/>
+<polygon fill="red" stroke="red" points="987.98,-207.55 983.58,-197.91 981.01,-208.19 987.98,-207.55"/>
 </g>
 <!-- 45 -->
 <g id="node46" class="node">
 <title>45</title>
-<ellipse fill="none" stroke="black" cx="875" cy="-179.8" rx="42.88" ry="18"/>
-<text text-anchor="start" x="852.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+<ellipse fill="none" stroke="black" cx="1070" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="1063" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1070" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node46_80"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\45.txt" xlink:title="Nodo 45: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , &#160;∀ haSensore.owl:Nothing , Sensore , ¬MacchinaFotografica , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="994,-223.6 994,-249.6 1042,-249.6 1042,-223.6 994,-223.6"/>
+<text text-anchor="start" x="998.56" y="-232" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="993,-222.6 993,-250.6 1043,-250.6 1043,-222.6 993,-222.6"/>
 </g>
 <!-- 44&#45;&gt;45 -->
-<g id="edge47" class="edge">
-<title>44&#45;&gt;45</title>
-<path fill="none" stroke="red" d="M887.84,-250.45C885.6,-238.32 882.56,-221.82 880,-207.92"/>
-<polygon fill="red" stroke="red" points="883.41,-207.11 878.15,-197.91 876.53,-208.38 883.41,-207.11"/>
-</g>
-<!-- 47 -->
-<g id="node48" class="node">
-<title>47</title>
-<ellipse fill="none" stroke="black" cx="963" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="956" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="963" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node48_231"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\47.txt" xlink:title="Nodo 47: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , owl:Nothing , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), &#160;∀ haSpecchio.Specchio , (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="887,-134.8 887,-160.8 935,-160.8 935,-134.8 887,-134.8"/>
-<text text-anchor="start" x="891.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="886,-133.8 886,-161.8 936,-161.8 936,-133.8 886,-133.8"/>
-</g>
-<!-- 46&#45;&gt;47 -->
-<g id="edge49" class="edge">
-<title>46&#45;&gt;47</title>
-<path fill="none" stroke="black" d="M963,-250.45C963,-238.32 963,-221.82 963,-207.92"/>
-<polygon fill="black" stroke="black" points="966.5,-207.91 963,-197.91 959.5,-207.91 966.5,-207.91"/>
-<text text-anchor="middle" x="968.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 49 -->
-<g id="node50" class="node">
-<title>49</title>
-<ellipse fill="none" stroke="black" cx="1039" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="1032" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="1039" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node50_232"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\49.txt" xlink:title="Nodo 49: ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), (¬Mirrorless ⊔ ¬Reflex ), ∃haSensore.¬Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )), MacchinaFotografica , &#160;∀ haSensore.Sensore , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), (MacchinaFotografica ⊓ ∃haSensore.¬Sensore ), &#160;∀ haSpecchio.Specchio , (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
-<polygon fill="none" stroke="green" points="963,-134.8 963,-160.8 1011,-160.8 1011,-134.8 963,-134.8"/>
-<text text-anchor="start" x="967.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="962,-133.8 962,-161.8 1012,-161.8 1012,-133.8 962,-133.8"/>
-</g>
-<!-- 46&#45;&gt;49 -->
 <g id="edge48" class="edge">
-<title>46&#45;&gt;49</title>
-<path fill="none" stroke="black" d="M976.24,-252.48C988.12,-238.91 1005.71,-218.82 1019.25,-203.35"/>
-<polygon fill="black" stroke="black" points="1021.96,-205.58 1025.91,-195.75 1016.69,-200.96 1021.96,-205.58"/>
-<text text-anchor="middle" x="1012.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 48 -->
-<g id="node49" class="node">
-<title>48</title>
-<ellipse fill="none" stroke="black" cx="961" cy="-91" rx="42.88" ry="18"/>
-<text text-anchor="start" x="938.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 47&#45;&gt;48 -->
-<g id="edge50" class="edge">
-<title>47&#45;&gt;48</title>
-<path fill="none" stroke="red" d="M962.6,-161.65C962.33,-149.52 961.95,-133.02 961.62,-119.12"/>
-<polygon fill="red" stroke="red" points="965.12,-119.03 961.39,-109.11 958.13,-119.19 965.12,-119.03"/>
+<title>44&#45;&gt;45</title>
+<path fill="none" stroke="black" d="M1063.58,-339.25C1064.7,-327.12 1066.22,-310.62 1067.5,-296.72"/>
+<polygon fill="black" stroke="black" points="1070.99,-296.99 1068.42,-286.71 1064.02,-296.35 1070.99,-296.99"/>
+<text text-anchor="middle" x="1072.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
 </g>
 <!-- 50 -->
 <g id="node51" class="node">
 <title>50</title>
-<ellipse fill="none" stroke="black" cx="1049" cy="-91" rx="27" ry="18"/>
-<text text-anchor="start" x="1042" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="1049" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">4</text>
-<g id="a_node51_233"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\50.txt" xlink:title="Nodo 50: ¬Sensore , ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex ))" target="_blank">
-<polygon fill="none" stroke="green" points="973,-46 973,-72 1021,-72 1021,-46 973,-46"/>
-<text text-anchor="start" x="977.56" y="-54.4" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="1146" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="1139" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1146" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node51_81"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\50.txt" xlink:title="Nodo 50: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , &#160;∀ haSensore.owl:Nothing , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ¬Sensore , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="1174,-287.6 1174,-313.6 1222,-313.6 1222,-287.6 1174,-287.6"/>
+<text text-anchor="start" x="1178.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="972,-45 972,-73 1022,-73 1022,-45 972,-45"/>
+<polygon fill="none" stroke="green" points="1173,-286.6 1173,-314.6 1223,-314.6 1223,-286.6 1173,-286.6"/>
 </g>
-<!-- 49&#45;&gt;50 -->
+<!-- 44&#45;&gt;50 -->
+<g id="edge47" class="edge">
+<title>44&#45;&gt;50</title>
+<path fill="none" stroke="black" d="M1076.25,-341.68C1089.6,-327.88 1109.73,-307.07 1124.94,-291.36"/>
+<polygon fill="black" stroke="black" points="1127.52,-293.73 1131.96,-284.11 1122.49,-288.86 1127.52,-293.73"/>
+<text text-anchor="middle" x="1117.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 46 -->
+<g id="node47" class="node">
+<title>46</title>
+<ellipse fill="none" stroke="black" cx="1070" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="1063" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1070" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node47_82"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\46.txt" xlink:title="Nodo 46: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , &#160;∀ haSensore.owl:Nothing , Sensore , ¬Reflex , ¬MacchinaFotografica , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="994,-134.8 994,-160.8 1042,-160.8 1042,-134.8 994,-134.8"/>
+<text text-anchor="start" x="998.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="993,-133.8 993,-161.8 1043,-161.8 1043,-133.8 993,-133.8"/>
+</g>
+<!-- 45&#45;&gt;46 -->
+<g id="edge50" class="edge">
+<title>45&#45;&gt;46</title>
+<path fill="none" stroke="black" d="M1070,-250.45C1070,-238.32 1070,-221.82 1070,-207.92"/>
+<polygon fill="black" stroke="black" points="1073.5,-207.91 1070,-197.91 1066.5,-207.91 1073.5,-207.91"/>
+<text text-anchor="middle" x="1075.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 48 -->
+<g id="node49" class="node">
+<title>48</title>
+<ellipse fill="none" stroke="black" cx="1142" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="1135" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1142" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node49_83"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\48.txt" xlink:title="Nodo 48: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , &#160;∀ haSensore.owl:Nothing , Sensore , ¬MacchinaFotografica , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , &#160;∀ haSpecchio.owl:Nothing , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="1066,-134.8 1066,-160.8 1114,-160.8 1114,-134.8 1066,-134.8"/>
+<text text-anchor="start" x="1070.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1065,-133.8 1065,-161.8 1115,-161.8 1115,-133.8 1065,-133.8"/>
+</g>
+<!-- 45&#45;&gt;48 -->
+<g id="edge49" class="edge">
+<title>45&#45;&gt;48</title>
+<path fill="none" stroke="black" d="M1082.54,-252.48C1093.62,-239.12 1109.96,-219.43 1122.71,-204.06"/>
+<polygon fill="black" stroke="black" points="1125.67,-205.97 1129.36,-196.04 1120.28,-201.5 1125.67,-205.97"/>
+<text text-anchor="middle" x="1118.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 47 -->
+<g id="node48" class="node">
+<title>47</title>
+<ellipse fill="none" stroke="black" cx="1054" cy="-91" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1031.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 46&#45;&gt;47 -->
 <g id="edge51" class="edge">
-<title>49&#45;&gt;50</title>
-<path fill="none" stroke="black" d="M1040.98,-161.65C1042.37,-149.52 1044.27,-133.02 1045.88,-119.12"/>
-<polygon fill="black" stroke="black" points="1049.36,-119.45 1047.03,-109.11 1042.41,-118.65 1049.36,-119.45"/>
-<text text-anchor="middle" x="1072.77" y="-131.2" font-family="Times,serif" font-size="14.00">haSensore</text>
+<title>46&#45;&gt;47</title>
+<path fill="none" stroke="red" d="M1066.84,-161.65C1064.6,-149.52 1061.56,-133.02 1059,-119.12"/>
+<polygon fill="red" stroke="red" points="1062.41,-118.31 1057.15,-109.11 1055.53,-119.58 1062.41,-118.31"/>
+</g>
+<!-- 49 -->
+<g id="node50" class="node">
+<title>49</title>
+<ellipse fill="none" stroke="black" cx="1157" cy="-91" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1134.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 48&#45;&gt;49 -->
+<g id="edge52" class="edge">
+<title>48&#45;&gt;49</title>
+<path fill="none" stroke="red" d="M1144.96,-161.65C1147.06,-149.52 1149.91,-133.02 1152.31,-119.12"/>
+<polygon fill="red" stroke="red" points="1155.79,-119.56 1154.04,-109.11 1148.89,-118.37 1155.79,-119.56"/>
 </g>
 <!-- 51 -->
 <g id="node52" class="node">
 <title>51</title>
-<ellipse fill="none" stroke="black" cx="1049" cy="-18" rx="42.88" ry="18"/>
-<text text-anchor="start" x="1026.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+<ellipse fill="none" stroke="black" cx="1230" cy="-179.8" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1207.06" y="-175.6" font-family="Times,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 50&#45;&gt;51 -->
-<g id="edge52" class="edge">
+<g id="edge53" class="edge">
 <title>50&#45;&gt;51</title>
-<path fill="none" stroke="red" d="M1049,-72.81C1049,-64.79 1049,-55.05 1049,-46.07"/>
-<polygon fill="red" stroke="red" points="1052.5,-46.03 1049,-36.03 1045.5,-46.03 1052.5,-46.03"/>
+<path fill="none" stroke="red" d="M1160.25,-252.88C1173.2,-239.49 1192.53,-219.52 1207.55,-203.99"/>
+<polygon fill="red" stroke="red" points="1210.1,-206.4 1214.54,-196.78 1205.07,-201.53 1210.1,-206.4"/>
 </g>
 <!-- 53 -->
 <g id="node54" class="node">
 <title>53</title>
-<ellipse fill="none" stroke="black" cx="678" cy="-535" rx="42.88" ry="18"/>
-<text text-anchor="start" x="655.06" y="-530.8" font-family="Times,serif" font-size="14.00">CLASH</text>
+<ellipse fill="none" stroke="black" cx="1150" cy="-357.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1127.06" y="-353.2" font-family="Times,serif" font-size="14.00">CLASH</text>
 </g>
 <!-- 52&#45;&gt;53 -->
-<g id="edge53" class="edge">
+<g id="edge54" class="edge">
 <title>52&#45;&gt;53</title>
-<path fill="none" stroke="red" d="M671.58,-605.65C672.7,-593.52 674.22,-577.02 675.5,-563.12"/>
-<polygon fill="red" stroke="red" points="678.99,-563.39 676.42,-553.11 672.02,-562.75 678.99,-563.39"/>
+<path fill="none" stroke="red" d="M1143.58,-428.05C1144.7,-415.92 1146.22,-399.42 1147.5,-385.52"/>
+<polygon fill="red" stroke="red" points="1150.99,-385.79 1148.42,-375.51 1144.02,-385.15 1150.99,-385.79"/>
+</g>
+<!-- 55 -->
+<g id="node56" class="node">
+<title>55</title>
+<ellipse fill="none" stroke="black" cx="1271" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="1264" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1271" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node56_84"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\55.txt" xlink:title="Nodo 55: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="1195,-429.2 1195,-455.2 1243,-455.2 1243,-429.2 1195,-429.2"/>
+<text text-anchor="start" x="1199.56" y="-437.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1194,-428.2 1194,-456.2 1244,-456.2 1244,-428.2 1194,-428.2"/>
+</g>
+<!-- 54&#45;&gt;55 -->
+<g id="edge56" class="edge">
+<title>54&#45;&gt;55</title>
+<path fill="none" stroke="black" d="M1271,-516.85C1271,-504.72 1271,-488.22 1271,-474.32"/>
+<polygon fill="black" stroke="black" points="1274.5,-474.31 1271,-464.31 1267.5,-474.31 1274.5,-474.31"/>
+<text text-anchor="middle" x="1276.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 60 -->
+<g id="node61" class="node">
+<title>60</title>
+<ellipse fill="none" stroke="black" cx="1387" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="1380" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1387" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node61_85"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\60.txt" xlink:title="Nodo 60: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , ¬APSC , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="1311,-429.2 1311,-455.2 1359,-455.2 1359,-429.2 1311,-429.2"/>
+<text text-anchor="start" x="1315.56" y="-437.6" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1310,-428.2 1310,-456.2 1360,-456.2 1360,-428.2 1310,-428.2"/>
+</g>
+<!-- 54&#45;&gt;60 -->
+<g id="edge55" class="edge">
+<title>54&#45;&gt;60</title>
+<path fill="none" stroke="black" d="M1288.37,-521.01C1307.67,-506.56 1339.05,-483.08 1361.22,-466.49"/>
+<polygon fill="black" stroke="black" points="1363.61,-469.08 1369.51,-460.28 1359.41,-463.47 1363.61,-469.08"/>
+<text text-anchor="middle" x="1345.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 56 -->
+<g id="node57" class="node">
+<title>56</title>
+<ellipse fill="none" stroke="black" cx="1238" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="1231" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1238" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node57_86"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\56.txt" xlink:title="Nodo 56: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , ¬MacchinaFotografica , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="1162,-376.4 1162,-402.4 1210,-402.4 1210,-376.4 1162,-376.4"/>
+<text text-anchor="start" x="1166.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1161,-375.4 1161,-403.4 1211,-403.4 1211,-375.4 1161,-375.4"/>
+</g>
+<!-- 55&#45;&gt;56 -->
+<g id="edge58" class="edge">
+<title>55&#45;&gt;56</title>
+<path fill="none" stroke="black" d="M1264.64,-428.46C1259.94,-416.1 1253.44,-399.01 1248.04,-384.81"/>
+<polygon fill="black" stroke="black" points="1251.17,-383.19 1244.34,-375.08 1244.63,-385.68 1251.17,-383.19"/>
+<text text-anchor="middle" x="1263.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 58 -->
+<g id="node59" class="node">
+<title>58</title>
+<ellipse fill="none" stroke="black" cx="1310" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="1303" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="1310" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node59_87"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\58.txt" xlink:title="Nodo 58: ((MacchinaFotografica ⊔ ¬Mirrorless )⊓ (MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )⊓ (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio )⊓ (¬APSC ⊔ ¬FullFrame )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ¬Specchio )⊓ (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ &#160;∀ haSpecchio.¬Specchio ), ∃haSpecchio.Specchio , (¬MacchinaFotografica ⊔ ¬Specchio ), ¬Mirrorless , (MacchinaFotografica ⊔ ¬Mirrorless ), (MacchinaFotografica ⊔ &#160;∀ haSpecchio.owl:Nothing ), ¬FullFrame , Sensore , (¬APSC ⊔ ¬FullFrame ), (MacchinaFotografica ⊔ &#160;∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ¬Sensore , ∃haSensore.Sensore , Reflex , MacchinaFotografica , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔ &#160;∀ haSpecchio.Specchio ), APSC , (APSC ⊓ Reflex ), (owl:Nothing ⊔ &#160;∀ haSensore.Sensore )" target="_blank">
+<polygon fill="none" stroke="green" points="1234,-312.4 1234,-338.4 1282,-338.4 1282,-312.4 1234,-312.4"/>
+<text text-anchor="start" x="1238.56" y="-320.8" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="1233,-311.4 1233,-339.4 1283,-339.4 1283,-311.4 1233,-311.4"/>
+</g>
+<!-- 55&#45;&gt;58 -->
+<g id="edge57" class="edge">
+<title>55&#45;&gt;58</title>
+<path fill="none" stroke="black" d="M1278.34,-428.87C1283.96,-416.34 1291.85,-398.8 1298.34,-384.36"/>
+<polygon fill="black" stroke="black" points="1301.66,-385.5 1302.56,-374.95 1295.27,-382.64 1301.66,-385.5"/>
+<text text-anchor="middle" x="1299.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 57 -->
+<g id="node58" class="node">
+<title>57</title>
+<ellipse fill="none" stroke="black" cx="1236" cy="-268.6" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1213.06" y="-264.4" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 56&#45;&gt;57 -->
+<g id="edge59" class="edge">
+<title>56&#45;&gt;57</title>
+<path fill="none" stroke="red" d="M1237.6,-339.25C1237.33,-327.12 1236.95,-310.62 1236.62,-296.72"/>
+<polygon fill="red" stroke="red" points="1240.12,-296.63 1236.39,-286.71 1233.13,-296.79 1240.12,-296.63"/>
+</g>
+<!-- 59 -->
+<g id="node60" class="node">
+<title>59</title>
+<ellipse fill="none" stroke="black" cx="1339" cy="-268.6" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1316.06" y="-264.4" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 58&#45;&gt;59 -->
+<g id="edge60" class="edge">
+<title>58&#45;&gt;59</title>
+<path fill="none" stroke="red" d="M1315.59,-339.66C1319.7,-327.38 1325.36,-310.43 1330.09,-296.28"/>
+<polygon fill="red" stroke="red" points="1333.48,-297.17 1333.33,-286.58 1326.84,-294.96 1333.48,-297.17"/>
+</g>
+<!-- 61 -->
+<g id="node62" class="node">
+<title>61</title>
+<ellipse fill="none" stroke="black" cx="1398" cy="-357.4" rx="42.88" ry="18"/>
+<text text-anchor="start" x="1375.06" y="-353.2" font-family="Times,serif" font-size="14.00">CLASH</text>
+</g>
+<!-- 60&#45;&gt;61 -->
+<g id="edge61" class="edge">
+<title>60&#45;&gt;61</title>
+<path fill="none" stroke="red" d="M1389.17,-428.05C1390.71,-415.92 1392.8,-399.42 1394.56,-385.52"/>
+<polygon fill="red" stroke="red" points="1398.05,-385.87 1395.83,-375.51 1391.1,-384.99 1398.05,-385.87"/>
 </g>
 </g>
 </svg>
