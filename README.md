@@ -1,5 +1,5 @@
 # ProgettoIntelligentWeb
-Progetto Intelligent Web 2022 - ALC Reasone con Lazy Unfolding 
+Progetto Intelligent Web 2022 - ALC Reasoner con Lazy Unfolding 
 
 # Manuale d’uso rapido
 
