@@ -1398,10 +1398,10 @@ public class ALCReasoner{
 		}
 
 	
-	/**
+	/** Controlla le condizioni della regola dell'esistenziale
 	 * @param abox
-	 * @param toAdd - assiomi da aggiuntere
-	 * @return
+	 * @param toAdd 
+	 * @return true se le condizioni sono verificate, false altrimenti
 	 */
 	private boolean checkExistsRuleCondition(Set<OWLObject> abox, Set<OWLObject> toAdd) {
 		OWLObjectPropertyAssertionAxiom propertyAxiom = null;
