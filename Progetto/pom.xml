@@ -3,7 +3,7 @@
   <groupId>turcobardi</groupId>
   <artifactId>turcobardi</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+
   <dependencies>
   		<!-- https://mvnrepository.com/artifact/net.sourceforge.owlapi/owlapi-apibinding -->
 		<dependency>
