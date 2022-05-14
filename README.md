@@ -3,7 +3,7 @@ Progetto Intelligent Web 2022 - ALC Reasone con Lazy Unfolding
 
 # Manuale d’uso rapido
 
-## M ario Turco N9 7 0 0 0 343 , Francesco L o ngo bar di N9 7 0 0 0 3 44
+## Mario Turco N97000343 , Francesco Longobardi N97000344
 
 
 ## Contents
@@ -21,6 +21,7 @@ Progetto Intelligent Web 2022 - ALC Reasone con Lazy Unfolding
 
 Per importare il progetto è necessario scaricare Eclipse ed importare il progetto come ‘Maven Project’
 come riportato in figura.
+![Alt text](/Figures/1.png "Import")
 
 ## Utilizzo
 
