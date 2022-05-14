@@ -64,8 +64,9 @@ mai perdere qualità e di conseguenza si presta bene alla visualizzazione di imm
 
 ![Alt text](/Figures/6.png "Import")
 
-_Figura 1 I label possono essere visualizzati sia passando il mouse sulla dicitura 'Label', sia cliccando sulla stessa._
-
+```
+Figura 1 I label possono essere visualizzati sia passando il mouse sulla dicitura 'Label', sia cliccando sulla stessa._
+```
 
 ## Knowledge Base macchina_fotografica.owl
 
