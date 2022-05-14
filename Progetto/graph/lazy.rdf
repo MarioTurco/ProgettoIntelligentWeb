@@ -7,76 +7,27 @@
         <j.0:Union>
           <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#2">
             <j.0:Union>
-              <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#5">
+              <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#3">
                 <j.0:Union>
-                  <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#6">
+                  <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#4">
                     <j.0:Union>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#9">
-                        <j.0:Esiste_useInCombat>
-                          <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#10">
-                            <j.0:Union>
-                              <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#11">
-                                <j.0:Union>
-                                  <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#12">
-                                    <j.0:Union>
-                                      <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#15">
-                                        <j.0:Union>
-                                          <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#18">
-                                            <j.0:clash-free rdf:resource="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#clash-Free"/>
-                                            <j.0:label>(¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), ¬Orc , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ),  ∀ useInCombat.Weapon , (Weapon ⊔ ¬Magic ), Weapon , (¬Orc ⊔  ∀ useInCombat.Sword ),  ∀ useInCombat.owl:Nothing , ¬Human , (¬Elf ⊔ ¬Orc )</j.0:label>
-                                          </rdf:Description>
-                                        </j.0:Union>
-                                        <j.0:Union>
-                                          <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#16">
-                                            <j.0:clash rdf:resource="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#clashNode3"/>
-                                            <j.0:label>(¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), ¬Orc , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon ,  ∀ useInCombat.Weapon , (Weapon ⊔ ¬Magic ), Weapon , (¬Orc ⊔  ∀ useInCombat.Sword ),  ∀ useInCombat.owl:Nothing , (¬Elf ⊔ ¬Orc )</j.0:label>
-                                          </rdf:Description>
-                                        </j.0:Union>
-                                        <j.0:label>(¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), ¬Orc , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ),  ∀ useInCombat.Weapon , (Weapon ⊔ ¬Magic ), Weapon , (¬Orc ⊔  ∀ useInCombat.Sword ),  ∀ useInCombat.owl:Nothing , (¬Elf ⊔ ¬Orc )</j.0:label>
-                                      </rdf:Description>
-                                    </j.0:Union>
-                                    <j.0:Union>
-                                      <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#13">
-                                        <j.0:clash rdf:resource="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#clashNode2"/>
-                                        <j.0:label>(¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), ¬Orc , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), (Weapon ⊔ ¬Magic ), Weapon , (¬Orc ⊔  ∀ useInCombat.Sword ), owl:Nothing ,  ∀ useInCombat.owl:Nothing , (¬Elf ⊔ ¬Orc )</j.0:label>
-                                      </rdf:Description>
-                                    </j.0:Union>
-                                    <j.0:label>(Weapon ⊔ ¬Magic ), (¬Human ⊔ ¬Orc ), Weapon , (Creature ⊔  ∀ useInCombat.owl:Nothing ), (¬Orc ⊔  ∀ useInCombat.Sword ), ¬Orc , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ),  ∀ useInCombat.owl:Nothing , (¬Elf ⊔ ¬Orc )</j.0:label>
-                                  </rdf:Description>
-                                </j.0:Union>
-                                <j.0:label>(Weapon ⊔ ¬Magic ), (¬Human ⊔ ¬Orc ), Weapon , (Creature ⊔  ∀ useInCombat.owl:Nothing ), (¬Orc ⊔  ∀ useInCombat.Sword ), ¬Orc , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), (¬Elf ⊔ ¬Orc )</j.0:label>
-                              </rdf:Description>
-                            </j.0:Union>
-                            <j.0:label>(Weapon ⊔ ¬Magic ), (¬Human ⊔ ¬Orc ), Weapon , (Creature ⊔  ∀ useInCombat.owl:Nothing ), (¬Orc ⊔  ∀ useInCombat.Sword ), (owl:Nothing ⊔  ∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), (¬Elf ⊔ ¬Orc )</j.0:label>
-                          </rdf:Description>
-                        </j.0:Esiste_useInCombat>
-                        <j.0:label>¬Magic , (¬Human ⊔ ¬Orc ),  ∀ useInCombat.Sword , (Creature ⊔  ∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , ¬Orc , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon ,  ∀ useInCombat.Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔  ∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )</j.0:label>
+                      <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#5">
+                        <j.0:clash-free rdf:resource="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#clash-Free"/>
+                        <j.0:label>¬Magic ,  ∀ useInCombat.Sword , (¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), (owl:Nothing ⊔  ∀ useInCombat.Weapon ), ¬Elf , Creature , ¬Weapon , (¬Human ⊔  ∀ useInCombat.Sword ),  ∀ useInCombat.Weapon , Orc , (Creature ⊔ ¬Orc ), ((Creature ⊔ ¬Orc )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Human ⊔  ∀ useInCombat.Sword )⊓ (¬Magic ⊔ ¬Sword )), (¬Magic ⊔ ¬Sword ), ¬Human , (¬Elf ⊔ ¬Orc )</j.0:label>
                       </rdf:Description>
                     </j.0:Union>
-                    <j.0:Union>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#7">
-                        <j.0:clash rdf:resource="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#clashNode1"/>
-                        <j.0:label>¬Magic , (¬Human ⊔ ¬Orc ),  ∀ useInCombat.Sword , (Creature ⊔  ∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), ¬Elf , ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon ,  ∀ useInCombat.Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔  ∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )</j.0:label>
-                      </rdf:Description>
-                    </j.0:Union>
-                    <j.0:label>¬Magic , (¬Human ⊔ ¬Orc ),  ∀ useInCombat.Sword , (Creature ⊔  ∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon ,  ∀ useInCombat.Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔  ∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )</j.0:label>
+                    <j.0:label>¬Magic ,  ∀ useInCombat.Sword , (¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), (owl:Nothing ⊔  ∀ useInCombat.Weapon ), Creature , ¬Weapon , (¬Human ⊔  ∀ useInCombat.Sword ),  ∀ useInCombat.Weapon , Orc , (Creature ⊔ ¬Orc ), ((Creature ⊔ ¬Orc )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Human ⊔  ∀ useInCombat.Sword )⊓ (¬Magic ⊔ ¬Sword )), (¬Magic ⊔ ¬Sword ), ¬Human , (¬Elf ⊔ ¬Orc )</j.0:label>
                   </rdf:Description>
                 </j.0:Union>
-                <j.0:label>¬Magic , (¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon ,  ∀ useInCombat.Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔  ∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )</j.0:label>
+                <j.0:label> ∀ useInCombat.Sword , (¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), (owl:Nothing ⊔  ∀ useInCombat.Weapon ), Creature , ¬Weapon , (¬Human ⊔  ∀ useInCombat.Sword ),  ∀ useInCombat.Weapon , Orc , (Creature ⊔ ¬Orc ), ((Creature ⊔ ¬Orc )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Human ⊔  ∀ useInCombat.Sword )⊓ (¬Magic ⊔ ¬Sword )), (¬Magic ⊔ ¬Sword ), ¬Human , (¬Elf ⊔ ¬Orc )</j.0:label>
               </rdf:Description>
             </j.0:Union>
-            <j.0:Union>
-              <rdf:Description rdf:about="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#3">
-                <j.0:clash rdf:resource="http://www.semanticweb.org/rausoromano/ontologies/2022/4/midgard#clashNode0"/>
-                <j.0:label>(¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon ,  ∀ useInCombat.Weapon , Elf , (Weapon ⊔ ¬Magic ), Weapon , (¬Orc ⊔  ∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )</j.0:label>
-              </rdf:Description>
-            </j.0:Union>
-            <j.0:label>(¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon ,  ∀ useInCombat.Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔  ∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )</j.0:label>
+            <j.0:label> ∀ useInCombat.Sword , (¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), (owl:Nothing ⊔  ∀ useInCombat.Weapon ), Creature , ¬Weapon , (¬Human ⊔  ∀ useInCombat.Sword ), Orc , (Creature ⊔ ¬Orc ), ((Creature ⊔ ¬Orc )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Human ⊔  ∀ useInCombat.Sword )⊓ (¬Magic ⊔ ¬Sword )), (¬Magic ⊔ ¬Sword ), ¬Human , (¬Elf ⊔ ¬Orc )</j.0:label>
           </rdf:Description>
         </j.0:Union>
-        <j.0:label>(¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔  ∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )</j.0:label>
+        <j.0:label> ∀ useInCombat.Sword , (¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), (owl:Nothing ⊔  ∀ useInCombat.Weapon ), (Creature ⊔ ¬Orc ), ((Creature ⊔ ¬Orc )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Human ⊔  ∀ useInCombat.Sword )⊓ (¬Magic ⊔ ¬Sword )), (¬Magic ⊔ ¬Sword ), (¬Human ⊔  ∀ useInCombat.Sword ), ¬Human , Orc , (¬Elf ⊔ ¬Orc )</j.0:label>
       </rdf:Description>
     </j.0:Union>
-    <j.0:label>(¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔  ∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔  ∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔  ∀ useInCombat.Sword ), (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )</j.0:label>
+    <j.0:label> ∀ useInCombat.Sword , (¬Human ⊔ ¬Orc ), (Creature ⊔  ∀ useInCombat.owl:Nothing ), (owl:Nothing ⊔  ∀ useInCombat.Weapon ), (Creature ⊔ ¬Orc ), ((Creature ⊔ ¬Orc )⊓ (Creature ⊔  ∀ useInCombat.owl:Nothing )⊓ (owl:Nothing ⊔  ∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Human ⊔  ∀ useInCombat.Sword )⊓ (¬Magic ⊔ ¬Sword )), (¬Magic ⊔ ¬Sword ), (¬Human ⊔  ∀ useInCombat.Sword ), Orc , (¬Elf ⊔ ¬Orc )</j.0:label>
   </rdf:Description>
 </rdf:RDF>

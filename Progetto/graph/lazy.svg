@@ -1,360 +1,132 @@
-<svg width="425px" height="1033px"
- viewBox="0.00 0.00 424.51 1033.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 1029.0)">
+<svg width="155px" height="589px"
+ viewBox="0.00 0.00 154.51 589.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 585.0)">
 <title>tableaux</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-1029 420.51,-1029 420.51,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-585 150.51,-585 150.51,4 -4,4"/>
 <!-- 0 -->
 <g id="node1" class="node">
 <title>0</title>
-<ellipse fill="none" stroke="black" cx="113" cy="-979" rx="27" ry="18"/>
-<text text-anchor="start" x="106" y="-975.8" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="113" y="-975.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node1_37"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\0.txt" xlink:title="Nodo 0: (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔ &#160;∀ useInCombat.Sword ), (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="37,-998 37,-1024 85,-1024 85,-998 37,-998"/>
-<text text-anchor="start" x="41.56" y="-1006.4" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="77" cy="-535" rx="27" ry="18"/>
+<text text-anchor="start" x="70" y="-531.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="77" y="-531.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node1_12"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\0.txt" xlink:title="Nodo 0: &#160;∀ useInCombat.Sword , (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), (Creature ⊔ ¬Orc ), ((Creature ⊔ ¬Orc )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Human ⊔ &#160;∀ useInCombat.Sword )⊓ (¬Magic ⊔ ¬Sword )), (¬Magic ⊔ ¬Sword ), (¬Human ⊔ &#160;∀ useInCombat.Sword ), Orc , (¬Elf ⊔ ¬Orc )" target="_blank">
+<polygon fill="none" stroke="green" points="1,-554 1,-580 49,-580 49,-554 1,-554"/>
+<text text-anchor="start" x="5.56" y="-562.4" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="36,-997 36,-1025 86,-1025 86,-997 36,-997"/>
+<polygon fill="none" stroke="green" points="0,-553 0,-581 50,-581 50,-553 0,-553"/>
 </g>
 <!-- 1 -->
 <g id="node2" class="node">
 <title>1</title>
-<ellipse fill="none" stroke="black" cx="113" cy="-890.2" rx="27" ry="18"/>
-<text text-anchor="start" x="106" y="-887" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="113" y="-887" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node2_38"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\1.txt" xlink:title="Nodo 1: (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔ &#160;∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="37,-909.2 37,-935.2 85,-935.2 85,-909.2 37,-909.2"/>
-<text text-anchor="start" x="41.56" y="-917.6" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="77" cy="-446.2" rx="27" ry="18"/>
+<text text-anchor="start" x="70" y="-443" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="77" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node2_13"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\1.txt" xlink:title="Nodo 1: &#160;∀ useInCombat.Sword , (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), (Creature ⊔ ¬Orc ), ((Creature ⊔ ¬Orc )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Human ⊔ &#160;∀ useInCombat.Sword )⊓ (¬Magic ⊔ ¬Sword )), (¬Magic ⊔ ¬Sword ), (¬Human ⊔ &#160;∀ useInCombat.Sword ), ¬Human , Orc , (¬Elf ⊔ ¬Orc )" target="_blank">
+<polygon fill="none" stroke="green" points="1,-465.2 1,-491.2 49,-491.2 49,-465.2 1,-465.2"/>
+<text text-anchor="start" x="5.56" y="-473.6" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="36,-908.2 36,-936.2 86,-936.2 86,-908.2 36,-908.2"/>
+<polygon fill="none" stroke="green" points="0,-464.2 0,-492.2 50,-492.2 50,-464.2 0,-464.2"/>
 </g>
 <!-- 0&#45;&gt;1 -->
 <g id="edge1" class="edge">
 <title>0&#45;&gt;1</title>
-<path fill="none" stroke="black" d="M113,-960.85C113,-948.72 113,-932.22 113,-918.32"/>
-<polygon fill="black" stroke="black" points="116.5,-918.31 113,-908.31 109.5,-918.31 116.5,-918.31"/>
-<text text-anchor="middle" x="118.25" y="-930.4" font-family="Times,serif" font-size="14.00">⊔</text>
+<path fill="none" stroke="black" d="M77,-516.85C77,-504.72 77,-488.22 77,-474.32"/>
+<polygon fill="black" stroke="black" points="80.5,-474.31 77,-464.31 73.5,-474.31 80.5,-474.31"/>
+<text text-anchor="middle" x="82.25" y="-486.4" font-family="Times,serif" font-size="14.00">⊔</text>
 </g>
 <!-- 2 -->
 <g id="node3" class="node">
 <title>2</title>
-<ellipse fill="none" stroke="black" cx="113" cy="-801.4" rx="27" ry="18"/>
-<text text-anchor="start" x="106" y="-798.2" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="113" y="-798.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node3_39"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\2.txt" xlink:title="Nodo 2: (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon , &#160;∀ useInCombat.Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔ &#160;∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="37,-820.4 37,-846.4 85,-846.4 85,-820.4 37,-820.4"/>
-<text text-anchor="start" x="41.56" y="-828.8" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="77" cy="-357.4" rx="27" ry="18"/>
+<text text-anchor="start" x="70" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="77" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node3_14"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\2.txt" xlink:title="Nodo 2: &#160;∀ useInCombat.Sword , (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), (Creature ⊔ ¬Orc ), Creature , ((Creature ⊔ ¬Orc )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Human ⊔ &#160;∀ useInCombat.Sword )⊓ (¬Magic ⊔ ¬Sword )), (¬Magic ⊔ ¬Sword ), (¬Human ⊔ &#160;∀ useInCombat.Sword ), ¬Human , Orc , (¬Elf ⊔ ¬Orc )" target="_blank">
+<polygon fill="none" stroke="green" points="1,-376.4 1,-402.4 49,-402.4 49,-376.4 1,-376.4"/>
+<text text-anchor="start" x="5.56" y="-384.8" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="36,-819.4 36,-847.4 86,-847.4 86,-819.4 36,-819.4"/>
+<polygon fill="none" stroke="green" points="0,-375.4 0,-403.4 50,-403.4 50,-375.4 0,-375.4"/>
 </g>
 <!-- 1&#45;&gt;2 -->
 <g id="edge2" class="edge">
 <title>1&#45;&gt;2</title>
-<path fill="none" stroke="black" d="M113,-872.05C113,-859.92 113,-843.42 113,-829.52"/>
-<polygon fill="black" stroke="black" points="116.5,-829.51 113,-819.51 109.5,-829.51 116.5,-829.51"/>
-<text text-anchor="middle" x="118.25" y="-841.6" font-family="Times,serif" font-size="14.00">⊔</text>
+<path fill="none" stroke="black" d="M77,-428.05C77,-415.92 77,-399.42 77,-385.52"/>
+<polygon fill="black" stroke="black" points="80.5,-385.51 77,-375.51 73.5,-385.51 80.5,-385.51"/>
+<text text-anchor="middle" x="82.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
 </g>
 <!-- 3 -->
 <g id="node4" class="node">
 <title>3</title>
-<ellipse fill="none" stroke="black" cx="77" cy="-712.6" rx="27" ry="18"/>
-<text text-anchor="start" x="70" y="-709.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="77" y="-709.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node4_40"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\3.txt" xlink:title="Nodo 3: (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon , &#160;∀ useInCombat.Weapon , Elf , (Weapon ⊔ ¬Magic ), Weapon , (¬Orc ⊔ &#160;∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="1,-731.6 1,-757.6 49,-757.6 49,-731.6 1,-731.6"/>
-<text text-anchor="start" x="5.56" y="-740" font-family="Times,serif" font-size="14.00"> Label </text>
+<ellipse fill="none" stroke="black" cx="77" cy="-268.6" rx="27" ry="18"/>
+<text text-anchor="start" x="70" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="77" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node4_15"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\3.txt" xlink:title="Nodo 3: &#160;∀ useInCombat.Sword , (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), Creature , ¬Weapon , (¬Human ⊔ &#160;∀ useInCombat.Sword ), &#160;∀ useInCombat.Weapon , Orc , (Creature ⊔ ¬Orc ), ((Creature ⊔ ¬Orc )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Human ⊔ &#160;∀ useInCombat.Sword )⊓ (¬Magic ⊔ ¬Sword )), (¬Magic ⊔ ¬Sword ), ¬Human , (¬Elf ⊔ ¬Orc )" target="_blank">
+<polygon fill="none" stroke="green" points="1,-287.6 1,-313.6 49,-313.6 49,-287.6 1,-287.6"/>
+<text text-anchor="start" x="5.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
 </a>
 </g>
-<polygon fill="none" stroke="green" points="0,-730.6 0,-758.6 50,-758.6 50,-730.6 0,-730.6"/>
+<polygon fill="none" stroke="green" points="0,-286.6 0,-314.6 50,-314.6 50,-286.6 0,-286.6"/>
 </g>
 <!-- 2&#45;&gt;3 -->
-<g id="edge4" class="edge">
-<title>2&#45;&gt;3</title>
-<path fill="none" stroke="black" d="M106.06,-783.66C100.88,-771.18 93.71,-753.88 87.78,-739.6"/>
-<polygon fill="black" stroke="black" points="90.98,-738.18 83.92,-730.28 84.52,-740.86 90.98,-738.18"/>
-<text text-anchor="middle" x="104.25" y="-752.8" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 5 -->
-<g id="node6" class="node">
-<title>5</title>
-<ellipse fill="none" stroke="black" cx="153" cy="-712.6" rx="27" ry="18"/>
-<text text-anchor="start" x="146" y="-709.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="153" y="-709.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node6_41"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\5.txt" xlink:title="Nodo 5: ¬Magic , (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon , &#160;∀ useInCombat.Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔ &#160;∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="77,-667.6 77,-693.6 125,-693.6 125,-667.6 77,-667.6"/>
-<text text-anchor="start" x="81.56" y="-676" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="76,-666.6 76,-694.6 126,-694.6 126,-666.6 76,-666.6"/>
-</g>
-<!-- 2&#45;&gt;5 -->
 <g id="edge3" class="edge">
-<title>2&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M120.52,-784.07C126.3,-771.54 134.38,-754 141.04,-739.56"/>
-<polygon fill="black" stroke="black" points="144.37,-740.7 145.37,-730.15 138.01,-737.77 144.37,-740.7"/>
-<text text-anchor="middle" x="142.25" y="-752.8" font-family="Times,serif" font-size="14.00">⊔</text>
+<title>2&#45;&gt;3</title>
+<path fill="none" stroke="black" d="M77,-339.25C77,-327.12 77,-310.62 77,-296.72"/>
+<polygon fill="black" stroke="black" points="80.5,-296.71 77,-286.71 73.5,-296.71 80.5,-296.71"/>
+<text text-anchor="middle" x="82.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
 </g>
 <!-- 4 -->
 <g id="node5" class="node">
 <title>4</title>
-<ellipse fill="none" stroke="black" cx="69" cy="-623.8" rx="42.88" ry="18"/>
-<text text-anchor="start" x="46.06" y="-619.6" font-family="Times,serif" font-size="14.00">CLASH</text>
+<ellipse fill="none" stroke="black" cx="77" cy="-179.8" rx="27" ry="18"/>
+<text text-anchor="start" x="70" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="77" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node5_16"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\4.txt" xlink:title="Nodo 4: ¬Magic , &#160;∀ useInCombat.Sword , (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), Creature , ¬Weapon , (¬Human ⊔ &#160;∀ useInCombat.Sword ), &#160;∀ useInCombat.Weapon , Orc , (Creature ⊔ ¬Orc ), ((Creature ⊔ ¬Orc )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Human ⊔ &#160;∀ useInCombat.Sword )⊓ (¬Magic ⊔ ¬Sword )), (¬Magic ⊔ ¬Sword ), ¬Human , (¬Elf ⊔ ¬Orc )" target="_blank">
+<polygon fill="none" stroke="green" points="1,-198.8 1,-224.8 49,-224.8 49,-198.8 1,-198.8"/>
+<text text-anchor="start" x="5.56" y="-207.2" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="0,-197.8 0,-225.8 50,-225.8 50,-197.8 0,-197.8"/>
 </g>
 <!-- 3&#45;&gt;4 -->
-<g id="edge5" class="edge">
+<g id="edge4" class="edge">
 <title>3&#45;&gt;4</title>
-<path fill="none" stroke="red" d="M75.42,-694.45C74.3,-682.32 72.78,-665.82 71.5,-651.92"/>
-<polygon fill="red" stroke="red" points="74.98,-651.55 70.58,-641.91 68.01,-652.19 74.98,-651.55"/>
+<path fill="none" stroke="black" d="M77,-250.45C77,-238.32 77,-221.82 77,-207.92"/>
+<polygon fill="black" stroke="black" points="80.5,-207.91 77,-197.91 73.5,-207.91 80.5,-207.91"/>
+<text text-anchor="middle" x="82.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
+</g>
+<!-- 5 -->
+<g id="node6" class="node">
+<title>5</title>
+<ellipse fill="none" stroke="black" cx="77" cy="-91" rx="27" ry="18"/>
+<text text-anchor="start" x="70" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
+<text text-anchor="start" x="77" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
+<g id="a_node6_17"><a xlink:href="C:\Users\checc\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\5.txt" xlink:title="Nodo 5: ¬Magic , &#160;∀ useInCombat.Sword , (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), ¬Elf , Creature , ¬Weapon , (¬Human ⊔ &#160;∀ useInCombat.Sword ), &#160;∀ useInCombat.Weapon , Orc , (Creature ⊔ ¬Orc ), ((Creature ⊔ ¬Orc )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Human ⊔ &#160;∀ useInCombat.Sword )⊓ (¬Magic ⊔ ¬Sword )), (¬Magic ⊔ ¬Sword ), ¬Human , (¬Elf ⊔ ¬Orc )" target="_blank">
+<polygon fill="none" stroke="green" points="1,-110 1,-136 49,-136 49,-110 1,-110"/>
+<text text-anchor="start" x="5.56" y="-118.4" font-family="Times,serif" font-size="14.00"> Label </text>
+</a>
+</g>
+<polygon fill="none" stroke="green" points="0,-109 0,-137 50,-137 50,-109 0,-109"/>
+</g>
+<!-- 4&#45;&gt;5 -->
+<g id="edge5" class="edge">
+<title>4&#45;&gt;5</title>
+<path fill="none" stroke="black" d="M77,-161.65C77,-149.52 77,-133.02 77,-119.12"/>
+<polygon fill="black" stroke="black" points="80.5,-119.11 77,-109.11 73.5,-119.11 80.5,-119.11"/>
+<text text-anchor="middle" x="82.25" y="-131.2" font-family="Times,serif" font-size="14.00">⊔</text>
 </g>
 <!-- 6 -->
 <g id="node7" class="node">
 <title>6</title>
-<ellipse fill="none" stroke="black" cx="157" cy="-623.8" rx="27" ry="18"/>
-<text text-anchor="start" x="150" y="-620.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="157" y="-620.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node7_42"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\6.txt" xlink:title="Nodo 6: ¬Magic , (¬Human ⊔ ¬Orc ), &#160;∀ useInCombat.Sword , (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon , &#160;∀ useInCombat.Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔ &#160;∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="81,-578.8 81,-604.8 129,-604.8 129,-578.8 81,-578.8"/>
-<text text-anchor="start" x="85.56" y="-587.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="80,-577.8 80,-605.8 130,-605.8 130,-577.8 80,-577.8"/>
+<ellipse fill="none" stroke="black" cx="77" cy="-18" rx="69.52" ry="18"/>
+<text text-anchor="start" x="34.62" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH&#45;FREE</text>
 </g>
 <!-- 5&#45;&gt;6 -->
 <g id="edge6" class="edge">
 <title>5&#45;&gt;6</title>
-<path fill="none" stroke="black" d="M153.79,-694.45C154.35,-682.32 155.11,-665.82 155.75,-651.92"/>
-<polygon fill="black" stroke="black" points="159.25,-652.06 156.21,-641.91 152.25,-651.74 159.25,-652.06"/>
-<text text-anchor="middle" x="161.25" y="-664" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 7 -->
-<g id="node8" class="node">
-<title>7</title>
-<ellipse fill="none" stroke="black" cx="117" cy="-535" rx="27" ry="18"/>
-<text text-anchor="start" x="110" y="-531.8" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="117" y="-531.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node8_43"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\7.txt" xlink:title="Nodo 7: ¬Magic , (¬Human ⊔ ¬Orc ), &#160;∀ useInCombat.Sword , (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), ¬Elf , ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon , &#160;∀ useInCombat.Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔ &#160;∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="41,-518 41,-544 89,-544 89,-518 41,-518"/>
-<text text-anchor="start" x="45.56" y="-526.4" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="40,-517 40,-545 90,-545 90,-517 40,-517"/>
-</g>
-<!-- 6&#45;&gt;7 -->
-<g id="edge8" class="edge">
-<title>6&#45;&gt;7</title>
-<path fill="none" stroke="black" d="M149.48,-606.47C143.7,-593.94 135.62,-576.4 128.96,-561.96"/>
-<polygon fill="black" stroke="black" points="131.99,-560.17 124.63,-552.55 125.63,-563.1 131.99,-560.17"/>
-<text text-anchor="middle" x="146.25" y="-575.2" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 9 -->
-<g id="node10" class="node">
-<title>9</title>
-<ellipse fill="none" stroke="black" cx="193" cy="-535" rx="27" ry="18"/>
-<text text-anchor="start" x="186" y="-531.8" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="193" y="-531.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">0</text>
-<g id="a_node10_44"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\9.txt" xlink:title="Nodo 9: ¬Magic , (¬Human ⊔ ¬Orc ), &#160;∀ useInCombat.Sword , (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), ∃useInCombat.Sword , ¬Orc , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , ¬Weapon , &#160;∀ useInCombat.Weapon , Elf , (Weapon ⊔ ¬Magic ), (¬Orc ⊔ &#160;∀ useInCombat.Sword ), ¬Human , (Elf ⊓ ∃useInCombat.Sword ), (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="117,-490 117,-516 165,-516 165,-490 117,-490"/>
-<text text-anchor="start" x="121.56" y="-498.4" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="116,-489 116,-517 166,-517 166,-489 116,-489"/>
-</g>
-<!-- 6&#45;&gt;9 -->
-<g id="edge7" class="edge">
-<title>6&#45;&gt;9</title>
-<path fill="none" stroke="black" d="M163.94,-606.06C169.12,-593.58 176.29,-576.28 182.22,-562"/>
-<polygon fill="black" stroke="black" points="185.48,-563.26 186.08,-552.68 179.02,-560.58 185.48,-563.26"/>
-<text text-anchor="middle" x="184.25" y="-575.2" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 8 -->
-<g id="node9" class="node">
-<title>8</title>
-<ellipse fill="none" stroke="black" cx="109" cy="-446.2" rx="42.88" ry="18"/>
-<text text-anchor="start" x="86.06" y="-442" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 7&#45;&gt;8 -->
-<g id="edge9" class="edge">
-<title>7&#45;&gt;8</title>
-<path fill="none" stroke="red" d="M115.42,-516.85C114.3,-504.72 112.78,-488.22 111.5,-474.32"/>
-<polygon fill="red" stroke="red" points="114.98,-473.95 110.58,-464.31 108.01,-474.59 114.98,-473.95"/>
-</g>
-<!-- 10 -->
-<g id="node11" class="node">
-<title>10</title>
-<ellipse fill="none" stroke="black" cx="197" cy="-446.2" rx="27" ry="18"/>
-<text text-anchor="start" x="190" y="-443" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="197" y="-443" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
-<g id="a_node11_45"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\10.txt" xlink:title="Nodo 10: Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword ))" target="_blank">
-<polygon fill="none" stroke="green" points="121,-401.2 121,-427.2 169,-427.2 169,-401.2 121,-401.2"/>
-<text text-anchor="start" x="125.56" y="-409.6" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="120,-400.2 120,-428.2 170,-428.2 170,-400.2 120,-400.2"/>
-</g>
-<!-- 9&#45;&gt;10 -->
-<g id="edge10" class="edge">
-<title>9&#45;&gt;10</title>
-<path fill="none" stroke="black" d="M193.79,-516.85C194.35,-504.72 195.11,-488.22 195.75,-474.32"/>
-<polygon fill="black" stroke="black" points="199.25,-474.46 196.21,-464.31 192.25,-474.14 199.25,-474.46"/>
-<text text-anchor="middle" x="233.33" y="-486.4" font-family="Times,serif" font-size="14.00">useInCombat</text>
-</g>
-<!-- 11 -->
-<g id="node12" class="node">
-<title>11</title>
-<ellipse fill="none" stroke="black" cx="197" cy="-357.4" rx="27" ry="18"/>
-<text text-anchor="start" x="190" y="-354.2" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="197" y="-354.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
-<g id="a_node12_46"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\11.txt" xlink:title="Nodo 11: (Weapon ⊔ ¬Magic ), (¬Human ⊔ ¬Orc ), Weapon , (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), (¬Orc ⊔ &#160;∀ useInCombat.Sword ), ¬Orc , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="121,-340.4 121,-366.4 169,-366.4 169,-340.4 121,-340.4"/>
-<text text-anchor="start" x="125.56" y="-348.8" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="120,-339.4 120,-367.4 170,-367.4 170,-339.4 120,-339.4"/>
-</g>
-<!-- 10&#45;&gt;11 -->
-<g id="edge11" class="edge">
-<title>10&#45;&gt;11</title>
-<path fill="none" stroke="black" d="M197,-428.05C197,-415.92 197,-399.42 197,-385.52"/>
-<polygon fill="black" stroke="black" points="200.5,-385.51 197,-375.51 193.5,-385.51 200.5,-385.51"/>
-<text text-anchor="middle" x="202.25" y="-397.6" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 12 -->
-<g id="node13" class="node">
-<title>12</title>
-<ellipse fill="none" stroke="black" cx="197" cy="-268.6" rx="27" ry="18"/>
-<text text-anchor="start" x="190" y="-265.4" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="197" y="-265.4" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
-<g id="a_node13_47"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\12.txt" xlink:title="Nodo 12: (Weapon ⊔ ¬Magic ), (¬Human ⊔ ¬Orc ), Weapon , (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), (¬Orc ⊔ &#160;∀ useInCombat.Sword ), ¬Orc , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), &#160;∀ useInCombat.owl:Nothing , (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="121,-287.6 121,-313.6 169,-313.6 169,-287.6 121,-287.6"/>
-<text text-anchor="start" x="125.56" y="-296" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="120,-286.6 120,-314.6 170,-314.6 170,-286.6 120,-286.6"/>
-</g>
-<!-- 11&#45;&gt;12 -->
-<g id="edge12" class="edge">
-<title>11&#45;&gt;12</title>
-<path fill="none" stroke="black" d="M197,-339.25C197,-327.12 197,-310.62 197,-296.72"/>
-<polygon fill="black" stroke="black" points="200.5,-296.71 197,-286.71 193.5,-296.71 200.5,-296.71"/>
-<text text-anchor="middle" x="202.25" y="-308.8" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 13 -->
-<g id="node14" class="node">
-<title>13</title>
-<ellipse fill="none" stroke="black" cx="161" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="154" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="161" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
-<g id="a_node14_48"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\13.txt" xlink:title="Nodo 13: (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), ¬Orc , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), (Weapon ⊔ ¬Magic ), Weapon , (¬Orc ⊔ &#160;∀ useInCombat.Sword ), owl:Nothing , &#160;∀ useInCombat.owl:Nothing , (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="85,-198.8 85,-224.8 133,-224.8 133,-198.8 85,-198.8"/>
-<text text-anchor="start" x="89.56" y="-207.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="84,-197.8 84,-225.8 134,-225.8 134,-197.8 84,-197.8"/>
-</g>
-<!-- 12&#45;&gt;13 -->
-<g id="edge14" class="edge">
-<title>12&#45;&gt;13</title>
-<path fill="none" stroke="black" d="M190.06,-250.86C184.88,-238.38 177.71,-221.08 171.78,-206.8"/>
-<polygon fill="black" stroke="black" points="174.98,-205.38 167.92,-197.48 168.52,-208.06 174.98,-205.38"/>
-<text text-anchor="middle" x="188.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 15 -->
-<g id="node16" class="node">
-<title>15</title>
-<ellipse fill="none" stroke="black" cx="241" cy="-179.8" rx="27" ry="18"/>
-<text text-anchor="start" x="234" y="-176.6" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="241" y="-176.6" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
-<g id="a_node16_49"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\15.txt" xlink:title="Nodo 15: (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), ¬Orc , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), &#160;∀ useInCombat.Weapon , (Weapon ⊔ ¬Magic ), Weapon , (¬Orc ⊔ &#160;∀ useInCombat.Sword ), &#160;∀ useInCombat.owl:Nothing , (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="165,-134.8 165,-160.8 213,-160.8 213,-134.8 165,-134.8"/>
-<text text-anchor="start" x="169.56" y="-143.2" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="164,-133.8 164,-161.8 214,-161.8 214,-133.8 164,-133.8"/>
-</g>
-<!-- 12&#45;&gt;15 -->
-<g id="edge13" class="edge">
-<title>12&#45;&gt;15</title>
-<path fill="none" stroke="black" d="M205.28,-251.27C211.73,-238.54 220.8,-220.64 228.19,-206.06"/>
-<polygon fill="black" stroke="black" points="231.36,-207.56 232.76,-197.05 225.12,-204.39 231.36,-207.56"/>
-<text text-anchor="middle" x="228.25" y="-220" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 14 -->
-<g id="node15" class="node">
-<title>14</title>
-<ellipse fill="none" stroke="black" cx="153" cy="-91" rx="42.88" ry="18"/>
-<text text-anchor="start" x="130.06" y="-86.8" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 13&#45;&gt;14 -->
-<g id="edge15" class="edge">
-<title>13&#45;&gt;14</title>
-<path fill="none" stroke="red" d="M159.42,-161.65C158.3,-149.52 156.78,-133.02 155.5,-119.12"/>
-<polygon fill="red" stroke="red" points="158.98,-118.75 154.58,-109.11 152.01,-119.39 158.98,-118.75"/>
-</g>
-<!-- 16 -->
-<g id="node17" class="node">
-<title>16</title>
-<ellipse fill="none" stroke="black" cx="241" cy="-91" rx="27" ry="18"/>
-<text text-anchor="start" x="234" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="241" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
-<g id="a_node17_50"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\16.txt" xlink:title="Nodo 16: (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), ¬Orc , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), Creature , &#160;∀ useInCombat.Weapon , (Weapon ⊔ ¬Magic ), Weapon , (¬Orc ⊔ &#160;∀ useInCombat.Sword ), &#160;∀ useInCombat.owl:Nothing , (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="165,-46 165,-72 213,-72 213,-46 165,-46"/>
-<text text-anchor="start" x="169.56" y="-54.4" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="164,-45 164,-73 214,-73 214,-45 164,-45"/>
-</g>
-<!-- 15&#45;&gt;16 -->
-<g id="edge17" class="edge">
-<title>15&#45;&gt;16</title>
-<path fill="none" stroke="black" d="M241,-161.65C241,-149.52 241,-133.02 241,-119.12"/>
-<polygon fill="black" stroke="black" points="244.5,-119.11 241,-109.11 237.5,-119.11 244.5,-119.11"/>
-<text text-anchor="middle" x="246.25" y="-131.2" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 18 -->
-<g id="node19" class="node">
-<title>18</title>
-<ellipse fill="none" stroke="black" cx="335" cy="-91" rx="27" ry="18"/>
-<text text-anchor="start" x="328" y="-87.8" font-family="Times,serif" font-size="14.00">x</text>
-<text text-anchor="start" x="335" y="-87.8" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
-<g id="a_node19_51"><a xlink:href="C:\Users\turco\OneDrive\Desktop\ProgettoIntelligentWeb\Progetto\graph\lazy\18.txt" xlink:title="Nodo 18: (¬Human ⊔ ¬Orc ), (Creature ⊔ &#160;∀ useInCombat.owl:Nothing ), ¬Orc , (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon ), Sword , ((Creature ⊔ ¬Human )⊓ (Creature ⊔ &#160;∀ useInCombat.owl:Nothing )⊓ (Weapon ⊔ ¬Magic )⊓ (owl:Nothing ⊔ &#160;∀ useInCombat.Weapon )⊓ (¬Elf ⊔ ¬Orc )⊓ (¬Human ⊔ ¬Orc )⊓ (¬Orc ⊔ &#160;∀ useInCombat.Sword )), (Creature ⊔ ¬Human ), &#160;∀ useInCombat.Weapon , (Weapon ⊔ ¬Magic ), Weapon , (¬Orc ⊔ &#160;∀ useInCombat.Sword ), &#160;∀ useInCombat.owl:Nothing , ¬Human , (¬Elf ⊔ ¬Orc )" target="_blank">
-<polygon fill="none" stroke="green" points="259,-46 259,-72 307,-72 307,-46 259,-46"/>
-<text text-anchor="start" x="263.56" y="-54.4" font-family="Times,serif" font-size="14.00"> Label </text>
-</a>
-</g>
-<polygon fill="none" stroke="green" points="258,-45 258,-73 308,-73 308,-45 258,-45"/>
-</g>
-<!-- 15&#45;&gt;18 -->
-<g id="edge16" class="edge">
-<title>15&#45;&gt;18</title>
-<path fill="none" stroke="black" d="M256.1,-164.85C271.22,-150.89 294.69,-129.23 312.1,-113.15"/>
-<polygon fill="black" stroke="black" points="314.65,-115.56 319.62,-106.2 309.9,-110.41 314.65,-115.56"/>
-<text text-anchor="middle" x="302.25" y="-131.2" font-family="Times,serif" font-size="14.00">⊔</text>
-</g>
-<!-- 17 -->
-<g id="node18" class="node">
-<title>17</title>
-<ellipse fill="none" stroke="black" cx="217" cy="-18" rx="42.88" ry="18"/>
-<text text-anchor="start" x="194.06" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH</text>
-</g>
-<!-- 16&#45;&gt;17 -->
-<g id="edge18" class="edge">
-<title>16&#45;&gt;17</title>
-<path fill="none" stroke="red" d="M235.31,-73.17C232.54,-64.98 229.15,-54.94 226.04,-45.73"/>
-<polygon fill="red" stroke="red" points="229.33,-44.55 222.81,-36.2 222.7,-46.79 229.33,-44.55"/>
-</g>
-<!-- 19 -->
-<g id="node20" class="node">
-<title>19</title>
-<ellipse fill="none" stroke="black" cx="347" cy="-18" rx="69.52" ry="18"/>
-<text text-anchor="start" x="304.62" y="-13.8" font-family="Times,serif" font-size="14.00">CLASH&#45;FREE</text>
-</g>
-<!-- 18&#45;&gt;19 -->
-<g id="edge19" class="edge">
-<title>18&#45;&gt;19</title>
-<path fill="none" stroke="green" d="M337.9,-72.81C339.26,-64.79 340.91,-55.05 342.42,-46.07"/>
-<polygon fill="green" stroke="green" points="345.91,-46.47 344.12,-36.03 339,-45.31 345.91,-46.47"/>
+<path fill="none" stroke="green" d="M77,-72.81C77,-64.79 77,-55.05 77,-46.07"/>
+<polygon fill="green" stroke="green" points="80.5,-46.03 77,-36.03 73.5,-46.03 80.5,-46.03"/>
 </g>
 </g>
 </svg>

@@ -908,7 +908,7 @@ public class ALCReasoner{
 	}
 	
 	
-	/** Applica le regole(Modus Ponens) della T_u del lazy unfolding
+	/** Applica le regole(Modus Ponens) alla T_u del lazy unfolding e modifica Lx di conseguenza
 	 * @param aBox
 	 * @param Lx
 	 * @param T_u
