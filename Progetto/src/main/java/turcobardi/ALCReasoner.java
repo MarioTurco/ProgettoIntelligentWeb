@@ -39,7 +39,6 @@ import guru.nidi.graphviz.model.Node;
  * Reasoner ALC che implementa i metodi per il tableaux
  *
  */
-
 public class ALCReasoner{
 	private OWLOntology concept = null;
 	private String lazyLabelsPath = null;
@@ -909,12 +908,20 @@ public class ALCReasoner{
 	}
 	
 	
+	/** Applica le regole(Modus Ponens) della T_u del lazy unfolding
+	 * @param aBox
+	 * @param Lx
+	 * @param T_u
+	 * @param individual nome degli individui da instanziare
+	 * @return gli assiomi derivati con le regole del modus ponens
+	 */
 	private Set<OWLObject> lazyUnfoldingRules2(Set<OWLObject> aBox , Set<OWLObject> Lx, Set<OWLObject> T_u, String individual) {
 		Set<OWLObject> insertedLazy = new HashSet<>();
 		for (OWLObject unfoldableAx: T_u) {
+			//Regole Equivalenza
 			if(unfoldableAx instanceof OWLEquivalentClassesAxiom) {
 				OWLClassExpression leftSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(0);
-				//PRIMA REGOLA
+				//Prima regola, equivalenza
 				if (Lx.contains(leftSide)) {
 					OWLClassExpression rightSide = ((OWLEquivalentClassesAxiom) unfoldableAx).getOperandsAsList().get(1);
 					Lx.add(rightSide);
@@ -923,11 +930,10 @@ public class ALCReasoner{
 						aBox.add(ax);
 						insertedLazy.add(ax);
 					} catch (OWLOntologyCreationException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}
-				//SECONDA REGOLA
+				//Seconda regola, equivalenza
 				OWLDataFactory factory = this.editor.getFactory();
 				OWLObjectComplementOf complLeftSide = factory.getOWLObjectComplementOf(leftSide.getNNF());
 				if (Lx.contains(complLeftSide)) {
@@ -939,14 +945,13 @@ public class ALCReasoner{
 						aBox.add(ax);
 						insertedLazy.add(ax);
 					} catch (OWLOntologyCreationException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}
 				
 			}
 			
-			//TERZA REGOLA
+			//Terza Regola, SubClassOf
 			if(unfoldableAx instanceof OWLSubClassOfAxiom) {
 				OWLClassExpression leftSide = ((OWLSubClassOfAxiom) unfoldableAx).getSubClass();
 				
@@ -958,7 +963,6 @@ public class ALCReasoner{
 						aBox.add(ax);
 						insertedLazy.add(ax);
 					} catch (OWLOntologyCreationException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}	
@@ -1312,6 +1316,7 @@ public class ALCReasoner{
 
         		this.individual++;
         		String newIndName = "x"+ this.individual;
+        		
         		Set<OWLObject> toAdd = this.existsRuleNonEmpyTboxLazyUnfolding(o,ind,newIndName);
         		if(toAdd.size()==0) {
         			this.individual--;
@@ -1392,6 +1397,12 @@ public class ALCReasoner{
 			return propertyAxiom;
 		}
 
+	
+	/**
+	 * @param abox
+	 * @param toAdd - assiomi da aggiuntere
+	 * @return
+	 */
 	private boolean checkExistsRuleCondition(Set<OWLObject> abox, Set<OWLObject> toAdd) {
 		OWLObjectPropertyAssertionAxiom propertyAxiom = null;
 		OWLClassAssertionAxiom fillerAxiom = null;
