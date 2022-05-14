@@ -10,6 +10,10 @@ import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
+
+/**
+ * Visitor che mantiene una lista del lato destro e sinistro di ogni intersezione 
+ */
 public class IntersectionRuleVisitor implements OWLObjectVisitor{
 	
 	private Set<OWLClassExpression> operandsRet = new HashSet<>();
@@ -30,6 +34,10 @@ public class IntersectionRuleVisitor implements OWLObjectVisitor{
 		ca.getClassExpression().accept(this);
 	}
 	
+	
+	/**
+	 * @return l'insieme di operandi visitati dal visitor
+	 */
 	public Set<OWLClassExpression> getOperands(){
 		Set<OWLClassExpression> tmp = new HashSet<>(operandsRet);
 		operandsRet.clear();

@@ -10,6 +10,9 @@ import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
+/**
+ * Visitor che mantiene una lista del lato destro e sinistro di ogni unione che visita 
+ */
 public class UnionRuleVisitor implements OWLObjectVisitor {
 		
 		private Set<OWLClassExpression> operandsRet = null; 

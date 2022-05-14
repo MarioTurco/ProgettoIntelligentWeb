@@ -8,6 +8,10 @@ import org.semanticweb.owlapi.model.OWLObjectVisitor;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.parameters.Imports;
 
+
+/**
+ * Visitor che mantiene in memoria il lato destro dell'equivalenza che visita
+ */
 public class EquivalenceRuleVisitor implements OWLObjectVisitor{
 		
 		private OWLClassExpression rightSide = null;
