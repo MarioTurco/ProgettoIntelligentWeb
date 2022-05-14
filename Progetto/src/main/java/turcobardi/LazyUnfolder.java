@@ -11,8 +11,11 @@ import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
+/**
+ * Classe che partiziona una KnowledgeBase in concetti unfoldable(T_u) e foldable (T_g)
+ */
 public class LazyUnfolder {
-	
+	private LazyUnfoldingVisitor p = null;
 	private OWLOntology kb = null;
 	private Set<OWLObject> T_u = new HashSet<>();
 	private Set<OWLObject> T_g = new HashSet<>();
@@ -23,6 +26,10 @@ public class LazyUnfolder {
 		this.kb = kb;
 	}
 	
+	
+	/**
+	 * Partiziona KB in T_u e T_g
+	 */
 	public void doLazyUnfolding() {
 		LazyUnfoldingVisitor visitor = new LazyUnfoldingVisitor();
 		for(OWLLogicalAxiom axiom: this.kb.getLogicalAxioms()) {
@@ -38,10 +45,7 @@ public class LazyUnfolder {
 						T_g.add(axiom);	
 						inserted = true;
 					}
-					
-
 				}
-				
 				
 				if(!inserted && this.isUnfoldable(T_u, axiom)) {
 					T_u.add(axiom);
@@ -66,9 +70,8 @@ public class LazyUnfolder {
 		}
 	}
 	
+	
 	private boolean isUnfoldable(Set<OWLObject> T_u, OWLLogicalAxiom axiom) {
-		
-		
 		//PRIMA CONDIZIONE
 		if(axiom instanceof OWLEquivalentClassesAxiom) {
 			

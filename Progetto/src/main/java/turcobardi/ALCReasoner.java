@@ -40,6 +40,7 @@ import guru.nidi.graphviz.model.Node;
  *
  */
 public class ALCReasoner{
+	private LazyUnfolder p =null;
 	private OWLOntology concept = null;
 	private String lazyLabelsPath = null;
 	private String normalLabelsPath = null;

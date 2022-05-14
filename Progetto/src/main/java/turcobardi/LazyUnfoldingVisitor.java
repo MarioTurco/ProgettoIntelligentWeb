@@ -14,6 +14,12 @@ import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 import org.semanticweb.owlapi.model.OWLObjectVisitor;
 
+
+/**
+ *Visitor per il lazy unfolding che tiene traccia delle dipendenze dei concetti 
+ *Per poter verificare se questi sono aciclici
+ *
+ */
 public class LazyUnfoldingVisitor implements OWLObjectVisitor{
 	
 	private Set<OWLClass> dependencies = new HashSet<>();
@@ -54,7 +60,7 @@ public class LazyUnfoldingVisitor implements OWLObjectVisitor{
 			ex.accept(this);
 		}
 	}
-
+	
 	public Set<OWLClass> getDependencies() {
 		Set<OWLClass> tmp = new HashSet<>(dependencies);
 		dependencies.clear();
