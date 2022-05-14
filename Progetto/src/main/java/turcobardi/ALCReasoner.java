@@ -32,6 +32,7 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
 import guru.nidi.graphviz.attribute.Color;
+import guru.nidi.graphviz.engine.GraphvizException;
 import guru.nidi.graphviz.model.Node;
 
 
@@ -348,6 +349,8 @@ public class ALCReasoner{
 			gr.renderGraph(path);
 		} catch (IOException e) {
 			System.out.println("Impossibile stampare il grafo in: " + path);
+		}catch(GraphvizException e) {
+			System.out.println("Non è stato possibile stampare il grafo poichè contiene troppi nodi");
 		}
 	}
 	 

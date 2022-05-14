@@ -49,8 +49,9 @@ Class: ontology:FullFrame
 Class: ontology:MacchinaFotografica
 
     SubClassOf: 
-        ontology:haSensore some ontology:Sensore
-    
+        ontology:haSensore only ontology:Sensore
+    DisjointWith:
+        ontology:Sensore, ontology:Specchio
     
 Class: ontology:Mirrorless
 
@@ -66,15 +67,21 @@ Class: ontology:Reflex
 
     SubClassOf: 
         ontology:MacchinaFotografica,
-        ontology:haSpecchio some ontology:Specchio
+        ontology:haSpecchio only ontology:Specchio
     
     DisjointWith: 
         ontology:Mirrorless
     
     
 Class: ontology:Sensore
-
+    DisjointWith:
+        ontology:Specchio, ontology:MacchinaFotografica
     
 Class: ontology:Specchio
+    DisjointWith:
+        ontology:Sensore, ontology:MacchinaFotografica
 
-    
+Class: owl:Nothing
+
+
+Class: owl:Thing
