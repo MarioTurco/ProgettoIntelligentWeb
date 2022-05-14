@@ -293,8 +293,13 @@ public class ALCReasoner{
 		return toAdd;
 	}
 	
+	
+	/** Regola dell'unione per il tableax
+	 * @param abox
+	 * @param individual - nome degli individui da creare
+	 * @return
+	 */
 	private Set<OWLObject> unionRule(OWLObject abox, String individual) {
-		
 		Set<OWLObject> toAdd = new HashSet<>(); 
 		UnionRuleVisitor vis = new UnionRuleVisitor();
 		abox.accept(vis);
@@ -309,6 +314,12 @@ public class ALCReasoner{
 		return toAdd;
 	}
 	
+	
+	/** Regola dell'intersezione per il tableaux
+	 * @param abox
+	 * @param individual - nome degli individui da creare
+	 * @return
+	 */
 	private Set<OWLObject> intersectionRule(Set<OWLObject> abox, String individual) {
 
 		Set<OWLObject> toAdd = new HashSet<>(); 
@@ -410,6 +421,7 @@ public class ALCReasoner{
 			}
 			
 			if(kb!=null) {
+				//Trasformiamo la KB
 				this.KBinclusion = this.convertKBWithFactory();
 				OWLClassAssertionAxiom KBinclusionIstance;
 				try {
@@ -500,7 +512,7 @@ public class ALCReasoner{
 	}
 	
 	
-	/** Controlla se c'è un clash nell'etichetta Lx di un nodo
+	/** Controlla se c'è un clash o bottom nell'etichetta Lx di un nodo
 	 * @param Lx etichetta 
 	 * @return <i>true</i> se c'è un clash, false altrimenti
 	 */
@@ -787,9 +799,7 @@ public class ALCReasoner{
     			if(resURule.size()>0) {
     				Set<OWLObject> intersec = new HashSet<>(aBox);
     				intersec.retainAll(resURule);
-    				//mi salvo il padre comune a tutti i nodi disgiunti
     				if(intersec.size()==0) {
-    					//int tmpParent = gr.getLastParent()+1;
     					for (OWLObject disjoint : resURule) {
     						Set<OWLObject> tmpLx = new HashSet<>(Lx);
     						aBox.add(disjoint);
@@ -1368,19 +1378,19 @@ public class ALCReasoner{
 	}
 
 	
-/** Dato un insieme di assiomi, restituisce l'assioma che riguardano le proprietà, ovvero del tipo R(A,B)
- * @param set - insieme di assiomi
- * @return 
- */
-private OWLObjectPropertyAssertionAxiom getPropertyAssertionFromSet(Set<OWLObject> set) {
-		OWLObjectPropertyAssertionAxiom propertyAxiom = null;
-		for(OWLObject o:set) {
-			if (o instanceof OWLObjectPropertyAssertionAxiom) {
-				propertyAxiom = (OWLObjectPropertyAssertionAxiom) o;
+	/** Dato un insieme di assiomi, restituisce l'assioma che riguardano le proprietà, ovvero del tipo R(A,B)
+	 * @param set - insieme di assiomi
+	 * @return 
+	 */
+	private OWLObjectPropertyAssertionAxiom getPropertyAssertionFromSet(Set<OWLObject> set) {
+			OWLObjectPropertyAssertionAxiom propertyAxiom = null;
+			for(OWLObject o:set) {
+				if (o instanceof OWLObjectPropertyAssertionAxiom) {
+					propertyAxiom = (OWLObjectPropertyAssertionAxiom) o;
+				}
 			}
+			return propertyAxiom;
 		}
-		return propertyAxiom;
-	}
 
 	private boolean checkExistsRuleCondition(Set<OWLObject> abox, Set<OWLObject> toAdd) {
 		OWLObjectPropertyAssertionAxiom propertyAxiom = null;
