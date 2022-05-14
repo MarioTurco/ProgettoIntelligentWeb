@@ -58,7 +58,7 @@ public class GraphRenderer {
 		File file = new File(path);
 		try {
 			File folder = new File("graph\\" + pathSubfolder);
-			folder.mkdir();
+			folder.mkdirs();
 			file.createNewFile();
 			FileWriter myWriter = new FileWriter(file);				
 			myWriter.append(label);
