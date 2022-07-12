@@ -1,0 +1,108 @@
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: ontology: <http://www.semanticweb.org/turco/ontologies/2022/4/ontology#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/turco/ontologies/2022/4/ontology>
+
+
+ObjectProperty: <http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-31#R>
+
+    
+ObjectProperty: ontology:R
+
+    
+ObjectProperty: ontology:haSensore
+
+    Domain: 
+        ontology:MacchinaFotografica
+    
+    Range: 
+        ontology:Sensore
+    
+    
+ObjectProperty: ontology:haSpecchio
+
+    Domain: 
+        ontology:MacchinaFotografica
+    
+    Range: 
+        ontology:Specchio
+    
+    
+Class: ontology:A
+
+    SubClassOf: 
+        <http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-31#R> some ontology:A
+    
+    
+Class: ontology:APSC
+
+    SubClassOf: 
+        ontology:Sensore
+    
+    DisjointWith: 
+        ontology:FullFrame
+    
+    
+Class: ontology:FullFrame
+
+    SubClassOf: 
+        ontology:Sensore
+    
+    DisjointWith: 
+        ontology:APSC
+    
+    
+Class: ontology:MacchinaFotografica
+
+    SubClassOf: 
+        ontology:haSensore some ontology:Sensore
+    
+    DisjointWith: 
+        ontology:Sensore, ontology:Specchio
+    
+    
+Class: ontology:Mirrorless
+
+    SubClassOf: 
+        ontology:MacchinaFotografica,
+        ontology:haSpecchio only (not (ontology:Specchio))
+    
+    DisjointWith: 
+        ontology:Reflex
+    
+    
+Class: ontology:Reflex
+
+    SubClassOf: 
+        ontology:MacchinaFotografica,
+        ontology:haSpecchio some ontology:Specchio
+    
+    DisjointWith: 
+        ontology:Mirrorless
+    
+    
+Class: ontology:Sensore
+
+    DisjointWith: 
+        ontology:MacchinaFotografica, ontology:Specchio
+    
+    
+Class: ontology:Specchio
+
+    DisjointWith: 
+        ontology:MacchinaFotografica, ontology:Sensore
+    
+    
+Class: owl:Nothing
+
+    
+Class: owl:Thing
+
+    

@@ -38,7 +38,8 @@ public class OntologyPrintingVisitor implements OWLObjectVisitor{
 	private final char exists = '\u2203';
 	private final char not = '\u00AC';
 	private final char inclusion = '\u2291';
-	private final char top = '\u27D9';
+	//private final char top = '\u27D9';
+	private final char top = 'T';
 	private final char bottom = '\u27D8';
 	private String toRemove = null;
 	
