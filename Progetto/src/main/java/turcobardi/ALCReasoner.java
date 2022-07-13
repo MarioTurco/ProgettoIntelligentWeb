@@ -136,9 +136,12 @@ public class ALCReasoner{
 			
 		}
 		OWLSubClassOfAxiom inclusionToAdd = null;
-		if(conjuncts.size()>0) {
+		if(conjuncts.size()>1) {
 			OWLObjectIntersectionOf cHat = factory.getOWLObjectIntersectionOf(conjuncts);
 			inclusionToAdd = factory.getOWLSubClassOfAxiom(editor.getTop(), cHat);
+		}
+		if(conjuncts.size()==1) {
+			inclusionToAdd =  factory.getOWLSubClassOfAxiom(editor.getTop(), conjuncts.get(0));
 		}
 		
 		return inclusionToAdd;
@@ -189,8 +192,15 @@ public class ALCReasoner{
 			}
 			
 		}
-		OWLObjectIntersectionOf cHat = factory.getOWLObjectIntersectionOf(conjuncts);
-		OWLSubClassOfAxiom inclusionToAdd = factory.getOWLSubClassOfAxiom(editor.getTop(), cHat);
+		OWLSubClassOfAxiom inclusionToAdd = null;
+		if(conjuncts.size()==1) {
+			OWLObjectIntersectionOf cHat = factory.getOWLObjectIntersectionOf(conjuncts);
+			inclusionToAdd = factory.getOWLSubClassOfAxiom(editor.getTop(), conjuncts.get(0));
+		}
+		else {
+			OWLObjectIntersectionOf cHat = factory.getOWLObjectIntersectionOf(conjuncts);
+			inclusionToAdd = factory.getOWLSubClassOfAxiom(editor.getTop(), cHat);
+		}
 		return inclusionToAdd;
 	}
 	

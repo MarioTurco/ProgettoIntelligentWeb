@@ -1,93 +1,54 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:j.0="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#">
-  <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#0">
+    xmlns:j.0="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#">
+  <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#0">
     <j.0:Union>
-      <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#1">
-        <j.0:Union>
-          <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#2">
+      <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#1">
+        <j.0:Esiste_R>
+          <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#8">
             <j.0:Union>
-              <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#3">
-                <j.0:Union>
-                  <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#4">
-                    <j.0:Union>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#13">
-                        <j.0:Union>
-                          <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#14">
-                            <j.0:Union>
-                              <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#15">
-                                <j.0:Union>
-                                  <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#18">
-                                    <j.0:Union>
-                                      <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#21">
-                                        <j.0:clash-free rdf:resource="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#clash-Free"/>
-                                        <j.0:label>(¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ), ¬MacchinaFotografica , (¬MacchinaFotografica ⊔ ¬Sensore ),  ∀ haSensore.Sensore , (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (Sensore ⊔ ¬APSC ), ¬APSC ,  ∀ haSensore.owl:Nothing , Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , (FullFrame ⊓ ¬APSC ),  ∀ haSpecchio.owl:Nothing , FullFrame , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )),  ∀ haSpecchio.Specchio , (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
-                                      </rdf:Description>
-                                    </j.0:Union>
-                                    <j.0:Union>
-                                      <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#19">
-                                        <j.0:clash rdf:resource="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#clashNode4"/>
-                                        <j.0:label>(¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ), ¬MacchinaFotografica , (¬MacchinaFotografica ⊔ ¬Sensore ), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (Sensore ⊔ ¬APSC ), ¬APSC ,  ∀ haSensore.owl:Nothing , Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), ¬Specchio , (FullFrame ⊓ ¬APSC ),  ∀ haSpecchio.owl:Nothing , FullFrame , owl:Nothing , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )),  ∀ haSpecchio.Specchio , (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
-                                      </rdf:Description>
-                                    </j.0:Union>
-                                    <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , ¬APSC , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ),  ∀ haSensore.owl:Nothing , Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), ¬MacchinaFotografica , (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , (FullFrame ⊓ ¬APSC ),  ∀ haSpecchio.owl:Nothing , FullFrame , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ),  ∀ haSpecchio.Specchio , (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
-                                  </rdf:Description>
-                                </j.0:Union>
-                                <j.0:Union>
-                                  <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#16">
-                                    <j.0:clash rdf:resource="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#clashNode3"/>
-                                    <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , ¬APSC , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ),  ∀ haSensore.owl:Nothing , Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), ¬MacchinaFotografica , (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , (FullFrame ⊓ ¬APSC ),  ∀ haSpecchio.owl:Nothing , FullFrame , owl:Nothing , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
-                                  </rdf:Description>
-                                </j.0:Union>
-                                <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , ¬APSC , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ),  ∀ haSensore.owl:Nothing , Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), ¬MacchinaFotografica , (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , (FullFrame ⊓ ¬APSC ),  ∀ haSpecchio.owl:Nothing , FullFrame , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
-                              </rdf:Description>
-                            </j.0:Union>
-                            <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ),  ∀ haSensore.owl:Nothing , Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), ¬MacchinaFotografica , (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio ,  ∀ haSpecchio.owl:Nothing , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
-                          </rdf:Description>
-                        </j.0:Union>
-                        <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ),  ∀ haSensore.owl:Nothing , Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio ,  ∀ haSpecchio.owl:Nothing , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
-                      </rdf:Description>
-                    </j.0:Union>
-                    <j.0:Union>
-                      <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#5">
-                        <j.0:Union>
-                          <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#8">
-                            <j.0:Union>
-                              <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#11">
-                                <j.0:clash rdf:resource="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#clashNode2"/>
-                                <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ), Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , ¬Sensore ,  ∀ haSpecchio.owl:Nothing , ∃haSensore.Sensore , MacchinaFotografica , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
-                              </rdf:Description>
-                            </j.0:Union>
-                            <j.0:Union>
-                              <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#9">
-                                <j.0:clash rdf:resource="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#clashNode1"/>
-                                <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ), Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), ¬MacchinaFotografica , (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio ,  ∀ haSpecchio.owl:Nothing , ∃haSensore.Sensore , MacchinaFotografica , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
-                              </rdf:Description>
-                            </j.0:Union>
-                            <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ), Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio ,  ∀ haSpecchio.owl:Nothing , ∃haSensore.Sensore , MacchinaFotografica , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
-                          </rdf:Description>
-                        </j.0:Union>
-                        <j.0:Union>
-                          <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#6">
-                            <j.0:clash rdf:resource="http://www.semanticweb.org/turco/ontologies/2022/4/ontology#clashNode0"/>
-                            <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ), Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), ¬MacchinaFotografica , (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio ,  ∀ haSpecchio.owl:Nothing , MacchinaFotografica , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
-                          </rdf:Description>
-                        </j.0:Union>
-                        <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ), Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio ,  ∀ haSpecchio.owl:Nothing , MacchinaFotografica , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
-                      </rdf:Description>
-                    </j.0:Union>
-                    <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ), Sensore , ¬Reflex , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio ,  ∀ haSpecchio.owl:Nothing , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
+              <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#11">
+                <j.0:Esiste_S>
+                  <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#12">
+                    <j.0:label>A , (¬A ⊔ ∃S.A )</j.0:label>
                   </rdf:Description>
-                </j.0:Union>
-                <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ), Sensore , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio ,  ∀ haSpecchio.owl:Nothing , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
+                </j.0:Esiste_S>
+                <j.0:label>A , ∃S.A , (¬A ⊔ ∃S.A )</j.0:label>
               </rdf:Description>
             </j.0:Union>
-            <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ),  ∀ haSpecchio.¬Specchio , (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ), Sensore , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
+            <j.0:Union>
+              <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#9">
+                <j.0:clash rdf:resource="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#clashNode1"/>
+                <j.0:label>A , ¬A , (¬A ⊔ ∃S.A )</j.0:label>
+              </rdf:Description>
+            </j.0:Union>
+            <j.0:label>A , (¬A ⊔ ∃S.A )</j.0:label>
           </rdf:Description>
-        </j.0:Union>
-        <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ), (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ), Sensore , ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), ¬Specchio , (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
+        </j.0:Esiste_R>
+        <j.0:Esiste_S>
+          <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#2">
+            <j.0:Union>
+              <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#5">
+                <j.0:Esiste_S>
+                  <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#6">
+                    <j.0:label>A , (¬A ⊔ ∃S.A )</j.0:label>
+                  </rdf:Description>
+                </j.0:Esiste_S>
+                <j.0:label>A , ∃S.A , (¬A ⊔ ∃S.A )</j.0:label>
+              </rdf:Description>
+            </j.0:Union>
+            <j.0:Union>
+              <rdf:Description rdf:about="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#3">
+                <j.0:clash rdf:resource="http://www.semanticweb.org/turco/ontologies/2022/5/untitled-ontology-32#clashNode0"/>
+                <j.0:label>A , ¬A , (¬A ⊔ ∃S.A )</j.0:label>
+              </rdf:Description>
+            </j.0:Union>
+            <j.0:label>A , (¬A ⊔ ∃S.A )</j.0:label>
+          </rdf:Description>
+        </j.0:Esiste_S>
+        <j.0:label>B , C , ∃S.A , (¬A ⊔ ∃S.A ), ∃R.A </j.0:label>
       </rdf:Description>
     </j.0:Union>
-    <j.0:label>(Sensore ⊔ ¬APSC ), (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio ), (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing ), ((MacchinaFotografica ⊔ ¬Reflex )⊓ (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing )⊓ (MacchinaFotografica ⊔  ∀ haSpecchio.owl:Nothing )⊓ (Sensore ⊔ ¬APSC )⊓ (Sensore ⊔ ¬FullFrame )⊓ (owl:Nothing ⊔  ∀ haSensore.Sensore )⊓ (owl:Nothing ⊔  ∀ haSpecchio.Specchio )⊓ (¬MacchinaFotografica ⊔ ¬Sensore )⊓ (¬MacchinaFotografica ⊔ ∃haSensore.Sensore )⊓ (¬Mirrorless ⊔ ¬Reflex )⊓ (¬Mirrorless ⊔  ∀ haSpecchio.¬Specchio )), (¬Mirrorless ⊔ ¬Reflex ), (MacchinaFotografica ⊔  ∀ haSensore.owl:Nothing ), (¬MacchinaFotografica ⊔ ∃haSensore.Sensore ), (¬MacchinaFotografica ⊔ ¬Sensore ), (Mirrorless ⊔ (FullFrame ⊓ ¬APSC )), (MacchinaFotografica ⊔ ¬Reflex ), (owl:Nothing ⊔  ∀ haSpecchio.Specchio ), (Sensore ⊔ ¬FullFrame ), (owl:Nothing ⊔  ∀ haSensore.Sensore )</j.0:label>
+    <j.0:label>B , C , (¬A ⊔ ∃S.A ), ∃R.A </j.0:label>
   </rdf:Description>
 </rdf:RDF>
